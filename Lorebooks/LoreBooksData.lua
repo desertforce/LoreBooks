@@ -3189,6 +3189,12 @@ lorebooksCorrespondance["wrothgar"] = {
 lorebooksCorrespondance["thievesguild"] = {
 	["hewsbane_base"] = 28,
 }
+lorebooksCorrespondance["darkbrotherhood"] = {
+	["goldcoast_base"] = 29,
+}
+lorebooksCorrespondance["vvardenfell"] = {
+	["vvardenfell_base"] = 30,
+}
 lorebooksCorrespondance["guildmaps"] = {
 	["abagarlas_base"] = 000,
 	["mzendeldt_base"] = 000,
