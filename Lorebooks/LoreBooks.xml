@@ -1,0 +1,201 @@
+<GuiXml>
+	<Controls>
+	
+		<Control name="Lorebook_HelpBook_Template" virtual="true" mouseEnabled="true">
+			<OnMouseEnter>
+				Lorebook_HoverRowOfHelpBook(self)
+			</OnMouseEnter>
+			<OnMouseExit>
+				Lorebook_ExitRowOfHelpBook(self)
+			</OnMouseExit>
+			<OnMouseUp>
+				Lorebook_ClickHelpBook(self, button, upInside)
+			</OnMouseUp>
+			<Dimensions x="600" y="30" />
+			<Controls>
+				<Texture name="$(parent)BG" inherits="ZO_ThinListBgStrip" />
+				
+				<Texture name="$(parent)Icon" verticalAlignment="CENTER">
+					<Dimensions x="32" y="32" />
+					<Anchor point="TOPLEFT" relativeTo="$(parent)" />
+				</Texture>
+				<Label name="$(parent)Name" font="ZoFontGame" verticalAlignment="CENTER">
+					<Dimensions x="275" y="30" />
+					<Anchor point="TOPLEFT" relativeTo="$(parent)Icon" relativePoint="TOPRIGHT" />
+				</Label>
+				<Label name="$(parent)Coords" font="ZoFontGame" verticalAlignment="CENTER">
+					<Dimensions x="75" y="30" />
+					<Anchor point="TOPRIGHT" relativeTo="$(parent)" relativePoint="TOPRIGHT" />
+				</Label>
+				<Label name="$(parent)Collection" font="ZoFontGame" horizontalAlignment="TEXT_ALIGN_RIGHT " verticalAlignment="CENTER">
+					<Dimensions x="200" y="30" />
+					<Anchor point="TOPRIGHT" relativeTo="$(parent)Coords" relativePoint="TOPLEFT" offsetX="-10" />
+				</Label>
+				
+			</Controls>
+		</Control>
+		
+		<Backdrop name="Lorebook_Research_Template" tier="HIGH" inherits="ZO_EditBackdrop" virtual="true">
+			<Anchor point="TOPRIGHT" relativePoint="TOPRIGHT" offsetX="-38" offsetY="28"/>
+			<Dimensions x="270"/>
+			<Controls>
+				<EditBox name="$(parent)Box" inherits="ZO_DefaultEditForBackdrop ZO_EditDefaultText">
+					<OnInitialized>
+						ZO_EditDefaultText_Initialize(self, GetString(LBOOKS_SEARCH_PLACEHOLDER))
+					</OnInitialized>
+				</EditBox>
+				<Label name="$(parent)SearchLabel" text="LBOOKS_SEARCH_LABEL" font="ZoFontGameLargeBold" color="INTERFACE_COLOR_TYPE_TEXT_COLORS:INTERFACE_TEXT_COLOR_NORMAL">
+					<Anchor point="BOTTOMLEFT" relativePoint="TOPLEFT" relativeTo="$(parent)" offsetY="-2"/>
+				</Label>
+			</Controls>
+		</Backdrop>
+		
+		<Backdrop name="Lorebook_Quest_Template" tier="HIGH" inherits="ZO_EditBackdrop" virtual="true">
+			<Anchor point="TOPRIGHT" relativePoint="TOPRIGHT" offsetX="-38" offsetY="28"/>
+			<Dimensions x="270"/>
+			<Controls>
+				<EditBox name="$(parent)Box" inherits="ZO_DefaultEditForBackdrop ZO_EditDefaultText">
+					<OnInitialized>
+						ZO_EditDefaultText_Initialize(self, GetString(LBOOKS_QUEST_PLACEHOLDER))
+					</OnInitialized>
+				</EditBox>
+			</Controls>
+		</Backdrop>
+		
+		<Label name="Lorebook_ShaliCollectionName_Template" font="ZoFontGameLargeBold" color="INTERFACE_COLOR_TYPE_TEXT_COLORS:INTERFACE_TEXT_COLOR_NORMAL" virtual="true">
+			<Dimensions y="24" />
+		</Label>
+		
+		<Label name="Lorebook_ShaliCollectionValue_Template" font="ZoFontGameLargeBold" virtual="true">
+			<Dimensions y="24" />
+		</Label>
+		
+		<Label name="Lorebook_ShaliCollectionReport_Template" font="ZoFontGameLargeBold" virtual="true">
+			<Dimensions y="24" />
+		</Label>
+		
+		<Label name="Lorebook_EideticBooksInMap_Template" font="ZoFontGameLargeBold" virtual="true">
+			<Dimensions y="24" />
+		</Label>
+
+		<Label name="Lorebook_EideticMapName_Template" font="ZoFontGameLargeBold" virtual="true">
+			<Dimensions y="24" />
+		</Label>
+		
+		<Label name="Lorebook_EideticReportForMap_Template" font="ZoFontGameLargeBold" color="INTERFACE_COLOR_TYPE_TEXT_COLORS:INTERFACE_TEXT_COLOR_NORMAL" virtual="true">
+			<Dimensions x="775" />
+		</Label>
+		
+		<Label name="Lorebook_EideticBooksInCollection_Template" font="ZoFontGameLargeBold" virtual="true">
+			<Dimensions y="24" />
+		</Label>
+
+		<Label name="Lorebook_EideticCollectionName_Template" font="ZoFontGameLargeBold" virtual="true">
+			<Dimensions y="24" />
+		</Label>
+		
+		<Label name="Lorebook_EideticReportForCollection_Template" font="ZoFontGameLargeBold" color="INTERFACE_COLOR_TYPE_TEXT_COLORS:INTERFACE_TEXT_COLOR_NORMAL" virtual="true">
+			<Dimensions x="775" />
+		</Label>
+		
+		<TopLevelControl name="LoreBooksReport" inherits="ZO_RightPanelFootPrint" hidden="true">
+			<Controls>
+				
+				<Control name="$(parent)Container" inherits="ZO_ScrollContainer">
+					<OnInitialized>
+						ZO_Scroll_Initialize(self)
+					</OnInitialized>
+					<Dimensions y="675"/>
+					<Anchor point="TOPLEFT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="20" offsetY="20" />
+					<Anchor point="TOPRIGHT" relativeTo="$(parent)" relativePoint="TOPRIGHT" offsetY="20" />
+				</Control>
+				
+				<Label name="$(parent)ShalidorHeaderText" font="ZoFontHeader2" color="INTERFACE_COLOR_TYPE_TEXT_COLORS:INTERFACE_TEXT_COLOR_NORMAL">
+					<Dimensions x="830" />
+					<OnInitialized>
+						self:SetParent(GetControl("LoreBooksReportContainerScrollChild"))
+						self:SetAnchor(TOPLEFT, LoreBooksReportContainerScrollChild, TOPLEFT, 4, 4)
+					</OnInitialized>
+				</Label>
+				
+				<Label name="$(parent)EideticHeaderText" font="ZoFontHeader2" color="INTERFACE_COLOR_TYPE_TEXT_COLORS:INTERFACE_TEXT_COLOR_NORMAL">
+					<Dimensions x="830" />
+					<OnInitialized>
+						self:SetParent(GetControl("LoreBooksReportContainerScrollChild"))
+						self:SetAnchor(TOPLEFT, LoreBooksReportContainerScrollChild, TOPLEFT, 4, 4)
+					</OnInitialized>
+				</Label>
+				
+			</Controls>
+		</TopLevelControl>
+		
+		<TopLevelControl name="LoreBooksCopyReport" inherits="ZO_RightPanelFootPrint" hidden="true">
+			<Controls>
+				
+				<Backdrop name="$(parent)Content" inherits="ZO_MultiLineEditBackdrop_Keyboard">
+					<Anchor point="TOPLEFT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="20" offsetY="20" />
+					<Dimensions x="875" y="650" />
+					<Controls>
+						<EditBox name="$(parent)Edit" editEnabled="false" inherits="ZO_DefaultEditMultiLineForBackdrop ZO_EditDefaultText" color="INTERFACE_COLOR_TYPE_TEXT_COLORS:INTERFACE_TEXT_COLOR_SELECTED" maxInputCharacters="20000" mouseEnabled="true" />
+					</Controls>
+				</Backdrop>
+				
+			</Controls>
+		</TopLevelControl>
+		
+		<TopLevelControl name="LoreBooksHelp" inherits="ZO_HelpCustomerService_Keyboard_ContentAnchors" hidden="true">
+			<Controls>
+			
+				<Label name="$(parent)Report" resizeToFitDescendents="true" text="LBOOKS_EIDETIC_REPORT" font="ZoFontWinH4" color="INTERFACE_COLOR_TYPE_TEXT_COLORS:INTERFACE_TEXT_COLOR_NORMAL">
+					<Anchor point="TOPLEFT"/>
+					<Anchor point="TOPRIGHT" offsetX="-20"/>
+				</Label>
+				
+				<Backdrop name="$(parent)Book" inherits="Lorebook_Research_Template">
+					<Anchor point="TOPLEFT" relativeTo="$(parent)Report" relativePoint="BOTTOMLEFT" offsetX="10" offsetY="40" />
+				</Backdrop>
+				
+				<Control name="$(parent)List" inherits="ZO_ScrollList">
+					<Dimensions x="600" y="75" />
+					<Anchor point="TOPLEFT" relativeTo="$(parent)Book" relativePoint="TOPLEFT" offsetX="0" offsetY="40" />
+				</Control>
+				
+				<Label name="$(parent)Reference" resizeToFitDescendents="true"  font="ZoFontWinH4" color="INTERFACE_COLOR_TYPE_TEXT_COLORS:INTERFACE_TEXT_COLOR_NORMAL">
+					<Anchor point="TOPLEFT" relativeTo="$(parent)List" relativePoint="BOTTOMLEFT" />
+				</Label>
+				
+				<Control name="$(parent)ShaliOptions" hidden="true" mouseEnabled="true">
+					<Anchor point="TOPLEFT" relativeTo="$(parent)Reference" relativePoint="BOTTOMLEFT" />
+					<Dimensions x="600" y="120" />
+					<Controls>
+					
+						<Button name="$(parent)NotHereAnymore" inherits="ZO_CheckButton">
+							<Anchor relativeTo="$(parent)" point="TOPLEFT" relativePoint="TOPLEFT" offsetY="10" />
+							<OnInitialized>
+								ZO_CheckButton_SetLabelText(self, GetString(LBOOKS_RS_NOT_HERE_ANYMORE))
+								ZO_CheckButton_SetToggleFunction(self, LoreBooks_RefreshShaliOptions)
+							</OnInitialized>
+						</Button>
+						<Label name="$(parent)NotHereAnymoreLongExplain" text="LBOOKS_RS_NOT_HERE_ANYMORE_DESC" font="ZoFontWinH4" color="INTERFACE_COLOR_TYPE_TEXT_COLORS:INTERFACE_TEXT_COLOR_NORMAL">
+							<Anchor point="TOPLEFT" relativeTo="$(parent)NotHereAnymore" relativePoint="BOTTOMLEFT" offsetX="0" offsetY="35" />
+							<Anchor point="TOPRIGHT" offsetX="-20" offsetY="35" />
+						</Label>
+						
+						<Button name="$(parent)SendData" inherits="ZO_DefaultButton" text="LBOOKS_SEND_DATA">
+							<Dimensions x="200" />
+							<Anchor point="TOP" relativeTo="$(parent)" relativePoint="BOTTOM" offsetY="100" />
+							<OnClicked>
+								LoreBooks_SendReport(1)
+							</OnClicked>
+						</Button>
+						
+					</Controls>
+				</Control>
+				
+				<!-- Eidetic data removed, check older versions -->
+				
+			</Controls>
+		</TopLevelControl>
+		
+	</Controls>
+</GuiXml>
