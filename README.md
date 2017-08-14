@@ -1,1 +1,1 @@
-# LoreBooks
+Displays map pins for Shalidor's Library books and Eidetic Memory Scrolls
