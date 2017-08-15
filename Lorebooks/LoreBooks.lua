@@ -33,7 +33,7 @@ local Postmail = {}
 --Local constants -------------------------------------------------------------
 local ADDON_NAME = "LoreBooks"
 local ADDON_AUTHOR = "Ayantir & Garkin"
-local ADDON_VERSION = "8"
+local ADDON_VERSION = "8.1"
 local ADDON_WEBSITE = "http://www.esoui.com/downloads/info288-LoreBooks.html"
 local PINS_UNKNOWN = "LBooksMapPin_unknown"
 local PINS_COLLECTED = "LBooksMapPin_collected"
@@ -852,8 +852,7 @@ function BuildDataToShare(bookId)
 		
 		if EideticValidEntry(categoryIndex, bookName) then
 			
-			--[[
-			local bookData = LoreBooks_GetNewEideticData(categoryIndex, collectionIndex, bookIndex)
+			local bookData = LoreBooks_GetU15EideticData(categoryIndex, collectionIndex, bookIndex)
 			
 			if bookData and bookData.c and bookData.e then
 				if not isObject and (not bookData.r or (bookData.r and bookData.m[zoneGPS])) then
@@ -870,7 +869,6 @@ function BuildDataToShare(bookId)
 					end
 				end
 			end
-			]]
 			
 			dataToShare = dataToShare .. "@" .. bookId
 			
