@@ -33,7 +33,7 @@ local Postmail = {}
 --Local constants -------------------------------------------------------------
 local ADDON_NAME = "LoreBooks"
 local ADDON_AUTHOR = "Ayantir & Garkin"
-local ADDON_VERSION = "8.2"
+local ADDON_VERSION = "8.3"
 local ADDON_WEBSITE = "http://www.esoui.com/downloads/info288-LoreBooks.html"
 local PINS_UNKNOWN = "LBooksMapPin_unknown"
 local PINS_COLLECTED = "LBooksMapPin_collected"
@@ -94,8 +94,7 @@ local booksManager = {}
 local LOREBOOKS_CUSTOMREPORT
 
 local LOREBOOKS_HELP = ZO_HelpScreenTemplate_Keyboard:Subclass()
-local THREESHOLD_EIDETIC = 2000
-local THREESHOLD_EIDETIC_REPORT = 2500
+local THREESHOLD_EIDETIC = 3000
 
 --prints message to chat
 local function MyPrint(...)
