@@ -258,7 +258,7 @@ lorebooksData["auridon"] = {
 		{ 0.2394, 0.2818, 25, 6 },		--Fang of the Sea Vipers
 		{ 0.2255, 0.2336, 25, 6 },
 		{ 0.2121, 0.2847, 25, 6 },
-		{ 0.1825, 0.233, 25, 6 },
+		{ 0.1800, 0.2287, 25, 6 },
 		{ 0.5226, 0.1726, 25, 7 },		--The Rise of Queen Ayrenn
 		{ 0.5168, 0.2068, 25, 7 },
 		{ 0.5403, 0.2428, 25, 7 },
@@ -278,9 +278,9 @@ lorebooksData["auridon"] = {
 		--Daedric Princes
 		{ 0.4937, 0.4330, 8, 1 },		--Aedra and Daedra
 		{ 0.5075, 0.3945, 8, 1 },
-		{ 0.472, 0.372, 8, 1 },
+		{ 0.4685, 0.3674, 8, 1 },
 		{ 0.4992, 0.3322, 8, 1 },
-		{ 0.3995, 0.6497, 8, 2 },		--Boethiah's Proving
+		{ 0.3970, 0.6462, 8, 2 },		--Boethiah's Proving
 		{ 0.3917, 0.6822, 8, 2 },
 		{ 0.4257, 0.6994, 8, 2 },
 		{ 0.4475, 0.6829, 8, 2 },
@@ -292,7 +292,7 @@ lorebooksData["auridon"] = {
 		{ 0.6347, 0.3916, 9, 2 },		--Great Harbingers of the Companions
 		{ 0.5866, 0.3753, 9, 2 },
 		{ 0.6134, 0.4247, 9, 2 },
-		{ 0.642, 0.432, 9, 2 },
+		{ 0.6406, 0.4287, 9, 2 },
 		{ 0.8030, 0.5121, 9, 3 },		--The Illusion of Death
 		{ 0.8008, 0.4835, 9, 3 },
 		{ 0.8346, 0.5002, 9, 3 },
@@ -1781,6 +1781,7 @@ lorebooksData["malabaltor"] = {
 		{ 0.627, 0.870, 13, 6 },
 		{ 0.625, 0.827, 13, 6 },
 		{ 0.236, 0.543, 13, 7 },			--The Order of the Ancestor Moth
+		{ 0.2633, 0.5527, 13, 7 },
 		{ 0.578, 0.734, 13, 8 },			--Tamrielic Artifacts, Part One
 		{ 0.502, 0.736, 13, 8 },
 		{ 0.580, 0.793, 13, 8 },
@@ -2941,9 +2942,11 @@ lorebooksData["vvardenfell"] = {
 		{ 0.6482, 0.5707, 8, 5, 2 },		--Invocation of Azura
 		{ 0.5571, 0.7558, 8, 5, 2 },
 		{ 0.7404, 0.5302, 8, 5, 2 },
+		{ 0.5970, 0.7596, 8, 5, 2 },
 		{ 0.2896, 0.2204, 10, 10 },		--Vivec and Mephala		
 		{ 0.8780, 0.7064, 11, 6 },			--The Art of Kwama Egg Cooking
 		{ 0.7412, 0.8345, 11, 6 },
+		{ 0.2427, 0.2308, 11, 6 },
 		{ 0.6274, 0.813, 20, 8 },			--Varieties of Faith: The Dark Elves
 		{ 0.4444, 0.2062, 20, 8 },
 		{ 0.6695, 0.8487, 20, 8 },
@@ -2952,6 +2955,7 @@ lorebooksData["vvardenfell"] = {
 		{ 0.7201, 0.8283, 22, 9 },
 		{ 0.2865, 0.2902, 23, 1 },			--The Living Gods
 		{ 0.7785, 0.7153, 23, 1 },
+		{ 0.7514, 0.2607, 23, 1 },
 		{ 0.6072, 0.9108, 23, 3 },			--Kwama Mining for Fun and Profit
 		{ 0.3112, 0.3379, 23, 3 },
 		{ 0.1930, 0.4266, 23, 9 },			--Sanctioned Murder
@@ -3145,6 +3149,13 @@ lorebooksCorrespondance["reapersmarch"] = {
 	["rawlkha_base"] = 000,
 	["selenesweb_base"] = 000,
 }
+lorebooksCorrespondance["rivenspire"] = {
+	["rivenspire_base"] = 3,
+	["arenthia_base"] = 000,
+	["dune_base"] = 000,
+	["rawlkha_base"] = 000,
+	["selenesweb_base"] = 000,
+}
 lorebooksCorrespondance["stonefalls"] = {
 	["stonefalls_base"] = 11,
 	["davonswatch_base"] = 000,
@@ -3215,6 +3226,31 @@ lorebooksCorrespondance["guildmaps"] = {
 	["circusofcheerfulslaughter_base"] = 000,
 	["gladeofthedivineshivering_base"] = 000,
 	["cheesemongershollow_base"] = 000,
+}
+
+local mapIndexCorrespondance = {
+	[2] = { ["glenumbra"] = "glenumbra_base" },
+	[3] = { ["rivenspire"] = "rivenspire_base" },
+	[4] = { ["stormhaven"] = "stormhaven_base" },
+	[5] = { ["alikr"] = "alikr_base" },
+	[6] = { ["bangkorai"] = "bangkorai_base" },
+	[7] = { ["grahtwood"] = "grahtwood_base" },
+	[8] = { ["malabaltor"] = "malabaltor_base" },
+	[9] = { ["shadowfen"] = "shadowfen_base" },
+	[10] = { ["deshaan"] = "deshaan_base" },
+	[11] = { ["stonefalls"] = "stonefalls_base" },
+	[12] = { ["therift"] = "therift_base" },
+	[13] = { ["eastmarch"] = "eastmarch_base" },
+	[14] = { ["cyrodiil"] = "ava_whole" },
+	[15] = { ["auridon"] = "auridon_base" },
+	[16] = { ["greenshade"] = "greenshade_base" },
+	[17] = { ["reapersmarch"] = "reapersmarch_base" },
+	[23] = { ["coldharbor"] = "coldharbour_base" },
+	[26] = { ["cyrodiil"] = "imperialcity_base" },
+	[27] = { ["wrothgar"] = "wrothgar_base" },
+	[28] = { ["thievesguild"] = "hewsbane_base" },
+	[29] = { ["darkbrotherhood"] = "goldcoast_base" },
+	[30] = { ["vvardenfell"] = "vvardenfell_base" },
 }
 
 local lorebooksExplorationIDs = {
@@ -3341,6 +3377,66 @@ function LoreBooks_GetLocalData(zone, subzone)
 	end
 end
 
+function LoreBooks_GetMissingBooksData()
+
+	local missingBooks = {}
+	local COLLECTION_DUNGEON_LORE = 11
+	local MAP_CYRODIIL = 14
+	local MAP_IMPERIAL_CITY = 26
+	local MAP_HEWS_BANE = 28
+	local MAP_GOLD_COAST = 29
+	local MAP_VVARDENFELL = 30
+
+	for mapIndex=1, GetNumMaps() do
+		if not (mapIndex == MAP_CYRODIIL or mapIndex == MAP_IMPERIAL_CITY or mapIndex == MAP_HEWS_BANE or mapIndex == MAP_GOLD_COAST or mapIndex == MAP_VVARDENFELL) then
+			if mapIndexCorrespondance[mapIndex] then
+				
+				local mapName, mapTile = next(mapIndexCorrespondance[mapIndex])
+				if lorebooksData[mapName][mapTile] then
+					
+					missingBooks[mapName] = {
+						[mapTile] = {},
+					}
+					
+					local bookPins = 0
+					local collectionIndex = lorebooksData[mapName][mapTile][1][3]
+					local bookIndex = lorebooksData[mapName][mapTile][1][4]
+					local existingData = {}
+					
+					for bookPin, bookData in ipairs(lorebooksData[mapName][mapTile]) do
+						
+						if collectionIndex == bookData[3] and bookIndex == bookData[4] then	
+							bookPins = bookPins + 1
+							table.insert(existingData, bookData)
+						else
+						
+							if collectionIndex ~= COLLECTION_DUNGEON_LORE and bookPins < 4 then
+								local _, _, _, bookId = GetLoreBookInfo(1, collectionIndex, bookIndex)
+								missingBooks[mapName][mapTile][bookId] = {
+									count = bookPins,
+									existingData = existingData,
+								}
+							end
+							
+							existingData = {bookData}
+							bookPins = 1
+
+						end
+						
+						collectionIndex = bookData[3]
+						bookIndex = bookData[4]
+						
+					end
+					
+				end
+			end
+		end
+	end
+	
+	return missingBooks
+	
+end
+
 function LoreBooks_GetLocalDataForBook(categoryIndex, collectionIndex, bookIndex, zone, subzone)
 	
 	local results = {}
@@ -3368,8 +3464,6 @@ function LoreBooks_GetMapIndexFromMapTile(zone, subZone)
 			end
 		end
 	end
-	
-	return
 
 end
 
@@ -3378,17 +3472,17 @@ function LoreBooks_GetDataOfBook(categoryIndex, collectionIndex, bookIndex)
 	local results = {}
 	if categoryIndex == 1 then -- 1 = Shalidor, 2 = Eidetic. I will need to rebuild the whole array when Eidetic will go live, but not yet.
 		if collectionIndex and bookIndex then
-		for zoneName, zoneData in pairs(lorebooksData) do
-			for subZoneName, subZoneData in pairs(zoneData) do
-				for bookEntry, bookData in ipairs(subZoneData) do
-					if bookData[3] and bookData[4] then
-						if bookData[3] == collectionIndex and bookData[4] == bookIndex then
-							table.insert(results, {zoneName = zoneName, subZoneName = subZoneName, locX = bookData[1], locY = bookData[2] })
+			for zoneName, zoneData in pairs(lorebooksData) do
+				for subZoneName, subZoneData in pairs(zoneData) do
+					for bookEntry, bookData in ipairs(subZoneData) do
+						if bookData[3] and bookData[4] then
+							if bookData[3] == collectionIndex and bookData[4] == bookIndex then
+								table.insert(results, {zoneName = zoneName, subZoneName = subZoneName, locX = bookData[1], locY = bookData[2] })
+							end
 						end
 					end
 				end
 			end
-		end
 		end
 	end
 	

@@ -33,7 +33,7 @@ local Postmail = {}
 --Local constants -------------------------------------------------------------
 local ADDON_NAME = "LoreBooks"
 local ADDON_AUTHOR = "Ayantir & Garkin"
-local ADDON_VERSION = "8.3"
+local ADDON_VERSION = "8.4"
 local ADDON_WEBSITE = "http://www.esoui.com/downloads/info288-LoreBooks.html"
 local PINS_UNKNOWN = "LBooksMapPin_unknown"
 local PINS_COLLECTED = "LBooksMapPin_collected"
@@ -41,6 +41,7 @@ local PINS_EIDETIC = "LBooksMapPin_eidetic"
 local PINS_EIDETIC_COLLECTED = "LBooksMapPin_eideticCollected"
 local PINS_COMPASS = "LBooksCompassPin_unknown"
 local PINS_COMPASS_EIDETIC = "LBooksCompassPin_eidetic"
+--local PINS_MISSING_SHALIDOR = "LBooksMapPin_missingShalidor"
 
 local MISSING_TEXTURE = "/esoui/art/icons/icon_missing.dds"
 local PLACEHOLDER_TEXTURE = "/esoui/art/icons/lore_book4_detail1_color2.dds"
@@ -54,6 +55,7 @@ local loreBoooksLibrary = {}
 local totalCurrentlyCollected = 0
 local updating = false
 local mapIsShowing
+local missingBooks
 local db							--user settings
 local defaults = {			--default settings for saved variables
 	compassMaxDistance = 0.04,
@@ -70,6 +72,7 @@ local defaults = {			--default settings for saved variables
 		[PINS_COLLECTED] = false,
 		[PINS_EIDETIC] = false,
 		[PINS_EIDETIC_COLLECTED] = false,
+		--[PINS_MISSING_SHALIDOR] = false,
 	},
 	shareData = true,
 	postmailData = "",
@@ -289,6 +292,29 @@ pinTooltipCreatorEidetic.creator = function(pin)
 	
 end
 
+--[[
+local pinTooltipCreatorMissingShalidor = {}
+pinTooltipCreatorMissingShalidor.tooltip = 1 --TOOLTIP_MODE.INFORMATION
+pinTooltipCreatorMissingShalidor.creator = function(pin)
+	
+	local pinTag = pin.m_PinTag
+	local title, icon, known = GetLoreBookInfo(1, pinTag[3], pinTag[4])
+	local collection = GetLoreCollectionInfo(1, pinTag[3])
+	
+	if icon == MISSING_TEXTURE then icon = PLACEHOLDER_TEXTURE end
+	
+	if IsInGamepadPreferredMode() then
+		INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, zo_strformat(collection), INFORMATION_TOOLTIP.tooltip:GetStyle("mapTitle"))
+		INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, icon, title, {fontSize = 27, fontColorField = GAMEPAD_TOOLTIP_COLOR_GENERAL_COLOR_3})
+	else
+		INFORMATION_TOOLTIP:AddLine(zo_strformat(collection), "ZoFontGameOutline", ZO_SELECTED_TEXT:UnpackRGB())
+		ZO_Tooltip_AddDivider(INFORMATION_TOOLTIP)
+		INFORMATION_TOOLTIP:AddLine(zo_iconTextFormat(icon, 32, 32, title), "", ZO_HIGHLIGHT_TEXT:UnpackRGB())
+	end
+	
+end
+]]
+
 local function ShouldDisplayLoreBooks()
 	
 	if db.immersiveMode == 1 then
@@ -342,7 +368,7 @@ local function ShouldDisplayLoreBooks()
 		elseif db.immersiveMode == 5 then -- Zone Quests
 		
 			local conditionData = LoreBooks_GetImmersiveModeCondition(db.immersiveMode, mapIndex)
-			local conditionData = LoreBooks_GetImmersiveModeCondition(db.immersiveMode, mapIndex)
+			
 			if type(conditionData) == "table" then
 				for conditionIndex, achievementIndex in ipairs(conditionData) do
 					local _, _ , _, _, completed = GetAchievementInfo(achievementIndex)
@@ -457,7 +483,54 @@ local function CreatePins()
 		end
 		
 	end
+	
+	--[[
+	if (updatePins[PINS_MISSING_SHALIDOR] and LMP:IsEnabled(PINS_MISSING_SHALIDOR)) then
+		local zone, subzone = LMP:GetZoneAndSubzone()
+
+		if missingBooks[zone] and missingBooks[zone][subzone] then
+			for bookId, bookData in pairs(missingBooks[zone][subzone]) do
+			
+				local _, _, known = GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex) 
+				
+				--if not known then
+					
+					local _, collectionIndex, bookIndex = GetLoreBookIndicesFromBookId(bookId)
+					local pinData = {
+						[1] = 0,
+						[2] = 0,
+						[3] = collectionIndex,
+						[4] = bookIndex,
+					}
+					
+					if bookData.count > 1 then
+						local minX, minY, maxX, maxY = 100, 100, 0, 0
+						
+						for existingPinIndex, existingPinData in ipairs(bookData.existingData) do
+							minX = math.min(minX, existingPinData[1])
+							minY = math.min(minY, existingPinData[2])
+
+							maxX = math.max(maxX, existingPinData[1])
+							maxY = math.max(maxY, existingPinData[2])
+						end
+						
+						pinData[1] = minX + (maxX - minX) / 2
+						pinData[2] = minY + (maxY - minY) / 2
+						
+						LMP:CreatePin(PINS_MISSING_SHALIDOR, pinData, pinData[1], pinData[2])
+						
+					else
+						pinData[1] = bookData.existingData[1][1]
+						pinData[2] = bookData.existingData[1][2]
+						LMP:CreatePin(PINS_MISSING_SHALIDOR, pinData, pinData[1], pinData[2])
+					end
+					
+				--end
+			end
+		end
 		
+	end
+	]]
 	updatePins = {}
 	updating = false
 	
@@ -503,6 +576,13 @@ local function MapCallback_eideticCollected()
 	if not LMP:IsEnabled(PINS_EIDETIC_COLLECTED) or GetMapType() > MAPTYPE_ZONE then return end
 	QueueCreatePins(PINS_EIDETIC_COLLECTED)
 end
+
+--[[
+local function MapCallback_missingShalidor()
+	if not LMP:IsEnabled(PINS_MISSING_SHALIDOR) or GetMapType() > MAPTYPE_ZONE then return end
+	QueueCreatePins(PINS_MISSING_SHALIDOR)
+end
+]]
 
 local function CompassCallback()
 	if not db.filters[PINS_COMPASS] or GetMapType() > MAPTYPE_ZONE then return end
@@ -851,7 +931,7 @@ function BuildDataToShare(bookId)
 		
 		if EideticValidEntry(categoryIndex, bookName) then
 			
-			local bookData = LoreBooks_GetU15EideticData(categoryIndex, collectionIndex, bookIndex)
+			local bookData = LoreBooks_GetNewEideticData(categoryIndex, collectionIndex, bookIndex)
 			
 			if bookData and bookData.c and bookData.e then
 				if not isObject and (not bookData.r or (bookData.r and bookData.m[zoneGPS])) then
@@ -1515,14 +1595,12 @@ end
 
 local function BuildEideticReportPerCollection(lastObject)
 
-	local THRESHOLD_EIDETIC = 2000
-	
 	local eideticHeaderText = GetControl(LoreBooksReport, "EideticHeaderText")
 	eideticHeaderText:ClearAnchors()
 	
 	eideticHeaderText:SetAnchor(TOPLEFT, LoreBooksReportContainerScrollChild, TOPLEFT, 4, lastObject)
 	
-	if totalCurrentlyCollected >= THRESHOLD_EIDETIC then
+	if totalCurrentlyCollected >= THREESHOLD_EIDETIC then
 		
 		eideticHeaderText:SetText(GetString(LBOOKS_RE_FEW_BOOKS_MISSING))
 		copyReport = copyReport .. "\n\n" .. GetString(LBOOKS_RE_FEW_BOOKS_MISSING)
@@ -2041,6 +2119,10 @@ local function IsPlayerOnCurrentMap()
 	
 end
 
+local function BuildUnknownBooksQuest()
+	missingBooks = LoreBooks_GetMissingBooksData()
+end
+
 local function InitializePins()
 
 	local pinTextureLevel = db.pinTexture.level
@@ -2051,6 +2133,8 @@ local function InitializePins()
 	local mapPinLayout_eideticCollected = { level = pinTextureLevel, texture = GetPinTextureEidetic, size = pinTextureSize }
 	local mapPinLayout_unknown = { level = pinTextureLevel, texture = GetPinTexture, size = pinTextureSize }
 	local mapPinLayout_collected = { level = pinTextureLevel, texture = GetPinTexture, size = pinTextureSize, grayscale = IsShaliPinGrayscale }
+	--local mapPinLayout_missingShalidor = { level = pinTextureLevel, texture = "EsoUI/Art/MapPins/map_areaPin.dds", size = 128 }
+	
 	local compassPinLayout = { maxDistance = compassMaxDistance, texture = pinTextures[db.pinTexture.type][2],
 		sizeCallback = function(pin, angle, normalizedAngle, normalizedDistance)
 			if zo_abs(normalizedAngle) > 0.25 then
@@ -2109,6 +2193,9 @@ local function InitializePins()
 	if totalCurrentlyCollected >= THREESHOLD_EIDETIC then
 		LMP:AddPinType(PINS_EIDETIC_COLLECTED, MapCallback_eideticCollected, nil, mapPinLayout_eideticCollected, pinTooltipCreatorEidetic)
 		LMP:AddPinFilter(PINS_EIDETIC_COLLECTED, zo_strformat(LBOOKS_FILTER_EICOLLECTED, GetLoreCategoryInfo(3)), nil, db.filters)
+		
+		--LMP:AddPinType(PINS_MISSING_SHALIDOR, MapCallback_missingShalidor, nil, mapPinLayout_missingShalidor, pinTooltipCreatorMissingShalidor)
+		--LMP:AddPinFilter(PINS_MISSING_SHALIDOR, "missingShalidor", nil, db.filters)
 	end
 	
 	--add handler for the left click
@@ -2507,6 +2594,8 @@ local function OnLoad(eventCode, name)
 
 		-- Data sniffer
 		ToggleShareData()
+		
+		--BuildUnknownBooksQuest()
 		
 		-- Help panel is built by XML
 		InitializeLoreBooksHelp()
