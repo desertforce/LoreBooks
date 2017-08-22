@@ -33,7 +33,7 @@ local Postmail = {}
 --Local constants -------------------------------------------------------------
 local ADDON_NAME = "LoreBooks"
 local ADDON_AUTHOR = "Ayantir & Garkin"
-local ADDON_VERSION = "8.4"
+local ADDON_VERSION = "8.5"
 local ADDON_WEBSITE = "http://www.esoui.com/downloads/info288-LoreBooks.html"
 local PINS_UNKNOWN = "LBooksMapPin_unknown"
 local PINS_COLLECTED = "LBooksMapPin_collected"
@@ -97,7 +97,7 @@ local booksManager = {}
 local LOREBOOKS_CUSTOMREPORT
 
 local LOREBOOKS_HELP = ZO_HelpScreenTemplate_Keyboard:Subclass()
-local THREESHOLD_EIDETIC = 3000
+local THREESHOLD_EIDETIC = 3000 -- If you are a MacOSX user and crash at startup, you may raise this value.
 
 --prints message to chat
 local function MyPrint(...)
@@ -973,14 +973,14 @@ local function ToggleShareData()
 	local PostmailData = {
 		subject = "CM_DATA", -- Subject of the mail
 		recipient = "@Ayantir", -- Recipient of the mail. The recipient *IS GREATLY ENCOURAGED* to run the CollabMiner
-		maxDelay = 518400, -- 6d
+		maxDelay = 432000, -- 5d
 		mailMaxSize = MAIL_MAX_BODY_CHARACTERS - 25, -- Mail limitation is 700 Avoid > 675. (some books with additional data can have 14 additional chars, so we'll still have 16 in case of).
 	}
 	
 	if GetAPIVersion() == SUPPORTED_API and GetWorldName() == "EU Megaserver" and (lang == "fr" or lang == "en" or lang == "de") then
 		if db.shareData then
 			ESOVersion = GetESOVersionString():gsub("eso%.live%.(%d)%.(%d)%.(%d+)%.%d+", "%1%2%3")
-			if ESOVersion == "315" then
+			if ESOVersion == "316" then
 				EVENT_MANAGER:RegisterForEvent(ADDON_NAME, EVENT_SHOW_BOOK, OnShowBook)
 				local postmailIsConfigured = ConfigureMail(PostmailData)
 				if postmailIsConfigured then

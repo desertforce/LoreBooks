@@ -1,6 +1,6 @@
 ## Title: |cEFEBBELoreBooks|r
 ## Description: Displays map pins for Shalidor's and Eidetic Libraries books
-## Version: 8.4
+## Version: 8.5
 ## Author: Ayantir & Garkin
 ## APIVersion: 100020
 ## SavedVariables: LBooks_SavedVariables
