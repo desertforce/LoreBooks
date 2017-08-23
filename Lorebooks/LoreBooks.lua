@@ -33,7 +33,7 @@ local Postmail = {}
 --Local constants -------------------------------------------------------------
 local ADDON_NAME = "LoreBooks"
 local ADDON_AUTHOR = "Ayantir & Garkin"
-local ADDON_VERSION = "8.5"
+local ADDON_VERSION = "8.6"
 local ADDON_WEBSITE = "http://www.esoui.com/downloads/info288-LoreBooks.html"
 local PINS_UNKNOWN = "LBooksMapPin_unknown"
 local PINS_COLLECTED = "LBooksMapPin_collected"
@@ -47,6 +47,7 @@ local MISSING_TEXTURE = "/esoui/art/icons/icon_missing.dds"
 local PLACEHOLDER_TEXTURE = "/esoui/art/icons/lore_book4_detail1_color2.dds"
 local SUPPORTED_API = 100020
 local MAX_BOOKS_IN_LIBRARY = 3478
+--local EIDETIC_BOOKS = MAX_BOOKS_IN_LIBRARY - 297 - 513 -- 297 = Shalidor / 35*14 + 23 = Craft
 
 --Local variables -------------------------------------------------------------
 local lang = GetCVar("Language.2")
@@ -260,7 +261,7 @@ pinTooltipCreatorEidetic.creator = function(pin)
 		if pinTag.q then
 			if type(pinTag.q) == "table" then
 				INFORMATION_TOOLTIP:AddLine(GetString(LBOOKS_QUEST_BOOK), "", ZO_SELECTED_TEXT:UnpackRGB())
-				INFORMATION_TOOLTIP:AddLine(zo_strformat("[<<1>>]", pinTag.q[lang] or pinTag.q["en"]), "", ZO_SELECTED_TEXT:UnpackRGB())
+				INFORMATION_TOOLTIP:AddLine(string.format("[%s]", pinTag.q[lang] or pinTag.q["en"]), "", ZO_SELECTED_TEXT:UnpackRGB())
 				
 				local questDetails
 				if pinTag.qt then
