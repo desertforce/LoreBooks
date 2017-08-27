@@ -33,7 +33,7 @@ local Postmail = {}
 --Local constants -------------------------------------------------------------
 local ADDON_NAME = "LoreBooks"
 local ADDON_AUTHOR = "Ayantir & Garkin"
-local ADDON_VERSION = "8.8"
+local ADDON_VERSION = "8.9"
 local ADDON_WEBSITE = "http://www.esoui.com/downloads/info288-LoreBooks.html"
 local PINS_UNKNOWN = "LBooksMapPin_unknown"
 local PINS_COLLECTED = "LBooksMapPin_collected"
@@ -231,11 +231,12 @@ pinTooltipCreatorEidetic.creator = function(pin)
 		end
 		
 		if pinTag.d then
-		
-			if GetZoneNameByIndex(GetZoneIndex(pinTag.z)) == GetMapNameByIndex(pinTag.m) then
+			
+			local zoneId = pinTag.zc or pinTag.z
+			if GetZoneNameByIndex(GetZoneIndex(zoneId)) == GetMapNameByIndex(pinTag.m) then
 				INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, zo_strformat("[<<1>>]", GetString(SI_QUESTTYPE5)), {fontSize = 27, fontColorField = GAMEPAD_TOOLTIP_COLOR_GENERAL_COLOR_2})
 			else
-				INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, string.format("[%s]", zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetZoneNameByIndex(GetZoneIndex(pinTag.z)))), {fontSize = 27, fontColorField = GAMEPAD_TOOLTIP_COLOR_GENERAL_COLOR_2})
+				INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, string.format("[%s]", zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetZoneNameByIndex(GetZoneIndex(zoneId)))), {fontSize = 27, fontColorField = GAMEPAD_TOOLTIP_COLOR_GENERAL_COLOR_2})
 			end
 			
 		end
@@ -276,10 +277,11 @@ pinTooltipCreatorEidetic.creator = function(pin)
 		
 		if pinTag.d then
 		
-			if GetZoneNameByIndex(GetZoneIndex(pinTag.z)) == GetMapNameByIndex(pinTag.m) then
+			local zoneId = pinTag.zc or pinTag.z
+			if GetZoneNameByIndex(GetZoneIndex(zoneId)) == GetMapNameByIndex(pinTag.m) then
 				INFORMATION_TOOLTIP:AddLine(zo_strformat("[<<1>>]", GetString(SI_QUESTTYPE5)), "", ZO_SELECTED_TEXT:UnpackRGB())
 			else
-				INFORMATION_TOOLTIP:AddLine(string.format("[%s]",  zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetZoneNameByIndex(GetZoneIndex(pinTag.z)))), "", ZO_SELECTED_TEXT:UnpackRGB())
+				INFORMATION_TOOLTIP:AddLine(string.format("[%s]",  zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetZoneNameByIndex(GetZoneIndex(zoneId)))), "", ZO_SELECTED_TEXT:UnpackRGB())
 			end
 		end
 		
@@ -960,7 +962,7 @@ local function ToggleShareData()
 	if GetAPIVersion() == SUPPORTED_API and GetWorldName() == "EU Megaserver" and (lang == "fr" or lang == "en" or lang == "de") then
 		if db.shareData then
 			ESOVersion = GetESOVersionString():gsub("eso%.live%.(%d)%.(%d)%.(%d+)%.%d+", "%1%2%3")
-			if ESOVersion == "316" then
+			if ESOVersion == "317" then
 				EVENT_MANAGER:RegisterForEvent(ADDON_NAME, EVENT_SHOW_BOOK, OnShowBook)
 				local postmailIsConfigured = ConfigureMail(PostmailData)
 				if postmailIsConfigured then
@@ -1941,7 +1943,7 @@ local function OnMouseEnter(self, categoryIndex, collectionIndex, bookIndex)
 					local x = data.x
 					local y = data.y
 					local mapIndex = data.m
-					local zoneId = data.z
+					local zoneId = data.zc or data.z
 					local isRandom = data.r
 					local inDungeon = data.d
 					local isFromBag = data.i == INTERACTION_NONE
