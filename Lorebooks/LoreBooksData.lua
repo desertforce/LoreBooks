@@ -1140,6 +1140,7 @@ lorebooksData["eastmarch"] = {
 		{ 0.226, 0.628, 13, 9, 1 },		--Tamrielic Artifacts, Part Two
 		{ 0.177, 0.611, 13, 9 },
 		{ 0.219, 0.680, 13, 9 },
+		{ 0.1957, 0.6503, 13, 9 },
 		{ 0.250, 0.625, 13, 10, 1 },		--Tamrielic Artifacts, Part Three
 		{ 0.306, 0.63, 13, 10, 1 },
 		{ 0.248, 0.5955, 13, 10, 1 },
@@ -1378,7 +1379,6 @@ lorebooksData["grahtwood"] = {
 		{ 0.491, 0.560, 26, 2 },
 		{ 0.415, 0.656, 26, 2 },
 		{ 0.537, 0.682, 26, 3 },		--The Book of the Great Tree
-		{ 0.533, 0.640, 26, 3 },
 		{ 0.501, 0.703, 26, 3 },
 		{ 0.4536, 0.6902, 26, 3 },
 		{ 0.646, 0.743, 26, 4 },		--Common Arms of Valenwood
@@ -1557,6 +1557,7 @@ lorebooksData["greenshade"] = {
 		{ 0.625, 0.790, 27, 5 },		--Visions of the Green Pact Bosmer
 		{ 0.611, 0.754, 27, 5 },
 		{ 0.6411, 0.8341, 27, 5 },
+		{ 0.5724, 0.8021, 27, 5 },
 		{ 0.363, 0.525, 27, 6 },		--Woodhearth: A Pocket Guide
 		{ 0.313, 0.547, 27, 6 },
 		{ 0.295, 0.495, 27, 6 },
@@ -2942,6 +2943,7 @@ lorebooksData["vvardenfell"] = {
    ["vvardenfell_base"] = {          -- Vvardenfell
 		{ 0.4040, 0.8088, 20, 3 },			-- The Great Houses and Their Uses
 		{ 0.8816, 0.6117, 20, 3 },
+		{ 0.3299, 0.5284, 20, 3 },
 		{ 0.5019, 0.2445, 8, 4 },			--The House of Troubles
 		{ 0.4052, 0.2688, 8, 4 },
 		{ 0.3203, 0.6273, 8, 4 },

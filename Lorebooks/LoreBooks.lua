@@ -33,7 +33,7 @@ local Postmail = {}
 --Local constants -------------------------------------------------------------
 local ADDON_NAME = "LoreBooks"
 local ADDON_AUTHOR = "Ayantir & Garkin"
-local ADDON_VERSION = "8.7"
+local ADDON_VERSION = "8.8"
 local ADDON_WEBSITE = "http://www.esoui.com/downloads/info288-LoreBooks.html"
 local PINS_UNKNOWN = "LBooksMapPin_unknown"
 local PINS_COLLECTED = "LBooksMapPin_collected"
@@ -240,7 +240,7 @@ pinTooltipCreatorEidetic.creator = function(pin)
 			
 		end
 		
-		if pinTag.i and pinTag.i == INTERACTION_NONE then
+		if (pinTag.i and pinTag.i == INTERACTION_NONE) or pinTag.l then
 			INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, GetString(LBOOKS_MAYBE_NOT_HERE), {fontSize = 27, fontColorField = GAMEPAD_TOOLTIP_COLOR_GENERAL_COLOR_2})
 		elseif pinTag.r then
 			INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, GetString(LBOOKS_RANDOM_POSITION), {fontSize = 27, fontColorField = GAMEPAD_TOOLTIP_COLOR_GENERAL_COLOR_2})
@@ -283,7 +283,7 @@ pinTooltipCreatorEidetic.creator = function(pin)
 			end
 		end
 		
-		if pinTag.i and pinTag.i == INTERACTION_NONE then
+		if (pinTag.i and pinTag.i == INTERACTION_NONE) or pinTag.l then
 			INFORMATION_TOOLTIP:AddLine(GetString(LBOOKS_MAYBE_NOT_HERE))
 		elseif pinTag.r then
 			INFORMATION_TOOLTIP:AddLine(GetString(LBOOKS_RANDOM_POSITION))
@@ -828,27 +828,6 @@ local function CoordsNearby(locX, locY, x, y)
 	end
 	return false
 	
-end
-
-local function ShowThankYou(categoryIndex, collectionIndex, bookIndex)
-
-	local icons = {
-		[1] = "/esoui/art/icons/scroll_001.dds",
-		[10] = "/esoui/art/icons/lore_book2_detail1_color1.dds",
-		[20] = "/esoui/art/icons/quest_book_001.dds",
-		[30] = "/esoui/art/icons/scroll_005.dds",
-	}
-
-	if not db.booksFound[categoryIndex] then db.booksFound[categoryIndex] = {} end
-	if not db.booksFound[categoryIndex][collectionIndex] then db.booksFound[categoryIndex][collectionIndex] = {} end
-	if not db.booksFound[categoryIndex][collectionIndex][bookIndex] then
-		db.booksFound[categoryIndex][collectionIndex][bookIndex] = true
-		db.nbBooksFound = db.nbBooksFound + 1
-		if db.nbBooksFound == 1 or db.nbBooksFound == 10 or db.nbBooksFound == 20 or db.nbBooksFound == 30 then
-			CENTER_SCREEN_ANNOUNCE:AddMessage(0, CSA_EVENT_COMBINED_TEXT, SOUNDS.LEVEL_UP, GetString("LBOOKS_THANK_YOU", db.nbBooksFound), GetString("LBOOKS_THANK_YOU_LONG", db.nbBooksFound), icons[db.nbBooksFound], "EsoUI/Art/Achievements/achievements_iconBG.dds")
-		end
-	end
-
 end
 
 function BuildDataToShare(bookId)
@@ -2007,7 +1986,7 @@ local function OnMouseEnter(self, categoryIndex, collectionIndex, bookIndex)
 						end
 						
 						if isFromBag then
-							InformationTooltip:AddLine(zo_strformat("[<<1>>]", GetString(LBOOKS_MAYBE_NOT_HERE)), "", ZO_SELECTED_TEXT:UnpackRGB())
+							InformationTooltip:AddLine(GetString(LBOOKS_MAYBE_NOT_HERE), "", ZO_SELECTED_TEXT:UnpackRGB())
 						elseif isRandom then
 							InformationTooltip:AddLine(GetString(LBOOKS_RANDOM_POSITION))
 						end
@@ -2017,6 +1996,32 @@ local function OnMouseEnter(self, categoryIndex, collectionIndex, bookIndex)
 				end
 				
 			end
+			
+		elseif bookData and bookData.l then
+			
+			local bookName = GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex) -- Could be retrieved automatically
+			InitializeTooltip(InformationTooltip, self, BOTTOMLEFT, 0, 0, TOPRIGHT)
+			InformationTooltip:AddLine(bookName, "ZoFontGameOutline", ZO_SELECTED_TEXT:UnpackRGB())
+			ZO_Tooltip_AddDivider(InformationTooltip)
+			
+			if bookData.q and type(bookData.q) == "table" then
+				InformationTooltip:AddLine(GetString(LBOOKS_QUEST_BOOK), "", ZO_HIGHLIGHT_TEXT:UnpackRGB())
+				InformationTooltip:AddLine(string.format("[%s]", bookData.q[lang] or bookData.q["en"]), "", ZO_SELECTED_TEXT:UnpackRGB())
+				
+				local questDetails
+				if bookData.qt then
+					questDetails = zo_strformat(GetString("LBOOKS_SPECIAL_QUEST"), bookData.qt)
+				else
+					questDetails = zo_strformat(GetString(LBOOKS_QUEST_IN_ZONE), zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetMapNameByIndex(bookData.qm)))
+				end
+				
+				InformationTooltip:AddLine(questDetails)
+				ZO_Tooltip_AddDivider(InformationTooltip)
+				
+			end
+			
+			InformationTooltip:AddLine(GetString(LBOOKS_MAYBE_NOT_HERE), "", ZO_SELECTED_TEXT:UnpackRGB())
+			
 		end
 		
 	end
