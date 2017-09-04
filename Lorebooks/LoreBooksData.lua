@@ -313,7 +313,7 @@ lorebooksData["auridon"] = {
 		{ 0.4532, 0.5154, 9, 7 },
 		{ 0.4428, 0.5532, 9, 7 },
 		{ 0.518, 0.499, 9, 7 },
-		{ 0.499, 0.575, 9, 8 },		--Trials of St. Alessia
+		{ 0.4958, 0.5732, 9, 8 },		--Trials of St. Alessia
 		{ 0.5422, 0.6384, 9, 8 },
 		{ 0.5196, 0.6015, 9, 8 },
 		{ 0.4882, 0.6090, 9, 8 },
@@ -638,6 +638,7 @@ lorebooksData["cyrodiil"] = {
 		{ 0.316, 0.563, 12, 8, 2 },	--Antecedents of Dwemer Law
 		{ 0.750, 0.474, 12, 9, },		--Dwarven Automatons
 		{ 0.395, 0.688, 12, 10 },		--Ancient Scrolls of the Dwemer I-B
+		{ 0.1707, 0.2661, 12, 11 },	--Guylaine's Dwemer Architecture
 		{ 0.260, 0.530, 12, 12 },		--Ancient Scrolls of the Dwemer VIII
 		{ 0.5837, 0.4395, 12, 13 },	--Dwemer Inquiries Volume I
 		{ 0.719, 0.435, 12, 14 },		--Dwemer Inquiries Volume II
@@ -981,6 +982,7 @@ lorebooksData["deshaan"] = {
 		{ 0.8381, 0.4838, 15, 7 },
 		{ 0.562, 0.391, 15, 8 },		--Guild Memo on Soul Trapping
 		{ 0.593, 0.326, 15, 8 },
+		{ 0.6109, 0.3821, 15, 8 },
 		--Myths of the Mundus
 		{ 0.900, 0.416, 16, 1 },		--Before the Ages of Man: Dawn Era
 		{ 0.908, 0.437, 16, 1 },
@@ -1145,6 +1147,7 @@ lorebooksData["eastmarch"] = {
 		{ 0.250, 0.625, 13, 10, 1 },		--Tamrielic Artifacts, Part Three
 		{ 0.306, 0.63, 13, 10, 1 },
 		{ 0.248, 0.5955, 13, 10, 1 },
+		{ 0.2743, 0.6563, 13, 10, 1 },
 		--Poetry and Song
 		{ 0.433, 0.503, 18, 1 },		--The Battle of Glenumbria Moors
 		{ 0.262, 0.555, 18, 1 },
@@ -1566,6 +1569,7 @@ lorebooksData["greenshade"] = {
 		{ 0.384, 0.565, 27, 7 },		--The Eldest: A Pilgrim's Tale
 		{ 0.359, 0.460, 27, 7 },
 		{ 0.413, 0.460, 27, 7 },
+		{ 0.3998, 0.5087, 27, 7 },
 		{ 0.251, 0.383, 27, 8 },		--The Green Pact and the Dominion
 		{ 0.228, 0.298, 27, 8 },
 		{ 0.313, 0.381, 27, 8 },
@@ -2794,10 +2798,10 @@ lorebooksData["therift"] = {
 		{ 0.719, 0.559, 14, 8 },
 		{ 0.6881, 0.5498, 14, 8 },
 		{ 0.6913, 0.5835, 14, 8 },
-		{ 0.082, 0.237, 14, 9 },		--Crow and Raven: Three Short Fables
-		{ 0.083, 0.273, 14, 9 },
+		{ 0.083, 0.273, 14, 9 },		--Crow and Raven: Three Short Fables
 		{ 0.120, 0.322, 14, 9 },
 		{ 0.092, 0.296, 14, 9 },
+		{ 0.1246, 0.3622, 14, 9 },
 		{ 0.317, 0.423, 14, 10 },		--Wabbajack
 		{ 0.371, 0.388, 14, 10 },
 		{ 0.3324, 0.4349, 14, 10 },
@@ -2956,6 +2960,7 @@ lorebooksData["vvardenfell"] = {
 		{ 0.5970, 0.7596, 8, 5 },
 		{ 0.2896, 0.2204, 10, 10 },		--Vivec and Mephala
 		{ 0.7795, 0.6233, 10, 10 },
+		{ 0.4412, 0.7472, 10, 10 },
 		{ 0.8780, 0.7064, 11, 6 },			--The Art of Kwama Egg Cooking
 		{ 0.7412, 0.8345, 11, 6 },
 		{ 0.2427, 0.2308, 11, 6 },

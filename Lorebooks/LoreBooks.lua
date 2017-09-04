@@ -33,7 +33,7 @@ local Postmail = {}
 --Local constants -------------------------------------------------------------
 local ADDON_NAME = "LoreBooks"
 local ADDON_AUTHOR = "Ayantir & Garkin"
-local ADDON_VERSION = "8.10"
+local ADDON_VERSION = "8.11"
 local ADDON_WEBSITE = "http://www.esoui.com/downloads/info288-LoreBooks.html"
 local PINS_UNKNOWN = "LBooksMapPin_unknown"
 local PINS_COLLECTED = "LBooksMapPin_collected"
@@ -98,7 +98,7 @@ local booksManager = {}
 local LOREBOOKS_CUSTOMREPORT
 
 local LOREBOOKS_HELP = ZO_HelpScreenTemplate_Keyboard:Subclass()
-local THREESHOLD_EIDETIC = 3000 -- If you are a MacOSX user and crash at startup, you may raise this value.
+local THREESHOLD_EIDETIC = 3200 -- If you are a MacOSX user and crash at startup, you may raise this value.
 
 --prints message to chat
 local function MyPrint(...)
@@ -853,10 +853,10 @@ function BuildDataToShare(bookId)
 		-- mapType of the subzone. Needed when we are elsewhere than zone or subzone.
 		local mapContentType = GetMapContentType()
 		
-		local xGPS, yGPS, zoneGPS = GPS:LocalToGlobal(GetMapPlayerPosition("player"))
+		local xGPS, yGPS, mapIndexGPS = GPS:LocalToGlobal(GetMapPlayerPosition("player"))
 		
-		if not zoneGPS then
-			zoneGPS = 0
+		if not mapIndexGPS then
+			mapIndexGPS = 0
 		end
 		
 		local locX = zo_round(xGPS*100000) -- 5 decimals because of Cyrodiil map
@@ -875,7 +875,7 @@ function BuildDataToShare(bookId)
 		-- v11	= 5.4		BOOK_DATA_UPDATE	= categoryIndex, collectionIndex, bookIndex, mediumIndex, bookId
 		-- v12	= 5.4		BOOK_DATA_UPDATE	= locX, locY, zoneId, mapContentType, mapIndex, isObject, langCode, LorebooksVersion, ESOVersion, interactionType, associatedQuest
 		-- v13	= 6		BOOK_DATA_UPDATE	= bookId
-		dataToShare = UnsignedBase62(locX) .. ";" .. UnsignedBase62(locY) .. ";" .. UnsignedBase62(zoneId) .. ";" .. UnsignedBase62(mapContentType) .. ";" .. UnsignedBase62(zoneGPS)
+		dataToShare = UnsignedBase62(locX) .. ";" .. UnsignedBase62(locY) .. ";" .. UnsignedBase62(zoneId) .. ";" .. UnsignedBase62(mapContentType) .. ";" .. UnsignedBase62(mapIndexGPS)
 		
 		local isObject = IsPlayerInteractingWithObject()
 		if isObject then
@@ -916,7 +916,7 @@ function BuildDataToShare(bookId)
 			local bookData = LoreBooks_GetNewEideticData(categoryIndex, collectionIndex, bookIndex)
 			
 			if bookData and bookData.c and bookData.e then
-				if not isObject and (not bookData.r or (bookData.r and bookData.m[zoneGPS])) then
+				if not isObject and (not bookData.r or (bookData.r and bookData.m[mapIndexGPS])) then
 					return -- Found a random book and this book is already tagged as random for the same map or got a static position
 				else
 					for _, data in ipairs(bookData.e) do
