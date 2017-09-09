@@ -33,7 +33,7 @@ local Postmail = {}
 --Local constants -------------------------------------------------------------
 local ADDON_NAME = "LoreBooks"
 local ADDON_AUTHOR = "Ayantir & Garkin"
-local ADDON_VERSION = "8.11"
+local ADDON_VERSION = "8.12"
 local ADDON_WEBSITE = "http://www.esoui.com/downloads/info288-LoreBooks.html"
 local PINS_UNKNOWN = "LBooksMapPin_unknown"
 local PINS_COLLECTED = "LBooksMapPin_collected"
@@ -47,13 +47,14 @@ local MISSING_TEXTURE = "/esoui/art/icons/icon_missing.dds"
 local PLACEHOLDER_TEXTURE = "/esoui/art/icons/lore_book4_detail1_color2.dds"
 local SUPPORTED_API = 100020
 local MAX_BOOKS_IN_LIBRARY = 3478
---local EIDETIC_BOOKS = MAX_BOOKS_IN_LIBRARY - 297 - 513 -- 297 = Shalidor / 35*14 + 23 = Craft
+local EIDETIC_BOOKS = 2668 -- MAX_BOOKS_IN_LIBRARY - 297 - 513 -- 297 = Shalidor / 35*14 + 23 = Craft
 
 --Local variables -------------------------------------------------------------
 local lang = GetCVar("Language.2")
 local updatePins = {}
 local loreBoooksLibrary = {}
 local totalCurrentlyCollected = 0
+local eideticCurrentlyCollected = 0
 local updating = false
 local mapIsShowing
 local missingBooks
@@ -98,7 +99,7 @@ local booksManager = {}
 local LOREBOOKS_CUSTOMREPORT
 
 local LOREBOOKS_HELP = ZO_HelpScreenTemplate_Keyboard:Subclass()
-local THREESHOLD_EIDETIC = 3200 -- If you are a MacOSX user and crash at startup, you may raise this value.
+local THREESHOLD_EIDETIC = 250 -- If you are a MacOSX user and crash at startup, you may lower this value.
 
 --prints message to chat
 local function MyPrint(...)
@@ -789,6 +790,9 @@ local function BuildLorebooksLoreLibrary()
 					LORE_LIBRARY.reverseReference[categoryIndex][collectionIndex][bookIndex] = { bookName = bookName, bookId = bookId }
 					
 					if known then
+						if categoryIndex == 3 then
+							eideticCurrentlyCollected = eideticCurrentlyCollected + 1
+						end
 						totalCurrentlyCollected = totalCurrentlyCollected + 1
 					end
 					
@@ -842,6 +846,14 @@ function BuildDataToShare(bookId)
 			CALLBACK_MANAGER:FireCallbacks("OnWorldMapChanged")
 		end
 		
+		local dontDatamine = {
+			--[4575] = true, 
+		}
+		
+		if dontDatamine[bookId] then
+			return
+		end
+		
 		if GetCurrentZoneHouseId() ~= 0 then
 			return -- You can now read books in houses
 		end
@@ -854,6 +866,10 @@ function BuildDataToShare(bookId)
 		local mapContentType = GetMapContentType()
 		
 		local xGPS, yGPS, mapIndexGPS = GPS:LocalToGlobal(GetMapPlayerPosition("player"))
+		
+		if mapIndexGPS == 1 and zoneId == 0 then
+			return
+		end
 		
 		if not mapIndexGPS then
 			mapIndexGPS = 0
@@ -882,6 +898,7 @@ function BuildDataToShare(bookId)
 			dataToShare = dataToShare ..";" -- means 0
 		else
 			dataToShare = dataToShare ..";1"
+			return -- Bookshelve & others
 		end
 		
 		local clang
@@ -923,7 +940,7 @@ function BuildDataToShare(bookId)
 						if data.r == false then
 							if interactionType == INTERACTION_NONE then
 								return -- User read book from inventory but we already found pin from a static position
-							elseif data.z == zoneId and CoordsNearby(xGPS, yGPS, data.x, data.y) then
+							elseif CoordsNearby(xGPS, yGPS, data.x, data.y) then
 								return -- Pin already found
 							end
 						end
@@ -1494,7 +1511,7 @@ local function BuildEideticReportPerMap(lastObject)
 	
 	eideticHeaderText:SetAnchor(TOPLEFT, LoreBooksReportContainerScrollChild, TOPLEFT, 4, lastObject)
 	
-	if totalCurrentlyCollected >= THREESHOLD_EIDETIC then
+	if EIDETIC_BOOKS - eideticCurrentlyCollected <= THREESHOLD_EIDETIC then
 		
 		eideticHeaderText:SetText(GetString(LBOOKS_RE_FEW_BOOKS_MISSING))
 		copyReport = copyReport .. "\n\n" .. GetString(LBOOKS_RE_FEW_BOOKS_MISSING)
@@ -1582,7 +1599,7 @@ local function BuildEideticReportPerCollection(lastObject)
 	
 	eideticHeaderText:SetAnchor(TOPLEFT, LoreBooksReportContainerScrollChild, TOPLEFT, 4, lastObject)
 	
-	if totalCurrentlyCollected >= THREESHOLD_EIDETIC then
+	if EIDETIC_BOOKS - eideticCurrentlyCollected <= THREESHOLD_EIDETIC then
 		
 		eideticHeaderText:SetText(GetString(LBOOKS_RE_FEW_BOOKS_MISSING))
 		copyReport = copyReport .. "\n\n" .. GetString(LBOOKS_RE_FEW_BOOKS_MISSING)
@@ -2198,7 +2215,7 @@ local function InitializePins()
 	LMP:AddPinFilter(PINS_COLLECTED, GetString(LBOOKS_FILTER_COLLECTED), nil, db.filters)
 	LMP:AddPinFilter(PINS_EIDETIC, GetLoreCategoryInfo(3), nil, db.filters)
 	
-	if totalCurrentlyCollected >= THREESHOLD_EIDETIC then
+	if f EIDETIC_BOOKS - eideticCurrentlyCollected <= THREESHOLD_EIDETIC then then
 		LMP:AddPinType(PINS_EIDETIC_COLLECTED, MapCallback_eideticCollected, nil, mapPinLayout_eideticCollected, pinTooltipCreatorEidetic)
 		LMP:AddPinFilter(PINS_EIDETIC_COLLECTED, zo_strformat(LBOOKS_FILTER_EICOLLECTED, GetLoreCategoryInfo(3)), nil, db.filters)
 		
@@ -2275,7 +2292,11 @@ local function OnBookLearned(_, categoryIndex)
 	totalCurrentlyCollected = totalCurrentlyCollected + 1
 	
 	if categoryIndex ~= 2 then
-
+		
+		if categoryIndex == 3 then
+			eideticCurrentlyCollected = eideticCurrentlyCollected + 1
+		end
+		
 		--Refresh map if needed and get player position
 		if SetMapToPlayerLocation() == SET_MAP_RESULT_MAP_CHANGED then
 			CALLBACK_MANAGER:FireCallbacks("OnWorldMapChanged")

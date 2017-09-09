@@ -543,6 +543,7 @@ lorebooksData["coldharbor"] = {
 		{ 0.285, 0.598, 29, 1 },		--Exegesis of Merid-Nunda
 		{ 0.378, 0.639, 29, 1 },
 		{ 0.3259, 0.5192, 29, 1 },
+		{ 0.3971, 0.5496, 29, 1 },
 		{ 0.328, 0.643, 29, 2 },		--The Whithering of Delodiil
 		{ 0.215, 0.612, 29, 2 },
 		{ 0.261, 0.697, 29, 2 },
@@ -554,6 +555,7 @@ lorebooksData["coldharbor"] = {
 		{ 0.513, 0.690, 29, 4, 1 },		--I was Summoned by a Mortal
 		{ 0.470, 0.693, 29, 4, 1 },
 		{ 0.534, 0.657, 29, 4, 1 },
+		{ 0.4899, 0.6550, 29, 4, 1 },
 		{ 0.607, 0.717, 29, 5 },		--A Life of Strife and Struggle
 		{ 0.573, 0.758, 29, 5 },
 		{ 0.582, 0.692, 29, 5 },
@@ -569,12 +571,14 @@ lorebooksData["coldharbor"] = {
 		{ 0.639, 0.462, 29, 8 },		--The Library of Dusk: Rare Books
 		{ 0.592, 0.407, 29, 8 },
 		{ 0.608, 0.451, 29, 8 },
+		{ 0.6228, 0.4399, 29, 8 },
 		{ 0.447, 0.416, 29, 9 },		--Oath of a Dishonored Clan
 		{ 0.470, 0.390, 29, 9 },
 		{ 0.539, 0.385, 29, 9 },
 		{ 0.54, 0.39, 29, 9 },
 		{ 0.454, 0.510, 29, 10 },		--Protocols of the Court of Contempt
 		{ 0.569, 0.507, 29, 10 },
+		{ 0.4482, 0.4566, 29, 10 },
 		--Dungeon Lore
 		{ 0.579, 0.484, 11, 16, 11 },		--To All Who Pass Through
 	},
@@ -602,6 +606,7 @@ lorebooksData["cyrodiil"] = {
 		{ 0.768, 0.5393, 8, 7 },		--Opusculus Lamae Bal ta Mezzamortie
 		{ 0.6783, 0.5081, 8, 8 },		--The Totems of Hircine
 		--Biographies
+		{ 0.4850, 0.5748, 9, 1 },		--Galerion the Mystic
 		{ 0.338, 0.285, 9, 2 },			--Great Harbingers of the Companions
 		{ 0.422, 0.147, 9, 4, 2 },		--Jorunn the Skald-King
 		{ 0.220, 0.244, 9, 5 },			--Triumphs of a Monarch, Ch. 3
@@ -684,6 +689,7 @@ lorebooksData["cyrodiil"] = {
 		{ 0.720, 0.425, 15, 9 },		--Wayshrines of Tamriel		
 		{ 0.249, 0.550, 15, 10 },		--Proposal: Schools of Magic
 		--Myths of the Mundus
+		{ 0.2655, 0.6676, 16, 1 },		--Before the Ages of Man: Dawn Era
 		{ 0.3924, 0.2087, 16, 2 },		--Before the Ages of Man: Merethic Era
 		{ 0.3659, 0.7413, 16, 4 },		--Noxiphilic Sanguivoria
 		{ 0.720, 0.583, 16, 5 },		--A Werewolf's Confession
@@ -715,6 +721,7 @@ lorebooksData["cyrodiil"] = {
 		{ 0.525, 0.288, 18, 9 },		--The Warrior's Charge { 0.3183 0.7104, 18, 9 },		--The Warrior's Charge
 		{ 0.630, 0.692, 18, 10 },		--Words of the Wind
 		--Tamriel History
+		{ 0.3152, 0.5869, 19, 1 },		--Ayleid Inscriptions Translated
 		{ 0.537, 0.809, 19, 2 },		--Frontier, Conquest
 		{ 0.765, 0.386, 19, 5 },		--Origin of the Mages Guild
 		{ 0.389, 0.404, 19, 6 },		--Eulogy for Emperor Varen	
@@ -1715,6 +1722,7 @@ lorebooksData["malabaltor"] = {
 		{ 0.200, 0.466, 21, 2 },		--The Woodsmer
 		{ 0.208, 0.535, 21, 2 },
 		{ 0.2025, 0.4773, 21, 2 },
+		{ 0.1482, 0.5434, 21, 2 },
 		{ 0.783, 0.524, 21, 3 },		--Green Lady, My Lady
 		{ 0.828, 0.493, 21, 3 },
 		{ 0.804, 0.3499, 21, 3, 1 },
@@ -1906,6 +1914,7 @@ lorebooksData["reapersmarch"] = {
 		{ 0.79, 0.33, 28, 4, 1 },		--A Looter's Paradise
 		{ 0.778, 0.405, 28, 4, 1 },
 		{ 0.7258, 0.3918, 28, 4, 1 },
+		{ 0.7646, 0.3429, 28, 4, 1 },
 		{ 0.639, 0.286, 28, 5 },		--The Eagle and the Cat
 		{ 0.601, 0.234, 28, 5 },
 		{ 0.590, 0.357, 28, 5 },
@@ -2736,7 +2745,7 @@ lorebooksData["therift"] = {
 		{ 0.433, 0.478, 24, 5 },
 		{ 0.512, 0.550, 24, 6 },		--The Road to Sovngarde
 		{ 0.510, 0.601, 24, 6 },
-		{ 0.476, 0.603, 24, 6 },
+		{ 0.4792, 0.6019, 24, 6 },
 		{ 0.475, 0.557, 24, 6 },
 		{ 0.183, 0.407, 24, 7 },		--Songs of the Return, Volume 5
 		{ 0.197, 0.421, 24, 7 },
