@@ -33,7 +33,7 @@ local Postmail = {}
 --Local constants -------------------------------------------------------------
 local ADDON_NAME = "LoreBooks"
 local ADDON_AUTHOR = "Ayantir & Garkin"
-local ADDON_VERSION = "8.12"
+local ADDON_VERSION = "8.13"
 local ADDON_WEBSITE = "http://www.esoui.com/downloads/info288-LoreBooks.html"
 local PINS_UNKNOWN = "LBooksMapPin_unknown"
 local PINS_COLLECTED = "LBooksMapPin_collected"
@@ -2215,7 +2215,7 @@ local function InitializePins()
 	LMP:AddPinFilter(PINS_COLLECTED, GetString(LBOOKS_FILTER_COLLECTED), nil, db.filters)
 	LMP:AddPinFilter(PINS_EIDETIC, GetLoreCategoryInfo(3), nil, db.filters)
 	
-	if f EIDETIC_BOOKS - eideticCurrentlyCollected <= THREESHOLD_EIDETIC then then
+	if EIDETIC_BOOKS - eideticCurrentlyCollected <= THREESHOLD_EIDETIC then
 		LMP:AddPinType(PINS_EIDETIC_COLLECTED, MapCallback_eideticCollected, nil, mapPinLayout_eideticCollected, pinTooltipCreatorEidetic)
 		LMP:AddPinFilter(PINS_EIDETIC_COLLECTED, zo_strformat(LBOOKS_FILTER_EICOLLECTED, GetLoreCategoryInfo(3)), nil, db.filters)
 		
