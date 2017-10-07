@@ -132,7 +132,7 @@ SafeAddString(LBOOKS_QUEST_LABEL						, "Questname:", 1)
 
 SafeAddString(LBOOKS_RS_NOT_HERE_ANYMORE			, "Das Buch ist nicht länger hier", 1)
 SafeAddString(LBOOKS_RS_NOT_HERE_ANYMORE_DESC	, "Mit der Zeit werden einige Bücher verschoben. Ich bin mir absolut sicher das Buch ist nicht mehr hier (Hab einige Minuten gesucht, Treppe rauf, Treppe runter, vielleicht eine kleine Grotte)", 1)
-SafeAddString(LBOOKS_RS_NOT_HERE_ANYMORE_ERR		, "Dieses Buch wurde kürzlich schon gefunden (One Tamriel). Suche noch ein bisschen besser.", 1)
+SafeAddString(LBOOKS_RS_NOT_HERE_ANYMORE_ERR		, "Dieses Buch wurde kürzlich schon gefunden (Horns of the Reach). Suche noch ein bisschen besser.", 1)
 
 SafeAddString(LBOOKS_RS_BELONG_QUEST				, "Buch gehört zu einer Quest", 1)
 SafeAddString(LBOOKS_RS_BELONG_QUEST_DESC			, "Dieses Buch ist nur vor/während/nach einer Quest verfügbar.", 1)

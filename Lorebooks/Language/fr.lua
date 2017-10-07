@@ -132,10 +132,10 @@ SafeAddString(LBOOKS_QUEST_LABEL					, "Nom de la quête:", 1)
 
 SafeAddString(LBOOKS_RS_NOT_HERE_ANYMORE		, "Le livre n'est plus là", 1)
 SafeAddString(LBOOKS_RS_NOT_HERE_ANYMORE_DESC, "Avec le temps, certains livres sont déplacés. Je suis absolument certain que ce livre n'est plus à cet endroit (J'ai cherché quelques minutes, à l'étage, plus bas, peut être une petite grotte)", 1)
-SafeAddString(LBOOKS_RS_NOT_HERE_ANYMORE_ERR, "Ce livre a été trouvé récemment (OneTamriel). Veuillez chercher un peu mieux.", 1)
+SafeAddString(LBOOKS_RS_NOT_HERE_ANYMORE_ERR	, "Ce livre a été trouvé récemment (Horns of the Reach). Veuillez chercher un peu mieux.", 1)
 
-SafeAddString(LBOOKS_RE_ELIGIBLE					, "Ce livre a été répertorié dans la Mémoire Eidétique de One Tamriel à cet emplacement précis. Vous pouvez le signaler", 1)
-SafeAddString(LBOOKS_RE_NOT_ELIGIBLE			, "Ce livre na pas encore été répertorié dans la Mémoire Eidétique de One Tamriel à cet emplacement précis. Vous ne pouvez pas le signaler. Si vous ne trouvez pas le livre, veuillez vous assurer d'avoir la quête correspondante. Le livre peut également avoir été déplacé ailleurs.", 1)
+SafeAddString(LBOOKS_RE_ELIGIBLE					, "Ce livre a été répertorié dans la Mémoire Eidétique de Horns of the Reach (Sept 2017) à cet emplacement précis. Vous pouvez le signaler", 1)
+SafeAddString(LBOOKS_RE_NOT_ELIGIBLE			, "Ce livre na pas encore été répertorié dans la Mémoire Eidétique de Horns of the Reach (Sept 2017) à cet emplacement précis. Vous ne pouvez pas le signaler. Si vous ne trouvez pas le livre, veuillez vous assurer d'avoir la quête correspondante. Le livre peut également avoir été déplacé ailleurs.", 1)
 
 SafeAddString(LBOOKS_RS_BELONG_QUEST			, "Le livre appartient à une quête", 1)
 SafeAddString(LBOOKS_RS_BELONG_QUEST_DESC		, "Le livre est seulement disponible avant/pendant/après une quête.", 1)
@@ -149,7 +149,7 @@ SafeAddString(LBOOKS_REPORT_THANK_YOU			, "Merci", 1)
 SafeAddString(LBOOKS_REPORT_THANK_YOU_SEC		, "Votre modification sera vérifiée et ajoutée dans la prochaine version", 1)
 
 -- Immersive Mode
-SafeAddString(LBOOKS_IMMERSIVE						, "Activer le mode immersif basé sur", 1)
+SafeAddString(LBOOKS_IMMERSIVE					, "Activer le mode immersif basé sur", 1)
 SafeAddString(LBOOKS_IMMERSIVE_DESC				, "Les livres inconnus ne seront pas affichés suivant la réalisation de l'objectif suivant", 1)
 
 SafeAddString(LBOOKS_IMMERSIVE_CHOICE1			, "Désactivé", 1)

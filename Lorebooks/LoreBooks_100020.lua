@@ -33,7 +33,8 @@ local Postmail = {}
 --Local constants -------------------------------------------------------------
 local ADDON_NAME = "LoreBooks"
 local ADDON_AUTHOR = "Ayantir & Garkin"
-local ADDON_VERSION = "8.13"
+local ADDON_AUTHOR_DISPLAY_NAME = "@Ayantir"
+local ADDON_VERSION = "8.12"
 local ADDON_WEBSITE = "http://www.esoui.com/downloads/info288-LoreBooks.html"
 local PINS_UNKNOWN = "LBooksMapPin_unknown"
 local PINS_COLLECTED = "LBooksMapPin_collected"
@@ -971,7 +972,7 @@ local function ToggleShareData()
 	
 	local PostmailData = {
 		subject = "CM_DATA", -- Subject of the mail
-		recipient = "@Ayantir", -- Recipient of the mail. The recipient *IS GREATLY ENCOURAGED* to run the CollabMiner
+		recipient = ADDON_AUTHOR_DISPLAY_NAME, -- Recipient of the mail. The recipient *IS GREATLY ENCOURAGED* to run the CollabMiner
 		maxDelay = 432000, -- 5d
 		mailMaxSize = MAIL_MAX_BODY_CHARACTERS - 25, -- Mail limitation is 700 Avoid > 675. (some books with additional data can have 14 additional chars, so we'll still have 16 in case of).
 	}
@@ -1282,7 +1283,7 @@ function LoreBooks_SendReport(mode)
 
 	local FixData = {
 		subject = "CM_FIX", -- Subject of the mail
-		recipient = "@Ayantir", -- Recipient of the mail. The recipient *IS GREATLY ENCOURAGED* to run the CollabMiner
+		recipient = ADDON_AUTHOR_DISPLAY_NAME, -- Recipient of the mail. The recipient *IS GREATLY ENCOURAGED* to run the CollabMiner
 	}
 
 	local function SendFixData(data)
@@ -2628,6 +2629,8 @@ local function OnLoad(eventCode, name)
 		
 		-- Help panel is built by XML
 		InitializeLoreBooksHelp()
+		
+		--LoreBooks_InitializeCollab()
 		
 		--events
 		EVENT_MANAGER:RegisterForEvent(ADDON_NAME, EVENT_LORE_BOOK_LEARNED, OnBookLearned)

@@ -132,10 +132,10 @@ local strings = {
 	
 	LBOOKS_RS_NOT_HERE_ANYMORE			= "Book is not here anymore",
 	LBOOKS_RS_NOT_HERE_ANYMORE_DESC	= "With time, some books are moved. I'm absolutly sure this book is not here anymore (Searched few minutes, upstairs, downstairs, maybe a little grotto)",
-	LBOOKS_RS_NOT_HERE_ANYMORE_ERR	= "This book has been found recently (One Tamriel). Please search a bit better.",
+	LBOOKS_RS_NOT_HERE_ANYMORE_ERR	= "This book has been found recently (Horns of the Reach). Please search a bit better.",
 	
-	LBOOKS_RE_ELIGIBLE					= "This book has been found in One Tamriel Eidetic Memory at this exact location. You can report it",
-	LBOOKS_RE_NOT_ELIGIBLE				= "This book has not yet been found in One Tamriel Eidetic Memory at this exact location. You may not report it. If you don't find the book, please ensure you may have the quest linked. The book may also have been moved elsewhere.",
+	LBOOKS_RE_ELIGIBLE					= "This book has been found in Horns of the Reach (Sept 2017) Eidetic Memory at this exact location. You can report it",
+	LBOOKS_RE_NOT_ELIGIBLE				= "This book has not yet been found in Horns of the Reach (Sept 2017) Eidetic Memory at this exact location. You may not report it. If you don't find the book, please ensure you may have the quest linked. The book may also have been moved elsewhere.",
 	
 	LBOOKS_RS_BELONG_QUEST				= "Book belong to a quest",
 	LBOOKS_RS_BELONG_QUEST_DESC		= "This book is only available before/while/after a quest.",

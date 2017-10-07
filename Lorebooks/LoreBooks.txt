@@ -1,9 +1,9 @@
 ## Title: |cEFEBBELoreBooks|r
 ## Description: Displays map pins for Shalidor's and Eidetic Libraries books
-## Version: 8.13
+## Version: 9
 ## Author: Ayantir & Garkin
-## APIVersion: 100020
-## SavedVariables: LBooks_SavedVariables
+## APIVersion: 100020 100021
+## SavedVariables: LBooks_SavedVariables COLLAB DATAMINED_DATA
 ## OptionalDependsOn: LibAddonMenu-2.0 LibMapPins-1.0 CustomCompassPins
 
 Libs/LibStub/LibStub.lua
@@ -31,10 +31,14 @@ Libs/CustomCompassPins/CustomCompassPins.lua
 Language/strings.lua
 Language/$(language).lua
 
-LoreBooksData.lua
-EideticData.lua
+LoreBooksData_$(APIVersion).lua
+EideticData_$(APIVersion).lua
 
-LoreBooks.lua
+LoreBooks_$(APIVersion).lua
+
+CollabMiner_$(APIVersion).lua
+QuestsData_$(APIVersion).lua
+
 LoreBooks.xml
 
 ; This Add-on is not created by, affiliated with or sponsored by ZeniMax

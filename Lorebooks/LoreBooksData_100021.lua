@@ -718,7 +718,8 @@ lorebooksData["cyrodiil"] = {
 		{ 0.508, 0.822, 18, 6 },		--Ode to the Tundrastriders	
 		{ 0.719, 0.390, 18, 7 },		--Proper-Life: Three Chants
 		{ 0.177, 0.273, 18, 8 },		--Song of the Askelde Men
-		{ 0.525, 0.288, 18, 9 },		--The Warrior's Charge { 0.3183 0.7104, 18, 9 },		--The Warrior's Charge
+		{ 0.525, 0.288, 18, 9 },		--The Warrior's Charge -- ZOS BUG book have 2 spots
+		{ 0.3183, 0.7104, 18, 9 },		--The Warrior's Charge -- ZOS BUG book have 2 spots
 		{ 0.630, 0.692, 18, 10 },		--Words of the Wind
 		--Tamriel History
 		{ 0.3152, 0.5869, 19, 1 },		--Ayleid Inscriptions Translated
@@ -3251,6 +3252,9 @@ lorebooksCorrespondance["darkbrotherhood"] = {
 lorebooksCorrespondance["vvardenfell"] = {
 	["vvardenfell_base"] = 30,
 }
+lorebooksCorrespondance["clockwork"] = {
+	["clockwork_base"] = 31,
+}
 lorebooksCorrespondance["guildmaps"] = {
 	["abagarlas_base"] = 000,
 	["mzendeldt_base"] = 000,
@@ -3283,6 +3287,7 @@ local mapIndexCorrespondance = {
 	[28] = { ["thievesguild"] = "hewsbane_base" },
 	[29] = { ["darkbrotherhood"] = "goldcoast_base" },
 	[30] = { ["vvardenfell"] = "vvardenfell_base" },
+	[31] = { ["clockwork"] = "clockwork_base" },
 }
 
 local lorebooksExplorationIDs = {
@@ -3314,6 +3319,7 @@ local lorebooksExplorationIDs = {
 	[28] = 1359,
 	[29] = 1428,
 	[30] = 1866,
+	[31] = 2018,
 }
 
 local lorebooksMainQuestIDs = {
@@ -3345,6 +3351,7 @@ local lorebooksMainQuestIDs = {
 	[28] = 1363,
 	[29] = 1444,
 	[30] = 1852,
+	[31] = 2064,
 }
 
 local lorebooksZoneQuestIDs = {
@@ -3376,6 +3383,7 @@ local lorebooksZoneQuestIDs = {
 	[28] = 1366,
 	[29] = 1433,
 	[30] = 1867,
+	[31] = 2068,
 }
 
 local function AreAllWayshrinesUnlocked()
@@ -3406,6 +3414,15 @@ end
 function LoreBooks_GetLocalData(zone, subzone)
 	if type(zone) == "string" and type(subzone) == "string" and lorebooksData[zone] and lorebooksData[zone][subzone] then
 		return lorebooksData[zone][subzone]
+	end
+end
+
+function LoreBooks_GetMapIndexMainData(mapIndex)
+	if mapIndexCorrespondance[mapIndex] then
+		local mapName, mapTile = next(mapIndexCorrespondance[mapIndex])
+		if lorebooksData[mapName][mapTile] then
+			return lorebooksData[mapName][mapTile]
+		end
 	end
 end
 
