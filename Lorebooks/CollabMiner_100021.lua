@@ -43,7 +43,7 @@ local MAX_ZONE_ID = 1043 -- Need to be raised at each API bump
 local NUM_MAPS = GetNumMaps()
 
 local function InvalidPoint(x, y)
-	return (x < 0 or x > 1 or y < 0 or y > 1)
+	return x < 0 or x > 1 or y < 0 or y > 1
 end
 
 local function OnMailReadable(_, mailId)

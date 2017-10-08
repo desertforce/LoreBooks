@@ -846,12 +846,12 @@ function BuildDataToShare(bookId)
 		local zoneIndex = GetCurrentMapZoneIndex()
 		local zoneId = GetZoneId(zoneIndex)
 		
-		if zoneId ~= 31 then return end --Clockwork City only
-		
 		-- mapType of the subzone. Needed when we are elsewhere than zone or subzone.
 		local mapContentType = GetMapContentType()
 		
 		local xGPS, yGPS, mapIndexGPS = GPS:LocalToGlobal(GetMapPlayerPosition("player"))
+		
+		if mapIndexGPS ~= 31 then return end --Clockwork City only
 		
 		if mapIndexGPS == 1 and zoneId == 0 then
 			return
