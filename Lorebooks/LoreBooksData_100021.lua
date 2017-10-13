@@ -2997,6 +2997,11 @@ lorebooksData["vvardenfell"] = {
 	},
 }
 
+lorebooksData["clockwork"] = {
+   ["clockwork_base"] = {          -- Clockwork City
+	},
+}
+
 lorebooksData["guildmaps"] = {
 	--Fighters guild maps
 	["abagarlas_base"] = {

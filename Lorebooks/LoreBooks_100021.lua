@@ -34,7 +34,7 @@ local Postmail = {}
 local ADDON_NAME = "LoreBooks"
 local ADDON_AUTHOR = "Ayantir & Garkin"
 local ADDON_AUTHOR_DISPLAY_NAME = "@Ayantir"
-local ADDON_VERSION = "9.2"
+local ADDON_VERSION = "9.3"
 local ADDON_WEBSITE = "http://www.esoui.com/downloads/info288-LoreBooks.html"
 local PINS_UNKNOWN = "LBooksMapPin_unknown"
 local PINS_COLLECTED = "LBooksMapPin_collected"
@@ -965,7 +965,7 @@ local function ToggleShareData()
 	if GetAPIVersion() == SUPPORTED_API and GetWorldName() == "PTS" and (lang == "fr" or lang == "en" or lang == "de") then
 		if db.shareData then
 			ESOVersion = GetESOVersionString():gsub("eso%.rc%.(%d)%.(%d)%.(%d+)%.%d+", "%1%2%3")
-			if ESOVersion == "322" or ESOVersion == "323" then
+			if ESOVersion == "323" or ESOVersion == "324" then
 				EVENT_MANAGER:RegisterForEvent(ADDON_NAME, EVENT_SHOW_BOOK, OnShowBook)
 				local postmailIsConfigured = ConfigureMail(PostmailData)
 				if postmailIsConfigured then
@@ -1061,13 +1061,12 @@ end
 local function OnSearchTextChanged(self)
 	
 	ZO_EditDefaultText_OnTextChanged(self)
+	
 	local search = self:GetText()
 	LORE_LIBRARY.search = search
 	
-	if string.len(search) > 2 or string.len(search) == 0 then
-		LORE_LIBRARY.navigationTree:ClearSelectedNode()
-		LORE_LIBRARY:BuildCategoryList()
-	end
+	LORE_LIBRARY.navigationTree:ClearSelectedNode()
+	LORE_LIBRARY:BuildCategoryList()
 	
 end
 
@@ -1770,7 +1769,7 @@ local function BuildCategoryList(self)
 		
 		local search = string.lower(LORE_LIBRARY.search)
 		for _, collectionData in ipairs(lbcategories[i].lbcollections) do
-			if search and string.len(search) > 2 then
+			if search ~= "" and string.len(search) >= 2 then
 				if IsFoundInLoreLibrary(search, collectionData) then
 					self.navigationTree:AddNode("ZO_LoreLibraryNavigationEntry", collectionData, parent, SOUNDS.LORE_ITEM_SELECTED)
 				end
@@ -1797,6 +1796,37 @@ local function BuildCategoryList(self)
 	KEYBIND_STRIP:UpdateKeybindButtonGroup(self.keybindStripDescriptor)
 	
 	self.dirty = false
+	
+	return true
+	
+end
+
+local function FilterScrollList(self)
+	
+	local BOOK_DATA_TYPE = 1
+	
+	local categoryIndex = self.owner:GetSelectedCategoryIndex()
+	local collectionIndex = self.owner:GetSelectedCollectionIndex()
+
+	local totalBooks = select(4, GetLoreCollectionInfo(categoryIndex, collectionIndex))
+
+	local scrollData = ZO_ScrollList_GetDataList(self.list)
+	ZO_ScrollList_Clear(self.list)
+
+	local search = Sanitize(string.lower(LORE_LIBRARY.search))
+	
+	if search ~= "" and string.len(search) >= 2 then
+		for bookIndex = 1, totalBooks do
+			local bookName = GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex)
+			if string.find(string.lower(bookName), search) then
+				scrollData[#scrollData + 1] = ZO_ScrollList_CreateDataEntry(BOOK_DATA_TYPE, { categoryIndex = categoryIndex, collectionIndex = collectionIndex, bookIndex = bookIndex })
+			end
+		end
+	else
+		for bookIndex = 1, totalBooks do
+			scrollData[#scrollData + 1] = ZO_ScrollList_CreateDataEntry(BOOK_DATA_TYPE, { categoryIndex = categoryIndex, collectionIndex = collectionIndex, bookIndex = bookIndex })
+		end
+	end
 	
 	return true
 	
@@ -2105,6 +2135,7 @@ local function RebuildLoreLibrairy()
 	lorebookResearch.searchBox:SetHandler("OnTextChanged", OnSearchTextChanged)
 	
 	ZO_PreHook(LORE_LIBRARY, "BuildCategoryList", BuildCategoryList)
+	ZO_PreHook(LORE_LIBRARY.list, "FilterScrollList", FilterScrollList)
 	
 	EmulateLibrary()
 	BuildLorebooksLoreLibrary()
@@ -2310,7 +2341,6 @@ local function OnBookLearned(_, categoryIndex)
 	
 end
 
--- Settings menu --------------------------------------------------------------
 local function CreateSettingsMenu()
 	local panelData = {
 		type = "panel",

@@ -502,7 +502,7 @@ function ExtractBookData(index)
 				-- New pin
 				if not bookFound then
 				
-					--d("NewStaticPos: " .. categoryIndex .."/" .. collectionIndex .."/" .. bookIndex .. " [".. GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex) .."]")
+					d("NewStaticPos: " .. categoryIndex .."/" .. collectionIndex .."/" .. bookIndex .. " [".. GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex) .."]")
 					
 					table.insert(DATAMINED_DATA.build[bookId].e, {
 						r = isRandom,
@@ -528,7 +528,7 @@ function ExtractBookData(index)
 		-- New random entry
 		elseif isRandom then
 		
-			--d("NewRandom: " .. categoryIndex .."/" .. collectionIndex .."/" .. bookIndex .. " [".. GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex) .."]")
+			d("NewRandom: " .. categoryIndex .."/" .. collectionIndex .."/" .. bookIndex .. " [".. GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex) .."]")
 		
 			DATAMINED_DATA.build[bookId].e = {}
 			
@@ -555,7 +555,7 @@ function ExtractBookData(index)
 			
 		else
 			
-			--d("NewStatic: " .. categoryIndex .."/" .. collectionIndex .."/" .. bookIndex .. " [".. GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex) .."]")
+			d("NewStatic: " .. categoryIndex .."/" .. collectionIndex .."/" .. bookIndex .. " [".. GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex) .."]")
 			
 			-- New static entry
 			DATAMINED_DATA.build[bookId].e = {}
