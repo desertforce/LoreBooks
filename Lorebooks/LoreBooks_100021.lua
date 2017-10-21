@@ -34,7 +34,7 @@ local Postmail = {}
 local ADDON_NAME = "LoreBooks"
 local ADDON_AUTHOR = "Ayantir & Garkin"
 local ADDON_AUTHOR_DISPLAY_NAME = "@Ayantir"
-local ADDON_VERSION = "9.3"
+local ADDON_VERSION = "9.4"
 local ADDON_WEBSITE = "http://www.esoui.com/downloads/info288-LoreBooks.html"
 local PINS_UNKNOWN = "LBooksMapPin_unknown"
 local PINS_COLLECTED = "LBooksMapPin_collected"
@@ -47,8 +47,8 @@ local PINS_COMPASS_EIDETIC = "LBooksCompassPin_eidetic"
 local MISSING_TEXTURE = "/esoui/art/icons/icon_missing.dds"
 local PLACEHOLDER_TEXTURE = "/esoui/art/icons/lore_book4_detail1_color2.dds"
 local SUPPORTED_API = 100021
-local MAX_BOOKS_IN_LIBRARY = 3619
-local EIDETIC_BOOKS = 2753 -- MAX_BOOKS_IN_LIBRARY - 297 - 569 -- 297 = Shalidor / 39*14 + 23 = Craft
+local MAX_BOOKS_IN_LIBRARY = 3622
+local EIDETIC_BOOKS = 2756 -- MAX_BOOKS_IN_LIBRARY - 297 - 569 -- 297 = Shalidor / 39*14 + 23 = Craft
 
 --Local variables -------------------------------------------------------------
 local lang = GetCVar("Language.2")
@@ -80,8 +80,6 @@ local defaults = {			--default settings for saved variables
 	shareData = true,
 	postmailData = "",
 	postmailFirstInsert = GetTimeStamp(),
-	booksFound = {},
-	nbBooksFound = 0,
 	booksCollected = {},
 	unlockEidetic = false,
 	steps = {},
@@ -95,12 +93,7 @@ local reportShown
 local copyReport
 local ESOVersion
 
-local booksList = ZO_SortFilterList:Subclass()
-local booksManager = {}
-local LOREBOOKS_CUSTOMREPORT
-
-local LOREBOOKS_HELP = ZO_HelpScreenTemplate_Keyboard:Subclass()
-local THREESHOLD_EIDETIC = 250 -- If you are a MacOSX user and crash at startup, you may lower this value.
+local THREESHOLD_EIDETIC = 300 -- If you crash at startup, you may lower this value.
 
 --prints message to chat
 local function MyPrint(...)
@@ -404,8 +397,8 @@ local function CreatePins()
 			local lorebooks = LoreBooks_GetLocalData(zone, subzone)
 			if lorebooks then
 				for _, pinData in ipairs(lorebooks) do	
-					local _, _, known, bookId = GetLoreBookInfo(1, pinData[3], pinData[4])
-					pinData.k = bookId -- for help
+					local _, _, known = GetLoreBookInfo(1, pinData[3], pinData[4])
+					
 					if known and updatePins[PINS_COLLECTED] and LMP:IsEnabled(PINS_COLLECTED) then
 						LMP:CreatePin(PINS_COLLECTED, pinData, pinData[1], pinData[2])
 					elseif not known then
@@ -765,37 +758,21 @@ local function SendData(data)
 
 end
 
---Now only build the Help Lirary and totalCurrentlyCollected. todo: delete. totalCurrentlyCollected should be kept.
 local function BuildLorebooksLoreLibrary()
 
-	LORE_LIBRARY.reverseReference = {}
-	
 	for categoryIndex = 1, GetNumLoreCategories() do
-		
-		LORE_LIBRARY.reverseReference[categoryIndex] = {}
-		local categoryName, numCollections = GetLoreCategoryInfo(categoryIndex)
-		
+		local _, numCollections = GetLoreCategoryInfo(categoryIndex)
 		for collectionIndex = 1, numCollections do
-			
 			local _, _, _, totalBooks, hidden = LoreBooks_GetNewLoreCollectionInfo(categoryIndex, collectionIndex)
-			
 			if not hidden then
-				
-				LORE_LIBRARY.reverseReference[categoryIndex][collectionIndex] = {}
-				
 				for bookIndex = 1, totalBooks do
-					
-					local bookName, _, known, bookId = GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex)
-					
-					LORE_LIBRARY.reverseReference[categoryIndex][collectionIndex][bookIndex] = { bookName = string.lower(bookName), bookId = bookId }
-					
+					local _, _, known = GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex)
 					if known then
 						if categoryIndex == 3 then
 							eideticCurrentlyCollected = eideticCurrentlyCollected + 1
 						end
 						totalCurrentlyCollected = totalCurrentlyCollected + 1
 					end
-					
 				end
 			end
 		end
@@ -850,8 +827,6 @@ function BuildDataToShare(bookId)
 		local mapContentType = GetMapContentType()
 		
 		local xGPS, yGPS, mapIndexGPS = GPS:LocalToGlobal(GetMapPlayerPosition("player"))
-		
-		if mapIndexGPS ~= 31 then return end --Clockwork City only
 		
 		if mapIndexGPS == 1 and zoneId == 0 then
 			return
@@ -916,7 +891,7 @@ function BuildDataToShare(bookId)
 		
 		if EideticValidEntry(categoryIndex) then
 			
-			local bookData = LoreBooks_GetNewEideticData(categoryIndex, collectionIndex, bookIndex)
+			local bookData = LoreBooks_GetNewEideticDataFromBookId(bookId)
 			
 			if bookData and bookData.c and bookData.e then
 				if not isObject and (not bookData.r or (bookData.r and bookData.m[mapIndexGPS])) then
@@ -958,14 +933,14 @@ local function ToggleShareData()
 	local PostmailData = {
 		subject = "CM_DATA", -- Subject of the mail
 		recipient = ADDON_AUTHOR_DISPLAY_NAME, -- Recipient of the mail. The recipient *IS GREATLY ENCOURAGED* to run the CollabMiner
-		maxDelay = 60, -- 1d
+		maxDelay = 10800, -- 3h
 		mailMaxSize = MAIL_MAX_BODY_CHARACTERS - 25, -- Mail limitation is 700 Avoid > 675. (some books with additional data can have 14 additional chars, so we'll still have 16 in case of).
 	}
 	
-	if GetAPIVersion() == SUPPORTED_API and GetWorldName() == "PTS" and (lang == "fr" or lang == "en" or lang == "de") then
+	if GetAPIVersion() == SUPPORTED_API and GetWorldName() == "EU Megaserver" and (lang == "fr" or lang == "en" or lang == "de") then
 		if db.shareData then
-			ESOVersion = GetESOVersionString():gsub("eso%.rc%.(%d)%.(%d)%.(%d+)%.%d+", "%1%2%3")
-			if ESOVersion == "323" or ESOVersion == "324" then
+			ESOVersion = GetESOVersionString():gsub("eso%.live%.(%d)%.(%d)%.(%d+)%.%d+", "%1%2%3")
+			if ESOVersion == "325" and GetDate() == "20171023" then
 				EVENT_MANAGER:RegisterForEvent(ADDON_NAME, EVENT_SHOW_BOOK, OnShowBook)
 				local postmailIsConfigured = ConfigureMail(PostmailData)
 				if postmailIsConfigured then
@@ -994,13 +969,13 @@ local function ShowCongrats(newBook)
 		[3200] = "/esoui/art/icons/achievement_newlifefestival_011.dds",
 		[3300] = "/esoui/art/icons/achievement_newlifefestival_011.dds",
 		[3400] = "/esoui/art/icons/achievement_newlifefestival_011.dds",
-		[MAX_BOOKS_IN_LIBRARY] = "/esoui/art/icons/ability_mage_064.dds", -- Max U15
+		[MAX_BOOKS_IN_LIBRARY] = "/esoui/art/icons/ability_mage_064.dds", -- Max U16
 	}
 	
 	local function CongratsStuff(collected)
 		if not db.booksCollected[collected] then
 			db.booksCollected[collected] = true
-			CENTER_SCREEN_ANNOUNCE:AddMessage(0, CSA_EVENT_COMBINED_TEXT, SOUNDS.LEVEL_UP, GetString("LBOOKS_THANK_YOU", collected), GetString("LBOOKS_THANK_YOU_LONG", collected), congrats[collected], "EsoUI/Art/Achievements/achievements_iconBG.dds")
+			CENTER_SCREEN_ANNOUNCE:AddMessage(0, CSA_CATEGORY_LARGE_TEXT, SOUNDS.LEVEL_UP, GetString("LBOOKS_THANK_YOU", collected), GetString("LBOOKS_THANK_YOU_LONG", collected), congrats[collected], "EsoUI/Art/Achievements/achievements_iconBG.dds", nil, nil, 2000)
 		end
 	end
 	
@@ -1090,277 +1065,6 @@ local function IsFoundInLoreLibrary(search, data)
 	end
 	
 	return false
-
-end
-
-function booksList:New(control)
-	
-	ZO_SortFilterList.InitializeSortFilterList(self, control)
-	
-	local SorterKeys =
-	{
-		bookName = {},
-		categoryIndex = {tiebreaker = "bookName", isNumeric = true},
-		collectionIndex = {tiebreaker = "bookName", isNumeric = true},
-		bookIndex = {tiebreaker = "bookName", isNumeric = true},
-	}
-	
- 	self.masterList = {}
-	
- 	ZO_ScrollList_AddDataType(self.list, 1, "Lorebook_HelpBook_Template", 32, function(control, data) self:SetupEntry(control, data) end)
- 	ZO_ScrollList_EnableHighlight(self.list, "ZO_ThinListHighlight")
-	
-	self.currentSortKey = "bookName"
-	self.currentSortOrder = ZO_SORT_ORDER_UP
- 	self.sortFunction = function(listEntry1, listEntry2) return ZO_TableOrderingFunction(listEntry1.data, listEntry2.data, self.currentSortKey, SorterKeys, self.currentSortOrder) end
-	
-	return self
-	
-end
-
-function booksList:SetupEntry(control, data)
-	
-	control.data = data
-	
-	control.bookName = GetControl(control, "Name")
-	control.icon = GetControl(control, "Icon")
-	control.collection = GetControl(control, "Collection")
-	control.coords = GetControl(control, "Coords")
-	
-	local collectionName = GetLoreCollectionInfo(data.categoryIndex, data.collectionIndex)
-	local bookName, icon, known = GetLoreBookInfo(data.categoryIndex, data.collectionIndex, data.bookIndex)
-	
-	control.bookName:SetText(bookName)
-	
-	control.icon:SetTexture(icon)
-	control.collection:SetText(collectionName)
-	control.coords:SetText(zo_strformat("<<1>>/<<2>>/<<3>>", data.categoryIndex, data.collectionIndex, data.bookIndex))
-
-	ZO_SortFilterList.SetupRow(self, control, data)
-	
-end
-
-function booksList:BuildMasterList()
-	
-	self.masterList = {}
-	
-	for categoryIndex, categoryData in ipairs(LORE_LIBRARY.reverseReference) do
-		for collectionIndex, collectionData in pairs(categoryData) do
-			for bookIndex, bookData in ipairs(collectionData) do
-				table.insert(self.masterList, {categoryIndex = categoryIndex, collectionIndex = collectionIndex, bookIndex = bookIndex, bookName = bookData.bookName})
-			end
-		end
-	end
-	
-end
-
-function booksList:SortScrollList()
-	local scrollData = ZO_ScrollList_GetDataList(self.list)
-	table.sort(scrollData, self.sortFunction)
-end
-
-local function Sanitize(value)
-	return value:gsub("[-*+?^$().[%]%%]", "%%%0") -- escape meta characters
-end
-
-function booksList:FilterScrollList()
-	local scrollData = ZO_ScrollList_GetDataList(self.list)
-	ZO_ClearNumericallyIndexedTable(scrollData)
-
-	local search = Sanitize(string.lower(LOREBOOKS_HELP.search))
-	
-	if search ~= "" then
-		for i = 1, #self.masterList do
-			local data = self.masterList[i]
-			if string.find(data.bookName, search) then
-				table.insert(scrollData, ZO_ScrollList_CreateDataEntry(1, data))
-			end
-		end
-	end
-	
-end
-
-function LoreBooks_RefreshShaliOptions(self, checked)
-	
-	local isChecked = ZO_CheckButton_IsChecked(self)
-	local button = GetControl(LOREBOOKS_HELP.shaliOptions, "SendData")
-	
-	if isChecked then
-		button:SetState(BSTATE_NORMAL)
-	else
-		button:SetState(BSTATE_DISABLED)
-	end
-
-end
-
-function Lorebook_HoverRowOfHelpBook(control)
-	booksList:Row_OnMouseEnter(control)
-end
-
-function Lorebook_ExitRowOfHelpBook(control)
-	booksList:Row_OnMouseExit(control)
-end
-
-function Lorebook_ClickHelpBook(control, button)
-	if button == MOUSE_BUTTON_INDEX_LEFT then
-		--if control.data.categoryIndex == 3 then
-			
-		--end
-	end
-end
-
-function LOREBOOKS_HELP:New(...)
-	return ZO_HelpScreenTemplate_Keyboard.New(self, ...)
-end
-
-local function OnHelpSearchTextChanged(self)
-	
-	ZO_EditDefaultText_OnTextChanged(self)
-	local search = self:GetText()
-	LOREBOOKS_HELP.search = search
-	
-	if string.len(search) >= 5 or string.len(search) == 0 then
-		if string.len(search) == 0 then
-			LOREBOOKS_HELP.reference:SetHidden(true)
-			LOREBOOKS_HELP.shaliOptions:SetHidden(true)
-		end
-		booksManager:RefreshFilters()
-	end
-	
-end
-
-function LOREBOOKS_HELP:Initialize(control)
-	
-	LOREBOOKS_HELP.control = control
-	LOREBOOKS_CUSTOMREPORT = ZO_FadeSceneFragment:New(control)
-	
-	local iconData =
-	{
-		name = ADDON_NAME,
-		categoryFragment = LOREBOOKS_CUSTOMREPORT,
-		up = "EsoUI/Art/Journal/journal_tabIcon_loreLibrary_up.dds",
-		down = "EsoUI/Art/Journal/journal_tabIcon_loreLibrary_down.dds",
-		over = "EsoUI/Art/Journal/journal_tabIcon_loreLibrary_over.dds",
-	}
-	
-	LOREBOOKS_HELP.control:GetNamedChild("Report"):SetText(zo_strformat(GetString(LBOOKS_EIDETIC_REPORT), ADDON_VERSION))
-	
-	LOREBOOKS_HELP.search = ""
-	LOREBOOKS_HELP.reference = control:GetNamedChild("Reference")
-	
-	LOREBOOKS_HELP.book = control:GetNamedChild("BookBox")
-	LOREBOOKS_HELP.book:SetHandler("OnTextChanged", OnHelpSearchTextChanged)
-	
-	LOREBOOKS_HELP.shaliOptions = control:GetNamedChild("ShaliOptions")
-	
-	booksManager = booksList:New(control)
-	booksManager:RefreshData()
-	
-	ZO_HelpScreenTemplate_Keyboard.Initialize(self, control, iconData)
-	
-end
-
-local function InitializeLoreBooksHelp()
-	LOREBOOKS_HELP:New(LoreBooksHelp)
-end
-
-function LoreBooks_SendReport(mode)
-
-	local FixData = {
-		subject = "CM_FIX", -- Subject of the mail
-		recipient = ADDON_AUTHOR_DISPLAY_NAME, -- Recipient of the mail. The recipient *IS GREATLY ENCOURAGED* to run the CollabMiner
-	}
-
-	local function SendFixData(data)
-		if FixData.recipient ~= GetDisplayName() then -- Cannot send to myself
-			RequestOpenMailbox()
-			SendMail(FixData.recipient, FixData.subject, data)
-			CloseMailbox()
-		else -- Directly add to COLLAB
-			d(data)
-		end
-	end
-	
-	local data
-	if mode == 1 then
-		data = string.format("%s;%s;%s;nh=%s", ADDON_VERSION, mode, LOREBOOKS_HELP.reference:GetText(), LOREBOOKS_HELP.shaliOptions:GetNamedChild("NotHereAnymore"):GetState())
-	end
-	
-	if GetAPIVersion() == SUPPORTED_API then
-		SendFixData(data)
-	end
-	
-	SCENE_MANAGER:ShowBaseScene()
-	CENTER_SCREEN_ANNOUNCE:AddMessage(0, CSA_EVENT_COMBINED_TEXT, SOUNDS.QUEST_OBJECTIVE_COMPLETE, GetString(LBOOKS_REPORT_THANK_YOU), GetString(LBOOKS_REPORT_THANK_YOU_SEC))
-	
-end
-
-local function ShowReportForShalidor(collectionIndex, bookIndex, x, y, zone, subzone, mapIndex)
-	
-	local function IsShaliBookRecentlyFound(collectionIndex, bookIndex, x, y, mapIndex)
-		
-		if mapIndex then
-			local bookData = LoreBooks_GetNewEideticData(1, collectionIndex, bookIndex)
-			local gX, gY = GPS:ZoneToGlobal(mapIndex, x, y)
-			if bookData and bookData.e then
-				for entryIndex, entryData in ipairs(bookData.e) do
-					if CoordsNearby(gX, gY, entryData.x, entryData.y) then
-						return true
-					end
-				end
-			end
-		end
-		
-		return false
-		
-	end
-	
-	local reference = string.format("{ %.4f, %.4f, %d, %d } --%s, %s", x, y, collectionIndex, bookIndex, zone, subzone)
-	
-	LOREBOOKS_HELP.reference:SetText(reference)
-	
-	if GetAPIVersion() == SUPPORTED_API then
-		
-		LOREBOOKS_HELP.reference:SetHidden(false)
-		LOREBOOKS_HELP.shaliOptions:SetHidden(false)
-		
-		local bookRecentlyFound = IsShaliBookRecentlyFound(collectionIndex, bookIndex, x, y, mapIndex)
-		
-		local checkbox = GetControl(LOREBOOKS_HELP.shaliOptions, "NotHereAnymore")
-		local explain = GetControl(LOREBOOKS_HELP.shaliOptions, "NotHereAnymoreLongExplain")
-		local button = GetControl(LOREBOOKS_HELP.shaliOptions, "SendData")
-		
-		if bookRecentlyFound then
-			checkbox:SetState(BSTATE_DISABLED)
-			explain:SetText(GetString(LBOOKS_RS_NOT_HERE_ANYMORE_ERR))
-			button:SetState(BSTATE_DISABLED)
-		else
-			checkbox:SetState(BSTATE_NORMAL)
-			explain:SetText(GetString(LBOOKS_RS_NOT_HERE_ANYMORE_DESC))
-		end
-		
-		button:SetState(BSTATE_DISABLED)
-		
-	end
-	
-end
-
-local function ReportBook(bookId, x, y, zone, subzone, mapIndex)
-
-	HELP_CUSTOMER_SUPPORT_KEYBOARD:OpenScreen(LOREBOOKS_CUSTOMREPORT)
-	local categoryIndex, collectionIndex, bookIndex = GetLoreBookIndicesFromBookId(bookId)
-	
-	if categoryIndex then
-	
-		local bookName = GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex)
-		
-		LOREBOOKS_HELP.book:SetText(bookName) -- Trigger OnHelpSearchTextChanged
-		
-		if categoryIndex == 1 then
-			ShowReportForShalidor(collectionIndex, bookIndex, x, y, zone, subzone, mapIndex)
-		end
-		
-	end
 
 end
 
@@ -1801,6 +1505,10 @@ local function BuildCategoryList(self)
 	
 end
 
+local function Sanitize(value)
+	return value:gsub("[-*+?^$().[%]%%]", "%%%0") -- escape meta characters
+end
+
 local function FilterScrollList(self)
 	
 	local BOOK_DATA_TYPE = 1
@@ -2099,20 +1807,20 @@ local function RebuildLoreLibrairy()
 	{
 		{
 			alignment = KEYBIND_STRIP_ALIGN_LEFT,
-			name = "Report",
+			name = GetString(LBOOKS_REPORT_KEYBIND_RPRT),
 			keybind = "UI_SHORTCUT_SECONDARY",
 			callback = ShowLoreLibraryReport,
 		},
 		{
 			alignment = KEYBIND_STRIP_ALIGN_LEFT,
-			name = "Switch Mode",
+			name = GetString(LBOOKS_REPORT_KEYBIND_SWITCH),
 			keybind = "UI_SHORTCUT_QUATERNARY",
 			callback = SwitchLoreLibraryReportMode,
 			visible = IsReportShown,
 		},
 		{
 			alignment = KEYBIND_STRIP_ALIGN_LEFT,
-			name = "Copy",
+			name = GetString(LBOOKS_REPORT_KEYBIND_COPY),
 			keybind = "UI_SHORTCUT_TERTIARY",
 			callback = ShowLoreLibraryCopyReport,
 			visible = IsReportShown,
@@ -2230,10 +1938,10 @@ local function InitializePins()
 	LMP:AddPinFilter(PINS_COLLECTED, GetString(LBOOKS_FILTER_COLLECTED), nil, db.filters)
 	LMP:AddPinFilter(PINS_EIDETIC, GetLoreCategoryInfo(3), nil, db.filters)
 	
+	LMP:AddPinType(PINS_EIDETIC_COLLECTED, MapCallback_eideticCollected, nil, mapPinLayout_eideticCollected, pinTooltipCreatorEidetic)
+	LMP:AddPinFilter(PINS_EIDETIC_COLLECTED, zo_strformat(LBOOKS_FILTER_EICOLLECTED, GetLoreCategoryInfo(3)), nil, db.filters)
+
 	--if EIDETIC_BOOKS - eideticCurrentlyCollected <= THREESHOLD_EIDETIC then
-		LMP:AddPinType(PINS_EIDETIC_COLLECTED, MapCallback_eideticCollected, nil, mapPinLayout_eideticCollected, pinTooltipCreatorEidetic)
-		LMP:AddPinFilter(PINS_EIDETIC_COLLECTED, zo_strformat(LBOOKS_FILTER_EICOLLECTED, GetLoreCategoryInfo(3)), nil, db.filters)
-		
 		--LMP:AddPinType(PINS_MISSING_SHALIDOR, MapCallback_missingShalidor, nil, mapPinLayout_missingShalidor, pinTooltipCreatorMissingShalidor)
 		--LMP:AddPinFilter(PINS_MISSING_SHALIDOR, "missingShalidor", nil, db.filters)
 	--end
@@ -2246,36 +1954,8 @@ local function InitializePins()
 			duplicates = function(pin1, pin2) return (pin1.m_PinTag[3] == pin2.m_PinTag[3] and pin1.m_PinTag[4] == pin2.m_PinTag[4]) end,
 			callback = function(pin) PingMap(MAP_PIN_TYPE_PLAYER_WAYPOINT, MAP_TYPE_LOCATION_CENTERED, pin.normalizedX, pin.normalizedY) end,
 		}
-	},
-	{
-		[1] = {
-			name = function(pin) return zo_strformat(LBOOKS_SET_WAYPOINT, GetLoreBookInfo(1, pin.m_PinTag[3], pin.m_PinTag[4])) end,
-			show = function(pin) return not select(3, GetLoreBookInfo(1, pin.m_PinTag[3], pin.m_PinTag[4])) end,
-			duplicates = function(pin1, pin2) return (pin1.m_PinTag[3] == pin2.m_PinTag[3] and pin1.m_PinTag[4] == pin2.m_PinTag[4]) end,
-			callback = function(pin)
-				if IsPlayerOnCurrentMap() then
-					local zone, subzone = LMP:GetZoneAndSubzone()
-					local mapIndex = GetCurrentMapIndex()
-					ReportBook(pin.m_PinTag.k, pin.m_PinTag[1], pin.m_PinTag[2], zone, subzone, mapIndex)
-				end
-			end,
-		}
 	})
-	LMP:SetClickHandlers(PINS_COLLECTED, nil,
-	{
-		[1] = {
-			name = function(pin) return zo_strformat(LBOOKS_REPORT_BOOK, GetLoreBookInfo(1, pin.m_PinTag[3], pin.m_PinTag[4])) end,
-			show = function(pin) return select(3, GetLoreBookInfo(1, pin.m_PinTag[3], pin.m_PinTag[4])) == true end,
-			duplicates = function(pin1, pin2) return (pin1.m_PinTag[3] == pin2.m_PinTag[3] and pin1.m_PinTag[4] == pin2.m_PinTag[4]) end,
-			callback = function(pin)
-				if IsPlayerOnCurrentMap() then
-					local zone, subzone = LMP:GetZoneAndSubzone()
-					local mapIndex = GetCurrentMapIndex()
-					ReportBook(pin.m_PinTag.k, pin.m_PinTag[1], pin.m_PinTag[2], zone, subzone, mapIndex)
-				end
-			end,
-		}
-	})
+	
 	LMP:SetClickHandlers(PINS_EIDETIC, {
 		[1] = {
 			name = function(pin) return zo_strformat(LBOOKS_SET_WAYPOINT, GetLoreBookInfo(3, pin.m_PinTag.c, pin.m_PinTag.b)) end,
@@ -2608,7 +2288,7 @@ local function CreateSettingsMenu()
 				ToggleShareData()
 				end,
 			default = defaults.shareData,
-			disabled = GetWorldName() ~= "PTS" or not (lang == "fr" or lang == "en" or lang == "de")
+			disabled = GetWorldName() ~= "EU Megaserver" or not (lang == "fr" or lang == "en" or lang == "de")
 		},
 	}
 	LAM:RegisterOptionControls(ADDON_NAME, optionsTable)
@@ -2639,9 +2319,6 @@ local function OnLoad(eventCode, name)
 		ToggleShareData()
 		
 		--BuildUnknownBooksQuest()
-		
-		-- Help panel is built by XML
-		InitializeLoreBooksHelp()
 		
 		LoreBooks_InitializeCollab()
 		

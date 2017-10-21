@@ -65,7 +65,7 @@ local strings = {
    LBOOKS_MOREINFO4              = "Underground",
    LBOOKS_MOREINFO5              = "Group Instance",
 
-   LBOOKS_SET_WAYPOINT           = "Set waypont to |cFFFFFF<<1>>|r",
+   LBOOKS_SET_WAYPOINT           = GetString(SI_WORLD_MAP_ACTION_SET_PLAYER_WAYPOINT) .. " : |cFFFFFF<<1>>|r",
 
    --settings menu header
    LBOOKS_TITLE                  = "LoreBooks",
@@ -116,6 +116,11 @@ local strings = {
 	LBOOKS_RANDOM_POSITION			= "[Bookshelves]",
 	
 	-- Report
+	
+	LBOOKS_REPORT_KEYBIND_RPRT			= "Report",
+	LBOOKS_REPORT_KEYBIND_SWITCH		= "Switch Mode",
+	LBOOKS_REPORT_KEYBIND_COPY			= "Copy",
+	
 	LBOOKS_RS_FEW_BOOKS_MISSING		= "Few books are still missing in the Shalidor Library..",
 	LBOOKS_RS_MDONE_BOOKS_MISSING		= "You maxed Mages Guild Skillline ! But few books are still missing",
 	LBOOKS_RS_GOT_ALL_BOOKS				= "You collected all Shalidor Library. Congratulations !",

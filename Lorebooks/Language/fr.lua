@@ -116,6 +116,11 @@ SafeAddString(LBOOKS_SEARCH_PLACEHOLDER,		"Nom du livre", 1)
 SafeAddString(LBOOKS_RANDOM_POSITION,			"[Étagères]", 1)
 
 -- Report
+
+SafeAddString(LBOOKS_REPORT_KEYBIND_RPRT		, "Rapport", 1)
+SafeAddString(LBOOKS_REPORT_KEYBIND_SWITCH	, "Changer de mode", 1)
+SafeAddString(LBOOKS_REPORT_KEYBIND_COPY		, "Copier", 1)
+
 SafeAddString(LBOOKS_RS_FEW_BOOKS_MISSING		, "Quelques livres sont encore manquants dans la Bibliothèque de Shalidor ..", 1)
 SafeAddString(LBOOKS_RS_MDONE_BOOKS_MISSING	, "Niveau maximum de la Guilde des Mages ! Mais quelques livres sont encore manquants ..", 1)
 SafeAddString(LBOOKS_RS_GOT_ALL_BOOKS			, "Vous avez retrouvé tous les livres de la Bibliothèque de Shalidor. Félicitations !", 1)
