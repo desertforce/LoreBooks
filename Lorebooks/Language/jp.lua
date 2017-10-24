@@ -11,55 +11,55 @@ SafeAddString(LBOOKS_QUEST_IN_ZONE,		"<<1>> のクエスト", 1)
 
 -- Thank You for datamining
 
-SafeAddString(LBOOKS_THANK_YOU1,		"ありがとう", 1)
-SafeAddString(LBOOKS_THANK_YOU_LONG1,		"あなたはこの本の第一発見者です", 1)
+SafeAddString(LBOOKS_THANK_YOU1,					"ありがとう", 1)
+SafeAddString(LBOOKS_THANK_YOU_LONG1,			"あなたはこの本の第一発見者です", 1)
 
-SafeAddString(LBOOKS_THANK_YOU10,		"がんばって！", 1)
-SafeAddString(LBOOKS_THANK_YOU_LONG10,		"私たちは全ての古い本の記録を得るでしょう", 1)
+SafeAddString(LBOOKS_THANK_YOU10,				"がんばって！", 1)
+SafeAddString(LBOOKS_THANK_YOU_LONG10,			"私たちは全ての古い本の記録を得るでしょう", 1)
 
-SafeAddString(LBOOKS_THANK_YOU20,		"司書", 1)
-SafeAddString(LBOOKS_THANK_YOU_LONG20,		"ところで本は読みましたか？ ぜひそうするべきです", 1)
+SafeAddString(LBOOKS_THANK_YOU20,				"司書", 1)
+SafeAddString(LBOOKS_THANK_YOU_LONG20,			"ところで本は読みましたか？ ぜひそうするべきです", 1)
 
-SafeAddString(LBOOKS_THANK_YOU30,		"星霜の書の管理人", 1)
-SafeAddString(LBOOKS_THANK_YOU_LONG30,		"あなたにぴったりの称号かもしれません", 1)
+SafeAddString(LBOOKS_THANK_YOU30,				"星霜の書の管理人", 1)
+SafeAddString(LBOOKS_THANK_YOU_LONG30,			"あなたにぴったりの称号かもしれません", 1)
 
 -- Congratulations for collecting
 
-SafeAddString(LBOOKS_THANK_YOU2000,		"もうなの？", 1)
-SafeAddString(LBOOKS_THANK_YOU_LONG2000,		"タムリエルで2000冊の本を発見しました", 1)
+SafeAddString(LBOOKS_THANK_YOU2500,				"もうなの？", 1)
+SafeAddString(LBOOKS_THANK_YOU_LONG2500,		"タムリエルで2000冊の本を発見しました", 1)
 
-SafeAddString(LBOOKS_THANK_YOU2500,		"さらなる実績", 1)
-SafeAddString(LBOOKS_THANK_YOU_LONG2500,		"本気で2500冊の本を収集したかったのですか", 1)
+SafeAddString(LBOOKS_THANK_YOU3000,				"さらなる実績", 1)
+SafeAddString(LBOOKS_THANK_YOU_LONG3000,		"本気で2500冊の本を収集したかったのですか", 1)
 
-SafeAddString(LBOOKS_THANK_YOU2600,		"全ての本を読む者", 1)
-SafeAddString(LBOOKS_THANK_YOU_LONG2600,		"あなたも1冊書きませんか", 1)
+SafeAddString(LBOOKS_THANK_YOU3100,				"全ての本を読む者", 1)
+SafeAddString(LBOOKS_THANK_YOU_LONG3100,		"あなたも1冊書きませんか", 1)
 
-SafeAddString(LBOOKS_THANK_YOU2700,		"知識の探究者", 1)
-SafeAddString(LBOOKS_THANK_YOU_LONG2700,		"記録的です", 1)
+SafeAddString(LBOOKS_THANK_YOU3200,				"知識の探究者", 1)
+SafeAddString(LBOOKS_THANK_YOU_LONG3200,		"記録的です", 1)
 
-SafeAddString(LBOOKS_THANK_YOU2800,		"英知への道", 1)
-SafeAddString(LBOOKS_THANK_YOU_LONG2800,		"まだ本が残っています。忘れないで", 1)
+SafeAddString(LBOOKS_THANK_YOU3300,				"英知への道", 1)
+SafeAddString(LBOOKS_THANK_YOU_LONG3300,		"まだ本が残っています。忘れないで", 1)
 
-SafeAddString(LBOOKS_THANK_YOU2900,		"目覚めし心", 1)
-SafeAddString(LBOOKS_THANK_YOU_LONG2900,		"楽しむ時間も必要ですよ", 1)
+SafeAddString(LBOOKS_THANK_YOU3350,				"目覚めし心", 1)
+SafeAddString(LBOOKS_THANK_YOU_LONG3350,		"楽しむ時間も必要ですよ", 1)
 
-SafeAddString(LBOOKS_THANK_YOU3000,		"もう少しです", 1)
-SafeAddString(LBOOKS_THANK_YOU_LONG3000,		"偉大な何かを成し遂げるでしょう", 1)
+SafeAddString(LBOOKS_THANK_YOU3400,				"もう少しです", 1)
+SafeAddString(LBOOKS_THANK_YOU_LONG3400,		"偉大な何かを成し遂げるでしょう", 1)
 
-SafeAddString(LBOOKS_THANK_YOU3100,		"もう一息です", 1)
-SafeAddString(LBOOKS_THANK_YOU_LONG3100,		"残りがどこにあるか分かっていますよね", 1)
+SafeAddString(LBOOKS_THANK_YOU3450,				"もう一息です", 1)
+SafeAddString(LBOOKS_THANK_YOU_LONG3450,		"残りがどこにあるか分かっていますよね", 1)
 
-SafeAddString(LBOOKS_THANK_YOU3200,		"もう一息です", 1)
-SafeAddString(LBOOKS_THANK_YOU_LONG3200,		"残りがどこにあるか分かっていますよね", 1)
+SafeAddString(LBOOKS_THANK_YOU3500,				"もう一息です", 1)
+SafeAddString(LBOOKS_THANK_YOU_LONG3500,		"残りがどこにあるか分かっていますよね", 1)
 
-SafeAddString(LBOOKS_THANK_YOU3300,		"もう一息です", 1)
-SafeAddString(LBOOKS_THANK_YOU_LONG3300,		"残りがどこにあるか分かっていますよね", 1)
+SafeAddString(LBOOKS_THANK_YOU3550,				"もう一息です", 1)
+SafeAddString(LBOOKS_THANK_YOU_LONG3550,		"残りがどこにあるか分かっていますよね", 1)
 
-SafeAddString(LBOOKS_THANK_YOU3400,		"もう一息です", 1)
+SafeAddString(LBOOKS_THANK_YOU3600,				"もう一息です", 1)
 SafeAddString(LBOOKS_THANK_YOU_LONG3400,		"残りがどこにあるか分かっていますよね", 1)
 
-SafeAddString(LBOOKS_THANK_YOU3403,		"おめでとう", 1)
-SafeAddString(LBOOKS_THANK_YOU_LONG3403,		"あなたのような人は誰もいません", 1)
+SafeAddString(LBOOKS_THANK_YOU3622,				"おめでとう", 1)
+SafeAddString(LBOOKS_THANK_YOU_LONG3622,		"あなたのような人は誰もいません", 1)
 
 --tooltips
 SafeAddString(LBOOKS_KNOWN,		"収集済", 1)

@@ -21,41 +21,41 @@ SafeAddString(LBOOKS_THANK_YOU_LONG20,			"Hast du per Zufall eines dieser Büche
 SafeAddString(LBOOKS_THANK_YOU30,				"Hüter von Elders Scrolls", 1)
 SafeAddString(LBOOKS_THANK_YOU_LONG30,			"Das könnte doch ein guter Titel für dich sein", 1)
 
-SafeAddString(LBOOKS_THANK_YOU2000,				"Schon ?", 1)
-SafeAddString(LBOOKS_THANK_YOU_LONG2000,		"Du hast 2000 Bücher über Tamriel gefunden", 1)
+SafeAddString(LBOOKS_THANK_YOU2500,				"Schon ?", 1)
+SafeAddString(LBOOKS_THANK_YOU_LONG2500,		"Du hast 2000 Bücher über Tamriel gefunden", 1)
 
-SafeAddString(LBOOKS_THANK_YOU2500,				"Eine weitere Errungenschaft", 1)
-SafeAddString(LBOOKS_THANK_YOU_LONG2500,		"Du wolltest wirklich diese 2500 Bücher sammeln", 1)
+SafeAddString(LBOOKS_THANK_YOU3000,				"Eine weitere Errungenschaft", 1)
+SafeAddString(LBOOKS_THANK_YOU_LONG3000,		"Du wolltest wirklich diese 2500 Bücher sammeln", 1)
 
-SafeAddString(LBOOKS_THANK_YOU2600,				"Alle diese gelesenen Bücher", 1)
-SafeAddString(LBOOKS_THANK_YOU_LONG2600,		"Ziehst du es in Betracht selber eines zu schreiben?", 1)
+SafeAddString(LBOOKS_THANK_YOU3100,				"Alle diese gelesenen Bücher", 1)
+SafeAddString(LBOOKS_THANK_YOU_LONG3100,		"Ziehst du es in Betracht selber eines zu schreiben?", 1)
 
-SafeAddString(LBOOKS_THANK_YOU2700,				"Wissenssucher", 1)
-SafeAddString(LBOOKS_THANK_YOU_LONG2700,		"Du hast richtig Ausdauer", 1)
+SafeAddString(LBOOKS_THANK_YOU3200,				"Wissenssucher", 1)
+SafeAddString(LBOOKS_THANK_YOU_LONG3200,		"Du hast richtig Ausdauer", 1)
 
-SafeAddString(LBOOKS_THANK_YOU2800,				"Pfad der Weisheit", 1)
-SafeAddString(LBOOKS_THANK_YOU_LONG2800,		"Noch ein paar mehr und man wird dich nie vergessen", 1)
+SafeAddString(LBOOKS_THANK_YOU3300,				"Pfad der Weisheit", 1)
+SafeAddString(LBOOKS_THANK_YOU_LONG3300,		"Noch ein paar mehr und man wird dich nie vergessen", 1)
 
-SafeAddString(LBOOKS_THANK_YOU2900,				"Erwachter Geist", 1)
-SafeAddString(LBOOKS_THANK_YOU_LONG2900,		"Nimm dir Zeit zum Geniessen", 1)
+SafeAddString(LBOOKS_THANK_YOU3350,				"Erwachter Geist", 1)
+SafeAddString(LBOOKS_THANK_YOU_LONG3350,		"Nimm dir Zeit zum Geniessen", 1)
 
-SafeAddString(LBOOKS_THANK_YOU3000,				"Nur ein paar mehr", 1)
-SafeAddString(LBOOKS_THANK_YOU_LONG3000,		"Und du wirst etwas Grosses erreichen", 1)
+SafeAddString(LBOOKS_THANK_YOU3400,				"Nur ein paar mehr", 1)
+SafeAddString(LBOOKS_THANK_YOU_LONG3400,		"Und du wirst etwas Grosses erreichen", 1)
 
-SafeAddString(LBOOKS_THANK_YOU3100,				"Ich habe vielleicht noch nicht alle Bücher gefunden", 1)
-SafeAddString(LBOOKS_THANK_YOU_LONG3100,		"Aber es ist definitiv auf meiner Liste", 1)
+SafeAddString(LBOOKS_THANK_YOU3450,				"Ich habe vielleicht noch nicht alle Bücher gefunden", 1)
+SafeAddString(LBOOKS_THANK_YOU_LONG3450,		"Aber es ist definitiv auf meiner Liste", 1)
 
-SafeAddString(LBOOKS_THANK_YOU3200,				"Zu viele Fundstellen", 1)
-SafeAddString(LBOOKS_THANK_YOU_LONG3200,		"Bücherregal ist zu klein!", 1)
+SafeAddString(LBOOKS_THANK_YOU3500,				"Zu viele Fundstellen", 1)
+SafeAddString(LBOOKS_THANK_YOU_LONG3500,		"Bücherregal ist zu klein!", 1)
 
-SafeAddString(LBOOKS_THANK_YOU3300,				"Nur ein paar mehr", 1)
-SafeAddString(LBOOKS_THANK_YOU_LONG3300,		"Und du wirst etwas Grosses erreichen", 1)
+SafeAddString(LBOOKS_THANK_YOU3550,				"Nur ein paar mehr", 1)
+SafeAddString(LBOOKS_THANK_YOU_LONG3550,		"Und du wirst etwas Grosses erreichen", 1)
 
-SafeAddString(LBOOKS_THANK_YOU3400,				"Drei, Zwo, Eins ...", 1)
+SafeAddString(LBOOKS_THANK_YOU3600,				"Drei, Zwo, Eins ...", 1)
 SafeAddString(LBOOKS_THANK_YOU_LONG3400,		"Der endgültige Countdown", 1)
 
-SafeAddString(LBOOKS_THANK_YOU3478,				"Herzlichen Glückwunsch", 1)
-SafeAddString(LBOOKS_THANK_YOU_LONG3478,		"Es gibt niemanden wie dich", 1)
+SafeAddString(LBOOKS_THANK_YOU3622,				"Herzlichen Glückwunsch", 1)
+SafeAddString(LBOOKS_THANK_YOU_LONG3622,		"Es gibt niemanden wie dich", 1)
 
 --tooltips
 SafeAddString(LBOOKS_KNOWN,						"Eingesammelt", 1)

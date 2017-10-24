@@ -20,41 +20,41 @@ local strings = {
 	
 	-- Congratulations for collecting
 	
-	LBOOKS_THANK_YOU2000				= "Already ?",
-	LBOOKS_THANK_YOU_LONG2000		= "You found 2000 books over Tamriel",
+	LBOOKS_THANK_YOU2500				= "Already ?",
+	LBOOKS_THANK_YOU_LONG2500		= "You found 2500 books over Tamriel",
 	
-	LBOOKS_THANK_YOU2500				= "Another type of achievement",
-	LBOOKS_THANK_YOU_LONG2500		= "You really wanted to collect those 2500 books",
+	LBOOKS_THANK_YOU3000				= "Another type of achievement",
+	LBOOKS_THANK_YOU_LONG3000		= "You really wanted to collect those 3000 books",
 	
-	LBOOKS_THANK_YOU2600				= "All those books read",
-	LBOOKS_THANK_YOU_LONG2600		= "Consider writing one too",
+	LBOOKS_THANK_YOU3100				= "All those books read",
+	LBOOKS_THANK_YOU_LONG3100		= "Consider writing one too",
 	
-	LBOOKS_THANK_YOU2700				= "Seeker of Knowledge",
-	LBOOKS_THANK_YOU_LONG2700		= "You made the longest",
+	LBOOKS_THANK_YOU3200				= "Seeker of Knowledge",
+	LBOOKS_THANK_YOU_LONG3200		= "You made the longest",
 	
-	LBOOKS_THANK_YOU2800				= "Path of the wisdom",
-	LBOOKS_THANK_YOU_LONG2800		= "Sill a bit more books and you won't be forgotten",
+	LBOOKS_THANK_YOU3300				= "Path of the wisdom",
+	LBOOKS_THANK_YOU_LONG3300		= "Sill a bit more books and you won't be forgotten",
 	
-	LBOOKS_THANK_YOU2900				= "Awakened Mind",
-	LBOOKS_THANK_YOU_LONG2900		= "Take your time to enjoy",
+	LBOOKS_THANK_YOU3350				= "Awakened Mind",
+	LBOOKS_THANK_YOU_LONG3350		= "Take your time to enjoy",
 	
-	LBOOKS_THANK_YOU3000				= "Only a few more",
-	LBOOKS_THANK_YOU_LONG3000		= "And you'll achieve something great",
+	LBOOKS_THANK_YOU3400				= "Only a few more",
+	LBOOKS_THANK_YOU_LONG3400		= "And you'll achieve something great",
 	
-	LBOOKS_THANK_YOU3100				= "I maybe didn't found all books yet",
-	LBOOKS_THANK_YOU_LONG3100		= "But it's definitively on my list",
+	LBOOKS_THANK_YOU3450				= "I maybe didn't found all books yet",
+	LBOOKS_THANK_YOU_LONG3450		= "But it's definitively on my list",
 	
-	LBOOKS_THANK_YOU3200				= "Too many findings",
-	LBOOKS_THANK_YOU_LONG3200		= "Bookshelve is too small !",
+	LBOOKS_THANK_YOU3500				= "Too many findings",
+	LBOOKS_THANK_YOU_LONG3500		= "Bookshelve is too small !",
 	
-	LBOOKS_THANK_YOU3300				= "Another one !",
-	LBOOKS_THANK_YOU_LONG3300		= "And you already know where the missings are",
+	LBOOKS_THANK_YOU3550				= "Another one !",
+	LBOOKS_THANK_YOU_LONG3550		= "And you already know where the missings are",
 	
-	LBOOKS_THANK_YOU3400				= "Three, Two, One ..",
-	LBOOKS_THANK_YOU_LONG3400		= "The Final Countdown",
+	LBOOKS_THANK_YOU3600				= "Three, Two, One ..",
+	LBOOKS_THANK_YOU_LONG3600		= "The Final Countdown",
 	
-	LBOOKS_THANK_YOU3478				= "Congratulations",
-	LBOOKS_THANK_YOU_LONG3478		= "There is no one else like you",
+	LBOOKS_THANK_YOU3622				= "Congratulations",
+	LBOOKS_THANK_YOU_LONG3622		= "There is no one else like you",
 	
    --tooltips
    LBOOKS_KNOWN                  = "Collected",
