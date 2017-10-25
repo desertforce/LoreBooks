@@ -887,13 +887,17 @@ local function CleanKnownErrors()
 	
 	for bookIndex, bookData in pairs(errors) do
 		local bookId = bookData.bookId
-		if DATAMINED_DATA.build[bookId].e then
-			local flag = Explode("=", bookData.flag)
-			for entryIndex, entryData in ipairs(DATAMINED_DATA.build[bookId].e) do
-				if entryData[flag[1]] == tonumber(flag[2]) then
-					entryData.zc = bookData.value
+		if DATAMINED_DATA.build[bookId] then
+			if DATAMINED_DATA.build[bookId].e then
+				local flag = Explode("=", bookData.flag)
+				for entryIndex, entryData in ipairs(DATAMINED_DATA.build[bookId].e) do
+					if entryData[flag[1]] == tonumber(flag[2]) then
+						entryData.zc = bookData.value
+					end
 				end
 			end
+		else
+			d("Error with book (err) " .. bookId)
 		end
 	end
 	
@@ -1086,7 +1090,7 @@ local function DecodeData(data, onlyOne)
          
          if xGPS == false or yGPS == false then
 				d(entryData)
-         elseif esoVersion >= 315 then
+         elseif esoVersion >= 325 then
 				
 				local data = {
 					x		= xGPS,					-- X

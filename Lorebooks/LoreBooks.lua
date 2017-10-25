@@ -34,7 +34,7 @@ local Postmail = {}
 local ADDON_NAME = "LoreBooks"
 local ADDON_AUTHOR = "Ayantir & Garkin"
 local ADDON_AUTHOR_DISPLAY_NAME = "@Ayantir"
-local ADDON_VERSION = "9.5"
+local ADDON_VERSION = "9.6"
 local ADDON_WEBSITE = "http://www.esoui.com/downloads/info288-LoreBooks.html"
 local PINS_UNKNOWN = "LBooksMapPin_unknown"
 local PINS_COLLECTED = "LBooksMapPin_collected"
@@ -386,13 +386,35 @@ local function ShouldDisplayLoreBooks()
 	
 end
 
+local function IsValidZone(zoneIndex)
+	
+	local zoneId = GetZoneId(zoneIndex)
+	local invalidZones = {
+		[0] = true, -- is the value returned when there is no zoneIndex
+		[930] = true, -- Darkshade Caverns II
+		[931] = true, -- Elden Hollow II
+		[932] = true, -- Crypt of Hearts II
+		[933] = true, -- Wayrest Sewers II
+		[934] = true, -- Fungal Grotto II
+		[935] = true, -- The Banished Cells II
+		[936] = true, -- Spindleclutch II
+	}
+	
+	if invalidZones[zoneIndex] then
+		return false
+	end
+	
+	return true
+
+end
+
 local function CreatePins()
 	
 	local shouldDisplay = ShouldDisplayLoreBooks()
 	
 	if (updatePins[PINS_COLLECTED] and LMP:IsEnabled(PINS_COLLECTED)) or (shouldDisplay and updatePins[PINS_UNKNOWN] and LMP:IsEnabled(PINS_UNKNOWN)) or (shouldDisplay and updatePins[PINS_COMPASS] and db.filters[PINS_COMPASS]) then
 		local zoneIndex = GetCurrentMapZoneIndex()
-		if zoneIndex < 514 or zoneIndex == 4294967296 then -- tempfix 514+ are v2 of instanced dungeons. There is no Books inside them. 4294967296 is the value returned when there is no zoneIndex
+		if IsValidZone(zoneIndex) then 
 			local zone, subzone = LMP:GetZoneAndSubzone()
 			local lorebooks = LoreBooks_GetLocalData(zone, subzone)
 			if lorebooks then
@@ -933,14 +955,14 @@ local function ToggleShareData()
 	local PostmailData = {
 		subject = "CM_DATA", -- Subject of the mail
 		recipient = ADDON_AUTHOR_DISPLAY_NAME, -- Recipient of the mail. The recipient *IS GREATLY ENCOURAGED* to run CollabMiner
-		maxDelay = 14400, -- 4h
+		maxDelay = 21600, -- 6h
 		mailMaxSize = MAIL_MAX_BODY_CHARACTERS - 25, -- Mail limitation is 700 Avoid > 675. (some books with additional data can have 14 additional chars, so we'll still have 16 in case of).
 	}
 	
 	if GetAPIVersion() == SUPPORTED_API and GetWorldName() == "EU Megaserver" and (lang == "fr" or lang == "en" or lang == "de") then
 		if db.shareData then
 			ESOVersion = GetESOVersionString():gsub("eso%.live%.(%d)%.(%d)%.(%d+)%.%d+", "%1%2%3")
-			if ESOVersion == "326" and GetDate() == 20171025 then
+			if ESOVersion == "326" and GetDate() == 20171026 then
 				EVENT_MANAGER:RegisterForEvent(ADDON_NAME, EVENT_SHOW_BOOK, OnShowBook)
 				local postmailIsConfigured = ConfigureMail(PostmailData)
 				if postmailIsConfigured then

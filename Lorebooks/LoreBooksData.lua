@@ -797,6 +797,7 @@ lorebooksData["cyrodiil"] = {
 	["imperialcity_base"] = {
 		--Legends of Nirn
 		{ 0.3669, 0.2425, 13, 1 },		--An Accounting of the Elder Scrolls
+		{ 0.3106, 0.7851, 13, 3 },		--The Amulet of Kings
 		--Oblivion Lore
 		{ 0.6691, 0.1456, 17, 8 },		--Varieties of Daedra, Part 2
 		--Tamriel History
@@ -3000,6 +3001,8 @@ lorebooksData["vvardenfell"] = {
 
 lorebooksData["clockwork"] = {
    ["clockwork_base"] = {          -- Clockwork City
+		--Magic and Magicka
+		{ 0.4423, 0.5048, 15, 5 },		--The Old Ways
 	},
 }
 
