@@ -88,6 +88,7 @@ lorebooksData["alikr"] = {
 		{ 0.604, 0.391, 8, 8 },			--The Totems of Hircine
 		{ 0.563, 0.398, 8, 8 },
 		{ 0.591, 0.4141, 8, 8 },
+		{ 0.6223, 0.4072, 8, 8 },
 		--Dwemer
 		{ 0.222, 0.567, 12, 10, 2 },		--Ancient Scrolls of the Dwemer I-B
 		{ 0.186, 0.513, 12, 10 },

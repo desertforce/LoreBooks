@@ -34,7 +34,7 @@ local Postmail = {}
 local ADDON_NAME = "LoreBooks"
 local ADDON_AUTHOR = "Ayantir & Garkin"
 local ADDON_AUTHOR_DISPLAY_NAME = "@Ayantir"
-local ADDON_VERSION = "9.7"
+local ADDON_VERSION = "9.8"
 local ADDON_WEBSITE = "http://www.esoui.com/downloads/info288-LoreBooks.html"
 local PINS_UNKNOWN = "LBooksMapPin_unknown"
 local PINS_COLLECTED = "LBooksMapPin_collected"
@@ -413,7 +413,7 @@ local function CreatePins()
 	local shouldDisplay = ShouldDisplayLoreBooks()
 	
 	if (updatePins[PINS_COLLECTED] and LMP:IsEnabled(PINS_COLLECTED)) or (shouldDisplay and updatePins[PINS_UNKNOWN] and LMP:IsEnabled(PINS_UNKNOWN)) or (shouldDisplay and updatePins[PINS_COMPASS] and db.filters[PINS_COMPASS]) then
-		local zoneIndex = GetCurrentMapZoneIndex()
+		local zoneIndex = GetUnitZoneIndex("player")
 		if IsValidZone(zoneIndex) then 
 			local zone, subzone = LMP:GetZoneAndSubzone()
 			local lorebooks = LoreBooks_GetLocalData(zone, subzone)
@@ -441,7 +441,7 @@ local function CreatePins()
 		local mapIndex = GetCurrentMapIndex()
 		local mapContentType = GetMapContentType()
 		local usePrecalculatedCoords = true
-		local zoneId = GetZoneId(GetCurrentMapZoneIndex())
+		local zoneId = GetZoneId(GetUnitZoneIndex("player"))
 		local eideticBooks
 		
 		if not mapIndex then
@@ -459,7 +459,7 @@ local function CreatePins()
 		if mapIndex then
 			eideticBooks = LoreBooks_GetNewEideticDataForMap(mapIndex)
 		elseif zoneId then
-			eideticBooks = LoreBooks_GetNewEideticDataForZone(GetZoneId(GetCurrentMapZoneIndex()))
+			eideticBooks = LoreBooks_GetNewEideticDataForZone(GetZoneId(GetUnitZoneIndex("player")))
 		end
 		
 		if eideticBooks then
@@ -842,7 +842,7 @@ function BuildDataToShare(bookId)
 		end
 		
 		-- Will only returns the zone and not the subzone
-		local zoneIndex = GetCurrentMapZoneIndex()
+		local zoneIndex = GetUnitZoneIndex("player")
 		local zoneId = GetZoneId(zoneIndex)
 		
 		-- mapType of the subzone. Needed when we are elsewhere than zone or subzone.
@@ -889,7 +889,7 @@ function BuildDataToShare(bookId)
 		if lang == "fr" then clang = 2 end
 		if lang == "de" then clang = 3 end
 		
-		local MINER_VERSION = 14
+		local MINER_VERSION = 15
 		dataToShare = dataToShare ..";" .. clang .. ";" .. UnsignedBase62(MINER_VERSION) ..";" .. UnsignedBase62(tonumber(ESOVersion))
 		
 		local categoryIndex, collectionIndex, bookIndex = GetLoreBookIndicesFromBookId(bookId)
@@ -924,7 +924,13 @@ function BuildDataToShare(bookId)
 							if interactionType == INTERACTION_NONE then
 								return -- User read book from inventory but we already found pin from a static position
 							elseif CoordsNearby(xGPS, yGPS, data.x, data.y) then
-								return -- Pin already found
+								if data.d then
+									if data.z == zoneId then
+										return
+									end
+								else
+									return -- Pin already found
+								end
 							end
 						end
 					end
@@ -955,14 +961,14 @@ local function ToggleShareData()
 	local PostmailData = {
 		subject = "CM_DATA", -- Subject of the mail
 		recipient = ADDON_AUTHOR_DISPLAY_NAME, -- Recipient of the mail. The recipient *IS GREATLY ENCOURAGED* to run CollabMiner
-		maxDelay = 28800, -- 8h
+		maxDelay = 36000, -- 10h
 		mailMaxSize = MAIL_MAX_BODY_CHARACTERS - 25, -- Mail limitation is 700 Avoid > 675. (some books with additional data can have 14 additional chars, so we'll still have 16 in case of).
 	}
 	
 	if GetAPIVersion() == SUPPORTED_API and GetWorldName() == "EU Megaserver" and (lang == "fr" or lang == "en" or lang == "de") then
 		if db.shareData then
 			ESOVersion = GetESOVersionString():gsub("eso%.live%.(%d)%.(%d)%.(%d+)%.%d+", "%1%2%3")
-			if ESOVersion == "326" and GetDate() == 20171027 then
+			if ESOVersion == "326" then
 				EVENT_MANAGER:RegisterForEvent(ADDON_NAME, EVENT_SHOW_BOOK, OnShowBook)
 				local postmailIsConfigured = ConfigureMail(PostmailData)
 				if postmailIsConfigured then
