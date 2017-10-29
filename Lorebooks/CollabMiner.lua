@@ -491,10 +491,15 @@ function ExtractBookData(index)
 				
 				-- Check if we have the book at its coordinates
 				if DATAMINED_DATA.build[bookId].e then
-					for entryIndex, entryData in ipairs(DATAMINED_DATA.build[bookId].e) do
-						if entryData.z == zoneId and entryData.d == inDungeon and CoordsNearby(x, y, entryData.x, entryData.y) then
-							bookFound = true
-							break
+					for entryIndex = #DATAMINED_DATA.build[bookId].e, 1, -1 do
+						if DATAMINED_DATA.build[bookId].e[entryIndex].d == inDungeon and CoordsNearby(x, y, DATAMINED_DATA.build[bookId].e[entryIndex].x, DATAMINED_DATA.build[bookId].e[entryIndex].y) then
+							if DATAMINED_DATA.build[bookId].e[entryIndex].z == zoneId then
+								bookFound = true
+								break
+							elseif DATAMINED_DATA.build[bookId].e[entryIndex].z == GetZoneIdWithMapIndex(DATAMINED_DATA.build[bookId].e[entryIndex].m) then
+								d("DungeonCorrection: Book: " .. bookId .. " ; Entry: " .. entryIndex .. " NewZoneEntry: " .. zoneId .. " (" .. zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetZoneNameByIndex(GetZoneIndex(zoneId))) .. ") ; Was: " .. DATAMINED_DATA.build[bookId].e[entryIndex].z .. " (" .. zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetZoneNameByIndex(GetZoneIndex(DATAMINED_DATA.build[bookId].e[entryIndex].z)))..")")
+								table.remove(DATAMINED_DATA.build[bookId].e, entryIndex)
+							end
 						end
 					end
 				end
@@ -611,18 +616,14 @@ local function CleanUnknownErrors()
 
 	local bookData = DATAMINED_DATA.build[231] -- Crow and Raven: Three Short Fables. if book have an homonym in en/fr, it don't have homonym in german. But 1 german report set this book instead of the other one (2/18/83) in Bangkorai
 	
-	if bookData then
-	
-		if bookData.e then
-			for entryIndex, entryData in ipairs(bookData.e) do
-				if entryData.m == 6 then -- Bangkorai
-					if CoordsNearby(0.28158, 0.31449, entryData.x, entryData.y) then
-						table.remove(DATAMINED_DATA.build[231].e, entryIndex) -- remove it
-					end
+	if bookData and bookData.e then
+		for entryIndex = #bookData.e, 1, -1 do
+			if bookData.e[entryIndex].m == 6 then -- Bangkorai
+				if CoordsNearby(0.28158, 0.31449, bookData.e[entryIndex].x, bookData.e[entryIndex].y) then
+					table.remove(bookData.e, entryIndex) -- remove it
 				end
 			end
 		end
-		
 	end
 	
 	local bookData = DATAMINED_DATA.build[2061] -- Rites of the Scion. Vampire gift. No locations.
@@ -653,210 +654,10 @@ local function CleanKnownErrors()
 		[1733] = true, -- [A Plea for the Elder Scrolls]
 	}
 	
-	local errors = {
-	
-		{
-			bookId = 2743, -- Book in Dragonstar Arena
-			flag = "z=888",
-			value = 635,
-		},
-		{
-			bookId = 2744, -- Book in Dragonstar Arena
-			flag = "z=888",
-			value = 635,
-		},
-		{
-			bookId = 2745, -- Book in Dragonstar Arena
-			flag = "z=888",
-			value = 635,
-		},
-		{
-			bookId = 2746, -- Book in Dragonstar Arena
-			flag = "z=888",
-			value = 635,
-		},
-		{
-			bookId = 2747, -- Book in Dragonstar Arena
-			flag = "z=888",
-			value = 635,
-		},
-		
-		{
-			bookId = 2788, -- Book in Sanctum Ophidia
-			flag = "z=888",
-			value = 639,
-		},
-		{
-			bookId = 2647, -- Book in Sanctum Ophidia
-			flag = "z=888",
-			value = 639,
-		},
-		{
-			bookId = 2684, -- Book in Sanctum Ophidia
-			flag = "z=888",
-			value = 639,
-		},
-		
-		{
-			bookId = 2769, -- Book in Aetherian Archive
-			flag = "z=888",
-			value = 638,
-		},
-		{
-			bookId = 2625, -- Book in Aetherian Archive
-			flag = "z=888",
-			value = 638,
-		},
-		{
-			bookId = 2626, -- Book in Aetherian Archive
-			flag = "z=888",
-			value = 638,
-		},
-		{
-			bookId = 2630, -- Book in Aetherian Archive
-			flag = "z=888",
-			value = 638,
-		},
-		{
-			bookId = 2636, -- Book in Aetherian Archive
-			flag = "z=888",
-			value = 638,
-		},
-		
-		{
-			bookId = 2559, -- Book in Hel Ra Citadel
-			flag = "z=888",
-			value = 636,
-		},
-		
-		{
-			bookId = 3334, -- Book in Maw of Lorkhaj
-			flag = "z=382",
-			value = 725,
-		},
-		{
-			bookId = 3245, -- Book in Maw of Lorkhaj
-			flag = "z=382",
-			value = 725,
-		},
-		{
-			bookId = 3331, -- Book in Maw of Lorkhaj
-			flag = "z=382",
-			value = 725,
-		},
-		{
-			bookId = 3237, -- Book in Maw of Lorkhaj
-			flag = "z=382",
-			value = 725,
-		},
-		
-
-		{
-			bookId = 3726, -- Book in Halls of Fabrication
-			flag = "z=849",
-			value = 975,
-		},
-		{
-			bookId = 4535, -- Book in Halls of Fabrication
-			flag = "z=849",
-			value = 975,
-		},
-		{
-			bookId = 4536, -- Book in Halls of Fabrication
-			flag = "z=849",
-			value = 975,
-		},
-		{
-			bookId = 4537, -- Book in Halls of Fabrication
-			flag = "z=849",
-			value = 975,
-		},
-		
-
-		{
-			bookId = 4627, -- Book in Falkreath Hold
-			flag = "z=888",
-			value = 974,
-		},
-		{
-			bookId = 4628, -- Book in Falkreath Hold
-			flag = "z=888",
-			value = 974,
-		},
-		{
-			bookId = 4629, -- Book in Falkreath Hold
-			flag = "z=888",
-			value = 974,
-		},
-		{
-			bookId = 4630, -- Book in Falkreath Hold
-			flag = "z=888",
-			value = 974,
-		},
-		
-		--[[
-		{
-			bookId = 4616, -- Book in Bloodroot Forge
-			flag = "z=888",
-			value = 973,
-		},
-		{
-			bookId = 4617, -- Book in Bloodroot Forge
-			flag = "z=888",
-			value = 973,
-		},
-		{
-			bookId = 4618, -- Book in Bloodroot Forge
-			flag = "z=888",
-			value = 973,
-		},
-		{
-			bookId = 4619, -- Book in Bloodroot Forge
-			flag = "z=888",
-			value = 973,
-		},
-		{
-			bookId = 4620, -- Book in Bloodroot Forge
-			flag = "z=888",
-			value = 973,
-		},
-		{
-			bookId = 4621, -- Book in Bloodroot Forge
-			flag = "z=888",
-			value = 973,
-		},
-		{
-			bookId = 4622, -- Book in Bloodroot Forge
-			flag = "z=888",
-			value = 973,
-		},
-		{
-			bookId = 4623, -- Book in Bloodroot Forge
-			flag = "z=888",
-			value = 973,
-		},
-		{
-			bookId = 4624, -- Book in Bloodroot Forge
-			flag = "z=888",
-			value = 973,
-		},
-		{
-			bookId = 4625, -- Book in Bloodroot Forge
-			flag = "z=888",
-			value = 973,
-		},
-		{
-			bookId = 4626, -- Book in Bloodroot Forge
-			flag = "z=888",
-			value = 973,
-		},
-		]]
-	}
-
 	for bookId in pairs(neverDatamined) do
 		if not DATAMINED_DATA.build[bookId] then
 			DATAMINED_DATA.build[bookId] = {k = bookId, l = true}
-		else
+		elseif DATAMINED_DATA.build[bookId].r or DATAMINED_DATA.build[bookId].e then
 			d("Book tagged Unknown (NeverFound) has been found : " .. bookId)
 		end
 	end
@@ -864,7 +665,7 @@ local function CleanKnownErrors()
 	for bookId, questData in pairs(questRelated) do
 		if not DATAMINED_DATA.build[bookId] then
 			DATAMINED_DATA.build[bookId] = {k = bookId, q = questData}
-		else
+		elseif DATAMINED_DATA.build[bookId].r or DATAMINED_DATA.build[bookId].e then
 			d("Book tagged Unknown (QuestLnked) has been found : " .. bookId)
 		end
 	end
@@ -872,7 +673,7 @@ local function CleanKnownErrors()
 	for bookId in pairs(lost) do
 		if not DATAMINED_DATA.build[bookId] then
 			DATAMINED_DATA.build[bookId] = {k = bookId, l = true}
-		else
+		elseif DATAMINED_DATA.build[bookId].r or DATAMINED_DATA.build[bookId].e then
 			d("Book tagged Unknown (Lost) has been found : " .. bookId)
 		end
 	end
@@ -880,24 +681,8 @@ local function CleanKnownErrors()
 	for bookId in pairs(bugged) do
 		if not DATAMINED_DATA.build[bookId] then
 			DATAMINED_DATA.build[bookId] = {k = bookId, l = true}
-		else
+		elseif DATAMINED_DATA.build[bookId].r or DATAMINED_DATA.build[bookId].e then
 			d("Book tagged Unknown (Bugged) has been found : " .. bookId)
-		end
-	end
-	
-	for bookIndex, bookData in pairs(errors) do
-		local bookId = bookData.bookId
-		if DATAMINED_DATA.build[bookId] then
-			if DATAMINED_DATA.build[bookId].e then
-				local flag = Explode("=", bookData.flag)
-				for entryIndex, entryData in ipairs(DATAMINED_DATA.build[bookId].e) do
-					if entryData[flag[1]] == tonumber(flag[2]) then
-						entryData.zc = bookData.value
-					end
-				end
-			end
-		else
-			d("Error with book (err) " .. bookId)
 		end
 	end
 	
@@ -1090,7 +875,7 @@ local function DecodeData(data, onlyOne)
          
          if xGPS == false or yGPS == false then
 				d(entryData)
-         elseif esoVersion >= 325 then
+         elseif esoVersion >= 325 and minerVersion == 15 then
 				
 				local data = {
 					x		= xGPS,					-- X

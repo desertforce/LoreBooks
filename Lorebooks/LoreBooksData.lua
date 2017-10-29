@@ -580,6 +580,7 @@ lorebooksData["coldharbor"] = {
 		{ 0.454, 0.510, 29, 10 },		--Protocols of the Court of Contempt
 		{ 0.569, 0.507, 29, 10 },
 		{ 0.4482, 0.4566, 29, 10 },
+		{ 0.5474, 0.4550, 29, 10 },
 		--Dungeon Lore
 		{ 0.579, 0.484, 11, 16, 11 },		--To All Who Pass Through
 	},
