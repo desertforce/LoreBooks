@@ -3003,16 +3003,12 @@ lorebooksData["vvardenfell"] = {
 
 lorebooksData["clockwork"] = {
    ["clockwork_base"] = {          -- Clockwork City
-		--Literature
-		{ 0.4110, 0.4609, 14, 9, 4 },		--Crow and Raven: Three Short Fables
-		--Magic and Magicka
+		{ 0.4110, 0.4609, 14, 9, 4 },	--Crow and Raven: Three Short Fables
 		{ 0.4423, 0.5048, 15, 5 },		--The Old Ways
-		--Stonefalls Lore
+		{ 0.8767, 0.6055, 17, 4 },		--The Doors of Oblivion, Part 2
 		{ 0.6890, 0.6311, 20, 8 },		--Varieties of Faith: The Dark Elves
-		--Deshaan Lore
 		{ 0.6872, 0.4288, 23, 1 },		--The Living Gods
-		--Grahtwood Lore
-		{ 0.4130, 0.5751, 26, 6 },		--The Devouring of Gil-Var-Delle
+		{ 0.4130, 0.5751, 26, 6 },		--The Devouring of Gil-Var-Delle		
 	},
 	["ccunderground_base"] = {
 		--Literature

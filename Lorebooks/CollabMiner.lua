@@ -643,11 +643,6 @@ local function CleanKnownErrors()
 	local questRelated = {
 		[882] = select(3, GetQuestsDataByName("Partners in Crime")), -- [Giant Warning]
 		[3046] = select(3, GetQuestsDataByName("Taking the Undaunted Pledge")), -- [Tome of the Undaunted]
-		[4576] = select(3, GetQuestsDataByName("Divine Conundrum")), -- [Invitation to Morrowind]
-	}
-	
-	local lost = {
-		[1737] = true, -- [Adainaz's Journal]
 	}
 	
 	local bugged = {
@@ -667,14 +662,6 @@ local function CleanKnownErrors()
 			DATAMINED_DATA.build[bookId] = {k = bookId, q = questData}
 		elseif DATAMINED_DATA.build[bookId].r or DATAMINED_DATA.build[bookId].e then
 			d("Book tagged Unknown (QuestLnked) has been found : " .. bookId)
-		end
-	end
-	
-	for bookId in pairs(lost) do
-		if not DATAMINED_DATA.build[bookId] then
-			DATAMINED_DATA.build[bookId] = {k = bookId, l = true}
-		elseif DATAMINED_DATA.build[bookId].r or DATAMINED_DATA.build[bookId].e then
-			d("Book tagged Unknown (Lost) has been found : " .. bookId)
 		end
 	end
 	
