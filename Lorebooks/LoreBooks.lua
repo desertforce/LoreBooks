@@ -34,7 +34,7 @@ local Postmail = {}
 local ADDON_NAME = "LoreBooks"
 local ADDON_AUTHOR = "Ayantir & Garkin"
 local ADDON_AUTHOR_DISPLAY_NAME = "@Ayantir"
-local ADDON_VERSION = "9.10"
+local ADDON_VERSION = "9.11"
 local ADDON_WEBSITE = "http://www.esoui.com/downloads/info288-LoreBooks.html"
 local PINS_UNKNOWN = "LBooksMapPin_unknown"
 local PINS_COLLECTED = "LBooksMapPin_collected"
@@ -226,7 +226,7 @@ pinTooltipCreatorEidetic.creator = function(pin)
 		
 		if pinTag.d then
 			
-			local zoneId = pinTag.zc or pinTag.z
+			local zoneId = pinTag.z
 			if GetZoneNameByIndex(GetZoneIndex(zoneId)) == GetMapNameByIndex(pinTag.m) then
 				INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, zo_strformat("[<<1>>]", GetString(SI_QUESTTYPE5)), {fontSize = 27, fontColorField = GAMEPAD_TOOLTIP_COLOR_GENERAL_COLOR_2})
 			else
@@ -271,7 +271,7 @@ pinTooltipCreatorEidetic.creator = function(pin)
 		
 		if pinTag.d then
 		
-			local zoneId = pinTag.zc or pinTag.z
+			local zoneId = pinTag.z
 			if GetZoneNameByIndex(GetZoneIndex(zoneId)) == GetMapNameByIndex(pinTag.m) then
 				INFORMATION_TOOLTIP:AddLine(zo_strformat("[<<1>>]", GetString(SI_QUESTTYPE5)), "", ZO_SELECTED_TEXT:UnpackRGB())
 			else
@@ -961,14 +961,14 @@ local function ToggleShareData()
 	local PostmailData = {
 		subject = "CM_DATA", -- Subject of the mail
 		recipient = ADDON_AUTHOR_DISPLAY_NAME, -- Recipient of the mail. The recipient *IS GREATLY ENCOURAGED* to run CollabMiner
-		maxDelay = 54000, -- 15h
+		maxDelay = 64800, -- 18h
 		mailMaxSize = MAIL_MAX_BODY_CHARACTERS - 25, -- Mail limitation is 700 Avoid > 675. (some books with additional data can have 14 additional chars, so we'll still have 16 in case of).
 	}
 	
 	if GetAPIVersion() == SUPPORTED_API and GetWorldName() == "EU Megaserver" and (lang == "fr" or lang == "en" or lang == "de") then
 		if db.shareData then
 			ESOVersion = GetESOVersionString():gsub("eso%.live%.(%d)%.(%d)%.(%d+)%.%d+", "%1%2%3")
-			if ESOVersion == "327" and GetDate() <= 20171031 then
+			if ESOVersion == "327" and GetDate() <= 20171101 then
 				EVENT_MANAGER:RegisterForEvent(ADDON_NAME, EVENT_SHOW_BOOK, OnShowBook)
 				local postmailIsConfigured = ConfigureMail(PostmailData)
 				if postmailIsConfigured then
@@ -986,24 +986,24 @@ end
 local function ShowCongrats(newBook)
 	
 	local congrats = {
-		[2000] = "/esoui/art/icons/quest_book_003.dds",
-		[2500] = "/esoui/art/icons/scroll_001.dds",
-		[2600] = "/esoui/art/icons/scroll_005.dds",
-		[2700] = "/esoui/art/icons/quest_book_001.dds",
-		[2800] = "/esoui/art/icons/lore_book2_detail1_color1.dds",
-		[2900] = "/esoui/art/icons/achievement_thievesguild_024.dds",
-		[3000] = "/esoui/art/icons/achievement_wrothgar_027.dds",
-		[3100] = "/esoui/art/icons/achievement_newlifefestival_011.dds",
-		[3200] = "/esoui/art/icons/achievement_newlifefestival_011.dds",
-		[3300] = "/esoui/art/icons/achievement_newlifefestival_011.dds",
-		[3400] = "/esoui/art/icons/achievement_newlifefestival_011.dds",
+		[2500] = "/esoui/art/icons/quest_book_003.dds",
+		[3000] = "/esoui/art/icons/scroll_001.dds",
+		[3100] = "/esoui/art/icons/scroll_005.dds",
+		[3200] = "/esoui/art/icons/quest_book_001.dds",
+		[3300] = "/esoui/art/icons/lore_book2_detail1_color1.dds",
+		[3350] = "/esoui/art/icons/achievement_thievesguild_024.dds",
+		[3400] = "/esoui/art/icons/achievement_wrothgar_027.dds",
+		[3450] = "/esoui/art/icons/achievement_newlifefestival_011.dds",
+		[3500] = "/esoui/art/icons/achievement_newlifefestival_011.dds",
+		[3550] = "/esoui/art/icons/achievement_newlifefestival_011.dds",
+		[3600] = "/esoui/art/icons/achievement_newlifefestival_011.dds",
 		[MAX_BOOKS_IN_LIBRARY] = "/esoui/art/icons/ability_mage_064.dds", -- Max U16
 	}
 	
 	local function CongratsStuff(collected)
 		if not db.booksCollected[collected] then
 			db.booksCollected[collected] = true
-			CENTER_SCREEN_ANNOUNCE:AddMessage(0, CSA_CATEGORY_LARGE_TEXT, SOUNDS.LEVEL_UP, GetString("LBOOKS_THANK_YOU", collected), GetString("LBOOKS_THANK_YOU_LONG", collected), congrats[collected], "EsoUI/Art/Achievements/achievements_iconBG.dds", nil, nil, 2000)
+			CENTER_SCREEN_ANNOUNCE:AddMessage(0, CSA_CATEGORY_LARGE_TEXT, SOUNDS.LEVEL_UP, GetString("LBOOKS_THANK_YOU", collected), GetString("LBOOKS_THANK_YOU_LONG", collected), congrats[collected], "EsoUI/Art/Achievements/achievements_iconBG.dds", nil, nil, 3000)
 		end
 	end
 	
@@ -1017,6 +1017,10 @@ local function ShowCongrats(newBook)
 			end
 		end
 		
+		if EIDETIC_BOOKS == eideticCurrentlyCollected then
+			CENTER_SCREEN_ANNOUNCE:AddMessage(0, CSA_CATEGORY_LARGE_TEXT, SOUNDS.LEVEL_UP, GetString("LBOOKS_THANK_YOU", MAX_BOOKS_IN_LIBRARY), GetString("LBOOKS_THANK_YOU_LONG", MAX_BOOKS_IN_LIBRARY), congrats[MAX_BOOKS_IN_LIBRARY], "EsoUI/Art/Achievements/achievements_iconBG.dds", nil, nil, 3000)
+		end
+		
 	else
 	
 		-- If first activation
@@ -1025,28 +1029,26 @@ local function ShowCongrats(newBook)
 		-- It won't show all achiev in a row, I prefer like this.
 		if totalCurrentlyCollected == MAX_BOOKS_IN_LIBRARY and GetAPIVersion() == SUPPORTED_API then
 			CongratsStuff(MAX_BOOKS_IN_LIBRARY)
+		elseif totalCurrentlyCollected >= 3600 then
+			CongratsStuff(3600)
+		elseif totalCurrentlyCollected >= 3550 then
+			CongratsStuff(3550)
+		elseif totalCurrentlyCollected >= 3500 then
+			CongratsStuff(3500)
+		elseif totalCurrentlyCollected >= 3450 then
+			CongratsStuff(3450)
 		elseif totalCurrentlyCollected >= 3400 then
 			CongratsStuff(3400)
+		elseif totalCurrentlyCollected >= 3350 then
+			CongratsStuff(3350)
 		elseif totalCurrentlyCollected >= 3300 then
 			CongratsStuff(3300)
 		elseif totalCurrentlyCollected >= 3200 then
 			CongratsStuff(3200)
-		elseif totalCurrentlyCollected >= 3100 then
-			CongratsStuff(3100)
 		elseif totalCurrentlyCollected >= 3000 then
 			CongratsStuff(3000)
-		elseif totalCurrentlyCollected >= 2900 then
-			CongratsStuff(2900)
-		elseif totalCurrentlyCollected >= 2800 then
-			CongratsStuff(2800)
-		elseif totalCurrentlyCollected >= 2700 then
-			CongratsStuff(2700)
-		elseif totalCurrentlyCollected >= 2600 then
-			CongratsStuff(2600)
 		elseif totalCurrentlyCollected >= 2500 then
 			CongratsStuff(2500)
-		elseif totalCurrentlyCollected >= 2000 then
-			CongratsStuff(2000)
 		end
 		
 	end
@@ -1710,7 +1712,7 @@ local function OnMouseEnter(self, categoryIndex, collectionIndex, bookIndex)
 					local x = data.x
 					local y = data.y
 					local mapIndex = data.m
-					local zoneId = data.zc or data.z
+					local zoneId = data.z
 					local isRandom = data.r
 					local inDungeon = data.d
 					local isFromBag = data.i == INTERACTION_NONE
