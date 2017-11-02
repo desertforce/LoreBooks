@@ -862,7 +862,7 @@ local function DecodeData(data, onlyOne)
          
          if xGPS == false or yGPS == false then
 				d(entryData)
-         elseif esoVersion >= 325 and minerVersion == 15 then
+         elseif esoVersion >= 327 and minerVersion == 15 then
 				
 				local data = {
 					x		= xGPS,					-- X
@@ -958,6 +958,12 @@ local function SeeData(rawData)
 	
 end
 
+local function PushData(data)
+	local rawReport = Explode("\n", data)
+	DecodeData(rawReport)
+	d("Data pushed")
+end
+
 local function DecodeCollab()
 	
 	local timeShift = 0
@@ -994,6 +1000,7 @@ function LoreBooks_InitializeCollab()
 
 		SLASH_COMMANDS["/lbd"] = DecodeCollab
 		SLASH_COMMANDS["/lbs"] = SeeData
+		SLASH_COMMANDS["/lbp"] = PushData
 		SLASH_COMMANDS["/lbcollab"] = CleanCollab
 		
 		EVENT_MANAGER:RegisterForEvent("PostmailDeamon", EVENT_MAIL_READABLE, OnMailReadable)
