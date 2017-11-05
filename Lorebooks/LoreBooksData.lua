@@ -638,6 +638,7 @@ lorebooksData["cyrodiil"] = {
 		{ 0.779, 0.216, 11, 9 },		--Wayrest Sewers: A Short History
 		{ 0.714, 0.536, 11, 10 },		--To Posterity
 		--Dwemer
+		{ 0.3053, 0.2204, 12, 1 },		--Ancient Scrolls of the Dwemer I-A
 		{ 0.3756, 0.1541, 12, 3 },		--Ancient Scrolls of the Dwemer III
 		{ 0.241, 0.397, 12, 5 },		--Ancient Scrolls of the Dwemer VI	
 		{ 0.6042, 0.3084, 12, 6 },		--Ancient Scrolls of the Dwemer X

@@ -641,7 +641,6 @@ local function CleanKnownErrors()
 	}
 	
 	local questRelated = {
-		[882] = select(3, GetQuestsDataByName("Partners in Crime")), -- [Giant Warning]
 		[3046] = select(3, GetQuestsDataByName("Taking the Undaunted Pledge")), -- [Tome of the Undaunted]
 	}
 	
