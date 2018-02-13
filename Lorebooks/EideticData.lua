@@ -26,1992 +26,2011 @@ http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
 
 local libraryData =
 {
-    [1] = 
-    {
-        [1] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
-            ["t"] = 10,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Glenumbra.",
-                ["fr"] = "Une série de livres de connaissances de la guilde des mages sur la Glénumbrie.",
-                ["en"] = "A Mages Guild collection of lore books about Glenumbra.",
-            },
-            ["k"] = 3,
-            ["n"] = 
-            {
-                ["de"] = "Über Glenumbra",
-                ["fr"] = "Connaissance de Glénumbrie",
-                ["en"] = "Glenumbra Lore",
-            },
-            ["h"] = false,
-        },
-        [2] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
-            ["t"] = 10,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Sturmhafen.",
-                ["fr"] = "Une série de livres de connaissances de la guilde des mages sur Havre-tempête.",
-                ["en"] = "A Mages Guild collection of lore books about Stormhaven.",
-            },
-            ["k"] = 5,
-            ["n"] = 
-            {
-                ["de"] = "Über Sturmhafen",
-                ["fr"] = "Connaissance de Havre-tempête",
-                ["en"] = "Stormhaven Lore",
-            },
-            ["h"] = false,
-        },
-        [3] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
-            ["t"] = 10,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Kluftspitze.",
-                ["fr"] = "Une série de livres de connaissances de la guilde des mages sur Fendretour.",
-                ["en"] = "A Mages Guild collection of lore books about Rivenspire.",
-            },
-            ["k"] = 6,
-            ["n"] = 
-            {
-                ["de"] = "Über Kluftspitze",
-                ["fr"] = "Connaissance de Fendretour",
-                ["en"] = "Rivenspire Lore",
-            },
-            ["h"] = false,
-        },
-        [4] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
-            ["t"] = 10,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Bangkorai.",
-                ["fr"] = "Une série de livres de connaissances de la guilde des mages sur Bangkoraï.",
-                ["en"] = "A Mages Guild collection of lore books about Bangkorai.",
-            },
-            ["k"] = 7,
-            ["n"] = 
-            {
-                ["de"] = "Über Bangkorai",
-                ["fr"] = "Connaissance de Bangkoraï",
-                ["en"] = "Bangkorai Lore",
-            },
-            ["h"] = false,
-        },
-        [5] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
-            ["t"] = 10,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung der Magiergilde mit Büchern über die Alik'r-Wüste.",
-                ["fr"] = "Une série de livres de connaissances de la guilde des mages sur le désert d'Alik'r.",
-                ["en"] = "A Mages Guild collection of lore books about the Alik'r Desert.",
-            },
-            ["k"] = 8,
-            ["n"] = 
-            {
-                ["de"] = "Über die Alik'r-Wüste",
-                ["fr"] = "Connaissance du désert d'Alik'r",
-                ["en"] = "Alik'r Desert Lore",
-            },
-            ["h"] = false,
-        },
-        [6] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
-            ["t"] = 10,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Schattenfenn.",
-                ["fr"] = "Une série de livres de connaissances de la guilde des mages sur Fangeombre.",
-                ["en"] = "A Mages Guild collection of lore books about Shadowfen.",
-            },
-            ["k"] = 9,
-            ["n"] = 
-            {
-                ["de"] = "Über Schattenfenn",
-                ["fr"] = "Connaissance du marais noir",
-                ["en"] = "Shadowfen Lore",
-            },
-            ["h"] = false,
-        },
-        [7] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_magic.dds",
-            ["t"] = 4,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung der Magiergilde mit Büchern, die man während der Prüfungen des Verrückten Gottes findet.",
-                ["fr"] = "Une collection de livres de la guilde des mages découverts en accomplissant les épreuves du Dieu fou.",
-                ["en"] = "A Mages Guild collection of books found while completing the Mad God's trials.",
-            },
-            ["k"] = 10,
-            ["n"] = 
-            {
-                ["de"] = "Die Prüfung von Augvea",
-                ["fr"] = "Les épreuves d'Eyévéa",
-                ["en"] = "The Trial of Eyevea",
-            },
-            ["h"] = false,
-        },
-        [8] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_daedric.dds",
-            ["t"] = 10,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung der Magiergilde mit Büchern über daedrische Fürsten.",
-                ["fr"] = "Une série de livres de connaissances de la guilde des mages sur les princes Daedra.",
-                ["en"] = "A Mages Guild collection of books regarding the Daedric Princes.",
-            },
-            ["k"] = 12,
-            ["n"] = 
-            {
-                ["de"] = "Daedrische Fürsten",
-                ["fr"] = "Princes Daedra",
-                ["en"] = "Daedric Princes",
-            },
-            ["h"] = false,
-        },
-        [9] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
-            ["t"] = 10,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung der Magiergilde mit Büchern über die Leben der Großen.",
-                ["fr"] = "Une collection de livres de la guilde des mages sur la vie des grands de ce monde.",
-                ["en"] = "A Mages Guild collection of books about the lives of the great.",
-            },
-            ["k"] = 13,
-            ["n"] = 
-            {
-                ["de"] = "Biographien",
-                ["fr"] = "Biographies",
-                ["en"] = "Biographies",
-            },
-            ["h"] = false,
-        },
-        [10] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_divine.dds",
-            ["t"] = 10,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung der Magiergilde mit Büchern über die Göttlichen und andere Gottheiten.",
-                ["fr"] = "Une collection de livres de la guilde des mages sur les Divins et autres divinités.",
-                ["en"] = "A Mages Guild collection of books regarding the Divines and other Deities.",
-            },
-            ["k"] = 14,
-            ["n"] = 
-            {
-                ["de"] = "Göttliche und Gottheiten",
-                ["fr"] = "Divins et divinités",
-                ["en"] = "Divines and Deities",
-            },
-            ["h"] = false,
-        },
-        [11] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_dungeons.dds",
-            ["t"] = 17,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung der Magiergilde mit Büchern mit Wissenswertem über Verliese.",
-                ["fr"] = "Une collection de livres de la guilde des mages concernant les donjons.",
-                ["en"] = "A Mages Guild collection of books regarding dungeon lore.",
-            },
-            ["k"] = 15,
-            ["n"] = 
-            {
-                ["de"] = "Über Verliese",
-                ["fr"] = "Connaissance des donjons",
-                ["en"] = "Dungeon Lore",
-            },
-            ["h"] = false,
-        },
-        [12] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_dwemer.dds",
-            ["t"] = 16,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung der Magiergilde mit Büchern über die Dwemer.",
-                ["fr"] = "Une collection de livres de la guilde des mages concernant les Dwemers.",
-                ["en"] = "A Mages Guild collection of books regarding the Dwemer.",
-            },
-            ["k"] = 16,
-            ["n"] = 
-            {
-                ["de"] = "Die Dwemer",
-                ["fr"] = "Dwemer",
-                ["en"] = "Dwemer",
-            },
-            ["h"] = false,
-        },
-        [13] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
-            ["t"] = 10,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung der Magiergilde mit Büchern über die alten Legenden.",
-                ["fr"] = "Une collection de livres de la guilde des mages concernant d'anciennes légendes.",
-                ["en"] = "A Mages Guild collection of books regarding ancient legends.",
-            },
-            ["k"] = 17,
-            ["n"] = 
-            {
-                ["de"] = "Legenden von Nirn",
-                ["fr"] = "Légendes de Nirn",
-                ["en"] = "Legends of Nirn",
-            },
-            ["h"] = false,
-        },
-        [14] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
-            ["t"] = 10,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung der Magiergilde mit Büchern mit bedeutenden literarischen Werken.",
-                ["fr"] = "Une collection de livres de la guilde des mages recueillant des œuvres majeures de littérature.",
-                ["en"] = "A Mages Guild collection of books that are significant works of literature.",
-            },
-            ["k"] = 18,
-            ["n"] = 
-            {
-                ["de"] = "Bekannte Literatur",
-                ["fr"] = "Littérature",
-                ["en"] = "Literature",
-            },
-            ["h"] = false,
-        },
-        [15] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_magic.dds",
-            ["t"] = 10,
-            ["d"] = 
-            {
-                ["de"] = "Eine Büchersammlung der Magiergilde, bestehend aus Werken zu Magie und Magicka.",
-                ["fr"] = "Une collection de livres de la guilde des mages parlant de magie.",
-                ["en"] = "A Mages Guild books collection of regarding magic and magicka.",
-            },
-            ["k"] = 19,
-            ["n"] = 
-            {
-                ["de"] = "Magie und Magicka",
-                ["fr"] = "Magie et sortilèges",
-                ["en"] = "Magic and Magicka",
-            },
-            ["h"] = false,
-        },
-        [16] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
-            ["t"] = 10,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung der Magiergilde mit Büchern über uralte Mythen.",
-                ["fr"] = "Une collection de livres de la guilde des mages regroupant les mythes.",
-                ["en"] = "A Mages Guild collection of books regarding ancient myths.",
-            },
-            ["k"] = 20,
-            ["n"] = 
-            {
-                ["de"] = "Mythen des Mundus",
-                ["fr"] = "Mythes du Mundus",
-                ["en"] = "Myths of the Mundus",
-            },
-            ["h"] = false,
-        },
-        [17] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_daedric.dds",
-            ["t"] = 10,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung der Magiergilde mit Büchern über das Reich des Vergessens.",
-                ["fr"] = "Une collection de livres de la guilde des mages concernant Oblivion.",
-                ["en"] = "A Mages Guild collection of books regarding Oblivion.",
-            },
-            ["k"] = 21,
-            ["n"] = 
-            {
-                ["de"] = "Über das Reich des Vergessens",
-                ["fr"] = "Connaissance d'Oblivion",
-                ["en"] = "Oblivion Lore",
-            },
-            ["h"] = false,
-        },
-        [18] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
-            ["t"] = 10,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Feiern und Liedtexte.",
-                ["fr"] = "Une collection de livres de la guilde des mages recueillant des poèmes et des chants.",
-                ["en"] = "A Mages Guild collection of books celebrating lyrics and verse.",
-            },
-            ["k"] = 22,
-            ["n"] = 
-            {
-                ["de"] = "Gedichte und Lieder",
-                ["fr"] = "Poésie et chant",
-                ["en"] = "Poetry and Song",
-            },
-            ["h"] = false,
-        },
-        [19] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
-            ["t"] = 10,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung der Magiergilde mit Büchern über die Geschichte Tamriels.",
-                ["fr"] = "Une collection de livres de la guilde des mages traitant de l'histoire de Tamriel.",
-                ["en"] = "A collection of Mages Guild collection of books pertaining to Tamriel's history.",
-            },
-            ["k"] = 23,
-            ["n"] = 
-            {
-                ["de"] = "Die Geschichte Tamriels",
-                ["fr"] = "Histoire de Tamriel",
-                ["en"] = "Tamriel History",
-            },
-            ["h"] = false,
-        },
-        [20] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
-            ["t"] = 10,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Steinfälle.",
-                ["fr"] = "Une série de livres de connaissances de la guilde des mages sur les Éboulis.",
-                ["en"] = "A Mages Guild collection of books regarding Stonefalls.",
-            },
-            ["k"] = 24,
-            ["n"] = 
-            {
-                ["de"] = "Über Steinfälle",
-                ["fr"] = "Connaissance des Éboulis",
-                ["en"] = "Stonefalls Lore",
-            },
-            ["h"] = false,
-        },
-        [21] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
-            ["t"] = 10,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Malabal Tor.",
-                ["fr"] = "Une collection de livres de la guilde des mages découverts à Malabal Tor.",
-                ["en"] = "A collection of Mages Guild books found in Malabal Tor.",
-            },
-            ["k"] = 26,
-            ["n"] = 
-            {
-                ["de"] = "Über Malabal Tor",
-                ["fr"] = "Connaissance de Malabal Tor",
-                ["en"] = "Malabal Tor Lore",
-            },
-            ["h"] = false,
-        },
-        [22] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
-            ["t"] = 10,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Ostmarsch.",
-                ["fr"] = "Une série de livres de connaissances de la guilde des mages sur l'Estemarche.",
-                ["en"] = "A Mages Guild collection of books regarding Eastmarch.",
-            },
-            ["k"] = 27,
-            ["n"] = 
-            {
-                ["de"] = "Über Ostmarsch",
-                ["fr"] = "Connaissance d'Estemarche",
-                ["en"] = "Eastmarch Lore",
-            },
-            ["h"] = false,
-        },
-        [23] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
-            ["t"] = 10,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Deshaan.",
-                ["fr"] = "Une série de livres de connaissances de la guilde des mages sur Deshaan.",
-                ["en"] = "A Mages Guild collection of books regarding Deshaan.",
-            },
-            ["k"] = 28,
-            ["n"] = 
-            {
-                ["de"] = "Über Deshaan",
-                ["fr"] = "Connaissance de Deshaan",
-                ["en"] = "Deshaan Lore",
-            },
-            ["h"] = false,
-        },
-        [24] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
-            ["t"] = 10,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Rift.",
-                ["fr"] = "Une série de livres de connaissances de la guilde des mages sur la Brèche.",
-                ["en"] = "A Mages Guild collection of books regarding the Rift.",
-            },
-            ["k"] = 29,
-            ["n"] = 
-            {
-                ["de"] = "Über Rift",
-                ["fr"] = "Connaissance de la Brèche",
-                ["en"] = "The Rift Lore",
-            },
-            ["h"] = false,
-        },
-        [25] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
-            ["t"] = 10,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Auridon.",
-                ["fr"] = "Une collection de livres de la guilde des mages découverts en Auridia.",
-                ["en"] = "A collection of Mages Guild books found in Auridon.",
-            },
-            ["k"] = 30,
-            ["n"] = 
-            {
-                ["de"] = "Über Auridon",
-                ["fr"] = "Connaissance d'Auridia",
-                ["en"] = "Auridon Lore",
-            },
-            ["h"] = false,
-        },
-        [26] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
-            ["t"] = 10,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Grahtwald.",
-                ["fr"] = "Une série de livres de connaissances de la guilde des mages sur le bois de Graht.",
-                ["en"] = "A Mages Guild collection of books regarding Grahtwood.",
-            },
-            ["k"] = 32,
-            ["n"] = 
-            {
-                ["de"] = "Über Grahtwald",
-                ["fr"] = "Connaissance du bois de Graht",
-                ["en"] = "Grahtwood Lore",
-            },
-            ["h"] = false,
-        },
-        [27] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
-            ["t"] = 10,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Grünschatten.",
-                ["fr"] = "Une série de livres de connaissances de la guilde des mages sur Prasin.",
-                ["en"] = "A Mages Guild collection of books regarding Greenshade.",
-            },
-            ["k"] = 38,
-            ["n"] = 
-            {
-                ["de"] = "Über Grünschatten",
-                ["fr"] = "Connaissance de Prasin",
-                ["en"] = "Greenshade Lore",
-            },
-            ["h"] = false,
-        },
-        [28] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
-            ["t"] = 10,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Schnittermark.",
-                ["fr"] = "Une série de livres de connaissances de la guilde des mages sur la marche de la Camarde.",
-                ["en"] = "A Mages Guild collection of books regarding Reaper's March.",
-            },
-            ["k"] = 39,
-            ["n"] = 
-            {
-                ["de"] = "Über Schnittermark",
-                ["fr"] = "Connaissance de la Camarde",
-                ["en"] = "Reaper's March Lore",
-            },
-            ["h"] = false,
-        },
-        [29] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_daedric.dds",
-            ["t"] = 10,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Kalthafen.",
-                ["fr"] = "Une série de livres de connaissances de la guilde des mages sur Havreglace.",
-                ["en"] = "A Mages Guild collection of books regarding Coldharbour.",
-            },
-            ["k"] = 40,
-            ["n"] = 
-            {
-                ["de"] = "Über Kalthafen",
-                ["fr"] = "Connaissance de Havreglace",
-                ["en"] = "Coldharbour Lore",
-            },
-            ["h"] = false,
-        },
-    },
-    [2] = 
-    {
-        [1] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
-            ["t"] = 23,
-            ["d"] = 
-            {
-                ["de"] = "Bücher, die sich mit den verschiedenen Handwerken beschäftigen.",
-                ["fr"] = "Livres de savoir autour des différentes disciplines d'artisanat.",
-                ["en"] = "Lore books related to the various disciplines of crafting.",
-            },
-            ["k"] = 43,
-            ["n"] = 
-            {
-                ["de"] = "Handwerksbücher",
-                ["fr"] = "Livres d'artisanat",
-                ["en"] = "Crafting Books",
-            },
-            ["h"] = false,
-        },
-        [2] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_dwemer.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "",
-                ["fr"] = "",
-                ["en"] = "",
-            },
-            ["k"] = 74,
-            ["n"] = 
-            {
-                ["de"] = "Stil der Dwemer",
-                ["fr"] = "Motifs dwemer",
-                ["en"] = "Dwemer Style",
-            },
-            ["h"] = false,
-        },
-        [3] = 
-        {
-            ["g"] = "/esoui/art/icons/icon_missing.dds",
-            ["t"] = 0,
-            ["d"] = 
-            {
-                ["de"] = "",
-                ["fr"] = "",
-                ["en"] = "",
-            },
-            ["k"] = 0,
-            ["n"] = 
-            {
-                ["de"] = "",
-                ["fr"] = "",
-                ["en"] = "",
-            },
-            ["h"] = true,
-        },
-        [4] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil der Akaviri.",
-                ["fr"] = "Ces livres permettent de fabriquer au style akavirois.",
-                ["en"] = "These books enable crafting in the Akaviri style.",
-            },
-            ["k"] = 77,
-            ["n"] = 
-            {
-                ["de"] = "Stil der Akaviri",
-                ["fr"] = "Style akavirois",
-                ["en"] = "Akaviri Style",
-            },
-            ["h"] = false,
-        },
-        [5] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil der Yokudaner.",
-                ["fr"] = "Ces livres permettent de fabriquer au style yokudan.",
-                ["en"] = "These books enable crafting in the Yokudan style.",
-            },
-            ["k"] = 78,
-            ["n"] = 
-            {
-                ["de"] = "Stil der Yokudaner",
-                ["fr"] = "Style yokudan",
-                ["en"] = "Yokudan Style",
-            },
-            ["h"] = false,
-        },
-        [6] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil mit Glasit.",
-                ["fr"] = "Ces livres permettent de fabriquer au style verrier.",
-                ["en"] = "These book fragments enable crafting in the Glass style.",
-            },
-            ["k"] = 79,
-            ["n"] = 
-            {
-                ["de"] = "Stil mit Glasit",
-                ["fr"] = "Style du verre",
-                ["en"] = "Glass Style",
-            },
-            ["h"] = false,
-        },
-        [7] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Mit diesem Wissen können Handwerker Gegenstände im kriegerischen und zweckmäßigen Stil berühmter Söldner fertigen.",
-                ["fr"] = "Permet à l'artisan de créer des objets dans le style mercenaire à la fois guerrier et efficace.",
-                ["en"] = "This style enables the crafter to create items in the martial and utilitarian Mercenary style.",
-            },
-            ["k"] = 80,
-            ["n"] = 
-            {
-                ["de"] = "Stil der Söldner",
-                ["fr"] = "Style mercenaire",
-                ["en"] = "Mercenary Style",
-            },
-            ["h"] = false,
-        },
-        [8] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Xivkyn.",
-                ["fr"] = "Ces livres permettent de fabriquer au style Xivkyn.",
-                ["en"] = "These book fragments enable crafting in the Xivkyn style.",
-            },
-            ["k"] = 81,
-            ["n"] = 
-            {
-                ["de"] = "Stil der Xivkyn",
-                ["fr"] = "Style Xivkyn",
-                ["en"] = "Xivkyn Style",
-            },
-            ["h"] = false,
-        },
-        [9] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Orkahnen.",
-                ["fr"] = "Ces livres permettent de fabriquer au style orque antique.",
-                ["en"] = "These book fragments enable crafting in the Ancient Orc style.",
-            },
-            ["k"] = 84,
-            ["n"] = 
-            {
-                ["de"] = "Stil der Orkahnen",
-                ["fr"] = "Style orque antique",
-                ["en"] = "Ancient Orc Style",
-            },
-            ["h"] = false,
-        },
-        [10] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Gesetzlosen.",
-                ["fr"] = "Ces livres permettent de fabriquer au style hors-la-loi.",
-                ["en"] = "These book fragments enable crafting in the Outlaw style.",
-            },
-            ["k"] = 88,
-            ["n"] = 
-            {
-                ["de"] = "Stil der Gesetzlosen",
-                ["fr"] = "Style hors-la-loi",
-                ["en"] = "Outlaw Style",
-            },
-            ["h"] = false,
-        },
-        [11] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Trinimac.",
-                ["fr"] = "Ces livres permettent de fabriquer au style de Trinimac.",
-                ["en"] = "These book fragments enable crafting in the Trinimac style.",
-            },
-            ["k"] = 89,
-            ["n"] = 
-            {
-                ["de"] = "Stil des Trinimac",
-                ["fr"] = "Style de Trinimac",
-                ["en"] = "Trinimac Style",
-            },
-            ["h"] = false,
-        },
-        [12] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Malacath.",
-                ["fr"] = "Ces livres permettent de fabriquer au style de Malacath.",
-                ["en"] = "These book fragments enable crafting in the Malacath style.",
-            },
-            ["k"] = 90,
-            ["n"] = 
-            {
-                ["de"] = "Stil des Malacath",
-                ["fr"] = "Style de Malacath",
-                ["en"] = "Malacath Style",
-            },
-            ["h"] = false,
-        },
-        [13] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil der Morag Tong.",
-                ["fr"] = "Ces livres débloquent le style d'artisanat Morag Tong.",
-                ["en"] = "These books enable crafting in the Morag Tong style.",
-            },
-            ["k"] = 91,
-            ["n"] = 
-            {
-                ["de"] = "Stil der Morag Tong",
-                ["fr"] = "Style Morag Tong",
-                ["en"] = "Morag Tong Style",
-            },
-            ["h"] = false,
-        },
-        [14] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Aldmeri-Dominions.",
-                ["fr"] = "Ces extraits de livre permettent de fabriquer au style du Domaine aldmeri.",
-                ["en"] = "These book fragments enable crafting in the Aldmeri Dominion style.",
-            },
-            ["k"] = 92,
-            ["n"] = 
-            {
-                ["de"] = "Stil des Aldmeri-Dominions",
-                ["fr"] = "Style du Domaine aldmeri",
-                ["en"] = "Aldmeri Dominion Style",
-            },
-            ["h"] = false,
-        },
-        [15] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Dolchsturz-Bündnisses.",
-                ["fr"] = "Ces extraits de livre permettent de fabriquer au style de l'Alliance de Daguefilante.",
-                ["en"] = "These book fragments enable crafting in the Daggerfall Covenant style.",
-            },
-            ["k"] = 93,
-            ["n"] = 
-            {
-                ["de"] = "Stil des Dolchsturz-Bündnisses",
-                ["fr"] = "Style de l'Alliance de Daguefilante",
-                ["en"] = "Daggerfall Covenant Style",
-            },
-            ["h"] = false,
-        },
-        [16] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Ebenherz-Paktes.",
-                ["fr"] = "Ces extraits de livre permettent de fabriquer au style du Pacte de Cœurébène.",
-                ["en"] = "These book fragments enable crafting in the Ebonheart Pact style.",
-            },
-            ["k"] = 94,
-            ["n"] = 
-            {
-                ["de"] = "Stil des Ebenherz-Pakts",
-                ["fr"] = "Style du Pacte de Cœurébène",
-                ["en"] = "Ebonheart Pact Style",
-            },
-            ["h"] = false,
-        },
-        [17] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Ro'Wada.",
-                ["fr"] = "Ces livres permettent de fabriquer au style Ra Gada.",
-                ["en"] = "These book fragments enable crafting in the Ra Gada style.",
-            },
-            ["k"] = 95,
-            ["n"] = 
-            {
-                ["de"] = "Stil der Ro'Wada",
-                ["fr"] = "Style Ra Gada",
-                ["en"] = "Ra Gada Style",
-            },
-            ["h"] = false,
-        },
-        [18] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der dro-m'Athra.",
-                ["fr"] = "Ces livres permettent de fabriquer au style dro-m'Athra.",
-                ["en"] = "These book fragments enable crafting in the dro-m'Athra style.",
-            },
-            ["k"] = 96,
-            ["n"] = 
-            {
-                ["de"] = "Stil der dro-m'Athra",
-                ["fr"] = "Style dro-m'Athra",
-                ["en"] = "Dro-m'Athra Style",
-            },
-            ["h"] = false,
-        },
-        [19] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen aus Ebenerz.",
-                ["fr"] = "Ces livres permettent de fabriquer au style d'Ébonite.",
-                ["en"] = "These book fragments enable crafting in the Ebony style.",
-            },
-            ["k"] = 97,
-            ["n"] = 
-            {
-                ["de"] = "Ebenerzstil",
-                ["fr"] = "Style d'Ébonite",
-                ["en"] = "Ebony Style",
-            },
-            ["h"] = false,
-        },
-        [20] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Assassinenbundes.",
-                ["fr"] = "Ces livres permettent de fabriquer au style de la ligue des assassins.",
-                ["en"] = "These book fragments enable crafting in the Assassins League style.",
-            },
-            ["k"] = 99,
-            ["n"] = 
-            {
-                ["de"] = "Stil des Assassinenbundes",
-                ["fr"] = "Style de la ligue des assassins",
-                ["en"] = "Assassins League Style",
-            },
-            ["h"] = false,
-        },
-        [21] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Diebesgilde.",
-                ["fr"] = "Ces livres permettent de fabriquer au style de la guilde des voleurs.",
-                ["en"] = "These book fragments enable crafting in the Thieves Guild style.",
-            },
-            ["k"] = 100,
-            ["n"] = 
-            {
-                ["de"] = "Stil der Diebesgilde",
-                ["fr"] = "Style de la guilde des voleurs",
-                ["en"] = "Thieves Guild Style",
-            },
-            ["h"] = false,
-        },
-        [22] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil von Abahs Wacht.",
-                ["fr"] = "Ces livres permettent de fabriquer au style de la garde d'Abah.",
-                ["en"] = "These book fragments enable crafting in the Abah's Watch style.",
-            },
-            ["k"] = 101,
-            ["n"] = 
-            {
-                ["de"] = "Stil von Abahs Wacht",
-                ["fr"] = "Style de la garde d'Abah",
-                ["en"] = "Abah's Watch Style",
-            },
-            ["h"] = false,
-        },
-        [23] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Draugr.",
-                ["fr"] = "Ces livres permettent de fabriquer au style Draugr.",
-                ["en"] = "These book fragments enable crafting in the Draugr style.",
-            },
-            ["k"] = 105,
-            ["n"] = 
-            {
-                ["de"] = "Stil der Draugr",
-                ["fr"] = "Style Draugr",
-                ["en"] = "Draugr Style",
-            },
-            ["h"] = false,
-        },
-        [24] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Minotauren.",
-                ["fr"] = "Ces livres permettent de fabriquer au style des minotaures.",
-                ["en"] = "These book fragments enable crafting in the Minotaur style.",
-            },
-            ["k"] = 106,
-            ["n"] = 
-            {
-                ["de"] = "Stil der Minotauren",
-                ["fr"] = "Style des minotaures",
-                ["en"] = "Minotaur Style",
-            },
-            ["h"] = false,
-        },
-        [25] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Ordens der Stunde.",
-                ["fr"] = "Ces livres permettent de fabriquer au style de l'Ordre des Heures.",
-                ["en"] = "These book fragments enable crafting in the Order of the Hour style.",
-            },
-            ["k"] = 107,
-            ["n"] = 
-            {
-                ["de"] = "Stil des Ordens der Stunde",
-                ["fr"] = "Motif de l'Ordre des Heures",
-                ["en"] = "Order Hour Style",
-            },
-            ["h"] = false,
-        },
-        [26] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Himmlischen.",
-                ["fr"] = "Ces livres permettent de fabriquer au style céleste.",
-                ["en"] = "These book fragments enable crafting in the Celestial style.",
-            },
-            ["k"] = 108,
-            ["n"] = 
-            {
-                ["de"] = "Stil der Himmlischen",
-                ["fr"] = "Style céleste",
-                ["en"] = "Celestial Style",
-            },
-            ["h"] = false,
-        },
-        [27] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil von Kürbisfratze.",
-                ["fr"] = "Ces livres permettent de fabriquer au style d'Hallowjack.",
-                ["en"] = "These book fragments enable crafting in the Hollowjack style.",
-            },
-            ["k"] = 109,
-            ["n"] = 
-            {
-                ["de"] = "Kürbisfratze",
-                ["fr"] = "Style d'Hallowjack",
-                ["en"] = "Hollowjack Style",
-            },
-            ["h"] = false,
-        },
-        [28] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Dunklen Bruderschaft.",
-                ["fr"] = "Ces livres permettent de fabriquer au style de la Confrérie noire.",
-                ["en"] = "These book fragments enable crafting in the Dark Brotherhood style.",
-            },
-            ["k"] = 110,
-            ["n"] = 
-            {
-                ["de"] = "Stil der Dunklen Bruderschaft",
-                ["fr"] = "Style de la Confrérie noire",
-                ["en"] = "Dark Brotherhood Style",
-            },
-            ["h"] = false,
-        },
-        [29] = 
-        {
-            ["g"] = "/esoui/art/icons/icon_missing.dds",
-            ["t"] = 0,
-            ["d"] = 
-            {
-                ["de"] = "",
-                ["fr"] = "",
-                ["en"] = "",
-            },
-            ["k"] = 0,
-            ["n"] = 
-            {
-                ["de"] = "",
-                ["fr"] = "",
-                ["en"] = "",
-            },
-            ["h"] = true,
-        },
-        [30] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Gestaltwandler.",
-                ["fr"] = "Ces livres permettent de fabriquer au style changepeau.",
-                ["en"] = "These book fragments enable crafting in the Skinchanger style.",
-            },
-            ["k"] = 112,
-            ["n"] = 
-            {
-                ["de"] = "Stil der Gestaltwandler",
-                ["fr"] = "Style changepeau",
-                ["en"] = "Skinchanger Style",
-            },
-            ["h"] = false,
-        },
-        [31] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Seidenrings.",
-                ["fr"] = "Ces livres permettent de fabriquer au style de l'Anneau de soie.",
-                ["en"] = "These book fragments enable crafting in the Silken Ring style.",
-            },
-            ["k"] = 113,
-            ["n"] = 
-            {
-                ["de"] = "Stil des Seidenrings",
-                ["fr"] = "Style de l'Anneau de soie",
-                ["en"] = "Silken Ring Style",
-            },
-            ["h"] = false,
-        },
-        [32] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil von Mazzatun.",
-                ["fr"] = "Ces livres permettent de fabriquer au style de Mazzatun.",
-                ["en"] = "These book fragments enable crafting in the Mazzatun style.",
-            },
-            ["k"] = 114,
-            ["n"] = 
-            {
-                ["de"] = "Stil von Mazzatun",
-                ["fr"] = "Style de Mazzatun",
-                ["en"] = "Mazzatun Style",
-            },
-            ["h"] = false,
-        },
-        [33] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil des Hauses Telvanni.",
-                ["fr"] = "Ces livres permettent de fabriquer au style de la Maison Telvanni.",
-                ["en"] = "These books enable crafting in the House Telvanni style.",
-            },
-            ["k"] = 116,
-            ["n"] = 
-            {
-                ["de"] = "Stil des Hauses Telvanni",
-                ["fr"] = "Style de la Maison Telvanni",
-                ["en"] = "House Telvanni Style",
-            },
-            ["h"] = false,
-        },
-        [34] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil der kriegerischen Ordinatoren.",
-                ["fr"] = "Ces livres débloquent le style d'artisanat des Ordonnateurs.",
-                ["en"] = "These books enable crafting in the Militant Ordinator style.",
-            },
-            ["k"] = 117,
-            ["n"] = 
-            {
-                ["de"] = "Stil der kriegerischen Ordinatoren",
-                ["fr"] = "Style d'Ordonnateur militant",
-                ["en"] = "Militant Ordinator Style",
-            },
-            ["h"] = false,
-        },
-        [35] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil der Kriegswappenträger.",
-                ["fr"] = "Ces livres permettent de fabriquer au style des Exaltés.",
-                ["en"] = "These books enable crafting in the Buoyant Armiger style.",
-            },
-            ["k"] = 118,
-            ["n"] = 
-            {
-                ["de"] = "Stil der Kriegswappenträger",
-                ["fr"] = "Style d'Exalté",
-                ["en"] = "Buoyant Armiger Style",
-            },
-            ["h"] = false,
-        },
-        [36] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil der Aschländer.",
-                ["fr"] = "Ces livres permettent de fabriquer au style cendrais.",
-                ["en"] = "These books enable crafting in the Ashlander style.",
-            },
-            ["k"] = 119,
-            ["n"] = 
-            {
-                ["de"] = "Stil der Aschländer",
-                ["fr"] = "Le style cendrais",
-                ["en"] = "Ashlander Style",
-            },
-            ["h"] = false,
-        },
-        [37] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil des Hauses Hlaalu.",
-                ["fr"] = "Ces livres permettent de fabriquer au style de la Maison Hlaalu.",
-                ["en"] = "These books enable crafting in the House Hlaalu style.",
-            },
-            ["k"] = 121,
-            ["n"] = 
-            {
-                ["de"] = "Stil des Hauses Hlaalu",
-                ["fr"] = "Style de la Maison Hlaalu",
-                ["en"] = "House Hlaalu Style",
-            },
-            ["h"] = false,
-        },
-        [38] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil des Hauses Redoran.",
-                ["fr"] = "Ces livres permettent de fabriquer au style de la Maison Rédoran.",
-                ["en"] = "These books enable crafting in the House Redoran style.",
-            },
-            ["k"] = 122,
-            ["n"] = 
-            {
-                ["de"] = "Stil des Hauses Redoran",
-                ["fr"] = "Style de la Maison Rédoran",
-                ["en"] = "House Redoran Style",
-            },
-            ["h"] = false,
-        },
-        [39] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Blutquellschmiede.",
-                ["fr"] = "Ces livres permettent de fabriquer au style de la Sangreforge.",
-                ["en"] = "These book fragments enable crafting in the Bloodforge style.",
-            },
-            ["k"] = 125,
-            ["n"] = 
-            {
-                ["de"] = "Stil der Blutquellschmiede",
-                ["fr"] = "Style Sangreforge",
-                ["en"] = "Bloodforge Style",
-            },
-            ["h"] = false,
-        },
-        [40] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Grauenshornklans.",
-                ["fr"] = "Ces livres permettent de fabriquer au style des Corneffroi.",
-                ["en"] = "These book fragments enable crafting in the Dreadhorn style.",
-            },
-            ["k"] = 126,
-            ["n"] = 
-            {
-                ["de"] = "Stil des Grauenshornklans",
-                ["fr"] = "Style Corneffroi",
-                ["en"] = "Dreadhorn Style",
-            },
-            ["h"] = false,
-        },
-        [41] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Apostel.",
-                ["fr"] = "Ces livres permettent de fabriquer au style des Apôtres.",
-                ["en"] = "These book fragments enable crafting in the Apostle style.",
-            },
-            ["k"] = 127,
-            ["n"] = 
-            {
-                ["de"] = "Stil der Apostel",
-                ["fr"] = "Style des Apôtres",
-                ["en"] = "Apostle Style",
-            },
-            ["h"] = false,
-        },
-        [42] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 14,
-            ["d"] = 
-            {
-                ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Ebenschattens.",
-                ["fr"] = "Ces livres permettent de fabriquer au style d'Ombrébène.",
-                ["en"] = "These book fragments enable crafting in the Ebonshadow style.",
-            },
-            ["k"] = 128,
-            ["n"] = 
-            {
-                ["de"] = "Stil des Ebenschattens",
-                ["fr"] = "Style d'Ombrébène",
-                ["en"] = "Ebonshadow Style",
-            },
-            ["h"] = false,
-        },
-    },
-    [3] = 
-    {
-        [1] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
-            ["t"] = 117,
-            ["d"] = 
-            {
-                ["de"] = "Mysterien und Enthüllungen der Region Kargstein.",
-                ["fr"] = "Mystères et révélations de la région désolée de Raidelorn.",
-                ["en"] = "Mysteries and revelations from the no-man's-region of Craglorn.",
-            },
-            ["k"] = 44,
-            ["n"] = 
-            {
-                ["de"] = "Geheimnisse von Kargstein",
-                ["fr"] = "Secrets de Raidelorn",
-                ["en"] = "Craglorn Secrets",
-            },
-            ["h"] = false,
-        },
-        [2] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
-            ["t"] = 93,
-            ["d"] = 
-            {
-                ["de"] = "Bücher, Notizen und Aufzeichnungen, die sich mit Verbrechen und kriminellen Organisationen beschäftigen.",
-                ["fr"] = "Livres, notes et rapports relatifs au crime et aux organisations criminelles.",
-                ["en"] = "Books, notes, and ledgers related to crime and criminal organizations.",
-            },
-            ["k"] = 45,
-            ["n"] = 
-            {
-                ["de"] = "Verbrecherischer Schriftverkehr",
-                ["fr"] = "Correspondance criminelle",
-                ["en"] = "Criminal Correspondence",
-            },
-            ["h"] = false,
-        },
-        [3] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_daedric.dds",
-            ["t"] = 92,
-            ["d"] = 
-            {
-                ["de"] = "Bücher, Notizen und Tagebücher, von und über Anhänger daedrischer Kulte.",
-                ["fr"] = "Livres, notes et journaux par et à propos des adorateurs de Daedra.",
-                ["en"] = "Books, notes, and journals by and about Daedra worshipers.",
-            },
-            ["k"] = 46,
-            ["n"] = 
-            {
-                ["de"] = "Daedrische Kulte",
-                ["fr"] = "Sectes daedriques",
-                ["en"] = "Daedric Cults",
-            },
-            ["h"] = false,
-        },
-        [4] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
-            ["t"] = 80,
-            ["d"] = 
-            {
-                ["de"] = "Die Völker Tamriels haben das Gefühl, dass sie die Geschehnisse ihres Lebens aufzeichnen müssen.",
-                ["fr"] = "Les habitants de Tamriel estiment qu'il est de leur devoir de tenir un journal de leur vie.",
-                ["en"] = "Tamrielic peoples feel they have a duty to record the events of their lives.",
-            },
-            ["k"] = 47,
-            ["n"] = 
-            {
-                ["de"] = "Tagebücher und Aufzeichnungen",
-                ["fr"] = "Journaux et journaux de bord",
-                ["en"] = "Diaries and Logs",
-            },
-            ["h"] = false,
-        },
-        [5] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
-            ["t"] = 120,
-            ["d"] = 
-            {
-                ["de"] = "Steckbriefe, Arenawerbung, Kopfgeldschreiben, Warnschilder, Grabinschriften, offizielle Ankündigungen, Türbeschriftungen und mehr.",
-                ["fr"] = "Avis de recherche, journaux de l'arène, primes, pancartes d'alerte, épitaphes, annonces officielles, inscriptions au-dessus des portes, etc.",
-                ["en"] = "Wanted posters, arena broadsheets, bounty flyers, warning signs, gravestone epitaphs, official announcements, inscriptions over doorways, and so forth.",
-            },
-            ["k"] = 48,
-            ["n"] = 
-            {
-                ["de"] = "Zettel, Aushänge und Erlasse",
-                ["fr"] = "Affichages privés et officiels",
-                ["en"] = "Handbills, Posters, and Decrees",
-            },
-            ["h"] = false,
-        },
-        [6] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
-            ["t"] = 77,
-            ["d"] = 
-            {
-                ["de"] = "Briefe, Notizen und Tagebücher, die sich mit Liebe und Romanzen beschäftigen.",
-                ["fr"] = "Lettres, notes et journaux parlant d'amour.",
-                ["en"] = "Letters, notes, and journals about love and romance.",
-            },
-            ["k"] = 49,
-            ["n"] = 
-            {
-                ["de"] = "Herzen und Blumen",
-                ["fr"] = "Cœurs et petites fleurs",
-                ["en"] = "Hearts and Flowers",
-            },
-            ["h"] = false,
-        },
-        [7] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
-            ["t"] = 86,
-            ["d"] = 
-            {
-                ["de"] = "Rezepte, Prüflisten, Rechnungen, Verträge, Haushaltsnotizen, Aufzeichnungen und ähnliches.",
-                ["fr"] = "Recettes, listes, actes de vente, contrats, conseils domestiques, reçus, livres de compte, etc.",
-                ["en"] = "Recipes, checklists, bills of sale, contracts, household hints, receipts, ledgers, and so forth.",
-            },
-            ["k"] = 50,
-            ["n"] = 
-            {
-                ["de"] = "Häuser, Läden und Handel",
-                ["fr"] = "Maisons, boutiques et commerce",
-                ["en"] = "Houses, Shops, and Trade",
-            },
-            ["h"] = false,
-        },
-        [8] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
-            ["t"] = 126,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung recht förmlicher Briefe.",
-                ["fr"] = "Une collection de lettres relativement officielles.",
-                ["en"] = "A collection of relatively formal letters.",
-            },
-            ["k"] = 51,
-            ["n"] = 
-            {
-                ["de"] = "Briefe und Sendschreiben",
-                ["fr"] = "Lettres et missives",
-                ["en"] = "Letters and Missives",
-            },
-            ["h"] = false,
-        },
-        [9] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
-            ["t"] = 109,
-            ["d"] = 
-            {
-                ["de"] = "Bücher, die sich mit den Kulturen Tamriels und sozialen Praktiken beschäftigen.",
-                ["fr"] = "Livres à propos des cultures et coutumes sociales de Tamriel.",
-                ["en"] = "Books about Tamrielic cultures and social practices.",
-            },
-            ["k"] = 52,
-            ["n"] = 
-            {
-                ["de"] = "Wissenswertes und Kultur",
-                ["fr"] = "Connaissance et culture",
-                ["en"] = "Lore and Culture",
-            },
-            ["h"] = false,
-        },
-        [10] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
-            ["t"] = 98,
-            ["d"] = 
-            {
-                ["de"] = "Schriften von Kommandanten, Soldaten und Seeleuten, die sich mit mit dem Krieg beschäftigen.",
-                ["fr"] = "Correspondance de commandants, soldats et marins à propos de la guerre.",
-                ["en"] = "Correspondence by commanders, soldiers, and sailors relating to warfare.",
-            },
-            ["k"] = 53,
-            ["n"] = 
-            {
-                ["de"] = "Militärische Befehle & Berichte",
-                ["fr"] = "Ordres et rapports militaires",
-                ["en"] = "Military Orders and Reports",
-            },
-            ["h"] = false,
-        },
-        [11] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
-            ["t"] = 82,
-            ["d"] = 
-            {
-                ["de"] = "Bücher mit Mysterien und Rätseln, welche Codes, Chiffren, Hinweisbücher, Schuldhinweise und mysteriöse Inschriften beinhalten.",
-                ["fr"] = "Livres traitant de mystères et d'énigmes, dont des codes, messages cryptés, livres d'indices, preuves de culpabilité et inscriptions mystérieuses.",
-                ["en"] = "Books about mysteries and puzzles, including codes, ciphers, clue books, proofs of guilt, and mysterious inscriptions.",
-            },
-            ["k"] = 54,
-            ["n"] = 
-            {
-                ["de"] = "Geheimnisse und Hinweise",
-                ["fr"] = "Mystères et indices",
-                ["en"] = "Mysteries and Clues",
-            },
-            ["h"] = false,
-        },
-        [12] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
-            ["t"] = 122,
-            ["d"] = 
-            {
-                ["de"] = "Informelle Schreiben und hastige Notizen für später.",
-                ["fr"] = "Communications informelles et notes personnelles sur bouts de papier.",
-                ["en"] = "Informal communications and notes-to-self on scraps of paper.",
-            },
-            ["k"] = 55,
-            ["n"] = 
-            {
-                ["de"] = "Notizen und Erinnerungen",
-                ["fr"] = "Notes et mémoranda",
-                ["en"] = "Notes and Memos",
-            },
-            ["h"] = false,
-        },
-        [13] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
-            ["t"] = 106,
-            ["d"] = 
-            {
-                ["de"] = "Mehr zu Aktivitäten, Gedanken und Bekenntnissen einzelner Bürger Tamriels.",
-                ["fr"] = "Les activités, pensées et confessions d'individus de Tamriel.",
-                ["en"] = "The activities, thoughts, and confessions of individual Tamrielics.",
-            },
-            ["k"] = 56,
-            ["n"] = 
-            {
-                ["de"] = "Persönliche Aufzeichnungen",
-                ["fr"] = "Journaux personnels",
-                ["en"] = "Personal Journals",
-            },
-            ["h"] = false,
-        },
-        [14] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
-            ["t"] = 87,
-            ["d"] = 
-            {
-                ["de"] = "Politische Intrigen, Rebellionen, Massenvergiftungen, Pläne Böses zurück in die Welt zu bringen und vieles mehr.",
-                ["fr"] = "Machinations politiques, rebellions, empoisonnements de masse, complots visant à ramener d'antiques maux dans le monde, etc.",
-                ["en"] = "Political machinations, rebellions, mass poisonings, plots to bring ancient evil back into the world, etc.",
-            },
-            ["k"] = 57,
-            ["n"] = 
-            {
-                ["de"] = "Pläne und Ränke",
-                ["fr"] = "Complots et manigances",
-                ["en"] = "Plots and Schemes",
-            },
-            ["h"] = false,
-        },
-        [15] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
-            ["t"] = 97,
-            ["d"] = 
-            {
-                ["de"] = "Notizen und Tagebücher über die Erforschung der Magie, das Erkunden von Dwemerruinen, das Experimentieren an Menschen, alchemistische Abhandlungen und vieles mehr.",
-                ["fr"] = "Notes et journaux de chercheurs en magie, explorateurs de ruines dwemers, expérimentateurs sur sujets humains, tracts alchimiques, etc.",
-                ["en"] = "Notes and journals of magical researchers, explorers of Dwarven ruins, experimenters on human subjects, alchemical tracts, and so on.",
-            },
-            ["k"] = 58,
-            ["n"] = 
-            {
-                ["de"] = "Forschungsnotizen",
-                ["fr"] = "Notes de recherche",
-                ["en"] = "Research Notes",
-            },
-            ["h"] = false,
-        },
-        [16] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_magic.dds",
-            ["t"] = 90,
-            ["d"] = 
-            {
-                ["de"] = "Zauber und Rituale, Anleitungen für infernale Geräte, Grimoire und Zauberbücher, und Berichte über magische Geschichte.",
-                ["fr"] = "Sorts et rituels, instructions d'emploi d'appareils infernaux, grimoires, livres de sorts et autres traités sur l'histoire de la magie.",
-                ["en"] = "Spells and rituals, instructions for operating infernal devices, grimoires and spellbooks, and treatises on magical history.",
-            },
-            ["k"] = 59,
-            ["n"] = 
-            {
-                ["de"] = "Rituale und Offenbarungen",
-                ["fr"] = "Rituels et révélations",
-                ["en"] = "Rituals and Revelations",
-            },
-            ["h"] = false,
-        },
-        [17] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
-            ["t"] = 113,
-            ["d"] = 
-            {
-                ["de"] = "Geschichten von uralten Legenden, entsetzliche Erklärungen von Massakern und Bettgeschichten für die ganz kleinen.",
-                ["fr"] = "Histoires et légendes anciennes, horribles récits de massacres et histoires pour endormir les petits.",
-                ["en"] = "Stories and ancient legends, horrific accounts of massacres, and bedtime tales for the wee ones.",
-            },
-            ["k"] = 60,
-            ["n"] = 
-            {
-                ["de"] = "Erzählungen Tamriels",
-                ["fr"] = "Récits de Tamriel",
-                ["en"] = "Tales of Tamriel",
-            },
-            ["h"] = false,
-        },
-        [18] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
-            ["t"] = 94,
-            ["d"] = 
-            {
-                ["de"] = "Abhandlungen, Notizen, Bücher und Tagebücher von und über diejenigen, die dem Glauben und/oder dessen Illusionen verfallen sind.",
-                ["fr"] = "Tracts, notes, livres et journaux par ou à propos de ceux pour qui accordent une grande importance à la foi et/ou leurs illusions.",
-                ["en"] = "Tracts, notes, books, and journals by and about those who are strong in their faith and/or their delusions.",
-            },
-            ["k"] = 61,
-            ["n"] = 
-            {
-                ["de"] = "Die Gesalbten und die Gestörten",
-                ["fr"] = "Les dévôts et les déments",
-                ["en"] = "The Devoted and the Deranged",
-            },
-            ["h"] = false,
-        },
-        [19] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
-            ["t"] = 19,
-            ["d"] = 
-            {
-                ["de"] = "Bücher, die von der Reise eines Helden, seine Seele von Molag Bal zurückzuerlangen, handeln.",
-                ["fr"] = "Livres à propos de la quête d'un héros pour reprendre son âme à Molag Bal.",
-                ["en"] = "Books relating to a hero's quest to recover a lost soul from Molag Bal.",
-            },
-            ["k"] = 62,
-            ["n"] = 
-            {
-                ["de"] = "Die Fünf Gefährten",
-                ["fr"] = "Les Cinq Compagnons",
-                ["en"] = "The Five Companions",
-            },
-            ["h"] = false,
-        },
-        [20] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
-            ["t"] = 78,
-            ["d"] = 
-            {
-                ["de"] = "Bücher, die von den abwechslungsreichen Gegenden Tamriels und deren Bewohnern berichten.",
-                ["fr"] = "Guides des faunes et flores variées Tamriel.",
-                ["en"] = "Books about the many and varied environments of Tamriel and the creatures that live in them.",
-            },
-            ["k"] = 63,
-            ["n"] = 
-            {
-                ["de"] = "Die Welt und ihre Bewohner",
-                ["fr"] = "Le Monde et ses créatures",
-                ["en"] = "The World and Its Creatures",
-            },
-            ["h"] = false,
-        },
-        [21] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
-            ["t"] = 73,
-            ["d"] = 
-            {
-                ["de"] = "Bücher mit Poesie und Liedern.",
-                ["fr"] = "Recueils de poèmes et de chants.",
-                ["en"] = "Books of poetry and song.",
-            },
-            ["k"] = 64,
-            ["n"] = 
-            {
-                ["de"] = "Die Worte des Propheten",
-                ["fr"] = "Paroles des poètes",
-                ["en"] = "Words of the Poets",
-            },
-            ["h"] = false,
-        },
-        [22] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
-            ["t"] = 78,
-            ["d"] = 
-            {
-                ["de"] = "Bücher, Notizen und Tagebücher von Selbstmödern und allzu Selbstsicheren.",
-                ["fr"] = "Livres, notes et journaux des suicidaires et des intrépides.",
-                ["en"] = "Books, notes, and journals of the suicidal and the overconfident.",
-            },
-            ["k"] = 65,
-            ["n"] = 
-            {
-                ["de"] = "Letzte Worte",
-                ["fr"] = "Dernières paroles",
-                ["en"] = "Final Words",
-            },
-            ["h"] = false,
-        },
-        [23] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
-            ["t"] = 84,
-            ["d"] = 
-            {
-                ["de"] = "Bücher, die das Können des Lesers in Bezug auf verschiedene Dinge verbessern.",
-                ["fr"] = "Livres qui améliorent les compétences de leur lecteur.",
-                ["en"] = "Books that endow the reader with skill improvements.",
-            },
-            ["k"] = 66,
-            ["n"] = 
-            {
-                ["de"] = "Lehrbücher",
-                ["fr"] = "Manuels de compétence",
-                ["en"] = "Skill Books",
-            },
-            ["h"] = false,
-        },
-        [24] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 114,
-            ["d"] = 
-            {
-                ["de"] = "Diskurse wilder sowie anspruchsvoller Natur aus dem Grenzreich Wrothgar.",
-                ["fr"] = "Discussions sur les sauvages et les civilisés du royaume frontalier de Wrothgar.",
-                ["en"] = "Discourses savage and sophisticated from the border realm of Wrothgar.",
-            },
-            ["k"] = 68,
-            ["n"] = 
-            {
-                ["de"] = "Worte aus Wrothgar",
-                ["fr"] = "Écrits de Wrothgar",
-                ["en"] = "Wrothgar Writings",
-            },
-            ["h"] = false,
-        },
-        [25] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
-            ["t"] = 20,
-            ["d"] = 
-            {
-                ["de"] = "Schriften und Briefe aus der Kaiserstadt.",
-                ["fr"] = "Livres et lettres de la cité impériale.",
-                ["en"] = "Tomes and correspondence from the Imperial City.",
-            },
-            ["k"] = 69,
-            ["n"] = 
-            {
-                ["de"] = "Kaiserliche Bibliothek",
-                ["fr"] = "Bibliothèque impériale",
-                ["en"] = "Imperial Library",
-            },
-            ["h"] = false,
-        },
-        [26] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
-            ["t"] = 54,
-            ["d"] = 
-            {
-                ["de"] = "Bücher, Schriftrollen und Briefwechsel, die mit der imposanten Stadt der Orks und ihrem Umland in Verbindung stehen.",
-                ["fr"] = "Livres, parchemins et correspondance relatifs à la grande cité des Orques et sa région.",
-                ["en"] = "Books, scrolls, and correspondence relating to the great city of the Orcs and its surrounding region.",
-            },
-            ["k"] = 85,
-            ["n"] = 
-            {
-                ["de"] = "Orsinium-Archiv",
-                ["fr"] = "Archives d'Orsinium",
-                ["en"] = "Orsinium Archive",
-            },
-            ["h"] = false,
-        },
-        [27] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
-            ["t"] = 77,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung von Büchern, die in der Hammerfall-Region Hews Fluch gefunden wurden.",
-                ["fr"] = "Un ensemble de livres que l'on trouve au Trépas des Cognées, à Martelfell.",
-                ["en"] = "A collection of books found in the Hammerfell region of Hew's Bane.",
-            },
-            ["k"] = 86,
-            ["n"] = 
-            {
-                ["de"] = "Bücherregal: Hews Fluch",
-                ["fr"] = "Étagère du Trépas des Cognées",
-                ["en"] = "Hew's Bane Bookshelf",
-            },
-            ["h"] = false,
-        },
-        [28] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
-            ["t"] = 103,
-            ["d"] = 
-            {
-                ["de"] = "Eine Sammlung Bücher, die an der Goldküste, der westlichen Region Cyrodiils, gefunden wurde.",
-                ["fr"] = "Une série de livres trouvés sur la Côte d'or, la région occidentale de Cyrodiil.",
-                ["en"] = "A collection of books found in the western Cyrodiil region of the Gold Coast.",
-            },
-            ["k"] = 87,
-            ["n"] = 
-            {
-                ["de"] = "Goldküsten-Wälzer",
-                ["fr"] = "Volumes de la Côte d'or",
-                ["en"] = "Gold Coast Tomes",
-            },
-            ["h"] = false,
-        },
-        [29] = 
-        {
-            ["g"] = "/esoui/art/icons/icon_missing.dds",
-            ["t"] = 126,
-            ["d"] = 
-            {
-                ["de"] = "Folianten, Tagebücher und Briefe von der oder zur großen Vulkaninsel im Herzen von Morrowind.",
-                ["fr"] = "Tomes, journaux et lettres relatives à ou trouvées sur la grande île volcanique au cœur de Morrowind.",
-                ["en"] = "Tomes, journals, and letters relating to or found in the great volcanic island at the heart of Morrowind.",
-            },
-            ["k"] = 102,
-            ["n"] = 
-            {
-                ["de"] = "Vverke aus Vvardenfell",
-                ["fr"] = "Vvolumes de Vvardenfell",
-                ["en"] = "Vvardenfell Vvolumes",
-            },
-            ["h"] = false,
-        },
-        [30] = 
-        {
-            ["g"] = "/esoui/art/icons/icon_missing.dds",
-            ["t"] = 36,
-            ["d"] = 
-            {
-                ["de"] = "Die 36 Lehren oder Lektionen des Kriegerpoeten Vivec, des lebenden Gottes des Tribunals von Morrowind.",
-                ["fr"] = "Les trente-six leçons, ou sermons, du guerrier-poète Vivec, dieu vivant du Tribunal de Morrowind.",
-                ["en"] = "The thirty-six lessons, or sermons, of the warrior-poet Vivec, living god of the Tribunal of Morrowind.",
-            },
-            ["k"] = 103,
-            ["n"] = 
-            {
-                ["de"] = "Vivecs 36 Lehren",
-                ["fr"] = "Les 36 leçons de Vivec",
-                ["en"] = "Vivec's 36 Lessons",
-            },
-            ["h"] = false,
-        },
-        [31] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_dungeons.dds",
-            ["t"] = 22,
-            ["d"] = 
-            {
-                ["de"] = "Verschiedene Folianten, Zeitschriften, Bücher, Briefe und Schriftrollen, die von Gelehrten und Archivaren aus allen Reichen Tamriels zusammengetragen wurden.",
-                ["fr"] = "Différents tomes obscurs, journaux, libres, lettres et parchemins rassemblés par les érudits et archivistes de tout Tamriel.",
-                ["en"] = "Various and sundry tomes, journals, books, letters, and scrolls gathered by scholars and archivists across all the realms of Tamriel.",
-            },
-            ["k"] = 104,
-            ["n"] = 
-            {
-                ["de"] = "Bücherei der Inkunabeln",
-                ["fr"] = "Bibliothèque des Incunables",
-                ["en"] = "Library of Incunabula",
-            },
-            ["h"] = false,
-        },
-        [32] = 
-        {
-            ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
-            ["t"] = 1,
-            ["d"] = 
-            {
-                ["de"] = "Bücher, die nie endende Aufgaben beschreiben, die Art von Aufgaben, die Abenteurer jeden Tag angehen können.",
-                ["fr"] = "Des livres qui décrivent les tâches sans fin, le genre de quête que les aventuriers peuvent accomplir chaque jour.",
-                ["en"] = "Books that describe tasks without end, the kind of quests that adventurers can complete every day.",
-            },
-            ["k"] = 115,
-            ["n"] = 
-            {
-                ["de"] = "Almanach des Abenteurers",
-                ["fr"] = "Almanach de l'aventurier",
-                ["en"] = "Adventurer's Almanac",
-            },
-            ["h"] = false,
-        },
-        [33] = 
-        {
-            ["g"] = "/esoui/art/icons/icon_missing.dds",
-            ["t"] = 82,
-            ["d"] = 
-            {
-                ["de"] = "Ein Archiv von Folianten und Aufzeichnungen, die mit Sotha Sil und seiner gleichnamigen Stadt zu tun haben.",
-                ["fr"] = "Archive de volumes et de registres relatifs à Sotha Sil et à sa Cité mécanique.",
-                ["en"] = "An archive of tomes and records relating to Sotha Sil and his city of the same name.",
-            },
-            ["k"] = 120,
-            ["n"] = 
-            {
-                ["de"] = "Uhrwerk-Memorabilien",
-                ["fr"] = "Mnemonix mécanique",
-                ["en"] = "Clockwork Mnemonix",
-            },
-            ["h"] = false,
-        },
-    },
-}
+	  [1] = 
+	  {
+			[1] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Connaissance de Glénumbrie",
+					  ["de"] = "Über Glenumbra",
+					  ["en"] = "Glenumbra Lore",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une série de livres de connaissances de la guilde des mages sur la Glénumbrie.",
+					  ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Glenumbra.",
+					  ["en"] = "A Mages Guild collection of lore books about Glenumbra.",
+				 },
+				 ["k"] = 3,
+				 ["t"] = 10,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			},
+			[2] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Connaissance de Havre-tempête",
+					  ["de"] = "Über Sturmhafen",
+					  ["en"] = "Stormhaven Lore",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une série de livres de connaissances de la guilde des mages sur Havre-tempête.",
+					  ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Sturmhafen.",
+					  ["en"] = "A Mages Guild collection of lore books about Stormhaven.",
+				 },
+				 ["k"] = 5,
+				 ["t"] = 10,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			},
+			[3] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Connaissance de Fendretour",
+					  ["de"] = "Über Kluftspitze",
+					  ["en"] = "Rivenspire Lore",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une série de livres de connaissances de la guilde des mages sur Fendretour.",
+					  ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Kluftspitze.",
+					  ["en"] = "A Mages Guild collection of lore books about Rivenspire.",
+				 },
+				 ["k"] = 6,
+				 ["t"] = 10,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			},
+			[4] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Connaissance de Bangkoraï",
+					  ["de"] = "Über Bangkorai",
+					  ["en"] = "Bangkorai Lore",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une série de livres de connaissances de la guilde des mages sur Bangkoraï.",
+					  ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Bangkorai.",
+					  ["en"] = "A Mages Guild collection of lore books about Bangkorai.",
+				 },
+				 ["k"] = 7,
+				 ["t"] = 10,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			},
+			[5] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Connaissance du désert d'Alik'r",
+					  ["de"] = "Über die Alik'r-Wüste",
+					  ["en"] = "Alik'r Desert Lore",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une série de livres de connaissances de la guilde des mages sur le désert d'Alik'r.",
+					  ["de"] = "Eine Sammlung der Magiergilde mit Büchern über die Alik'r-Wüste.",
+					  ["en"] = "A Mages Guild collection of lore books about the Alik'r Desert.",
+				 },
+				 ["k"] = 8,
+				 ["t"] = 10,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			},
+			[6] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Connaissance du marais noir",
+					  ["de"] = "Über Schattenfenn",
+					  ["en"] = "Shadowfen Lore",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une série de livres de connaissances de la guilde des mages sur Fangeombre.",
+					  ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Schattenfenn.",
+					  ["en"] = "A Mages Guild collection of lore books about Shadowfen.",
+				 },
+				 ["k"] = 9,
+				 ["t"] = 10,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			},
+			[7] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Les épreuves d'Eyévéa",
+					  ["de"] = "Die Prüfung von Augvea",
+					  ["en"] = "The Trial of Eyevea",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une collection de livres de la guilde des mages découverts en accomplissant les épreuves du Dieu fou.",
+					  ["de"] = "Eine Sammlung der Magiergilde mit Büchern, die man während der Prüfungen des Verrückten Gottes findet.",
+					  ["en"] = "A Mages Guild collection of books found while completing the Mad God's trials.",
+				 },
+				 ["k"] = 10,
+				 ["t"] = 4,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_magic.dds",
+			},
+			[8] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Princes Daedra",
+					  ["de"] = "Daedrische Fürsten",
+					  ["en"] = "Daedric Princes",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une série de livres de connaissances de la guilde des mages sur les princes Daedra.",
+					  ["de"] = "Eine Sammlung der Magiergilde mit Büchern über daedrische Fürsten.",
+					  ["en"] = "A Mages Guild collection of books regarding the Daedric Princes.",
+				 },
+				 ["k"] = 12,
+				 ["t"] = 10,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_daedric.dds",
+			},
+			[9] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Biographies",
+					  ["de"] = "Biographien",
+					  ["en"] = "Biographies",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une collection de livres de la guilde des mages sur la vie des grands de ce monde.",
+					  ["de"] = "Eine Sammlung der Magiergilde mit Büchern über die Leben der Großen.",
+					  ["en"] = "A Mages Guild collection of books about the lives of the great.",
+				 },
+				 ["k"] = 13,
+				 ["t"] = 10,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			},
+			[10] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Divins et divinités",
+					  ["de"] = "Göttliche und Gottheiten",
+					  ["en"] = "Divines and Deities",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une collection de livres de la guilde des mages sur les Divins et autres divinités.",
+					  ["de"] = "Eine Sammlung der Magiergilde mit Büchern über die Göttlichen und andere Gottheiten.",
+					  ["en"] = "A Mages Guild collection of books regarding the Divines and other Deities.",
+				 },
+				 ["k"] = 14,
+				 ["t"] = 10,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_divine.dds",
+			},
+			[11] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Connaissance des donjons",
+					  ["de"] = "Über Verliese",
+					  ["en"] = "Dungeon Lore",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une collection de livres de la guilde des mages concernant les donjons.",
+					  ["de"] = "Eine Sammlung der Magiergilde mit Büchern mit Wissenswertem über Verliese.",
+					  ["en"] = "A Mages Guild collection of books regarding dungeon lore.",
+				 },
+				 ["k"] = 15,
+				 ["t"] = 17,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_dungeons.dds",
+			},
+			[12] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Dwemer",
+					  ["de"] = "Die Dwemer",
+					  ["en"] = "Dwemer",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une collection de livres de la guilde des mages concernant les Dwemers.",
+					  ["de"] = "Eine Sammlung der Magiergilde mit Büchern über die Dwemer.",
+					  ["en"] = "A Mages Guild collection of books regarding the Dwemer.",
+				 },
+				 ["k"] = 16,
+				 ["t"] = 16,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_dwemer.dds",
+			},
+			[13] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Légendes de Nirn",
+					  ["de"] = "Legenden von Nirn",
+					  ["en"] = "Legends of Nirn",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une collection de livres de la guilde des mages concernant d'anciennes légendes.",
+					  ["de"] = "Eine Sammlung der Magiergilde mit Büchern über die alten Legenden.",
+					  ["en"] = "A Mages Guild collection of books regarding ancient legends.",
+				 },
+				 ["k"] = 17,
+				 ["t"] = 10,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			},
+			[14] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Littérature",
+					  ["de"] = "Bekannte Literatur",
+					  ["en"] = "Literature",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une collection de livres de la guilde des mages recueillant des œuvres majeures de littérature.",
+					  ["de"] = "Eine Sammlung der Magiergilde mit Büchern mit bedeutenden literarischen Werken.",
+					  ["en"] = "A Mages Guild collection of books that are significant works of literature.",
+				 },
+				 ["k"] = 18,
+				 ["t"] = 10,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			},
+			[15] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Magie et sortilèges",
+					  ["de"] = "Magie und Magicka",
+					  ["en"] = "Magic and Magicka",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une collection de livres de la guilde des mages parlant de magie.",
+					  ["de"] = "Eine Büchersammlung der Magiergilde, bestehend aus Werken zu Magie und Magicka.",
+					  ["en"] = "A Mages Guild books collection of regarding magic and magicka.",
+				 },
+				 ["k"] = 19,
+				 ["t"] = 10,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_magic.dds",
+			},
+			[16] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Mythes du Mundus",
+					  ["de"] = "Mythen des Mundus",
+					  ["en"] = "Myths of the Mundus",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une collection de livres de la guilde des mages regroupant les mythes.",
+					  ["de"] = "Eine Sammlung der Magiergilde mit Büchern über uralte Mythen.",
+					  ["en"] = "A Mages Guild collection of books regarding ancient myths.",
+				 },
+				 ["k"] = 20,
+				 ["t"] = 10,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			},
+			[17] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Connaissance d'Oblivion",
+					  ["de"] = "Über das Reich des Vergessens",
+					  ["en"] = "Oblivion Lore",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une collection de livres de la guilde des mages concernant Oblivion.",
+					  ["de"] = "Eine Sammlung der Magiergilde mit Büchern über das Reich des Vergessens.",
+					  ["en"] = "A Mages Guild collection of books regarding Oblivion.",
+				 },
+				 ["k"] = 21,
+				 ["t"] = 10,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_daedric.dds",
+			},
+			[18] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Poésie et chant",
+					  ["de"] = "Gedichte und Lieder",
+					  ["en"] = "Poetry and Song",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une collection de livres de la guilde des mages recueillant des poèmes et des chants.",
+					  ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Feiern und Liedtexte.",
+					  ["en"] = "A Mages Guild collection of books celebrating lyrics and verse.",
+				 },
+				 ["k"] = 22,
+				 ["t"] = 10,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			},
+			[19] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Histoire de Tamriel",
+					  ["de"] = "Die Geschichte Tamriels",
+					  ["en"] = "Tamriel History",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une collection de livres de la guilde des mages traitant de l'histoire de Tamriel.",
+					  ["de"] = "Eine Sammlung der Magiergilde mit Büchern über die Geschichte Tamriels.",
+					  ["en"] = "A collection of Mages Guild collection of books pertaining to Tamriel's history.",
+				 },
+				 ["k"] = 23,
+				 ["t"] = 10,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			},
+			[20] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Connaissance des Éboulis",
+					  ["de"] = "Über Steinfälle",
+					  ["en"] = "Stonefalls Lore",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une série de livres de connaissances de la guilde des mages sur les Éboulis.",
+					  ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Steinfälle.",
+					  ["en"] = "A Mages Guild collection of books regarding Stonefalls.",
+				 },
+				 ["k"] = 24,
+				 ["t"] = 10,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			},
+			[21] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Connaissance de Malabal Tor",
+					  ["de"] = "Über Malabal Tor",
+					  ["en"] = "Malabal Tor Lore",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une collection de livres de la guilde des mages découverts à Malabal Tor.",
+					  ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Malabal Tor.",
+					  ["en"] = "A collection of Mages Guild books found in Malabal Tor.",
+				 },
+				 ["k"] = 26,
+				 ["t"] = 10,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			},
+			[22] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Connaissance d'Estemarche",
+					  ["de"] = "Über Ostmarsch",
+					  ["en"] = "Eastmarch Lore",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une série de livres de connaissances de la guilde des mages sur l'Estemarche.",
+					  ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Ostmarsch.",
+					  ["en"] = "A Mages Guild collection of books regarding Eastmarch.",
+				 },
+				 ["k"] = 27,
+				 ["t"] = 10,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			},
+			[23] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Connaissance de Deshaan",
+					  ["de"] = "Über Deshaan",
+					  ["en"] = "Deshaan Lore",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une série de livres de connaissances de la guilde des mages sur Deshaan.",
+					  ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Deshaan.",
+					  ["en"] = "A Mages Guild collection of books regarding Deshaan.",
+				 },
+				 ["k"] = 28,
+				 ["t"] = 10,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			},
+			[24] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Connaissance de la Brèche",
+					  ["de"] = "Über Rift",
+					  ["en"] = "The Rift Lore",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une série de livres de connaissances de la guilde des mages sur la Brèche.",
+					  ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Rift.",
+					  ["en"] = "A Mages Guild collection of books regarding the Rift.",
+				 },
+				 ["k"] = 29,
+				 ["t"] = 10,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			},
+			[25] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Connaissance d'Auridia",
+					  ["de"] = "Über Auridon",
+					  ["en"] = "Auridon Lore",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une collection de livres de la guilde des mages découverts en Auridia.",
+					  ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Auridon.",
+					  ["en"] = "A collection of Mages Guild books found in Auridon.",
+				 },
+				 ["k"] = 30,
+				 ["t"] = 10,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			},
+			[26] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Connaissance du bois de Graht",
+					  ["de"] = "Über Grahtwald",
+					  ["en"] = "Grahtwood Lore",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une série de livres de connaissances de la guilde des mages sur le bois de Graht.",
+					  ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Grahtwald.",
+					  ["en"] = "A Mages Guild collection of books regarding Grahtwood.",
+				 },
+				 ["k"] = 32,
+				 ["t"] = 10,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			},
+			[27] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Connaissance de Prasin",
+					  ["de"] = "Über Grünschatten",
+					  ["en"] = "Greenshade Lore",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une série de livres de connaissances de la guilde des mages sur Prasin.",
+					  ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Grünschatten.",
+					  ["en"] = "A Mages Guild collection of books regarding Greenshade.",
+				 },
+				 ["k"] = 38,
+				 ["t"] = 10,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			},
+			[28] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Connaissance de la Camarde",
+					  ["de"] = "Über Schnittermark",
+					  ["en"] = "Reaper's March Lore",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une série de livres de connaissances de la guilde des mages sur la marche de la Camarde.",
+					  ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Schnittermark.",
+					  ["en"] = "A Mages Guild collection of books regarding Reaper's March.",
+				 },
+				 ["k"] = 39,
+				 ["t"] = 10,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			},
+			[29] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Connaissance de Havreglace",
+					  ["de"] = "Über Kalthafen",
+					  ["en"] = "Coldharbour Lore",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une série de livres de connaissances de la guilde des mages sur Havreglace.",
+					  ["de"] = "Eine Sammlung der Magiergilde mit Büchern über Kalthafen.",
+					  ["en"] = "A Mages Guild collection of books regarding Coldharbour.",
+				 },
+				 ["k"] = 40,
+				 ["t"] = 10,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_daedric.dds",
+			},
+	  },
+	  [2] = 
+	  {
+			[1] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Livres d'artisanat",
+					  ["de"] = "Handwerksbücher",
+					  ["en"] = "Crafting Books",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Livres de savoir autour des différentes disciplines d'artisanat.",
+					  ["de"] = "Bücher, die sich mit den verschiedenen Handwerken beschäftigen.",
+					  ["en"] = "Lore books related to the various disciplines of crafting.",
+				 },
+				 ["k"] = 43,
+				 ["t"] = 23,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			},
+			[2] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Motifs dwemer",
+					  ["de"] = "Stil der Dwemer",
+					  ["en"] = "Dwemer Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "",
+					  ["de"] = "",
+					  ["en"] = "",
+				 },
+				 ["k"] = 74,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_dwemer.dds",
+			},
+			[3] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "",
+					  ["de"] = "",
+					  ["en"] = "",
+				 },
+				 ["h"] = true,
+				 ["d"] = 
+				 {
+					  ["fr"] = "",
+					  ["de"] = "",
+					  ["en"] = "",
+				 },
+				 ["k"] = 0,
+				 ["t"] = 0,
+				 ["g"] = "/esoui/art/icons/icon_missing.dds",
+			},
+			[4] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style akavirois",
+					  ["de"] = "Stil der Akaviri",
+					  ["en"] = "Akaviri Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style akavirois.",
+					  ["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil der Akaviri.",
+					  ["en"] = "These books enable crafting in the Akaviri style.",
+				 },
+				 ["k"] = 77,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[5] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style yokudan",
+					  ["de"] = "Stil der Yokudaner",
+					  ["en"] = "Yokudan Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style yokudan.",
+					  ["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil der Yokudaner.",
+					  ["en"] = "These books enable crafting in the Yokudan style.",
+				 },
+				 ["k"] = 78,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[6] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style du verre",
+					  ["de"] = "Stil mit Glasit",
+					  ["en"] = "Glass Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style verrier.",
+					  ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil mit Glasit.",
+					  ["en"] = "These book fragments enable crafting in the Glass style.",
+				 },
+				 ["k"] = 79,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[7] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style mercenaire",
+					  ["de"] = "Stil der Söldner",
+					  ["en"] = "Mercenary Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Permet à l'artisan de créer des objets dans le style mercenaire à la fois guerrier et efficace.",
+					  ["de"] = "Mit diesem Wissen können Handwerker Gegenstände im kriegerischen und zweckmäßigen Stil berühmter Söldner fertigen.",
+					  ["en"] = "This style enables the crafter to create items in the martial and utilitarian Mercenary style.",
+				 },
+				 ["k"] = 80,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[8] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style Xivkyn",
+					  ["de"] = "Stil der Xivkyn",
+					  ["en"] = "Xivkyn Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style Xivkyn.",
+					  ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Xivkyn.",
+					  ["en"] = "These book fragments enable crafting in the Xivkyn style.",
+				 },
+				 ["k"] = 81,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[9] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style orque antique",
+					  ["de"] = "Stil der Orkahnen",
+					  ["en"] = "Ancient Orc Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style orque antique.",
+					  ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Orkahnen.",
+					  ["en"] = "These book fragments enable crafting in the Ancient Orc style.",
+				 },
+				 ["k"] = 84,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[10] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style hors-la-loi",
+					  ["de"] = "Stil der Gesetzlosen",
+					  ["en"] = "Outlaw Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style hors-la-loi.",
+					  ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Gesetzlosen.",
+					  ["en"] = "These book fragments enable crafting in the Outlaw style.",
+				 },
+				 ["k"] = 88,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[11] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style de Trinimac",
+					  ["de"] = "Stil des Trinimac",
+					  ["en"] = "Trinimac Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style de Trinimac.",
+					  ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Trinimac.",
+					  ["en"] = "These book fragments enable crafting in the Trinimac style.",
+				 },
+				 ["k"] = 89,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[12] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style de Malacath",
+					  ["de"] = "Stil des Malacath",
+					  ["en"] = "Malacath Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style de Malacath.",
+					  ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Malacath.",
+					  ["en"] = "These book fragments enable crafting in the Malacath style.",
+				 },
+				 ["k"] = 90,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[13] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style Morag Tong",
+					  ["de"] = "Stil der Morag Tong",
+					  ["en"] = "Morag Tong Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres débloquent le style d'artisanat Morag Tong.",
+					  ["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil der Morag Tong.",
+					  ["en"] = "These books enable crafting in the Morag Tong style.",
+				 },
+				 ["k"] = 91,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[14] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style du Domaine aldmeri",
+					  ["de"] = "Stil des Aldmeri-Dominions",
+					  ["en"] = "Aldmeri Dominion Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces extraits de livre permettent de fabriquer au style du Domaine aldmeri.",
+					  ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Aldmeri-Dominions.",
+					  ["en"] = "These book fragments enable crafting in the Aldmeri Dominion style.",
+				 },
+				 ["k"] = 92,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[15] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style de l'Alliance de Daguefilante",
+					  ["de"] = "Stil des Dolchsturz-Bündnisses",
+					  ["en"] = "Daggerfall Covenant Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces extraits de livre permettent de fabriquer au style de l'Alliance de Daguefilante.",
+					  ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Dolchsturz-Bündnisses.",
+					  ["en"] = "These book fragments enable crafting in the Daggerfall Covenant style.",
+				 },
+				 ["k"] = 93,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[16] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style du Pacte de Cœurébène",
+					  ["de"] = "Stil des Ebenherz-Pakts",
+					  ["en"] = "Ebonheart Pact Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces extraits de livre permettent de fabriquer au style du Pacte de Cœurébène.",
+					  ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Ebenherz-Paktes.",
+					  ["en"] = "These book fragments enable crafting in the Ebonheart Pact style.",
+				 },
+				 ["k"] = 94,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[17] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style Ra Gada",
+					  ["de"] = "Stil der Ro'Wada",
+					  ["en"] = "Ra Gada Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style Ra Gada.",
+					  ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Ro'Wada.",
+					  ["en"] = "These book fragments enable crafting in the Ra Gada style.",
+				 },
+				 ["k"] = 95,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[18] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style dro-m'Athra",
+					  ["de"] = "Stil der dro-m'Athra",
+					  ["en"] = "Dro-m'Athra Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style dro-m'Athra.",
+					  ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der dro-m'Athra.",
+					  ["en"] = "These book fragments enable crafting in the dro-m'Athra style.",
+				 },
+				 ["k"] = 96,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[19] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style d'Ébonite",
+					  ["de"] = "Stil mit Ebenerz",
+					  ["en"] = "Ebony Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style d'Ébonite.",
+					  ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen aus Ebenerz.",
+					  ["en"] = "These book fragments enable crafting in the Ebony style.",
+				 },
+				 ["k"] = 97,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[20] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style de la ligue des assassins",
+					  ["de"] = "Stil des Assassinenbundes",
+					  ["en"] = "Assassins League Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style de la ligue des assassins.",
+					  ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Assassinenbundes.",
+					  ["en"] = "These book fragments enable crafting in the Assassins League style.",
+				 },
+				 ["k"] = 99,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[21] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style de la guilde des voleurs",
+					  ["de"] = "Stil der Diebesgilde",
+					  ["en"] = "Thieves Guild Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style de la guilde des voleurs.",
+					  ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Diebesgilde.",
+					  ["en"] = "These book fragments enable crafting in the Thieves Guild style.",
+				 },
+				 ["k"] = 100,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[22] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style de la garde d'Abah",
+					  ["de"] = "Stil von Abahs Wacht",
+					  ["en"] = "Abah's Watch Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style de la garde d'Abah.",
+					  ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil von Abahs Wacht.",
+					  ["en"] = "These book fragments enable crafting in the Abah's Watch style.",
+				 },
+				 ["k"] = 101,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[23] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style Draugr",
+					  ["de"] = "Stil der Draugr",
+					  ["en"] = "Draugr Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style Draugr.",
+					  ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Draugr.",
+					  ["en"] = "These book fragments enable crafting in the Draugr style.",
+				 },
+				 ["k"] = 105,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[24] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style des minotaures",
+					  ["de"] = "Stil der Minotauren",
+					  ["en"] = "Minotaur Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style des minotaures.",
+					  ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Minotauren.",
+					  ["en"] = "These book fragments enable crafting in the Minotaur style.",
+				 },
+				 ["k"] = 106,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[25] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Motif de l'Ordre des Heures",
+					  ["de"] = "Stil des Ordens der Stunde",
+					  ["en"] = "Order Hour Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style de l'Ordre des Heures.",
+					  ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Ordens der Stunde.",
+					  ["en"] = "These book fragments enable crafting in the Order of the Hour style.",
+				 },
+				 ["k"] = 107,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[26] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style céleste",
+					  ["de"] = "Stil der Himmlischen",
+					  ["en"] = "Celestial Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style céleste.",
+					  ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Himmlischen.",
+					  ["en"] = "These book fragments enable crafting in the Celestial style.",
+				 },
+				 ["k"] = 108,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[27] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style d'Hallowjack",
+					  ["de"] = "Stil von Kürbisfratze",
+					  ["en"] = "Hollowjack Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style d'Hallowjack.",
+					  ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil von Kürbisfratze.",
+					  ["en"] = "These book fragments enable crafting in the Hollowjack style.",
+				 },
+				 ["k"] = 109,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[28] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style de la Confrérie noire",
+					  ["de"] = "Stil der Dunklen Bruderschaft",
+					  ["en"] = "Dark Brotherhood Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style de la Confrérie noire.",
+					  ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Dunklen Bruderschaft.",
+					  ["en"] = "These book fragments enable crafting in the Dark Brotherhood style.",
+				 },
+				 ["k"] = 110,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[29] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "",
+					  ["de"] = "",
+					  ["en"] = "",
+				 },
+				 ["h"] = true,
+				 ["d"] = 
+				 {
+					  ["fr"] = "",
+					  ["de"] = "",
+					  ["en"] = "",
+				 },
+				 ["k"] = 0,
+				 ["t"] = 0,
+				 ["g"] = "/esoui/art/icons/icon_missing.dds",
+			},
+			[30] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style changepeau",
+					  ["de"] = "Stil der Gestaltwandler",
+					  ["en"] = "Skinchanger Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style changepeau.",
+					  ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Gestaltwandler.",
+					  ["en"] = "These book fragments enable crafting in the Skinchanger style.",
+				 },
+				 ["k"] = 112,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[31] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style de l'Anneau de soie",
+					  ["de"] = "Stil des Seidenrings",
+					  ["en"] = "Silken Ring Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style de l'Anneau de soie.",
+					  ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Seidenrings.",
+					  ["en"] = "These book fragments enable crafting in the Silken Ring style.",
+				 },
+				 ["k"] = 113,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[32] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style de Mazzatun",
+					  ["de"] = "Stil von Mazzatun",
+					  ["en"] = "Mazzatun Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style de Mazzatun.",
+					  ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil von Mazzatun.",
+					  ["en"] = "These book fragments enable crafting in the Mazzatun style.",
+				 },
+				 ["k"] = 114,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[33] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style de la Maison Telvanni",
+					  ["de"] = "Stil des Hauses Telvanni",
+					  ["en"] = "House Telvanni Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style de la Maison Telvanni.",
+					  ["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil des Hauses Telvanni.",
+					  ["en"] = "These books enable crafting in the House Telvanni style.",
+				 },
+				 ["k"] = 116,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[34] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style d'Ordonnateur militant",
+					  ["de"] = "Stil der kriegerischen Ordinatoren",
+					  ["en"] = "Militant Ordinator Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres débloquent le style d'artisanat des Ordonnateurs.",
+					  ["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil der kriegerischen Ordinatoren.",
+					  ["en"] = "These books enable crafting in the Militant Ordinator style.",
+				 },
+				 ["k"] = 117,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[35] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style d'Exalté",
+					  ["de"] = "Stil der Kriegswappenträger",
+					  ["en"] = "Buoyant Armiger Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style des Exaltés.",
+					  ["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil der Kriegswappenträger.",
+					  ["en"] = "These books enable crafting in the Buoyant Armiger style.",
+				 },
+				 ["k"] = 118,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[36] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Le style cendrais",
+					  ["de"] = "Stil der Aschländer",
+					  ["en"] = "Ashlander Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style cendrais.",
+					  ["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil der Aschländer.",
+					  ["en"] = "These books enable crafting in the Ashlander style.",
+				 },
+				 ["k"] = 119,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[37] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style de la Maison Hlaalu",
+					  ["de"] = "Stil des Hauses Hlaalu",
+					  ["en"] = "House Hlaalu Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style de la Maison Hlaalu.",
+					  ["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil des Hauses Hlaalu.",
+					  ["en"] = "These books enable crafting in the House Hlaalu style.",
+				 },
+				 ["k"] = 121,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[38] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style de la Maison Rédoran",
+					  ["de"] = "Stil des Hauses Redoran",
+					  ["en"] = "House Redoran Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style de la Maison Rédoran.",
+					  ["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil des Hauses Redoran.",
+					  ["en"] = "These books enable crafting in the House Redoran style.",
+				 },
+				 ["k"] = 122,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[39] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style Forgesang",
+					  ["de"] = "Stil der Blutquellschmiede",
+					  ["en"] = "Bloodforge Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style de la Forgesang.",
+					  ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Blutquellschmiede.",
+					  ["en"] = "These book fragments enable crafting in the Bloodforge style.",
+				 },
+				 ["k"] = 125,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[40] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style Corneffroi",
+					  ["de"] = "Stil des Grauenshornklans",
+					  ["en"] = "Dreadhorn Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style des Corneffroi.",
+					  ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Grauenshornklans.",
+					  ["en"] = "These book fragments enable crafting in the Dreadhorn style.",
+				 },
+				 ["k"] = 126,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[41] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style des Apôtres",
+					  ["de"] = "Stil der Apostel",
+					  ["en"] = "Apostle Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style des Apôtres.",
+					  ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Apostel.",
+					  ["en"] = "These book fragments enable crafting in the Apostle style.",
+				 },
+				 ["k"] = 127,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[42] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Style d'Ombrébène",
+					  ["de"] = "Stil des Ebenschattens",
+					  ["en"] = "Ebonshadow Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres permettent de fabriquer au style d'Ombrébène.",
+					  ["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Ebenschattens.",
+					  ["en"] = "These book fragments enable crafting in the Ebonshadow style.",
+				 },
+				 ["k"] = 128,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[43] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Le style du Culte du Ver",
+					  ["de"] = "Stil des Wurmkults",
+					  ["en"] = "Worm Cult Style",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Ces livres de style permettent de fabriquer des objets au style du Culte du Ver.",
+					  ["de"] = "Stilkapitel, die es Euch erlauben, Gegenstände im Stil des Wurmkults herzustellen.",
+					  ["en"] = "Motif books that enable crafting in the Worm Cult style.",
+				 },
+				 ["k"] = 130,
+				 ["t"] = 14,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+	  },
+	  [3] = 
+	  {
+			[1] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Secrets de Raidelorn",
+					  ["de"] = "Geheimnisse von Kargstein",
+					  ["en"] = "Craglorn Secrets",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Mystères et révélations de la région désolée de Raidelorn.",
+					  ["de"] = "Mysterien und Enthüllungen der Region Kargstein.",
+					  ["en"] = "Mysteries and revelations from the no-man's-region of Craglorn.",
+				 },
+				 ["k"] = 44,
+				 ["t"] = 117,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			},
+			[2] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Correspondance criminelle",
+					  ["de"] = "Verbrecherischer Schriftverkehr",
+					  ["en"] = "Criminal Correspondence",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Livres, notes et rapports relatifs au crime et aux organisations criminelles.",
+					  ["de"] = "Bücher, Notizen und Aufzeichnungen, die sich mit Verbrechen und kriminellen Organisationen beschäftigen.",
+					  ["en"] = "Books, notes, and ledgers related to crime and criminal organizations.",
+				 },
+				 ["k"] = 45,
+				 ["t"] = 93,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			},
+			[3] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Sectes daedriques",
+					  ["de"] = "Daedrische Kulte",
+					  ["en"] = "Daedric Cults",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Livres, notes et journaux par et à propos des adorateurs de Daedra.",
+					  ["de"] = "Bücher, Notizen und Tagebücher, von und über Anhänger daedrischer Kulte.",
+					  ["en"] = "Books, notes, and journals by and about Daedra worshipers.",
+				 },
+				 ["k"] = 46,
+				 ["t"] = 92,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_daedric.dds",
+			},
+			[4] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Journaux et journaux de bord",
+					  ["de"] = "Tagebücher und Aufzeichnungen",
+					  ["en"] = "Diaries and Logs",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Les habitants de Tamriel estiment qu'il est de leur devoir de tenir un journal de leur vie.",
+					  ["de"] = "Die Völker Tamriels haben das Gefühl, dass sie die Geschehnisse ihres Lebens aufzeichnen müssen.",
+					  ["en"] = "Tamrielic peoples feel they have a duty to record the events of their lives.",
+				 },
+				 ["k"] = 47,
+				 ["t"] = 80,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			},
+			[5] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Affichages privés et officiels",
+					  ["de"] = "Zettel, Aushänge und Erlasse",
+					  ["en"] = "Handbills, Posters, and Decrees",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Avis de recherche, journaux de l'arène, primes, pancartes d'alerte, épitaphes, annonces officielles, inscriptions au-dessus des portes, etc.",
+					  ["de"] = "Steckbriefe, Arenawerbung, Kopfgeldschreiben, Warnschilder, Grabinschriften, offizielle Ankündigungen, Türbeschriftungen und mehr.",
+					  ["en"] = "Wanted posters, arena broadsheets, bounty flyers, warning signs, gravestone epitaphs, official announcements, inscriptions over doorways, and so forth.",
+				 },
+				 ["k"] = 48,
+				 ["t"] = 120,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			},
+			[6] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Cœurs et petites fleurs",
+					  ["de"] = "Herzen und Blumen",
+					  ["en"] = "Hearts and Flowers",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Lettres, notes et journaux parlant d'amour.",
+					  ["de"] = "Briefe, Notizen und Tagebücher, die sich mit Liebe und Romanzen beschäftigen.",
+					  ["en"] = "Letters, notes, and journals about love and romance.",
+				 },
+				 ["k"] = 49,
+				 ["t"] = 77,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			},
+			[7] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Maisons, boutiques et commerce",
+					  ["de"] = "Häuser, Läden und Handel",
+					  ["en"] = "Houses, Shops, and Trade",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Recettes, listes, actes de vente, contrats, conseils domestiques, reçus, livres de compte, etc.",
+					  ["de"] = "Rezepte, Prüflisten, Rechnungen, Verträge, Haushaltsnotizen, Aufzeichnungen und ähnliches.",
+					  ["en"] = "Recipes, checklists, bills of sale, contracts, household hints, receipts, ledgers, and so forth.",
+				 },
+				 ["k"] = 50,
+				 ["t"] = 86,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			},
+			[8] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Lettres et missives",
+					  ["de"] = "Briefe und Sendschreiben",
+					  ["en"] = "Letters and Missives",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une collection de lettres relativement officielles.",
+					  ["de"] = "Eine Sammlung recht förmlicher Briefe.",
+					  ["en"] = "A collection of relatively formal letters.",
+				 },
+				 ["k"] = 51,
+				 ["t"] = 126,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			},
+			[9] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Connaissance et culture",
+					  ["de"] = "Wissenswertes und Kultur",
+					  ["en"] = "Lore and Culture",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Livres à propos des cultures et coutumes sociales de Tamriel.",
+					  ["de"] = "Bücher, die sich mit den Kulturen Tamriels und sozialen Praktiken beschäftigen.",
+					  ["en"] = "Books about Tamrielic cultures and social practices.",
+				 },
+				 ["k"] = 52,
+				 ["t"] = 109,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			},
+			[10] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Ordres et rapports militaires",
+					  ["de"] = "Militärische Befehle & Berichte",
+					  ["en"] = "Military Orders and Reports",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Correspondance de commandants, soldats et marins à propos de la guerre.",
+					  ["de"] = "Schriften von Kommandanten, Soldaten und Seeleuten, die sich mit mit dem Krieg beschäftigen.",
+					  ["en"] = "Correspondence by commanders, soldiers, and sailors relating to warfare.",
+				 },
+				 ["k"] = 53,
+				 ["t"] = 98,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			},
+			[11] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Mystères et indices",
+					  ["de"] = "Geheimnisse und Hinweise",
+					  ["en"] = "Mysteries and Clues",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Livres traitant de mystères et d'énigmes, dont des codes, messages cryptés, livres d'indices, preuves de culpabilité et inscriptions mystérieuses.",
+					  ["de"] = "Bücher mit Mysterien und Rätseln, welche Codes, Chiffren, Hinweisbücher, Schuldhinweise und mysteriöse Inschriften beinhalten.",
+					  ["en"] = "Books about mysteries and puzzles, including codes, ciphers, clue books, proofs of guilt, and mysterious inscriptions.",
+				 },
+				 ["k"] = 54,
+				 ["t"] = 82,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			},
+			[12] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Notes et mémoranda",
+					  ["de"] = "Notizen und Erinnerungen",
+					  ["en"] = "Notes and Memos",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Communications informelles et notes personnelles sur bouts de papier.",
+					  ["de"] = "Informelle Schreiben und hastige Notizen für später.",
+					  ["en"] = "Informal communications and notes-to-self on scraps of paper.",
+				 },
+				 ["k"] = 55,
+				 ["t"] = 122,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			},
+			[13] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Journaux personnels",
+					  ["de"] = "Persönliche Aufzeichnungen",
+					  ["en"] = "Personal Journals",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Les activités, pensées et confessions d'individus de Tamriel.",
+					  ["de"] = "Mehr zu Aktivitäten, Gedanken und Bekenntnissen einzelner Bürger Tamriels.",
+					  ["en"] = "The activities, thoughts, and confessions of individual Tamrielics.",
+				 },
+				 ["k"] = 56,
+				 ["t"] = 106,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			},
+			[14] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Complots et manigances",
+					  ["de"] = "Pläne und Ränke",
+					  ["en"] = "Plots and Schemes",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Machinations politiques, rebellions, empoisonnements de masse, complots visant à ramener d'antiques maux dans le monde, etc.",
+					  ["de"] = "Politische Intrigen, Rebellionen, Massenvergiftungen, Pläne Böses zurück in die Welt zu bringen und vieles mehr.",
+					  ["en"] = "Political machinations, rebellions, mass poisonings, plots to bring ancient evil back into the world, etc.",
+				 },
+				 ["k"] = 57,
+				 ["t"] = 87,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			},
+			[15] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Notes de recherche",
+					  ["de"] = "Forschungsnotizen",
+					  ["en"] = "Research Notes",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Notes et journaux de chercheurs en magie, explorateurs de ruines dwemers, expérimentateurs sur sujets humains, tracts alchimiques, etc.",
+					  ["de"] = "Notizen und Tagebücher über die Erforschung der Magie, das Erkunden von Dwemerruinen, das Experimentieren an Menschen, alchemistische Abhandlungen und vieles mehr.",
+					  ["en"] = "Notes and journals of magical researchers, explorers of Dwarven ruins, experimenters on human subjects, alchemical tracts, and so on.",
+				 },
+				 ["k"] = 58,
+				 ["t"] = 97,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			},
+			[16] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Rituels et révélations",
+					  ["de"] = "Rituale und Offenbarungen",
+					  ["en"] = "Rituals and Revelations",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Sorts et rituels, instructions d'emploi d'appareils infernaux, grimoires, livres de sorts et autres traités sur l'histoire de la magie.",
+					  ["de"] = "Zauber und Rituale, Anleitungen für infernale Geräte, Grimoire und Zauberbücher, und Berichte über magische Geschichte.",
+					  ["en"] = "Spells and rituals, instructions for operating infernal devices, grimoires and spellbooks, and treatises on magical history.",
+				 },
+				 ["k"] = 59,
+				 ["t"] = 91,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_magic.dds",
+			},
+			[17] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Récits de Tamriel",
+					  ["de"] = "Erzählungen Tamriels",
+					  ["en"] = "Tales of Tamriel",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Histoires et légendes anciennes, horribles récits de massacres et histoires pour endormir les petits.",
+					  ["de"] = "Geschichten von uralten Legenden, entsetzliche Erklärungen von Massakern und Bettgeschichten für die ganz kleinen.",
+					  ["en"] = "Stories and ancient legends, horrific accounts of massacres, and bedtime tales for the wee ones.",
+				 },
+				 ["k"] = 60,
+				 ["t"] = 113,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			},
+			[18] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Les dévôts et les déments",
+					  ["de"] = "Die Gesalbten und die Gestörten",
+					  ["en"] = "The Devoted and the Deranged",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Tracts, notes, livres et journaux par ou à propos de ceux pour qui accordent une grande importance à la foi et/ou leurs illusions.",
+					  ["de"] = "Abhandlungen, Notizen, Bücher und Tagebücher von und über diejenigen, die dem Glauben und/oder dessen Illusionen verfallen sind.",
+					  ["en"] = "Tracts, notes, books, and journals by and about those who are strong in their faith and/or their delusions.",
+				 },
+				 ["k"] = 61,
+				 ["t"] = 94,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			},
+			[19] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Les Cinq Compagnons",
+					  ["de"] = "Die Fünf Gefährten",
+					  ["en"] = "The Five Companions",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Livres à propos de la quête d'un héros pour reprendre son âme à Molag Bal.",
+					  ["de"] = "Bücher, die von der Reise eines Helden, seine Seele von Molag Bal zurückzuerlangen, handeln.",
+					  ["en"] = "Books relating to a hero's quest to recover a lost soul from Molag Bal.",
+				 },
+				 ["k"] = 62,
+				 ["t"] = 19,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			},
+			[20] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Le Monde et ses créatures",
+					  ["de"] = "Die Welt und ihre Bewohner",
+					  ["en"] = "The World and Its Creatures",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Guides des faunes et flores variées Tamriel.",
+					  ["de"] = "Bücher, die von den abwechslungsreichen Gegenden Tamriels und deren Bewohnern berichten.",
+					  ["en"] = "Books about the many and varied environments of Tamriel and the creatures that live in them.",
+				 },
+				 ["k"] = 63,
+				 ["t"] = 78,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			},
+			[21] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Paroles des poètes",
+					  ["de"] = "Die Worte des Propheten",
+					  ["en"] = "Words of the Poets",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Recueils de poèmes et de chants.",
+					  ["de"] = "Bücher mit Poesie und Liedern.",
+					  ["en"] = "Books of poetry and song.",
+				 },
+				 ["k"] = 64,
+				 ["t"] = 73,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			},
+			[22] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Dernières paroles",
+					  ["de"] = "Letzte Worte",
+					  ["en"] = "Final Words",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Livres, notes et journaux des suicidaires et des intrépides.",
+					  ["de"] = "Bücher, Notizen und Tagebücher von Selbstmödern und allzu Selbstsicheren.",
+					  ["en"] = "Books, notes, and journals of the suicidal and the overconfident.",
+				 },
+				 ["k"] = 65,
+				 ["t"] = 78,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			},
+			[23] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Manuels de compétence",
+					  ["de"] = "Lehrbücher",
+					  ["en"] = "Skill Books",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Livres qui améliorent les compétences de leur lecteur.",
+					  ["de"] = "Bücher, die das Können des Lesers in Bezug auf verschiedene Dinge verbessern.",
+					  ["en"] = "Books that endow the reader with skill improvements.",
+				 },
+				 ["k"] = 66,
+				 ["t"] = 84,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			},
+			[24] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Écrits de Wrothgar",
+					  ["de"] = "Worte aus Wrothgar",
+					  ["en"] = "Wrothgar Writings",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Discussions sur les sauvages et les civilisés du royaume frontalier de Wrothgar.",
+					  ["de"] = "Diskurse wilder sowie anspruchsvoller Natur aus dem Grenzreich Wrothgar.",
+					  ["en"] = "Discourses savage and sophisticated from the border realm of Wrothgar.",
+				 },
+				 ["k"] = 68,
+				 ["t"] = 114,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[25] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Bibliothèque impériale",
+					  ["de"] = "Kaiserliche Bibliothek",
+					  ["en"] = "Imperial Library",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Livres et lettres de la cité impériale.",
+					  ["de"] = "Schriften und Briefe aus der Kaiserstadt.",
+					  ["en"] = "Tomes and correspondence from the Imperial City.",
+				 },
+				 ["k"] = 69,
+				 ["t"] = 20,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			},
+			[26] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Archives d'Orsinium",
+					  ["de"] = "Orsinium-Archiv",
+					  ["en"] = "Orsinium Archive",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Livres, parchemins et correspondance relatifs à la grande cité des Orques et sa région.",
+					  ["de"] = "Bücher, Schriftrollen und Briefwechsel, die mit der imposanten Stadt der Orks und ihrem Umland in Verbindung stehen.",
+					  ["en"] = "Books, scrolls, and correspondence relating to the great city of the Orcs and its surrounding region.",
+				 },
+				 ["k"] = 85,
+				 ["t"] = 54,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			},
+			[27] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Étagère du Trépas des Cognées",
+					  ["de"] = "Bücherregal: Hews Fluch",
+					  ["en"] = "Hew's Bane Bookshelf",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Un ensemble de livres que l'on trouve au Trépas des Cognées, à Martelfell.",
+					  ["de"] = "Eine Sammlung von Büchern, die in der Hammerfall-Region Hews Fluch gefunden wurden.",
+					  ["en"] = "A collection of books found in the Hammerfell region of Hew's Bane.",
+				 },
+				 ["k"] = 86,
+				 ["t"] = 78,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			},
+			[28] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Volumes de la Côte d'or",
+					  ["de"] = "Goldküsten-Wälzer",
+					  ["en"] = "Gold Coast Tomes",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Une série de livres trouvés sur la Côte d'or, la région occidentale de Cyrodiil.",
+					  ["de"] = "Eine Sammlung Bücher, die an der Goldküste, der westlichen Region Cyrodiils, gefunden wurde.",
+					  ["en"] = "A collection of books found in the western Cyrodiil region of the Gold Coast.",
+				 },
+				 ["k"] = 87,
+				 ["t"] = 103,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			},
+			[29] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Vvolumes de Vvardenfell",
+					  ["de"] = "Vverke aus Vvardenfell",
+					  ["en"] = "Vvardenfell Vvolumes",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Tomes, journaux et lettres relatives à ou trouvées sur la grande île volcanique au cœur de Morrowind.",
+					  ["de"] = "Folianten, Tagebücher und Briefe von der oder zur großen Vulkaninsel im Herzen von Morrowind.",
+					  ["en"] = "Tomes, journals, and letters relating to or found in the great volcanic island at the heart of Morrowind.",
+				 },
+				 ["k"] = 102,
+				 ["t"] = 126,
+				 ["g"] = "/esoui/art/icons/icon_missing.dds",
+			},
+			[30] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Les 36 leçons de Vivec",
+					  ["de"] = "Vivecs 36 Lehren",
+					  ["en"] = "Vivec's 36 Lessons",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Les trente-six leçons, ou sermons, du guerrier-poète Vivec, dieu vivant du Tribunal de Morrowind.",
+					  ["de"] = "Die 36 Lehren oder Lektionen des Kriegerpoeten Vivec, des lebenden Gottes des Tribunals von Morrowind.",
+					  ["en"] = "The thirty-six lessons, or sermons, of the warrior-poet Vivec, living god of the Tribunal of Morrowind.",
+				 },
+				 ["k"] = 103,
+				 ["t"] = 36,
+				 ["g"] = "/esoui/art/icons/icon_missing.dds",
+			},
+			[31] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Bibliothèque des Incunables",
+					  ["de"] = "Bücherei der Inkunabeln",
+					  ["en"] = "Library of Incunabula",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Différents tomes obscurs, journaux, libres, lettres et parchemins rassemblés par les érudits et archivistes de tout Tamriel.",
+					  ["de"] = "Verschiedene Folianten, Zeitschriften, Bücher, Briefe und Schriftrollen, die von Gelehrten und Archivaren aus allen Reichen Tamriels zusammengetragen wurden.",
+					  ["en"] = "Various and sundry tomes, journals, books, letters, and scrolls gathered by scholars and archivists across all the realms of Tamriel.",
+				 },
+				 ["k"] = 104,
+				 ["t"] = 36,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_dungeons.dds",
+			},
+			[32] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Almanach de l'aventurier",
+					  ["de"] = "Almanach des Abenteurers",
+					  ["en"] = "Adventurer's Almanac",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Des livres qui décrivent les tâches sans fin, le genre de quête que les aventuriers peuvent accomplir chaque jour.",
+					  ["de"] = "Bücher, die nie endende Aufgaben beschreiben, die Art von Aufgaben, die Abenteurer jeden Tag angehen können.",
+					  ["en"] = "Books that describe tasks without end, the kind of quests that adventurers can complete every day.",
+				 },
+				 ["k"] = 115,
+				 ["t"] = 2,
+				 ["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			},
+			[33] = 
+			{
+				 ["n"] = 
+				 {
+					  ["fr"] = "Mnemonix mécanique",
+					  ["de"] = "Uhrwerk-Memorabilien",
+					  ["en"] = "Clockwork Mnemonix",
+				 },
+				 ["h"] = false,
+				 ["d"] = 
+				 {
+					  ["fr"] = "Archive de volumes et de registres relatifs à Sotha Sil et à sa Cité mécanique.",
+					  ["de"] = "Ein Archiv von Folianten und Aufzeichnungen, die mit Sotha Sil und seiner gleichnamigen Stadt zu tun haben.",
+					  ["en"] = "An archive of tomes and records relating to Sotha Sil and his city of the same name.",
+				 },
+				 ["k"] = 120,
+				 ["t"] = 82,
+				 ["g"] = "/esoui/art/icons/icon_missing.dds",
+			},
+	  },
+ }
 
 local bookData =
     {

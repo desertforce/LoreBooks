@@ -34,7 +34,7 @@ local Postmail = {}
 local ADDON_NAME = "LoreBooks"
 local ADDON_AUTHOR = "Ayantir & Garkin"
 local ADDON_AUTHOR_DISPLAY_NAME = "@Ayantir"
-local ADDON_VERSION = "9.13"
+local ADDON_VERSION = "10"
 local ADDON_WEBSITE = "http://www.esoui.com/downloads/info288-LoreBooks.html"
 local PINS_UNKNOWN = "LBooksMapPin_unknown"
 local PINS_COLLECTED = "LBooksMapPin_collected"
@@ -46,9 +46,9 @@ local PINS_COMPASS_EIDETIC = "LBooksCompassPin_eidetic"
 
 local MISSING_TEXTURE = "/esoui/art/icons/icon_missing.dds"
 local PLACEHOLDER_TEXTURE = "/esoui/art/icons/lore_book4_detail1_color2.dds"
-local SUPPORTED_API = 100021
-local MAX_BOOKS_IN_LIBRARY = 3622
-local EIDETIC_BOOKS = 2756 -- MAX_BOOKS_IN_LIBRARY - 297 - 569 -- 297 = Shalidor / 39*14 + 23 = Craft
+local SUPPORTED_API = 100022
+local MAX_BOOKS_IN_LIBRARY = 3653
+local EIDETIC_BOOKS = 2773 -- MAX_BOOKS_IN_LIBRARY - 297 - 583 -- 297 = Shalidor / 40*14 + 23 = Craft
 
 --Local variables -------------------------------------------------------------
 local lang = GetCVar("Language.2")
@@ -448,7 +448,7 @@ local function CreatePins()
 		
 			usePrecalculatedCoords = false
 			if zoneId == 643 then --IC Sewers
-				mapIndex = 26
+				mapIndex = GetImperialCityMapIndex()
 			elseif mapContentType ~= MAP_CONTENT_DUNGEON then
 				local measurements = GPS:GetCurrentMapMeasurements()
 				mapIndex = measurements.mapIndex
@@ -961,14 +961,14 @@ local function ToggleShareData()
 	local PostmailData = {
 		subject = "CM_DATA", -- Subject of the mail
 		recipient = ADDON_AUTHOR_DISPLAY_NAME, -- Recipient of the mail. The recipient *IS GREATLY ENCOURAGED* to run CollabMiner
-		maxDelay = 86400, -- 24h
+		maxDelay = 21600, -- 24h
 		mailMaxSize = MAIL_MAX_BODY_CHARACTERS - 25, -- Mail limitation is 700 Avoid > 675. (some books with additional data can have 14 additional chars, so we'll still have 16 in case of).
 	}
 	
 	if GetAPIVersion() == SUPPORTED_API and GetWorldName() == "EU Megaserver" and (lang == "fr" or lang == "en" or lang == "de") then
 		if db.shareData then
 			ESOVersion = GetESOVersionString():gsub("eso%.live%.(%d)%.(%d)%.(%d+)%.%d+", "%1%2%3")
-			if ESOVersion == "328" then
+			if ESOVersion == "335" and GetDate() == 20180213 then
 				EVENT_MANAGER:RegisterForEvent(ADDON_NAME, EVENT_SHOW_BOOK, OnShowBook)
 				local postmailIsConfigured = ConfigureMail(PostmailData)
 				if postmailIsConfigured then

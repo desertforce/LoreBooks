@@ -39,7 +39,7 @@ local losts = {}
 local extractionDone
 local mapIsShowing
 
-local MAX_ZONE_ID = 1043 -- Need to be raised at each API bump
+local MAX_ZONE_ID = 1050 -- Need to be raised at each API bump
 local NUM_MAPS = GetNumMaps()
 
 local function InvalidPoint(x, y)
@@ -240,7 +240,7 @@ local function GetQuestsDataByName(questName)
 	
 end
 
--- 100021
+-- 100022
 local function GetZoneIdWithMapIndex(mapIndex)
 
 	local maps = {
@@ -984,6 +984,37 @@ local function DecodeCollab()
 
 end
 
+local function InitLibrary()
+
+	local lang = GetCVar("Language.2")
+	if not DATAMINED_DATA.bookDB then DATAMINED_DATA.bookDB = {} end
+	local db = DATAMINED_DATA.bookDB
+	
+	for categoryIndex = 1, GetNumLoreCategories() do
+		
+		local categoryName, numCollections = GetLoreCategoryInfo(categoryIndex)
+		if not db[categoryIndex] then db[categoryIndex] = {} end
+		
+		for collectionIndex = 1, numCollections do
+			local collectionName, collectionDescription, _, totalBooks, hidden, gamepadIcon, collectionId = GetLoreCollectionInfo(categoryIndex, collectionIndex)
+
+			if not db[categoryIndex][collectionIndex] then db[categoryIndex][collectionIndex] = {} end
+			db[categoryIndex][collectionIndex].t = totalBooks
+			db[categoryIndex][collectionIndex].g = gamepadIcon
+			db[categoryIndex][collectionIndex].h = hidden
+			db[categoryIndex][collectionIndex].k = collectionId
+			
+			if not db[categoryIndex][collectionIndex].d then db[categoryIndex][collectionIndex].d = {} end
+			db[categoryIndex][collectionIndex].d[lang] = collectionDescription
+
+			if not db[categoryIndex][collectionIndex].n then db[categoryIndex][collectionIndex].n = {} end
+			db[categoryIndex][collectionIndex].n[lang] = collectionName
+			
+		end
+	end
+
+end
+
 function LoreBooks_InitializeCollab()
 
 	local ADDON_AUTHOR_DISPLAY_NAME = "@Ayantir"
@@ -1000,6 +1031,7 @@ function LoreBooks_InitializeCollab()
 		SLASH_COMMANDS["/lbd"] = DecodeCollab
 		SLASH_COMMANDS["/lbs"] = SeeData
 		SLASH_COMMANDS["/lbp"] = PushData
+		SLASH_COMMANDS["/lbi"] = InitLibrary
 		SLASH_COMMANDS["/lbcollab"] = CleanCollab
 		
 		EVENT_MANAGER:RegisterForEvent("PostmailDeamon", EVENT_MAIL_READABLE, OnMailReadable)
