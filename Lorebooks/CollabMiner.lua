@@ -861,7 +861,7 @@ local function DecodeData(data, onlyOne)
          
          if xGPS == false or yGPS == false then
 				d(entryData)
-         elseif esoVersion >= 327 and minerVersion == 15 then
+         elseif esoVersion >= 335 and minerVersion == 15 then
 				
 				local data = {
 					x		= xGPS,					-- X
