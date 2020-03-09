@@ -33,8 +33,7 @@ local Postmail = {}
 --Local constants -------------------------------------------------------------
 local ADDON_NAME = "LoreBooks"
 local ADDON_AUTHOR = "Ayantir, Garkin & Kyoma"
-local ADDON_AUTHOR_DISPLAY_NAME = "@Ayantir"
-local ADDON_VERSION = "16.1"
+local ADDON_VERSION = "17"
 local ADDON_WEBSITE = "http://www.esoui.com/downloads/info288-LoreBooks.html"
 local PINS_UNKNOWN = "LBooksMapPin_unknown"
 local PINS_COLLECTED = "LBooksMapPin_collected"
@@ -46,8 +45,8 @@ local PINS_COMPASS_EIDETIC = "LBooksCompassPin_eidetic"
 
 local MISSING_TEXTURE = "/esoui/art/icons/icon_missing.dds"
 local PLACEHOLDER_TEXTURE = "/esoui/art/icons/lore_book4_detail1_color2.dds"
-local SUPPORTED_API = 100028
-local EIDETIC_BOOKS = 3259
+local SUPPORTED_API = 100029
+local EIDETIC_BOOKS = 3338
 --[[
 /script local t, _, n = 0, GetLoreCategoryInfo(3)
 for i = 1, n do
@@ -197,7 +196,11 @@ pinTooltipCreator.creator = function(pin)
 end
 
 local function getQuestName(q)
-	return LoreBooks_GetQuestName(q, lang)
+	if type(q) == "string" then
+		return q
+	else
+		return LoreBooks_GetQuestName(q, lang)
+	end
 end
 
 --tooltip creator
@@ -629,9 +632,9 @@ end
 
 -- Slash commands -------------------------------------------------------------
 local function ShowMyPosition()
-	if SetMapToPlayerLocation() == SET_MAP_RESULT_MAP_CHANGED then
-		CALLBACK_MANAGER:FireCallbacks("OnWorldMapChanged")
-	end
+	--if SetMapToPlayerLocation() == SET_MAP_RESULT_MAP_CHANGED then
+	--	CALLBACK_MANAGER:FireCallbacks("OnWorldMapChanged")
+	--end
 
 	local x, y = GetMapPlayerPosition("player")
 
@@ -643,7 +646,7 @@ local function ShowMyPosition()
 	local globX, globY, mapI = GPS:LocalToGlobal(x, y)
 end
 
-SLASH_COMMANDS["/mypos"] = ShowMyPosition 
+SLASH_COMMANDS["/mypos2"] = ShowMyPosition 
 SLASH_COMMANDS["/myloc"] = ShowMyPosition
 
 local function ConfigureMail(data)
@@ -784,7 +787,7 @@ local function ToggleShareData()
 		subject = "CM_DATA", -- Subject of the mail
 		recipient = "@Kyoma", -- Recipient of the mail. The recipient *IS GREATLY ENCOURAGED* to run CollabMiner
 		maxDelay = 3600*12, -- 12h
-		mailMaxSize = MAIL_MAX_BODY_CHARACTERS - 25, -- Mail limitation is 700 Avoid > 675. (some books with additional data can have 14 additional chars, so we'll still have 16 in case of).
+		mailMaxSize = MAIL_MAX_BODY_CHARACTERS - 50, -- Mail limitation is 700 Avoid > 675. (some books with additional data can have 14 additional chars, so we'll still have 16 in case of).
 	}
 
 	minerEnabled, minerCallback = LoreBooks_IsMinerEnabled()

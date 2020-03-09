@@ -38,13 +38,12 @@ local losts = {}
 local extractionDone
 local mapIsShowing
 
-local MAX_ZONE_ID = 1300 -- Need to be raised at each API bump
 local NUM_MAPS = GetNumMaps()
 
 -- The mastermind that will be sniffing all the data
 local MASTER_MINER = "@Kyoma"
-local DEADLINE = 20190815
-local MINER_ESOVERSION = 439
+local DEADLINE = 20191030
+local MINER_ESOVERSION = 526
 
 local NEW_BOOKS_ONLY = false
 local VERSION_MUST_MATCH = false
@@ -52,7 +51,7 @@ local VERSION_MUST_MATCH = false
 local ALL_MODE       = 0
 local SHALIDOR_MODE  = 1
 local EIDETIC_MODE   = 3
-local MODE = EIDETIC_MODE
+local MODE = ALL_MODE
 
 local lang = GetCVar("Language.2")
 
@@ -80,15 +79,16 @@ local function OnMailReadable(_, mailId)
 	
 end
 
-local function CoordsNearby(locX, locY, x, y)
+local function CoordsNearby(locX, locY, x, y, nearyIs)
 
-	local nearbyIs = 0.0005 --It should be 0.00028, but we add a large diff just in case of. 0.0004 is not enough.
+	nearbyIs = nearyIs or 0.0005 --It should be 0.00028, but we add a large diff just in case of. 0.0004 is not enough.
 	if math.abs(locX - x) < nearbyIs and math.abs(locY - y) < nearbyIs then
 		return true
 	end
 	return false
 	
 end
+
 
 
 ------------------------------
@@ -179,7 +179,7 @@ end
 ------------------------------
 local function EideticValidEntry(categoryIndex)
 	-- Check if book actually exists in Shalidor's Library or Eidetic Memory
-	if categoryIndex and (categoryIndex == MODE or MODE == ALL_MODE) then
+	if categoryIndex and (categoryIndex == MODE or (MODE == ALL_MODE and categoryIndex ~= 2)) then
 		return true
 	end
 end
@@ -212,11 +212,14 @@ local function BuildDataToShare(bookId)
 		-- mapType of the subzone. Needed when we are elsewhere than zone or subzone.
 		local mapContentType = GetMapContentType()
 		
-		local xGPS, yGPS, mapIndexGPS = GPS:LocalToGlobal(GetMapPlayerPosition("player"))
+		local xLocal, yLocal = GetMapPlayerPosition("player")
+		local xGPS, yGPS, mapIndexGPS = GPS:LocalToGlobal(xLocal, yLocal)
 		
 		if mapIndexGPS == 1 and zoneId == 0 then
 			return
 		end
+		
+		local mapBase, mapTile = select(3,(GetMapTileTexture()):lower():gsub("ui_map_", ""):find("maps/([%w%-]+)/([%w%-]+_[%w%-]+)"))
 
 		if not mapIndexGPS then
 			mapIndexGPS = 0
@@ -261,62 +264,75 @@ local function BuildDataToShare(bookId)
 		
 		local bookName = GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex)
 		
-		local associatedQuest = ""
+		local extraData = ""
 		local interactionType = GetInteractionType() -- If user runs an addon which break interaction, the result will return INTERACTION_NONE even if he was reading a book.
 		if interactionType == INTERACTION_NONE then --book read from inventory or case above.
 			for questIndex, questData in pairs(SHARED_INVENTORY.questCache) do
 				for itemIndex, itemData in pairs(questData) do
 					if string.lower(itemData.name) == string.lower(bookName) then
-						associatedQuest = GetJournalQuestInfo(questIndex)
+						extraData = GetJournalQuestInfo(questIndex)
                         isObject = true -- so we don't skip this 
-                        --d(associatedQuest)
+                        --d(extraData)
 						break
 					end
 				end
 			end
 		end
-        --df("Book [%d] |H1:book:%d|h|h - %s", bookId, bookId, associatedQuest)
+        --df("Book [%d] |H1:book:%d|h|h - %s", bookId, bookId, extraData)
+		if categoryIndex == SHALIDOR_MODE  then
+			extraData = mapTile
+		end
 
-		dataToShare = dataToShare .. ";" .. UnsignedBase62(interactionType) .. ";" .. associatedQuest
-		
+		dataToShare = dataToShare .. ";" .. UnsignedBase62(interactionType) .. ";" .. extraData
+
 		if EideticValidEntry(categoryIndex) then
-			
-			local bookData = LoreBooks_GetNewEideticDataFromBookId(bookId, categoryIndex == 1)
-			if bookData and bookData.c and bookData.e then
-                if not isObject and (not bookData.r or (bookData.r and type(bookData.m) == "table" and bookData.m[mapIndexGPS])) then
-					return -- Found a random book and this book is already tagged as random for the same map or got a static position
-                elseif associatedQuest ~= "" and not bookData.q then
-                    -- we always want the quest data right now for books that don't have any yet
-				else
-					for _, data in ipairs(bookData.e) do
-						if not data.r then
-							if interactionType == INTERACTION_NONE then
-								return -- User read book from inventory but we already found pin from a static position
-							elseif CoordsNearby(xGPS, yGPS, data.x, data.y) then
-								if data.d then
-									if data.z == zoneId then
+			if categoryIndex == SHALIDOR_MODE then
+				-- check if we have it already
+				local bookData = LoreBooks_GetLocalData(mapBase, mapTile)
+				if bookData then
+					for _, entry in ipairs(bookData) do
+						if CoordsNearby(xLocal, yLocal, entry[1], entry[2], 0.01) then
+							return
+						end
+					end
+				end
+			elseif categoryIndex == EIDETIC_MODE then
+				local bookData = LoreBooks_GetNewEideticDataFromBookId(bookId)
+				if bookData and bookData.c and bookData.e then
+					if not isObject and (not bookData.r or (bookData.r and type(bookData.m) == "table" and bookData.m[mapIndexGPS])) then
+						return -- Found a random book and this book is already tagged as random for the same map or got a static position
+					elseif extraData ~= "" and not bookData.q then
+						-- we always want the quest data right now for books that don't have any yet
+					else
+						for _, entry in ipairs(bookData.e) do
+							if not entry.r then
+								if interactionType == INTERACTION_NONE then
+									return -- User read book from inventory but we already found pin from a static position
+								elseif CoordsNearby(xGPS, yGPS, entry.x, entry.y) then
+									if entry.d then
+										if entry.z == zoneId then
+											--d("Pin already found")
+											return
+										end
+									else
 										--d("Pin already found")
-										return
+										return -- Pin already found
 									end
-								else
-                                    --d("Pin already found")
-									return -- Pin already found
 								end
 							end
 						end
 					end
 				end
+			else
+				return
 			end
-			
 			dataToShare = dataToShare .. "@" .. bookId
 			
 		else
 			return -- We don't collect anymore books from users which didn't yet unlocked Eidetic Memory
 		end
 		return dataToShare
-		
 	end
-		
 end
 
 
@@ -410,52 +426,20 @@ local function GetQuestsDataByName(questName)
 	
 end
 
-
---/script local list = {} for id=1, 1200 do local index = GetMapIndexByZoneId(id) if index ~= nil then list[index] = id end end DATAMINED_DATA.maps = list
-
--- 100026
+local maps
 local function GetZoneIdWithMapIndex(mapIndex)
-
-	local maps = 
-    {
-        [2] = 3,
-        [3] = 20,
-        [4] = 19,
-        [5] = 104,
-        [6] = 92,
-        [7] = 383,
-        [8] = 58,
-        [9] = 117,
-        [10] = 57,
-        [11] = 41,
-        [12] = 103,
-        [13] = 101,
-        [14] = 181,
-        [15] = 381,
-        [16] = 108,
-        [17] = 382,
-        [18] = 281,
-        [19] = 534,
-        [20] = 535,
-        [21] = 537,
-        [22] = 280,
-        [23] = 347,
-        [25] = 888,
-        [26] = 584,
-        [27] = 684,
-        [28] = 816,
-        [29] = 823,
-        [30] = 849,
-        [31] = 980,
-        [32] = 1011,
-        [33] = 1027,
-        [34] = 726,
-        [35] = 1072,
-        [36] = 1086,
-    }
+	if not maps then
+		maps = {}
+		for i=1, GetNumMaps() do
+			local _, mapType, _, zoneId = GetMapInfo(i)
+			if mapType == MAPTYPE_ZONE then
+				maps[i] = zoneId 
+			end
+		end
+	end
 	return maps[mapIndex]
-
 end
+
 local function ExtractBookData() end
 local function JumpToNextBook(index)
 
@@ -504,6 +488,10 @@ local function getBookStatus(bookId)
 	end
 end
 
+local function GetMaxZoneId()
+	return LibZone.libraryInfo.maxZoneIds
+end
+
 ExtractBookData = function(index)
 	
 	local key = ""
@@ -525,8 +513,13 @@ ExtractBookData = function(index)
 	local langCode					= bookData.a
 	local interactionType			= bookData.i
 	local bookId					= bookData.k
-	
+
 	local categoryIndex, collectionIndex, bookIndex = GetLoreBookIndicesFromBookId(bookId)
+	local bookName = GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex)
+	
+	if questLinked ~= "0" then
+		df("[%s] - %s", bookName, questLinked)
+	end
 
 	if not categoryIndex or (version ~= MINER_ESOVERSION and VERSION_MUST_MATCH) or ignoreList[bookId] then
 		JumpToNextBook(index)
@@ -544,6 +537,22 @@ ExtractBookData = function(index)
 		JumpToNextBook(index)
 		return
 	end
+	
+	--[[
+	/script ZO_WorldMap_SetMapByIndex(GetMapIndexByZoneId(GetZoneId(GetUnitZoneIndex("player"))))
+	
+	/script ZO_WorldMap_SetMapByIndex(GetMapIndexByZoneId(GetZoneId(GetUnitZoneIndex("player"))))
+	
+	local mid = GetMapIndexByZoneId(id)
+	
+	d(GetMapTileTexture()
+	df("Index: %d, Id: %d", idx, id))+
+	
+	GetMapIndexByZoneId(
+	
+	ZO_WorldMap_SetMapByIndex
+	
+	--]]
 
 	local isRandom					= true
 
@@ -560,7 +569,7 @@ ExtractBookData = function(index)
 		mapIndex = GetImperialCityMapIndex()
 	end
 	
-	if zoneId < 1 or zoneId > MAX_ZONE_ID or mapIndex < 1 or mapIndex > NUM_MAPS then
+	if zoneId < 1 or zoneId > GetMaxZoneId() or mapIndex < 1 or mapIndex > NUM_MAPS then
 	
 		if mapIndex > 1 and mapIndex ~= 24 then
 			zoneId = GetZoneIdWithMapIndex(mapIndex)
@@ -583,7 +592,7 @@ ExtractBookData = function(index)
 		
 	end
 
-	if EideticValidEntry(categoryIndex) then
+	if categoryIndex == EIDETIC_MODE then -- EideticValidEntry(categoryIndex) then
 		
 		if not DATAMINED_DATA.build[bookId] then DATAMINED_DATA.build[bookId] = {} end
 		
@@ -732,7 +741,7 @@ ExtractBookData = function(index)
 				-- New pin
 				if not bookFound then
 				
-					d("NewStaticPos: #" .. bookId .. "/" .. categoryIndex .."/" .. collectionIndex .."/" .. bookIndex .. " [".. GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex) .."]")
+					d("NewStaticPos: #" .. bookId .. "/" .. categoryIndex .."/" .. collectionIndex .."/" .. bookIndex .. " [".. bookName .."]")
 					
 					table.insert(DATAMINED_DATA.build[bookId].e, {
 						r = isRandom,
@@ -916,12 +925,14 @@ local function BuildBooks()
 						
 					elseif bookData.q and type(bookData.q) == "string" and bookData.q ~= "0" then
 						local questCode, _, questNames = GetQuestsDataByName(bookData.q)
-						if questCode then
+						if questCode > 0 then
 							--local questInfos = "{ en = \"" .. tostring(questNames.en) .. "\", fr = \"" .. tostring(questNames.fr) .. "\", de = \"" .. tostring(questNames.de) .. "\" }, -- " .. questCode
 							--d("q = " .. bookData.q .. " " .. questInfos .. " : Book " .. bookId .. " [" .. GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex) .. "]")
                             bookData.q = questCode
                             bookData.qm = bookData.m
 						else
+							--bookData.q = bookData.q
+							bookData.qm = bookData.m
 							d("New quest to add: " .. bookData.q)
 						end
 					end
@@ -1369,6 +1380,9 @@ function LoreBooks_InitializeCollab()
 		SLASH_COMMANDS["/lbsort"] = SortLibrary
 		SLASH_COMMANDS["/lbtest"] = Test
 		
+		SLASH_COMMANDS["/lang"] = function(lang) SetCVar("language.2", lang) end
+		
+		
 		EVENT_MANAGER:RegisterForEvent("PostmailDeamon", EVENT_MAIL_READABLE, OnMailReadable)
 
         SLASH_COMMANDS["/book"] = PrintBook
@@ -1378,7 +1392,7 @@ end
 
 function LoreBooks_IsMinerEnabled()
 	ESOVersion = GetESOVersionString():gsub("eso%.%a+%.(%d)%.(%d)%.(%d+)%.%d+", "%1%2%3")
-	if GetAPIVersion() == 100028 and (lang == "fr" or lang == "en" or lang == "de") then
+	if GetAPIVersion() == 100029 and (lang == "fr" or lang == "en" or lang == "de") then
 		if (GetDate() - DEADLINE) < 1 then
 			return true, BuildDataToShare
 		end

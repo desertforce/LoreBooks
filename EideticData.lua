@@ -30,2407 +30,2501 @@ local libraryData =
 	{
 		[1] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A Mages Guild collection of lore books about Glenumbra.",
-				["fr"] = "Une série de livres de connaissances de la guilde des mages sur la Glénumbrie.",
-				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Glenumbra.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Glenumbra Lore",
-				["fr"] = "Connaissance de Glénumbrie",
 				["de"] = "Über Glenumbra",
+				["fr"] = "Connaissance de Glénumbrie",
+				["en"] = "Glenumbra Lore",
 			},
-			["k"] = 3,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Glenumbra.",
+				["fr"] = "Une série de livres de connaissances de la guilde des mages sur la Glénumbrie.",
+				["en"] = "A Mages Guild collection of lore books about Glenumbra.",
+			},
 			["t"] = 10,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["k"] = 3,
 		},
 		[2] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A Mages Guild collection of lore books about Stormhaven.",
-				["fr"] = "Une série de livres de connaissances de la guilde des mages sur Havre-tempête.",
-				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Sturmhafen.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Stormhaven Lore",
-				["fr"] = "Connaissance de Havre-tempête",
 				["de"] = "Über Sturmhafen",
+				["fr"] = "Connaissance de Havre-tempête",
+				["en"] = "Stormhaven Lore",
 			},
-			["k"] = 5,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Sturmhafen.",
+				["fr"] = "Une série de livres de connaissances de la guilde des mages sur Havre-tempête.",
+				["en"] = "A Mages Guild collection of lore books about Stormhaven.",
+			},
 			["t"] = 10,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["k"] = 5,
 		},
 		[3] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A Mages Guild collection of lore books about Rivenspire.",
-				["fr"] = "Une série de livres de connaissances de la guilde des mages sur Fendretour.",
-				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Kluftspitze.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Rivenspire Lore",
-				["fr"] = "Connaissance de Fendretour",
 				["de"] = "Über Kluftspitze",
+				["fr"] = "Connaissance de Fendretour",
+				["en"] = "Rivenspire Lore",
 			},
-			["k"] = 6,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Kluftspitze.",
+				["fr"] = "Une série de livres de connaissances de la guilde des mages sur Fendretour.",
+				["en"] = "A Mages Guild collection of lore books about Rivenspire.",
+			},
 			["t"] = 10,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["k"] = 6,
 		},
 		[4] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A Mages Guild collection of lore books about Bangkorai.",
-				["fr"] = "Une série de livres de connaissances de la guilde des mages sur Bangkoraï.",
-				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Bangkorai.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Bangkorai Lore",
-				["fr"] = "Connaissance de Bangkoraï",
 				["de"] = "Über Bangkorai",
+				["fr"] = "Connaissance de Bangkoraï",
+				["en"] = "Bangkorai Lore",
 			},
-			["k"] = 7,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Bangkorai.",
+				["fr"] = "Une série de livres de connaissances de la guilde des mages sur Bangkoraï.",
+				["en"] = "A Mages Guild collection of lore books about Bangkorai.",
+			},
 			["t"] = 10,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["k"] = 7,
 		},
 		[5] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A Mages Guild collection of lore books about the Alik'r Desert.",
-				["fr"] = "Une série de livres de connaissances de la guilde des mages sur le désert d'Alik'r.",
-				["de"] = "Eine Sammlung der Magiergilde mit Büchern über die Alik'r-Wüste.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Alik'r Desert Lore",
-				["fr"] = "Connaissance du désert d'Alik'r",
 				["de"] = "Über die Alik'r-Wüste",
+				["fr"] = "Connaissance du désert d'Alik'r",
+				["en"] = "Alik'r Desert Lore",
 			},
-			["k"] = 8,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung der Magiergilde mit Büchern über die Alik'r-Wüste.",
+				["fr"] = "Une série de livres de connaissances de la guilde des mages sur le désert d'Alik'r.",
+				["en"] = "A Mages Guild collection of lore books about the Alik'r Desert.",
+			},
 			["t"] = 10,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["k"] = 8,
 		},
 		[6] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A Mages Guild collection of lore books about Shadowfen.",
-				["fr"] = "Une série de livres de connaissances de la guilde des mages sur Fangeombre.",
-				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Schattenfenn.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Shadowfen Lore",
-				["fr"] = "Connaissance de Fangeombre",
 				["de"] = "Über Schattenfenn",
+				["fr"] = "Connaissance de Fangeombre",
+				["en"] = "Shadowfen Lore",
 			},
-			["k"] = 9,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Schattenfenn.",
+				["fr"] = "Une série de livres de connaissances de la guilde des mages sur Fangeombre.",
+				["en"] = "A Mages Guild collection of lore books about Shadowfen.",
+			},
 			["t"] = 10,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["k"] = 9,
 		},
 		[7] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A Mages Guild collection of books found while completing the Mad God's trials.",
-				["fr"] = "Une collection de livres de la guilde des mages découverts en accomplissant les épreuves du Dieu fou.",
-				["de"] = "Eine Sammlung der Magiergilde mit Büchern, die man während der Prüfungen des Verrückten Gottes findet.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_magic.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "The Trial of Eyevea",
-				["fr"] = "Les épreuves d'Eyévéa",
 				["de"] = "Die Prüfung von Augvea",
+				["fr"] = "Les épreuves d'Eyévéa",
+				["en"] = "The Trial of Eyevea",
 			},
-			["k"] = 10,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung der Magiergilde mit Büchern, die man während der Prüfungen des Verrückten Gottes findet.",
+				["fr"] = "Une collection de livres de la guilde des mages découverts en accomplissant les épreuves du Dieu fou.",
+				["en"] = "A Mages Guild collection of books found while completing the Mad God's trials.",
+			},
 			["t"] = 4,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_magic.dds",
+			["k"] = 10,
 		},
 		[8] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A Mages Guild collection of books regarding the Daedric Princes.",
-				["fr"] = "Une série de livres de connaissances de la guilde des mages sur les princes Daedra.",
-				["de"] = "Eine Sammlung der Magiergilde mit Büchern über daedrische Fürsten.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_daedric.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Daedric Princes",
-				["fr"] = "Princes Daedra",
 				["de"] = "Daedrische Fürsten",
+				["fr"] = "Princes Daedra",
+				["en"] = "Daedric Princes",
 			},
-			["k"] = 12,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung der Magiergilde mit Büchern über daedrische Fürsten.",
+				["fr"] = "Une série de livres de connaissances de la guilde des mages sur les princes Daedra.",
+				["en"] = "A Mages Guild collection of books regarding the Daedric Princes.",
+			},
 			["t"] = 10,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_daedric.dds",
+			["k"] = 12,
 		},
 		[9] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A Mages Guild collection of books about the lives of the great.",
-				["fr"] = "Une collection de livres de la guilde des mages sur la vie des grands de ce monde.",
-				["de"] = "Eine Sammlung der Magiergilde mit Büchern über die Leben der Großen.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Biographies",
-				["fr"] = "Biographies",
 				["de"] = "Biographien",
+				["fr"] = "Biographies",
+				["en"] = "Biographies",
 			},
-			["k"] = 13,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung der Magiergilde mit Büchern über die Leben der Großen.",
+				["fr"] = "Une collection de livres de la guilde des mages sur la vie des grands de ce monde.",
+				["en"] = "A Mages Guild collection of books about the lives of the great.",
+			},
 			["t"] = 10,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["k"] = 13,
 		},
 		[10] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A Mages Guild collection of books regarding the Divines and other Deities.",
-				["fr"] = "Une collection de livres de la guilde des mages sur les Divins et autres divinités.",
-				["de"] = "Eine Sammlung der Magiergilde mit Büchern über die Göttlichen und andere Gottheiten.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_divine.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Divines and Deities",
-				["fr"] = "Divins et divinités",
 				["de"] = "Göttliche und Gottheiten",
+				["fr"] = "Divins et divinités",
+				["en"] = "Divines and Deities",
 			},
-			["k"] = 14,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung der Magiergilde mit Büchern über die Göttlichen und andere Gottheiten.",
+				["fr"] = "Une collection de livres de la guilde des mages sur les Divins et autres divinités.",
+				["en"] = "A Mages Guild collection of books regarding the Divines and other Deities.",
+			},
 			["t"] = 10,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_divine.dds",
+			["k"] = 14,
 		},
 		[11] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A Mages Guild collection of books regarding dungeon lore.",
-				["fr"] = "Une collection de livres de la guilde des mages concernant les donjons.",
-				["de"] = "Eine Sammlung der Magiergilde mit Büchern mit Wissenswertem über Verliese.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_dungeons.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Dungeon Lore",
-				["fr"] = "Connaissance des donjons",
 				["de"] = "Über Verliese",
+				["fr"] = "Connaissance des donjons",
+				["en"] = "Dungeon Lore",
 			},
-			["k"] = 15,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung der Magiergilde mit Büchern mit Wissenswertem über Verliese.",
+				["fr"] = "Une collection de livres de la guilde des mages concernant les donjons.",
+				["en"] = "A Mages Guild collection of books regarding dungeon lore.",
+			},
 			["t"] = 17,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_dungeons.dds",
+			["k"] = 15,
 		},
 		[12] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A Mages Guild collection of books regarding the Dwemer.",
-				["fr"] = "Une collection de livres de la guilde des mages concernant les Dwemers.",
-				["de"] = "Eine Sammlung der Magiergilde mit Büchern über die Dwemer.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_dwemer.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Dwemer",
-				["fr"] = "Dwemer",
 				["de"] = "Die Dwemer",
+				["fr"] = "Dwemer",
+				["en"] = "Dwemer",
 			},
-			["k"] = 16,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung der Magiergilde mit Büchern über die Dwemer.",
+				["fr"] = "Une collection de livres de la guilde des mages concernant les Dwemers.",
+				["en"] = "A Mages Guild collection of books regarding the Dwemer.",
+			},
 			["t"] = 16,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_dwemer.dds",
+			["k"] = 16,
 		},
 		[13] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A Mages Guild collection of books regarding ancient legends.",
-				["fr"] = "Une collection de livres de la guilde des mages concernant d'anciennes légendes.",
-				["de"] = "Eine Sammlung der Magiergilde mit Büchern über die alten Legenden.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Legends of Nirn",
-				["fr"] = "Légendes de Nirn",
 				["de"] = "Legenden von Nirn",
+				["fr"] = "Légendes de Nirn",
+				["en"] = "Legends of Nirn",
 			},
-			["k"] = 17,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung der Magiergilde mit Büchern über die alten Legenden.",
+				["fr"] = "Une collection de livres de la guilde des mages concernant d'anciennes légendes.",
+				["en"] = "A Mages Guild collection of books regarding ancient legends.",
+			},
 			["t"] = 10,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["k"] = 17,
 		},
 		[14] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A Mages Guild collection of books that are significant works of literature.",
-				["fr"] = "Une collection de livres de la guilde des mages recueillant des œuvres majeures de littérature.",
-				["de"] = "Eine Sammlung der Magiergilde mit Büchern mit bedeutenden literarischen Werken.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Literature",
-				["fr"] = "Littérature",
 				["de"] = "Bekannte Literatur",
+				["fr"] = "Littérature",
+				["en"] = "Literature",
 			},
-			["k"] = 18,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung der Magiergilde mit Büchern mit bedeutenden literarischen Werken.",
+				["fr"] = "Une collection de livres de la guilde des mages recueillant des œuvres majeures de littérature.",
+				["en"] = "A Mages Guild collection of books that are significant works of literature.",
+			},
 			["t"] = 10,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["k"] = 18,
 		},
 		[15] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A Mages Guild books collection of regarding magic and magicka.",
-				["fr"] = "Une collection de livres de la guilde des mages parlant de magie.",
-				["de"] = "Eine Büchersammlung der Magiergilde, bestehend aus Werken zu Magie und Magicka.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_magic.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Magic and Magicka",
-				["fr"] = "Magie et sortilèges",
 				["de"] = "Magie und Magicka",
+				["fr"] = "Magie et sortilèges",
+				["en"] = "Magic and Magicka",
 			},
-			["k"] = 19,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Büchersammlung der Magiergilde, bestehend aus Werken zu Magie und Magicka.",
+				["fr"] = "Une collection de livres de la guilde des mages parlant de magie.",
+				["en"] = "A Mages Guild books collection of regarding magic and magicka.",
+			},
 			["t"] = 10,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_magic.dds",
+			["k"] = 19,
 		},
 		[16] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A Mages Guild collection of books regarding ancient myths.",
-				["fr"] = "Une collection de livres de la guilde des mages regroupant les mythes.",
-				["de"] = "Eine Sammlung der Magiergilde mit Büchern über uralte Mythen.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Myths of the Mundus",
-				["fr"] = "Mythes du Mundus",
 				["de"] = "Mythen des Mundus",
+				["fr"] = "Mythes du Mundus",
+				["en"] = "Myths of the Mundus",
 			},
-			["k"] = 20,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung der Magiergilde mit Büchern über uralte Mythen.",
+				["fr"] = "Une collection de livres de la guilde des mages regroupant les mythes.",
+				["en"] = "A Mages Guild collection of books regarding ancient myths.",
+			},
 			["t"] = 10,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["k"] = 20,
 		},
 		[17] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A Mages Guild collection of books regarding Oblivion.",
-				["fr"] = "Une collection de livres de la guilde des mages concernant Oblivion.",
-				["de"] = "Eine Sammlung der Magiergilde mit Büchern über das Reich des Vergessens.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_daedric.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Oblivion Lore",
-				["fr"] = "Connaissance d'Oblivion",
 				["de"] = "Über das Reich des Vergessens",
+				["fr"] = "Connaissance d'Oblivion",
+				["en"] = "Oblivion Lore",
 			},
-			["k"] = 21,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung der Magiergilde mit Büchern über das Reich des Vergessens.",
+				["fr"] = "Une collection de livres de la guilde des mages concernant Oblivion.",
+				["en"] = "A Mages Guild collection of books regarding Oblivion.",
+			},
 			["t"] = 10,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_daedric.dds",
+			["k"] = 21,
 		},
 		[18] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A Mages Guild collection of books celebrating lyrics and verse.",
-				["fr"] = "Une collection de livres de la guilde des mages recueillant des poèmes et des chants.",
-				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Feiern und Liedtexte.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Poetry and Song",
-				["fr"] = "Poésie et chant",
 				["de"] = "Gedichte und Lieder",
+				["fr"] = "Poésie et chant",
+				["en"] = "Poetry and Song",
 			},
-			["k"] = 22,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Feiern und Liedtexte.",
+				["fr"] = "Une collection de livres de la guilde des mages recueillant des poèmes et des chants.",
+				["en"] = "A Mages Guild collection of books celebrating lyrics and verse.",
+			},
 			["t"] = 10,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["k"] = 22,
 		},
 		[19] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A collection of Mages Guild collection of books pertaining to Tamriel's history.",
-				["fr"] = "Une collection de livres de la guilde des mages traitant de l'histoire de Tamriel.",
-				["de"] = "Eine Sammlung der Magiergilde mit Büchern über die Geschichte Tamriels.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Tamriel History",
-				["fr"] = "Histoire de Tamriel",
 				["de"] = "Die Geschichte Tamriels",
+				["fr"] = "Histoire de Tamriel",
+				["en"] = "Tamriel History",
 			},
-			["k"] = 23,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung der Magiergilde mit Büchern über die Geschichte Tamriels.",
+				["fr"] = "Une collection de livres de la guilde des mages traitant de l'histoire de Tamriel.",
+				["en"] = "A collection of Mages Guild collection of books pertaining to Tamriel's history.",
+			},
 			["t"] = 10,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["k"] = 23,
 		},
 		[20] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A Mages Guild collection of books regarding Stonefalls.",
-				["fr"] = "Une série de livres de connaissances de la guilde des mages sur les Éboulis.",
-				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Steinfälle.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Stonefalls Lore",
-				["fr"] = "Connaissance des Éboulis",
 				["de"] = "Über Steinfälle",
+				["fr"] = "Connaissance des Éboulis",
+				["en"] = "Stonefalls Lore",
 			},
-			["k"] = 24,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Steinfälle.",
+				["fr"] = "Une série de livres de connaissances de la guilde des mages sur les Éboulis.",
+				["en"] = "A Mages Guild collection of books regarding Stonefalls.",
+			},
 			["t"] = 10,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["k"] = 24,
 		},
 		[21] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A collection of Mages Guild books found in Malabal Tor.",
-				["fr"] = "Une collection de livres de la guilde des mages découverts à Malabal Tor.",
-				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Malabal Tor.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Malabal Tor Lore",
-				["fr"] = "Connaissance de Malabal Tor",
 				["de"] = "Über Malabal Tor",
+				["fr"] = "Connaissance de Malabal Tor",
+				["en"] = "Malabal Tor Lore",
 			},
-			["k"] = 26,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Malabal Tor.",
+				["fr"] = "Une collection de livres de la guilde des mages découverts à Malabal Tor.",
+				["en"] = "A collection of Mages Guild books found in Malabal Tor.",
+			},
 			["t"] = 10,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["k"] = 26,
 		},
 		[22] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A Mages Guild collection of books regarding Eastmarch.",
-				["fr"] = "Une série de livres de connaissances de la guilde des mages sur l'Estemarche.",
-				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Ostmarsch.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Eastmarch Lore",
-				["fr"] = "Connaissance d'Estemarche",
 				["de"] = "Über Ostmarsch",
+				["fr"] = "Connaissance d'Estemarche",
+				["en"] = "Eastmarch Lore",
 			},
-			["k"] = 27,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Ostmarsch.",
+				["fr"] = "Une série de livres de connaissances de la guilde des mages sur l'Estemarche.",
+				["en"] = "A Mages Guild collection of books regarding Eastmarch.",
+			},
 			["t"] = 10,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["k"] = 27,
 		},
 		[23] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A Mages Guild collection of books regarding Deshaan.",
-				["fr"] = "Une série de livres de connaissances de la guilde des mages sur Deshaan.",
-				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Deshaan.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Deshaan Lore",
-				["fr"] = "Connaissance de Deshaan",
 				["de"] = "Über Deshaan",
+				["fr"] = "Connaissance de Deshaan",
+				["en"] = "Deshaan Lore",
 			},
-			["k"] = 28,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Deshaan.",
+				["fr"] = "Une série de livres de connaissances de la guilde des mages sur Deshaan.",
+				["en"] = "A Mages Guild collection of books regarding Deshaan.",
+			},
 			["t"] = 10,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["k"] = 28,
 		},
 		[24] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A Mages Guild collection of books regarding the Rift.",
-				["fr"] = "Une série de livres de connaissances de la guilde des mages sur la Brèche.",
-				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Rift.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "The Rift Lore",
-				["fr"] = "Connaissance de la Brèche",
 				["de"] = "Über Rift",
+				["fr"] = "Connaissance de la Brèche",
+				["en"] = "The Rift Lore",
 			},
-			["k"] = 29,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Rift.",
+				["fr"] = "Une série de livres de connaissances de la guilde des mages sur la Brèche.",
+				["en"] = "A Mages Guild collection of books regarding the Rift.",
+			},
 			["t"] = 10,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["k"] = 29,
 		},
 		[25] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A collection of Mages Guild books found in Auridon.",
-				["fr"] = "Une collection de livres de la guilde des mages découverts en Auridia.",
-				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Auridon.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Auridon Lore",
-				["fr"] = "Connaissance d'Auridia",
 				["de"] = "Über Auridon",
+				["fr"] = "Connaissance d'Auridia",
+				["en"] = "Auridon Lore",
 			},
-			["k"] = 30,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Auridon.",
+				["fr"] = "Une collection de livres de la guilde des mages découverts en Auridia.",
+				["en"] = "A collection of Mages Guild books found in Auridon.",
+			},
 			["t"] = 10,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["k"] = 30,
 		},
 		[26] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A Mages Guild collection of books regarding Grahtwood.",
-				["fr"] = "Une série de livres de connaissances de la guilde des mages sur le bois de Graht.",
-				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Grahtwald.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Grahtwood Lore",
-				["fr"] = "Connaissance du bois de Graht",
 				["de"] = "Über Grahtwald",
+				["fr"] = "Connaissance du bois de Graht",
+				["en"] = "Grahtwood Lore",
 			},
-			["k"] = 32,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Grahtwald.",
+				["fr"] = "Une série de livres de connaissances de la guilde des mages sur le bois de Graht.",
+				["en"] = "A Mages Guild collection of books regarding Grahtwood.",
+			},
 			["t"] = 10,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["k"] = 32,
 		},
 		[27] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A Mages Guild collection of books regarding Greenshade.",
-				["fr"] = "Une série de livres de connaissances de la guilde des mages sur Prasin.",
-				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Grünschatten.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Greenshade Lore",
-				["fr"] = "Connaissance de Prasin",
 				["de"] = "Über Grünschatten",
+				["fr"] = "Connaissance de Prasin",
+				["en"] = "Greenshade Lore",
 			},
-			["k"] = 38,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Grünschatten.",
+				["fr"] = "Une série de livres de connaissances de la guilde des mages sur Prasin.",
+				["en"] = "A Mages Guild collection of books regarding Greenshade.",
+			},
 			["t"] = 10,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["k"] = 38,
 		},
 		[28] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A Mages Guild collection of books regarding Reaper's March.",
-				["fr"] = "Une série de livres de connaissances de la guilde des mages sur la marche de la Camarde.",
-				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Schnittermark.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Reaper's March Lore",
-				["fr"] = "Connaissance de la Camarde",
 				["de"] = "Über Schnittermark",
+				["fr"] = "Connaissance de la Camarde",
+				["en"] = "Reaper's March Lore",
 			},
-			["k"] = 39,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Schnittermark.",
+				["fr"] = "Une série de livres de connaissances de la guilde des mages sur la marche de la Camarde.",
+				["en"] = "A Mages Guild collection of books regarding Reaper's March.",
+			},
 			["t"] = 10,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["k"] = 39,
 		},
 		[29] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A Mages Guild collection of books regarding Coldharbour.",
-				["fr"] = "Une série de livres de connaissances de la guilde des mages sur Havreglace.",
-				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Kalthafen.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_daedric.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Coldharbour Lore",
-				["fr"] = "Connaissance de Havreglace",
 				["de"] = "Über Kalthafen",
+				["fr"] = "Connaissance de Havreglace",
+				["en"] = "Coldharbour Lore",
 			},
-			["k"] = 40,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung der Magiergilde mit Büchern über Kalthafen.",
+				["fr"] = "Une série de livres de connaissances de la guilde des mages sur Havreglace.",
+				["en"] = "A Mages Guild collection of books regarding Coldharbour.",
+			},
 			["t"] = 10,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_daedric.dds",
+			["k"] = 40,
 		},
 	},
 	[2] = 
 	{
-		[1] = 
+		[64] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Lore books related to the various disciplines of crafting.",
-				["fr"] = "Livres de savoir autour des différentes disciplines d'artisanat.",
-				["de"] = "Bücher, die sich mit den verschiedenen Handwerken beschäftigen.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Crafting Books",
-				["fr"] = "Livres d'artisanat",
-				["de"] = "Handwerksbücher",
+				["de"] = "Die Mondgrab-Tempelstadt",
+				["fr"] = "Style du reliquaire des Lunes funèbres",
+				["en"] = "Moongrave Fane Style",
 			},
-			["k"] = 43,
-			["h"] = false,
-			["t"] = 24,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Mondgrab-Tempelstadt.",
+				["fr"] = "Ces livres permettent de fabriquer au style du reliquaire des Lunes funèbres.",
+				["en"] = "These book fragments enable crafting in the Moongrave Fane style.",
+			},
+			["t"] = 14,
+			["k"] = 155,
+		},
+		[1] = 
+		{
 			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
+			["n"] = 
+			{
+				["de"] = "Handwerksbücher",
+				["fr"] = "Livres d'artisanat",
+				["en"] = "Crafting Books",
+			},
+			["d"] = 
+			{
+				["de"] = "Bücher, die sich mit den verschiedenen Handwerken beschäftigen.",
+				["fr"] = "Livres de savoir autour des différentes disciplines d'artisanat.",
+				["en"] = "Lore books related to the various disciplines of crafting.",
+			},
+			["t"] = 24,
+			["k"] = 43,
 		},
 		[2] = 
 		{
-			["d"] = 
-			{
-				["en"] = "",
-				["fr"] = "",
-				["de"] = "",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_dwemer.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Dwemer Style",
-				["fr"] = "Motifs dwemer",
 				["de"] = "Stil der Dwemer",
+				["fr"] = "Motifs dwemer",
+				["en"] = "Dwemer Style",
 			},
-			["k"] = 74,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "",
+				["fr"] = "",
+				["en"] = "",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_dwemer.dds",
+			["k"] = 74,
 		},
 		[3] = 
 		{
-			["d"] = 
-			{
-				["en"] = "",
-				["fr"] = "",
-				["de"] = "",
-			},
+			["g"] = "/esoui/art/icons/icon_missing.dds",
+			["h"] = true,
 			["n"] = 
 			{
-				["en"] = "",
-				["fr"] = "",
 				["de"] = "",
+				["fr"] = "",
+				["en"] = "",
 			},
-			["k"] = 0,
-			["h"] = true,
+			["d"] = 
+			{
+				["de"] = "",
+				["fr"] = "",
+				["en"] = "",
+			},
 			["t"] = 0,
-			["g"] = "/esoui/art/icons/icon_missing.dds",
+			["k"] = 0,
 		},
 		[4] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These books enable crafting in the Akaviri style.",
-				["fr"] = "Ces livres permettent de fabriquer au style akavirois.",
-				["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil der Akaviri.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Akaviri Style",
-				["fr"] = "Style akavirois",
 				["de"] = "Stil der Akaviri",
+				["fr"] = "Style akavirois",
+				["en"] = "Akaviri Style",
 			},
-			["k"] = 77,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil der Akaviri.",
+				["fr"] = "Ces livres permettent de fabriquer au style akavirois.",
+				["en"] = "These books enable crafting in the Akaviri style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 77,
 		},
 		[5] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These books enable crafting in the Yokudan style.",
-				["fr"] = "Ces livres permettent de fabriquer au style yokudan.",
-				["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil der Yokudaner.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Yokudan Style",
-				["fr"] = "Style yokudan",
 				["de"] = "Stil der Yokudaner",
+				["fr"] = "Style yokudan",
+				["en"] = "Yokudan Style",
 			},
-			["k"] = 78,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil der Yokudaner.",
+				["fr"] = "Ces livres permettent de fabriquer au style yokudan.",
+				["en"] = "These books enable crafting in the Yokudan style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 78,
 		},
 		[6] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Glass style.",
-				["fr"] = "Ces livres permettent de fabriquer au style verrier.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil mit Glasit.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Glass Style",
-				["fr"] = "Style du verre",
 				["de"] = "Stil mit Glasit",
+				["fr"] = "Style du verre",
+				["en"] = "Glass Style",
 			},
-			["k"] = 79,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil mit Glasit.",
+				["fr"] = "Ces livres permettent de fabriquer au style verrier.",
+				["en"] = "These book fragments enable crafting in the Glass style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 79,
 		},
 		[7] = 
 		{
-			["d"] = 
-			{
-				["en"] = "This style enables the crafter to create items in the martial and utilitarian Mercenary style.",
-				["fr"] = "Permet à l'artisan de créer des objets dans le style mercenaire à la fois guerrier et efficace.",
-				["de"] = "Mit diesem Wissen können Handwerker Gegenstände im kriegerischen und zweckmäßigen Stil berühmter Söldner fertigen.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Mercenary Style",
-				["fr"] = "Style mercenaire",
 				["de"] = "Stil der Söldner",
+				["fr"] = "Style mercenaire",
+				["en"] = "Mercenary Style",
 			},
-			["k"] = 80,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Mit diesem Wissen können Handwerker Gegenstände im kriegerischen und zweckmäßigen Stil berühmter Söldner fertigen.",
+				["fr"] = "Permet à l'artisan de créer des objets dans le style mercenaire à la fois guerrier et efficace.",
+				["en"] = "This style enables the crafter to create items in the martial and utilitarian Mercenary style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 80,
 		},
 		[8] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Xivkyn style.",
-				["fr"] = "Ces livres permettent de fabriquer au style Xivkyn.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Xivkyn.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Xivkyn Style",
-				["fr"] = "Style Xivkyn",
 				["de"] = "Stil der Xivkyn",
+				["fr"] = "Style Xivkyn",
+				["en"] = "Xivkyn Style",
 			},
-			["k"] = 81,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Xivkyn.",
+				["fr"] = "Ces livres permettent de fabriquer au style Xivkyn.",
+				["en"] = "These book fragments enable crafting in the Xivkyn style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 81,
 		},
 		[9] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Ancient Orc style.",
-				["fr"] = "Ces livres permettent de fabriquer au style orque antique.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Orkahnen.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Ancient Orc Style",
-				["fr"] = "Style orque antique",
 				["de"] = "Stil der Orkahnen",
+				["fr"] = "Style orque antique",
+				["en"] = "Ancient Orc Style",
 			},
-			["k"] = 84,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Orkahnen.",
+				["fr"] = "Ces livres permettent de fabriquer au style orque antique.",
+				["en"] = "These book fragments enable crafting in the Ancient Orc style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 84,
 		},
 		[10] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Outlaw style.",
-				["fr"] = "Ces livres permettent de fabriquer au style hors-la-loi.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Gesetzlosen.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Outlaw Style",
-				["fr"] = "Style hors-la-loi",
 				["de"] = "Stil der Gesetzlosen",
+				["fr"] = "Style hors-la-loi",
+				["en"] = "Outlaw Style",
 			},
-			["k"] = 88,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Gesetzlosen.",
+				["fr"] = "Ces livres permettent de fabriquer au style hors-la-loi.",
+				["en"] = "These book fragments enable crafting in the Outlaw style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 88,
 		},
 		[11] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Trinimac style.",
-				["fr"] = "Ces livres permettent de fabriquer au style de Trinimac.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Trinimac.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Trinimac Style",
-				["fr"] = "Style de Trinimac",
 				["de"] = "Stil des Trinimac",
+				["fr"] = "Style de Trinimac",
+				["en"] = "Trinimac Style",
 			},
-			["k"] = 89,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Trinimac.",
+				["fr"] = "Ces livres permettent de fabriquer au style de Trinimac.",
+				["en"] = "These book fragments enable crafting in the Trinimac style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 89,
 		},
 		[12] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Malacath style.",
-				["fr"] = "Ces livres permettent de fabriquer au style de Malacath.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Malacath.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Malacath Style",
-				["fr"] = "Style de Malacath",
 				["de"] = "Stil des Malacath",
+				["fr"] = "Style de Malacath",
+				["en"] = "Malacath Style",
 			},
-			["k"] = 90,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Malacath.",
+				["fr"] = "Ces livres permettent de fabriquer au style de Malacath.",
+				["en"] = "These book fragments enable crafting in the Malacath style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 90,
 		},
 		[13] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These books enable crafting in the Morag Tong style.",
-				["fr"] = "Ces livres débloquent le style d'artisanat Morag Tong.",
-				["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil der Morag Tong.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Morag Tong Style",
-				["fr"] = "Style Morag Tong",
 				["de"] = "Stil der Morag Tong",
+				["fr"] = "Style Morag Tong",
+				["en"] = "Morag Tong Style",
 			},
-			["k"] = 91,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil der Morag Tong.",
+				["fr"] = "Ces livres débloquent le style d'artisanat Morag Tong.",
+				["en"] = "These books enable crafting in the Morag Tong style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 91,
 		},
 		[14] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Aldmeri Dominion style.",
-				["fr"] = "Ces extraits de livre permettent de fabriquer au style du Domaine aldmeri.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Aldmeri-Dominions.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Aldmeri Dominion Style",
-				["fr"] = "Style du Domaine aldmeri",
 				["de"] = "Stil des Aldmeri-Dominions",
+				["fr"] = "Style du Domaine aldmeri",
+				["en"] = "Aldmeri Dominion Style",
 			},
-			["k"] = 92,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Aldmeri-Dominions.",
+				["fr"] = "Ces extraits de livre permettent de fabriquer au style du Domaine aldmeri.",
+				["en"] = "These book fragments enable crafting in the Aldmeri Dominion style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 92,
 		},
 		[15] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Daggerfall Covenant style.",
-				["fr"] = "Ces extraits de livre permettent de fabriquer au style de l'Alliance de Daguefilante.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Dolchsturz-Bündnisses.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Daggerfall Covenant Style",
-				["fr"] = "Style de l'Alliance de Daguefilante",
 				["de"] = "Stil des Dolchsturz-Bündnisses",
+				["fr"] = "Style de l'Alliance de Daguefilante",
+				["en"] = "Daggerfall Covenant Style",
 			},
-			["k"] = 93,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Dolchsturz-Bündnisses.",
+				["fr"] = "Ces extraits de livre permettent de fabriquer au style de l'Alliance de Daguefilante.",
+				["en"] = "These book fragments enable crafting in the Daggerfall Covenant style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 93,
 		},
 		[16] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Ebonheart Pact style.",
-				["fr"] = "Ces extraits de livre permettent de fabriquer au style du Pacte de Cœurébène.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Ebenherz-Paktes.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Ebonheart Pact Style",
-				["fr"] = "Style du Pacte de Cœurébène",
 				["de"] = "Stil des Ebenherz-Pakts",
+				["fr"] = "Style du Pacte de Cœurébène",
+				["en"] = "Ebonheart Pact Style",
 			},
-			["k"] = 94,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Ebenherz-Paktes.",
+				["fr"] = "Ces extraits de livre permettent de fabriquer au style du Pacte de Cœurébène.",
+				["en"] = "These book fragments enable crafting in the Ebonheart Pact style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 94,
 		},
 		[17] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Ra Gada style.",
-				["fr"] = "Ces livres permettent de fabriquer au style Ra Gada.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Ro'Wada.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Ra Gada Style",
-				["fr"] = "Style Ra Gada",
 				["de"] = "Stil der Ro'Wada",
+				["fr"] = "Style Ra Gada",
+				["en"] = "Ra Gada Style",
 			},
-			["k"] = 95,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Ro'Wada.",
+				["fr"] = "Ces livres permettent de fabriquer au style Ra Gada.",
+				["en"] = "These book fragments enable crafting in the Ra Gada style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 95,
 		},
 		[18] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the dro-m'Athra style.",
-				["fr"] = "Ces livres permettent de fabriquer au style dro-m'Athra.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der dro-m'Athra.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Dro-m'Athra Style",
-				["fr"] = "Style dro-m'Athra",
 				["de"] = "Stil der dro-m'Athra",
+				["fr"] = "Style dro-m'Athra",
+				["en"] = "Dro-m'Athra Style",
 			},
-			["k"] = 96,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der dro-m'Athra.",
+				["fr"] = "Ces livres permettent de fabriquer au style dro-m'Athra.",
+				["en"] = "These book fragments enable crafting in the dro-m'Athra style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 96,
 		},
 		[19] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Ebony style.",
-				["fr"] = "Ces livres permettent de fabriquer au style d'Ébonite.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen aus Ebenerz.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Ebony Style",
-				["fr"] = "Style d'Ébonite",
 				["de"] = "Stil mit Ebenerz",
+				["fr"] = "Style d'Ébonite",
+				["en"] = "Ebony Style",
 			},
-			["k"] = 97,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen aus Ebenerz.",
+				["fr"] = "Ces livres permettent de fabriquer au style d'Ébonite.",
+				["en"] = "These book fragments enable crafting in the Ebony style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 97,
 		},
 		[20] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Assassins League style.",
-				["fr"] = "Ces livres permettent de fabriquer au style de la ligue des assassins.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Assassinenbundes.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Assassins League Style",
-				["fr"] = "Style de la ligue des assassins",
 				["de"] = "Stil des Assassinenbundes",
+				["fr"] = "Style de la ligue des assassins",
+				["en"] = "Assassins League Style",
 			},
-			["k"] = 99,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Assassinenbundes.",
+				["fr"] = "Ces livres permettent de fabriquer au style de la ligue des assassins.",
+				["en"] = "These book fragments enable crafting in the Assassins League style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 99,
 		},
 		[21] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Thieves Guild style.",
-				["fr"] = "Ces livres permettent de fabriquer au style de la guilde des voleurs.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Diebesgilde.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Thieves Guild Style",
-				["fr"] = "Style de la guilde des voleurs",
 				["de"] = "Stil der Diebesgilde",
+				["fr"] = "Style de la guilde des voleurs",
+				["en"] = "Thieves Guild Style",
 			},
-			["k"] = 100,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Diebesgilde.",
+				["fr"] = "Ces livres permettent de fabriquer au style de la guilde des voleurs.",
+				["en"] = "These book fragments enable crafting in the Thieves Guild style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 100,
 		},
 		[22] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Abah's Watch style.",
-				["fr"] = "Ces livres permettent de fabriquer au style de la garde d'Abah.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil von Abahs Wacht.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Abah's Watch Style",
-				["fr"] = "Style de la garde d'Abah",
 				["de"] = "Stil von Abahs Wacht",
+				["fr"] = "Style de la garde d'Abah",
+				["en"] = "Abah's Watch Style",
 			},
-			["k"] = 101,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil von Abahs Wacht.",
+				["fr"] = "Ces livres permettent de fabriquer au style de la garde d'Abah.",
+				["en"] = "These book fragments enable crafting in the Abah's Watch style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 101,
 		},
 		[23] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Draugr style.",
-				["fr"] = "Ces livres permettent de fabriquer au style Draugr.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Draugr.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Draugr Style",
-				["fr"] = "Style Draugr",
 				["de"] = "Stil der Draugr",
+				["fr"] = "Style Draugr",
+				["en"] = "Draugr Style",
 			},
-			["k"] = 105,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Draugr.",
+				["fr"] = "Ces livres permettent de fabriquer au style Draugr.",
+				["en"] = "These book fragments enable crafting in the Draugr style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 105,
 		},
 		[24] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Minotaur style.",
-				["fr"] = "Ces livres permettent de fabriquer au style des minotaures.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Minotauren.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Minotaur Style",
-				["fr"] = "Style des minotaures",
 				["de"] = "Stil der Minotauren",
+				["fr"] = "Style des minotaures",
+				["en"] = "Minotaur Style",
 			},
-			["k"] = 106,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Minotauren.",
+				["fr"] = "Ces livres permettent de fabriquer au style des minotaures.",
+				["en"] = "These book fragments enable crafting in the Minotaur style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 106,
 		},
 		[25] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Order of the Hour style.",
-				["fr"] = "Ces livres permettent de fabriquer au style de l'Ordre des Heures.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Ordens der Stunde.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Order Hour Style",
-				["fr"] = "Motif de l'Ordre des Heures",
 				["de"] = "Stil des Ordens der Stunde",
+				["fr"] = "Motif de l'Ordre des Heures",
+				["en"] = "Order Hour Style",
 			},
-			["k"] = 107,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Ordens der Stunde.",
+				["fr"] = "Ces livres permettent de fabriquer au style de l'Ordre des Heures.",
+				["en"] = "These book fragments enable crafting in the Order of the Hour style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 107,
 		},
 		[26] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Celestial style.",
-				["fr"] = "Ces livres permettent de fabriquer au style céleste.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Himmlischen.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Celestial Style",
-				["fr"] = "Style céleste",
 				["de"] = "Stil der Himmlischen",
+				["fr"] = "Style céleste",
+				["en"] = "Celestial Style",
 			},
-			["k"] = 108,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Himmlischen.",
+				["fr"] = "Ces livres permettent de fabriquer au style céleste.",
+				["en"] = "These book fragments enable crafting in the Celestial style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 108,
 		},
 		[27] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Hollowjack style.",
-				["fr"] = "Ces livres permettent de fabriquer au style d'Hallowjack.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil von Kürbisfratze.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Hollowjack Style",
-				["fr"] = "Style d'Hallowjack",
 				["de"] = "Stil von Kürbisfratze",
+				["fr"] = "Style d'Hallowjack",
+				["en"] = "Hollowjack Style",
 			},
-			["k"] = 109,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil von Kürbisfratze.",
+				["fr"] = "Ces livres permettent de fabriquer au style d'Hallowjack.",
+				["en"] = "These book fragments enable crafting in the Hollowjack style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 109,
 		},
 		[28] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Dark Brotherhood style.",
-				["fr"] = "Ces livres permettent de fabriquer au style de la Confrérie noire.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Dunklen Bruderschaft.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Dark Brotherhood Style",
-				["fr"] = "Style de la Confrérie noire",
 				["de"] = "Stil der Dunklen Bruderschaft",
+				["fr"] = "Style de la Confrérie noire",
+				["en"] = "Dark Brotherhood Style",
 			},
-			["k"] = 110,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Dunklen Bruderschaft.",
+				["fr"] = "Ces livres permettent de fabriquer au style de la Confrérie noire.",
+				["en"] = "These book fragments enable crafting in the Dark Brotherhood style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 110,
 		},
 		[29] = 
 		{
-			["d"] = 
-			{
-				["en"] = "",
-				["fr"] = "",
-				["de"] = "",
-			},
+			["g"] = "/esoui/art/icons/icon_missing.dds",
+			["h"] = true,
 			["n"] = 
 			{
-				["en"] = "",
-				["fr"] = "",
 				["de"] = "",
+				["fr"] = "",
+				["en"] = "",
 			},
-			["k"] = 0,
-			["h"] = true,
+			["d"] = 
+			{
+				["de"] = "",
+				["fr"] = "",
+				["en"] = "",
+			},
 			["t"] = 0,
-			["g"] = "/esoui/art/icons/icon_missing.dds",
+			["k"] = 0,
 		},
 		[30] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Skinchanger style.",
-				["fr"] = "Ces livres permettent de fabriquer au style changepeau.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Gestaltwandler.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Skinchanger Style",
-				["fr"] = "Style changepeau",
 				["de"] = "Stil der Gestaltwandler",
+				["fr"] = "Style changepeau",
+				["en"] = "Skinchanger Style",
 			},
-			["k"] = 112,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Gestaltwandler.",
+				["fr"] = "Ces livres permettent de fabriquer au style changepeau.",
+				["en"] = "These book fragments enable crafting in the Skinchanger style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 112,
 		},
 		[31] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Silken Ring style.",
-				["fr"] = "Ces livres permettent de fabriquer au style de l'Anneau de soie.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Seidenrings.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Silken Ring Style",
-				["fr"] = "Style de l'Anneau de soie",
 				["de"] = "Stil des Seidenrings",
+				["fr"] = "Style de l'Anneau de soie",
+				["en"] = "Silken Ring Style",
 			},
-			["k"] = 113,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Seidenrings.",
+				["fr"] = "Ces livres permettent de fabriquer au style de l'Anneau de soie.",
+				["en"] = "These book fragments enable crafting in the Silken Ring style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 113,
 		},
 		[32] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Mazzatun style.",
-				["fr"] = "Ces livres permettent de fabriquer au style de Mazzatun.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil von Mazzatun.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Mazzatun Style",
-				["fr"] = "Style de Mazzatun",
 				["de"] = "Stil von Mazzatun",
+				["fr"] = "Style de Mazzatun",
+				["en"] = "Mazzatun Style",
 			},
-			["k"] = 114,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil von Mazzatun.",
+				["fr"] = "Ces livres permettent de fabriquer au style de Mazzatun.",
+				["en"] = "These book fragments enable crafting in the Mazzatun style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 114,
 		},
 		[33] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These books enable crafting in the House Telvanni style.",
-				["fr"] = "Ces livres permettent de fabriquer au style de la Maison Telvanni.",
-				["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil des Hauses Telvanni.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "House Telvanni Style",
-				["fr"] = "Style de la Maison Telvanni",
 				["de"] = "Stil des Hauses Telvanni",
+				["fr"] = "Style de la Maison Telvanni",
+				["en"] = "House Telvanni Style",
 			},
-			["k"] = 116,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil des Hauses Telvanni.",
+				["fr"] = "Ces livres permettent de fabriquer au style de la Maison Telvanni.",
+				["en"] = "These books enable crafting in the House Telvanni style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 116,
 		},
 		[34] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These books enable crafting in the Militant Ordinator style.",
-				["fr"] = "Ces livres débloquent le style d'artisanat des Ordonnateurs.",
-				["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil der kriegerischen Ordinatoren.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Militant Ordinator Style",
-				["fr"] = "Style d'Ordonnateur militant",
 				["de"] = "Stil der kriegerischen Ordinatoren",
+				["fr"] = "Style d'Ordonnateur militant",
+				["en"] = "Militant Ordinator Style",
 			},
-			["k"] = 117,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil der kriegerischen Ordinatoren.",
+				["fr"] = "Ces livres débloquent le style d'artisanat des Ordonnateurs.",
+				["en"] = "These books enable crafting in the Militant Ordinator style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 117,
 		},
 		[35] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These books enable crafting in the Buoyant Armiger style.",
-				["fr"] = "Ces livres permettent de fabriquer au style des Exaltés.",
-				["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil der Kriegswappenträger.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Buoyant Armiger Style",
-				["fr"] = "Style d'Exalté",
 				["de"] = "Stil der Kriegswappenträger",
+				["fr"] = "Style d'Exalté",
+				["en"] = "Buoyant Armiger Style",
 			},
-			["k"] = 118,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil der Kriegswappenträger.",
+				["fr"] = "Ces livres permettent de fabriquer au style des Exaltés.",
+				["en"] = "These books enable crafting in the Buoyant Armiger style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 118,
 		},
 		[36] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These books enable crafting in the Ashlander style.",
-				["fr"] = "Ces livres permettent de fabriquer au style cendrais.",
-				["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil der Aschländer.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Ashlander Style",
-				["fr"] = "Le style cendrais",
 				["de"] = "Stil der Aschländer",
+				["fr"] = "Le style cendrais",
+				["en"] = "Ashlander Style",
 			},
-			["k"] = 119,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil der Aschländer.",
+				["fr"] = "Ces livres permettent de fabriquer au style cendrais.",
+				["en"] = "These books enable crafting in the Ashlander style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 119,
 		},
 		[37] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These books enable crafting in the House Hlaalu style.",
-				["fr"] = "Ces livres permettent de fabriquer au style de la Maison Hlaalu.",
-				["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil des Hauses Hlaalu.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "House Hlaalu Style",
-				["fr"] = "Style de la Maison Hlaalu",
 				["de"] = "Stil des Hauses Hlaalu",
+				["fr"] = "Style de la Maison Hlaalu",
+				["en"] = "House Hlaalu Style",
 			},
-			["k"] = 121,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil des Hauses Hlaalu.",
+				["fr"] = "Ces livres permettent de fabriquer au style de la Maison Hlaalu.",
+				["en"] = "These books enable crafting in the House Hlaalu style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 121,
 		},
 		[38] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These books enable crafting in the House Redoran style.",
-				["fr"] = "Ces livres permettent de fabriquer au style de la Maison Rédoran.",
-				["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil des Hauses Redoran.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "House Redoran Style",
-				["fr"] = "Style de la Maison Rédoran",
 				["de"] = "Stil des Hauses Redoran",
+				["fr"] = "Style de la Maison Rédoran",
+				["en"] = "House Redoran Style",
 			},
-			["k"] = 122,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil des Hauses Redoran.",
+				["fr"] = "Ces livres permettent de fabriquer au style de la Maison Rédoran.",
+				["en"] = "These books enable crafting in the House Redoran style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 122,
 		},
 		[39] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Bloodforge style.",
-				["fr"] = "Ces livres permettent de fabriquer au style de la Forgesang.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Blutquellschmiede.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Bloodforge Style",
-				["fr"] = "Style Forgesang",
-				["de"] = "Stil der Blutquellschmiede",
+				["de"] = "Stil der Rekonstruktion",
+				["fr"] = "Style refabriqué",
+				["en"] = "Refabricated Style",
 			},
-			["k"] = 125,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil der Rekonstruktion.",
+				["fr"] = "Ces livres permettent de fabriquer au style Refabriqué.",
+				["en"] = "These books enable crafting in the Refabricated style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 124,
 		},
 		[40] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Dreadhorn style.",
-				["fr"] = "Ces livres permettent de fabriquer au style des Corneffroi.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Grauenshornklans.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Dreadhorn Style",
-				["fr"] = "Style Corneffroi",
-				["de"] = "Stil des Grauenshornklans",
+				["de"] = "Stil der Blutquellschmiede",
+				["fr"] = "Style Forgesang",
+				["en"] = "Bloodforge Style",
 			},
-			["k"] = 126,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Blutquellschmiede.",
+				["fr"] = "Ces livres permettent de fabriquer au style de la Forgesang.",
+				["en"] = "These book fragments enable crafting in the Bloodforge style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 125,
 		},
 		[41] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Apostle style.",
-				["fr"] = "Ces livres permettent de fabriquer au style des Apôtres.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Apostel.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Apostle Style",
-				["fr"] = "Style des Apôtres",
-				["de"] = "Stil der Apostel",
+				["de"] = "Stil des Grauenshornklans",
+				["fr"] = "Style Corneffroi",
+				["en"] = "Dreadhorn Style",
 			},
-			["k"] = 127,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Grauenshornklans.",
+				["fr"] = "Ces livres permettent de fabriquer au style des Corneffroi.",
+				["en"] = "These book fragments enable crafting in the Dreadhorn style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 126,
 		},
 		[42] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Ebonshadow style.",
-				["fr"] = "Ces livres permettent de fabriquer au style d'Ombrébène.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Ebenschattens.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Ebonshadow Style",
-				["fr"] = "Style d'Ombrébène",
-				["de"] = "Stil des Ebenschattens",
+				["de"] = "Stil der Apostel",
+				["fr"] = "Style des Apôtres",
+				["en"] = "Apostle Style",
 			},
-			["k"] = 128,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Apostel.",
+				["fr"] = "Ces livres permettent de fabriquer au style des Apôtres.",
+				["en"] = "These book fragments enable crafting in the Apostle style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 127,
 		},
 		[43] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Motif books that enable crafting in the Worm Cult style.",
-				["fr"] = "Ces livres de style permettent de fabriquer des objets au style du Culte du Ver.",
-				["de"] = "Stilkapitel, die es Euch erlauben, Gegenstände im Stil des Wurmkults herzustellen.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Worm Cult Style",
-				["fr"] = "Le style du Culte du Ver",
-				["de"] = "Stil des Wurmkults",
+				["de"] = "Stil des Ebenschattens",
+				["fr"] = "Style d'Ombrébène",
+				["en"] = "Ebonshadow Style",
 			},
-			["k"] = 130,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Ebenschattens.",
+				["fr"] = "Ces livres permettent de fabriquer au style d'Ombrébène.",
+				["en"] = "These book fragments enable crafting in the Ebonshadow style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 128,
 		},
 		[44] = 
 		{
-			["d"] = 
-			{
-				["en"] = "",
-				["fr"] = "",
-				["de"] = "",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Fang Lair Style",
-				["fr"] = "Style du Repaire du croc",
-				["de"] = "Stil des Krallenhorts",
+				["de"] = "Stil des Wurmkults",
+				["fr"] = "Le style du Culte du Ver",
+				["en"] = "Worm Cult Style",
 			},
-			["k"] = 131,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Stilkapitel, die es Euch erlauben, Gegenstände im Stil des Wurmkults herzustellen.",
+				["fr"] = "Ces livres de style permettent de fabriquer des objets au style du Culte du Ver.",
+				["en"] = "Motif books that enable crafting in the Worm Cult style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 130,
 		},
 		[45] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These books enable crafting in the Scalecaller style.",
-				["fr"] = "Ces livres débloquent le style d'artisanat de la Mandécailles.",
-				["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil der Schuppenruferin.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Scalecaller Style",
-				["fr"] = "Style de la Mandécailles",
-				["de"] = "Stil der Schuppenruferin",
+				["de"] = "Stil des Krallenhorts",
+				["fr"] = "Style du Repaire du croc",
+				["en"] = "Fang Lair Style",
 			},
-			["k"] = 132,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "",
+				["fr"] = "",
+				["en"] = "",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 131,
 		},
 		[46] = 
 		{
-			["d"] = 
-			{
-				["en"] = "",
-				["fr"] = "",
-				["de"] = "",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Psijic Style",
-				["fr"] = "Le Style psijique",
-				["de"] = "Stil der Psijiker",
+				["de"] = "Stil der Schuppenruferin",
+				["fr"] = "Style de la Mandécailles",
+				["en"] = "Scalecaller Style",
 			},
-			["k"] = 133,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil der Schuppenruferin.",
+				["fr"] = "Ces livres débloquent le style d'artisanat de la Mandécailles.",
+				["en"] = "These books enable crafting in the Scalecaller style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 132,
 		},
 		[47] = 
 		{
-			["d"] = 
-			{
-				["en"] = "",
-				["fr"] = "",
-				["de"] = "",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Sapiarch Style",
-				["fr"] = "Le Style sapiarque",
-				["de"] = "Stil der Sapiarchen",
+				["de"] = "Stil der Psijiker",
+				["fr"] = "Le Style psijique",
+				["en"] = "Psijic Style",
 			},
-			["k"] = 134,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "",
+				["fr"] = "",
+				["en"] = "",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 133,
 		},
 		[48] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Pyandonean style.",
-				["fr"] = "Ces livres permettent de fabriquer au style pyandonéen.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Pyandonesier.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Pyandonean Style",
-				["fr"] = "Style pyandonéen",
-				["de"] = "Stil der Pyandonesier",
+				["de"] = "Stil der Sapiarchen",
+				["fr"] = "Le Style sapiarque",
+				["en"] = "Sapiarch Style",
 			},
-			["k"] = 137,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "",
+				["fr"] = "",
+				["en"] = "",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 134,
 		},
 		[49] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Dremora style.",
-				["fr"] = "Ces livres permettent de fabriquer au style Drémora.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Welkynare.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Dremora Style",
-				["fr"] = "Motif Drémora",
-				["de"] = "Stil der Dremora",
+				["de"] = "Stil der Pyandonesier",
+				["fr"] = "Style pyandonéen",
+				["en"] = "Pyandonean Style",
 			},
-			["k"] = 138,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Pyandonesier.",
+				["fr"] = "Ces livres permettent de fabriquer au style pyandonéen.",
+				["en"] = "These book fragments enable crafting in the Pyandonean style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 137,
 		},
 		[50] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Huntsman style.",
-				["fr"] = "Ces fragments de livres permettent de fabriquer des objets au style du Chasseur.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Jägers.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Huntsman Style",
-				["fr"] = "Style du chasseur",
-				["de"] = "Stil des Jägers",
+				["de"] = "Stil der Dremora",
+				["fr"] = "Motif Drémora",
+				["en"] = "Dremora Style",
 			},
-			["k"] = 139,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Welkynare.",
+				["fr"] = "Ces livres permettent de fabriquer au style Drémora.",
+				["en"] = "These book fragments enable crafting in the Dremora style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 138,
 		},
 		[51] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Silver Dawn style.",
-				["fr"] = "Ces fragments de livres permettent de fabriquer des objets au style de l'Aube d'argent.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Silbermorgens.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Silver Dawn Style",
-				["fr"] = "Style de l'Aube d'argent",
-				["de"] = "Stil des Silbermorgens",
+				["de"] = "Stil des Jägers",
+				["fr"] = "Style du chasseur",
+				["en"] = "Huntsman Style",
 			},
-			["k"] = 140,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Jägers.",
+				["fr"] = "Ces fragments de livres permettent de fabriquer des objets au style du Chasseur.",
+				["en"] = "These book fragments enable crafting in the Huntsman style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 139,
 		},
 		[52] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These books enable crafting in the Welkynar style.",
-				["fr"] = "Ces livres permettent de fabriquer au style des Welkynars.",
-				["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil der Welkynare.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Welkynar Style",
-				["fr"] = "Le style des Welkynars",
-				["de"] = "Stil der Welkynare",
+				["de"] = "Stil des Silbermorgens",
+				["fr"] = "Style de l'Aube d'argent",
+				["en"] = "Silver Dawn Style",
 			},
-			["k"] = 141,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil des Silbermorgens.",
+				["fr"] = "Ces fragments de livres permettent de fabriquer des objets au style de l'Aube d'argent.",
+				["en"] = "These book fragments enable crafting in the Silver Dawn style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 140,
 		},
 		[53] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Honor Guard style.",
-				["fr"] = "Ces livres permettent de fabriquer au style de la Garde d'Honneur.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Ehrengarde.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Honor Guard Style",
-				["fr"] = "Le style de la garde d'honneur",
-				["de"] = "Stil der Ehrengarde",
+				["de"] = "Stil der Welkynare",
+				["fr"] = "Le style des Welkynars",
+				["en"] = "Welkynar Style",
 			},
-			["k"] = 143,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Bücher ermöglichen die Herstellung von Gegenständen im Stil der Welkynare.",
+				["fr"] = "Ces livres permettent de fabriquer au style des Welkynars.",
+				["en"] = "These books enable crafting in the Welkynar style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 141,
 		},
 		[54] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Dead-Water style.",
-				["fr"] = "Ces livres permettent de fabriquer au style d'Aiguemortes.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Totwasser.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Dead-Water Style",
-				["fr"] = "Style d'Aiguemortes",
-				["de"] = "Stil der Totwasser",
+				["de"] = "Stil der Ehrengarde",
+				["fr"] = "Le style de la garde d'honneur",
+				["en"] = "Honor Guard Style",
 			},
-			["k"] = 144,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Ehrengarde.",
+				["fr"] = "Ces livres permettent de fabriquer au style de la Garde d'Honneur.",
+				["en"] = "These book fragments enable crafting in the Honor Guard style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 143,
 		},
 		[55] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Elder Argonian style.",
-				["fr"] = "Ces livres permettent de fabriquer au style des Aînés argoniens.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der alten Argonier.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Elder Argonian Style",
-				["fr"] = "Style des Aînés argoniens",
-				["de"] = "Stil der alten Argonier",
+				["de"] = "Stil der Totwasser",
+				["fr"] = "Style d'Aiguemortes",
+				["en"] = "Dead-Water Style",
 			},
-			["k"] = 145,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Totwasser.",
+				["fr"] = "Ces livres permettent de fabriquer au style d'Aiguemortes.",
+				["en"] = "These book fragments enable crafting in the Dead-Water style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 144,
 		},
 		[56] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Coldsnap style.",
-				["fr"] = "Ces livres permettent de fabriquer au style de la Glaciation.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Kälteknacker.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Coldsnap Style",
-				["fr"] = "Style de la Glaciation",
-				["de"] = "Stil der Kälteknacker",
+				["de"] = "Stil der alten Argonier",
+				["fr"] = "Style des Aînés argoniens",
+				["en"] = "Elder Argonian Style",
 			},
-			["k"] = 146,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der alten Argonier.",
+				["fr"] = "Ces livres permettent de fabriquer au style des Aînés argoniens.",
+				["en"] = "These book fragments enable crafting in the Elder Argonian style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 145,
 		},
 		[57] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Meridian style.",
-				["fr"] = "Ces livres permettent de fabriquer au style de Méridia.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil von Meridia.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Meridian Style",
-				["fr"] = "Style de Méridia",
-				["de"] = "Stil von Meridia",
+				["de"] = "Stil der Kälteknacker",
+				["fr"] = "Style de la Glaciation",
+				["en"] = "Coldsnap Style",
 			},
-			["k"] = 147,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Kälteknacker.",
+				["fr"] = "Ces livres permettent de fabriquer au style de la Glaciation.",
+				["en"] = "These book fragments enable crafting in the Coldsnap style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 146,
 		},
 		[58] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Anequina style.",
-				["fr"] = "Ces fragments de livre permettent de fabriquer au style d'Anequina.",
-				["de"] = "Diese Buchfragmente erlauben Handwerk im Stil aus Anequina",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Anequina Style",
-				["fr"] = "Style d'Anequina",
-				["de"] = "Stil aus Anequina",
+				["de"] = "Stil von Meridia",
+				["fr"] = "Style de Méridia",
+				["en"] = "Meridian Style",
 			},
-			["k"] = 148,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil von Meridia.",
+				["fr"] = "Ces livres permettent de fabriquer au style de Méridia.",
+				["en"] = "These book fragments enable crafting in the Meridian style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 147,
 		},
 		[59] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Pellitine style.",
-				["fr"] = "Ces fragments de livre permettent de fabriquer au style de Pellitine.",
-				["de"] = "Diese Buchfragmente erlauben Handwerk im Stil aus Pellitine",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Pellitine Style",
-				["fr"] = "Style de Pellitine",
-				["de"] = "Stil aus Pellitine",
+				["de"] = "Stil aus Anequina",
+				["fr"] = "Style d'Anequina",
+				["en"] = "Anequina Style",
 			},
-			["k"] = 149,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente erlauben Handwerk im Stil aus Anequina",
+				["fr"] = "Ces fragments de livre permettent de fabriquer au style d'Anequina.",
+				["en"] = "These book fragments enable crafting in the Anequina style.",
+			},
 			["t"] = 14,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 148,
 		},
 		[60] = 
 		{
-			["d"] = 
-			{
-				["en"] = "These book fragments enable crafting in the Sunspire style.",
-				["fr"] = "Ces fragments de livres permettent de fabriquer au style de Sollance.",
-				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil aus Sonnspitz.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Sunspire Style",
-				["fr"] = "Style de Sollance",
-				["de"] = "Stil aus Sonnspitz",
+				["de"] = "Stil aus Pellitine",
+				["fr"] = "Style de Pellitine",
+				["en"] = "Pellitine Style",
 			},
-			["k"] = 150,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente erlauben Handwerk im Stil aus Pellitine",
+				["fr"] = "Ces fragments de livre permettent de fabriquer au style de Pellitine.",
+				["en"] = "These book fragments enable crafting in the Pellitine style.",
+			},
 			["t"] = 14,
+			["k"] = 149,
+		},
+		[61] = 
+		{
 			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
+			["n"] = 
+			{
+				["de"] = "Stil aus Sonnspitz",
+				["fr"] = "Style de Sollance",
+				["en"] = "Sunspire Style",
+			},
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil aus Sonnspitz.",
+				["fr"] = "Ces fragments de livres permettent de fabriquer au style de Sollance.",
+				["en"] = "These book fragments enable crafting in the Sunspire style.",
+			},
+			["t"] = 14,
+			["k"] = 150,
+		},
+		[62] = 
+		{
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
+			["n"] = 
+			{
+				["de"] = "Die Drachengarde",
+				["fr"] = "Garde du dragon",
+				["en"] = "Dragonguard Style",
+			},
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Drachengarde.",
+				["fr"] = "Ces livres permettent de fabriquer au style de la Garde du dragon.",
+				["en"] = "These book fragments enable crafting in the Dragonguard style.",
+			},
+			["t"] = 14,
+			["k"] = 153,
+		},
+		[63] = 
+		{
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
+			["n"] = 
+			{
+				["de"] = "Stil der Hirsche von Z'en",
+				["fr"] = "Style des Cerfs de Z'en",
+				["en"] = "Stags of Z'en Style",
+			},
+			["d"] = 
+			{
+				["de"] = "Diese Buchfragmente ermöglichen die Herstellung von Gegenständen im Stil der Hirsche von Z'en.",
+				["fr"] = "Ces livres permettent de fabriquer au style des Cerfs de Z'en.",
+				["en"] = "These book fragments enable crafting in the Stags of Z'en style.",
+			},
+			["t"] = 14,
+			["k"] = 154,
 		},
 	},
 	[3] = 
 	{
 		[1] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Mysteries and revelations from the no-man's-region of Craglorn.",
-				["fr"] = "Mystères et révélations de la région désolée de Raidelorn.",
-				["de"] = "Mysterien und Enthüllungen der Region Kargstein.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Craglorn Secrets",
-				["fr"] = "Secrets de Raidelorn",
 				["de"] = "Geheimnisse von Kargstein",
+				["fr"] = "Secrets de Raidelorn",
+				["en"] = "Craglorn Secrets",
 			},
-			["k"] = 44,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Mysterien und Enthüllungen der Region Kargstein.",
+				["fr"] = "Mystères et révélations de la région désolée de Raidelorn.",
+				["en"] = "Mysteries and revelations from the no-man's-region of Craglorn.",
+			},
 			["t"] = 117,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["k"] = 44,
 		},
 		[2] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Books, notes, and ledgers related to crime and criminal organizations.",
-				["fr"] = "Livres, notes et rapports relatifs au crime et aux organisations criminelles.",
-				["de"] = "Bücher, Notizen und Aufzeichnungen, die sich mit Verbrechen und kriminellen Organisationen beschäftigen.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Criminal Correspondence",
-				["fr"] = "Correspondance criminelle",
 				["de"] = "Verbrecherischer Schriftverkehr",
+				["fr"] = "Correspondance criminelle",
+				["en"] = "Criminal Correspondence",
 			},
-			["k"] = 45,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Bücher, Notizen und Aufzeichnungen, die sich mit Verbrechen und kriminellen Organisationen beschäftigen.",
+				["fr"] = "Livres, notes et rapports relatifs au crime et aux organisations criminelles.",
+				["en"] = "Books, notes, and ledgers related to crime and criminal organizations.",
+			},
 			["t"] = 97,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["k"] = 45,
 		},
 		[3] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Books, notes, and journals by and about Daedra worshipers.",
-				["fr"] = "Livres, notes et journaux par et à propos des adorateurs de Daedra.",
-				["de"] = "Bücher, Notizen und Tagebücher, von und über Anhänger daedrischer Kulte.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_daedric.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Daedric Cults",
-				["fr"] = "Sectes daedriques",
 				["de"] = "Daedrische Kulte",
+				["fr"] = "Sectes daedriques",
+				["en"] = "Daedric Cults",
 			},
-			["k"] = 46,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Bücher, Notizen und Tagebücher, von und über Anhänger daedrischer Kulte.",
+				["fr"] = "Livres, notes et journaux par et à propos des adorateurs de Daedra.",
+				["en"] = "Books, notes, and journals by and about Daedra worshipers.",
+			},
 			["t"] = 93,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_daedric.dds",
+			["k"] = 46,
 		},
 		[4] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Tamrielic peoples feel they have a duty to record the events of their lives.",
-				["fr"] = "Les habitants de Tamriel estiment qu'il est de leur devoir de tenir un journal de leur vie.",
-				["de"] = "Die Völker Tamriels haben das Gefühl, dass sie die Geschehnisse ihres Lebens aufzeichnen müssen.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Diaries and Logs",
-				["fr"] = "Journaux et journaux de bord",
 				["de"] = "Tagebücher und Aufzeichnungen",
+				["fr"] = "Journaux et journaux de bord",
+				["en"] = "Diaries and Logs",
 			},
-			["k"] = 47,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Die Völker Tamriels haben das Gefühl, dass sie die Geschehnisse ihres Lebens aufzeichnen müssen.",
+				["fr"] = "Les habitants de Tamriel estiment qu'il est de leur devoir de tenir un journal de leur vie.",
+				["en"] = "Tamrielic peoples feel they have a duty to record the events of their lives.",
+			},
 			["t"] = 80,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["k"] = 47,
 		},
 		[5] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Wanted posters, arena broadsheets, bounty flyers, warning signs, gravestone epitaphs, official announcements, inscriptions over doorways, and so forth.",
-				["fr"] = "Avis de recherche, journaux de l'arène, primes, pancartes d'alerte, épitaphes, annonces officielles, inscriptions au-dessus des portes, etc.",
-				["de"] = "Steckbriefe, Arenawerbung, Kopfgeldschreiben, Warnschilder, Grabinschriften, offizielle Ankündigungen, Türbeschriftungen und mehr.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Handbills, Posters, and Decrees",
-				["fr"] = "Affichages privés et officiels",
 				["de"] = "Zettel, Aushänge und Erlasse",
+				["fr"] = "Affichages privés et officiels",
+				["en"] = "Handbills, Posters, and Decrees",
 			},
-			["k"] = 48,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Steckbriefe, Arenawerbung, Kopfgeldschreiben, Warnschilder, Grabinschriften, offizielle Ankündigungen, Türbeschriftungen und mehr.",
+				["fr"] = "Avis de recherche, journaux de l'arène, primes, pancartes d'alerte, épitaphes, annonces officielles, inscriptions au-dessus des portes, etc.",
+				["en"] = "Wanted posters, arena broadsheets, bounty flyers, warning signs, gravestone epitaphs, official announcements, inscriptions over doorways, and so forth.",
+			},
 			["t"] = 120,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["k"] = 48,
 		},
 		[6] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Letters, notes, and journals about love and romance.",
-				["fr"] = "Lettres, notes et journaux parlant d'amour.",
-				["de"] = "Briefe, Notizen und Tagebücher, die sich mit Liebe und Romanzen beschäftigen.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Hearts and Flowers",
-				["fr"] = "Cœurs et petites fleurs",
 				["de"] = "Herzen und Blumen",
+				["fr"] = "Cœurs et petites fleurs",
+				["en"] = "Hearts and Flowers",
 			},
-			["k"] = 49,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Briefe, Notizen und Tagebücher, die sich mit Liebe und Romanzen beschäftigen.",
+				["fr"] = "Lettres, notes et journaux parlant d'amour.",
+				["en"] = "Letters, notes, and journals about love and romance.",
+			},
 			["t"] = 79,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["k"] = 49,
 		},
 		[7] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Recipes, checklists, bills of sale, contracts, household hints, receipts, ledgers, and so forth.",
-				["fr"] = "Recettes, listes, actes de vente, contrats, conseils domestiques, reçus, livres de compte, etc.",
-				["de"] = "Rezepte, Prüflisten, Rechnungen, Verträge, Haushaltsnotizen, Aufzeichnungen und ähnliches.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Houses, Shops, and Trade",
-				["fr"] = "Maisons, boutiques et commerce",
 				["de"] = "Häuser, Läden und Handel",
+				["fr"] = "Maisons, boutiques et commerce",
+				["en"] = "Houses, Shops, and Trade",
 			},
-			["k"] = 50,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Rezepte, Prüflisten, Rechnungen, Verträge, Haushaltsnotizen, Aufzeichnungen und ähnliches.",
+				["fr"] = "Recettes, listes, actes de vente, contrats, conseils domestiques, reçus, livres de compte, etc.",
+				["en"] = "Recipes, checklists, bills of sale, contracts, household hints, receipts, ledgers, and so forth.",
+			},
 			["t"] = 86,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["k"] = 50,
 		},
 		[8] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A collection of relatively formal letters.",
-				["fr"] = "Une collection de lettres relativement officielles.",
-				["de"] = "Eine Sammlung recht förmlicher Briefe.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Letters and Missives",
-				["fr"] = "Lettres et missives",
 				["de"] = "Briefe und Sendschreiben",
+				["fr"] = "Lettres et missives",
+				["en"] = "Letters and Missives",
 			},
-			["k"] = 51,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung recht förmlicher Briefe.",
+				["fr"] = "Une collection de lettres relativement officielles.",
+				["en"] = "A collection of relatively formal letters.",
+			},
 			["t"] = 126,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["k"] = 51,
 		},
 		[9] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Books about Tamrielic cultures and social practices.",
-				["fr"] = "Livres à propos des cultures et coutumes sociales de Tamriel.",
-				["de"] = "Bücher, die sich mit den Kulturen Tamriels und sozialen Praktiken beschäftigen.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Lore and Culture",
-				["fr"] = "Connaissance et culture",
 				["de"] = "Wissenswertes und Kultur",
+				["fr"] = "Connaissance et culture",
+				["en"] = "Lore and Culture",
 			},
-			["k"] = 52,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Bücher, die sich mit den Kulturen Tamriels und sozialen Praktiken beschäftigen.",
+				["fr"] = "Livres à propos des cultures et coutumes sociales de Tamriel.",
+				["en"] = "Books about Tamrielic cultures and social practices.",
+			},
 			["t"] = 110,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["k"] = 52,
 		},
 		[10] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Correspondence by commanders, soldiers, and sailors relating to warfare.",
-				["fr"] = "Correspondance de commandants, soldats et marins à propos de la guerre.",
-				["de"] = "Schriften von Kommandanten, Soldaten und Seeleuten, die sich mit mit dem Krieg beschäftigen.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Military Orders and Reports",
-				["fr"] = "Ordres et rapports militaires",
 				["de"] = "Militärische Befehle & Berichte",
+				["fr"] = "Ordres et rapports militaires",
+				["en"] = "Military Orders and Reports",
 			},
-			["k"] = 53,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Schriften von Kommandanten, Soldaten und Seeleuten, die sich mit mit dem Krieg beschäftigen.",
+				["fr"] = "Correspondance de commandants, soldats et marins à propos de la guerre.",
+				["en"] = "Correspondence by commanders, soldiers, and sailors relating to warfare.",
+			},
 			["t"] = 104,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["k"] = 53,
 		},
 		[11] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Books about mysteries and puzzles, including codes, ciphers, clue books, proofs of guilt, and mysterious inscriptions.",
-				["fr"] = "Livres traitant de mystères et d'énigmes, dont des codes, messages cryptés, livres d'indices, preuves de culpabilité et inscriptions mystérieuses.",
-				["de"] = "Bücher mit Mysterien und Rätseln, welche Codes, Chiffren, Hinweisbücher, Schuldhinweise und mysteriöse Inschriften beinhalten.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Mysteries and Clues",
-				["fr"] = "Mystères et indices",
 				["de"] = "Geheimnisse und Hinweise",
+				["fr"] = "Mystères et indices",
+				["en"] = "Mysteries and Clues",
 			},
-			["k"] = 54,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Bücher mit Mysterien und Rätseln, welche Codes, Chiffren, Hinweisbücher, Schuldhinweise und mysteriöse Inschriften beinhalten.",
+				["fr"] = "Livres traitant de mystères et d'énigmes, dont des codes, messages cryptés, livres d'indices, preuves de culpabilité et inscriptions mystérieuses.",
+				["en"] = "Books about mysteries and puzzles, including codes, ciphers, clue books, proofs of guilt, and mysterious inscriptions.",
+			},
 			["t"] = 110,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["k"] = 54,
 		},
 		[12] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Informal communications and notes-to-self on scraps of paper.",
-				["fr"] = "Communications informelles et notes personnelles sur bouts de papier.",
-				["de"] = "Informelle Schreiben und hastige Notizen für später.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Notes and Memos",
-				["fr"] = "Notes et mémoranda",
 				["de"] = "Notizen und Erinnerungen",
+				["fr"] = "Notes et mémoranda",
+				["en"] = "Notes and Memos",
 			},
-			["k"] = 55,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Informelle Schreiben und hastige Notizen für später.",
+				["fr"] = "Communications informelles et notes personnelles sur bouts de papier.",
+				["en"] = "Informal communications and notes-to-self on scraps of paper.",
+			},
 			["t"] = 122,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["k"] = 55,
 		},
 		[13] = 
 		{
-			["d"] = 
-			{
-				["en"] = "The activities, thoughts, and confessions of individual Tamrielics.",
-				["fr"] = "Les activités, pensées et confessions d'individus de Tamriel.",
-				["de"] = "Mehr zu Aktivitäten, Gedanken und Bekenntnissen einzelner Bürger Tamriels.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Personal Journals",
-				["fr"] = "Journaux personnels",
 				["de"] = "Persönliche Aufzeichnungen",
+				["fr"] = "Journaux personnels",
+				["en"] = "Personal Journals",
 			},
-			["k"] = 56,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Mehr zu Aktivitäten, Gedanken und Bekenntnissen einzelner Bürger Tamriels.",
+				["fr"] = "Les activités, pensées et confessions d'individus de Tamriel.",
+				["en"] = "The activities, thoughts, and confessions of individual Tamrielics.",
+			},
 			["t"] = 107,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["k"] = 56,
 		},
 		[14] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Political machinations, rebellions, mass poisonings, plots to bring ancient evil back into the world, etc.",
-				["fr"] = "Machinations politiques, rebellions, empoisonnements de masse, complots visant à ramener d'antiques maux dans le monde, etc.",
-				["de"] = "Politische Intrigen, Rebellionen, Massenvergiftungen, Pläne Böses zurück in die Welt zu bringen und vieles mehr.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Plots and Schemes",
-				["fr"] = "Complots et manigances",
 				["de"] = "Pläne und Ränke",
+				["fr"] = "Complots et manigances",
+				["en"] = "Plots and Schemes",
 			},
-			["k"] = 57,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Politische Intrigen, Rebellionen, Massenvergiftungen, Pläne Böses zurück in die Welt zu bringen und vieles mehr.",
+				["fr"] = "Machinations politiques, rebellions, empoisonnements de masse, complots visant à ramener d'antiques maux dans le monde, etc.",
+				["en"] = "Political machinations, rebellions, mass poisonings, plots to bring ancient evil back into the world, etc.",
+			},
 			["t"] = 89,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["k"] = 57,
 		},
 		[15] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Notes and journals of magical researchers, explorers of Dwarven ruins, experimenters on human subjects, alchemical tracts, and so on.",
-				["fr"] = "Notes et journaux de chercheurs en magie, explorateurs de ruines dwemers, expérimentateurs sur sujets humains, tracts alchimiques, etc.",
-				["de"] = "Notizen und Tagebücher über die Erforschung der Magie, das Erkunden von Dwemerruinen, das Experimentieren an Menschen, alchemistische Abhandlungen und vieles mehr.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Research Notes",
-				["fr"] = "Notes de recherche",
 				["de"] = "Forschungsnotizen",
+				["fr"] = "Notes de recherche",
+				["en"] = "Research Notes",
 			},
-			["k"] = 58,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Notizen und Tagebücher über die Erforschung der Magie, das Erkunden von Dwemerruinen, das Experimentieren an Menschen, alchemistische Abhandlungen und vieles mehr.",
+				["fr"] = "Notes et journaux de chercheurs en magie, explorateurs de ruines dwemers, expérimentateurs sur sujets humains, tracts alchimiques, etc.",
+				["en"] = "Notes and journals of magical researchers, explorers of Dwarven ruins, experimenters on human subjects, alchemical tracts, and so on.",
+			},
 			["t"] = 101,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["k"] = 58,
 		},
 		[16] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Spells and rituals, instructions for operating infernal devices, grimoires and spellbooks, and treatises on magical history.",
-				["fr"] = "Sorts et rituels, instructions d'emploi d'appareils infernaux, grimoires, livres de sorts et autres traités sur l'histoire de la magie.",
-				["de"] = "Zauber und Rituale, Anleitungen für infernale Geräte, Grimoire und Zauberbücher, und Berichte über magische Geschichte.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_magic.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Rituals and Revelations",
-				["fr"] = "Rituels et révélations",
 				["de"] = "Rituale und Offenbarungen",
+				["fr"] = "Rituels et révélations",
+				["en"] = "Rituals and Revelations",
 			},
-			["k"] = 59,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Zauber und Rituale, Anleitungen für infernale Geräte, Grimoire und Zauberbücher, und Berichte über magische Geschichte.",
+				["fr"] = "Sorts et rituels, instructions d'emploi d'appareils infernaux, grimoires, livres de sorts et autres traités sur l'histoire de la magie.",
+				["en"] = "Spells and rituals, instructions for operating infernal devices, grimoires and spellbooks, and treatises on magical history.",
+			},
 			["t"] = 93,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_magic.dds",
+			["k"] = 59,
 		},
 		[17] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Stories and ancient legends, horrific accounts of massacres, and bedtime tales for the wee ones.",
-				["fr"] = "Histoires et légendes anciennes, horribles récits de massacres et histoires pour endormir les petits.",
-				["de"] = "Geschichten von uralten Legenden, entsetzliche Erklärungen von Massakern und Bettgeschichten für die ganz kleinen.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Tales of Tamriel",
-				["fr"] = "Récits de Tamriel",
 				["de"] = "Erzählungen Tamriels",
+				["fr"] = "Récits de Tamriel",
+				["en"] = "Tales of Tamriel",
 			},
-			["k"] = 60,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Geschichten von uralten Legenden, entsetzliche Erklärungen von Massakern und Bettgeschichten für die ganz kleinen.",
+				["fr"] = "Histoires et légendes anciennes, horribles récits de massacres et histoires pour endormir les petits.",
+				["en"] = "Stories and ancient legends, horrific accounts of massacres, and bedtime tales for the wee ones.",
+			},
 			["t"] = 118,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["k"] = 60,
 		},
 		[18] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Tracts, notes, books, and journals by and about those who are strong in their faith and/or their delusions.",
-				["fr"] = "Tracts, notes, livres et journaux par ou à propos de ceux pour qui accordent une grande importance à la foi et/ou leurs illusions.",
-				["de"] = "Abhandlungen, Notizen, Bücher und Tagebücher von und über diejenigen, die dem Glauben und/oder dessen Illusionen verfallen sind.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "The Devoted and the Deranged",
-				["fr"] = "Les dévots et les déments",
 				["de"] = "Die Gesalbten und die Gestörten",
+				["fr"] = "Les dévots et les déments",
+				["en"] = "The Devoted and the Deranged",
 			},
-			["k"] = 61,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Abhandlungen, Notizen, Bücher und Tagebücher von und über diejenigen, die dem Glauben und/oder dessen Illusionen verfallen sind.",
+				["fr"] = "Tracts, notes, livres et journaux par ou à propos de ceux pour qui accordent une grande importance à la foi et/ou leurs illusions.",
+				["en"] = "Tracts, notes, books, and journals by and about those who are strong in their faith and/or their delusions.",
+			},
 			["t"] = 95,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["k"] = 61,
 		},
 		[19] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Books relating to a hero's quest to recover a lost soul from Molag Bal.",
-				["fr"] = "Livres à propos de la quête d'un héros pour reprendre son âme à Molag Bal.",
-				["de"] = "Bücher, die von der Reise eines Helden, seine Seele von Molag Bal zurückzuerlangen, handeln.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "The Five Companions",
-				["fr"] = "Les Cinq Compagnons",
 				["de"] = "Die Fünf Gefährten",
+				["fr"] = "Les Cinq Compagnons",
+				["en"] = "The Five Companions",
 			},
-			["k"] = 62,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Bücher, die von der Reise eines Helden, seine Seele von Molag Bal zurückzuerlangen, handeln.",
+				["fr"] = "Livres à propos de la quête d'un héros pour reprendre son âme à Molag Bal.",
+				["en"] = "Books relating to a hero's quest to recover a lost soul from Molag Bal.",
+			},
 			["t"] = 19,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["k"] = 62,
 		},
 		[20] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Books about the many and varied environments of Tamriel and the creatures that live in them.",
-				["fr"] = "Guides des faunes et flores variées Tamriel.",
-				["de"] = "Bücher, die von den abwechslungsreichen Gegenden Tamriels und deren Bewohnern berichten.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "The World and Its Creatures",
-				["fr"] = "Le Monde et ses créatures",
 				["de"] = "Die Welt und ihre Bewohner",
+				["fr"] = "Le Monde et ses créatures",
+				["en"] = "The World and Its Creatures",
 			},
-			["k"] = 63,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Bücher, die von den abwechslungsreichen Gegenden Tamriels und deren Bewohnern berichten.",
+				["fr"] = "Guides des faunes et flores variées Tamriel.",
+				["en"] = "Books about the many and varied environments of Tamriel and the creatures that live in them.",
+			},
 			["t"] = 79,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["k"] = 63,
 		},
 		[21] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Books of poetry and song.",
-				["fr"] = "Recueils de poèmes et de chants.",
-				["de"] = "Bücher mit Poesie und Liedern.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Words of the Poets",
-				["fr"] = "Paroles des poètes",
 				["de"] = "Die Worte des Propheten",
+				["fr"] = "Paroles des poètes",
+				["en"] = "Words of the Poets",
 			},
-			["k"] = 64,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Bücher mit Poesie und Liedern.",
+				["fr"] = "Recueils de poèmes et de chants.",
+				["en"] = "Books of poetry and song.",
+			},
 			["t"] = 73,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["k"] = 64,
 		},
 		[22] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Books, notes, and journals of the suicidal and the overconfident.",
-				["fr"] = "Livres, notes et journaux des suicidaires et des intrépides.",
-				["de"] = "Bücher, Notizen und Tagebücher von Selbstmödern und allzu Selbstsicheren.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Final Words",
-				["fr"] = "Dernières paroles",
 				["de"] = "Letzte Worte",
+				["fr"] = "Dernières paroles",
+				["en"] = "Final Words",
 			},
-			["k"] = 65,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Bücher, Notizen und Tagebücher von Selbstmödern und allzu Selbstsicheren.",
+				["fr"] = "Livres, notes et journaux des suicidaires et des intrépides.",
+				["en"] = "Books, notes, and journals of the suicidal and the overconfident.",
+			},
 			["t"] = 78,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["k"] = 65,
 		},
 		[23] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Books that endow the reader with skill improvements.",
-				["fr"] = "Livres qui améliorent les compétences de leur lecteur.",
-				["de"] = "Bücher, die das Können des Lesers in Bezug auf verschiedene Dinge verbessern.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Skill Books",
-				["fr"] = "Manuels de compétence",
 				["de"] = "Lehrbücher",
+				["fr"] = "Manuels de compétence",
+				["en"] = "Skill Books",
 			},
+			["d"] = 
+			{
+				["de"] = "Bücher, die das Können des Lesers in Bezug auf verschiedene Dinge verbessern.",
+				["fr"] = "Livres qui améliorent les compétences de leur lecteur.",
+				["en"] = "Books that endow the reader with skill improvements.",
+			},
+			["t"] = 89,
 			["k"] = 66,
-			["h"] = false,
-			["t"] = 86,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
 		},
 		[24] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Tales, legends, and letters from the southern realms of Black Marsh.",
-				["fr"] = "Légendes, récits et lettres des royaumes du sud du marais noir.",
-				["de"] = "Geschichten, Legenden und Briefe aus den südlichen Arealen von Schwarzmarsch.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Lore of Murkmire",
-				["fr"] = "Savoir de Tourbevase",
 				["de"] = "Rund um Trübmoor",
+				["fr"] = "Savoir de Tourbevase",
+				["en"] = "Lore of Murkmire",
 			},
-			["k"] = 67,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Geschichten, Legenden und Briefe aus den südlichen Arealen von Schwarzmarsch.",
+				["fr"] = "Légendes, récits et lettres des royaumes du sud du marais noir.",
+				["en"] = "Tales, legends, and letters from the southern realms of Black Marsh.",
+			},
 			["t"] = 127,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["k"] = 67,
 		},
 		[25] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Discourses savage and sophisticated from the border realm of Wrothgar.",
-				["fr"] = "Discussions sur les sauvages et les civilisés du royaume frontalier de Wrothgar.",
-				["de"] = "Diskurse wilder sowie anspruchsvoller Natur aus dem Grenzreich Wrothgar.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Wrothgar Writings",
-				["fr"] = "Écrits de Wrothgar",
 				["de"] = "Worte aus Wrothgar",
+				["fr"] = "Écrits de Wrothgar",
+				["en"] = "Wrothgar Writings",
 			},
-			["k"] = 68,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Diskurse wilder sowie anspruchsvoller Natur aus dem Grenzreich Wrothgar.",
+				["fr"] = "Discussions sur les sauvages et les civilisés du royaume frontalier de Wrothgar.",
+				["en"] = "Discourses savage and sophisticated from the border realm of Wrothgar.",
+			},
 			["t"] = 114,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 68,
 		},
 		[26] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Tomes and correspondence from the Imperial City.",
-				["fr"] = "Livres et lettres de la cité impériale.",
-				["de"] = "Schriften und Briefe aus der Kaiserstadt.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Imperial Library",
-				["fr"] = "Bibliothèque impériale",
 				["de"] = "Kaiserliche Bibliothek",
+				["fr"] = "Bibliothèque impériale",
+				["en"] = "Imperial Library",
 			},
-			["k"] = 69,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Schriften und Briefe aus der Kaiserstadt.",
+				["fr"] = "Livres et lettres de la cité impériale.",
+				["en"] = "Tomes and correspondence from the Imperial City.",
+			},
 			["t"] = 20,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["k"] = 69,
 		},
 		[27] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Books, scrolls, and correspondence relating to the great city of the Orcs and its surrounding region.",
-				["fr"] = "Livres, parchemins et correspondance relatifs à la grande cité des Orques et sa région.",
-				["de"] = "Bücher, Schriftrollen und Briefwechsel, die mit der imposanten Stadt der Orks und ihrem Umland in Verbindung stehen.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Orsinium Archive",
-				["fr"] = "Archives d'Orsinium",
 				["de"] = "Orsinium-Archiv",
+				["fr"] = "Archives d'Orsinium",
+				["en"] = "Orsinium Archive",
 			},
-			["k"] = 85,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Bücher, Schriftrollen und Briefwechsel, die mit der imposanten Stadt der Orks und ihrem Umland in Verbindung stehen.",
+				["fr"] = "Livres, parchemins et correspondance relatifs à la grande cité des Orques et sa région.",
+				["en"] = "Books, scrolls, and correspondence relating to the great city of the Orcs and its surrounding region.",
+			},
 			["t"] = 54,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_craftingstyle.dds",
+			["k"] = 85,
 		},
 		[28] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A collection of books found in the Hammerfell region of Hew's Bane.",
-				["fr"] = "Un ensemble de livres que l'on trouve au Trépas des Cognées, à Martelfell.",
-				["de"] = "Eine Sammlung von Büchern, die in der Hammerfall-Region Hews Fluch gefunden wurden.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Hew's Bane Bookshelf",
-				["fr"] = "Étagère du Trépas des Cognées",
 				["de"] = "Bücherregal: Hews Fluch",
+				["fr"] = "Étagère du Trépas des Cognées",
+				["en"] = "Hew's Bane Bookshelf",
 			},
-			["k"] = 86,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung von Büchern, die in der Hammerfall-Region Hews Fluch gefunden wurden.",
+				["fr"] = "Un ensemble de livres que l'on trouve au Trépas des Cognées, à Martelfell.",
+				["en"] = "A collection of books found in the Hammerfell region of Hew's Bane.",
+			},
 			["t"] = 78,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["k"] = 86,
 		},
 		[29] = 
 		{
-			["d"] = 
-			{
-				["en"] = "A collection of books found in the western Cyrodiil region of the Gold Coast.",
-				["fr"] = "Une série de livres trouvés sur la Côte d'or, la région occidentale de Cyrodiil.",
-				["de"] = "Eine Sammlung Bücher, die an der Goldküste, der westlichen Region Cyrodiils, gefunden wurde.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Gold Coast Tomes",
-				["fr"] = "Volumes de la Côte d'or",
 				["de"] = "Goldküsten-Wälzer",
+				["fr"] = "Volumes de la Côte d'or",
+				["en"] = "Gold Coast Tomes",
 			},
-			["k"] = 87,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Eine Sammlung Bücher, die an der Goldküste, der westlichen Region Cyrodiils, gefunden wurde.",
+				["fr"] = "Une série de livres trouvés sur la Côte d'or, la région occidentale de Cyrodiil.",
+				["en"] = "A collection of books found in the western Cyrodiil region of the Gold Coast.",
+			},
 			["t"] = 103,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_places.dds",
+			["k"] = 87,
 		},
 		[30] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Tomes, journals, and letters relating to or found in the great volcanic island at the heart of Morrowind.",
-				["fr"] = "Tomes, journaux et lettres relatives à ou trouvées sur la grande île volcanique au cœur de Morrowind.",
-				["de"] = "Folianten, Tagebücher und Briefe von der oder zur großen Vulkaninsel im Herzen von Morrowind.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Vvardenfell Volumes",
-				["fr"] = "Volumes de Vvardenfell",
 				["de"] = "Werke aus Vvardenfell",
+				["fr"] = "Volumes de Vvardenfell",
+				["en"] = "Vvardenfell Volumes",
 			},
-			["k"] = 102,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Folianten, Tagebücher und Briefe von der oder zur großen Vulkaninsel im Herzen von Morrowind.",
+				["fr"] = "Tomes, journaux et lettres relatives à ou trouvées sur la grande île volcanique au cœur de Morrowind.",
+				["en"] = "Tomes, journals, and letters relating to or found in the great volcanic island at the heart of Morrowind.",
+			},
 			["t"] = 126,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["k"] = 102,
 		},
 		[31] = 
 		{
-			["d"] = 
-			{
-				["en"] = "The thirty-six lessons, or sermons, of the warrior-poet Vivec, living god of the Tribunal of Morrowind.",
-				["fr"] = "Les trente-six leçons, ou sermons, du guerrier-poète Vivec, dieu vivant du Tribunal de Morrowind.",
-				["de"] = "Die 36 Lehren oder Lektionen des Kriegerpoeten Vivec, des lebenden Gottes des Tribunals von Morrowind.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_tutorial_idexicon_morrowind.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Vivec's 36 Lessons",
-				["fr"] = "Les 36 leçons de Vivec",
 				["de"] = "Vivecs 36 Lehren",
+				["fr"] = "Les 36 leçons de Vivec",
+				["en"] = "Vivec's 36 Lessons",
 			},
-			["k"] = 103,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Die 36 Lehren oder Lektionen des Kriegerpoeten Vivec, des lebenden Gottes des Tribunals von Morrowind.",
+				["fr"] = "Les trente-six leçons, ou sermons, du guerrier-poète Vivec, dieu vivant du Tribunal de Morrowind.",
+				["en"] = "The thirty-six lessons, or sermons, of the warrior-poet Vivec, living god of the Tribunal of Morrowind.",
+			},
 			["t"] = 36,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_tutorial_idexicon_morrowind.dds",
+			["k"] = 103,
 		},
 		[32] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Various and sundry tomes, journals, books, letters, and scrolls gathered by scholars and archivists across all the realms of Tamriel.",
-				["fr"] = "Différents tomes obscurs, journaux, libres, lettres et parchemins rassemblés par les érudits et archivistes de tout Tamriel.",
-				["de"] = "Verschiedene Folianten, Zeitschriften, Bücher, Briefe und Schriftrollen, die von Gelehrten und Archivaren aus allen Reichen Tamriels zusammengetragen wurden.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_dungeons.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Library of Incunabula",
-				["fr"] = "Bibliothèque des Incunables",
 				["de"] = "Bücherei der Inkunabeln",
+				["fr"] = "Bibliothèque des Incunables",
+				["en"] = "Library of Incunabula",
 			},
-			["k"] = 104,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Verschiedene Folianten, Zeitschriften, Bücher, Briefe und Schriftrollen, die von Gelehrten und Archivaren aus allen Reichen Tamriels zusammengetragen wurden.",
+				["fr"] = "Différents tomes obscurs, journaux, libres, lettres et parchemins rassemblés par les érudits et archivistes de tout Tamriel.",
+				["en"] = "Various and sundry tomes, journals, books, letters, and scrolls gathered by scholars and archivists across all the realms of Tamriel.",
+			},
 			["t"] = 69,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_dungeons.dds",
+			["k"] = 104,
 		},
 		[33] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Books that describe tasks without end, the kind of quests that adventurers can complete every day.",
-				["fr"] = "Des livres qui décrivent les tâches sans fin, le genre de quête que les aventuriers peuvent accomplir chaque jour.",
-				["de"] = "Bücher, die nie endende Aufgaben beschreiben, die Art von Aufgaben, die Abenteurer jeden Tag angehen können.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Adventurer's Almanac",
-				["fr"] = "Almanach de l'aventurier",
 				["de"] = "Almanach des Abenteurers",
+				["fr"] = "Almanach de l'aventurier",
+				["en"] = "Adventurer's Almanac",
 			},
-			["k"] = 115,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Bücher, die nie endende Aufgaben beschreiben, die Art von Aufgaben, die Abenteurer jeden Tag angehen können.",
+				["fr"] = "Des livres qui décrivent les tâches sans fin, le genre de quête que les aventuriers peuvent accomplir chaque jour.",
+				["en"] = "Books that describe tasks without end, the kind of quests that adventurers can complete every day.",
+			},
 			["t"] = 3,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["k"] = 115,
 		},
 		[34] = 
 		{
-			["d"] = 
-			{
-				["en"] = "An archive of tomes and records relating to Sotha Sil and his city of the same name.",
-				["fr"] = "Archive de volumes et de registres relatifs à Sotha Sil et à sa Cité mécanique.",
-				["de"] = "Ein Archiv von Folianten und Aufzeichnungen, die mit Sotha Sil und seiner gleichnamigen Stadt zu tun haben.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_dwemer.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Clockwork Mnemonix",
-				["fr"] = "Mnemonix mécanique",
 				["de"] = "Uhrwerk-Memorabilien",
+				["fr"] = "Mnemonix mécanique",
+				["en"] = "Clockwork Mnemonix",
 			},
-			["k"] = 120,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Ein Archiv von Folianten und Aufzeichnungen, die mit Sotha Sil und seiner gleichnamigen Stadt zu tun haben.",
+				["fr"] = "Archive de volumes et de registres relatifs à Sotha Sil et à sa Cité mécanique.",
+				["en"] = "An archive of tomes and records relating to Sotha Sil and his city of the same name.",
+			},
 			["t"] = 82,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_dwemer.dds",
+			["k"] = 120,
 		},
 		[35] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Musings, histories, chronicles, anecdotes, and narratives pertaining to Summerset life, culture, and society.",
-				["fr"] = "Réflexions, histoires, chroniques, anecdotes et narrations relatives à la vie, la culture et la société de l'Archipel du Couchant.",
-				["de"] = "Träumereien, Geschichten, Chroniken, Anekdoten und Erzählungen zu Leben, Kultur und Gesellschaft von Sommersend",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Summerset Scrolls",
-				["fr"] = "Parchemins du Couchant",
 				["de"] = "Sommersend-Schriftrollen",
+				["fr"] = "Parchemins du Couchant",
+				["en"] = "Summerset Scrolls",
 			},
-			["k"] = 129,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Träumereien, Geschichten, Chroniken, Anekdoten und Erzählungen zu Leben, Kultur und Gesellschaft von Sommersend",
+				["fr"] = "Réflexions, histoires, chroniques, anecdotes et narrations relatives à la vie, la culture et la société de l'Archipel du Couchant.",
+				["en"] = "Musings, histories, chronicles, anecdotes, and narratives pertaining to Summerset life, culture, and society.",
+			},
 			["t"] = 128,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_literature.dds",
+			["k"] = 129,
 		},
 		[36] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Descriptions of the collected relics of the Vault of Moawita.",
-				["fr"] = "Descriptions des reliques collectées dans la crypte de moawita",
-				["de"] = "Beschreibungen der gesammelten Relikte des Gewölbes von Moawita.",
-			},
+			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_magic.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Moawita Memories",
-				["fr"] = "Souvenirs de Moawita",
 				["de"] = "Moawita-Memoiren",
+				["fr"] = "Souvenirs de Moawita",
+				["en"] = "Moawita Memories",
 			},
-			["k"] = 136,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Beschreibungen der gesammelten Relikte des Gewölbes von Moawita.",
+				["fr"] = "Descriptions des reliques collectées dans la crypte de moawita",
+				["en"] = "Descriptions of the collected relics of the Vault of Moawita.",
+			},
 			["t"] = 21,
-			["g"] = "/esoui/art/treeicons/gamepad/gp_lorelibrary_categoryicon_magic.dds",
+			["k"] = 136,
 		},
 		[37] = 
 		{
-			["d"] = 
-			{
-				["en"] = "Lore books, notes, journals, and memoranda associated with the northern region of Elsweyr.",
-				["fr"] = "Livres de savoir, notes, journaux et curiosités associés à la région nord d'Elsweyr.",
-				["de"] = "Bücher, Notizen, Tagebücher und Vermerke aus den nördlichen Teilen von Elsweyr.",
-			},
+			["g"] = "/esoui/art/icons/icon_missing.dds",
+			["h"] = false,
 			["n"] = 
 			{
-				["en"] = "Anequina Archives",
-				["fr"] = "Archives d'Anequina",
 				["de"] = "Archive von Anequina",
+				["fr"] = "Archives d'Anequina",
+				["en"] = "Anequina Archives",
 			},
-			["k"] = 142,
-			["h"] = false,
+			["d"] = 
+			{
+				["de"] = "Bücher, Notizen, Tagebücher und Vermerke aus den nördlichen Teilen von Elsweyr.",
+				["fr"] = "Livres de savoir, notes, journaux et curiosités associés à la région nord d'Elsweyr.",
+				["en"] = "Lore books, notes, journals, and memoranda associated with the northern region of Elsweyr.",
+			},
 			["t"] = 116,
+			["k"] = 142,
+		},
+		[38] = 
+		{
 			["g"] = "/esoui/art/icons/icon_missing.dds",
+			["h"] = false,
+			["n"] = 
+			{
+				["de"] = "Pellitine-Aushänge",
+				["fr"] = "Annonces de Pellitine",
+				["en"] = "Pellitine Postings",
+			},
+			["d"] = 
+			{
+				["de"] = "Bücher, Notizen, Tagebücher und Vermerke aus den südlichen Teilen von Elsweyr.",
+				["fr"] = "Livres de savoir, notes, journaux et curiosités associés à la région sud d'Elsweyr.",
+				["en"] = "Lore books, notes, journals, and memoranda associated with the southern region of Elsweyr.",
+			},
+			["t"] = 76,
+			["k"] = 151,
 		},
 	},
 }
-
 
 local bookData =
 {
@@ -59719,10 +59813,6 @@ local bookData =
 	},
 	[5203] = 
 	{
-		["m"] = 
-		{
-			[34] = 1,
-		},
 		["q"] = 6241,
 		["k"] = 5203,
 		["e"] = 
@@ -59732,7 +59822,6 @@ local bookData =
 				["z"] = 726,
 				["m"] = 34,
 				["zx"] = 0.2361675755,
-				["r"] = true,
 				["x"] = 0.7143100000,
 				["zy"] = 0.4309292186,
 				["y"] = 0.7644600000,
@@ -61434,6 +61523,16 @@ local bookData =
 				["x"] = 0.7538500000,
 				["y"] = 0.7957300000,
 			},
+			[2] = 
+			{
+				["z"] = 726,
+				["m"] = 34,
+				["i"] = 12,
+				["y"] = 0.7910600000,
+				["x"] = 0.7564600000,
+				["zy"] = 0.7028036398,
+				["zx"] = 0.6669788103,
+			},
 		},
 		["c"] = true,
 		["k"] = 5407,
@@ -61451,6 +61550,15 @@ local bookData =
 				["d"] = true,
 				["x"] = 0.7545600000,
 				["y"] = 0.7955600000,
+			},
+			[2] = 
+			{
+				["z"] = 726,
+				["m"] = 34,
+				["y"] = 0.7910900000,
+				["x"] = 0.7565300000,
+				["zy"] = 0.7031102625,
+				["zx"] = 0.6676942647,
 			},
 		},
 		["c"] = true,
@@ -61486,6 +61594,15 @@ local bookData =
 				["d"] = true,
 				["x"] = 0.7554800000,
 				["y"] = 0.7953800000,
+			},
+			[1] = 
+			{
+				["z"] = 726,
+				["m"] = 34,
+				["y"] = 0.7912600000,
+				["x"] = 0.7560400000,
+				["zy"] = 0.7048477907,
+				["zx"] = 0.6626860840,
 			},
 		},
 		["c"] = true,
@@ -72167,24811 +72284,1634 @@ local bookData =
 		["k"] = 5439,
 		["c"] = true,
 	},
-}
-local shaliData = 
-{
-	[7] = 
+	-- DRAGONGUARD
+	[5634] = 
 	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3897500000,
-				["z"] = 3,
-				["x"] = 0.0555800000,
-				["zx"] = 0.2396966491,
-				["zy"] = 0.7798939606,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[1] = 
-			{
-				["y"] = 0.3834000000,
-				["z"] = 3,
-				["x"] = 0.0652600000,
-				["zx"] = 0.3049092352,
-				["zy"] = 0.7371150442,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[2] = 
-			{
-				["y"] = 0.3919200000,
-				["z"] = 3,
-				["x"] = 0.0619000000,
-				["zx"] = 0.2822734615,
-				["zy"] = 0.7945128973,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[3] = 
-			{
-				["y"] = 0.3939100000,
-				["z"] = 3,
-				["x"] = 0.0690000000,
-				["zx"] = 0.3301050072,
-				["zy"] = 0.8079192034,
-				["i"] = 12,
-				["m"] = 2,
-			},
-		},
-		["c"] = true,
-		["k"] = 7,
-	},
-	[8] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3823400000,
-				["z"] = 3,
-				["x"] = 0.0645400000,
-				["zx"] = 0.3000587123,
-				["zy"] = 0.7299739967,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[1] = 
-			{
-				["y"] = 0.3749600000,
-				["z"] = 3,
-				["x"] = 0.0527300000,
-				["zx"] = 0.2204966624,
-				["zy"] = 0.6802561380,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[2] = 
-			{
-				["y"] = 0.3766600000,
-				["z"] = 3,
-				["x"] = 0.0593200000,
-				["zx"] = 0.2648924210,
-				["zy"] = 0.6917087613,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[3] = 
-			{
-				["y"] = 0.3812100000,
-				["z"] = 3,
-				["x"] = 0.0617500000,
-				["zx"] = 0.2812629359,
-				["zy"] = 0.7223613706,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[5] = 
-			{
-				["i"] = 12,
-				["m"] = 36,
-				["z"] = 1086,
-				["y"] = 0.6869400000,
-				["x"] = 0.4764300000,
-				["zx"] = 0.1382167811,
-				["zy"] = 0.7498447652,
-			},
-		},
-		["c"] = true,
-		["k"] = 8,
-	},
-	[9] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3802200000,
-				["z"] = 3,
-				["x"] = 0.0734100000,
-				["zx"] = 0.3598144602,
-				["zy"] = 0.7156919018,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[1] = 
-			{
-				["y"] = 0.3719400000,
-				["z"] = 3,
-				["x"] = 0.0668000000,
-				["zx"] = 0.3152839648,
-				["zy"] = 0.6599108895,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[2] = 
-			{
-				["y"] = 0.3738700000,
-				["z"] = 3,
-				["x"] = 0.0804800000,
-				["zx"] = 0.4074439007,
-				["zy"] = 0.6729129854,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[3] = 
-			{
-				["y"] = 0.3679100000,
-				["z"] = 3,
-				["x"] = 0.0752500000,
-				["zx"] = 0.3722102410,
-				["zy"] = 0.6327614355,
-				["i"] = 12,
-				["m"] = 2,
-			},
-		},
-		["c"] = true,
-		["k"] = 9,
-	},
-	[11] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3611400000,
-				["z"] = 3,
-				["x"] = 0.0572700000,
-				["zx"] = 0.2510819043,
-				["zy"] = 0.5871530475,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[1] = 
-			{
-				["y"] = 0.3630400000,
-				["z"] = 3,
-				["x"] = 0.0558800000,
-				["zx"] = 0.2417177003,
-				["zy"] = 0.5999530382,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[2] = 
-			{
-				["y"] = 0.3615100000,
-				["z"] = 3,
-				["x"] = 0.0510500000,
-				["zx"] = 0.2091787756,
-				["zy"] = 0.5896456773,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[3] = 
-			{
-				["y"] = 0.3577600000,
-				["z"] = 3,
-				["x"] = 0.0550000000,
-				["zx"] = 0.2357892834,
-				["zy"] = 0.5643825377,
-				["i"] = 12,
-				["m"] = 2,
-			},
-		},
-		["c"] = true,
-		["k"] = 11,
-	},
-	[12] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3523600000,
-				["z"] = 3,
-				["x"] = 0.0584900000,
-				["zx"] = 0.2593008459,
-				["zy"] = 0.5280036167,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[1] = 
-			{
-				["y"] = 0.3503200000,
-				["z"] = 3,
-				["x"] = 0.0671000000,
-				["zx"] = 0.3173050161,
-				["zy"] = 0.5142604687,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[2] = 
-			{
-				["y"] = 0.3500500000,
-				["z"] = 3,
-				["x"] = 0.0732600000,
-				["zx"] = 0.3588039345,
-				["zy"] = 0.5124415227,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[3] = 
-			{
-				["y"] = 0.3541300000,
-				["z"] = 3,
-				["x"] = 0.0721500000,
-				["zx"] = 0.3513260450,
-				["zy"] = 0.5399278185,
-				["i"] = 12,
-				["m"] = 2,
-			},
-		},
-		["c"] = true,
-		["k"] = 12,
-	},
-	[13] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3591600000,
-				["z"] = 3,
-				["x"] = 0.0735600000,
-				["zx"] = 0.3608249858,
-				["zy"] = 0.5738141098,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[1] = 
-			{
-				["y"] = 0.3650800000,
-				["z"] = 3,
-				["x"] = 0.0709900000,
-				["zx"] = 0.3435113136,
-				["zy"] = 0.6136961862,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[2] = 
-			{
-				["y"] = 0.3677400000,
-				["z"] = 3,
-				["x"] = 0.0636600000,
-				["zx"] = 0.2941302954,
-				["zy"] = 0.6316161732,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[3] = 
-			{
-				["y"] = 0.3592100000,
-				["z"] = 3,
-				["x"] = 0.0645000000,
-				["zx"] = 0.2997892388,
-				["zy"] = 0.5741509517,
-				["i"] = 12,
-				["m"] = 2,
-			},
-		},
-		["c"] = true,
-		["k"] = 13,
-	},
-	[14] = 
-	{
+		["n"] = "Kasura's Notes",
+		["k"] = 5634,
 		["e"] = 
 		{
 			[1] = 
 			{
-				["y"] = 0.3535200000,
-				["z"] = 3,
-				["x"] = 0.0810600000,
-				["zx"] = 0.4113512664,
-				["zy"] = 0.5358183478,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[2] = 
-			{
-				["y"] = 0.3553700000,
-				["z"] = 3,
-				["x"] = 0.0908000000,
-				["zx"] = 0.4769680628,
-				["zy"] = 0.5482814967,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[3] = 
-			{
-				["y"] = 0.3372600000,
-				["z"] = 3,
-				["x"] = 0.0794200000,
-				["zx"] = 0.4003028530,
-				["zy"] = 0.4262773745,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[4] = 
-			{
-				["y"] = 0.3521000000,
-				["z"] = 3,
-				["x"] = 0.0870800000,
-				["zx"] = 0.4519070276,
-				["zy"] = 0.5262520390,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[5] = 
-			{
-				["y"] = 0.3595300000,
-				["z"] = 3,
-				["x"] = 0.0833300000,
-				["zx"] = 0.4266438873,
-				["zy"] = 0.5763067396,
-				["i"] = 12,
-				["m"] = 2,
-			},
-		},
-		["c"] = true,
-		["k"] = 14,
-	},
-	[15] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.3845900000,
-				["z"] = 3,
-				["x"] = 0.0843600000,
-				["zx"] = 0.4335828298,
-				["zy"] = 0.7451318805,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[2] = 
-			{
-				["y"] = 0.3799600000,
-				["z"] = 3,
-				["x"] = 0.0864900000,
-				["zx"] = 0.4479322935,
-				["zy"] = 0.7139403241,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[3] = 
-			{
-				["y"] = 0.3924000000,
-				["z"] = 3,
-				["x"] = 0.0827200000,
-				["zx"] = 0.4225344165,
-				["zy"] = 0.7977465792,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[4] = 
-			{
-				["y"] = 0.3704100000,
-				["z"] = 3,
-				["x"] = 0.0950500000,
-				["zx"] = 0.5055996218,
-				["zy"] = 0.6496035286,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[5] = 
-			{
-				["y"] = 0.3894600000,
-				["z"] = 3,
-				["x"] = 0.0940700000,
-				["zx"] = 0.4989975211,
-				["zy"] = 0.7779402778,
-				["i"] = 12,
-				["m"] = 2,
-			},
-		},
-		["c"] = true,
-		["k"] = 15,
-	},
-	[16] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3768000000,
-				["z"] = 3,
-				["x"] = 0.0961300000,
-				["zx"] = 0.5128754062,
-				["zy"] = 0.6926519185,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[1] = 
-			{
-				["y"] = 0.3795400000,
-				["z"] = 3,
-				["x"] = 0.1000300000,
-				["zx"] = 0.5391490721,
-				["zy"] = 0.7111108525,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[2] = 
-			{
-				["y"] = 0.3814700000,
-				["z"] = 3,
-				["x"] = 0.1037700000,
-				["zx"] = 0.5643448440,
-				["zy"] = 0.7241129483,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[3] = 
-			{
-				["y"] = 0.3850100000,
-				["z"] = 3,
-				["x"] = 0.0918700000,
-				["zx"] = 0.4841764788,
-				["zy"] = 0.7479613521,
-				["i"] = 12,
-				["m"] = 2,
-			},
-		},
-		["c"] = true,
-		["k"] = 16,
-	},
-	[17] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3689400000,
-				["z"] = 3,
-				["x"] = 0.0876700000,
-				["zx"] = 0.4558817617,
-				["zy"] = 0.6397003779,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[1] = 
-			{
-				["y"] = 0.3692100000,
-				["z"] = 3,
-				["x"] = 0.0945800000,
-				["zx"] = 0.5024333082,
-				["zy"] = 0.6415193239,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[2] = 
-			{
-				["y"] = 0.3663900000,
-				["z"] = 3,
-				["x"] = 0.0928300000,
-				["zx"] = 0.4906438427,
-				["zy"] = 0.6225214429,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[3] = 
-			{
-				["y"] = 0.3739300000,
-				["z"] = 3,
-				["x"] = 0.0932800000,
-				["zx"] = 0.4936754196,
-				["zy"] = 0.6733171956,
-				["i"] = 12,
-				["m"] = 2,
-			},
-		},
-		["c"] = true,
-		["k"] = 17,
-	},
-	[22] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.2850900000,
-				["z"] = 19,
-				["x"] = 0.1737600000,
-				["zx"] = 0.2110086042,
-				["zy"] = 0.2244141983,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[2] = 
-			{
-				["y"] = 0.2814000000,
-				["z"] = 19,
-				["x"] = 0.1784600000,
-				["zx"] = 0.2445800325,
-				["zy"] = 0.1980570565,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[3] = 
-			{
-				["y"] = 0.2861700000,
-				["z"] = 19,
-				["x"] = 0.1692500000,
-				["zx"] = 0.1787943187,
-				["zy"] = 0.2321284837,
-				["i"] = 12,
-				["m"] = 4,
-			},
-		},
-		["c"] = true,
-		["k"] = 22,
-	},
-	[23] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3155200000,
-				["z"] = 19,
-				["x"] = 0.1724300000,
-				["zx"] = 0.2015086043,
-				["zy"] = 0.4417713326,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[1] = 
-			{
-				["y"] = 0.3197100000,
-				["z"] = 19,
-				["x"] = 0.1695200000,
-				["zx"] = 0.1807228901,
-				["zy"] = 0.4716999028,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[2] = 
-			{
-				["y"] = 0.3069800000,
-				["z"] = 19,
-				["x"] = 0.1679600000,
-				["zx"] = 0.1695800331,
-				["zy"] = 0.3807713350,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[3] = 
-			{
-				["y"] = 0.3128900000,
-				["z"] = 19,
-				["x"] = 0.1634000000,
-				["zx"] = 0.1370086048,
-				["zy"] = 0.4229856190,
-				["i"] = 12,
-				["m"] = 4,
-			},
-		},
-		["c"] = true,
-		["k"] = 23,
-	},
-	[24] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3406500000,
-				["z"] = 19,
-				["x"] = 0.1696900000,
-				["zx"] = 0.1819371758,
-				["zy"] = 0.6212713255,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[1] = 
-			{
-				["y"] = 0.3348800000,
-				["z"] = 19,
-				["x"] = 0.1631700000,
-				["zx"] = 0.1353657476,
-				["zy"] = 0.5800570414,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[2] = 
-			{
-				["y"] = 0.3367700000,
-				["z"] = 19,
-				["x"] = 0.1723100000,
-				["zx"] = 0.2006514614,
-				["zy"] = 0.5935570409,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[3] = 
-			{
-				["y"] = 0.3250900000,
-				["z"] = 19,
-				["x"] = 0.1674800000,
-				["zx"] = 0.1661514617,
-				["zy"] = 0.5101284728,
-				["i"] = 12,
-				["m"] = 4,
-			},
-		},
-		["c"] = true,
-		["k"] = 24,
-	},
-	[25] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.2954800000,
-				["z"] = 19,
-				["x"] = 0.1809400000,
-				["zx"] = 0.2622943181,
-				["zy"] = 0.2986284811,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[2] = 
-			{
-				["y"] = 0.3026700000,
-				["z"] = 19,
-				["x"] = 0.1877500000,
-				["zx"] = 0.3109371748,
-				["zy"] = 0.3499856219,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[3] = 
-			{
-				["y"] = 0.2979100000,
-				["z"] = 19,
-				["x"] = 0.1891800000,
-				["zx"] = 0.3211514605,
-				["zy"] = 0.3159856233,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[4] = 
-			{
-				["y"] = 0.2938400000,
-				["z"] = 19,
-				["x"] = 0.1860400000,
-				["zx"] = 0.2987228892,
-				["zy"] = 0.2869141958,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[5] = 
-			{
-				["d"] = true,
-				["y"] = 0.2716600000,
-				["z"] = 708,
-				["x"] = 0.2875200000,
-				["zx"] = 0.6908572251,
-				["zy"] = 0.7252857803,
-				["i"] = 12,
-				["m"] = 27,
-			},
-		},
-		["c"] = true,
-		["k"] = 25,
-	},
-	[26] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.3030400000,
-				["z"] = 19,
-				["x"] = 0.1958500000,
-				["zx"] = 0.3687943173,
-				["zy"] = 0.3526284790,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[2] = 
-			{
-				["y"] = 0.3083200000,
-				["z"] = 19,
-				["x"] = 0.1978200000,
-				["zx"] = 0.3828657457,
-				["zy"] = 0.3903427632,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[3] = 
-			{
-				["y"] = 0.3025200000,
-				["z"] = 19,
-				["x"] = 0.1930900000,
-				["zx"] = 0.3490800317,
-				["zy"] = 0.3489141934,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[4] = 
-			{
-				["y"] = 0.3060100000,
-				["z"] = 19,
-				["x"] = 0.1903000000,
-				["zx"] = 0.3291514604,
-				["zy"] = 0.3738427638,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[5] = 
-			{
-				["y"] = 0.3121000000,
-				["z"] = 19,
-				["x"] = 0.2220700000,
-				["zx"] = 0.5560800301,
-				["zy"] = 0.4173427621,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[6] = 
-			{
-				["zy"] = 0.3480570770,
-				["zx"] = 0.3494371473,
-				["i"] = 12,
-				["m"] = 4,
-				["x"] = 0.1931400000,
-				["y"] = 0.3024000000,
-				["z"] = 19,
-			},
-		},
-		["c"] = true,
-		["k"] = 26,
-	},
-	[27] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3128900000,
-				["z"] = 19,
-				["x"] = 0.1946500000,
-				["zx"] = 0.3602228887,
-				["zy"] = 0.4229856190,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[1] = 
-			{
-				["y"] = 0.3144100000,
-				["z"] = 19,
-				["x"] = 0.1823500000,
-				["zx"] = 0.2723657466,
-				["zy"] = 0.4338427615,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[2] = 
-			{
-				["y"] = 0.3196300000,
-				["z"] = 19,
-				["x"] = 0.1894200000,
-				["zx"] = 0.3228657462,
-				["zy"] = 0.4711284743,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[3] = 
-			{
-				["y"] = 0.3141700000,
-				["z"] = 19,
-				["x"] = 0.1873700000,
-				["zx"] = 0.3082228892,
-				["zy"] = 0.4321284758,
-				["i"] = 12,
-				["m"] = 4,
-			},
-		},
-		["c"] = true,
-		["k"] = 27,
-	},
-	[28] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3286400000,
-				["z"] = 19,
-				["x"] = 0.1739000000,
-				["zx"] = 0.2120086042,
-				["zy"] = 0.5354856146,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[1] = 
-			{
-				["y"] = 0.3277500000,
-				["z"] = 19,
-				["x"] = 0.1835400000,
-				["zx"] = 0.2808657465,
-				["zy"] = 0.5291284720,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[2] = 
-			{
-				["y"] = 0.3222000000,
-				["z"] = 19,
-				["x"] = 0.1792800000,
-				["zx"] = 0.2504371753,
-				["zy"] = 0.4894856164,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[3] = 
-			{
-				["y"] = 0.3226000000,
-				["z"] = 19,
-				["x"] = 0.1832800000,
-				["zx"] = 0.2790086037,
-				["zy"] = 0.4923427592,
-				["i"] = 12,
-				["m"] = 4,
-			},
-		},
-		["c"] = true,
-		["k"] = 28,
-	},
-	[29] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3360200000,
-				["z"] = 19,
-				["x"] = 0.1866700000,
-				["zx"] = 0.3032228892,
-				["zy"] = 0.5881998983,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[1] = 
-			{
-				["y"] = 0.3455300000,
-				["z"] = 19,
-				["x"] = 0.1825000000,
-				["zx"] = 0.2734371751,
-				["zy"] = 0.6561284670,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[2] = 
-			{
-				["y"] = 0.3425800000,
-				["z"] = 19,
-				["x"] = 0.1864600000,
-				["zx"] = 0.3017228892,
-				["zy"] = 0.6350570393,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[3] = 
-			{
-				["y"] = 0.3465400000,
-				["z"] = 19,
-				["x"] = 0.1907900000,
-				["zx"] = 0.3326514604,
-				["zy"] = 0.6633427524,
-				["i"] = 12,
-				["m"] = 4,
-			},
-		},
-		["c"] = true,
-		["k"] = 29,
-	},
-	[30] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3448600000,
-				["z"] = 19,
-				["x"] = 0.1968800000,
-				["zx"] = 0.3761514601,
-				["zy"] = 0.6513427529,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[1] = 
-			{
-				["y"] = 0.3367500000,
-				["z"] = 19,
-				["x"] = 0.1996400000,
-				["zx"] = 0.3958657456,
-				["zy"] = 0.5934141838,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[2] = 
-			{
-				["y"] = 0.3387400000,
-				["z"] = 19,
-				["x"] = 0.1918500000,
-				["zx"] = 0.3402228889,
-				["zy"] = 0.6076284689,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[3] = 
-			{
-				["y"] = 0.3328400000,
-				["z"] = 19,
-				["x"] = 0.1938100000,
-				["zx"] = 0.3542228888,
-				["zy"] = 0.5654856134,
-				["i"] = 12,
-				["m"] = 4,
-			},
-		},
-		["c"] = true,
-		["k"] = 30,
-	},
-	[31] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.2922200000,
-				["z"] = 19,
-				["x"] = 0.1773300000,
-				["zx"] = 0.2365086040,
-				["zy"] = 0.2753427677,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[1] = 
-			{
-				["y"] = 0.2902900000,
-				["z"] = 19,
-				["x"] = 0.1722500000,
-				["zx"] = 0.2002228900,
-				["zy"] = 0.2615570540,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[2] = 
-			{
-				["y"] = 0.2930600000,
-				["z"] = 19,
-				["x"] = 0.1674600000,
-				["zx"] = 0.1660086045,
-				["zy"] = 0.2813427675,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[3] = 
-			{
-				["y"] = 0.2954400000,
-				["z"] = 19,
-				["x"] = 0.1733400000,
-				["zx"] = 0.2080086042,
-				["zy"] = 0.2983427668,
-				["i"] = 12,
-				["m"] = 4,
-			},
-		},
-		["c"] = true,
-		["k"] = 31,
-	},
-	[32] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.2573900000,
-				["z"] = 20,
-				["x"] = 0.1406100000,
-				["zx"] = 0.1821929557,
-				["zy"] = 0.6241755882,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[1] = 
-			{
-				["y"] = 0.2535900000,
-				["z"] = 20,
-				["x"] = 0.1363600000,
-				["zx"] = 0.1472090459,
-				["zy"] = 0.5928958576,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[2] = 
-			{
-				["y"] = 0.2534200000,
-				["z"] = 20,
-				["x"] = 0.1416000000,
-				["zx"] = 0.1903421488,
-				["zy"] = 0.5914965013,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[3] = 
-			{
-				["y"] = 0.2623100000,
-				["z"] = 20,
-				["x"] = 0.1408900000,
-				["zx"] = 0.1844977780,
-				["zy"] = 0.6646746078,
-				["i"] = 12,
-				["m"] = 3,
-			},
-		},
-		["c"] = true,
-		["k"] = 32,
-	},
-	[33] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.2270400000,
-				["z"] = 20,
-				["x"] = 0.2057800000,
-				["zx"] = 0.7186403441,
-				["zy"] = 0.3743493191,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[2] = 
-			{
-				["y"] = 0.2315100000,
-				["z"] = 20,
-				["x"] = 0.2008800000,
-				["zx"] = 0.6783059540,
-				["zy"] = 0.4111441601,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[3] = 
-			{
-				["y"] = 0.2316600000,
-				["z"] = 20,
-				["x"] = 0.2043600000,
-				["zx"] = 0.7069516025,
-				["zy"] = 0.4123788863,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[4] = 
-			{
-				["y"] = 0.2279000000,
-				["z"] = 20,
-				["x"] = 0.2098100000,
-				["zx"] = 0.7518133221,
-				["zy"] = 0.3814284160,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[5] = 
-			{
-				["y"] = 0.6901100000,
-				["z"] = 1011,
-				["x"] = 0.0776600000,
-				["zx"] = 0.3080922053,
-				["zy"] = 0.3173901039,
-				["i"] = 12,
-				["m"] = 32,
-			},
-			[6] = 
-			{
-				["zy"] = 0.3175433763,
-				["zx"] = 0.3078656440,
-				["i"] = 12,
-				["m"] = 32,
-				["x"] = 0.0776000000,
-				["y"] = 0.6901500000,
-				["z"] = 1011,
-			},
-		},
-		["c"] = true,
-		["k"] = 33,
-	},
-	[34] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.2278900000,
-				["z"] = 20,
-				["x"] = 0.1999600000,
-				["zx"] = 0.6707329665,
-				["zy"] = 0.3813461010,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[1] = 
-			{
-				["y"] = 0.2181200000,
-				["z"] = 20,
-				["x"] = 0.2012700000,
-				["zx"] = 0.6815162422,
-				["zy"] = 0.3009242674,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[2] = 
-			{
-				["y"] = 0.2220500000,
-				["z"] = 20,
-				["x"] = 0.1996100000,
-				["zx"] = 0.6678519386,
-				["zy"] = 0.3332740940,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[3] = 
-			{
-				["y"] = 0.2211400000,
-				["z"] = 20,
-				["x"] = 0.2067400000,
-				["zx"] = 0.7265425920,
-				["zy"] = 0.3257834217,
-				["i"] = 12,
-				["m"] = 3,
-			},
-		},
-		["c"] = true,
-		["k"] = 34,
-	},
-	[35] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.2190300000,
-				["z"] = 20,
-				["x"] = 0.2221000000,
-				["zx"] = 0.8529785577,
-				["zy"] = 0.3084149397,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[1] = 
-			{
-				["y"] = 0.2247100000,
-				["z"] = 20,
-				["x"] = 0.2185500000,
-				["zx"] = 0.8237567037,
-				["zy"] = 0.3551699054,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[2] = 
-			{
-				["y"] = 0.2217600000,
-				["z"] = 20,
-				["x"] = 0.2189400000,
-				["zx"] = 0.8269669919,
-				["zy"] = 0.3308869567,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[3] = 
-			{
-				["y"] = 0.2213600000,
-				["z"] = 20,
-				["x"] = 0.2140400000,
-				["zx"] = 0.7866326018,
-				["zy"] = 0.3275943534,
-				["i"] = 12,
-				["m"] = 3,
-			},
-		},
-		["c"] = true,
-		["k"] = 35,
-	},
-	[36] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.2252200000,
-				["z"] = 20,
-				["x"] = 0.1655700000,
-				["zx"] = 0.3876514000,
-				["zy"] = 0.3593679745,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[1] = 
-			{
-				["y"] = 0.2301600000,
-				["z"] = 20,
-				["x"] = 0.1698400000,
-				["zx"] = 0.4227999400,
-				["zy"] = 0.4000316242,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[2] = 
-			{
-				["y"] = 0.2352000000,
-				["z"] = 20,
-				["x"] = 0.1655900000,
-				["zx"] = 0.3878160302,
-				["zy"] = 0.4415184247,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[3] = 
-			{
-				["y"] = 0.2310800000,
-				["z"] = 20,
-				["x"] = 0.1666700000,
-				["zx"] = 0.3967060590,
-				["zy"] = 0.4076046116,
-				["i"] = 12,
-				["m"] = 3,
-			},
-		},
-		["c"] = true,
-		["k"] = 36,
-	},
-	[37] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.2184900000,
-				["z"] = 20,
-				["x"] = 0.1669900000,
-				["zx"] = 0.3993401416,
-				["zy"] = 0.3039699254,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[1] = 
-			{
-				["y"] = 0.2200300000,
-				["z"] = 20,
-				["x"] = 0.1609900000,
-				["zx"] = 0.3499510925,
-				["zy"] = 0.3166464477,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[2] = 
-			{
-				["y"] = 0.2218200000,
-				["z"] = 20,
-				["x"] = 0.1669800000,
-				["zx"] = 0.3992578266,
-				["zy"] = 0.3313808471,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[3] = 
-			{
-				["y"] = 0.2201500000,
-				["z"] = 20,
-				["x"] = 0.1758100000,
-				["zx"] = 0.4719420438,
-				["zy"] = 0.3176342287,
-				["i"] = 12,
-				["m"] = 3,
-			},
-		},
-		["c"] = true,
-		["k"] = 37,
-	},
-	[38] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.2077500000,
-				["z"] = 20,
-				["x"] = 0.2036700000,
-				["zx"] = 0.7012718619,
-				["zy"] = 0.2155635290,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[1] = 
-			{
-				["y"] = 0.2092800000,
-				["z"] = 20,
-				["x"] = 0.1980600000,
-				["zx"] = 0.6550931010,
-				["zy"] = 0.2281577363,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[2] = 
-			{
-				["y"] = 0.2129400000,
-				["z"] = 20,
-				["x"] = 0.2019900000,
-				["zx"] = 0.6874429281,
-				["zy"] = 0.2582850557,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[3] = 
-			{
-				["y"] = 0.2092500000,
-				["z"] = 20,
-				["x"] = 0.2071600000,
-				["zx"] = 0.7299998254,
-				["zy"] = 0.2279107910,
-				["i"] = 12,
-				["m"] = 3,
-			},
-		},
-		["c"] = true,
-		["k"] = 38,
-	},
-	[39] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.2029600000,
-				["z"] = 20,
-				["x"] = 0.2010000000,
-				["zx"] = 0.6792937350,
-				["zy"] = 0.1761346055,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[1] = 
-			{
-				["y"] = 0.2019300000,
-				["z"] = 20,
-				["x"] = 0.2069000000,
-				["zx"] = 0.7278596333,
-				["zy"] = 0.1676561522,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[2] = 
-			{
-				["y"] = 0.1957600000,
-				["z"] = 20,
-				["x"] = 0.2044600000,
-				["zx"] = 0.7077747533,
-				["zy"] = 0.1168677476,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[3] = 
-			{
-				["y"] = 0.1981200000,
-				["z"] = 20,
-				["x"] = 0.2020100000,
-				["zx"] = 0.6876075583,
-				["zy"] = 0.1362941065,
-				["i"] = 12,
-				["m"] = 3,
-			},
-		},
-		["c"] = true,
-		["k"] = 39,
-	},
-	[40] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.2022800000,
-				["z"] = 20,
-				["x"] = 0.2189300000,
-				["zx"] = 0.8268846768,
-				["zy"] = 0.1705371800,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[2] = 
-			{
-				["y"] = 0.2085700000,
-				["z"] = 20,
-				["x"] = 0.2108400000,
-				["zx"] = 0.7602917756,
-				["zy"] = 0.2223133656,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[3] = 
-			{
-				["y"] = 0.2052400000,
-				["z"] = 20,
-				["x"] = 0.2153300000,
-				["zx"] = 0.7972512473,
-				["zy"] = 0.1949024438,
-				["i"] = 12,
-				["m"] = 3,
-			},
-		},
-		["c"] = true,
-		["k"] = 40,
-	},
-	[41] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.2060800000,
-				["z"] = 20,
-				["x"] = 0.2064400000,
-				["zx"] = 0.7240731395,
-				["zy"] = 0.2018169106,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[1] = 
-			{
-				["y"] = 0.2019600000,
-				["z"] = 20,
-				["x"] = 0.2169800000,
-				["zx"] = 0.8108332358,
-				["zy"] = 0.1679030974,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[2] = 
-			{
-				["y"] = 0.2128300000,
-				["z"] = 20,
-				["x"] = 0.2078000000,
-				["zx"] = 0.7352679907,
-				["zy"] = 0.2573795898,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[3] = 
-			{
-				["y"] = 0.2001100000,
-				["z"] = 20,
-				["x"] = 0.2095800000,
-				["zx"] = 0.7499200752,
-				["zy"] = 0.1526748075,
-				["i"] = 12,
-				["m"] = 3,
-			},
-		},
-		["c"] = true,
-		["k"] = 41,
-	},
-	[42] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3171000000,
-				["z"] = 92,
-				["x"] = 0.2808400000,
-				["zx"] = 0.3858987543,
-				["zy"] = 0.3679389562,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[1] = 
-			{
-				["y"] = 0.3234400000,
-				["z"] = 92,
-				["x"] = 0.2844400000,
-				["zx"] = 0.4136076492,
-				["zy"] = 0.4167374411,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[2] = 
-			{
-				["y"] = 0.3084500000,
-				["z"] = 92,
-				["x"] = 0.2824900000,
-				["zx"] = 0.3985986645,
-				["zy"] = 0.3013605818,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[3] = 
-			{
-				["y"] = 0.3203100000,
-				["z"] = 92,
-				["x"] = 0.2812900000,
-				["zx"] = 0.3893623661,
-				["zy"] = 0.3926460755,
-				["i"] = 12,
-				["m"] = 6,
-			},
-		},
-		["c"] = true,
-		["k"] = 42,
-	},
-	[43] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3221400000,
-				["z"] = 92,
-				["x"] = 0.3028800000,
-				["zx"] = 0.5555387665,
-				["zy"] = 0.4067314426,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[1] = 
-			{
-				["y"] = 0.3153800000,
-				["z"] = 92,
-				["x"] = 0.2957800000,
-				["zx"] = 0.5008906682,
-				["zy"] = 0.3547002506,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[2] = 
-			{
-				["y"] = 0.3200000000,
-				["z"] = 92,
-				["x"] = 0.2962200000,
-				["zx"] = 0.5042773109,
-				["zy"] = 0.3902600298,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[3] = 
-			{
-				["y"] = 0.3279100000,
-				["z"] = 92,
-				["x"] = 0.3054000000,
-				["zx"] = 0.5749349929,
-				["zy"] = 0.4511426820,
-				["i"] = 12,
-				["m"] = 6,
-			},
-		},
-		["c"] = true,
-		["k"] = 43,
-	},
-	[44] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.3169500000,
-				["z"] = 92,
-				["x"] = 0.3031800000,
-				["zx"] = 0.5578478410,
-				["zy"] = 0.3667844179,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[2] = 
-			{
-				["y"] = 0.3110200000,
-				["z"] = 92,
-				["x"] = 0.3101800000,
-				["zx"] = 0.6117262478,
-				["zy"] = 0.3211416711,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[3] = 
-			{
-				["y"] = 0.3156000000,
-				["z"] = 92,
-				["x"] = 0.3126000000,
-				["zx"] = 0.6303527827,
-				["zy"] = 0.3563935734,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[4] = 
-			{
-				["y"] = 0.3215000000,
-				["z"] = 92,
-				["x"] = 0.3076800000,
-				["zx"] = 0.5924839597,
-				["zy"] = 0.4018054126,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[5] = 
-			{
-				["y"] = 0.3111100000,
-				["l"] = true,
-				["zx"] = 0.6116492787,
-				["i"] = 12,
-				["m"] = 6,
-				["d"] = true,
-				["x"] = 0.3101700000,
-				["z"] = 92,
-				["zy"] = 0.3218343940,
-			},
-		},
-		["c"] = true,
-		["k"] = 44,
-	},
-	[45] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3070200000,
-				["z"] = 92,
-				["x"] = 0.3068100000,
-				["zx"] = 0.5857876434,
-				["zy"] = 0.2903539835,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[1] = 
-			{
-				["y"] = 0.2972300000,
-				["z"] = 92,
-				["x"] = 0.3036700000,
-				["zx"] = 0.5616193295,
-				["zy"] = 0.2150011180,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[2] = 
-			{
-				["y"] = 0.3037500000,
-				["z"] = 92,
-				["x"] = 0.3102400000,
-				["zx"] = 0.6121880627,
-				["zy"] = 0.2651850488,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[3] = 
-			{
-				["y"] = 0.3029500000,
-				["z"] = 92,
-				["x"] = 0.3019500000,
-				["zx"] = 0.5483806353,
-				["zy"] = 0.2590275113,
-				["i"] = 12,
-				["m"] = 6,
-			},
-		},
-		["c"] = true,
-		["k"] = 45,
-	},
-	[46] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3129400000,
-				["z"] = 92,
-				["x"] = 0.2919500000,
-				["zx"] = 0.4714114827,
-				["zy"] = 0.3359197611,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[1] = 
-			{
-				["y"] = 0.2986000000,
-				["z"] = 92,
-				["x"] = 0.2920200000,
-				["zx"] = 0.4719502668,
-				["zy"] = 0.2255459010,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[2] = 
-			{
-				["y"] = 0.3111000000,
-				["z"] = 92,
-				["x"] = 0.2993200000,
-				["zx"] = 0.5281377482,
-				["zy"] = 0.3217574248,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[3] = 
-			{
-				["y"] = 0.3060800000,
-				["z"] = 92,
-				["x"] = 0.2893500000,
-				["zx"] = 0.4513995031,
-				["zy"] = 0.2831188769,
-				["i"] = 12,
-				["m"] = 6,
-			},
-		},
-		["c"] = true,
-		["k"] = 46,
-	},
-	[47] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.2954100000,
-				["z"] = 92,
-				["x"] = 0.2866500000,
-				["zx"] = 0.4306178319,
-				["zy"] = 0.2009927202,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[1] = 
-			{
-				["y"] = 0.2973000000,
-				["z"] = 92,
-				["x"] = 0.2774700000,
-				["zx"] = 0.3599601499,
-				["zy"] = 0.2155399026,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[2] = 
-			{
-				["y"] = 0.2954000000,
-				["z"] = 92,
-				["x"] = 0.2820300000,
-				["zx"] = 0.3950580834,
-				["zy"] = 0.2009157509,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[3] = 
-			{
-				["y"] = 0.3072400000,
-				["z"] = 92,
-				["x"] = 0.2748800000,
-				["zx"] = 0.3400251394,
-				["zy"] = 0.2920473063,
-				["i"] = 12,
-				["m"] = 6,
-			},
-		},
-		["c"] = true,
-		["k"] = 47,
-	},
-	[48] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.2844600000,
-				["z"] = 92,
-				["x"] = 0.2970600000,
-				["zx"] = 0.5107427197,
-				["zy"] = 0.1167114253,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[1] = 
-			{
-				["y"] = 0.2912900000,
-				["z"] = 92,
-				["x"] = 0.2916200000,
-				["zx"] = 0.4688715007,
-				["zy"] = 0.1692814019,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[2] = 
-			{
-				["y"] = 0.2906400000,
-				["z"] = 92,
-				["x"] = 0.2997800000,
-				["zx"] = 0.5316783292,
-				["zy"] = 0.1642784027,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[3] = 
-			{
-				["y"] = 0.2792500000,
-				["z"] = 92,
-				["x"] = 0.3064600000,
-				["zx"] = 0.5830937231,
-				["zy"] = 0.0766104622,
-				["i"] = 12,
-				["m"] = 6,
-			},
-		},
-		["c"] = true,
-		["k"] = 48,
-	},
-	[49] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.2868200000,
-				["z"] = 92,
-				["x"] = 0.3203600000,
-				["zx"] = 0.6900808451,
-				["zy"] = 0.1348761610,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[1] = 
-			{
-				["y"] = 0.2822300000,
-				["z"] = 92,
-				["x"] = 0.3118900000,
-				["zx"] = 0.6248879729,
-				["zy"] = 0.0995472895,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[2] = 
-			{
-				["y"] = 0.2862000000,
-				["z"] = 92,
-				["x"] = 0.3138600000,
-				["zx"] = 0.6400508960,
-				["zy"] = 0.1301040694,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[3] = 
-			{
-				["y"] = 0.2875300000,
-				["z"] = 92,
-				["x"] = 0.3088400000,
-				["zx"] = 0.6014123814,
-				["zy"] = 0.1403409756,
-				["i"] = 12,
-				["m"] = 6,
-			},
-		},
-		["c"] = true,
-		["k"] = 49,
-	},
-	[50] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.2924600000,
-				["z"] = 92,
-				["x"] = 0.3059200000,
-				["zx"] = 0.5789373888,
-				["zy"] = 0.1782868006,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[1] = 
-			{
-				["y"] = 0.2930100000,
-				["z"] = 92,
-				["x"] = 0.3166000000,
-				["zx"] = 0.6611404437,
-				["zy"] = 0.1825201076,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[2] = 
-			{
-				["y"] = 0.2928400000,
-				["z"] = 92,
-				["x"] = 0.3122700000,
-				["zx"] = 0.6278128007,
-				["zy"] = 0.1812116309,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[3] = 
-			{
-				["y"] = 0.2890000000,
-				["z"] = 92,
-				["x"] = 0.3104300000,
-				["zx"] = 0.6136504766,
-				["zy"] = 0.1516554508,
-				["i"] = 12,
-				["m"] = 6,
-			},
-		},
-		["c"] = true,
-		["k"] = 50,
-	},
-	[51] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.2961400000,
-				["z"] = 92,
-				["x"] = 0.3222700000,
-				["zx"] = 0.7047819532,
-				["zy"] = 0.2066114732,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[1] = 
-			{
-				["y"] = 0.2963600000,
-				["z"] = 92,
-				["x"] = 0.3119700000,
-				["zx"] = 0.6255037261,
-				["zy"] = 0.2083047960,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[2] = 
-			{
-				["y"] = 0.2962100000,
-				["z"] = 92,
-				["x"] = 0.3163200000,
-				["zx"] = 0.6589853075,
-				["zy"] = 0.2071502577,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[3] = 
-			{
-				["y"] = 0.3016600000,
-				["z"] = 92,
-				["x"] = 0.3155400000,
-				["zx"] = 0.6529817136,
-				["zy"] = 0.2490984821,
-				["i"] = 12,
-				["m"] = 6,
-			},
-		},
-		["c"] = true,
-		["k"] = 51,
-	},
-	[52] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.4039000000,
-				["z"] = 104,
-				["x"] = 0.1239900000,
-				["zx"] = 0.1251544249,
-				["zy"] = 0.5166780394,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[1] = 
-			{
-				["y"] = 0.3964700000,
-				["z"] = 104,
-				["x"] = 0.1229900000,
-				["zx"] = 0.1189308647,
-				["zy"] = 0.4704370368,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[2] = 
-			{
-				["y"] = 0.4022000000,
-				["z"] = 104,
-				["x"] = 0.1178000000,
-				["zx"] = 0.0866305873,
-				["zy"] = 0.5060979984,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[3] = 
-			{
-				["y"] = 0.4004000000,
-				["z"] = 104,
-				["x"] = 0.1298400000,
-				["zx"] = 0.1615622521,
-				["zy"] = 0.4948956021,
-				["i"] = 12,
-				["m"] = 5,
-			},
-		},
-		["c"] = true,
-		["k"] = 52,
-	},
-	[53] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.4009200000,
-				["z"] = 104,
-				["x"] = 0.2058000000,
-				["zx"] = 0.6343038845,
-				["zy"] = 0.4981318499,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[1] = 
-			{
-				["y"] = 0.3987600000,
-				["z"] = 104,
-				["x"] = 0.2032700000,
-				["zx"] = 0.6185582772,
-				["zy"] = 0.4846889743,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[2] = 
-			{
-				["y"] = 0.4002600000,
-				["z"] = 104,
-				["x"] = 0.1968500000,
-				["zx"] = 0.5786030208,
-				["zy"] = 0.4940243046,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[3] = 
-			{
-				["y"] = 0.3984800000,
-				["z"] = 104,
-				["x"] = 0.1992300000,
-				["zx"] = 0.5934150940,
-				["zy"] = 0.4829463794,
-				["i"] = 12,
-				["m"] = 5,
-			},
-		},
-		["c"] = true,
-		["k"] = 53,
-	},
-	[54] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3748800000,
-				["z"] = 104,
-				["x"] = 0.2330700000,
-				["zx"] = 0.8040203711,
-				["zy"] = 0.3360705165,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[1] = 
-			{
-				["y"] = 0.3786000000,
-				["z"] = 104,
-				["x"] = 0.2412300000,
-				["zx"] = 0.8548046223,
-				["zy"] = 0.3592221355,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[2] = 
-			{
-				["y"] = 0.3738700000,
-				["z"] = 104,
-				["x"] = 0.2398100000,
-				["zx"] = 0.8459671668,
-				["zy"] = 0.3297847274,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[3] = 
-			{
-				["y"] = 0.3737500000,
-				["z"] = 104,
-				["x"] = 0.2350900000,
-				["zx"] = 0.8165919627,
-				["zy"] = 0.3290379010,
-				["i"] = 12,
-				["m"] = 5,
-			},
-		},
-		["c"] = true,
-		["k"] = 54,
-	},
-	[55] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.4079700000,
-				["z"] = 104,
-				["x"] = 0.1792700000,
-				["zx"] = 0.4691928325,
-				["zy"] = 0.5420079022,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[1] = 
-			{
-				["y"] = 0.3988200000,
-				["z"] = 104,
-				["x"] = 0.1849500000,
-				["zx"] = 0.5045426545,
-				["zy"] = 0.4850623876,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[2] = 
-			{
-				["y"] = 0.4070000000,
-				["z"] = 104,
-				["x"] = 0.1689900000,
-				["zx"] = 0.4052146337,
-				["zy"] = 0.5359710553,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[3] = 
-			{
-				["y"] = 0.4042600000,
-				["z"] = 104,
-				["x"] = 0.1726000000,
-				["zx"] = 0.4276816860,
-				["zy"] = 0.5189185187,
-				["i"] = 12,
-				["m"] = 5,
-			},
-		},
-		["c"] = true,
-		["k"] = 55,
-	},
-	[56] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.4237300000,
-				["z"] = 104,
-				["x"] = 0.1842600000,
-				["zx"] = 0.5002483979,
-				["zy"] = 0.6400911055,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[1] = 
-			{
-				["y"] = 0.4274800000,
-				["z"] = 104,
-				["x"] = 0.1841800000,
-				["zx"] = 0.4997505131,
-				["zy"] = 0.6634294312,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[2] = 
-			{
-				["y"] = 0.4220500000,
-				["z"] = 104,
-				["x"] = 0.1909400000,
-				["zx"] = 0.5418217800,
-				["zy"] = 0.6296355356,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[3] = 
-			{
-				["y"] = 0.4264800000,
-				["z"] = 104,
-				["x"] = 0.1932000000,
-				["zx"] = 0.5558870261,
-				["zy"] = 0.6572058777,
-				["i"] = 12,
-				["m"] = 5,
-			},
-		},
-		["c"] = true,
-		["k"] = 56,
-	},
-	[57] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3972200000,
-				["z"] = 104,
-				["x"] = 0.1366700000,
-				["zx"] = 0.2040691682,
-				["zy"] = 0.4751047019,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[1] = 
-			{
-				["y"] = 0.3914500000,
-				["z"] = 104,
-				["x"] = 0.1437200000,
-				["zx"] = 0.2479452676,
-				["zy"] = 0.4391947982,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[2] = 
-			{
-				["y"] = 0.3845400000,
-				["z"] = 104,
-				["x"] = 0.1396000000,
-				["zx"] = 0.2223041996,
-				["zy"] = 0.3961900434,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[3] = 
-			{
-				["y"] = 0.3934200000,
-				["z"] = 104,
-				["x"] = 0.1342400000,
-				["zx"] = 0.1889459169,
-				["zy"] = 0.4514551986,
-				["i"] = 12,
-				["m"] = 5,
-			},
-		},
-		["c"] = true,
-		["k"] = 57,
-	},
-	[58] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3733700000,
-				["z"] = 104,
-				["x"] = 0.2251700000,
-				["zx"] = 0.7548542455,
-				["zy"] = 0.3266729507,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[1] = 
-			{
-				["y"] = 0.3604200000,
-				["z"] = 104,
-				["x"] = 0.2253100000,
-				["zx"] = 0.7557255439,
-				["zy"] = 0.2460779327,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[2] = 
-			{
-				["y"] = 0.3622000000,
-				["z"] = 104,
-				["x"] = 0.2299100000,
-				["zx"] = 0.7843539208,
-				["zy"] = 0.2571558579,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[3] = 
-			{
-				["y"] = 0.3645800000,
-				["z"] = 104,
-				["x"] = 0.2250200000,
-				["zx"] = 0.7539207115,
-				["zy"] = 0.2719679153,
-				["i"] = 12,
-				["m"] = 5,
-			},
-		},
-		["c"] = true,
-		["k"] = 58,
-	},
-	[59] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.4339900000,
-				["z"] = 104,
-				["x"] = 0.1416200000,
-				["zx"] = 0.2348757912,
-				["zy"] = 0.7039447646,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[1] = 
-			{
-				["y"] = 0.4306800000,
-				["z"] = 104,
-				["x"] = 0.1422400000,
-				["zx"] = 0.2387343985,
-				["zy"] = 0.6833448025,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[2] = 
-			{
-				["y"] = 0.4271500000,
-				["z"] = 104,
-				["x"] = 0.1439600000,
-				["zx"] = 0.2494389220,
-				["zy"] = 0.6613756586,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[3] = 
-			{
-				["y"] = 0.4271200000,
-				["z"] = 104,
-				["x"] = 0.1463500000,
-				["zx"] = 0.2643132309,
-				["zy"] = 0.6611889520,
-				["i"] = 12,
-				["m"] = 5,
-			},
-		},
-		["c"] = true,
-		["k"] = 59,
-	},
-	[60] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.4019700000,
-				["z"] = 104,
-				["x"] = 0.1516000000,
-				["zx"] = 0.2969869219,
-				["zy"] = 0.5046665811,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[1] = 
-			{
-				["y"] = 0.3973600000,
-				["z"] = 104,
-				["x"] = 0.1436800000,
-				["zx"] = 0.2476963252,
-				["zy"] = 0.4759759994,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[2] = 
-			{
-				["y"] = 0.3927200000,
-				["z"] = 104,
-				["x"] = 0.1519200000,
-				["zx"] = 0.2989784612,
-				["zy"] = 0.4470987111,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[3] = 
-			{
-				["y"] = 0.3942700000,
-				["z"] = 104,
-				["x"] = 0.1452100000,
-				["zx"] = 0.2572183723,
-				["zy"] = 0.4567452191,
-				["i"] = 12,
-				["m"] = 5,
-			},
-		},
-		["c"] = true,
-		["k"] = 60,
-	},
-	[61] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.4311400000,
-				["z"] = 104,
-				["x"] = 0.1561500000,
-				["zx"] = 0.3253041208,
-				["zy"] = 0.6862076371,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[1] = 
-			{
-				["y"] = 0.4323700000,
-				["z"] = 104,
-				["x"] = 0.1510300000,
-				["zx"] = 0.2934394926,
-				["zy"] = 0.6938626079,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[2] = 
-			{
-				["y"] = 0.4334800000,
-				["z"] = 104,
-				["x"] = 0.1610600000,
-				["zx"] = 0.3558618014,
-				["zy"] = 0.7007707523,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[3] = 
-			{
-				["y"] = 0.4250700000,
-				["z"] = 104,
-				["x"] = 0.1527500000,
-				["zx"] = 0.3041440162,
-				["zy"] = 0.6484306673,
-				["i"] = 12,
-				["m"] = 5,
-			},
-		},
-		["c"] = true,
-		["k"] = 61,
-	},
-	[574] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.5196200000,
-				["z"] = 57,
-				["x"] = 0.7124600000,
-				["zx"] = 0.1179340682,
-				["zy"] = 0.5656578103,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[2] = 
-			{
-				["y"] = 0.5281600000,
-				["z"] = 57,
-				["x"] = 0.7157500000,
-				["zx"] = 0.1385068553,
-				["zy"] = 0.6190595061,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[3] = 
-			{
-				["y"] = 0.5280700000,
-				["z"] = 57,
-				["x"] = 0.7137500000,
-				["zx"] = 0.1260006017,
-				["zy"] = 0.6184967248,
-				["i"] = 12,
-				["m"] = 10,
-			},
-		},
-		["c"] = true,
-		["k"] = 574,
-	},
-	[575] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.5230600000,
-				["z"] = 57,
-				["x"] = 0.7296100000,
-				["zx"] = 0.2251751926,
-				["zy"] = 0.5871685637,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[2] = 
-			{
-				["y"] = 0.5246000000,
-				["z"] = 57,
-				["x"] = 0.7235900000,
-				["zx"] = 0.1875313693,
-				["zy"] = 0.5967983777,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[3] = 
-			{
-				["y"] = 0.5218000000,
-				["z"] = 57,
-				["x"] = 0.7260800000,
-				["zx"] = 0.2031016550,
-				["zy"] = 0.5792896249,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[4] = 
-			{
-				["y"] = 0.5281500000,
-				["z"] = 57,
-				["x"] = 0.7255700000,
-				["zx"] = 0.1999125604,
-				["zy"] = 0.6189969749,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[5] = 
-			{
-				["y"] = 0.6949900000,
-				["z"] = 1011,
-				["x"] = 0.0803500000,
-				["zx"] = 0.3182993899,
-				["zy"] = 0.3359072330,
-				["i"] = 12,
-				["m"] = 32,
-			},
-			[6] = 
-			{
-				["zy"] = 0.3354533416,
-				["zx"] = 0.3184522023,
-				["i"] = 12,
-				["m"] = 32,
-				["x"] = 0.0803900000,
-				["y"] = 0.6948700000,
-				["z"] = 1011,
-			},
-		},
-		["c"] = true,
-		["k"] = 575,
-	},
-	[576] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.5202500000,
-				["z"] = 57,
-				["x"] = 0.7418500000,
-				["zx"] = 0.3017134644,
-				["zy"] = 0.5695972797,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[1] = 
-			{
-				["y"] = 0.5267100000,
-				["z"] = 57,
-				["x"] = 0.7345000000,
-				["zx"] = 0.2557529826,
-				["zy"] = 0.6099924735,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[2] = 
-			{
-				["y"] = 0.5246700000,
-				["z"] = 57,
-				["x"] = 0.7395900000,
-				["zx"] = 0.2875813979,
-				["zy"] = 0.5972360965,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[3] = 
-			{
-				["y"] = 0.5284000000,
-				["z"] = 57,
-				["x"] = 0.7426400000,
-				["zx"] = 0.3066534346,
-				["zy"] = 0.6205602564,
-				["i"] = 12,
-				["m"] = 10,
-			},
-		},
-		["c"] = true,
-		["k"] = 576,
-	},
-	[577] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.5199500000,
-				["z"] = 57,
-				["x"] = 0.7378500000,
-				["zx"] = 0.2767009573,
-				["zy"] = 0.5677213419,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[1] = 
-			{
-				["y"] = 0.5166000000,
-				["z"] = 57,
-				["x"] = 0.7320000000,
-				["zx"] = 0.2401201656,
-				["zy"] = 0.5467733699,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[2] = 
-			{
-				["y"] = 0.5127900000,
-				["z"] = 57,
-				["x"] = 0.7374200000,
-				["zx"] = 0.2740121128,
-				["zy"] = 0.5229489599,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[3] = 
-			{
-				["y"] = 0.5128700000,
-				["z"] = 57,
-				["x"] = 0.7319400000,
-				["zx"] = 0.2397449780,
-				["zy"] = 0.5234492100,
-				["i"] = 12,
-				["m"] = 10,
-			},
-		},
-		["c"] = true,
-		["k"] = 577,
-	},
-	[578] = 
-	{
-		["e"] = 
-		{
-			[8] = 
-			{
-				["y"] = 0.3068600000,
-				["z"] = 849,
-				["x"] = 0.7405000000,
-				["zx"] = 0.3298091644,
-				["zy"] = 0.4757043081,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[1] = 
-			{
-				["y"] = 0.2981100000,
-				["z"] = 849,
-				["x"] = 0.7158900000,
-				["zx"] = 0.1930729688,
-				["zy"] = 0.4270882319,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[2] = 
-			{
-				["y"] = 0.3034100000,
-				["z"] = 849,
-				["x"] = 0.8093800000,
-				["zx"] = 0.7125149409,
-				["zy"] = 0.4565356837,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[3] = 
-			{
-				["y"] = 0.5015400000,
-				["z"] = 57,
-				["x"] = 0.7438400000,
-				["zx"] = 0.3141571867,
-				["zy"] = 0.4526012926,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[4] = 
-			{
-				["y"] = 0.4977000000,
-				["z"] = 57,
-				["x"] = 0.7567300000,
-				["zx"] = 0.3947599910,
-				["zy"] = 0.4285892889,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[5] = 
-			{
-				["y"] = 0.5004100000,
-				["z"] = 57,
-				["x"] = 0.7496700000,
-				["zx"] = 0.3506129159,
-				["zy"] = 0.4455352603,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[6] = 
-			{
-				["d"] = true,
-				["y"] = 0.4933800000,
-				["z"] = 57,
-				["x"] = 0.7408200000,
-				["zx"] = 0.2952727438,
-				["zy"] = 0.4015757847,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[7] = 
-			{
-				["y"] = 0.3333300000,
-				["z"] = 849,
-				["x"] = 0.8045500000,
-				["zx"] = 0.6856788651,
-				["zy"] = 0.6227748838,
-				["i"] = 12,
-				["m"] = 30,
-			},
-		},
-		["c"] = true,
-		["k"] = 578,
-	},
-	[579] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.5096000000,
-				["z"] = 57,
-				["x"] = 0.7292200000,
-				["zx"] = 0.2227364731,
-				["zy"] = 0.5030014880,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[1] = 
-			{
-				["y"] = 0.5035700000,
-				["z"] = 57,
-				["x"] = 0.7326700000,
-				["zx"] = 0.2443097605,
-				["zy"] = 0.4652951384,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[2] = 
-			{
-				["y"] = 0.5080700000,
-				["z"] = 57,
-				["x"] = 0.7382800000,
-				["zx"] = 0.2793898018,
-				["zy"] = 0.4934342053,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[3] = 
-			{
-				["y"] = 0.5077500000,
-				["z"] = 57,
-				["x"] = 0.7316100000,
-				["zx"] = 0.2376814461,
-				["zy"] = 0.4914332050,
-				["i"] = 12,
-				["m"] = 10,
-			},
-		},
-		["c"] = true,
-		["k"] = 579,
-	},
-	[101] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.2522100000,
-				["z"] = 20,
-				["x"] = 0.1660400000,
-				["zx"] = 0.3915202089,
-				["zy"] = 0.5815363765,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[1] = 
-			{
-				["d"] = true,
-				["y"] = 0.5497600000,
-				["z"] = 117,
-				["x"] = 0.7443500000,
-				["zx"] = 0.4405466300,
-				["zy"] = 0.2994332105,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[2] = 
-			{
-				["d"] = true,
-				["y"] = 0.3376000000,
-				["x"] = 0.2258500000,
-				["z"] = 541,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[3] = 
-			{
-				["y"] = 0.6929900000,
-				["z"] = 108,
-				["x"] = 0.3508200000,
-				["zx"] = 0.6741135901,
-				["zy"] = 0.4925113221,
-				["i"] = 12,
-				["m"] = 16,
-			},
-		},
-		["c"] = true,
-		["k"] = 101,
-	},
-	[117] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["d"] = true,
-				["y"] = -0.5304800000,
-				["x"] = -0.6625000000,
-				["z"] = 219,
-				["i"] = 12,
-				["m"] = 1,
-			},
-		},
-		["c"] = true,
-		["k"] = 117,
-	},
-	[119] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["d"] = true,
-				["y"] = -0.4649300000,
-				["x"] = -0.2691000000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[2] = 
-			{
-				["d"] = true,
-				["y"] = -0.4658400000,
-				["x"] = -0.2681600000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[3] = 
-			{
-				["d"] = true,
-				["y"] = -0.4429100000,
-				["x"] = 0.1537100000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[4] = 
-			{
-				["d"] = true,
-				["y"] = -0.4488900000,
-				["x"] = -0.1385800000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[5] = 
-			{
-				["d"] = true,
-				["y"] = -0.4632500000,
-				["x"] = -0.2650200000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[6] = 
-			{
-				["d"] = true,
-				["y"] = -0.0047200000,
-				["x"] = -0.6493600000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[7] = 
-			{
-				["d"] = true,
-				["y"] = -0.4656700000,
-				["x"] = -0.2626000000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[8] = 
-			{
-				["d"] = true,
-				["y"] = -0.4660400000,
-				["x"] = -0.2691700000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[9] = 
-			{
-				["d"] = true,
-				["y"] = -0.5491100000,
-				["x"] = -0.6045100000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[10] = 
-			{
-				["d"] = true,
-				["y"] = -0.4540100000,
-				["x"] = -0.1456200000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[11] = 
-			{
-				["d"] = true,
-				["y"] = -0.4498100000,
-				["x"] = -0.1695900000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[12] = 
-			{
-				["d"] = true,
-				["y"] = -0.4625400000,
-				["x"] = -0.2640800000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[13] = 
-			{
-				["d"] = true,
-				["y"] = 0.0750900000,
-				["x"] = -0.5610200000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[14] = 
-			{
-				["d"] = true,
-				["y"] = -0.4649100000,
-				["x"] = -0.2614800000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[15] = 
-			{
-				["d"] = true,
-				["y"] = -0.4622200000,
-				["x"] = -0.2669100000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[16] = 
-			{
-				["d"] = true,
-				["y"] = -0.4637300000,
-				["x"] = -0.2548400000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[17] = 
-			{
-				["d"] = true,
-				["y"] = -0.4623400000,
-				["x"] = -0.2650400000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[18] = 
-			{
-				["d"] = true,
-				["y"] = -0.4652400000,
-				["x"] = -0.2686000000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[19] = 
-			{
-				["d"] = true,
-				["y"] = -0.4672100000,
-				["x"] = -0.2636100000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[20] = 
-			{
-				["d"] = true,
-				["y"] = -0.4617400000,
-				["x"] = -0.2647900000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[21] = 
-			{
-				["d"] = true,
-				["y"] = 0.0923000000,
-				["x"] = -0.5236900000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[22] = 
-			{
-				["d"] = true,
-				["y"] = -0.4351200000,
-				["x"] = -0.0701400000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[23] = 
-			{
-				["d"] = true,
-				["y"] = -0.5669700000,
-				["x"] = -0.6193600000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[24] = 
-			{
-				["d"] = true,
-				["y"] = -0.4321800000,
-				["x"] = -0.0647500000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[25] = 
-			{
-				["d"] = true,
-				["y"] = -0.4631700000,
-				["x"] = -0.2682300000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[26] = 
-			{
-				["d"] = true,
-				["y"] = -0.4617500000,
-				["x"] = -0.2659800000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[27] = 
-			{
-				["d"] = true,
-				["y"] = -0.4634000000,
-				["x"] = -0.2639700000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[28] = 
-			{
-				["d"] = true,
-				["y"] = -0.4349200000,
-				["x"] = -0.0690300000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[29] = 
-			{
-				["d"] = true,
-				["y"] = -0.4274600000,
-				["x"] = -0.1000000000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[30] = 
-			{
-				["d"] = true,
-				["y"] = -0.4639200000,
-				["x"] = -0.2703500000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[31] = 
-			{
-				["d"] = true,
-				["y"] = -0.4865700000,
-				["x"] = -0.6333000000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[32] = 
-			{
-				["d"] = true,
-				["y"] = -0.4434000000,
-				["x"] = -0.0050300000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[33] = 
-			{
-				["d"] = true,
-				["y"] = -0.4638400000,
-				["x"] = -0.2622400000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[34] = 
-			{
-				["d"] = true,
-				["y"] = -0.4642200000,
-				["x"] = -0.2687300000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[35] = 
-			{
-				["d"] = true,
-				["y"] = -0.4654800000,
-				["x"] = -0.2674800000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[36] = 
-			{
-				["d"] = true,
-				["y"] = -0.4645300000,
-				["x"] = -0.2702400000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[37] = 
-			{
-				["d"] = true,
-				["y"] = -0.4650200000,
-				["x"] = -0.2696400000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[38] = 
-			{
-				["d"] = true,
-				["y"] = -0.4701900000,
-				["x"] = -0.2650800000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[39] = 
-			{
-				["d"] = true,
-				["y"] = -0.4536400000,
-				["x"] = -0.1657800000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[40] = 
-			{
-				["d"] = true,
-				["y"] = -0.4351000000,
-				["x"] = -0.0668100000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[41] = 
-			{
-				["d"] = true,
-				["y"] = -0.4623500000,
-				["x"] = -0.2681000000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[42] = 
-			{
-				["d"] = true,
-				["y"] = -0.4639700000,
-				["x"] = -0.2668900000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[43] = 
-			{
-				["d"] = true,
-				["y"] = -0.4630000000,
-				["x"] = -0.2658600000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[44] = 
-			{
-				["d"] = true,
-				["y"] = -0.4421300000,
-				["x"] = 0.1789600000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[45] = 
-			{
-				["d"] = true,
-				["y"] = -0.4652300000,
-				["x"] = -0.2702100000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[46] = 
-			{
-				["d"] = true,
-				["y"] = -0.4406900000,
-				["x"] = 0.1653000000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[47] = 
-			{
-				["d"] = true,
-				["y"] = -0.6190200000,
-				["x"] = -0.0726200000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[48] = 
-			{
-				["d"] = true,
-				["y"] = -0.4663600000,
-				["x"] = -0.2661100000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[49] = 
-			{
-				["d"] = true,
-				["y"] = -0.4643600000,
-				["x"] = -0.2693500000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[50] = 
-			{
-				["d"] = true,
-				["y"] = -0.7953500000,
-				["x"] = -0.0773500000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[51] = 
-			{
-				["d"] = true,
-				["y"] = -0.8932100000,
-				["x"] = 0.3246400000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[52] = 
-			{
-				["d"] = true,
-				["y"] = -0.4640900000,
-				["x"] = -0.2640400000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[53] = 
-			{
-				["d"] = true,
-				["y"] = -0.6955300000,
-				["x"] = -0.1842600000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[54] = 
-			{
-				["d"] = true,
-				["y"] = -0.4650300000,
-				["x"] = -0.2634900000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[55] = 
-			{
-				["d"] = true,
-				["y"] = -0.4537800000,
-				["x"] = -0.1682600000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[56] = 
-			{
-				["d"] = true,
-				["y"] = -0.4665100000,
-				["x"] = -0.2642000000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[57] = 
-			{
-				["d"] = true,
-				["y"] = -0.4328100000,
-				["x"] = -0.0710100000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[58] = 
-			{
-				["d"] = true,
-				["y"] = 0.1002100000,
-				["x"] = -0.5153100000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[59] = 
-			{
-				["d"] = true,
-				["y"] = -0.4648700000,
-				["x"] = -0.2597200000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[60] = 
-			{
-				["d"] = true,
-				["y"] = -0.4275100000,
-				["x"] = -0.0609200000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[61] = 
-			{
-				["d"] = true,
-				["y"] = -0.4559600000,
-				["x"] = -0.1750200000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[62] = 
-			{
-				["d"] = true,
-				["y"] = -0.4492300000,
-				["x"] = -0.1709200000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[63] = 
-			{
-				["d"] = true,
-				["y"] = -0.4370100000,
-				["x"] = 0.2217500000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[64] = 
-			{
-				["d"] = true,
-				["y"] = -0.2149100000,
-				["x"] = -0.5828200000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[65] = 
-			{
-				["d"] = true,
-				["y"] = -0.4643700000,
-				["x"] = -0.2677100000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[66] = 
-			{
-				["d"] = true,
-				["y"] = -0.4632500000,
-				["x"] = -0.2599000000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[67] = 
-			{
-				["d"] = true,
-				["y"] = -0.6623900000,
-				["x"] = -0.1843600000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[68] = 
-			{
-				["d"] = true,
-				["y"] = -0.4640400000,
-				["x"] = -0.2709900000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[69] = 
-			{
-				["d"] = true,
-				["y"] = -0.4670600000,
-				["x"] = -0.2679800000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[70] = 
-			{
-				["d"] = true,
-				["y"] = -0.5721400000,
-				["x"] = -0.1882500000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[71] = 
-			{
-				["y"] = 0.3938400000,
-				["z"] = 104,
-				["x"] = 0.1469600000,
-				["zx"] = 0.2681096026,
-				["zy"] = 0.4540690911,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[72] = 
-			{
-				["d"] = true,
-				["y"] = -0.6644200000,
-				["x"] = 0.3100200000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[73] = 
-			{
-				["d"] = true,
-				["y"] = -0.5528900000,
-				["x"] = -0.1924100000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[74] = 
-			{
-				["d"] = true,
-				["y"] = -0.4652800000,
-				["x"] = -0.2606400000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[75] = 
-			{
-				["d"] = true,
-				["y"] = -0.4616100000,
-				["x"] = -0.2673000000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[76] = 
-			{
-				["d"] = true,
-				["y"] = -0.5254500000,
-				["x"] = -0.1954400000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[77] = 
-			{
-				["d"] = true,
-				["y"] = -0.4345800000,
-				["x"] = -0.0663900000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[78] = 
-			{
-				["d"] = true,
-				["y"] = -0.4659800000,
-				["x"] = -0.2550000000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[79] = 
-			{
-				["d"] = true,
-				["y"] = -0.4307700000,
-				["x"] = -0.0632000000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[80] = 
-			{
-				["d"] = true,
-				["y"] = -0.2021700000,
-				["x"] = -0.5986100000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[81] = 
-			{
-				["d"] = true,
-				["y"] = -0.4365300000,
-				["x"] = 0.1665800000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[82] = 
-			{
-				["d"] = true,
-				["y"] = -0.4660800000,
-				["x"] = -0.2649800000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[83] = 
-			{
-				["d"] = true,
-				["y"] = -0.4705500000,
-				["x"] = -0.2658400000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[84] = 
-			{
-				["d"] = true,
-				["y"] = -0.4551500000,
-				["x"] = -0.1623000000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[85] = 
-			{
-				["d"] = true,
-				["y"] = -0.4388200000,
-				["x"] = -0.0337300000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[86] = 
-			{
-				["d"] = true,
-				["y"] = -0.4489800000,
-				["x"] = 0.0641900000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[87] = 
-			{
-				["d"] = true,
-				["y"] = -0.4661700000,
-				["x"] = -0.2622600000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[88] = 
-			{
-				["d"] = true,
-				["y"] = -0.1651400000,
-				["x"] = -0.7919400000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[89] = 
-			{
-				["d"] = true,
-				["y"] = -0.2127300000,
-				["x"] = -0.5778700000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[90] = 
-			{
-				["d"] = true,
-				["y"] = -0.4631700000,
-				["x"] = -0.2673700000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[91] = 
-			{
-				["d"] = true,
-				["y"] = -0.5748000000,
-				["x"] = -0.6065400000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[92] = 
-			{
-				["d"] = true,
-				["y"] = -0.4356900000,
-				["x"] = 0.1611100000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[93] = 
-			{
-				["d"] = true,
-				["y"] = -0.5245600000,
-				["x"] = -0.1961300000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[94] = 
-			{
-				["d"] = true,
-				["y"] = -0.4359000000,
-				["x"] = 0.1418500000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[95] = 
-			{
-				["d"] = true,
-				["y"] = -0.4619500000,
-				["x"] = -0.2313000000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[96] = 
-			{
-				["d"] = true,
-				["y"] = -0.5754700000,
-				["x"] = -0.6040800000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[97] = 
-			{
-				["d"] = true,
-				["y"] = -0.4346800000,
-				["x"] = 0.1669100000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[98] = 
-			{
-				["d"] = true,
-				["y"] = -0.4649500000,
-				["x"] = -0.2709700000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[99] = 
-			{
-				["d"] = true,
-				["y"] = -0.4638900000,
-				["x"] = -0.2611900000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[100] = 
-			{
-				["d"] = true,
-				["y"] = -0.4616100000,
-				["x"] = -0.2538900000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[101] = 
-			{
-				["d"] = true,
-				["y"] = -0.5772200000,
-				["x"] = -0.1868100000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[102] = 
-			{
-				["d"] = true,
-				["y"] = -0.4359600000,
-				["x"] = -0.0667800000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[103] = 
-			{
-				["d"] = true,
-				["y"] = -0.4657900000,
-				["x"] = -0.2635600000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[104] = 
-			{
-				["d"] = true,
-				["y"] = -0.2115600000,
-				["x"] = -0.5812600000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[105] = 
-			{
-				["d"] = true,
-				["y"] = -0.4691300000,
-				["x"] = -0.2628000000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[106] = 
-			{
-				["d"] = true,
-				["y"] = -0.4680500000,
-				["x"] = -0.2658200000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[107] = 
-			{
-				["d"] = true,
-				["y"] = -0.4354200000,
-				["x"] = -0.0708400000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[108] = 
-			{
-				["d"] = true,
-				["y"] = -0.4567600000,
-				["x"] = -0.1666300000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[109] = 
-			{
-				["d"] = true,
-				["y"] = -0.4319400000,
-				["x"] = -0.0677800000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[110] = 
-			{
-				["d"] = true,
-				["y"] = -0.4660000000,
-				["x"] = -0.2699000000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[111] = 
-			{
-				["d"] = true,
-				["y"] = -0.4621200000,
-				["x"] = -0.2608900000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[112] = 
-			{
-				["d"] = true,
-				["y"] = -0.4382500000,
-				["x"] = -0.0628300000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[113] = 
-			{
-				["d"] = true,
-				["y"] = -0.4641200000,
-				["x"] = -0.2592400000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[114] = 
-			{
-				["d"] = true,
-				["y"] = -0.4655800000,
-				["x"] = -0.2614200000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[115] = 
-			{
-				["d"] = true,
-				["y"] = -0.4624400000,
-				["x"] = -0.2663400000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[116] = 
-			{
-				["d"] = true,
-				["y"] = -0.4620100000,
-				["x"] = -0.2641800000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[117] = 
-			{
-				["d"] = true,
-				["y"] = -0.4369100000,
-				["x"] = -0.0569900000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[118] = 
-			{
-				["d"] = true,
-				["y"] = -0.4948500000,
-				["x"] = -0.6306900000,
-				["z"] = 218,
-				["i"] = 12,
-				["m"] = 1,
-			},
-		},
-		["c"] = true,
-		["k"] = 119,
-	},
-	[136] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["d"] = true,
-				["y"] = -0.0210900000,
-				["x"] = 0.0386700000,
-				["z"] = 203,
-				["i"] = 12,
-				["m"] = 1,
-			},
-		},
-		["c"] = true,
-		["k"] = 136,
-	},
-	[153] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.6441500000,
-				["z"] = 381,
-				["x"] = 0.2430600000,
-				["zx"] = 0.6701469071,
-				["zy"] = 0.2993671291,
-				["i"] = 12,
+				["r"] = false,
+				["x"] = 0.2308700000,
+				["d"] = false,
 				["m"] = 15,
-			},
-			[2] = 
-			{
-				["y"] = 0.6479000000,
 				["z"] = 381,
-				["x"] = 0.2281100000,
-				["zx"] = 0.5754786881,
-				["zy"] = 0.3231132895,
+				["y"] = 0.7380600000,
+				["zy"] = 0.8940349722,
+				["zx"] = 0.5929559000,
 				["i"] = 12,
-				["m"] = 15,
-			},
-			[3] = 
-			{
-				["y"] = 0.3398200000,
-				["z"] = 3,
-				["x"] = 0.0491900000,
-				["zx"] = 0.1966482580,
-				["zy"] = 0.4435236778,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[4] = 
-			{
-				["y"] = 0.6482700000,
-				["z"] = 381,
-				["x"] = 0.2360400000,
-				["zx"] = 0.6256940042,
-				["zy"] = 0.3254562439,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[5] = 
-			{
-				["y"] = 0.6453100000,
-				["z"] = 381,
-				["x"] = 0.2349700000,
-				["zx"] = 0.6189184193,
-				["zy"] = 0.3067126080,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[6] = 
-			{
-				["y"] = 0.4650000000,
-				["z"] = 41,
-				["x"] = 0.7246400000,
-				["zx"] = 0.4484017496,
-				["zy"] = 0.5931015321,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[7] = 
-			{
-				["y"] = 0.3461100000,
-				["z"] = 3,
-				["x"] = 0.0546900000,
-				["zx"] = 0.2337008638,
-				["zy"] = 0.4858983840,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[8] = 
-			{
-				["y"] = 0.4661500000,
-				["z"] = 41,
-				["x"] = 0.7278600000,
-				["zx"] = 0.4709760635,
-				["zy"] = 0.6011637860,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[9] = 
-			{
-				["y"] = 0.4636800000,
-				["z"] = 41,
-				["x"] = 0.7321100000,
-				["zx"] = 0.5007713537,
-				["zy"] = 0.5838474667,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[10] = 
-			{
-				["y"] = 0.3359300000,
-				["z"] = 3,
-				["x"] = 0.0635800000,
-				["zx"] = 0.2935913484,
-				["zy"] = 0.4173173810,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[11] = 
-			{
-				["y"] = 0.4680700000,
-				["z"] = 41,
-				["x"] = 0.7320400000,
-				["zx"] = 0.5002806078,
-				["zy"] = 0.6146242448,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[12] = 
-			{
-				["y"] = 0.3386100000,
-				["z"] = 3,
-				["x"] = 0.0517800000,
-				["zx"] = 0.2140966669,
-				["zy"] = 0.4353721048,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[13] = 
-			{
-				["y"] = 0.5034700000,
-				["z"] = 181,
-				["x"] = 0.5473000000,
-				["zx"] = 0.4849999675,
-				["zy"] = 0.5748332637,
-				["i"] = 12,
-				["m"] = 14,
 			},
 		},
+		["q"] = "The Dragonguard's Legacy",
 		["c"] = true,
-		["k"] = 153,
 	},
-	[154] = 
+	[5764] = 
 	{
+		["k"] = 5764,
 		["e"] = 
 		{
 			[1] = 
 			{
-				["y"] = 0.6561300000,
-				["z"] = 381,
-				["x"] = 0.2298500000,
-				["zx"] = 0.5864969290,
-				["zy"] = 0.3752281961,
+				["r"] = false,
+				["x"] = 0.5346900000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7217700000,
+				["zy"] = 0.2520911744,
+				["zx"] = 0.3182907052,
 				["i"] = 12,
-				["m"] = 15,
-			},
-			[2] = 
-			{
-				["y"] = 0.4689300000,
-				["z"] = 41,
-				["x"] = 0.7020700000,
-				["zx"] = 0.2901712320,
-				["zy"] = 0.6206534086,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[3] = 
-			{
-				["y"] = 0.3575500000,
-				["z"] = 3,
-				["x"] = 0.1104700000,
-				["zx"] = 0.6094816547,
-				["zy"] = 0.5629678019,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[4] = 
-			{
-				["y"] = 0.6586400000,
-				["z"] = 381,
-				["x"] = 0.2373700000,
-				["zx"] = 0.6341159930,
-				["zy"] = 0.3911222927,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[5] = 
-			{
-				["y"] = 0.4762000000,
-				["z"] = 41,
-				["x"] = 0.6993600000,
-				["zx"] = 0.2711723529,
-				["zy"] = 0.6716208749,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[6] = 
-			{
-				["y"] = 0.3598400000,
-				["z"] = 3,
-				["x"] = 0.1022900000,
-				["zx"] = 0.5543743247,
-				["zy"] = 0.5783951591,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[7] = 
-			{
-				["y"] = 0.3644500000,
-				["z"] = 3,
-				["x"] = 0.1022200000,
-				["zx"] = 0.5539027461,
-				["zy"] = 0.6094519787,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[8] = 
-			{
-				["y"] = 0.3641000000,
-				["z"] = 3,
-				["x"] = 0.1073900000,
-				["zx"] = 0.5887321955,
-				["zy"] = 0.6070940857,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[9] = 
-			{
-				["y"] = 0.4513100000,
-				["z"] = 181,
-				["x"] = 0.5210200000,
-				["zx"] = 0.3389999750,
-				["zy"] = 0.2850554889,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[10] = 
-			{
-				["y"] = 0.4708500000,
-				["z"] = 41,
-				["x"] = 0.7032800000,
-				["zx"] = 0.2986541264,
-				["zy"] = 0.6341138674,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[11] = 
-			{
-				["y"] = 0.6639400000,
-				["z"] = 381,
-				["x"] = 0.2341000000,
-				["zx"] = 0.6134092989,
-				["zy"] = 0.4246835327,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[12] = 
-			{
-				["y"] = 0.4770400000,
-				["z"] = 41,
-				["x"] = 0.7043600000,
-				["zx"] = 0.3062256354,
-				["zy"] = 0.6775098256,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[13] = 
-			{
-				["y"] = 0.6646400000,
-				["z"] = 381,
-				["x"] = 0.2384900000,
-				["zx"] = 0.6412081940,
-				["zy"] = 0.4291161493,
-				["i"] = 12,
-				["m"] = 15,
 			},
 		},
+		["n"] = "Ra'khajin's Journal, Page 3",
 		["c"] = true,
-		["k"] = 154,
 	},
-	[155] = 
+	[5637] = 
 	{
+		["k"] = 5637,
 		["e"] = 
 		{
 			[1] = 
 			{
-				["y"] = 0.4628800000,
-				["z"] = 41,
-				["x"] = 0.7003100000,
-				["zx"] = 0.2778324765,
-				["zy"] = 0.5782389422,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[2] = 
-			{
-				["d"] = true,
-				["y"] = 0.4444300000,
-				["z"] = 290,
-				["x"] = 0.7116000000,
-				["zx"] = 0.3569827886,
-				["zy"] = 0.4488923461,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[3] = 
-			{
-				["y"] = 0.3501300000,
-				["z"] = 3,
-				["x"] = 0.1153300000,
-				["zx"] = 0.6422226846,
-				["zy"] = 0.5129804696,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[4] = 
-			{
-				["y"] = 0.3444500000,
-				["z"] = 3,
-				["x"] = 0.1253300000,
-				["zx"] = 0.7095910587,
-				["zy"] = 0.4747152342,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[5] = 
-			{
-				["y"] = 0.3419400000,
-				["z"] = 3,
-				["x"] = 0.1153000000,
-				["zx"] = 0.6420205794,
-				["zy"] = 0.4578057728,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[6] = 
-			{
-				["y"] = 0.3538800000,
-				["z"] = 3,
-				["x"] = 0.1222400000,
-				["zx"] = 0.6887742311,
-				["zy"] = 0.5382436092,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[7] = 
-			{
-				["y"] = 0.4594700000,
-				["z"] = 41,
-				["x"] = 0.6922500000,
-				["zx"] = 0.2213265850,
-				["zy"] = 0.5543326065,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[8] = 
-			{
-				["y"] = 0.6732300000,
-				["z"] = 381,
-				["x"] = 0.2636900000,
-				["zx"] = 0.8007827169,
-				["zy"] = 0.4835106873,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[9] = 
-			{
-				["y"] = 0.6778200000,
-				["z"] = 381,
-				["x"] = 0.2641000000,
-				["zx"] = 0.8033789690,
-				["zy"] = 0.5125759876,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[10] = 
-			{
-				["y"] = 0.6751900000,
-				["z"] = 381,
-				["x"] = 0.2686700000,
-				["zx"] = 0.8323176821,
-				["zy"] = 0.4959220138,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[11] = 
-			{
-				["y"] = 0.4521700000,
-				["z"] = 41,
-				["x"] = 0.6967200000,
-				["zx"] = 0.2526642197,
-				["zy"] = 0.5031548206,
-				["i"] = 12,
-				["m"] = 11,
-			},
-		},
-		["c"] = true,
-		["k"] = 155,
-	},
-	[156] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.4470300000,
-				["z"] = 41,
-				["x"] = 0.7960100000,
-				["zx"] = 0.9487523051,
-				["zy"] = 0.4671200507,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[2] = 
-			{
-				["y"] = 0.6789500000,
-				["z"] = 381,
-				["x"] = 0.2448400000,
-				["zx"] = 0.6814184408,
-				["zy"] = 0.5197314972,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[3] = 
-			{
-				["y"] = 0.4389300000,
-				["z"] = 41,
-				["x"] = 0.7936800000,
-				["zx"] = 0.9324174754,
-				["zy"] = 0.4103337403,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[4] = 
-			{
-				["y"] = 0.3342700000,
-				["z"] = 3,
-				["x"] = 0.1320300000,
-				["zx"] = 0.7547278694,
-				["zy"] = 0.4061342312,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[5] = 
-			{
-				["y"] = 0.6756500000,
-				["z"] = 381,
-				["x"] = 0.2384800000,
-				["zx"] = 0.6411448708,
-				["zy"] = 0.4988348761,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[6] = 
-			{
-				["y"] = 0.3211800000,
-				["z"] = 3,
-				["x"] = 0.1269700000,
-				["zx"] = 0.7206394721,
-				["zy"] = 0.3179490319,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[7] = 
-			{
-				["y"] = 0.4342600000,
-				["z"] = 41,
-				["x"] = 0.7892800000,
-				["zx"] = 0.9015705867,
-				["zy"] = 0.3775939786,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[8] = 
-			{
-				["y"] = 0.4426800000,
-				["z"] = 41,
-				["x"] = 0.7886700000,
-				["zx"] = 0.8972940863,
-				["zy"] = 0.4366236988,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[9] = 
-			{
-				["y"] = 0.3256100000,
-				["z"] = 3,
-				["x"] = 0.1304600000,
-				["zx"] = 0.7441510346,
-				["zy"] = 0.3477932208,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[10] = 
-			{
-				["y"] = 0.3189200000,
-				["z"] = 3,
-				["x"] = 0.1240900000,
-				["zx"] = 0.7012373803,
-				["zy"] = 0.3027237798,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[11] = 
-			{
-				["d"] = true,
-				["y"] = 0.4261700000,
-				["z"] = 494,
-				["x"] = 0.5365100000,
-				["zx"] = 0.4250555261,
-				["zy"] = 0.1453888236,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[12] = 
-			{
-				["y"] = 0.6832000000,
-				["z"] = 381,
-				["x"] = 0.2490300000,
-				["zx"] = 0.7079508714,
-				["zy"] = 0.5466438123,
-				["i"] = 12,
-				["m"] = 15,
-			},
-		},
-		["c"] = true,
-		["k"] = 156,
-	},
-	[157] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.6805600000,
-				["z"] = 381,
-				["x"] = 0.2283600000,
-				["zx"] = 0.5770617687,
-				["zy"] = 0.5299265154,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[2] = 
-			{
-				["y"] = 0.4482100000,
-				["z"] = 41,
-				["x"] = 0.7221000000,
-				["zx"] = 0.4305946820,
-				["zy"] = 0.4753926243,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[3] = 
-			{
-				["y"] = 0.4433100000,
-				["z"] = 41,
-				["x"] = 0.7200400000,
-				["zx"] = 0.4161527296,
-				["zy"] = 0.4410404118,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[4] = 
-			{
-				["y"] = 0.3383700000,
-				["z"] = 3,
-				["x"] = 0.0965500000,
-				["zx"] = 0.5157048779,
-				["zy"] = 0.4337552639,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[5] = 
-			{
-				["y"] = 0.6851800000,
-				["z"] = 381,
-				["x"] = 0.2357200000,
-				["zx"] = 0.6236676611,
-				["zy"] = 0.5591817850,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[6] = 
-			{
-				["y"] = 0.6737800000,
-				["z"] = 381,
-				["x"] = 0.2315100000,
-				["zx"] = 0.5970085841,
-				["zy"] = 0.4869934575,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[7] = 
-			{
-				["y"] = 0.3323700000,
-				["z"] = 3,
-				["x"] = 0.0932300000,
-				["zx"] = 0.4933385777,
-				["zy"] = 0.3933342405,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[8] = 
-			{
-				["y"] = 0.3408600000,
-				["z"] = 3,
-				["x"] = 0.0963900000,
-				["zx"] = 0.5146269839,
-				["zy"] = 0.4505299885,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[9] = 
-			{
-				["y"] = 0.4578200000,
-				["z"] = 41,
-				["x"] = 0.7198100000,
-				["zx"] = 0.4145402786,
-				["zy"] = 0.5427650248,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[10] = 
-			{
-				["y"] = 0.4439000000,
-				["z"] = 41,
-				["x"] = 0.7229500000,
-				["zx"] = 0.4365537401,
-				["zy"] = 0.4451766987,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[11] = 
-			{
-				["y"] = 0.3334100000,
-				["z"] = 3,
-				["x"] = 0.0971300000,
-				["zx"] = 0.5196122436,
-				["zy"] = 0.4003405512,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[12] = 
-			{
-				["y"] = 0.6762600000,
-				["z"] = 381,
-				["x"] = 0.2254900000,
-				["zx"] = 0.5588880036,
-				["zy"] = 0.5026975849,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[13] = 
-			{
-				["y"] = 0.4441900000,
-				["z"] = 181,
-				["x"] = 0.4996400000,
-				["zx"] = 0.2202222033,
-				["zy"] = 0.2454999337,
-				["i"] = 12,
-				["m"] = 14,
-			},
-		},
-		["c"] = true,
-		["k"] = 157,
-	},
-	[158] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.6803200000,
-				["z"] = 381,
-				["x"] = 0.2240200000,
-				["zx"] = 0.5495794898,
-				["zy"] = 0.5284067612,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[2] = 
-			{
-				["y"] = 0.4359500000,
-				["z"] = 41,
-				["x"] = 0.7705700000,
-				["zx"] = 0.7704012033,
-				["zy"] = 0.3894419865,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[3] = 
-			{
-				["y"] = 0.6901500000,
-				["z"] = 381,
-				["x"] = 0.2251700000,
-				["zx"] = 0.5568616604,
-				["zy"] = 0.5906533628,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[4] = 
-			{
-				["y"] = 0.3292300000,
-				["z"] = 3,
-				["x"] = 0.1055400000,
-				["zx"] = 0.5762690463,
-				["zy"] = 0.3721805716,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[5] = 
-			{
-				["y"] = 0.3310700000,
-				["z"] = 3,
-				["x"] = 0.0993700000,
-				["zx"] = 0.5347027594,
-				["zy"] = 0.3845763521,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[6] = 
-			{
-				["y"] = 0.4246300000,
-				["z"] = 41,
-				["x"] = 0.7724700000,
-				["zx"] = 0.7837214507,
-				["zy"] = 0.3100813650,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[7] = 
-			{
-				["y"] = 0.6829100000,
-				["z"] = 381,
-				["x"] = 0.2190700000,
-				["zx"] = 0.5182344942,
-				["zy"] = 0.5448074426,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[8] = 
-			{
-				["y"] = 0.4303600000,
-				["z"] = 41,
-				["x"] = 0.7720200000,
-				["zx"] = 0.7805666553,
-				["zy"] = 0.3502524217,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[9] = 
-			{
-				["y"] = 0.3260100000,
-				["z"] = 3,
-				["x"] = 0.1113100000,
-				["zx"] = 0.6151405982,
-				["zy"] = 0.3504879557,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[10] = 
-			{
-				["y"] = 0.6848400000,
-				["z"] = 381,
-				["x"] = 0.2261500000,
-				["zx"] = 0.5630673363,
-				["zy"] = 0.5570287998,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[11] = 
-			{
-				["y"] = 0.3291600000,
-				["z"] = 3,
-				["x"] = 0.1111900000,
-				["zx"] = 0.6143321777,
-				["zy"] = 0.3717089930,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[12] = 
-			{
-				["y"] = 0.4313100000,
-				["z"] = 41,
-				["x"] = 0.7604500000,
-				["zx"] = 0.6994533594,
-				["zy"] = 0.3569125445,
-				["i"] = 12,
-				["m"] = 11,
-			},
-		},
-		["c"] = true,
-		["k"] = 158,
-	},
-	[159] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.3250800000,
-				["z"] = 3,
-				["x"] = 0.0956200000,
-				["zx"] = 0.5094396191,
-				["zy"] = 0.3442226971,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[2] = 
-			{
-				["y"] = 0.6830400000,
-				["z"] = 381,
-				["x"] = 0.2155000000,
-				["zx"] = 0.4956281034,
-				["zy"] = 0.5456306428,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[3] = 
-			{
-				["y"] = 0.4104400000,
-				["z"] = 41,
-				["x"] = 0.6866600000,
-				["zx"] = 0.1821370151,
-				["zy"] = 0.2106001619,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[4] = 
-			{
-				["y"] = 0.4088100000,
-				["z"] = 41,
-				["x"] = 0.6827800000,
-				["zx"] = 0.1549356678,
-				["zy"] = 0.1991727932,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[5] = 
-			{
-				["y"] = 0.6782700000,
-				["z"] = 381,
-				["x"] = 0.2088000000,
-				["zx"] = 0.4532015438,
-				["zy"] = 0.5154255268,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[6] = 
-			{
-				["y"] = 0.4127300000,
-				["z"] = 41,
-				["x"] = 0.6854800000,
-				["zx"] = 0.1738644404,
-				["zy"] = 0.2266545632,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[7] = 
-			{
-				["y"] = 0.3243900000,
-				["z"] = 3,
-				["x"] = 0.0993200000,
-				["zx"] = 0.5343659176,
-				["zy"] = 0.3395742794,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[8] = 
-			{
-				["y"] = 0.5048300000,
-				["z"] = 181,
-				["x"] = 0.5723200000,
-				["zx"] = 0.6239999604,
-				["zy"] = 0.5823888191,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[9] = 
-			{
-				["y"] = 0.3264300000,
-				["z"] = 3,
-				["x"] = 0.0968100000,
-				["zx"] = 0.5174564556,
-				["zy"] = 0.3533174274,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[10] = 
-			{
-				["y"] = 0.6841500000,
-				["z"] = 381,
-				["x"] = 0.2071300000,
-				["zx"] = 0.4426265655,
-				["zy"] = 0.5526595063,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[11] = 
-			{
-				["y"] = 0.6752500000,
-				["z"] = 381,
-				["x"] = 0.2185600000,
-				["zx"] = 0.5150050098,
-				["zy"] = 0.4963019524,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[12] = 
-			{
-				["y"] = 0.4095700000,
-				["z"] = 41,
-				["x"] = 0.6901700000,
-				["zx"] = 0.2067444195,
-				["zy"] = 0.2045008915,
-				["i"] = 12,
-				["m"] = 11,
-			},
-		},
-		["c"] = true,
-		["k"] = 159,
-	},
-	[160] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.6978200000,
-				["z"] = 381,
-				["x"] = 0.2229800000,
-				["zx"] = 0.5429938745,
-				["zy"] = 0.6392221762,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[2] = 
-			{
-				["y"] = 0.3302800000,
-				["z"] = 3,
-				["x"] = 0.0863400000,
-				["zx"] = 0.4469217679,
-				["zy"] = 0.3792542507,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[3] = 
-			{
-				["y"] = 0.4471800000,
-				["z"] = 41,
-				["x"] = 0.6966400000,
-				["zx"] = 0.2521033671,
-				["zy"] = 0.4681716491,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[4] = 
-			{
-				["y"] = 0.3344600000,
-				["z"] = 3,
-				["x"] = 0.0829000000,
-				["zx"] = 0.4237470472,
-				["zy"] = 0.4074142303,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[5] = 
-			{
-				["y"] = 0.3257300000,
-				["z"] = 3,
-				["x"] = 0.0851200000,
-				["zx"] = 0.4387028263,
-				["zy"] = 0.3486016413,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[6] = 
-			{
-				["y"] = 0.5585400000,
-				["z"] = 823,
-				["x"] = 0.3641700000,
-				["zx"] = 0.7742080172,
-				["zy"] = 0.4050078917,
-				["i"] = 12,
-				["m"] = 29,
-			},
-			[7] = 
-			{
-				["y"] = 0.6918400000,
-				["z"] = 381,
-				["x"] = 0.2192700000,
-				["zx"] = 0.5195009587,
-				["zy"] = 0.6013549658,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[8] = 
-			{
-				["y"] = 0.6930800000,
-				["z"] = 381,
-				["x"] = 0.2143500000,
-				["zx"] = 0.4883459327,
-				["zy"] = 0.6092070295,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[9] = 
-			{
-				["y"] = 0.4514000000,
-				["z"] = 41,
-				["x"] = 0.6933400000,
-				["zx"] = 0.2289682006,
-				["zy"] = 0.4977566157,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[10] = 
-			{
-				["y"] = 0.4458400000,
-				["z"] = 41,
-				["x"] = 0.6897700000,
-				["zx"] = 0.2039401569,
-				["zy"] = 0.4587773705,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[11] = 
-			{
-				["y"] = 0.6874000000,
-				["z"] = 381,
-				["x"] = 0.2155300000,
-				["zx"] = 0.4958180731,
-				["zy"] = 0.5732395119,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[12] = 
-			{
-				["y"] = 0.4492400000,
-				["z"] = 41,
-				["x"] = 0.6894400000,
-				["zx"] = 0.2016266402,
-				["zy"] = 0.4826135996,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[13] = 
-			{
-				["y"] = 0.3284300000,
-				["z"] = 3,
-				["x"] = 0.0799400000,
-				["zx"] = 0.4038060085,
-				["zy"] = 0.3667911018,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[14] = 
-			{
-				["y"] = 0.5268300000,
-				["z"] = 181,
-				["x"] = 0.5095100000,
-				["zx"] = 0.2750555338,
-				["zy"] = 0.7046110401,
-				["i"] = 12,
-				["m"] = 14,
-			},
-		},
-		["c"] = true,
-		["k"] = 160,
-	},
-	[161] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.4306600000,
-				["z"] = 181,
-				["x"] = 0.5127600000,
-				["zx"] = 0.2931110885,
-				["zy"] = 0.1703332678,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[2] = 
-			{
-				["zy"] = 0.5246285164,
-				["zx"] = 0.5575085529,
-				["i"] = 12,
-				["m"] = 4,
-				["x"] = 0.2222700000,
-				["y"] = 0.3271200000,
-				["z"] = 19,
-			},
-		},
-		["c"] = true,
-		["k"] = 161,
-	},
-	[162] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["d"] = true,
-				["y"] = 0.4337900000,
-				["z"] = 505,
-				["x"] = 0.5647300000,
-				["zx"] = 0.5818332959,
-				["zy"] = 0.1877221565,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[2] = 
-			{
-				["y"] = 0.6795600000,
-				["z"] = 1011,
-				["x"] = 0.1567400000,
-				["zx"] = 0.6081606668,
-				["zy"] = 0.2773581958,
-				["i"] = 12,
-				["m"] = 32,
-			},
-			[3] = 
-			{
-				["y"] = 0.6747600000,
-				["z"] = 1011,
-				["x"] = 0.0752400000,
-				["zx"] = 0.2989095336,
-				["zy"] = 0.2591446262,
-				["i"] = 12,
-				["m"] = 32,
-			},
-			[4] = 
-			{
-				["y"] = 0.6700700000,
-				["z"] = 1011,
-				["x"] = 0.0680500000,
-				["zx"] = 0.2716271330,
-				["zy"] = 0.2413484510,
-				["i"] = 12,
-				["m"] = 32,
-			},
-			[5] = 
-			{
-				["y"] = 0.6876200000,
-				["z"] = 1011,
-				["x"] = 0.1614500000,
-				["zx"] = 0.6260327262,
-				["zy"] = 0.3079418147,
-				["i"] = 12,
-				["m"] = 32,
-			},
-		},
-		["c"] = true,
-		["k"] = 162,
-	},
-	[163] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.3354000000,
-				["z"] = 3,
-				["x"] = 0.1227900000,
-				["zx"] = 0.6924794917,
-				["zy"] = 0.4137468573,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[2] = 
-			{
-				["y"] = 0.6549300000,
-				["z"] = 381,
-				["x"] = 0.2111800000,
-				["zx"] = 0.4682724709,
-				["zy"] = 0.3676294247,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[3] = 
-			{
-				["y"] = 0.6592600000,
-				["z"] = 381,
-				["x"] = 0.2174800000,
-				["zx"] = 0.5081661017,
-				["zy"] = 0.3950483246,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[4] = 
-			{
-				["y"] = 0.4417800000,
-				["z"] = 41,
-				["x"] = 0.7833100000,
-				["zx"] = 0.8597169673,
-				["zy"] = 0.4303141088,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[5] = 
-			{
-				["y"] = 0.6652900000,
-				["z"] = 381,
-				["x"] = 0.2152100000,
-				["zx"] = 0.4937917300,
-				["zy"] = 0.4332321504,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[6] = 
-			{
-				["y"] = 0.3271900000,
-				["z"] = 3,
-				["x"] = 0.1228200000,
-				["zx"] = 0.6926815968,
-				["zy"] = 0.3584374237,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[7] = 
-			{
-				["y"] = 0.4346300000,
-				["z"] = 41,
-				["x"] = 0.7763100000,
-				["zx"] = 0.8106423717,
-				["zy"] = 0.3801879211,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[8] = 
-			{
-				["y"] = 0.4418600000,
-				["z"] = 41,
-				["x"] = 0.7734100000,
-				["zx"] = 0.7903114678,
-				["zy"] = 0.4308749612,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[9] = 
-			{
-				["y"] = 0.6493300000,
-				["z"] = 381,
-				["x"] = 0.2160600000,
-				["zx"] = 0.4991742039,
-				["zy"] = 0.3321684919,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[10] = 
-			{
-				["y"] = 0.5038700000,
-				["z"] = 181,
-				["x"] = 0.5548000000,
-				["zx"] = 0.5266666320,
-				["zy"] = 0.5770554859,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[11] = 
-			{
-				["y"] = 0.4380800000,
-				["z"] = 41,
-				["x"] = 0.7778400000,
-				["zx"] = 0.8213686762,
-				["zy"] = 0.4043746830,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[12] = 
-			{
-				["y"] = 0.3295100000,
-				["z"] = 3,
-				["x"] = 0.1166700000,
-				["zx"] = 0.6512500467,
-				["zy"] = 0.3740668860,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[13] = 
-			{
-				["y"] = 0.3360300000,
-				["z"] = 3,
-				["x"] = 0.1140000000,
-				["zx"] = 0.6332626908,
-				["zy"] = 0.4179910647,
-				["i"] = 12,
-				["m"] = 2,
-			},
-		},
-		["c"] = true,
-		["k"] = 163,
-	},
-	[164] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["d"] = true,
-				["y"] = 0.4647400000,
-				["z"] = 288,
-				["x"] = 0.7437200000,
-				["zx"] = 0.5821650759,
-				["zy"] = 0.5912787616,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[2] = 
-			{
-				["y"] = 0.3435800000,
-				["z"] = 3,
-				["x"] = 0.1076300000,
-				["zx"] = 0.5903490365,
-				["zy"] = 0.4688541858,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[3] = 
-			{
-				["y"] = 0.7074000000,
-				["z"] = 381,
-				["x"] = 0.2043000000,
-				["zx"] = 0.4247060933,
-				["zy"] = 0.6998857005,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[4] = 
-			{
-				["y"] = 0.6988500000,
-				["z"] = 381,
-				["x"] = 0.1999100000,
-				["zx"] = 0.3969071982,
-				["zy"] = 0.6457444549,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[5] = 
-			{
-				["y"] = 0.4643000000,
-				["z"] = 41,
-				["x"] = 0.7437000000,
-				["zx"] = 0.5820248627,
-				["zy"] = 0.5881940731,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[6] = 
-			{
-				["y"] = 0.7046100000,
-				["z"] = 381,
-				["x"] = 0.1990500000,
-				["zx"] = 0.3914614010,
-				["zy"] = 0.6822185572,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[7] = 
-			{
-				["y"] = 0.7047300000,
-				["z"] = 381,
-				["x"] = 0.2078700000,
-				["zx"] = 0.4473124840,
-				["zy"] = 0.6829784343,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[8] = 
-			{
-				["y"] = 0.3388300000,
-				["z"] = 3,
-				["x"] = 0.1007800000,
-				["zx"] = 0.5442017002,
-				["zy"] = 0.4368542090,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[9] = 
-			{
-				["y"] = 0.3491600000,
-				["z"] = 3,
-				["x"] = 0.1015800000,
-				["zx"] = 0.5495911701,
-				["zy"] = 0.5064457375,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[10] = 
-			{
-				["y"] = 0.4620300000,
-				["z"] = 41,
-				["x"] = 0.7430000000,
-				["zx"] = 0.5771174032,
-				["zy"] = 0.5722798849,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[11] = 
-			{
-				["y"] = 0.3406400000,
-				["z"] = 3,
-				["x"] = 0.1101900000,
-				["zx"] = 0.6075953402,
-				["zy"] = 0.4490478844,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[12] = 
-			{
-				["y"] = 0.4666600000,
-				["z"] = 41,
-				["x"] = 0.7446200000,
-				["zx"] = 0.5884746667,
-				["zy"] = 0.6047392204,
-				["i"] = 12,
-				["m"] = 11,
-			},
-		},
-		["c"] = true,
-		["k"] = 164,
-	},
-	[165] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.5222800000,
-				["z"] = 57,
-				["x"] = 0.7510200000,
-				["zx"] = 0.3590546371,
-				["zy"] = 0.5822911254,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[2] = 
-			{
-				["y"] = 0.2061200000,
-				["z"] = 684,
-				["x"] = 0.2930400000,
-				["zx"] = 0.7302857721,
-				["zy"] = 0.2571428949,
-				["i"] = 12,
-				["m"] = 27,
-			},
-			[3] = 
-			{
-				["y"] = 0.3115100000,
-				["z"] = 19,
-				["x"] = 0.1807300000,
-				["zx"] = 0.2607943181,
-				["zy"] = 0.4131284766,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[4] = 
-			{
-				["y"] = 0.4869800000,
-				["z"] = 181,
-				["x"] = 0.5920200000,
-				["zx"] = 0.7334443992,
-				["zy"] = 0.4832221535,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[5] = 
-			{
-				["y"] = 0.6907000000,
-				["z"] = 383,
-				["x"] = 0.4385600000,
-				["zx"] = 0.5952369060,
-				["zy"] = 0.2073223887,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[6] = 
-			{
-				["y"] = 0.2157400000,
-				["z"] = 684,
-				["x"] = 0.3036600000,
-				["zx"] = 0.8061429231,
-				["zy"] = 0.3258571776,
-				["i"] = 12,
-				["m"] = 27,
-			},
-			[7] = 
-			{
-				["y"] = 0.3045300000,
-				["z"] = 19,
-				["x"] = 0.1800500000,
-				["zx"] = 0.2559371753,
-				["zy"] = 0.3632713357,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[8] = 
-			{
-				["y"] = 0.2064100000,
-				["z"] = 684,
-				["x"] = 0.3075300000,
-				["zx"] = 0.8337857832,
-				["zy"] = 0.2592143234,
-				["i"] = 12,
-				["m"] = 27,
-			},
-			[9] = 
-			{
-				["y"] = 0.2995600000,
-				["z"] = 19,
-				["x"] = 0.1774000000,
-				["zx"] = 0.2370086040,
-				["zy"] = 0.3277713371,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[10] = 
-			{
-				["y"] = 0.5173200000,
-				["z"] = 57,
-				["x"] = 0.7485900000,
-				["zx"] = 0.3438595390,
-				["zy"] = 0.5512756206,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[11] = 
-			{
-				["y"] = 0.3085400000,
-				["z"] = 19,
-				["x"] = 0.1800700000,
-				["zx"] = 0.2560800324,
-				["zy"] = 0.3919141917,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[12] = 
-			{
-				["y"] = 0.5283400000,
-				["z"] = 57,
-				["x"] = 0.7554700000,
-				["zx"] = 0.3868810513,
-				["zy"] = 0.6201850688,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[13] = 
-			{
-				["y"] = 0.6856300000,
-				["z"] = 383,
-				["x"] = 0.4339400000,
-				["zx"] = 0.5618267122,
-				["zy"] = 0.1706579365,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[14] = 
-			{
-				["y"] = 0.5190100000,
-				["z"] = 57,
-				["x"] = 0.7548600000,
-				["zx"] = 0.3830666439,
-				["zy"] = 0.5618434035,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[15] = 
-			{
-				["y"] = 0.6879100000,
-				["z"] = 383,
-				["x"] = 0.4366200000,
-				["zx"] = 0.5812075172,
-				["zy"] = 0.1871460925,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[16] = 
-			{
-				["y"] = 0.6865200000,
-				["z"] = 383,
-				["x"] = 0.4393100000,
-				["zx"] = 0.6006606388,
-				["zy"] = 0.1770941027,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[17] = 
-			{
-				["y"] = 0.2002100000,
-				["z"] = 684,
-				["x"] = 0.3056900000,
-				["zx"] = 0.8206429247,
-				["zy"] = 0.2149286110,
-				["i"] = 12,
-				["m"] = 27,
-			},
-		},
-		["c"] = true,
-		["k"] = 165,
-	},
-	[166] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.4957200000,
-				["z"] = 57,
-				["x"] = 0.7619100000,
-				["zx"] = 0.4271511878,
-				["zy"] = 0.4162080995,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[2] = 
-			{
-				["y"] = 0.2696000000,
-				["z"] = 849,
-				["x"] = 0.7541100000,
-				["zx"] = 0.4054280033,
-				["zy"] = 0.2686831652,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[3] = 
-			{
-				["y"] = 0.3006300000,
-				["z"] = 19,
-				["x"] = 0.1722700000,
-				["zx"] = 0.2003657471,
-				["zy"] = 0.3354141939,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[4] = 
-			{
-				["y"] = 0.6995600000,
-				["z"] = 383,
-				["x"] = 0.4279700000,
-				["zx"] = 0.5186537993,
-				["zy"] = 0.2713947844,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[5] = 
-			{
-				["y"] = 0.2651100000,
-				["z"] = 849,
-				["x"] = 0.7713400000,
-				["zx"] = 0.5011600086,
-				["zy"] = 0.2437361730,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[6] = 
-			{
-				["y"] = 0.4902000000,
-				["z"] = 57,
-				["x"] = 0.7563200000,
-				["zx"] = 0.3921962090,
-				["zy"] = 0.3816908441,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[7] = 
-			{
-				["y"] = 0.3341500000,
-				["z"] = 849,
-				["x"] = 0.7387700000,
-				["zx"] = 0.3201970710,
-				["zy"] = 0.6273309046,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[8] = 
-			{
-				["y"] = 0.3022800000,
-				["z"] = 19,
-				["x"] = 0.1650900000,
-				["zx"] = 0.1490800332,
-				["zy"] = 0.3471999077,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[9] = 
-			{
-				["y"] = 0.6942300000,
-				["z"] = 383,
-				["x"] = 0.4303400000,
-				["zx"] = 0.5357927949,
-				["zy"] = 0.2328501039,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[10] = 
-			{
-				["y"] = 0.6981100000,
-				["z"] = 383,
-				["x"] = 0.4343500000,
-				["zx"] = 0.5647916861,
-				["zy"] = 0.2609088957,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[11] = 
-			{
-				["y"] = 0.2961500000,
-				["z"] = 19,
-				["x"] = 0.1669100000,
-				["zx"] = 0.1620800331,
-				["zy"] = 0.3034141952,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[12] = 
-			{
-				["y"] = 0.4893400000,
-				["z"] = 57,
-				["x"] = 0.7643100000,
-				["zx"] = 0.4421586921,
-				["zy"] = 0.3763131557,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[13] = 
-			{
-				["y"] = 0.7001300000,
-				["z"] = 383,
-				["x"] = 0.4386900000,
-				["zx"] = 0.5961770197,
-				["zy"] = 0.2755168234,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[14] = 
-			{
-				["y"] = 0.4894700000,
-				["z"] = 57,
-				["x"] = 0.7674100000,
-				["zx"] = 0.4615433851,
-				["zy"] = 0.3771260621,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[15] = 
-			{
-				["y"] = 0.3005000000,
-				["z"] = 19,
-				["x"] = 0.1647800000,
-				["zx"] = 0.1468657475,
-				["zy"] = 0.3344856225,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[16] = 
-			{
-				["y"] = 0.4410700000,
-				["z"] = 181,
-				["x"] = 0.5087600000,
-				["zx"] = 0.2708888674,
-				["zy"] = 0.2281666006,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[17] = 
-			{
-				["y"] = 0.2736300000,
-				["z"] = 849,
-				["x"] = 0.7114800000,
-				["zx"] = 0.1685704648,
-				["zy"] = 0.2910743409,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[18] = 
-			{
-				["y"] = 1.0663600000,
-				["z"] = 980,
-				["x"] = 0.3146000000,
-				["zx"] = 0.7862736153,
-				["zy"] = 0.5314425866,
-				["i"] = 12,
-				["m"] = 31,
-			},
-		},
-		["c"] = true,
-		["k"] = 166,
-	},
-	[167] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.5592500000,
-				["z"] = 117,
-				["x"] = 0.7670300000,
-				["zx"] = 0.6295465708,
-				["zy"] = 0.3785165140,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[2] = 
-			{
-				["y"] = 0.2584800000,
-				["z"] = 20,
-				["x"] = 0.1914200000,
-				["zx"] = 0.6004358866,
-				["zy"] = 0.6331479320,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[3] = 
-			{
-				["y"] = 0.5626500000,
-				["z"] = 117,
-				["x"] = 0.7713700000,
-				["zx"] = 0.6657132262,
-				["zy"] = 0.4068498367,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[4] = 
-			{
-				["y"] = 0.7355400000,
-				["z"] = 108,
-				["x"] = 0.3020800000,
-				["zx"] = 0.2579204637,
-				["zy"] = 0.8558480572,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[5] = 
-			{
-				["y"] = 0.3579600000,
-				["z"] = 849,
-				["x"] = 0.7883600000,
-				["zx"] = 0.5957252280,
-				["zy"] = 0.7596221932,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[6] = 
-			{
-				["y"] = 0.3239500000,
-				["z"] = 849,
-				["x"] = 0.7978000000,
-				["zx"] = 0.6481750325,
-				["zy"] = 0.5706584501,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[7] = 
-			{
-				["y"] = 0.3572800000,
-				["z"] = 849,
-				["x"] = 0.7814000000,
-				["zx"] = 0.5570546095,
-				["zy"] = 0.7558440296,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[8] = 
-			{
-				["y"] = 0.7260800000,
-				["z"] = 108,
-				["x"] = 0.3157700000,
-				["zx"] = 0.3748200103,
-				["zy"] = 0.7750686091,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[9] = 
-			{
-				["y"] = 0.2639400000,
-				["z"] = 20,
-				["x"] = 0.1968900000,
-				["zx"] = 0.6454622364,
-				["zy"] = 0.6780919659,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[10] = 
-			{
-				["y"] = 0.7293300000,
-				["z"] = 108,
-				["x"] = 0.3089300000,
-				["zx"] = 0.3164129323,
-				["zy"] = 0.8028205337,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[11] = 
-			{
-				["y"] = 0.3167000000,
-				["z"] = 849,
-				["x"] = 0.8144000000,
-				["zx"] = 0.7404066801,
-				["zy"] = 0.5303765584,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[12] = 
-			{
-				["y"] = 0.2599400000,
-				["z"] = 20,
-				["x"] = 0.1974400000,
-				["zx"] = 0.6499895659,
-				["zy"] = 0.6451659337,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[13] = 
-			{
-				["y"] = 0.7339100000,
-				["z"] = 108,
-				["x"] = 0.3132500000,
-				["zx"] = 0.3533016131,
-				["zy"] = 0.8419293996,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[14] = 
-			{
-				["y"] = 0.5587900000,
-				["z"] = 117,
-				["x"] = 0.7730800000,
-				["zx"] = 0.6799632217,
-				["zy"] = 0.3746831822,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[15] = 
-			{
-				["d"] = true,
-				["y"] = 0.5253900000,
-				["z"] = 501,
-				["x"] = 0.5881900000,
-				["zx"] = 0.7121666225,
-				["zy"] = 0.6966110402,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[16] = 
-			{
-				["y"] = 0.2649200000,
-				["z"] = 20,
-				["x"] = 0.1935300000,
-				["zx"] = 0.6178043689,
-				["zy"] = 0.6861588438,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[17] = 
-			{
-				["y"] = 0.5653700000,
-				["z"] = 117,
-				["x"] = 0.7677200000,
-				["zx"] = 0.6352965690,
-				["zy"] = 0.4295164949,
-				["i"] = 12,
-				["m"] = 9,
-			},
-		},
-		["c"] = true,
-		["k"] = 167,
-	},
-	[168] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.6822800000,
-				["z"] = 108,
-				["x"] = 0.3269700000,
-				["zx"] = 0.4704573311,
-				["zy"] = 0.4010580570,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[2] = 
-			{
-				["y"] = 0.2580100000,
-				["z"] = 20,
-				["x"] = 0.1961900000,
-				["zx"] = 0.6397001806,
-				["zy"] = 0.6292791232,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[3] = 
-			{
-				["y"] = 0.5418500000,
-				["z"] = 117,
-				["x"] = 0.7546600000,
-				["zx"] = 0.5264632698,
-				["zy"] = 0.2335165686,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[4] = 
-			{
-				["y"] = 0.6791800000,
-				["z"] = 108,
-				["x"] = 0.3335400000,
-				["zx"] = 0.5265588666,
-				["zy"] = 0.3745869905,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[5] = 
-			{
-				["y"] = 0.5456000000,
-				["z"] = 117,
-				["x"] = 0.7601800000,
-				["zx"] = 0.5724632554,
-				["zy"] = 0.2647665569,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[6] = 
-			{
-				["y"] = 0.6779900000,
-				["z"] = 108,
-				["x"] = 0.3369400000,
-				["zx"] = 0.5555916247,
-				["zy"] = 0.3644255166,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[7] = 
-			{
-				["y"] = 0.2600700000,
-				["z"] = 20,
-				["x"] = 0.2034300000,
-				["zx"] = 0.6992962999,
-				["zy"] = 0.6462360298,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[8] = 
-			{
-				["y"] = 0.4693800000,
-				["z"] = 181,
-				["x"] = 0.4830100000,
-				["zx"] = 0.1278333192,
-				["zy"] = 0.3854443767,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[9] = 
-			{
-				["y"] = 0.5410200000,
-				["z"] = 117,
-				["x"] = 0.7640900000,
-				["zx"] = 0.6050465785,
-				["zy"] = 0.2265999045,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[10] = 
-			{
-				["y"] = 0.2530600000,
-				["z"] = 20,
-				["x"] = 0.1971900000,
-				["zx"] = 0.6479316888,
-				["zy"] = 0.5885331584,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[11] = 
-			{
-				["y"] = 0.2570700000,
-				["z"] = 20,
-				["x"] = 0.2028800000,
-				["zx"] = 0.6947689704,
-				["zy"] = 0.6215415056,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[12] = 
-			{
-				["y"] = 0.5483300000,
-				["z"] = 117,
-				["x"] = 0.7661500000,
-				["zx"] = 0.6222132398,
-				["zy"] = 0.2875165483,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[13] = 
-			{
-				["y"] = 0.6768700000,
-				["z"] = 108,
-				["x"] = 0.3287000000,
-				["zx"] = 0.4852298816,
-				["zy"] = 0.3548617765,
-				["i"] = 12,
-				["m"] = 16,
-			},
-		},
-		["c"] = true,
-		["k"] = 168,
-	},
-	[169] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.6350500000,
-				["z"] = 58,
-				["x"] = 0.3458100000,
-				["zx"] = 0.3758243139,
-				["zy"] = 0.5945870094,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[2] = 
-			{
-				["y"] = 0.3867200000,
-				["z"] = 104,
-				["x"] = 0.1505000000,
-				["zx"] = 0.2901410057,
-				["zy"] = 0.4097573901,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[3] = 
-			{
-				["y"] = 0.4970700000,
-				["z"] = 181,
-				["x"] = 0.5982400000,
-				["zx"] = 0.7679999530,
-				["zy"] = 0.5392777085,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[4] = 
-			{
-				["y"] = 0.2949100000,
-				["z"] = 101,
-				["x"] = 0.6331700000,
-				["zx"] = 0.4942149950,
-				["zy"] = 0.4644174560,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[5] = 
-			{
-				["y"] = 0.3832800000,
-				["z"] = 104,
-				["x"] = 0.1454200000,
-				["zx"] = 0.2585253199,
-				["zy"] = 0.3883483660,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[6] = 
-			{
-				["y"] = 0.6352100000,
-				["z"] = 58,
-				["x"] = 0.3447500000,
-				["zx"] = 0.3676310940,
-				["zy"] = 0.5958237213,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[7] = 
-			{
-				["y"] = 0.6355900000,
-				["z"] = 58,
-				["x"] = 0.3404700000,
-				["zx"] = 0.3345490362,
-				["zy"] = 0.5987609120,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[8] = 
-			{
-				["y"] = 0.3871800000,
-				["z"] = 104,
-				["x"] = 0.1469900000,
-				["zx"] = 0.2682963094,
-				["zy"] = 0.4126202247,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[9] = 
-			{
-				["y"] = 0.2870600000,
-				["z"] = 101,
-				["x"] = 0.6351400000,
-				["zx"] = 0.5065274950,
-				["zy"] = 0.4153549581,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[10] = 
-			{
-				["y"] = 0.2869000000,
-				["z"] = 101,
-				["x"] = 0.6433000000,
-				["zx"] = 0.5575274951,
-				["zy"] = 0.4143549581,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[11] = 
-			{
-				["y"] = 0.2895100000,
-				["z"] = 101,
-				["x"] = 0.6368600000,
-				["zx"] = 0.5172774950,
-				["zy"] = 0.4306674574,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[12] = 
-			{
-				["y"] = 0.6341800000,
-				["z"] = 58,
-				["x"] = 0.3534400000,
-				["zx"] = 0.4348000384,
-				["zy"] = 0.5878623885,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[13] = 
-			{
-				["d"] = true,
-				["y"] = 0.3939000000,
-				["z"] = 104,
-				["x"] = 0.1522400000,
-				["zx"] = 0.3009700005,
-				["zy"] = 0.4544425043,
-				["i"] = 12,
-				["m"] = 5,
-			},
-		},
-		["c"] = true,
-		["k"] = 169,
-	},
-	[170] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.5885000000,
-				["z"] = 58,
-				["x"] = 0.3802100000,
-				["zx"] = 0.6417174887,
-				["zy"] = 0.2347811424,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[2] = 
-			{
-				["y"] = 0.5872100000,
-				["z"] = 58,
-				["x"] = 0.3826500000,
-				["zx"] = 0.6605773534,
-				["zy"] = 0.2248101527,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[3] = 
-			{
-				["y"] = 0.5809700000,
-				["z"] = 58,
-				["x"] = 0.3851000000,
-				["zx"] = 0.6795145127,
-				["zy"] = 0.1765783888,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[4] = 
-			{
-				["y"] = 0.3134700000,
-				["z"] = 101,
-				["x"] = 0.5804300000,
-				["zx"] = 0.1645899944,
-				["zy"] = 0.5804174512,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[5] = 
-			{
-				["y"] = 0.3849000000,
-				["z"] = 104,
-				["x"] = 0.1944800000,
-				["zx"] = 0.5638531831,
-				["zy"] = 0.3984305227,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[6] = 
-			{
-				["y"] = 0.3100300000,
-				["z"] = 101,
-				["x"] = 0.5792000000,
-				["zx"] = 0.1569024944,
-				["zy"] = 0.5589174521,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[7] = 
-			{
-				["y"] = 0.4914900000,
-				["z"] = 181,
-				["x"] = 0.5821600000,
-				["zx"] = 0.6786666242,
-				["zy"] = 0.5082777088,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[8] = 
-			{
-				["y"] = 0.3874100000,
-				["z"] = 104,
-				["x"] = 0.1989100000,
-				["zx"] = 0.5914235548,
-				["zy"] = 0.4140516420,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[9] = 
-			{
-				["y"] = 0.5894000000,
-				["z"] = 58,
-				["x"] = 0.3768500000,
-				["zx"] = 0.6157465275,
-				["zy"] = 0.2417376468,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[10] = 
-			{
-				["y"] = 0.3157400000,
-				["z"] = 101,
-				["x"] = 0.5759200000,
-				["zx"] = 0.1364024944,
-				["zy"] = 0.5946049506,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[11] = 
-			{
-				["y"] = 0.3838300000,
-				["z"] = 104,
-				["x"] = 0.2007900000,
-				["zx"] = 0.6031238480,
-				["zy"] = 0.3917713204,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[12] = 
-			{
-				["y"] = 0.3104000000,
-				["z"] = 101,
-				["x"] = 0.5769100000,
-				["zx"] = 0.1425899944,
-				["zy"] = 0.5612299520,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[13] = 
-			{
-				["y"] = 0.3863100000,
-				["z"] = 104,
-				["x"] = 0.2038700000,
-				["zx"] = 0.6222917001,
-				["zy"] = 0.4072068025,
-				["i"] = 12,
-				["m"] = 5,
-			},
-		},
-		["c"] = true,
-		["k"] = 170,
-	},
-	[171] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.4409200000,
-				["z"] = 181,
-				["x"] = 0.5080000000,
-				["zx"] = 0.2666666454,
-				["zy"] = 0.2273332672,
-				["i"] = 12,
-				["m"] = 14,
-			},
-		},
-		["c"] = true,
-		["k"] = 171,
-	},
-	[172] = 
-	{
-		["e"] = 
-		{
-			[2] = 
-			{
-				["y"] = 0.5146100000,
-				["z"] = 181,
-				["x"] = 0.5210100000,
-				["zx"] = 0.3389444194,
-				["zy"] = 0.6367221519,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[1] = 
-			{
-				["y"] = 0.4812600000,
-				["z"] = 643,
-				["x"] = 0.5505400000,
-				["zx"] = 0.5703576177,
-				["zy"] = 0.7465086378,
-				["i"] = 12,
-				["m"] = 26,
-			},
-		},
-		["c"] = true,
-		["k"] = 172,
-	},
-	[173] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.6977700000,
-				["z"] = 381,
-				["x"] = 0.2267600000,
-				["zx"] = 0.5669300530,
-				["zy"] = 0.6389055607,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[2] = 
-			{
-				["y"] = 0.4637000000,
-				["z"] = 41,
-				["x"] = 0.7073900000,
-				["zx"] = 0.3274679247,
-				["zy"] = 0.5839876798,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[3] = 
-			{
-				["y"] = 0.3276900000,
-				["z"] = 3,
-				["x"] = 0.0714400000,
-				["zx"] = 0.3465428904,
-				["zy"] = 0.3618058423,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[4] = 
-			{
-				["y"] = 0.6970700000,
-				["z"] = 381,
-				["x"] = 0.2418100000,
-				["zx"] = 0.6622315041,
-				["zy"] = 0.6344729441,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[5] = 
-			{
-				["y"] = 0.4600900000,
-				["z"] = 41,
-				["x"] = 0.7100300000,
-				["zx"] = 0.3459760579,
-				["zy"] = 0.5586792130,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[6] = 
-			{
-				["y"] = 0.3306000000,
-				["z"] = 3,
-				["x"] = 0.0680500000,
-				["zx"] = 0.3237050116,
-				["zy"] = 0.3814100386,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[7] = 
-			{
-				["y"] = 0.6898700000,
-				["z"] = 381,
-				["x"] = 0.2315200000,
-				["zx"] = 0.5970719073,
-				["zy"] = 0.5888803162,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[8] = 
-			{
-				["y"] = 0.4649600000,
-				["z"] = 41,
-				["x"] = 0.7149500000,
-				["zx"] = 0.3804684879,
-				["zy"] = 0.5928211058,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[9] = 
-			{
-				["y"] = 0.6916600000,
-				["z"] = 381,
-				["x"] = 0.2367200000,
-				["zx"] = 0.6299999834,
-				["zy"] = 0.6002151501,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[10] = 
-			{
-				["y"] = 0.3248200000,
-				["z"] = 3,
-				["x"] = 0.0678900000,
-				["zx"] = 0.3226271176,
-				["zy"] = 0.3424711194,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[11] = 
-			{
-				["y"] = 0.4993800000,
-				["z"] = 181,
-				["x"] = 0.5444500000,
-				["zx"] = 0.4691666350,
-				["zy"] = 0.5521110417,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[12] = 
-			{
-				["y"] = 0.3195000000,
-				["z"] = 3,
-				["x"] = 0.0760100000,
-				["zx"] = 0.3773302374,
-				["zy"] = 0.3066311454,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[13] = 
-			{
-				["y"] = 0.4630400000,
-				["z"] = 41,
-				["x"] = 0.7090000000,
-				["zx"] = 0.3387550817,
-				["zy"] = 0.5793606471,
-				["i"] = 12,
-				["m"] = 11,
-			},
-		},
-		["c"] = true,
-		["k"] = 173,
-	},
-	[174] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.4497400000,
-				["z"] = 41,
-				["x"] = 0.6850000000,
-				["zx"] = 0.1704993253,
-				["zy"] = 0.4861189274,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[2] = 
-			{
-				["y"] = 0.3086800000,
-				["z"] = 3,
-				["x"] = 0.1012900000,
-				["zx"] = 0.5476374873,
-				["zy"] = 0.2337385666,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[3] = 
-			{
-				["y"] = 0.7028500000,
-				["z"] = 381,
-				["x"] = 0.2143800000,
-				["zx"] = 0.4885359024,
-				["zy"] = 0.6710736926,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[4] = 
-			{
-				["y"] = 0.6989300000,
-				["z"] = 381,
-				["x"] = 0.2163900000,
-				["zx"] = 0.5012638703,
-				["zy"] = 0.6462510396,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[5] = 
-			{
-				["y"] = 0.3184100000,
-				["z"] = 3,
-				["x"] = 0.1412700000,
-				["zx"] = 0.8169762471,
-				["zy"] = 0.2992879928,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[6] = 
-			{
-				["y"] = 0.4513600000,
-				["z"] = 181,
-				["x"] = 0.5956500000,
-				["zx"] = 0.7536110648,
-				["zy"] = 0.2853332666,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[7] = 
-			{
-				["y"] = 0.3246000000,
-				["z"] = 3,
-				["x"] = 0.1395700000,
-				["zx"] = 0.8055236235,
-				["zy"] = 0.3409890152,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[8] = 
-			{
-				["y"] = 0.7002600000,
-				["z"] = 381,
-				["x"] = 0.2094300000,
-				["zx"] = 0.4571909068,
-				["zy"] = 0.6546730112,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[9] = 
-			{
-				["y"] = 0.4450100000,
-				["z"] = 41,
-				["x"] = 0.6784400000,
-				["zx"] = 0.1245094185,
-				["zy"] = 0.4529585264,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[10] = 
-			{
-				["y"] = 0.6952900000,
-				["z"] = 381,
-				["x"] = 0.2071600000,
-				["zx"] = 0.4428165351,
-				["zy"] = 0.6232014333,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[11] = 
-			{
-				["y"] = 0.4485900000,
-				["z"] = 41,
-				["x"] = 0.6761800000,
-				["zx"] = 0.1086653348,
-				["zy"] = 0.4780566735,
-				["i"] = 12,
-				["m"] = 11,
-			},
-		},
-		["c"] = true,
-		["k"] = 174,
-	},
-	[175] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.3139600000,
-				["z"] = 3,
-				["x"] = 0.1320700000,
-				["zx"] = 0.7549973429,
-				["zy"] = 0.2693090672,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[2] = 
-			{
-				["d"] = true,
-				["y"] = 0.4605400000,
-				["z"] = 289,
-				["x"] = 0.7019800000,
-				["zx"] = 0.2895402729,
-				["zy"] = 0.5618340080,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[3] = 
-			{
-				["y"] = 0.3084200000,
-				["z"] = 3,
-				["x"] = 0.1367200000,
-				["zx"] = 0.7863236368,
-				["zy"] = 0.2319869889,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[4] = 
-			{
-				["y"] = 0.7176900000,
-				["z"] = 381,
-				["x"] = 0.2148900000,
-				["zx"] = 0.4917653868,
-				["zy"] = 0.7650451645,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[5] = 
-			{
-				["y"] = 0.7088700000,
-				["z"] = 381,
-				["x"] = 0.2124300000,
-				["zx"] = 0.4761878739,
-				["zy"] = 0.7091941954,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[6] = 
-			{
-				["y"] = 0.3202800000,
-				["z"] = 3,
-				["x"] = 0.1374500000,
-				["zx"] = 0.7912415282,
-				["zy"] = 0.3118858784,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[7] = 
-			{
-				["y"] = 0.7176600000,
-				["z"] = 381,
-				["x"] = 0.2104700000,
-				["zx"] = 0.4637765221,
-				["zy"] = 0.7648551953,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[8] = 
-			{
-				["y"] = 0.4332700000,
-				["z"] = 41,
-				["x"] = 0.7164900000,
-				["zx"] = 0.3912648990,
-				["zy"] = 0.3706534295,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[9] = 
-			{
-				["y"] = 0.4386300000,
-				["z"] = 41,
-				["x"] = 0.7123900000,
-				["zx"] = 0.3625212073,
-				["zy"] = 0.4082305436,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[10] = 
-			{
-				["y"] = 0.7139000000,
-				["z"] = 381,
-				["x"] = 0.1996100000,
-				["zx"] = 0.3950075015,
-				["zy"] = 0.7410457118,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[11] = 
-			{
-				["y"] = 0.4340600000,
-				["z"] = 41,
-				["x"] = 0.7145300000,
-				["zx"] = 0.3775240122,
-				["zy"] = 0.3761918474,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[12] = 
-			{
-				["y"] = 0.4204000000,
-				["z"] = 181,
-				["x"] = 0.5374900000,
-				["zx"] = 0.4304999703,
-				["zy"] = 0.1133332684,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[13] = 
-			{
-				["zy"] = 0.2779322316,
-				["zx"] = 0.7764878362,
-				["i"] = 12,
-				["m"] = 2,
-				["x"] = 0.1352600000,
-				["y"] = 0.3152400000,
-				["z"] = 3,
-			},
-		},
-		["c"] = true,
-		["k"] = 175,
-	},
-	[176] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.3352400000,
-				["z"] = 19,
-				["x"] = 0.2151800000,
-				["zx"] = 0.5068657447,
-				["zy"] = 0.5826284699,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[2] = 
-			{
-				["y"] = 0.5038700000,
-				["z"] = 57,
-				["x"] = 0.7876300000,
-				["zx"] = 0.5879816087,
-				["zy"] = 0.4671710762,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[3] = 
-			{
-				["y"] = 0.7430900000,
-				["z"] = 383,
-				["x"] = 0.4087400000,
-				["zx"] = 0.3795892911,
-				["zy"] = 0.5861883945,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[4] = 
-			{
-				["y"] = 0.7353200000,
-				["z"] = 383,
-				["x"] = 0.4198200000,
-				["zx"] = 0.4597159032,
-				["zy"] = 0.5299984944,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[5] = 
-			{
-				["y"] = 0.5101700000,
-				["z"] = 57,
-				["x"] = 0.7910600000,
-				["zx"] = 0.6094298336,
-				["zy"] = 0.5065657698,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[6] = 
-			{
-				["y"] = 0.5040900000,
-				["z"] = 57,
-				["x"] = 0.7795400000,
-				["zx"] = 0.5373938130,
-				["zy"] = 0.4685467639,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[7] = 
-			{
-				["y"] = 0.7421900000,
-				["z"] = 383,
-				["x"] = 0.4152300000,
-				["zx"] = 0.4265226587,
-				["zy"] = 0.5796799119,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[8] = 
-			{
-				["y"] = 0.3321500000,
-				["z"] = 19,
-				["x"] = 0.2257800000,
-				["zx"] = 0.5825800299,
-				["zy"] = 0.5605570422,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[9] = 
-			{
-				["y"] = 0.7335500000,
-				["z"] = 383,
-				["x"] = 0.4139900000,
-				["zx"] = 0.4175554205,
-				["zy"] = 0.5171984786,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[10] = 
-			{
-				["y"] = 0.4961600000,
-				["z"] = 57,
-				["x"] = 0.7850000000,
-				["zx"] = 0.5715358853,
-				["zy"] = 0.4189594749,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[11] = 
-			{
-				["y"] = 0.4273900000,
-				["z"] = 181,
-				["x"] = 0.5181000000,
-				["zx"] = 0.3227777536,
-				["zy"] = 0.1521666013,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[12] = 
-			{
-				["y"] = 0.3298000000,
-				["z"] = 19,
-				["x"] = 0.2173700000,
-				["zx"] = 0.5225086018,
-				["zy"] = 0.5437713286,
-				["i"] = 12,
-				["m"] = 4,
-			},
-		},
-		["c"] = true,
-		["k"] = 176,
-	},
-	[177] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.3395500000,
-				["z"] = 19,
-				["x"] = 0.2217700000,
-				["zx"] = 0.5539371730,
-				["zy"] = 0.6134141830,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[2] = 
-			{
-				["y"] = 0.5304600000,
-				["z"] = 57,
-				["x"] = 0.8075300000,
-				["zx"] = 0.7124188318,
-				["zy"] = 0.6334416959,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[3] = 
-			{
-				["y"] = 0.7460600000,
-				["z"] = 383,
-				["x"] = 0.4009000000,
-				["zx"] = 0.3228932046,
-				["zy"] = 0.6076663872,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[4] = 
-			{
-				["y"] = 0.5193600000,
-				["z"] = 57,
-				["x"] = 0.7744000000,
-				["zx"] = 0.5052527413,
-				["zy"] = 0.5640319975,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[5] = 
-			{
-				["y"] = 0.3474800000,
-				["z"] = 19,
-				["x"] = 0.2280000000,
-				["zx"] = 0.5984371726,
-				["zy"] = 0.6700570379,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[6] = 
-			{
-				["y"] = 0.3341600000,
-				["z"] = 19,
-				["x"] = 0.2316800000,
-				["zx"] = 0.6247228867,
-				["zy"] = 0.5749141845,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[7] = 
-			{
-				["y"] = 0.5021000000,
-				["z"] = 57,
-				["x"] = 0.8051400000,
-				["zx"] = 0.6974738587,
-				["zy"] = 0.4561030432,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[8] = 
-			{
-				["y"] = 0.3393600000,
-				["z"] = 19,
-				["x"] = 0.2307300000,
-				["zx"] = 0.6179371725,
-				["zy"] = 0.6120570402,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[9] = 
-			{
-				["y"] = 0.5206000000,
-				["z"] = 57,
-				["x"] = 0.7827300000,
-				["zx"] = 0.5573412875,
-				["zy"] = 0.5717858738,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[10] = 
-			{
-				["y"] = 0.7486200000,
-				["z"] = 383,
-				["x"] = 0.4002400000,
-				["zx"] = 0.3181203197,
-				["zy"] = 0.6261794045,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[11] = 
-			{
-				["y"] = 0.7395200000,
-				["z"] = 383,
-				["x"] = 0.3969500000,
-				["zx"] = 0.2943282120,
-				["zy"] = 0.5603714134,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[12] = 
-			{
-				["y"] = 0.7447300000,
-				["z"] = 383,
-				["x"] = 0.3905400000,
-				["zx"] = 0.2479733759,
-				["zy"] = 0.5980482962,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[13] = 
-			{
-				["d"] = true,
-				["y"] = 0.4642600000,
-				["z"] = 504,
-				["x"] = 0.5961900000,
-				["zx"] = 0.7566110660,
-				["zy"] = 0.3570000029,
-				["i"] = 12,
-				["m"] = 14,
-			},
-		},
-		["c"] = true,
-		["k"] = 177,
-	},
-	[178] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.7239200000,
-				["z"] = 383,
-				["x"] = 0.3979200000,
-				["zx"] = 0.3013429063,
-				["zy"] = 0.4475577144,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[2] = 
-			{
-				["y"] = 0.3406300000,
-				["z"] = 19,
-				["x"] = 0.2195900000,
-				["zx"] = 0.5383657445,
-				["zy"] = 0.6211284684,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[3] = 
-			{
-				["y"] = 0.5119300000,
-				["z"] = 57,
-				["x"] = 0.8356300000,
-				["zx"] = 0.8881316945,
-				["zy"] = 0.5175712715,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[4] = 
-			{
-				["y"] = 0.7218800000,
-				["z"] = 383,
-				["x"] = 0.3975100000,
-				["zx"] = 0.2983779324,
-				["zy"] = 0.4328051538,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[5] = 
-			{
-				["y"] = 0.7379200000,
-				["z"] = 383,
-				["x"] = 0.4045800000,
-				["zx"] = 0.3495056533,
-				["zy"] = 0.5488007776,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[6] = 
-			{
-				["y"] = 0.3386700000,
-				["z"] = 19,
-				["x"] = 0.2067600000,
-				["zx"] = 0.4467228881,
-				["zy"] = 0.6071284689,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[7] = 
-			{
-				["y"] = 0.3380500000,
-				["z"] = 19,
-				["x"] = 0.2114000000,
-				["zx"] = 0.4798657450,
-				["zy"] = 0.6026998977,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[8] = 
-			{
-				["y"] = 0.3423100000,
-				["z"] = 19,
-				["x"] = 0.2108600000,
-				["zx"] = 0.4760086021,
-				["zy"] = 0.6331284679,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[9] = 
-			{
-				["y"] = 0.5195300000,
-				["z"] = 57,
-				["x"] = 0.8327700000,
-				["zx"] = 0.8702477518,
-				["zy"] = 0.5650950290,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[10] = 
-			{
-				["y"] = 0.5165300000,
-				["z"] = 57,
-				["x"] = 0.8389500000,
-				["zx"] = 0.9088920754,
-				["zy"] = 0.5463356510,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[11] = 
-			{
-				["y"] = 0.5156700000,
-				["z"] = 57,
-				["x"] = 0.8288500000,
-				["zx"] = 0.8457354948,
-				["zy"] = 0.5409579627,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[12] = 
-			{
-				["y"] = 0.7344000000,
-				["z"] = 383,
-				["x"] = 0.3984100000,
-				["zx"] = 0.3048864118,
-				["zy"] = 0.5233453789,
-				["i"] = 12,
-				["m"] = 7,
-			},
-		},
-		["c"] = true,
-		["k"] = 178,
-	},
-	[179] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.5632800000,
-				["z"] = 117,
-				["x"] = 0.7404300000,
-				["zx"] = 0.4078799736,
-				["zy"] = 0.4120998347,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[2] = 
-			{
-				["y"] = 0.6992000000,
-				["z"] = 108,
-				["x"] = 0.3498200000,
-				["zx"] = 0.6655745436,
-				["zy"] = 0.5455388456,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[3] = 
-			{
-				["y"] = 0.7002200000,
-				["z"] = 108,
-				["x"] = 0.3554200000,
-				["zx"] = 0.7133932040,
-				["zy"] = 0.5542486804,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[4] = 
-			{
-				["y"] = 0.5204200000,
-				["z"] = 181,
-				["x"] = 0.5093200000,
-				["zx"] = 0.2739999783,
-				["zy"] = 0.6689999294,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[5] = 
-			{
-				["y"] = 0.5647500000,
-				["z"] = 117,
-				["x"] = 0.7512900000,
-				["zx"] = 0.4983799452,
-				["zy"] = 0.4243498301,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[6] = 
-			{
-				["y"] = 0.5590800000,
-				["z"] = 117,
-				["x"] = 0.7463200000,
-				["zx"] = 0.4569632915,
-				["zy"] = 0.3770998479,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[7] = 
-			{
-				["y"] = 0.2585100000,
-				["z"] = 20,
-				["x"] = 0.1546000000,
-				["zx"] = 0.2973517552,
-				["zy"] = 0.6333948772,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[8] = 
-			{
-				["y"] = 0.6948300000,
-				["z"] = 108,
-				["x"] = 0.3584900000,
-				["zx"] = 0.7396080768,
-				["zy"] = 0.5082231809,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[9] = 
-			{
-				["y"] = 0.2653600000,
-				["z"] = 20,
-				["x"] = 0.1620100000,
-				["zx"] = 0.3583472309,
-				["zy"] = 0.6897807073,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[10] = 
-			{
-				["y"] = 0.2640300000,
-				["z"] = 20,
-				["x"] = 0.1557500000,
-				["zx"] = 0.3068179896,
-				["zy"] = 0.6788328016,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[11] = 
-			{
-				["y"] = 0.2611200000,
-				["z"] = 20,
-				["x"] = 0.1630300000,
-				["zx"] = 0.3667433692,
-				["zy"] = 0.6548791132,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[12] = 
-			{
-				["y"] = 0.5654300000,
-				["z"] = 117,
-				["x"] = 0.7455500000,
-				["zx"] = 0.4505466269,
-				["zy"] = 0.4300164947,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[13] = 
-			{
-				["y"] = 0.6949700000,
-				["z"] = 108,
-				["x"] = 0.3498300000,
-				["zx"] = 0.6656599341,
-				["zy"] = 0.5094186485,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[14] = 
-			{
-				["d"] = true,
-				["y"] = 0.5914400000,
-				["z"] = 187,
-				["x"] = 0.7199800000,
-				["zx"] = 0.2374635136,
-				["zy"] = 0.6467665280,
-				["i"] = 12,
-				["m"] = 9,
-			},
-		},
-		["c"] = true,
-		["k"] = 179,
-	},
-	[180] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.5603500000,
-				["z"] = 117,
-				["x"] = 0.7631000000,
-				["zx"] = 0.5967965811,
-				["zy"] = 0.3876831773,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[2] = 
-			{
-				["y"] = 0.6701500000,
-				["z"] = 108,
-				["x"] = 0.3148500000,
-				["zx"] = 0.3669640875,
-				["zy"] = 0.2974793356,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[3] = 
-			{
-				["y"] = 0.2637900000,
-				["z"] = 20,
-				["x"] = 0.1761800000,
-				["zx"] = 0.4749877019,
-				["zy"] = 0.6768572397,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[4] = 
-			{
-				["y"] = 0.6788700000,
-				["z"] = 108,
-				["x"] = 0.3159500000,
-				["zx"] = 0.3763570387,
-				["zy"] = 0.3719398839,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[5] = 
-			{
-				["y"] = 0.5568900000,
-				["z"] = 117,
-				["x"] = 0.7617200000,
-				["zx"] = 0.5852965847,
-				["zy"] = 0.3588498548,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[6] = 
-			{
-				["y"] = 0.5532100000,
-				["z"] = 117,
-				["x"] = 0.7588300000,
-				["zx"] = 0.5612132589,
-				["zy"] = 0.3281831997,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[7] = 
-			{
-				["y"] = 0.5612500000,
-				["z"] = 117,
-				["x"] = 0.7540100000,
-				["zx"] = 0.5210466048,
-				["zy"] = 0.3951831744,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[8] = 
-			{
-				["y"] = 0.4716700000,
-				["z"] = 181,
-				["x"] = 0.4983800000,
-				["zx"] = 0.2132222037,
-				["zy"] = 0.3981665988,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[9] = 
-			{
-				["y"] = 0.2658100000,
-				["z"] = 20,
-				["x"] = 0.1692900000,
-				["zx"] = 0.4182726105,
-				["zy"] = 0.6934848859,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[10] = 
-			{
-				["y"] = 0.6734600000,
-				["z"] = 108,
-				["x"] = 0.3108400000,
-				["zx"] = 0.3327225111,
-				["zy"] = 0.3257436033,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[11] = 
-			{
-				["y"] = 0.2652200000,
-				["z"] = 20,
-				["x"] = 0.1711100000,
-				["zx"] = 0.4332539554,
-				["zy"] = 0.6886282962,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[12] = 
-			{
-				["y"] = 0.2682100000,
-				["z"] = 20,
-				["x"] = 0.1770500000,
-				["zx"] = 0.4821491140,
-				["zy"] = 0.7132405052,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[13] = 
-			{
-				["y"] = 0.6673600000,
-				["z"] = 108,
-				["x"] = 0.3061500000,
-				["zx"] = 0.2926743830,
-				["zy"] = 0.2736553758,
-				["i"] = 12,
-				["m"] = 16,
-			},
-		},
-		["c"] = true,
-		["k"] = 180,
-	},
-	[181] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.2615200000,
-				["z"] = 20,
-				["x"] = 0.1768600000,
-				["zx"] = 0.4805851274,
-				["zy"] = 0.6581717164,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[2] = 
-			{
-				["y"] = 0.7306300000,
-				["z"] = 108,
-				["x"] = 0.3621300000,
-				["zx"] = 0.7706902060,
-				["zy"] = 0.8139213035,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[3] = 
-			{
-				["y"] = 0.7266400000,
-				["z"] = 108,
-				["x"] = 0.3615500000,
-				["zx"] = 0.7657375591,
-				["zy"] = 0.7798504792,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[4] = 
-			{
-				["y"] = 0.5490400000,
-				["z"] = 117,
-				["x"] = 0.7255200000,
-				["zx"] = 0.2836300125,
-				["zy"] = 0.2934332127,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[5] = 
-			{
-				["y"] = 0.5548100000,
-				["z"] = 117,
-				["x"] = 0.7260400000,
-				["zx"] = 0.2879633444,
-				["zy"] = 0.3415165280,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[6] = 
-			{
-				["y"] = 0.7199900000,
-				["z"] = 108,
-				["x"] = 0.3600500000,
-				["zx"] = 0.7529289893,
-				["zy"] = 0.7230657721,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[7] = 
-			{
-				["y"] = 0.5565000000,
-				["z"] = 117,
-				["x"] = 0.7163700000,
-				["zx"] = 0.2073800363,
-				["zy"] = 0.3555998560,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[8] = 
-			{
-				["y"] = 0.2617900000,
-				["z"] = 20,
-				["x"] = 0.1687300000,
-				["zx"] = 0.4136629659,
-				["zy"] = 0.6603942236,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[9] = 
-			{
-				["y"] = 0.2550500000,
-				["z"] = 20,
-				["x"] = 0.1780500000,
-				["zx"] = 0.4903806222,
-				["zy"] = 0.6049138594,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[10] = 
-			{
-				["y"] = 0.4672100000,
-				["z"] = 181,
-				["x"] = 0.5178100000,
-				["zx"] = 0.3211666426,
-				["zy"] = 0.3733888213,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[11] = 
-			{
-				["y"] = 0.2586600000,
-				["z"] = 20,
-				["x"] = 0.1699400000,
-				["zx"] = 0.4236230908,
-				["zy"] = 0.6346296034,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[12] = 
-			{
-				["y"] = 0.7251700000,
-				["z"] = 108,
-				["x"] = 0.3545200000,
-				["zx"] = 0.7057080622,
-				["zy"] = 0.7672980703,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[13] = 
-			{
-				["y"] = 0.5598200000,
-				["z"] = 117,
-				["x"] = 0.7240800000,
-				["zx"] = 0.2716300162,
-				["zy"] = 0.3832665123,
-				["i"] = 12,
-				["m"] = 9,
-			},
-		},
-		["c"] = true,
-		["k"] = 181,
-	},
-	[182] = 
-	{
-		["e"] = 
-		{
-			[16] = 
-			{
-				["y"] = 0.2479400000,
-				["z"] = 20,
-				["x"] = 0.1760100000,
-				["zx"] = 0.4735883455,
-				["zy"] = 0.5463878372,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[1] = 
-			{
-				["y"] = 0.2517800000,
-				["z"] = 20,
-				["x"] = 0.1732600000,
-				["zx"] = 0.4509516980,
-				["zy"] = 0.5779968281,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[2] = 
-			{
-				["d"] = true,
-				["y"] = 0.5448800000,
-				["z"] = 117,
-				["x"] = 0.7447200000,
-				["zx"] = 0.4436299624,
-				["zy"] = 0.2587665591,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[3] = 
-			{
-				["y"] = 0.2534900000,
-				["z"] = 20,
-				["x"] = 0.1675500000,
-				["zx"] = 0.4039497862,
-				["zy"] = 0.5920727068,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[4] = 
-			{
-				["y"] = 0.5464400000,
-				["z"] = 117,
-				["x"] = 0.7510300000,
-				["zx"] = 0.4962132792,
-				["zy"] = 0.2717665542,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[5] = 
-			{
-				["y"] = 0.6791700000,
-				["z"] = 108,
-				["x"] = 0.3474300000,
-				["zx"] = 0.6451662225,
-				["zy"] = 0.3745016000,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[6] = 
-			{
-				["y"] = 0.2515400000,
-				["z"] = 20,
-				["x"] = 0.1739900000,
-				["zx"] = 0.4569606989,
-				["zy"] = 0.5760212662,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[7] = 
-			{
-				["y"] = 0.2609100000,
-				["z"] = 849,
-				["x"] = 0.7332600000,
-				["zx"] = 0.2895828314,
-				["zy"] = 0.2204004564,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[8] = 
-			{
-				["y"] = 0.5502700000,
-				["z"] = 117,
-				["x"] = 0.7460900000,
-				["zx"] = 0.4550466255,
-				["zy"] = 0.3036832089,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[9] = 
-			{
-				["y"] = 0.3557300000,
-				["z"] = 849,
-				["x"] = 0.7605500000,
-				["zx"] = 0.4412094376,
-				["zy"] = 0.7472320389,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[10] = 
-			{
-				["y"] = 0.3334200000,
-				["z"] = 849,
-				["x"] = 0.8214400000,
-				["zx"] = 0.7795217885,
-				["zy"] = 0.6232749349,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[11] = 
-			{
-				["y"] = 0.6840200000,
-				["z"] = 108,
-				["x"] = 0.3465500000,
-				["zx"] = 0.6376518616,
-				["zy"] = 0.4159160104,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[12] = 
-			{
-				["y"] = 0.6800300000,
-				["z"] = 108,
-				["x"] = 0.3559100000,
-				["zx"] = 0.7175773368,
-				["zy"] = 0.3818451862,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[13] = 
-			{
-				["y"] = 0.5099900000,
-				["z"] = 181,
-				["x"] = 0.5256800000,
-				["zx"] = 0.3648888625,
-				["zy"] = 0.6110554855,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[14] = 
-			{
-				["y"] = 0.5449100000,
-				["z"] = 117,
-				["x"] = 0.7447500000,
-				["zx"] = 0.4438799623,
-				["zy"] = 0.2590165590,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[15] = 
-			{
-				["y"] = 0.6728500000,
-				["z"] = 108,
-				["x"] = 0.3518900000,
-				["zx"] = 0.6832503699,
-				["zy"] = 0.3205347806,
-				["i"] = 12,
-				["m"] = 16,
-			},
-		},
-		["c"] = true,
-		["k"] = 182,
-	},
-	[183] = 
-	{
-		["e"] = 
-		{
-			[2] = 
-			{
-				["y"] = 0.4463200000,
-				["z"] = 181,
-				["x"] = 0.4966300000,
-				["zx"] = 0.2034999819,
-				["zy"] = 0.2573332669,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[1] = 
-			{
-				["d"] = true,
-				["y"] = 0.4434900000,
-				["z"] = 283,
-				["x"] = 0.6738100000,
-				["zx"] = 0.0920500789,
-				["zy"] = 0.4423023299,
-				["i"] = 12,
-				["m"] = 11,
-			},
-		},
-		["c"] = true,
-		["k"] = 183,
-	},
-	[184] = 
-	{
-		["e"] = 
-		{
-			[2] = 
-			{
-				["y"] = 0.4268200000,
-				["z"] = 181,
-				["x"] = 0.5957000000,
-				["zx"] = 0.7538888426,
-				["zy"] = 0.1489999347,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[1] = 
-			{
-				["d"] = true,
-				["y"] = 0.3973000000,
-				["z"] = 22,
-				["x"] = 0.2457800000,
-				["zx"] = 0.8831218212,
-				["zy"] = 0.4756025862,
-				["i"] = 12,
-				["m"] = 5,
-			},
-		},
-		["c"] = true,
-		["k"] = 184,
-	},
-	[185] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["d"] = true,
-				["y"] = 0.2607700000,
-				["z"] = 130,
-				["x"] = 0.2141900000,
-				["zx"] = 0.7878673280,
-				["zy"] = 0.6519980854,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[2] = 
-			{
-				["d"] = true,
-				["y"] = 0.5458500000,
-				["z"] = 507,
-				["x"] = 0.5550200000,
-				["zx"] = 0.5278888542,
-				["zy"] = 0.8102777057,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[3] = 
-			{
-				["y"] = 0.5176600000,
-				["z"] = 816,
-				["x"] = 0.2206700000,
-				["zx"] = 0.3402623871,
-				["zy"] = 0.6025321713,
-				["i"] = 12,
-				["m"] = 28,
-			},
-			[4] = 
-			{
-				["y"] = 0.5170100000,
-				["z"] = 816,
-				["x"] = 0.2245200000,
-				["zx"] = 0.3829777203,
-				["zy"] = 0.5953204948,
-				["i"] = 12,
-				["m"] = 28,
-			},
-			[5] = 
-			{
-				["y"] = 0.5274100000,
-				["z"] = 816,
-				["x"] = 0.2315500000,
-				["zx"] = 0.4609748092,
-				["zy"] = 0.7107073185,
-				["i"] = 12,
-				["m"] = 28,
-			},
-			[6] = 
-			{
-				["d"] = true,
-				["y"] = 0.2619900000,
-				["z"] = 130,
-				["x"] = 0.2101200000,
-				["zx"] = 0.7543650897,
-				["zy"] = 0.6620405252,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[7] = 
-			{
-				["y"] = 0.5355700000,
-				["z"] = 816,
+				["r"] = false,
 				["x"] = 0.2247700000,
-				["zx"] = 0.3857514432,
-				["zy"] = 0.8012415955,
+				["d"] = false,
+				["m"] = 5,
+				["z"] = 1140,
+				["y"] = 0.4122700000,
+				["zy"] = 0.5687692682,
+				["zx"] = 0.7523639898,
 				["i"] = 12,
-				["m"] = 28,
 			},
 		},
+		["n"] = "Grandmaster Ghelin-Brol (1E 2703 - 2734)",
 		["c"] = true,
-		["k"] = 185,
 	},
-	[186] = 
+	[5638] = 
 	{
+		["k"] = 5638,
 		["e"] = 
 		{
 			[1] = 
 			{
-				["d"] = true,
-				["y"] = 0.6017300000,
-				["x"] = 0.2812400000,
-				["z"] = 131,
+				["r"] = false,
+				["x"] = 0.2250800000,
+				["d"] = false,
+				["m"] = 5,
+				["z"] = 1140,
+				["y"] = 0.4121400000,
+				["zy"] = 0.5679602061,
+				["zx"] = 0.7542932911,
 				["i"] = 12,
-				["m"] = 8,
-			},
-			[2] = 
-			{
-				["d"] = true,
-				["y"] = 0.6025700000,
-				["x"] = 0.2810800000,
-				["z"] = 131,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[3] = 
-			{
-				["y"] = 0.5300400000,
-				["z"] = 181,
-				["x"] = 0.5284900000,
-				["zx"] = 0.3804999729,
-				["zy"] = 0.7224443732,
-				["i"] = 12,
-				["m"] = 14,
 			},
 		},
+		["n"] = "Grandmaster Vashu-Pir (1E 2734 - 2758)",
 		["c"] = true,
-		["k"] = 186,
 	},
-	[187] = 
+	[5639] = 
 	{
+		["k"] = 5639,
 		["e"] = 
 		{
 			[1] = 
 			{
-				["y"] = 0.2258600000,
-				["z"] = 684,
-				["x"] = 0.2663700000,
-				["zx"] = 0.5397857517,
-				["zy"] = 0.3981428888,
+				["r"] = false,
+				["x"] = 0.2247700000,
+				["d"] = false,
+				["m"] = 5,
+				["z"] = 1140,
+				["y"] = 0.4121400000,
+				["zy"] = 0.5679602061,
+				["zx"] = 0.7523639898,
 				["i"] = 12,
-				["m"] = 27,
-			},
-			[2] = 
-			{
-				["d"] = true,
-				["y"] = 0.4886400000,
-				["z"] = 500,
-				["x"] = 0.5861800000,
-				["zx"] = 0.7009999564,
-				["zy"] = 0.4924443756,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[3] = 
-			{
-				["y"] = 0.2181300000,
-				["z"] = 684,
-				["x"] = 0.2917100000,
-				["zx"] = 0.7207857711,
-				["zy"] = 0.3429286055,
-				["i"] = 12,
-				["m"] = 27,
-			},
-			[4] = 
-			{
-				["y"] = 0.2162800000,
-				["z"] = 684,
-				["x"] = 0.2817600000,
-				["zx"] = 0.6497143349,
-				["zy"] = 0.3297143203,
-				["i"] = 12,
-				["m"] = 27,
-			},
-			[5] = 
-			{
-				["d"] = true,
-				["y"] = 0.7265900000,
-				["z"] = 126,
-				["x"] = 0.4375400000,
-				["zx"] = 0.5878606294,
-				["zy"] = 0.4668662129,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[6] = 
-			{
-				["y"] = 0.2134400000,
-				["z"] = 684,
-				["x"] = 0.2797000000,
-				["zx"] = 0.6350000476,
-				["zy"] = 0.3094286069,
-				["i"] = 12,
-				["m"] = 27,
 			},
 		},
+		["n"] = "Grandmaster Jaiv-Yora (1E 2808 -  2835)",
 		["c"] = true,
-		["k"] = 187,
 	},
-	[188] = 
+	[5640] = 
 	{
+		["k"] = 5640,
 		["e"] = 
 		{
 			[1] = 
 			{
-				["y"] = 0.4812300000,
-				["z"] = 181,
-				["x"] = 0.5695000000,
-				["zx"] = 0.6083332945,
-				["zy"] = 0.4512777094,
+				["r"] = false,
+				["x"] = 0.2250800000,
+				["d"] = false,
+				["m"] = 5,
+				["z"] = 1140,
+				["y"] = 0.4122700000,
+				["zy"] = 0.5687692682,
+				["zx"] = 0.7542932911,
 				["i"] = 12,
-				["m"] = 14,
-			},
-			[2] = 
-			{
-				["y"] = 0.3484000000,
-				["z"] = 849,
-				["x"] = 0.8391600000,
-				["zx"] = 0.8779762943,
-				["zy"] = 0.7065056573,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[3] = 
-			{
-				["y"] = 0.3713500000,
-				["z"] = 849,
-				["x"] = 0.8146300000,
-				["zx"] = 0.7416845885,
-				["zy"] = 0.8340186801,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[4] = 
-			{
-				["d"] = true,
-				["y"] = 0.5232100000,
-				["z"] = 63,
-				["x"] = 0.8207500000,
-				["zx"] = 0.7950851679,
-				["zy"] = 0.5881065326,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[5] = 
-			{
-				["y"] = 0.2716900000,
-				["z"] = 849,
-				["x"] = 0.7983800000,
-				["zx"] = 0.6513975840,
-				["zy"] = 0.2802954623,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[6] = 
-			{
-				["y"] = 0.2627900000,
-				["z"] = 849,
-				["x"] = 0.7248300000,
-				["zx"] = 0.2427447115,
-				["zy"] = 0.2308459676,
-				["i"] = 12,
-				["m"] = 30,
 			},
 		},
+		["n"] = "Grandmaster Ettiene Volusus (1E 2879 - 2902)",
 		["c"] = true,
-		["k"] = 188,
 	},
-	[189] = 
+	[5769] = 
 	{
+		["k"] = 5769,
 		["e"] = 
 		{
-			[2] = 
-			{
-				["d"] = true,
-				["y"] = 0.4244300000,
-				["z"] = 496,
-				["x"] = 0.5241800000,
-				["zx"] = 0.3565555296,
-				["zy"] = 0.1357221571,
-				["i"] = 12,
-				["m"] = 14,
-			},
 			[1] = 
 			{
-				["d"] = true,
-				["y"] = 0.6123300000,
-				["z"] = 380,
-				["x"] = 0.1896500000,
-				["zx"] = 0.3319375710,
-				["zy"] = 0.0978730431,
+				["r"] = false,
+				["x"] = 0.5552100000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7604600000,
+				["zy"] = 0.5286236499,
+				["zx"] = 0.4649550039,
 				["i"] = 12,
-				["m"] = 15,
 			},
 		},
+		["n"] = "History of Senchal: An Overview",
 		["c"] = true,
-		["k"] = 189,
 	},
-	[190] = 
+	[5645] = 
 	{
+		["k"] = 5645,
 		["e"] = 
 		{
-			[2] = 
-			{
-				["y"] = 0.4698000000,
-				["z"] = 181,
-				["x"] = 0.5665600000,
-				["zx"] = 0.5919999620,
-				["zy"] = 0.3877777100,
-				["i"] = 12,
-				["m"] = 14,
-			},
 			[1] = 
 			{
-				["d"] = true,
-				["y"] = 0.3256600000,
-				["z"] = 144,
-				["x"] = 0.1377000000,
-				["zx"] = 0.7929257375,
-				["zy"] = 0.3481300627,
+				["r"] = false,
+				["x"] = -0.1185900000,
 				["i"] = 12,
-				["m"] = 2,
+				["y"] = 0.1184400000,
+				["d"] = true,
+				["m"] = 24,
+				["z"] = 1142,
+			},
+			[2] = 
+			{
+				["r"] = false,
+				["x"] = 0.2245600000,
+				["d"] = false,
+				["m"] = 5,
+				["z"] = 1140,
+				["y"] = 0.4119900000,
+				["zy"] = 0.5670266729,
+				["zx"] = 0.7510570438,
+				["i"] = 12,
 			},
 		},
+		["n"] = "Searching for the Horn of Ja'darri, Part 1",
 		["c"] = true,
-		["k"] = 190,
 	},
-	[191] = 
+	[5774] = 
 	{
+		["k"] = 5774,
 		["e"] = 
 		{
-			[2] = 
-			{
-				["y"] = 0.4388500000,
-				["z"] = 181,
-				["x"] = 0.6001800000,
-				["zx"] = 0.7787777302,
-				["zy"] = 0.2158332673,
-				["i"] = 12,
-				["m"] = 14,
-			},
 			[1] = 
 			{
-				["d"] = true,
-				["y"] = 0.3292200000,
-				["z"] = 146,
-				["x"] = 0.2287900000,
-				["zx"] = 0.6040800297,
-				["zy"] = 0.5396284716,
+				["r"] = false,
+				["x"] = 0.5311900000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7209700000,
+				["zy"] = 0.2463732633,
+				["zx"] = 0.2932748647,
 				["i"] = 12,
+			},
+		},
+		["n"] = "Ra'khajin's Journal, Page 12",
+		["c"] = true,
+	},
+	[5775] = 
+	{
+		["k"] = 5775,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5280000000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7219800000,
+				["zy"] = 0.2535921260,
+				["zx"] = 0.2704747130,
+				["i"] = 12,
+			},
+		},
+		["n"] = "Ra'khajin's Journal, Page 25",
+		["c"] = true,
+	},
+	[5776] = 
+	{
+		["k"] = 5776,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5181500000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7319900000,
+				["zy"] = 0.3251374887,
+				["zx"] = 0.2000729907,
+				["i"] = 12,
+			},
+		},
+		["n"] = "History of Pellitine: An Overview",
+		["c"] = true,
+	},
+	[5650] = 
+	{
+		["k"] = 5650,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.2424000000,
+				["d"] = false,
 				["m"] = 4,
+				["z"] = 1143,
+				["y"] = 0.3221700000,
+				["zy"] = 0.4892713744,
+				["zx"] = 0.7012943123,
+				["i"] = 12,
 			},
-		},
-		["c"] = true,
-		["k"] = 191,
-	},
-	[192] = 
-	{
-		["e"] = 
-		{
 			[2] = 
 			{
-				["y"] = 0.4965400000,
-				["z"] = 181,
-				["x"] = 0.5884800000,
-				["zx"] = 0.7137777335,
-				["zy"] = 0.5363332641,
+				["r"] = false,
+				["x"] = -0.1185900000,
 				["i"] = 12,
-				["m"] = 14,
-			},
-			[1] = 
-			{
+				["y"] = 0.1184700000,
 				["d"] = true,
-				["y"] = 0.3319400000,
-				["z"] = 449,
-				["x"] = 0.6773600000,
-				["zx"] = 0.7704024954,
-				["zy"] = 0.6958549464,
-				["i"] = 12,
-				["m"] = 13,
+				["m"] = 24,
+				["z"] = 1142,
 			},
 		},
+		["n"] = "Searching for the Horn of Ja'darri, Part 2",
 		["c"] = true,
-		["k"] = 192,
 	},
-	[193] = 
+	[5655] = 
 	{
+		["n"] = "Letter to Marillan",
+		["k"] = 5655,
 		["e"] = 
 		{
 			[1] = 
 			{
-				["y"] = 0.7012100000,
-				["z"] = 381,
-				["x"] = 0.2208200000,
-				["zx"] = 0.5293160583,
-				["zy"] = 0.6606887051,
+				["r"] = false,
+				["x"] = -0.1186600000,
 				["i"] = 12,
-				["m"] = 15,
+				["y"] = 0.1181900000,
+				["d"] = true,
+				["m"] = 24,
+				["z"] = 1142,
 			},
 			[2] = 
 			{
-				["y"] = 0.7063200000,
-				["z"] = 381,
-				["x"] = 0.2193100000,
-				["zx"] = 0.5197542515,
-				["zy"] = 0.6930468063,
+				["r"] = false,
+				["x"] = 0.6408800000,
+				["d"] = true,
+				["m"] = 13,
+				["z"] = 1141,
+				["y"] = 0.2879500000,
+				["zy"] = 0.4209174662,
+				["zx"] = 0.5424024885,
 				["i"] = 12,
+			},
+		},
+		["q"] = "The Dragonguard's Legacy",
+		["c"] = true,
+	},
+	[5656] = 
+	{
+		["k"] = 5656,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.6408900000,
+				["d"] = true,
+				["m"] = 13,
+				["z"] = 1141,
+				["y"] = 0.2889100000,
+				["zy"] = 0.4269174661,
+				["zx"] = 0.5424649885,
+				["i"] = 12,
+			},
+		},
+		["n"] = "Searching for the Horn of Ja'darri, Part 3",
+		["c"] = true,
+	},
+	[5660] = 
+	{
+		["k"] = 5660,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5106400000,
+				["d"] = true,
+				["m"] = 37,
+				["z"] = 1135,
+				["y"] = 0.7725800000,
+				["zy"] = 0.6152500030,
+				["zx"] = 0.1463961445,
+				["i"] = 12,
+			},
+		},
+		["n"] = "Restored Tablet",
+		["c"] = true,
+	},
+	[5661] = 
+	{
+		["k"] = 5661,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5175000000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7309300000,
+				["zy"] = 0.3175612565,
+				["zx"] = 0.1954271918,
+				["i"] = 12,
+			},
+		},
+		["n"] = "The Colorful Khajiit",
+		["c"] = true,
+	},
+	[5664] = 
+	{
+		["k"] = 5664,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.7058200000,
+				["i"] = 12,
+				["y"] = 0.3687100000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+			},
+		},
+		["n"] = "Mantra of Redemption",
+		["c"] = true,
+	},
+	[5665] = 
+	{
+		["n"] = "Letter to Shirnama",
+		["k"] = 5665,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5664500000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7566900000,
+				["zy"] = 0.5016779938,
+				["zx"] = 0.5452915886,
+				["i"] = 12,
+			},
+		},
+		["q"] = "Order of the New Moon",
+		["c"] = true,
+	},
+	[5666] = 
+	{
+		["k"] = 5666,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5485500000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7194100000,
+				["zy"] = 0.2352233366,
+				["zx"] = 0.4173534332,
+				["i"] = 12,
+			},
+		},
+		["n"] = "The Pride of Alkosh",
+		["c"] = true,
+	},
+	[5667] = 
+	{
+		["k"] = 5667,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5414000000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7198600000,
+				["zy"] = 0.2384396616,
+				["zx"] = 0.3662496449,
+				["i"] = 12,
+			},
+		},
+		["n"] = "Letter from Clan Mother Tadali",
+		["c"] = true,
+	},
+	[5668] = 
+	{
+		["n"] = "Final Letter of Sergeant Berarah",
+		["k"] = 5668,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = -0.1190500000,
+				["i"] = 12,
+				["y"] = 0.1183800000,
+				["d"] = true,
+				["m"] = 24,
+				["z"] = 1142,
+			},
+			[2] = 
+			{
+				["r"] = false,
+				["x"] = 0.4769100000,
+				["i"] = 12,
+				["y"] = 0.7012000000,
+				["d"] = false,
+				["m"] = 24,
+				["z"] = 1144,
+			},
+		},
+		["q"] = "The Horn of Ja'darri",
+		["c"] = true,
+	},
+	[5671] = 
+	{
+		["k"] = 5671,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5525400000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7368700000,
+				["zy"] = 0.3600167464,
+				["zx"] = 0.4458714913,
+				["i"] = 12,
+			},
+		},
+		["n"] = "The Many Threads",
+		["c"] = true,
+	},
+	[5672] = 
+	{
+		["k"] = 5672,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5525400000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7363700000,
+				["zy"] = 0.3564430519,
+				["zx"] = 0.4458714913,
+				["i"] = 12,
+			},
+		},
+		["n"] = "Nishzo's Journal",
+		["c"] = true,
+	},
+	[5674] = 
+	{
+		["k"] = 5674,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5654100000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7134800000,
+				["zy"] = 0.1928393206,
+				["zx"] = 0.5378583103,
+				["i"] = 12,
+			},
+		},
+		["n"] = "Song of Alkosh's Champion",
+		["c"] = true,
+	},
+	[5676] = 
+	{
+		["n"] = "Singed Lady G Note",
+		["k"] = 5676,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5426500000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7645300000,
+				["zy"] = 0.5577135226,
+				["zx"] = 0.3751838737,
+				["i"] = 12,
+			},
+		},
+		["q"] = "The Deadliest Prey",
+		["c"] = true,
+	},
+	[5678] = 
+	{
+		["n"] = "Invitation to the Hunt",
+		["k"] = 5678,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5578500000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7563000000,
+				["zy"] = 0.4988905122,
+				["zx"] = 0.4838240949,
+				["i"] = 12,
+			},
+		},
+		["q"] = "The Deadliest Prey",
+		["c"] = true,
+	},
+	[5680] = 
+	{
+		["k"] = 5680,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = -0.1236500000,
+				["i"] = 12,
+				["y"] = 0.1095300000,
+				["d"] = true,
+				["m"] = 24,
+				["z"] = 1142,
+			},
+		},
+		["n"] = "Enzamir's Note",
+		["c"] = true,
+	},
+	[5809] = 
+	{
+		["k"] = 5809,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5550000000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7601800000,
+				["zy"] = 0.5266223810,
+				["zx"] = 0.4634540535,
+				["i"] = 12,
+			},
+		},
+		["n"] = "The Bounty and the Shields",
+		["c"] = true,
+	},
+	[5810] = 
+	{
+		["k"] = 5810,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5114300000,
+				["d"] = true,
+				["m"] = 37,
+				["z"] = 1135,
+				["y"] = 0.7718300000,
+				["zy"] = 0.6098894614,
+				["zx"] = 0.1520425771,
+				["i"] = 12,
+			},
+		},
+		["n"] = "Sacred Waters of the Shining Sea",
+		["c"] = true,
+	},
+	[5811] = 
+	{
+		["k"] = 5811,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5118300000,
+				["d"] = true,
+				["m"] = 37,
+				["z"] = 1135,
+				["y"] = 0.7704300000,
+				["zy"] = 0.5998831170,
+				["zx"] = 0.1549015303,
+				["i"] = 12,
+			},
+		},
+		["n"] = "The Marriage of Moon and Tide",
+		["c"] = true,
+	},
+	[5812] = 
+	{
+		["k"] = 5812,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5538900000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7614000000,
+				["zy"] = 0.5353421954,
+				["zx"] = 0.4555204584,
+				["i"] = 12,
+			},
+		},
+		["n"] = "The Gambler's Art",
+		["c"] = true,
+	},
+	[5814] = 
+	{
+		["k"] = 5814,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5171700000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7393400000,
+				["zy"] = 0.3776707969,
+				["zx"] = 0.1930685554,
+				["i"] = 12,
+			},
+		},
+		["n"] = "Twilight Cantors: The Exorcists of Azurah",
+		["c"] = true,
+	},
+	[5815] = 
+	{
+		["k"] = 5815,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5468300000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7160300000,
+				["zy"] = 0.2110651622,
+				["zx"] = 0.4050599345,
+				["i"] = 12,
+			},
+		},
+		["n"] = "Pridehome: A Place Outside Time?",
+		["c"] = true,
+	},
+	[5819] = 
+	{
+		["k"] = 5819,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5613600000,
+				["d"] = true,
+				["m"] = 37,
+				["z"] = 1134,
+				["y"] = 0.7271500000,
+				["zy"] = 0.2905441265,
+				["zx"] = 0.5089114092,
+				["i"] = 12,
+			},
+		},
+		["n"] = "Topal Legionary Academy: A Khajiit's Summary",
+		["c"] = true,
+	},
+	[5696] = 
+	{
+		["k"] = 5696,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = -0.1185900000,
+				["i"] = 12,
+				["y"] = 0.1185000000,
+				["d"] = true,
+				["m"] = 24,
+				["z"] = 1142,
+			},
+		},
+		["n"] = "Tombstone of Naio-Bhefeo",
+		["c"] = true,
+	},
+	[5698] = 
+	{
+		["k"] = 5698,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = -0.1190000000,
+				["i"] = 12,
+				["y"] = 0.1184500000,
+				["d"] = true,
+				["m"] = 24,
+				["z"] = 1142,
+			},
+			[2] = 
+			{
+				["r"] = false,
+				["x"] = 0.4770000000,
+				["i"] = 12,
+				["y"] = 0.6998000000,
+				["d"] = false,
+				["m"] = 24,
+				["z"] = 1144,
+			},
+		},
+		["n"] = "The Illustrious Azashig's Letter",
+		["c"] = true,
+	},
+	[5699] = 
+	{
+		["k"] = 5699,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = -0.1190200000,
+				["i"] = 12,
+				["y"] = 0.1185800000,
+				["d"] = true,
+				["m"] = 24,
+				["z"] = 1142,
+			},
+			[2] = 
+			{
+				["r"] = false,
+				["x"] = 0.4764500000,
+				["i"] = 12,
+				["y"] = 0.6998000000,
+				["d"] = false,
+				["m"] = 24,
+				["z"] = 1144,
+			},
+		},
+		["n"] = "Letter to Halakaku",
+		["c"] = true,
+	},
+	[5700] = 
+	{
+		["k"] = 5700,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5172200000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7398600000,
+				["zy"] = 0.3813874391,
+				["zx"] = 0.1934259245,
+				["i"] = 12,
+			},
+		},
+		["n"] = "How We Came to Fly",
+		["c"] = true,
+	},
+	[5701] = 
+	{
+		["k"] = 5701,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.1693100000,
+				["d"] = false,
 				["m"] = 15,
+				["z"] = 381,
+				["y"] = 0.6352300000,
+				["zy"] = 0.2428824849,
+				["zx"] = 0.2031382882,
+				["i"] = 12,
+			},
+			[2] = 
+			{
+				["r"] = false,
+				["x"] = 0.7314200000,
+				["d"] = false,
+				["m"] = 11,
+				["z"] = 41,
+				["y"] = 0.4808800000,
+				["zy"] = 0.7044307701,
+				["zx"] = 0.4959339576,
+				["i"] = 12,
 			},
 			[3] = 
 			{
-				["y"] = 0.4337700000,
-				["z"] = 41,
-				["x"] = 0.7544500000,
-				["zx"] = 0.6573894203,
-				["zy"] = 0.3741587573,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[4] = 
-			{
-				["y"] = 0.7101500000,
-				["z"] = 381,
-				["x"] = 0.2243200000,
-				["zx"] = 0.5514791865,
-				["zy"] = 0.7172995514,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[5] = 
-			{
-				["y"] = 0.2984700000,
+				["r"] = false,
+				["x"] = 0.1257000000,
+				["d"] = false,
+				["m"] = 2,
 				["z"] = 3,
-				["x"] = 0.1414800000,
-				["zx"] = 0.8183909829,
-				["zy"] = 0.1649554585,
+				["y"] = 0.2939000000,
+				["zy"] = 0.1341681171,
+				["zx"] = 0.7120837147,
 				["i"] = 12,
-				["m"] = 2,
 			},
-			[6] = 
-			{
-				["d"] = true,
-				["y"] = 0.4369100000,
-				["z"] = 287,
-				["x"] = 0.7634500000,
-				["zx"] = 0.7204853289,
-				["zy"] = 0.3961722159,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[7] = 
-			{
-				["y"] = 0.2993300000,
-				["z"] = 3,
-				["x"] = 0.1371200000,
-				["zx"] = 0.7890183718,
-				["zy"] = 0.1707491385,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[8] = 
-			{
-				["y"] = 0.4327400000,
-				["z"] = 41,
-				["x"] = 0.7590700000,
-				["zx"] = 0.6897786534,
-				["zy"] = 0.3669377820,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[9] = 
-			{
-				["y"] = 0.3034800000,
-				["z"] = 3,
-				["x"] = 0.1411400000,
-				["zx"] = 0.8161004582,
-				["zy"] = 0.1987070130,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[10] = 
-			{
-				["y"] = 0.4384500000,
-				["z"] = 41,
-				["x"] = 0.7473300000,
-				["zx"] = 0.6074735459,
-				["zy"] = 0.4069686256,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[11] = 
-			{
-				["y"] = 0.2992900000,
-				["z"] = 3,
-				["x"] = 0.1443000000,
-				["zx"] = 0.8373888644,
-				["zy"] = 0.1704796650,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[12] = 
-			{
-				["y"] = 0.7069400000,
-				["z"] = 381,
-				["x"] = 0.2235500000,
-				["zx"] = 0.5466032983,
-				["zy"] = 0.6969728382,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[13] = 
-			{
-				["y"] = 0.4396800000,
-				["z"] = 181,
-				["x"] = 0.5149600000,
-				["zx"] = 0.3053332882,
-				["zy"] = 0.2204444516,
-				["i"] = 12,
-				["m"] = 14,
-			},
-		},
-		["c"] = true,
-		["k"] = 193,
-	},
-	[195] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.4560400000,
-				["z"] = 41,
-				["x"] = 0.7637200000,
-				["zx"] = 0.7223782062,
-				["zy"] = 0.5302860578,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[2] = 
-			{
-				["y"] = 0.4560900000,
-				["z"] = 41,
-				["x"] = 0.7579900000,
-				["zx"] = 0.6822071444,
-				["zy"] = 0.5306365906,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[3] = 
-			{
-				["y"] = 0.2934900000,
-				["z"] = 3,
-				["x"] = 0.1219600000,
-				["zx"] = 0.6868879166,
-				["zy"] = 0.1314060091,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[4] = 
-			{
-				["y"] = 0.2962500000,
-				["z"] = 3,
-				["x"] = 0.1287600000,
-				["zx"] = 0.7326984110,
-				["zy"] = 0.1499996799,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[5] = 
-			{
-				["y"] = 0.7104700000,
-				["z"] = 381,
-				["x"] = 0.2352000000,
-				["zx"] = 0.6203748535,
-				["zy"] = 0.7193258905,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[6] = 
-			{
-				["y"] = 0.7179600000,
-				["z"] = 381,
-				["x"] = 0.2308800000,
-				["zx"] = 0.5930192210,
-				["zy"] = 0.7667548881,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[7] = 
-			{
-				["y"] = 0.4524300000,
-				["z"] = 41,
-				["x"] = 0.7687100000,
-				["zx"] = 0.7573613822,
-				["zy"] = 0.5049775910,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[8] = 
-			{
-				["y"] = 0.2971100000,
-				["z"] = 3,
-				["x"] = 0.1347200000,
-				["zx"] = 0.7728499620,
-				["zy"] = 0.1557933599,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[9] = 
-			{
-				["y"] = 0.7135800000,
-				["z"] = 381,
-				["x"] = 0.2261400000,
-				["zx"] = 0.5630040131,
-				["zy"] = 0.7390193728,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[10] = 
-			{
-				["y"] = 0.3000500000,
-				["z"] = 3,
-				["x"] = 0.1319300000,
-				["zx"] = 0.7540541856,
-				["zy"] = 0.1755996613,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[11] = 
-			{
-				["y"] = 0.7089200000,
-				["z"] = 381,
-				["x"] = 0.2306100000,
-				["zx"] = 0.5913094940,
-				["zy"] = 0.7095108108,
-				["i"] = 12,
-				["m"] = 15,
-			},
-		},
-		["c"] = true,
-		["k"] = 195,
-	},
-	[196] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.3042100000,
-				["z"] = 3,
-				["x"] = 0.1262600000,
-				["zx"] = 0.7158563175,
-				["zy"] = 0.2036249042,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[2] = 
-			{
-				["y"] = 0.7145600000,
-				["z"] = 381,
-				["x"] = 0.2433200000,
-				["zx"] = 0.6717933109,
-				["zy"] = 0.7452250360,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[3] = 
-			{
-				["y"] = 0.4767900000,
-				["z"] = 41,
-				["x"] = 0.7090600000,
-				["zx"] = 0.3391757211,
-				["zy"] = 0.6757571617,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[4] = 
-			{
-				["y"] = 0.3031900000,
-				["z"] = 3,
-				["x"] = 0.1298800000,
-				["zx"] = 0.7402436689,
-				["zy"] = 0.1967533302,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[5] = 
-			{
-				["y"] = 0.7092600000,
-				["z"] = 381,
-				["x"] = 0.2448300000,
-				["zx"] = 0.6813551176,
-				["zy"] = 0.7116637960,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[6] = 
-			{
-				["y"] = 0.3100400000,
-				["z"] = 3,
-				["x"] = 0.1271800000,
-				["zx"] = 0.7220542079,
-				["zy"] = 0.2429006652,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[7] = 
-			{
-				["y"] = 0.7205400000,
-				["z"] = 381,
-				["x"] = 0.2445800000,
-				["zx"] = 0.6797720370,
-				["zy"] = 0.7830922464,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[8] = 
-			{
-				["y"] = 0.3061000000,
-				["z"] = 3,
-				["x"] = 0.1359800000,
-				["zx"] = 0.7813383772,
-				["zy"] = 0.2163575266,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[9] = 
-			{
-				["y"] = 0.7161000000,
-				["z"] = 381,
-				["x"] = 0.2388100000,
-				["zx"] = 0.6432345371,
-				["zy"] = 0.7549767925,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[10] = 
-			{
-				["y"] = 0.4828200000,
-				["z"] = 41,
-				["x"] = 0.7093200000,
-				["zx"] = 0.3409984917,
-				["zy"] = 0.7180314151,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[11] = 
-			{
-				["d"] = true,
-				["y"] = 0.4680400000,
-				["z"] = 492,
-				["x"] = 0.7176300000,
-				["zx"] = 0.3992570474,
-				["zy"] = 0.6144139251,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[12] = 
-			{
-				["y"] = 0.4277400000,
-				["z"] = 181,
-				["x"] = 0.5276000000,
-				["zx"] = 0.3755555287,
-				["zy"] = 0.1541110458,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[13] = 
-			{
-				["d"] = true,
-				["y"] = 0.4809000000,
-				["z"] = 492,
-				["x"] = 0.7195600000,
-				["zx"] = 0.4127876145,
-				["zy"] = 0.7045709563,
-				["i"] = 12,
-				["m"] = 11,
-			},
-		},
-		["c"] = true,
-		["k"] = 196,
-	},
-	[197] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.3252700000,
-				["z"] = 19,
-				["x"] = 0.2122000000,
-				["zx"] = 0.4855800306,
-				["zy"] = 0.5114141870,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[2] = 
-			{
-				["y"] = 0.7218300000,
-				["z"] = 383,
-				["x"] = 0.4072300000,
-				["zx"] = 0.3686695091,
-				["zy"] = 0.4324435714,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[3] = 
-			{
-				["y"] = 0.5037400000,
-				["z"] = 57,
-				["x"] = 0.8100200000,
-				["zx"] = 0.7279891175,
-				["zy"] = 0.4663581698,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[4] = 
-			{
-				["y"] = 0.7328800000,
-				["z"] = 383,
-				["x"] = 0.4086300000,
-				["zx"] = 0.3787938103,
-				["zy"] = 0.5123532749,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[5] = 
-			{
-				["y"] = 0.7265700000,
-				["z"] = 383,
-				["x"] = 0.4126000000,
-				["zx"] = 0.4075034358,
-				["zy"] = 0.4667215799,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[6] = 
-			{
-				["y"] = 0.3223000000,
-				["z"] = 19,
-				["x"] = 0.2086800000,
-				["zx"] = 0.4604371737,
-				["zy"] = 0.4901999021,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[7] = 
-			{
-				["y"] = 0.3299600000,
-				["z"] = 19,
-				["x"] = 0.2062200000,
-				["zx"] = 0.4428657452,
-				["zy"] = 0.5449141857,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[8] = 
-			{
-				["y"] = 0.7209500000,
-				["z"] = 383,
-				["x"] = 0.4101600000,
-				["zx"] = 0.3898582251,
-				["zy"] = 0.4260797217,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[9] = 
-			{
-				["y"] = 0.5051100000,
-				["z"] = 57,
-				["x"] = 0.8175900000,
-				["zx"] = 0.7753252872,
-				["zy"] = 0.4749249524,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[10] = 
-			{
-				["y"] = 0.3249100000,
-				["z"] = 19,
-				["x"] = 0.2013400000,
-				["zx"] = 0.4080086027,
-				["zy"] = 0.5088427585,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[11] = 
-			{
-				["y"] = 0.4997000000,
-				["z"] = 57,
-				["x"] = 0.8182700000,
-				["zx"] = 0.7795774134,
-				["zy"] = 0.4410955409,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[12] = 
-			{
-				["y"] = 0.5028900000,
-				["z"] = 57,
-				["x"] = 0.8140000000,
-				["zx"] = 0.7528765621,
-				["zy"] = 0.4610430127,
-				["i"] = 12,
-				["m"] = 10,
-			},
-		},
-		["c"] = true,
-		["k"] = 197,
-	},
-	[198] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.7126500000,
-				["z"] = 383,
-				["x"] = 0.4177500000,
-				["zx"] = 0.4447464008,
-				["zy"] = 0.3660570485,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[2] = 
-			{
-				["y"] = 0.3175400000,
-				["z"] = 19,
-				["x"] = 0.2077600000,
-				["zx"] = 0.4538657452,
-				["zy"] = 0.4561999034,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[3] = 
-			{
-				["y"] = 0.3114300000,
-				["z"] = 19,
-				["x"] = 0.2026100000,
-				["zx"] = 0.4170800312,
-				["zy"] = 0.4125570480,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[4] = 
-			{
-				["y"] = 0.7295600000,
-				["z"] = 383,
-				["x"] = 0.4193600000,
-				["zx"] = 0.4563893471,
-				["zy"] = 0.4883442056,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[5] = 
-			{
-				["y"] = 0.3178100000,
-				["z"] = 19,
-				["x"] = 0.2024700000,
-				["zx"] = 0.4160800312,
-				["zy"] = 0.4581284748,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[6] = 
-			{
-				["y"] = 0.3117500000,
-				["z"] = 19,
-				["x"] = 0.2070900000,
-				["zx"] = 0.4490800309,
-				["zy"] = 0.4148427622,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[7] = 
-			{
-				["y"] = 0.4935900000,
-				["z"] = 57,
-				["x"] = 0.8272700000,
-				["zx"] = 0.8358555545,
-				["zy"] = 0.4028889411,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[8] = 
-			{
-				["y"] = 0.7259500000,
-				["z"] = 383,
-				["x"] = 0.4224200000,
-				["zx"] = 0.4785181768,
-				["zy"] = 0.4622379586,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[9] = 
-			{
-				["y"] = 0.4874200000,
-				["z"] = 57,
-				["x"] = 0.8365300000,
-				["zx"] = 0.8937595086,
-				["zy"] = 0.3643071539,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[10] = 
-			{
-				["y"] = 0.4900500000,
-				["z"] = 57,
-				["x"] = 0.8300000000,
-				["zx"] = 0.8529265906,
-				["zy"] = 0.3807528752,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[11] = 
-			{
-				["y"] = 0.7213300000,
-				["z"] = 383,
-				["x"] = 0.4181000000,
-				["zx"] = 0.4472774761,
-				["zy"] = 0.4288277477,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[12] = 
-			{
-				["y"] = 0.4947400000,
-				["z"] = 57,
-				["x"] = 0.8322200000,
-				["zx"] = 0.8668085321,
-				["zy"] = 0.4100800360,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[13] = 
-			{
-				["y"] = 0.4714100000,
-				["z"] = 181,
-				["x"] = 0.5034500000,
-				["zx"] = 0.2413888689,
-				["zy"] = 0.3967221544,
-				["i"] = 12,
-				["m"] = 14,
-			},
-		},
-		["c"] = true,
-		["k"] = 198,
-	},
-	[199] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.7072500000,
-				["z"] = 383,
-				["x"] = 0.4158300000,
-				["zx"] = 0.4308616449,
-				["zy"] = 0.3270061527,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[2] = 
-			{
-				["y"] = 0.5014400000,
-				["z"] = 57,
-				["x"] = 0.8013200000,
-				["zx"] = 0.6735869144,
-				["zy"] = 0.4519759800,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[3] = 
-			{
-				["y"] = 0.4985500000,
-				["z"] = 57,
-				["x"] = 0.8077800000,
-				["zx"] = 0.7139821135,
-				["zy"] = 0.4339044460,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[4] = 
-			{
-				["y"] = 0.3022900000,
-				["z"] = 19,
-				["x"] = 0.2194900000,
-				["zx"] = 0.5376514588,
-				["zy"] = 0.3472713363,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[5] = 
-			{
-				["y"] = 0.3030100000,
-				["z"] = 19,
-				["x"] = 0.2033500000,
-				["zx"] = 0.4223657454,
-				["zy"] = 0.3524141933,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[6] = 
-			{
-				["y"] = 0.5000200000,
-				["z"] = 57,
-				["x"] = 0.7912600000,
-				["zx"] = 0.6106804589,
-				["zy"] = 0.4430965412,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[7] = 
-			{
-				["y"] = 0.7096100000,
-				["z"] = 383,
-				["x"] = 0.4077500000,
-				["zx"] = 0.3724299638,
-				["zy"] = 0.3440728405,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[8] = 
-			{
-				["y"] = 0.5053700000,
-				["z"] = 57,
-				["x"] = 0.7975500000,
-				["zx"] = 0.6500126264,
-				["zy"] = 0.4765507651,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[9] = 
-			{
-				["y"] = 0.3026500000,
-				["z"] = 19,
-				["x"] = 0.2144800000,
-				["zx"] = 0.5018657448,
-				["zy"] = 0.3498427648,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[10] = 
-			{
-				["y"] = 0.7131200000,
-				["z"] = 383,
-				["x"] = 0.4053300000,
-				["zx"] = 0.3549293861,
-				["zy"] = 0.3694559228,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[11] = 
-			{
-				["y"] = 0.7031800000,
-				["z"] = 383,
-				["x"] = 0.4101400000,
-				["zx"] = 0.3897135923,
-				["zy"] = 0.2975733479,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[12] = 
-			{
-				["y"] = 0.3037200000,
-				["z"] = 19,
-				["x"] = 0.2120600000,
-				["zx"] = 0.4845800306,
-				["zy"] = 0.3574856216,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[13] = 
-			{
-				["y"] = 0.4555100000,
-				["z"] = 181,
-				["x"] = 0.5687600000,
-				["zx"] = 0.6042221836,
-				["zy"] = 0.3083888220,
-				["i"] = 12,
-				["m"] = 14,
-			},
-		},
-		["c"] = true,
-		["k"] = 199,
-	},
-	[200] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.2481300000,
-				["z"] = 20,
-				["x"] = 0.1669400000,
-				["zx"] = 0.3989285662,
-				["zy"] = 0.5479518237,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[2] = 
-			{
-				["y"] = 0.5504300000,
-				["z"] = 117,
-				["x"] = 0.7336100000,
-				["zx"] = 0.3510466580,
-				["zy"] = 0.3050165417,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[3] = 
-			{
-				["y"] = 0.2453700000,
-				["z"] = 20,
-				["x"] = 0.1729900000,
-				["zx"] = 0.4487291907,
-				["zy"] = 0.5252328615,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[4] = 
-			{
-				["y"] = 0.5518400000,
-				["z"] = 117,
-				["x"] = 0.7289200000,
-				["zx"] = 0.3119633369,
-				["zy"] = 0.3167665373,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[5] = 
-			{
-				["y"] = 0.2448200000,
-				["z"] = 20,
-				["x"] = 0.1690800000,
-				["zx"] = 0.4165439937,
-				["zy"] = 0.5207055321,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[6] = 
-			{
-				["y"] = 0.7144900000,
-				["z"] = 108,
-				["x"] = 0.3528600000,
-				["zx"] = 0.6915332450,
-				["zy"] = 0.6761009767,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[7] = 
-			{
-				["y"] = 0.5572700000,
-				["z"] = 117,
-				["x"] = 0.7337300000,
-				["zx"] = 0.3520466577,
-				["zy"] = 0.3620165203,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[8] = 
-			{
-				["y"] = 0.7170500000,
-				["z"] = 108,
-				["x"] = 0.3569300000,
-				["zx"] = 0.7262871642,
-				["zy"] = 0.6979609542,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[9] = 
-			{
-				["y"] = 0.5623100000,
-				["z"] = 117,
-				["x"] = 0.7316600000,
-				["zx"] = 0.3347966631,
-				["zy"] = 0.4040165044,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[10] = 
-			{
-				["d"] = true,
-				["y"] = 0.7142600000,
-				["z"] = 108,
-				["x"] = 0.3638400000,
-				["zx"] = 0.7852919755,
-				["zy"] = 0.6741369944,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[11] = 
-			{
-				["y"] = 0.5015600000,
-				["z"] = 181,
-				["x"] = 0.5792700000,
-				["zx"] = 0.6626110695,
-				["zy"] = 0.5642221527,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[12] = 
-			{
-				["y"] = 0.7087500000,
-				["z"] = 108,
-				["x"] = 0.3595800000,
-				["zx"] = 0.7489156374,
-				["zy"] = 0.6270868085,
-				["i"] = 12,
-				["m"] = 16,
-			},
-		},
-		["c"] = true,
-		["k"] = 200,
-	},
-	[201] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.6574000000,
-				["z"] = 108,
-				["x"] = 0.3120000000,
-				["zx"] = 0.3426278050,
-				["zy"] = 0.1886064009,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[2] = 
-			{
-				["y"] = 0.2590600000,
-				["z"] = 20,
-				["x"] = 0.1804700000,
-				["zx"] = 0.5103008720,
-				["zy"] = 0.6379222066,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[3] = 
-			{
-				["y"] = 0.5387400000,
-				["z"] = 117,
-				["x"] = 0.7500500000,
-				["zx"] = 0.4880466151,
-				["zy"] = 0.2075999117,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[4] = 
-			{
-				["y"] = 0.6521500000,
-				["z"] = 108,
-				["x"] = 0.3142300000,
-				["zx"] = 0.3616698787,
-				["zy"] = 0.1437763689,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[5] = 
-			{
-				["y"] = 0.5359100000,
-				["z"] = 117,
-				["x"] = 0.7536000000,
-				["zx"] = 0.5176299392,
-				["zy"] = 0.1840165872,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[6] = 
-			{
-				["y"] = 0.6527400000,
-				["z"] = 108,
-				["x"] = 0.3078400000,
-				["zx"] = 0.3071053716,
-				["zy"] = 0.1488144106,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[7] = 
-			{
-				["y"] = 0.5397600000,
-				["z"] = 117,
-				["x"] = 0.7464800000,
-				["zx"] = 0.4582966244,
-				["zy"] = 0.2160999085,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[8] = 
-			{
-				["y"] = 0.2617100000,
-				["z"] = 20,
-				["x"] = 0.1901800000,
-				["zx"] = 0.5902288165,
-				["zy"] = 0.6597357030,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[9] = 
-			{
-				["y"] = 0.2630000000,
-				["z"] = 20,
-				["x"] = 0.1823900000,
-				["zx"] = 0.5261053677,
-				["zy"] = 0.6703543483,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[10] = 
-			{
-				["y"] = 0.6520400000,
-				["z"] = 108,
-				["x"] = 0.3024000000,
-				["zx"] = 0.2606529586,
-				["zy"] = 0.1428370730,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[11] = 
-			{
-				["y"] = 0.2651800000,
-				["z"] = 20,
-				["x"] = 0.1879400000,
-				["zx"] = 0.5717902381,
-				["zy"] = 0.6882990359,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[12] = 
-			{
-				["d"] = true,
-				["y"] = 0.5002000000,
-				["z"] = 497,
-				["x"] = 0.5155100000,
-				["zx"] = 0.3083888654,
-				["zy"] = 0.5566665972,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[13] = 
-			{
-				["y"] = 0.5326300000,
-				["z"] = 117,
-				["x"] = 0.7455200000,
-				["zx"] = 0.4502968717,
-				["zy"] = 0.1566831647,
-				["i"] = 12,
-				["m"] = 9,
-			},
-		},
-		["c"] = true,
-		["k"] = 201,
-	},
-	[202] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.2500800000,
-				["z"] = 20,
-				["x"] = 0.1469500000,
-				["zx"] = 0.2343807176,
-				["zy"] = 0.5640032644,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[2] = 
-			{
-				["y"] = 0.7251400000,
-				["z"] = 108,
-				["x"] = 0.3478800000,
-				["zx"] = 0.6490087934,
-				["zy"] = 0.7670418987,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[3] = 
-			{
-				["y"] = 0.4853600000,
-				["z"] = 181,
-				["x"] = 0.5949400000,
-				["zx"] = 0.7496666206,
-				["zy"] = 0.4742221536,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[4] = 
-			{
-				["y"] = 0.5356700000,
-				["z"] = 117,
-				["x"] = 0.7349700000,
-				["zx"] = 0.3623799878,
-				["zy"] = 0.1820165880,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[5] = 
-			{
-				["y"] = 0.5378900000,
-				["z"] = 117,
-				["x"] = 0.7399800000,
-				["zx"] = 0.4041299747,
-				["zy"] = 0.2005165810,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[6] = 
-			{
-				["y"] = 0.5322500000,
-				["z"] = 117,
-				["x"] = 0.7281900000,
-				["zx"] = 0.3058800055,
-				["zy"] = 0.1535165987,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[7] = 
-			{
-				["y"] = 0.7200100000,
-				["z"] = 108,
-				["x"] = 0.3487300000,
-				["zx"] = 0.6562669829,
-				["zy"] = 0.7232365532,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[8] = 
-			{
-				["y"] = 0.7174300000,
-				["z"] = 108,
-				["x"] = 0.3427000000,
-				["zx"] = 0.6047765325,
-				["zy"] = 0.7012057946,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[9] = 
-			{
-				["y"] = 0.2430900000,
-				["z"] = 20,
-				["x"] = 0.1497900000,
-				["zx"] = 0.2577582008,
-				["zy"] = 0.5064650232,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[10] = 
-			{
-				["y"] = 0.7139000000,
-				["z"] = 108,
-				["x"] = 0.3442200000,
-				["zx"] = 0.6177558832,
-				["zy"] = 0.6710629350,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[11] = 
-			{
-				["y"] = 0.5408800000,
-				["z"] = 117,
-				["x"] = 0.7358400000,
-				["zx"] = 0.3696299855,
-				["zy"] = 0.2254332383,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[12] = 
-			{
-				["y"] = 0.2448400000,
-				["z"] = 20,
-				["x"] = 0.1516600000,
-				["zx"] = 0.2731511212,
-				["zy"] = 0.5208701623,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[13] = 
-			{
-				["y"] = 0.2470000000,
-				["z"] = 20,
-				["x"] = 0.1430000000,
-				["zx"] = 0.2018662603,
-				["zy"] = 0.5386502196,
-				["i"] = 12,
-				["m"] = 3,
-			},
-		},
-		["c"] = true,
-		["k"] = 202,
-	},
-	[203] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.4051700000,
-				["z"] = 104,
-				["x"] = 0.1382000000,
-				["zx"] = 0.2135912153,
-				["zy"] = 0.5245819524,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[2] = 
-			{
-				["y"] = 0.4076400000,
-				["z"] = 104,
-				["x"] = 0.1386500000,
-				["zx"] = 0.2163918174,
-				["zy"] = 0.5399541295,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[3] = 
-			{
-				["y"] = 0.4033300000,
-				["z"] = 104,
-				["x"] = 0.1338800000,
-				["zx"] = 0.1867054353,
-				["zy"] = 0.5131306139,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[4] = 
-			{
-				["y"] = 0.2718300000,
-				["z"] = 101,
-				["x"] = 0.6167800000,
-				["zx"] = 0.3917774948,
-				["zy"] = 0.3201674620,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[5] = 
-			{
-				["y"] = 0.6387400000,
-				["z"] = 58,
-				["x"] = 0.3465300000,
-				["zx"] = 0.3813895199,
-				["zy"] = 0.6231086775,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[6] = 
-			{
-				["y"] = 0.6413400000,
-				["z"] = 58,
-				["x"] = 0.3521100000,
-				["zx"] = 0.4245198663,
-				["zy"] = 0.6432052458,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[7] = 
-			{
-				["y"] = 0.6430200000,
-				["z"] = 58,
-				["x"] = 0.3506100000,
-				["zx"] = 0.4129256871,
-				["zy"] = 0.6561907207,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[8] = 
-			{
-				["y"] = 0.2647900000,
-				["z"] = 101,
-				["x"] = 0.6138900000,
-				["zx"] = 0.3737149948,
-				["zy"] = 0.2761674638,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[9] = 
-			{
-				["y"] = 0.2601300000,
-				["z"] = 101,
-				["x"] = 0.6164400000,
-				["zx"] = 0.3896524948,
-				["zy"] = 0.2470424651,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[10] = 
-			{
-				["d"] = true,
-				["y"] = 0.4121200000,
-				["z"] = 327,
-				["x"] = 0.1410600000,
-				["zx"] = 0.2313905975,
-				["zy"] = 0.5678356493,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[11] = 
-			{
-				["d"] = true,
-				["y"] = 0.6404200000,
-				["z"] = 469,
-				["x"] = 0.3465000000,
-				["zx"] = 0.3811576363,
-				["zy"] = 0.6360941524,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[12] = 
-			{
-				["y"] = 0.2650900000,
-				["z"] = 101,
-				["x"] = 0.6198800000,
-				["zx"] = 0.4111524948,
-				["zy"] = 0.2780424638,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[13] = 
-			{
-				["y"] = 0.5237800000,
-				["z"] = 181,
-				["x"] = 0.5311300000,
-				["zx"] = 0.3951666388,
-				["zy"] = 0.6876665958,
-				["i"] = 12,
-				["m"] = 14,
-			},
-		},
-		["c"] = true,
-		["k"] = 203,
-	},
-	[204] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.5442400000,
-				["z"] = 534,
-				["x"] = 0.1588900000,
-				["zx"] = 0.4034050981,
-				["zy"] = 0.5077871127,
-				["i"] = 12,
-				["m"] = 19,
-			},
-			[2] = 
-			{
-				["y"] = 0.6063500000,
-				["z"] = 58,
-				["x"] = 0.3894900000,
-				["zx"] = 0.7134468103,
-				["zy"] = 0.3727518132,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[3] = 
-			{
-				["d"] = true,
-				["y"] = 0.4257000000,
-				["z"] = 329,
-				["x"] = 0.2068500000,
-				["zx"] = 0.6408386227,
-				["zy"] = 0.6523515060,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[4] = 
-			{
-				["y"] = 0.6075900000,
-				["z"] = 58,
-				["x"] = 0.3896700000,
-				["zx"] = 0.7148381118,
-				["zy"] = 0.3823363304,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[5] = 
-			{
-				["y"] = 0.4141500000,
-				["z"] = 104,
-				["x"] = 0.1992400000,
-				["zx"] = 0.5934773296,
-				["zy"] = 0.5804694629,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[6] = 
-			{
-				["y"] = 0.4213200000,
-				["z"] = 104,
-				["x"] = 0.2018900000,
-				["zx"] = 0.6099697642,
-				["zy"] = 0.6250923416,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[7] = 
-			{
-				["y"] = 0.2664000000,
-				["z"] = 101,
-				["x"] = 0.6328400000,
-				["zx"] = 0.4921524950,
-				["zy"] = 0.2862299634,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[8] = 
-			{
-				["d"] = true,
-				["y"] = 0.6005200000,
-				["z"] = 58,
-				["x"] = 0.3837000000,
-				["zx"] = 0.6686932788,
-				["zy"] = 0.3276891235,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[9] = 
-			{
-				["y"] = 0.2626000000,
-				["z"] = 101,
-				["x"] = 0.6422000000,
-				["zx"] = 0.5506524950,
-				["zy"] = 0.2624799644,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[10] = 
-			{
-				["y"] = 0.4478900000,
-				["z"] = 181,
-				["x"] = 0.4907200000,
-				["zx"] = 0.1706666503,
-				["zy"] = 0.2660554891,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[11] = 
-			{
-				["y"] = 0.2622600000,
-				["z"] = 101,
-				["x"] = 0.6282200000,
-				["zx"] = 0.4632774949,
-				["zy"] = 0.2603549645,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[12] = 
-			{
-				["y"] = 0.4164000000,
-				["z"] = 104,
-				["x"] = 0.2035900000,
-				["zx"] = 0.6205498165,
-				["zy"] = 0.5944724583,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[13] = 
-			{
-				["y"] = 0.2705900000,
-				["z"] = 101,
-				["x"] = 0.6270500000,
-				["zx"] = 0.4559649949,
-				["zy"] = 0.3124174623,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[14] = 
-			{
-				["y"] = 0.5984300000,
-				["z"] = 58,
-				["x"] = 0.3805500000,
-				["zx"] = 0.6443455027,
-				["zy"] = 0.3115345744,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[15] = 
-			{
-				["zy"] = 0.5941613498,
-				["zx"] = 0.6204247147,
-				["i"] = 12,
-				["m"] = 5,
-				["x"] = 0.2035700000,
-				["y"] = 0.4163500000,
-				["z"] = 104,
-			},
-		},
-		["c"] = true,
-		["k"] = 204,
-	},
-	[205] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.2703500000,
-				["z"] = 101,
-				["x"] = 0.6500500000,
-				["zx"] = 0.5997149951,
-				["zy"] = 0.3109174624,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[2] = 
-			{
-				["y"] = 0.4004600000,
-				["z"] = 104,
-				["x"] = 0.2440600000,
-				["zx"] = 0.8724172976,
-				["zy"] = 0.4952690153,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[3] = 
-			{
-				["y"] = 0.5994300000,
-				["z"] = 58,
-				["x"] = 0.3668500000,
-				["zx"] = 0.5384519999,
-				["zy"] = 0.3192640237,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[4] = 
-			{
-				["y"] = 0.4953500000,
-				["z"] = 181,
-				["x"] = 0.5068300000,
-				["zx"] = 0.2601666457,
-				["zy"] = 0.5297221530,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[5] = 
-			{
-				["y"] = 0.6002900000,
-				["z"] = 58,
-				["x"] = 0.3592500000,
-				["zx"] = 0.4797081589,
-				["zy"] = 0.3259113502,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[6] = 
-			{
-				["y"] = 0.2757300000,
-				["z"] = 101,
-				["x"] = 0.6486900000,
-				["zx"] = 0.5912149951,
-				["zy"] = 0.3445424610,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[7] = 
-			{
-				["d"] = true,
-				["y"] = 0.4035900000,
-				["z"] = 332,
-				["x"] = 0.2485300000,
-				["zx"] = 0.9002366117,
-				["zy"] = 0.5147487378,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[8] = 
-			{
-				["y"] = 0.2635100000,
-				["z"] = 101,
-				["x"] = 0.6474800000,
-				["zx"] = 0.5836524951,
-				["zy"] = 0.2681674642,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[9] = 
-			{
-				["y"] = 0.6056600000,
-				["z"] = 58,
-				["x"] = 0.3589100000,
-				["zx"] = 0.4770801450,
-				["zy"] = 0.3674184932,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[10] = 
-			{
-				["y"] = 0.4120400000,
-				["z"] = 104,
-				["x"] = 0.2446100000,
-				["zx"] = 0.8758402557,
-				["zy"] = 0.5673377650,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[11] = 
-			{
-				["y"] = 0.2591100000,
-				["z"] = 101,
-				["x"] = 0.6475500000,
-				["zx"] = 0.5840899951,
-				["zy"] = 0.2406674653,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[12] = 
-			{
-				["y"] = 0.4059500000,
-				["z"] = 104,
-				["x"] = 0.2459300000,
-				["zx"] = 0.8840553552,
-				["zy"] = 0.5294363241,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[13] = 
-			{
-				["y"] = 0.6035700000,
-				["z"] = 58,
-				["x"] = 0.3533600000,
-				["zx"] = 0.4341816822,
-				["zy"] = 0.3512639440,
-				["i"] = 12,
-				["m"] = 8,
-			},
-		},
-		["c"] = true,
-		["k"] = 205,
-	},
-	[206] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.5767700000,
-				["z"] = 382,
-				["x"] = 0.4455300000,
-				["zx"] = 0.4117609385,
-				["zy"] = 0.2472273704,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[2] = 
-			{
-				["d"] = true,
-				["y"] = 0.3638600000,
-				["z"] = 481,
-				["x"] = 0.6485800000,
-				["zx"] = 0.7123176573,
-				["zy"] = 0.4040475450,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[3] = 
-			{
-				["y"] = 0.3633600000,
-				["z"] = 103,
-				["x"] = 0.6520200000,
-				["zx"] = 0.7338176582,
-				["zy"] = 0.4009225453,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[4] = 
-			{
-				["y"] = 0.3626800000,
-				["z"] = 103,
-				["x"] = 0.6581900000,
-				["zx"] = 0.7723801599,
-				["zy"] = 0.3966725457,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[5] = 
-			{
-				["y"] = 0.4791000000,
-				["z"] = 181,
-				["x"] = 0.5650700000,
-				["zx"] = 0.5837221847,
-				["zy"] = 0.4394443762,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[6] = 
-			{
-				["y"] = 0.5806000000,
-				["z"] = 382,
-				["x"] = 0.4402400000,
-				["zx"] = 0.3719186463,
-				["zy"] = 0.2760733204,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[7] = 
-			{
-				["y"] = 0.5855200000,
-				["z"] = 382,
-				["x"] = 0.4414800000,
-				["zx"] = 0.3812578604,
-				["zy"] = 0.3131286923,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[8] = 
-			{
-				["y"] = 0.3063000000,
-				["z"] = 92,
-				["x"] = 0.3187400000,
-				["zx"] = 0.6776118424,
-				["zy"] = 0.2848121997,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[9] = 
-			{
-				["y"] = 0.3593200000,
-				["z"] = 103,
-				["x"] = 0.6543600000,
-				["zx"] = 0.7484426589,
-				["zy"] = 0.3756725477,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[10] = 
-			{
-				["y"] = 0.5694000000,
-				["z"] = 382,
-				["x"] = 0.4449200000,
-				["zx"] = 0.4071666477,
-				["zy"] = 0.1917196284,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[11] = 
-			{
-				["y"] = 0.3134800000,
-				["z"] = 92,
-				["x"] = 0.3200300000,
-				["zx"] = 0.6875408631,
-				["zy"] = 0.3400760989,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[12] = 
-			{
-				["y"] = 0.3066700000,
-				["z"] = 92,
-				["x"] = 0.3217700000,
-				["zx"] = 0.7009334956,
-				["zy"] = 0.2876600608,
-				["i"] = 12,
-				["m"] = 6,
-			},
-		},
-		["c"] = true,
-		["k"] = 206,
-	},
-	[207] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.5741300000,
-				["z"] = 382,
-				["x"] = 0.4603700000,
-				["zx"] = 0.5235302422,
-				["zy"] = 0.2273440001,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[2] = 
-			{
-				["y"] = 0.4783300000,
-				["z"] = 181,
-				["x"] = 0.5894300000,
-				["zx"] = 0.7190555110,
-				["zy"] = 0.4351665984,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[3] = 
-			{
-				["y"] = 0.3891300000,
-				["z"] = 103,
-				["x"] = 0.5973900000,
-				["zx"] = 0.3923801430,
-				["zy"] = 0.5619850300,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[4] = 
-			{
-				["y"] = 0.3899800000,
-				["z"] = 103,
-				["x"] = 0.6018300000,
-				["zx"] = 0.4201301443,
-				["zy"] = 0.5672975295,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[5] = 
-			{
-				["y"] = 0.3269100000,
-				["z"] = 92,
-				["x"] = 0.3168900000,
-				["zx"] = 0.6633725492,
-				["zy"] = 0.4434457601,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[6] = 
-			{
-				["y"] = 0.3335000000,
-				["z"] = 92,
-				["x"] = 0.3217500000,
-				["zx"] = 0.7007795573,
-				["zy"] = 0.4941684754,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[7] = 
-			{
-				["y"] = 0.5803100000,
-				["z"] = 382,
-				["x"] = 0.4625000000,
-				["zx"] = 0.5395726018,
-				["zy"] = 0.2738891623,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[8] = 
-			{
-				["y"] = 0.3256100000,
-				["z"] = 92,
-				["x"] = 0.3126200000,
-				["zx"] = 0.6305067210,
-				["zy"] = 0.4334397616,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[9] = 
-			{
-				["y"] = 0.5802700000,
-				["z"] = 382,
-				["x"] = 0.4523600000,
-				["zx"] = 0.4632019321,
-				["zy"] = 0.2735878992,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[10] = 
-			{
-				["y"] = 0.5847700000,
-				["z"] = 382,
-				["x"] = 0.4585400000,
-				["zx"] = 0.5097473698,
-				["zy"] = 0.3074800076,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[11] = 
-			{
-				["y"] = 0.3290000000,
-				["z"] = 92,
-				["x"] = 0.3161200000,
-				["zx"] = 0.6574459244,
-				["zy"] = 0.4595323269,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[12] = 
-			{
-				["d"] = true,
-				["y"] = 0.3911800000,
-				["z"] = 413,
-				["x"] = 0.5969000000,
-				["zx"] = 0.3893176429,
-				["zy"] = 0.5747975288,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[13] = 
-			{
-				["y"] = 0.3914900000,
-				["z"] = 103,
-				["x"] = 0.5982000000,
-				["zx"] = 0.3974426433,
-				["zy"] = 0.5767350286,
-				["i"] = 12,
-				["m"] = 12,
-			},
-		},
-		["c"] = true,
-		["k"] = 207,
-	},
-	[208] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.5930800000,
-				["z"] = 382,
-				["x"] = 0.4429600000,
-				["zx"] = 0.3924046642,
-				["zy"] = 0.3700674345,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[2] = 
-			{
-				["y"] = 0.3314600000,
-				["z"] = 92,
-				["x"] = 0.3121200000,
-				["zx"] = 0.6266582634,
-				["zy"] = 0.4784667548,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[3] = 
-			{
-				["y"] = 0.3980400000,
-				["z"] = 103,
-				["x"] = 0.6392600000,
-				["zx"] = 0.6540676547,
-				["zy"] = 0.6176725247,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[4] = 
-			{
-				["y"] = 0.4006900000,
-				["z"] = 103,
-				["x"] = 0.6522500000,
-				["zx"] = 0.7352551583,
-				["zy"] = 0.6342350231,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[5] = 
-			{
-				["y"] = 0.4050400000,
-				["z"] = 103,
-				["x"] = 0.6538700000,
-				["zx"] = 0.7453801587,
-				["zy"] = 0.6614225205,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[6] = 
-			{
-				["y"] = 0.4056200000,
-				["z"] = 103,
-				["x"] = 0.6491600000,
-				["zx"] = 0.7159426574,
-				["zy"] = 0.6650475202,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[7] = 
-			{
-				["y"] = 0.5999800000,
-				["z"] = 382,
-				["x"] = 0.4453000000,
-				["zx"] = 0.4100286650,
-				["zy"] = 0.4220353340,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[8] = 
-			{
-				["y"] = 0.5955800000,
-				["z"] = 382,
-				["x"] = 0.4497300000,
-				["zx"] = 0.4433937603,
-				["zy"] = 0.3888963836,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[9] = 
-			{
-				["y"] = 0.3428400000,
-				["z"] = 92,
-				["x"] = 0.3162900000,
-				["zx"] = 0.6587544000,
-				["zy"] = 0.5660577260,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[10] = 
-			{
-				["y"] = 0.5884300000,
-				["z"] = 382,
-				["x"] = 0.4520100000,
-				["zx"] = 0.4605658636,
-				["zy"] = 0.3350455891,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[11] = 
-			{
-				["y"] = 0.3383300000,
-				["z"] = 92,
-				["x"] = 0.3080100000,
-				["zx"] = 0.5950239417,
-				["zy"] = 0.5313446082,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[12] = 
-			{
-				["y"] = 0.4309600000,
-				["z"] = 181,
-				["x"] = 0.5168100000,
-				["zx"] = 0.3156110873,
-				["zy"] = 0.1719999345,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[13] = 
-			{
-				["y"] = 0.3358100000,
-				["z"] = 92,
-				["x"] = 0.3167000000,
-				["zx"] = 0.6619101353,
-				["zy"] = 0.5119483650,
-				["i"] = 12,
-				["m"] = 6,
-			},
-		},
-		["c"] = true,
-		["k"] = 208,
-	},
-	[209] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.6006700000,
-				["z"] = 382,
-				["x"] = 0.4110400000,
-				["zx"] = 0.1519952186,
-				["zy"] = 0.4272321240,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[2] = 
-			{
-				["y"] = 0.3412900000,
-				["z"] = 103,
-				["x"] = 0.5938600000,
-				["zx"] = 0.3703176421,
-				["zy"] = 0.2629850584,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[3] = 
-			{
-				["y"] = 0.6000800000,
-				["z"] = 382,
-				["x"] = 0.4197600000,
-				["zx"] = 0.2176709820,
-				["zy"] = 0.4227884920,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[4] = 
-			{
-				["y"] = 0.3333400000,
-				["z"] = 92,
-				["x"] = 0.2989900000,
-				["zx"] = 0.5255977661,
-				["zy"] = 0.4929369679,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[5] = 
-			{
-				["y"] = 0.3326700000,
-				["z"] = 92,
-				["x"] = 0.3013700000,
-				["zx"] = 0.5439164244,
-				["zy"] = 0.4877800303,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[6] = 
-			{
-				["y"] = 0.3418400000,
-				["z"] = 103,
-				["x"] = 0.5885600000,
-				["zx"] = 0.3371926406,
-				["zy"] = 0.2664225581,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[7] = 
-			{
-				["y"] = 0.5971700000,
-				["z"] = 382,
-				["x"] = 0.4200400000,
-				["zx"] = 0.2197798367,
-				["zy"] = 0.4008715952,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[8] = 
-			{
-				["y"] = 0.3423200000,
-				["z"] = 103,
-				["x"] = 0.5816300000,
-				["zx"] = 0.2938801387,
-				["zy"] = 0.2694225578,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[9] = 
-			{
-				["y"] = 0.3357000000,
-				["z"] = 92,
-				["x"] = 0.2944300000,
-				["zx"] = 0.4904998326,
-				["zy"] = 0.5111017036,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[10] = 
-			{
-				["y"] = 0.3308300000,
-				["z"] = 92,
-				["x"] = 0.3051800000,
-				["zx"] = 0.5732416716,
-				["zy"] = 0.4736176940,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[11] = 
-			{
-				["y"] = 0.5932200000,
-				["z"] = 382,
-				["x"] = 0.4223600000,
-				["zx"] = 0.2372532050,
-				["zy"] = 0.3711218556,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[12] = 
-			{
-				["y"] = 0.4825600000,
-				["z"] = 181,
-				["x"] = 0.4930500000,
-				["zx"] = 0.1836110941,
-				["zy"] = 0.4586665982,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[13] = 
-			{
-				["d"] = true,
-				["y"] = 0.3378300000,
-				["z"] = 480,
-				["x"] = 0.5866800000,
-				["zx"] = 0.3254426401,
-				["zy"] = 0.2413600605,
-				["i"] = 12,
-				["m"] = 12,
-			},
-		},
-		["c"] = true,
-		["k"] = 209,
-	},
-	[210] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.2773300000,
-				["z"] = 101,
-				["x"] = 0.6253100000,
-				["zx"] = 0.4450899949,
-				["zy"] = 0.3545424606,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[2] = 
-			{
-				["y"] = 0.4323600000,
-				["z"] = 181,
-				["x"] = 0.6067300000,
-				["zx"] = 0.8151666172,
-				["zy"] = 0.1797777122,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[3] = 
-			{
-				["y"] = 0.6322100000,
-				["z"] = 58,
-				["x"] = 0.3213800000,
-				["zx"] = 0.1869937830,
-				["zy"] = 0.5726353733,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[4] = 
-			{
-				["y"] = 0.4067800000,
-				["z"] = 104,
-				["x"] = 0.2178700000,
-				["zx"] = 0.7094222561,
-				["zy"] = 0.5346018735,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[5] = 
-			{
-				["y"] = 0.2856400000,
-				["z"] = 101,
-				["x"] = 0.6240500000,
-				["zx"] = 0.4372149949,
-				["zy"] = 0.4064799584,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[6] = 
-			{
-				["y"] = 0.2813800000,
-				["z"] = 101,
-				["x"] = 0.6203700000,
-				["zx"] = 0.4142149948,
-				["zy"] = 0.3798549595,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[7] = 
-			{
-				["y"] = 0.6339800000,
-				["z"] = 58,
-				["x"] = 0.3253400000,
-				["zx"] = 0.2176024160,
-				["zy"] = 0.5863164986,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[8] = 
-			{
-				["y"] = 0.6342200000,
-				["z"] = 58,
-				["x"] = 0.3221200000,
-				["zx"] = 0.1927135781,
-				["zy"] = 0.5881715664,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[9] = 
-			{
-				["y"] = 0.5513200000,
-				["z"] = 181,
-				["x"] = 0.5621900000,
-				["zx"] = 0.5677221855,
-				["zy"] = 0.8406665943,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[10] = 
-			{
-				["y"] = 0.4129000000,
-				["z"] = 104,
-				["x"] = 0.2291400000,
-				["zx"] = 0.7795617795,
-				["zy"] = 0.5726900210,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[11] = 
-			{
-				["y"] = 0.4726500000,
-				["z"] = 584,
-				["x"] = 0.5470800000,
-				["zx"] = 0.3679425157,
-				["zy"] = 0.2428127485,
-				["i"] = 12,
-				["m"] = 26,
-			},
-			[12] = 
-			{
-				["y"] = 0.4045400000,
-				["z"] = 104,
-				["x"] = 0.2294200000,
-				["zx"] = 0.7813043764,
-				["zy"] = 0.5206611136,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[13] = 
-			{
-				["y"] = 0.2787200000,
-				["z"] = 101,
-				["x"] = 0.6301200000,
-				["zx"] = 0.4751524949,
-				["zy"] = 0.3632299602,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[14] = 
-			{
-				["y"] = 0.5099200000,
-				["z"] = 181,
-				["x"] = 0.5469200000,
-				["zx"] = 0.4828888565,
-				["zy"] = 0.6106665966,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[15] = 
-			{
-				["y"] = 0.4489200000,
-				["z"] = 181,
-				["x"] = 0.4820500000,
-				["zx"] = 0.1224999861,
-				["zy"] = 0.2717777112,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[16] = 
-			{
-				["y"] = 0.4150900000,
-				["z"] = 104,
-				["x"] = 0.2291500000,
-				["zx"] = 0.7796240151,
-				["zy"] = 0.5863196032,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[17] = 
-			{
-				["y"] = 0.6363900000,
-				["z"] = 58,
-				["x"] = 0.3227400000,
-				["zx"] = 0.1975058388,
-				["zy"] = 0.6049444715,
-				["i"] = 12,
-				["m"] = 8,
-			},
-		},
-		["c"] = true,
-		["k"] = 210,
-	},
-	[211] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.3924800000,
-				["z"] = 104,
-				["x"] = 0.1796300000,
-				["zx"] = 0.4714333142,
-				["zy"] = 0.4456050583,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[2] = 
-			{
-				["y"] = 0.5973100000,
-				["z"] = 58,
-				["x"] = 0.3905700000,
-				["zx"] = 0.7217946193,
-				["zy"] = 0.3028775911,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[3] = 
-			{
-				["y"] = 0.2864500000,
-				["z"] = 101,
-				["x"] = 0.6126400000,
-				["zx"] = 0.3659024947,
-				["zy"] = 0.4115424582,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[4] = 
-			{
-				["y"] = 0.6002500000,
-				["z"] = 58,
-				["x"] = 0.3972300000,
-				["zx"] = 0.7732727746,
-				["zy"] = 0.3256021722,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[5] = 
-			{
-				["y"] = 0.5555700000,
-				["z"] = 823,
-				["x"] = 0.3689100000,
-				["zx"] = 0.8216080175,
-				["zy"] = 0.3753078958,
-				["i"] = 12,
-				["m"] = 29,
-			},
-			[6] = 
-			{
-				["y"] = 0.2820600000,
-				["z"] = 101,
-				["x"] = 0.6153900000,
-				["zx"] = 0.3830899948,
-				["zy"] = 0.3841049594,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[7] = 
-			{
-				["d"] = true,
-				["y"] = 0.5973400000,
-				["z"] = 473,
-				["x"] = 0.3995700000,
-				["zx"] = 0.7913596941,
-				["zy"] = 0.3031094746,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[8] = 
-			{
-				["y"] = 0.5231100000,
-				["z"] = 181,
-				["x"] = 0.5733600000,
-				["zx"] = 0.6297777378,
-				["zy"] = 0.6839443736,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[9] = 
-			{
-				["y"] = 0.3821700000,
-				["z"] = 104,
-				["x"] = 0.1807500000,
-				["zx"] = 0.4784037016,
-				["zy"] = 0.3814402216,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[10] = 
-			{
-				["y"] = 0.2831400000,
-				["z"] = 101,
-				["x"] = 0.6071700000,
-				["zx"] = 0.3317149947,
-				["zy"] = 0.3908549591,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[11] = 
-			{
-				["y"] = 0.3865700000,
-				["z"] = 104,
-				["x"] = 0.1814800000,
-				["zx"] = 0.4829469006,
-				["zy"] = 0.4088238570,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[12] = 
-			{
-				["y"] = 0.5937300000,
-				["z"] = 58,
-				["x"] = 0.3946100000,
-				["zx"] = 0.7530216084,
-				["zy"] = 0.2752061625,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[13] = 
-			{
-				["y"] = 0.3873800000,
-				["z"] = 104,
-				["x"] = 0.1840000000,
-				["zx"] = 0.4986302723,
-				["zy"] = 0.4138649354,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[14] = 
-			{
-				["y"] = 0.2782200000,
-				["z"] = 101,
-				["x"] = 0.6100900000,
-				["zx"] = 0.3499649947,
-				["zy"] = 0.3601049604,
-				["i"] = 12,
-				["m"] = 13,
-			},
-		},
-		["c"] = true,
-		["k"] = 211,
-	},
-	[212] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.6147500000,
-				["z"] = 58,
-				["x"] = 0.3670200000,
-				["zx"] = 0.5397660069,
-				["zy"] = 0.4376791877,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[2] = 
-			{
-				["y"] = 0.3983300000,
-				["z"] = 104,
-				["x"] = 0.2270600000,
-				["zx"] = 0.7666167743,
-				["zy"] = 0.4820128463,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[3] = 
-			{
-				["y"] = 0.4676200000,
-				["z"] = 181,
-				["x"] = 0.5863200000,
-				["zx"] = 0.7017777341,
-				["zy"] = 0.3756665990,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[4] = 
-			{
-				["y"] = 0.2710900000,
-				["z"] = 101,
-				["x"] = 0.6352700000,
-				["zx"] = 0.5073399950,
-				["zy"] = 0.3155424622,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[5] = 
-			{
-				["y"] = 0.6093500000,
-				["z"] = 58,
-				["x"] = 0.3747700000,
-				["zx"] = 0.5996692657,
-				["zy"] = 0.3959401612,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[6] = 
-			{
-				["y"] = 0.6183500000,
-				["z"] = 58,
-				["x"] = 0.3726600000,
-				["zx"] = 0.5833601204,
-				["zy"] = 0.4655052053,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[7] = 
-			{
-				["y"] = 0.4819200000,
-				["z"] = 584,
-				["x"] = 0.5461000000,
-				["zx"] = 0.3106110706,
-				["zy"] = 0.7851194725,
-				["i"] = 12,
-				["m"] = 26,
-			},
-			[8] = 
-			{
-				["y"] = 0.2737000000,
-				["z"] = 101,
-				["x"] = 0.6294500000,
-				["zx"] = 0.4709649949,
-				["zy"] = 0.3318549615,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[9] = 
-			{
-				["y"] = 0.3939500000,
-				["z"] = 104,
-				["x"] = 0.2234100000,
-				["zx"] = 0.7439007796,
-				["zy"] = 0.4547536820,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[10] = 
-			{
-				["y"] = 0.3949600000,
-				["z"] = 104,
-				["x"] = 0.2273600000,
-				["zx"] = 0.7684838424,
-				["zy"] = 0.4610394710,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[11] = 
-			{
-				["y"] = 0.2727300000,
-				["z"] = 101,
-				["x"] = 0.6382900000,
-				["zx"] = 0.5262149950,
-				["zy"] = 0.3257924618,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[12] = 
-			{
-				["y"] = 0.2674200000,
-				["z"] = 101,
-				["x"] = 0.6430300000,
-				["zx"] = 0.5558399951,
-				["zy"] = 0.2926049632,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[13] = 
-			{
-				["y"] = 0.3919000000,
-				["z"] = 104,
-				["x"] = 0.2279700000,
-				["zx"] = 0.7722802141,
-				["zy"] = 0.4419953973,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[14] = 
-			{
-				["y"] = 0.6055900000,
-				["z"] = 58,
-				["x"] = 0.3763900000,
-				["zx"] = 0.6121909792,
-				["zy"] = 0.3668774317,
-				["i"] = 12,
-				["m"] = 8,
-			},
-		},
-		["c"] = true,
-		["k"] = 212,
-	},
-	[213] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.4331600000,
-				["z"] = 104,
-				["x"] = 0.1654500000,
-				["zx"] = 0.3831832306,
-				["zy"] = 0.6987792152,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[2] = 
-			{
-				["y"] = 0.6359400000,
-				["z"] = 58,
-				["x"] = 0.3376500000,
-				["zx"] = 0.3127519794,
-				["zy"] = 0.6014662193,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[3] = 
-			{
-				["y"] = 0.4317100000,
-				["z"] = 104,
-				["x"] = 0.1688500000,
-				["zx"] = 0.4043433353,
-				["zy"] = 0.6897550626,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[4] = 
-			{
-				["y"] = 0.2872200000,
-				["z"] = 101,
-				["x"] = 0.6285000000,
-				["zx"] = 0.4650274949,
-				["zy"] = 0.4163549580,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[5] = 
-			{
-				["y"] = 0.6386100000,
-				["z"] = 58,
-				["x"] = 0.3337200000,
-				["zx"] = 0.2823752301,
-				["zy"] = 0.6221038491,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[6] = 
-			{
-				["y"] = 0.6286400000,
-				["z"] = 58,
-				["x"] = 0.3349800000,
-				["zx"] = 0.2921143405,
-				["zy"] = 0.5450412391,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[7] = 
-			{
-				["y"] = 0.5776900000,
-				["z"] = 823,
-				["x"] = 0.3736400000,
-				["zx"] = 0.8689080177,
-				["zy"] = 0.5965078659,
-				["i"] = 12,
-				["m"] = 29,
-			},
-			[8] = 
-			{
-				["y"] = 0.2846200000,
-				["z"] = 101,
-				["x"] = 0.6332400000,
-				["zx"] = 0.4946524950,
-				["zy"] = 0.4001049587,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[9] = 
-			{
-				["y"] = 0.2783000000,
-				["z"] = 101,
-				["x"] = 0.6371700000,
-				["zx"] = 0.5192149950,
-				["zy"] = 0.3606049603,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[10] = 
-			{
-				["y"] = 0.2773400000,
-				["z"] = 101,
-				["x"] = 0.6424500000,
-				["zx"] = 0.5522149950,
-				["zy"] = 0.3546049606,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[11] = 
-			{
-				["y"] = 0.6365200000,
-				["z"] = 58,
-				["x"] = 0.3368100000,
-				["zx"] = 0.3062592391,
-				["zy"] = 0.6059492999,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[12] = 
-			{
-				["y"] = 0.4881000000,
-				["z"] = 181,
-				["x"] = 0.5000000000,
-				["zx"] = 0.2222222032,
-				["zy"] = 0.4894443756,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[13] = 
-			{
-				["y"] = 0.4319700000,
-				["z"] = 104,
-				["x"] = 0.1741100000,
-				["zx"] = 0.4370792619,
-				["zy"] = 0.6913731865,
-				["i"] = 12,
-				["m"] = 5,
-			},
-		},
-		["c"] = true,
-		["k"] = 213,
-	},
-	[214] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.4132900000,
-				["z"] = 104,
-				["x"] = 0.1406000000,
-				["zx"] = 0.2285277598,
-				["zy"] = 0.5751172069,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[2] = 
-			{
-				["y"] = 0.4119200000,
-				["z"] = 104,
-				["x"] = 0.1461400000,
-				["zx"] = 0.2630062833,
-				["zy"] = 0.5665909386,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[3] = 
-			{
-				["y"] = 0.2881400000,
-				["z"] = 101,
-				["x"] = 0.6264200000,
-				["zx"] = 0.4520274949,
-				["zy"] = 0.4221049578,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[4] = 
-			{
-				["y"] = 0.6420200000,
-				["z"] = 58,
-				["x"] = 0.3850500000,
-				["zx"] = 0.6791280401,
-				["zy"] = 0.6484612713,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[5] = 
-			{
-				["y"] = 0.2893200000,
-				["z"] = 101,
-				["x"] = 0.6255600000,
-				["zx"] = 0.4466524949,
-				["zy"] = 0.4294799575,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[6] = 
-			{
-				["y"] = 0.6430900000,
-				["z"] = 58,
-				["x"] = 0.3894100000,
-				["zx"] = 0.7128284541,
-				["zy"] = 0.6567317821,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[7] = 
-			{
-				["y"] = 0.2934500000,
-				["z"] = 101,
-				["x"] = 0.6276300000,
-				["zx"] = 0.4595899949,
-				["zy"] = 0.4552924564,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[8] = 
-			{
-				["y"] = 0.6381800000,
-				["z"] = 58,
-				["x"] = 0.3823700000,
-				["zx"] = 0.6584131067,
-				["zy"] = 0.6187801858,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[9] = 
-			{
-				["y"] = 0.2894600000,
-				["z"] = 101,
-				["x"] = 0.6208100000,
-				["zx"] = 0.4169649948,
-				["zy"] = 0.4303549574,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[10] = 
-			{
-				["y"] = 0.4502700000,
-				["z"] = 181,
-				["x"] = 0.6052900000,
-				["zx"] = 0.8071666176,
-				["zy"] = 0.2792777111,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[11] = 
-			{
-				["y"] = 0.6351400000,
-				["z"] = 58,
-				["x"] = 0.3858900000,
-				["zx"] = 0.6856207804,
-				["zy"] = 0.5952826598,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[12] = 
-			{
-				["y"] = 0.4179600000,
-				["z"] = 104,
-				["x"] = 0.1537400000,
-				["zx"] = 0.3103053407,
-				["zy"] = 0.6041812018,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[13] = 
-			{
-				["y"] = 0.4214000000,
-				["z"] = 104,
-				["x"] = 0.1478800000,
-				["zx"] = 0.2738352780,
-				["zy"] = 0.6255902259,
-				["i"] = 12,
-				["m"] = 5,
-			},
-		},
-		["c"] = true,
-		["k"] = 214,
-	},
-	[215] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.4092000000,
-				["z"] = 104,
-				["x"] = 0.2091800000,
-				["zx"] = 0.6553395180,
-				["zy"] = 0.5496628730,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[2] = 
-			{
-				["y"] = 0.4147900000,
-				["z"] = 104,
-				["x"] = 0.2101900000,
-				["zx"] = 0.6616253138,
-				["zy"] = 0.5844525371,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[3] = 
-			{
-				["y"] = 0.6651700000,
-				["z"] = 58,
-				["x"] = 0.3780100000,
-				["zx"] = 0.6247126927,
-				["zy"] = 0.8273980236,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[4] = 
-			{
-				["y"] = 0.2880000000,
-				["z"] = 101,
-				["x"] = 0.6091100000,
-				["zx"] = 0.3438399947,
-				["zy"] = 0.4212299578,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[5] = 
-			{
-				["y"] = 0.6706800000,
-				["z"] = 58,
-				["x"] = 0.3783500000,
-				["zx"] = 0.6273407066,
-				["zy"] = 0.8699872895,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[6] = 
-			{
-				["y"] = 0.2868200000,
-				["z"] = 101,
-				["x"] = 0.6053900000,
-				["zx"] = 0.3205899947,
-				["zy"] = 0.4138549581,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[7] = 
-			{
-				["y"] = 0.5370600000,
-				["z"] = 181,
-				["x"] = 0.5501400000,
-				["zx"] = 0.5007777445,
-				["zy"] = 0.7614443728,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[8] = 
-			{
-				["y"] = 0.6644100000,
-				["z"] = 58,
-				["x"] = 0.3836700000,
-				["zx"] = 0.6684613953,
-				["zy"] = 0.8215236421,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[9] = 
-			{
-				["y"] = 0.4221500000,
-				["z"] = 104,
-				["x"] = 0.2125900000,
-				["zx"] = 0.6765618583,
-				["zy"] = 0.6302578910,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[10] = 
-			{
-				["y"] = 0.6659700000,
-				["z"] = 58,
-				["x"] = 0.3844500000,
-				["zx"] = 0.6744903684,
-				["zy"] = 0.8335815831,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[11] = 
-			{
-				["y"] = 0.4129000000,
-				["z"] = 104,
-				["x"] = 0.2035500000,
-				["zx"] = 0.6203008741,
-				["zy"] = 0.5726900210,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[12] = 
-			{
-				["y"] = 0.2891600000,
-				["z"] = 101,
-				["x"] = 0.6030000000,
-				["zx"] = 0.3056524947,
-				["zy"] = 0.4284799575,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[13] = 
-			{
-				["zy"] = 0.5488538741,
-				["zx"] = 0.6560234370,
-				["i"] = 12,
-				["m"] = 5,
-				["x"] = 0.2092900000,
-				["y"] = 0.4090700000,
-				["z"] = 104,
-			},
-		},
-		["c"] = true,
-		["k"] = 215,
-	},
-	[216] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.5503700000,
-				["z"] = 181,
-				["x"] = 0.5624600000,
-				["zx"] = 0.5692221854,
-				["zy"] = 0.8353888165,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[2] = 
-			{
-				["y"] = 0.3974600000,
-				["z"] = 104,
-				["x"] = 0.2366300000,
-				["zx"] = 0.8261762454,
-				["zy"] = 0.4765983548,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[3] = 
-			{
-				["y"] = 0.6284000000,
-				["z"] = 58,
-				["x"] = 0.3277300000,
-				["zx"] = 0.2360758081,
-				["zy"] = 0.5431861713,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[4] = 
-			{
-				["y"] = 0.3035200000,
-				["z"] = 101,
-				["x"] = 0.5901300000,
-				["zx"] = 0.2252149945,
-				["zy"] = 0.5182299538,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[5] = 
-			{
-				["y"] = 0.3903800000,
-				["z"] = 104,
-				["x"] = 0.2373800000,
-				["zx"] = 0.8308439155,
-				["zy"] = 0.4325355959,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[6] = 
-			{
-				["y"] = 0.2945200000,
-				["z"] = 101,
-				["x"] = 0.5939300000,
-				["zx"] = 0.2489649946,
-				["zy"] = 0.4619799561,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[7] = 
-			{
-				["y"] = 0.4007200000,
-				["z"] = 104,
-				["x"] = 0.2394400000,
-				["zx"] = 0.8436644495,
-				["zy"] = 0.4968871392,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[8] = 
-			{
-				["y"] = 0.4324100000,
-				["z"] = 181,
-				["x"] = 0.6057200000,
-				["zx"] = 0.8095555064,
-				["zy"] = 0.1800554899,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[9] = 
-			{
-				["y"] = 0.4488400000,
-				["z"] = 181,
-				["x"] = 0.4810500000,
-				["zx"] = 0.1169444308,
-				["zy"] = 0.2713332668,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[10] = 
-			{
-				["y"] = 0.2996100000,
-				["z"] = 101,
-				["x"] = 0.5948900000,
-				["zx"] = 0.2549649946,
-				["zy"] = 0.4937924548,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[11] = 
-			{
-				["y"] = 0.4367400000,
-				["z"] = 181,
-				["x"] = 0.6001200000,
-				["zx"] = 0.7784443969,
-				["zy"] = 0.2041110452,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[12] = 
-			{
-				["y"] = 0.6296500000,
-				["z"] = 58,
-				["x"] = 0.3312600000,
-				["zx"] = 0.2633607763,
-				["zy"] = 0.5528479829,
-				["i"] = 12,
-				["m"] = 8,
-			},
-		},
-		["c"] = true,
-		["k"] = 216,
-	},
-	[217] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.4216600000,
-				["z"] = 104,
-				["x"] = 0.1708900000,
-				["zx"] = 0.4170393981,
-				["zy"] = 0.6272083498,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[2] = 
-			{
-				["y"] = 0.4199400000,
-				["z"] = 104,
-				["x"] = 0.1761000000,
-				["zx"] = 0.4494641467,
-				["zy"] = 0.6165038377,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[3] = 
-			{
-				["y"] = 0.6531700000,
-				["z"] = 58,
-				["x"] = 0.3719000000,
-				["zx"] = 0.5774857363,
-				["zy"] = 0.7346446315,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[4] = 
-			{
-				["y"] = 0.2916900000,
-				["z"] = 101,
-				["x"] = 0.6141500000,
-				["zx"] = 0.3753399948,
-				["zy"] = 0.4442924568,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[5] = 
-			{
-				["y"] = 0.2947700000,
-				["z"] = 101,
-				["x"] = 0.6075400000,
-				["zx"] = 0.3340274947,
-				["zy"] = 0.4635424560,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[6] = 
-			{
-				["y"] = 0.4123100000,
-				["z"] = 104,
-				["x"] = 0.1745900000,
-				["zx"] = 0.4400665708,
-				["zy"] = 0.5690181244,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[7] = 
-			{
-				["y"] = 0.2995600000,
-				["z"] = 101,
-				["x"] = 0.6071300000,
-				["zx"] = 0.3314649947,
-				["zy"] = 0.4934799548,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[8] = 
-			{
-				["d"] = true,
-				["y"] = 0.4158500000,
-				["z"] = 328,
-				["x"] = 0.1684600000,
-				["zx"] = 0.4019161468,
-				["zy"] = 0.5910495039,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[9] = 
-			{
-				["y"] = 0.6561700000,
-				["z"] = 58,
-				["x"] = 0.3663200000,
-				["zx"] = 0.5343553899,
-				["zy"] = 0.7578329795,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[10] = 
-			{
-				["d"] = true,
-				["y"] = 0.4382000000,
-				["z"] = 533,
-				["x"] = 0.5241300000,
-				["zx"] = 0.3562777519,
-				["zy"] = 0.2122221563,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[11] = 
-			{
-				["y"] = 0.6607400000,
-				["z"] = 58,
-				["x"] = 0.3722500000,
-				["zx"] = 0.5801910448,
-				["zy"] = 0.7931565631,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[12] = 
-			{
-				["y"] = 0.6533300000,
-				["z"] = 58,
-				["x"] = 0.3620500000,
-				["zx"] = 0.5013506267,
-				["zy"] = 0.7358813434,
-				["i"] = 12,
-				["m"] = 8,
-			},
-		},
-		["c"] = true,
-		["k"] = 217,
-	},
-	[218] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.6116600000,
-				["z"] = 58,
-				["x"] = 0.3836200000,
-				["zx"] = 0.6680749226,
-				["zy"] = 0.4137951892,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[2] = 
-			{
-				["y"] = 0.3295700000,
-				["z"] = 101,
-				["x"] = 0.5891200000,
-				["zx"] = 0.2189024945,
-				["zy"] = 0.6810424470,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[3] = 
-			{
-				["y"] = 0.3210300000,
-				["z"] = 101,
-				["x"] = 0.5902400000,
-				["zx"] = 0.2259024945,
-				["zy"] = 0.6276674492,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[4] = 
-			{
-				["d"] = true,
-				["y"] = 0.4149000000,
-				["z"] = 331,
-				["x"] = 0.2387100000,
-				["zx"] = 0.8391212506,
-				["zy"] = 0.5851371280,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[5] = 
-			{
-				["d"] = true,
-				["y"] = 0.5258400000,
-				["z"] = 502,
-				["x"] = 0.5237200000,
-				["zx"] = 0.3539999742,
-				["zy"] = 0.6991110402,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[6] = 
-			{
-				["y"] = 0.4017500000,
-				["z"] = 104,
-				["x"] = 0.2330100000,
-				["zx"] = 0.8036469575,
-				["zy"] = 0.5032973994,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[7] = 
-			{
-				["y"] = 0.6169200000,
-				["z"] = 58,
-				["x"] = 0.3808200000,
-				["zx"] = 0.6464324549,
-				["zy"] = 0.4544520928,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[8] = 
-			{
-				["y"] = 0.3246500000,
-				["z"] = 101,
-				["x"] = 0.5854100000,
-				["zx"] = 0.1957149945,
-				["zy"] = 0.6502924483,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[9] = 
-			{
-				["y"] = 0.4121600000,
-				["z"] = 104,
-				["x"] = 0.2392700000,
-				["zx"] = 0.8426064443,
-				["zy"] = 0.5680845914,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[10] = 
-			{
-				["y"] = 0.6155300000,
-				["z"] = 58,
-				["x"] = 0.3803700000,
-				["zx"] = 0.6429542012,
-				["zy"] = 0.4437081582,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[11] = 
-			{
-				["y"] = 0.3183400000,
-				["z"] = 101,
-				["x"] = 0.5824200000,
-				["zx"] = 0.1770274944,
-				["zy"] = 0.6108549499,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[12] = 
-			{
-				["y"] = 0.6081900000,
-				["z"] = 58,
-				["x"] = 0.3803800000,
-				["zx"] = 0.6430314957,
-				["zy"] = 0.3869740000,
-				["i"] = 12,
-				["m"] = 8,
-			},
-		},
-		["c"] = true,
-		["k"] = 218,
-	},
-	[219] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.5963800000,
-				["z"] = 58,
-				["x"] = 0.4054800000,
-				["zx"] = 0.8370407599,
-				["zy"] = 0.2956892032,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[2] = 
-			{
-				["d"] = true,
-				["y"] = 0.6224600000,
-				["z"] = 472,
-				["x"] = 0.3892800000,
-				["zx"] = 0.7118236252,
-				["zy"] = 0.4972732421,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[3] = 
-			{
-				["y"] = 0.4025900000,
-				["z"] = 104,
-				["x"] = 0.1844100000,
-				["zx"] = 0.5011819319,
-				["zy"] = 0.5085251843,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[4] = 
-			{
-				["y"] = 0.4747800000,
-				["z"] = 181,
-				["x"] = 0.5253600000,
-				["zx"] = 0.3631110849,
-				["zy"] = 0.4154443764,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[5] = 
-			{
-				["y"] = 0.4091000000,
-				["z"] = 104,
-				["x"] = 0.1835200000,
-				["zx"] = 0.4956429634,
-				["zy"] = 0.5490405177,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[6] = 
-			{
-				["y"] = 0.5913100000,
-				["z"] = 58,
-				["x"] = 0.4067800000,
-				["zx"] = 0.8470890485,
-				["zy"] = 0.2565008951,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[7] = 
-			{
-				["y"] = 0.4088200000,
-				["z"] = 104,
-				["x"] = 0.1891400000,
-				["zx"] = 0.5306193717,
-				["zy"] = 0.5472979227,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[8] = 
-			{
-				["y"] = 0.3256100000,
-				["z"] = 101,
-				["x"] = 0.5979900000,
-				["zx"] = 0.2743399946,
-				["zy"] = 0.6562924480,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[9] = 
-			{
-				["y"] = 0.3208600000,
-				["z"] = 101,
-				["x"] = 0.5943200000,
-				["zx"] = 0.2514024946,
-				["zy"] = 0.6266049493,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[10] = 
-			{
-				["y"] = 0.3158800000,
-				["z"] = 101,
-				["x"] = 0.5938100000,
-				["zx"] = 0.2482149946,
-				["zy"] = 0.5954799506,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[11] = 
-			{
-				["y"] = 0.3214600000,
-				["z"] = 101,
-				["x"] = 0.6030600000,
-				["zx"] = 0.3060274947,
-				["zy"] = 0.6303549491,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[12] = 
-			{
-				["y"] = 0.4073700000,
-				["z"] = 104,
-				["x"] = 0.1845700000,
-				["zx"] = 0.5021777016,
-				["zy"] = 0.5382737701,
-				["i"] = 12,
-				["m"] = 5,
-			},
-		},
-		["c"] = true,
-		["k"] = 219,
-	},
-	[222] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.5908900000,
-				["z"] = 382,
-				["x"] = 0.4285100000,
-				["zx"] = 0.2835726940,
-				["zy"] = 0.3535732750,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[2] = 
-			{
-				["y"] = 0.3932000000,
-				["z"] = 103,
-				["x"] = 0.6783200000,
-				["zx"] = 0.8981926655,
-				["zy"] = 0.5874225276,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[3] = 
-			{
-				["d"] = true,
-				["y"] = 0.6035700000,
-				["z"] = 382,
-				["x"] = 0.4286200000,
-				["zx"] = 0.2844011727,
-				["zy"] = 0.4490737050,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[4] = 
-			{
-				["y"] = 0.3988700000,
-				["z"] = 103,
-				["x"] = 0.6822800000,
-				["zx"] = 0.9229426666,
-				["zy"] = 0.6228600242,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[5] = 
-			{
-				["y"] = 0.3289000000,
-				["z"] = 92,
-				["x"] = 0.2924000000,
-				["zx"] = 0.4748750946,
-				["zy"] = 0.4587626347,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[6] = 
-			{
-				["y"] = 0.3239900000,
-				["z"] = 92,
-				["x"] = 0.2884100000,
-				["zx"] = 0.4441644028,
-				["zy"] = 0.4209707481,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[7] = 
-			{
-				["y"] = 0.3301200000,
-				["z"] = 92,
-				["x"] = 0.2766000000,
-				["zx"] = 0.3532638336,
-				["zy"] = 0.4681528794,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[8] = 
-			{
-				["y"] = 0.6029000000,
-				["z"] = 382,
-				["x"] = 0.4397000000,
-				["zx"] = 0.3678515692,
-				["zy"] = 0.4440275466,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[9] = 
-			{
-				["y"] = 0.3941000000,
-				["z"] = 103,
-				["x"] = 0.6721300000,
-				["zx"] = 0.8595051638,
-				["zy"] = 0.5930475270,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[10] = 
-			{
-				["y"] = 0.4298000000,
-				["z"] = 181,
-				["x"] = 0.5335000000,
-				["zx"] = 0.4083333048,
-				["zy"] = 0.1655554901,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[11] = 
-			{
-				["y"] = 0.6035100000,
-				["z"] = 382,
-				["x"] = 0.4287200000,
-				["zx"] = 0.2851543351,
-				["zy"] = 0.4486218102,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[12] = 
-			{
-				["y"] = 0.3346600000,
-				["z"] = 92,
-				["x"] = 0.2879300000,
-				["zx"] = 0.4404698834,
-				["zy"] = 0.5030969048,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[13] = 
-			{
-				["y"] = 0.6007000000,
-				["z"] = 382,
-				["x"] = 0.4339100000,
-				["zx"] = 0.3242434649,
-				["zy"] = 0.4274580714,
-				["i"] = 12,
-				["m"] = 17,
-			},
-		},
-		["c"] = true,
-		["k"] = 222,
-	},
-	[223] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.6078500000,
-				["z"] = 382,
-				["x"] = 0.4276500000,
-				["zx"] = 0.2770954972,
-				["zy"] = 0.4813088659,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[2] = 
-			{
-				["y"] = 0.2674000000,
-				["z"] = 684,
-				["x"] = 0.2623000000,
-				["zx"] = 0.5107143200,
-				["zy"] = 0.6948571615,
-				["i"] = 12,
-				["m"] = 27,
-			},
-			[3] = 
-			{
-				["y"] = 0.2645700000,
-				["z"] = 684,
-				["x"] = 0.2713800000,
-				["zx"] = 0.5755714698,
-				["zy"] = 0.6746428767,
-				["i"] = 12,
-				["m"] = 27,
-			},
-			[4] = 
-			{
-				["y"] = 0.3649800000,
-				["z"] = 103,
-				["x"] = 0.5553800000,
-				["zx"] = 0.1298176313,
-				["zy"] = 0.4110475444,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[5] = 
-			{
-				["y"] = 0.3432200000,
-				["z"] = 92,
-				["x"] = 0.2737200000,
-				["zx"] = 0.3310967177,
-				["zy"] = 0.5689825563,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[6] = 
-			{
-				["y"] = 0.3736200000,
-				["z"] = 103,
-				["x"] = 0.5552200000,
-				["zx"] = 0.1288176313,
-				["zy"] = 0.4650475392,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[7] = 
-			{
-				["y"] = 0.3398900000,
-				["z"] = 92,
-				["x"] = 0.2732200000,
-				["zx"] = 0.3272482601,
-				["zy"] = 0.5433518064,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[8] = 
-			{
-				["y"] = 0.3714100000,
-				["z"] = 103,
-				["x"] = 0.5522400000,
-				["zx"] = 0.1101926305,
-				["zy"] = 0.4512350405,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[9] = 
-			{
-				["y"] = 0.3423500000,
-				["z"] = 92,
-				["x"] = 0.2891700000,
-				["zx"] = 0.4500140583,
-				["zy"] = 0.5622862343,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[10] = 
-			{
-				["y"] = 0.6094000000,
-				["z"] = 382,
-				["x"] = 0.4371600000,
-				["zx"] = 0.3487212437,
-				["zy"] = 0.4929828143,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[11] = 
-			{
-				["y"] = 0.2542500000,
-				["z"] = 684,
-				["x"] = 0.2587600000,
-				["zx"] = 0.4854286030,
-				["zy"] = 0.6009285942,
-				["i"] = 12,
-				["m"] = 27,
-			},
-			[12] = 
-			{
-				["y"] = 0.6132400000,
-				["z"] = 382,
-				["x"] = 0.4281600000,
-				["zx"] = 0.2809366255,
-				["zy"] = 0.5219040802,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[13] = 
-			{
-				["y"] = 0.6164000000,
-				["z"] = 382,
-				["x"] = 0.4306400000,
-				["zx"] = 0.2996150537,
-				["zy"] = 0.5457038719,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[14] = 
-			{
-				["y"] = 0.2523700000,
-				["z"] = 684,
-				["x"] = 0.2688400000,
-				["zx"] = 0.5574286107,
-				["zy"] = 0.5875000234,
-				["i"] = 12,
-				["m"] = 27,
-			},
-			[15] = 
-			{
-				["y"] = 0.5106800000,
-				["z"] = 181,
-				["x"] = 0.5431300000,
-				["zx"] = 0.4618333020,
-				["zy"] = 0.6148888188,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[16] = 
-			{
-				["y"] = 0.3462900000,
-				["z"] = 92,
-				["x"] = 0.2752200000,
-				["zx"] = 0.3426420906,
-				["zy"] = 0.5926121066,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[17] = 
-			{
-				["d"] = true,
-				["y"] = 0.3673100000,
-				["z"] = 431,
-				["x"] = 0.5528200000,
-				["zx"] = 0.1138176306,
-				["zy"] = 0.4256100430,
-				["i"] = 12,
-				["m"] = 12,
-			},
-		},
-		["c"] = true,
-		["k"] = 223,
-	},
-	[224] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.3481000000,
-				["z"] = 92,
-				["x"] = 0.2752300000,
-				["zx"] = 0.3427190597,
-				["zy"] = 0.6065435352,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[2] = 
-			{
-				["y"] = 0.6268500000,
-				["z"] = 382,
-				["x"] = 0.4281900000,
-				["zx"] = 0.2811625743,
-				["zy"] = 0.6244088792,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[3] = 
-			{
-				["y"] = 0.3773400000,
-				["z"] = 103,
-				["x"] = 0.6660300000,
-				["zx"] = 0.8213801621,
-				["zy"] = 0.4882975370,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[4] = 
-			{
-				["y"] = 0.6235300000,
-				["z"] = 382,
-				["x"] = 0.4245900000,
-				["zx"] = 0.2540487270,
-				["zy"] = 0.5994040348,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[5] = 
-			{
-				["y"] = 0.3528500000,
-				["z"] = 92,
-				["x"] = 0.2636100000,
-				["zx"] = 0.2532809045,
-				["zy"] = 0.6431039143,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[6] = 
-			{
-				["y"] = 0.3796300000,
-				["z"] = 103,
-				["x"] = 0.6608800000,
-				["zx"] = 0.7891926607,
-				["zy"] = 0.5026100356,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[7] = 
-			{
-				["y"] = 0.6225100000,
-				["z"] = 382,
-				["x"] = 0.4325800000,
-				["zx"] = 0.3142264047,
-				["zy"] = 0.5917218235,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[8] = 
-			{
-				["y"] = 0.3777600000,
-				["z"] = 103,
-				["x"] = 0.6548000000,
-				["zx"] = 0.7511926590,
-				["zy"] = 0.4909225368,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[9] = 
-			{
-				["y"] = 0.6181100000,
-				["z"] = 382,
-				["x"] = 0.4243000000,
-				["zx"] = 0.2518645560,
-				["zy"] = 0.5585828731,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[10] = 
-			{
-				["y"] = 0.3712400000,
-				["z"] = 103,
-				["x"] = 0.6591400000,
-				["zx"] = 0.7783176602,
-				["zy"] = 0.4501725406,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[11] = 
-			{
-				["y"] = 0.3548400000,
-				["z"] = 92,
-				["x"] = 0.2703600000,
-				["zx"] = 0.3052350824,
-				["zy"] = 0.6584207888,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[12] = 
-			{
-				["y"] = 0.5322300000,
-				["z"] = 181,
-				["x"] = 0.5156800000,
-				["zx"] = 0.3093333098,
-				["zy"] = 0.7346110398,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[13] = 
-			{
-				["y"] = 0.3484800000,
-				["z"] = 92,
-				["x"] = 0.2690600000,
-				["zx"] = 0.2952290926,
-				["zy"] = 0.6094683655,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[14] = 
-			{
-				["zy"] = 0.5599172947,
-				["zx"] = 0.7373997999,
-				["i"] = 12,
-				["m"] = 34,
-				["x"] = 0.7633500000,
-				["y"] = 0.7770800000,
-				["z"] = 726,
-			},
-		},
-		["c"] = true,
-		["k"] = 224,
-	},
-	[225] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.3604100000,
-				["z"] = 92,
-				["x"] = 0.2643400000,
-				["zx"] = 0.2588996526,
-				["zy"] = 0.7012926438,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[2] = 
-			{
-				["y"] = 0.3592100000,
-				["z"] = 103,
-				["x"] = 0.6443500000,
-				["zx"] = 0.6858801561,
-				["zy"] = 0.3749850478,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[3] = 
-			{
-				["y"] = 0.6305500000,
-				["z"] = 382,
-				["x"] = 0.4262200000,
-				["zx"] = 0.2663252745,
-				["zy"] = 0.6522757239,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[4] = 
-			{
-				["y"] = 0.3582800000,
-				["z"] = 103,
-				["x"] = 0.6381900000,
-				["zx"] = 0.6473801544,
-				["zy"] = 0.3691725483,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[5] = 
-			{
-				["y"] = 0.6428500000,
-				["z"] = 382,
-				["x"] = 0.4228400000,
-				["zx"] = 0.2408683846,
-				["zy"] = 0.7449141536,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[6] = 
-			{
-				["y"] = 0.3919700000,
-				["z"] = 104,
-				["x"] = 0.1506200000,
-				["zx"] = 0.2908878329,
-				["zy"] = 0.4424310460,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[7] = 
-			{
-				["y"] = 0.6315500000,
-				["z"] = 382,
-				["x"] = 0.4229200000,
-				["zx"] = 0.2414709146,
-				["zy"] = 0.6598073036,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[8] = 
-			{
-				["y"] = 0.3637900000,
-				["z"] = 103,
-				["x"] = 0.6380300000,
-				["zx"] = 0.6463801543,
-				["zy"] = 0.4036100451,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[9] = 
-			{
-				["y"] = 0.6386000000,
-				["z"] = 382,
-				["x"] = 0.4261300000,
-				["zx"] = 0.2656474283,
-				["zy"] = 0.7129049401,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[10] = 
-			{
-				["y"] = 0.3736300000,
-				["z"] = 92,
-				["x"] = 0.2643000000,
-				["zx"] = 0.2585917760,
-				["zy"] = 0.8030459514,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[11] = 
-			{
-				["d"] = true,
-				["y"] = 0.3919700000,
-				["z"] = 104,
-				["x"] = 0.1506000000,
-				["zx"] = 0.2907633617,
-				["zy"] = 0.4424310460,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[12] = 
-			{
-				["y"] = 0.3693500000,
-				["z"] = 92,
-				["x"] = 0.2592500000,
-				["zx"] = 0.2197223540,
-				["zy"] = 0.7701031256,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[13] = 
-			{
-				["y"] = 0.3636300000,
-				["z"] = 92,
-				["x"] = 0.2660000000,
-				["zx"] = 0.2716765319,
-				["zy"] = 0.7260767324,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[14] = 
-			{
-				["y"] = 0.4961700000,
-				["z"] = 181,
-				["x"] = 0.5751400000,
-				["zx"] = 0.6396666262,
-				["zy"] = 0.5342777085,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[15] = 
-			{
-				["y"] = 0.3580300000,
-				["z"] = 103,
-				["x"] = 0.6374200000,
-				["zx"] = 0.6425676542,
-				["zy"] = 0.3676100485,
-				["i"] = 12,
-				["m"] = 12,
-			},
-		},
-		["c"] = true,
-		["k"] = 225,
-	},
-	[226] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.3835800000,
-				["z"] = 92,
-				["x"] = 0.2631000000,
-				["zx"] = 0.2493554777,
-				["zy"] = 0.8796303243,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[2] = 
-			{
-				["y"] = 0.3790000000,
-				["z"] = 92,
-				["x"] = 0.2661700000,
-				["zx"] = 0.2729850075,
-				["zy"] = 0.8443784220,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[3] = 
-			{
-				["y"] = 0.6491500000,
-				["z"] = 382,
-				["x"] = 0.4213800000,
-				["zx"] = 0.2298722132,
-				["zy"] = 0.7923631054,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[4] = 
-			{
-				["y"] = 0.3752000000,
-				["z"] = 92,
-				["x"] = 0.2716700000,
-				["zx"] = 0.3153180414,
-				["zy"] = 0.8151301188,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[5] = 
-			{
-				["y"] = 0.3925400000,
-				["z"] = 103,
-				["x"] = 0.6609900000,
-				["zx"] = 0.7898801607,
-				["zy"] = 0.5832975280,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[6] = 
-			{
-				["d"] = true,
-				["y"] = 0.4834400000,
-				["z"] = 532,
-				["x"] = 0.6043300000,
-				["zx"] = 0.8018332846,
-				["zy"] = 0.4635554870,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[7] = 
-			{
-				["y"] = 0.6511200000,
-				["z"] = 382,
-				["x"] = 0.4314200000,
-				["zx"] = 0.3054897206,
-				["zy"] = 0.8072003173,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[8] = 
-			{
-				["d"] = true,
-				["y"] = 0.3945000000,
-				["z"] = 485,
-				["x"] = 0.6675400000,
-				["zx"] = 0.8308176625,
-				["zy"] = 0.5955475268,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[9] = 
-			{
-				["d"] = true,
-				["y"] = 0.3937600000,
-				["z"] = 103,
-				["x"] = 0.6566800000,
-				["zx"] = 0.7629426595,
-				["zy"] = 0.5909225272,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[10] = 
-			{
-				["y"] = 0.6601000000,
-				["z"] = 382,
-				["x"] = 0.4316400000,
-				["zx"] = 0.3071466779,
-				["zy"] = 0.8748339025,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[11] = 
-			{
-				["y"] = 0.3825200000,
-				["z"] = 92,
-				["x"] = 0.2705800000,
-				["zx"] = 0.3069284038,
-				["zy"] = 0.8714715871,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[12] = 
-			{
-				["y"] = 0.3981800000,
-				["z"] = 103,
-				["x"] = 0.6626500000,
-				["zx"] = 0.8002551612,
-				["zy"] = 0.6185475246,
-				["i"] = 12,
-				["m"] = 12,
-			},
-		},
-		["c"] = true,
-		["k"] = 226,
-	},
-	[227] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.3777400000,
-				["z"] = 92,
-				["x"] = 0.2819100000,
-				["zx"] = 0.3941344536,
-				["zy"] = 0.8346803004,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[2] = 
-			{
-				["y"] = 0.6402000000,
-				["z"] = 382,
-				["x"] = 0.4345700000,
-				["zx"] = 0.3292143369,
-				["zy"] = 0.7249554675,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[3] = 
-			{
-				["d"] = true,
-				["y"] = 0.3909900000,
-				["z"] = 92,
-				["x"] = 0.2733000000,
-				["zx"] = 0.3278640133,
-				["zy"] = 0.9366645156,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[4] = 
-			{
-				["y"] = 0.5001100000,
-				["z"] = 181,
-				["x"] = 0.5303800000,
-				["zx"] = 0.3909999723,
-				["zy"] = 0.5561665972,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[5] = 
-			{
-				["y"] = 0.3710300000,
-				["z"] = 103,
-				["x"] = 0.5597200000,
-				["zx"] = 0.1569426326,
-				["zy"] = 0.4488600408,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[6] = 
-			{
-				["y"] = 0.3752500000,
-				["z"] = 103,
-				["x"] = 0.5609000000,
-				["zx"] = 0.1643176329,
-				["zy"] = 0.4752350382,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[7] = 
-			{
-				["y"] = 0.6418000000,
-				["z"] = 382,
-				["x"] = 0.4301700000,
-				["zx"] = 0.2960751903,
-				["zy"] = 0.7370059950,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[8] = 
-			{
-				["y"] = 0.3733200000,
-				["z"] = 103,
-				["x"] = 0.5681000000,
-				["zx"] = 0.2093176349,
-				["zy"] = 0.4631725394,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[9] = 
-			{
-				["y"] = 0.3758000000,
-				["z"] = 103,
-				["x"] = 0.5634400000,
-				["zx"] = 0.1801926336,
-				["zy"] = 0.4786725379,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[10] = 
-			{
-				["y"] = 0.6501000000,
-				["z"] = 382,
-				["x"] = 0.4404100000,
-				["zx"] = 0.3731990224,
-				["zy"] = 0.7995181060,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[11] = 
-			{
-				["y"] = 0.6452100000,
-				["z"] = 382,
-				["x"] = 0.4383200000,
-				["zx"] = 0.3574579278,
-				["zy"] = 0.7626886816,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[12] = 
-			{
-				["y"] = 0.3817600000,
-				["z"] = 92,
-				["x"] = 0.2765200000,
-				["zx"] = 0.3526480804,
-				["zy"] = 0.8656219265,
-				["i"] = 12,
-				["m"] = 6,
-			},
-		},
-		["c"] = true,
-		["k"] = 227,
-	},
-	[228] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.6187800000,
-				["z"] = 382,
-				["x"] = 0.4530600000,
-				["zx"] = 0.4684740690,
-				["zy"] = 0.5636290314,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[2] = 
-			{
-				["y"] = 0.6204400000,
-				["z"] = 382,
-				["x"] = 0.4428800000,
-				["zx"] = 0.3918021343,
-				["zy"] = 0.5761314537,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[3] = 
-			{
-				["y"] = 0.6095000000,
-				["z"] = 382,
-				["x"] = 0.4521800000,
-				["zx"] = 0.4618462397,
-				["zy"] = 0.4937359723,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[4] = 
-			{
-				["y"] = 0.3429600000,
-				["z"] = 103,
-				["x"] = 0.5747800000,
-				["zx"] = 0.2510676367,
-				["zy"] = 0.2734225574,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[5] = 
-			{
-				["y"] = 0.6138700000,
-				["z"] = 382,
-				["x"] = 0.4531600000,
-				["zx"] = 0.4692272315,
-				["zy"] = 0.5266489754,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[6] = 
-			{
-				["y"] = 0.3527500000,
-				["z"] = 103,
-				["x"] = 0.5651300000,
-				["zx"] = 0.1907551341,
-				["zy"] = 0.3346100516,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[7] = 
-			{
-				["y"] = 0.3487800000,
-				["z"] = 103,
-				["x"] = 0.5663100000,
-				["zx"] = 0.1981301344,
-				["zy"] = 0.3097975540,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[8] = 
-			{
-				["y"] = 0.3411600000,
-				["z"] = 103,
-				["x"] = 0.5596600000,
-				["zx"] = 0.1565676325,
-				["zy"] = 0.2621725585,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[9] = 
-			{
-				["y"] = 0.3826200000,
-				["z"] = 92,
-				["x"] = 0.2925900000,
-				["zx"] = 0.4763375085,
-				["zy"] = 0.8722412793,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[10] = 
-			{
-				["y"] = 0.3892500000,
-				["z"] = 92,
-				["x"] = 0.2933000000,
-				["zx"] = 0.4818023183,
-				["zy"] = 0.9232718715,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[11] = 
-			{
-				["y"] = 0.5041800000,
-				["z"] = 181,
-				["x"] = 0.5559200000,
-				["zx"] = 0.5328888539,
-				["zy"] = 0.5787777081,
-				["i"] = 12,
-				["m"] = 14,
-			},
-		},
-		["c"] = true,
-		["k"] = 228,
-	},
-	[230] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.3889000000,
-				["z"] = 103,
-				["x"] = 0.6498200000,
-				["zx"] = 0.7200676576,
-				["zy"] = 0.5605475301,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[2] = 
-			{
-				["y"] = 0.3925300000,
-				["z"] = 103,
-				["x"] = 0.6452300000,
-				["zx"] = 0.6913801563,
-				["zy"] = 0.5832350280,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[3] = 
-			{
-				["y"] = 0.6259600000,
-				["z"] = 382,
-				["x"] = 0.4500400000,
-				["zx"] = 0.4457285638,
-				["zy"] = 0.6177057733,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[4] = 
-			{
-				["y"] = 0.6295800000,
-				["z"] = 382,
-				["x"] = 0.4458700000,
-				["zx"] = 0.4143216908,
-				["zy"] = 0.6449700916,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[5] = 
-			{
-				["y"] = 0.3649500000,
-				["z"] = 92,
-				["x"] = 0.2883800000,
-				["zx"] = 0.4439334953,
-				["zy"] = 0.7362366693,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[6] = 
-			{
-				["y"] = 0.3871500000,
-				["z"] = 103,
-				["x"] = 0.6448100000,
-				["zx"] = 0.6887551562,
-				["zy"] = 0.5496100312,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[7] = 
-			{
-				["y"] = 0.6310100000,
-				["z"] = 382,
-				["x"] = 0.4527800000,
-				["zx"] = 0.4663652142,
-				["zy"] = 0.6557402505,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[8] = 
-			{
-				["y"] = 0.5192600000,
-				["z"] = 181,
-				["x"] = 0.5149200000,
-				["zx"] = 0.3051110878,
-				["zy"] = 0.6625554850,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[9] = 
-			{
-				["y"] = 0.3708800000,
-				["z"] = 92,
-				["x"] = 0.2819000000,
-				["zx"] = 0.3940574845,
-				["zy"] = 0.7818794162,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[10] = 
-			{
-				["y"] = 0.6353900000,
-				["z"] = 382,
-				["x"] = 0.4516800000,
-				["zx"] = 0.4580804276,
-				["zy"] = 0.6887285694,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[11] = 
-			{
-				["y"] = 0.3663200000,
-				["z"] = 92,
-				["x"] = 0.2770700000,
-				["zx"] = 0.3568813838,
-				["zy"] = 0.7467814523,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[12] = 
-			{
-				["y"] = 0.3911100000,
-				["z"] = 103,
-				["x"] = 0.6398200000,
-				["zx"] = 0.6575676548,
-				["zy"] = 0.5743600288,
-				["i"] = 12,
-				["m"] = 12,
-			},
-		},
-		["c"] = true,
-		["k"] = 230,
-	},
-	[231] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.6320700000,
-				["z"] = 382,
-				["x"] = 0.4426700000,
-				["zx"] = 0.3902204932,
-				["zy"] = 0.6637237250,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[2] = 
-			{
-				["y"] = 0.3582400000,
-				["z"] = 92,
-				["x"] = 0.2792300000,
-				["zx"] = 0.3735067207,
-				["zy"] = 0.6845903233,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[3] = 
-			{
-				["y"] = 0.3506600000,
-				["z"] = 103,
-				["x"] = 0.5537600000,
-				["zx"] = 0.1196926309,
-				["zy"] = 0.3215475529,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[4] = 
-			{
-				["y"] = 0.4493100000,
-				["z"] = 181,
-				["x"] = 0.6023100000,
-				["zx"] = 0.7906110629,
-				["zy"] = 0.2739443779,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[5] = 
-			{
-				["y"] = 0.3571600000,
-				["z"] = 103,
-				["x"] = 0.5546900000,
-				["zx"] = 0.1255051312,
-				["zy"] = 0.3621725490,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[6] = 
-			{
-				["y"] = 0.6316900000,
-				["z"] = 382,
-				["x"] = 0.4328000000,
-				["zx"] = 0.3158833620,
-				["zy"] = 0.6608617247,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[7] = 
-			{
-				["y"] = 0.3590500000,
-				["z"] = 92,
-				["x"] = 0.2743600000,
-				["zx"] = 0.3360227434,
-				["zy"] = 0.6908248300,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[8] = 
-			{
-				["y"] = 0.6354700000,
-				["z"] = 382,
-				["x"] = 0.4347700000,
-				["zx"] = 0.3307206618,
-				["zy"] = 0.6893310958,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[9] = 
-			{
-				["y"] = 0.6244500000,
-				["z"] = 382,
-				["x"] = 0.4365600000,
-				["zx"] = 0.3442022691,
-				["zy"] = 0.6063330880,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[10] = 
-			{
-				["y"] = 0.3541800000,
-				["z"] = 92,
-				["x"] = 0.2805200000,
-				["zx"] = 0.3834357414,
-				["zy"] = 0.6533408204,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[11] = 
-			{
-				["y"] = 0.3465700000,
-				["z"] = 103,
-				["x"] = 0.5493200000,
-				["zx"] = 0.0919426297,
-				["zy"] = 0.2959850553,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[12] = 
-			{
-				["y"] = 0.3429000000,
-				["z"] = 103,
-				["x"] = 0.5477400000,
-				["zx"] = 0.0820676292,
-				["zy"] = 0.2730475575,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[13] = 
-			{
-				["y"] = 0.3535200000,
-				["z"] = 92,
-				["x"] = 0.2840600000,
-				["zx"] = 0.4106828214,
-				["zy"] = 0.6482608519,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[14] = 
-			{
-				["d"] = true,
-				["y"] = 1.0397200000,
-				["z"] = 983,
-				["x"] = 0.2574300000,
-				["zx"] = 0.5000384830,
-				["zy"] = 0.3980649479,
-				["i"] = 12,
-				["m"] = 31,
-			},
-			[15] = 
-			{
-				["zy"] = 0.3470033219,
-				["zx"] = 0.3919039511,
-				["i"] = 12,
-				["m"] = 6,
-				["x"] = 0.2816200000,
-				["y"] = 0.3143800000,
-				["z"] = 92,
-			},
-		},
-		["c"] = true,
-		["k"] = 231,
-	},
-	[232] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.3613200000,
-				["z"] = 103,
-				["x"] = 0.5938800000,
-				["zx"] = 0.3704426421,
-				["zy"] = 0.3881725465,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[2] = 
-			{
-				["y"] = 0.3548700000,
-				["z"] = 92,
-				["x"] = 0.2941400000,
-				["zx"] = 0.4882677272,
-				["zy"] = 0.6586516965,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[3] = 
-			{
-				["y"] = 0.3688000000,
-				["z"] = 103,
-				["x"] = 0.5878200000,
-				["zx"] = 0.3325676404,
-				["zy"] = 0.4349225421,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[4] = 
-			{
-				["y"] = 0.3638200000,
-				["z"] = 103,
-				["x"] = 0.5834800000,
-				["zx"] = 0.3054426392,
-				["zy"] = 0.4037975450,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[5] = 
-			{
-				["y"] = 0.3613300000,
-				["z"] = 92,
-				["x"] = 0.2985700000,
-				["zx"] = 0.5223650617,
-				["zy"] = 0.7083738120,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[6] = 
-			{
-				["y"] = 0.6464600000,
-				["z"] = 382,
-				["x"] = 0.4552600000,
-				["zx"] = 0.4850436424,
-				["zy"] = 0.7721031561,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[7] = 
-			{
-				["y"] = 0.6413500000,
-				["z"] = 382,
-				["x"] = 0.4420100000,
-				["zx"] = 0.3852496212,
-				["zy"] = 0.7336167841,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[8] = 
-			{
-				["y"] = 0.4231800000,
-				["z"] = 181,
-				["x"] = 0.5896000000,
-				["zx"] = 0.7199999554,
-				["zy"] = 0.1287777127,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[9] = 
-			{
-				["y"] = 0.6487300000,
-				["z"] = 382,
-				["x"] = 0.4473700000,
-				["zx"] = 0.4256191271,
-				["zy"] = 0.7891998419,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[10] = 
-			{
-				["y"] = 0.3669100000,
-				["z"] = 103,
-				["x"] = 0.5854000000,
-				["zx"] = 0.3174426397,
-				["zy"] = 0.4231100432,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[11] = 
-			{
-				["y"] = 0.3492200000,
-				["z"] = 92,
-				["x"] = 0.2920400000,
-				["zx"] = 0.4721042051,
-				["zy"] = 0.6151640877,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[12] = 
-			{
-				["y"] = 0.3567900000,
-				["z"] = 92,
-				["x"] = 0.2987100000,
-				["zx"] = 0.5234426299,
-				["zy"] = 0.6734297865,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[13] = 
-			{
-				["y"] = 0.6401800000,
-				["z"] = 382,
-				["x"] = 0.4496500000,
-				["zx"] = 0.4427912304,
-				["zy"] = 0.7248048359,
-				["i"] = 12,
-				["m"] = 17,
-			},
-		},
-		["c"] = true,
-		["k"] = 232,
-	},
-	[233] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.5013200000,
-				["z"] = 57,
-				["x"] = 0.7582800000,
-				["zx"] = 0.4044523375,
-				["zy"] = 0.4512256049,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[2] = 
-			{
-				["y"] = 0.7304700000,
-				["z"] = 383,
-				["x"] = 0.4412800000,
-				["zx"] = 0.6149069769,
-				["zy"] = 0.4949250047,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[3] = 
-			{
-				["y"] = 0.7380700000,
-				["z"] = 383,
-				["x"] = 0.4417400000,
-				["zx"] = 0.6182335330,
-				["zy"] = 0.5498855247,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[4] = 
-			{
-				["y"] = 0.3265900000,
-				["z"] = 19,
-				["x"] = 0.2148200000,
-				["zx"] = 0.5042943162,
-				["zy"] = 0.5208427580,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[5] = 
-			{
-				["y"] = 0.5066900000,
-				["z"] = 57,
-				["x"] = 0.7582100000,
-				["zx"] = 0.4040146187,
-				["zy"] = 0.4848048914,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[6] = 
-			{
-				["y"] = 0.5001600000,
-				["z"] = 57,
-				["x"] = 0.7635300000,
-				["zx"] = 0.4372812532,
-				["zy"] = 0.4439719788,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[7] = 
-			{
-				["y"] = 0.7231100000,
-				["z"] = 383,
-				["x"] = 0.4328100000,
-				["zx"] = 0.5536549548,
-				["zy"] = 0.4417000800,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[8] = 
-			{
-				["y"] = 0.3350800000,
-				["z"] = 19,
-				["x"] = 0.2050800000,
-				["zx"] = 0.4347228882,
-				["zy"] = 0.5814856128,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[9] = 
-			{
-				["y"] = 0.5188800000,
-				["z"] = 181,
-				["x"] = 0.5654000000,
-				["zx"] = 0.5855555179,
-				["zy"] = 0.6604443739,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[10] = 
-			{
-				["y"] = 0.3310900000,
-				["z"] = 19,
-				["x"] = 0.2087600000,
-				["zx"] = 0.4610086022,
-				["zy"] = 0.5529856139,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[11] = 
-			{
-				["y"] = 0.7303400000,
-				["l"] = true,
-				["zx"] = 0.6149069769,
-				["i"] = 12,
-				["m"] = 7,
-				["d"] = true,
-				["x"] = 0.4412800000,
-				["z"] = 383,
-				["zy"] = 0.4939848905,
-			},
-			[12] = 
-			{
-				["y"] = 0.3303000000,
-				["z"] = 19,
-				["x"] = 0.2028200000,
-				["zx"] = 0.4185800312,
-				["zy"] = 0.5473427570,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[13] = 
-			{
-				["y"] = 0.7287300000,
-				["z"] = 383,
-				["x"] = 0.4287700000,
-				["zx"] = 0.5244391143,
-				["zy"] = 0.4823419383,
-				["i"] = 12,
-				["m"] = 7,
-			},
-		},
-		["c"] = true,
-		["k"] = 233,
-	},
-	[234] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.4623600000,
-				["z"] = 181,
-				["x"] = 0.6221900000,
-				["zx"] = 0.9010555017,
-				["zy"] = 0.3464443771,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[2] = 
-			{
-				["y"] = 0.5154900000,
-				["z"] = 57,
-				["x"] = 0.8164600000,
-				["zx"] = 0.7682592540,
-				["zy"] = 0.5398324000,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[3] = 
-			{
-				["y"] = 0.3083800000,
-				["z"] = 19,
-				["x"] = 0.2339500000,
-				["zx"] = 0.6409371723,
-				["zy"] = 0.3907713346,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[4] = 
-			{
-				["y"] = 0.7357300000,
-				["z"] = 383,
-				["x"] = 0.4364200000,
-				["zx"] = 0.5797611885,
-				["zy"] = 0.5329634699,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[5] = 
-			{
-				["y"] = 0.3090500000,
-				["z"] = 19,
-				["x"] = 0.2381200000,
-				["zx"] = 0.6707228863,
-				["zy"] = 0.3955570487,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[6] = 
-			{
-				["y"] = 0.5111400000,
-				["z"] = 57,
-				["x"] = 0.8105100000,
-				["zx"] = 0.7310531496,
-				["zy"] = 0.5126313020,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[7] = 
-			{
-				["y"] = 0.7429800000,
-				["z"] = 383,
-				["x"] = 0.4381900000,
-				["zx"] = 0.5925611978,
-				["zy"] = 0.5853929133,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[8] = 
-			{
-				["y"] = 0.7377800000,
-				["z"] = 383,
-				["x"] = 0.4269500000,
-				["zx"] = 0.5112775227,
-				["zy"] = 0.5477883470,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[9] = 
-			{
-				["y"] = 0.7403400000,
-				["z"] = 383,
-				["x"] = 0.4325800000,
-				["zx"] = 0.5519916767,
-				["zy"] = 0.5663013643,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[10] = 
-			{
-				["y"] = 0.3049300000,
-				["z"] = 19,
-				["x"] = 0.2375800000,
-				["zx"] = 0.6668657435,
-				["zy"] = 0.3661284784,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[11] = 
-			{
-				["y"] = 0.3023400000,
-				["z"] = 19,
-				["x"] = 0.2357200000,
-				["zx"] = 0.6535800293,
-				["zy"] = 0.3476284792,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[12] = 
-			{
-				["y"] = 0.5205900000,
-				["z"] = 57,
-				["x"] = 0.8137400000,
-				["zx"] = 0.7512507491,
-				["zy"] = 0.5717233425,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[13] = 
-			{
-				["y"] = 0.5102700000,
-				["z"] = 57,
-				["x"] = 0.8037100000,
-				["zx"] = 0.6885318874,
-				["zy"] = 0.5071910824,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[14] = 
-			{
-				["y"] = 0.7356500000,
-				["l"] = true,
-				["zx"] = 0.5793996063,
-				["i"] = 12,
-				["m"] = 7,
-				["d"] = true,
-				["x"] = 0.4363700000,
-				["z"] = 383,
-				["zy"] = 0.5323849381,
-			},
-		},
-		["c"] = true,
-		["k"] = 234,
-	},
-	[235] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.4970800000,
-				["z"] = 57,
-				["x"] = 0.8014000000,
-				["zx"] = 0.6740871646,
-				["zy"] = 0.4247123508,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[2] = 
-			{
-				["y"] = 0.7225300000,
-				["z"] = 383,
-				["x"] = 0.4531500000,
-				["zx"] = 0.7007465875,
-				["zy"] = 0.4375057246,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[3] = 
-			{
-				["y"] = 0.7292100000,
-				["z"] = 383,
-				["x"] = 0.4637200000,
-				["zx"] = 0.7771850613,
-				["zy"] = 0.4858131290,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[4] = 
-			{
-				["y"] = 0.4971300000,
-				["z"] = 57,
-				["x"] = 0.7969100000,
-				["zx"] = 0.6460106253,
-				["zy"] = 0.4250250071,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[5] = 
-			{
-				["y"] = 0.4912200000,
-				["z"] = 57,
-				["x"] = 0.7995000000,
-				["zx"] = 0.6622062237,
-				["zy"] = 0.3880690326,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[6] = 
-			{
-				["y"] = 0.3148800000,
-				["z"] = 19,
-				["x"] = 0.2472800000,
-				["zx"] = 0.7361514573,
-				["zy"] = 0.4371999042,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[7] = 
-			{
-				["y"] = 0.4915000000,
-				["z"] = 57,
-				["x"] = 0.8095500000,
-				["zx"] = 0.7250501479,
-				["zy"] = 0.3898199078,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[8] = 
-			{
-				["y"] = 0.3166300000,
-				["z"] = 19,
-				["x"] = 0.2445200000,
-				["zx"] = 0.7164371717,
-				["zy"] = 0.4496999037,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[9] = 
-			{
-				["y"] = 0.3083500000,
-				["z"] = 19,
-				["x"] = 0.2498800000,
-				["zx"] = 0.7547228857,
-				["zy"] = 0.3905570489,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[10] = 
-			{
-				["y"] = 0.7297800000,
-				["z"] = 383,
-				["x"] = 0.4527300000,
-				["zx"] = 0.6977092971,
-				["zy"] = 0.4899351680,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[11] = 
-			{
-				["y"] = 0.4261900000,
-				["z"] = 181,
-				["x"] = 0.5566000000,
-				["zx"] = 0.5366666315,
-				["zy"] = 0.1454999347,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[12] = 
-			{
-				["y"] = 0.7207800000,
-				["z"] = 383,
-				["x"] = 0.4609100000,
-				["zx"] = 0.7568641425,
-				["zy"] = 0.4248503417,
-				["i"] = 12,
-				["m"] = 7,
-			},
-		},
-		["c"] = true,
-		["k"] = 235,
-	},
-	[236] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.4974400000,
-				["z"] = 57,
-				["x"] = 0.8288400000,
-				["zx"] = 0.8456729636,
-				["zy"] = 0.4269634761,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[2] = 
-			{
-				["y"] = 0.5060700000,
-				["z"] = 57,
-				["x"] = 0.8337100000,
-				["zx"] = 0.8761256910,
-				["zy"] = 0.4809279533,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[3] = 
-			{
-				["y"] = 0.7189800000,
-				["z"] = 383,
-				["x"] = 0.4503200000,
-				["zx"] = 0.6802810358,
-				["zy"] = 0.4118333764,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[4] = 
-			{
-				["y"] = 0.7134300000,
-				["z"] = 383,
-				["x"] = 0.4560900000,
-				["zx"] = 0.7220076199,
-				["zy"] = 0.3716977335,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[5] = 
-			{
-				["y"] = 0.3136700000,
-				["z"] = 19,
-				["x"] = 0.2568100000,
-				["zx"] = 0.8042228853,
-				["zy"] = 0.4285570474,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[6] = 
-			{
-				["y"] = 0.7156100000,
-				["z"] = 383,
-				["x"] = 0.4456700000,
-				["zx"] = 0.6466538927,
-				["zy"] = 0.3874627247,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[7] = 
-			{
-				["y"] = 0.3113500000,
-				["z"] = 19,
-				["x"] = 0.2528200000,
-				["zx"] = 0.7757228855,
-				["zy"] = 0.4119856195,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[8] = 
-			{
-				["y"] = 0.4556300000,
-				["z"] = 181,
-				["x"] = 0.4951400000,
-				["zx"] = 0.1952222046,
-				["zy"] = 0.3090554886,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[9] = 
-			{
-				["y"] = 0.5057100000,
-				["z"] = 57,
-				["x"] = 0.8319800000,
-				["zx"] = 0.8653077817,
-				["zy"] = 0.4786768280,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[10] = 
-			{
-				["y"] = 0.3092100000,
-				["z"] = 19,
-				["x"] = 0.2634700000,
-				["zx"] = 0.8517943135,
-				["zy"] = 0.3966999058,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[11] = 
-			{
-				["y"] = 0.3164200000,
-				["z"] = 19,
-				["x"] = 0.2523800000,
-				["zx"] = 0.7725800284,
-				["zy"] = 0.4481999038,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[12] = 
-			{
-				["y"] = 0.7110600000,
-				["z"] = 383,
-				["x"] = 0.4525900000,
-				["zx"] = 0.6966968670,
-				["zy"] = 0.3545587292,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[13] = 
-			{
-				["y"] = 0.5010100000,
-				["z"] = 57,
-				["x"] = 0.8271200000,
-				["zx"] = 0.8349175855,
-				["zy"] = 0.4492871359,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[14] = 
-			{
-				["y"] = 0.7350900000,
-				["z"] = 1011,
-				["x"] = 0.0852900000,
-				["zx"] = 0.3370441825,
-				["zy"] = 0.4880664287,
-				["i"] = 12,
-				["m"] = 32,
-			},
-			[15] = 
-			{
-				["y"] = 0.7745900000,
-				["z"] = 1011,
-				["x"] = 0.0439700000,
-				["zx"] = 0.1802557552,
-				["zy"] = 0.6379489283,
-				["i"] = 12,
-				["m"] = 32,
-			},
-			[16] = 
-			{
-				["y"] = 0.7714100000,
-				["z"] = 1011,
-				["x"] = 0.0575200000,
-				["zx"] = 0.2316711277,
-				["zy"] = 0.6258824384,
-				["i"] = 12,
-				["m"] = 32,
-			},
-			[17] = 
-			{
-				["y"] = 0.7379100000,
-				["z"] = 1011,
-				["x"] = 0.0662800000,
-				["zx"] = 0.2649108814,
-				["zy"] = 0.4987669008,
-				["i"] = 12,
-				["m"] = 32,
-			},
-			[18] = 
-			{
-				["zy"] = 0.4123427952,
-				["zx"] = 0.7752228145,
-				["i"] = 12,
-				["m"] = 4,
-				["x"] = 0.2527500000,
-				["y"] = 0.3114000000,
-				["z"] = 19,
-			},
-		},
-		["c"] = true,
-		["k"] = 236,
-	},
-	[237] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["zy"] = 0.5900450311,
-				["zx"] = 0.6727114522,
-				["i"] = 12,
-				["m"] = 10,
-				["x"] = 0.8011800000,
-				["y"] = 0.5235200000,
-				["z"] = 57,
-			},
-			[2] = 
-			{
-				["zy"] = 0.4724142275,
-				["zx"] = 0.7377942472,
-				["i"] = 12,
-				["m"] = 4,
-				["x"] = 0.2475100000,
-				["y"] = 0.3198100000,
-				["z"] = 19,
-			},
-			[3] = 
-			{
-				["zy"] = 0.5438084679,
-				["zx"] = 0.5582244669,
-				["i"] = 12,
-				["m"] = 32,
-				["x"] = 0.1435800000,
-				["y"] = 0.7497800000,
-				["z"] = 1011,
-			},
-			[4] = 
-			{
-				["zy"] = 0.5445294199,
-				["zx"] = 0.5119699344,
-				["i"] = 12,
-				["m"] = 32,
-				["x"] = 0.1313900000,
-				["y"] = 0.7499700000,
-				["z"] = 1011,
-			},
-			[5] = 
-			{
-				["zy"] = 0.5459604904,
-				["zx"] = 0.6456354105,
-				["i"] = 12,
-				["m"] = 10,
-				["x"] = 0.7968500000,
-				["y"] = 0.5164700000,
-				["z"] = 57,
-			},
-			[6] = 
-			{
-				["zy"] = 0.3077915519,
-				["zx"] = 0.1835969042,
-				["i"] = 12,
-				["m"] = 32,
-				["x"] = 0.0448500000,
-				["y"] = 0.6875800000,
-				["z"] = 1011,
-			},
-			[7] = 
-			{
-				["zy"] = 0.4106765363,
-				["zx"] = 0.5851839405,
-				["i"] = 12,
-				["m"] = 7,
-				["x"] = 0.4371700000,
-				["y"] = 0.7188200000,
-				["z"] = 383,
-			},
-			[8] = 
-			{
-				["zy"] = 0.5857221965,
-				["zx"] = 0.6713888151,
-				["i"] = 12,
-				["m"] = 14,
-				["d"] = true,
-				["x"] = 0.5808500000,
-				["y"] = 0.5054300000,
-				["z"] = 495,
-			},
-			[9] = 
-			{
-				["zy"] = 0.3815330103,
-				["zx"] = 0.5429511387,
-				["i"] = 12,
-				["m"] = 7,
-				["x"] = 0.4313300000,
-				["y"] = 0.7147900000,
-				["z"] = 383,
-			},
-			[10] = 
-			{
-				["zy"] = 0.3544143447,
-				["zx"] = 0.5764336511,
-				["i"] = 12,
-				["m"] = 7,
-				["x"] = 0.4359600000,
-				["y"] = 0.7110400000,
-				["z"] = 383,
-			},
-			[11] = 
-			{
-				["zy"] = 0.4954142289,
-				["zx"] = 0.7845799563,
-				["i"] = 12,
-				["m"] = 4,
-				["x"] = 0.2540600000,
-				["y"] = 0.3230300000,
-				["z"] = 19,
-			},
-			[12] = 
-			{
-				["zy"] = 0.5055096742,
-				["zx"] = 0.4426618505,
-				["i"] = 12,
-				["m"] = 31,
-				["x"] = 0.2459700000,
-				["y"] = 1.0611800000,
-				["z"] = 980,
-			},
-		},
-		["k"] = 237,
-	},
-	[238] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.5077000000,
-				["z"] = 57,
-				["x"] = 0.7614900000,
-				["zx"] = 0.4245248745,
-				["zy"] = 0.4911205487,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[2] = 
-			{
-				["y"] = 0.7026100000,
-				["z"] = 383,
-				["x"] = 0.4152700000,
-				["zx"] = 0.4268119244,
-				["zy"] = 0.2934513089,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[3] = 
-			{
-				["y"] = 0.5147900000,
-				["z"] = 57,
-				["x"] = 0.7587900000,
-				["zx"] = 0.4076414322,
-				["zy"] = 0.5354552118,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[4] = 
-			{
-				["y"] = 0.3374400000,
-				["z"] = 19,
-				["x"] = 0.2399900000,
-				["zx"] = 0.6840800291,
-				["zy"] = 0.5983427550,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[5] = 
-			{
-				["y"] = 0.7144500000,
-				["z"] = 383,
-				["x"] = 0.4264200000,
-				["zx"] = 0.5074447516,
-				["zy"] = 0.3790740138,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[6] = 
-			{
-				["y"] = 0.5141900000,
-				["z"] = 57,
-				["x"] = 0.7726200000,
-				["zx"] = 0.4941221756,
-				["zy"] = 0.5317033362,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[7] = 
-			{
-				["y"] = 0.3290900000,
-				["z"] = 19,
-				["x"] = 0.2365400000,
-				["zx"] = 0.6594371721,
-				["zy"] = 0.5386999002,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[8] = 
-			{
-				["y"] = 0.7115300000,
-				["z"] = 383,
-				["x"] = 0.4230000000,
-				["zx"] = 0.4827125302,
-				["zy"] = 0.3579576035,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[9] = 
-			{
-				["y"] = 0.3365800000,
-				["z"] = 19,
-				["x"] = 0.2357500000,
-				["zx"] = 0.6537943150,
-				["zy"] = 0.5921998981,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[10] = 
-			{
-				["y"] = 0.7033700000,
-				["z"] = 383,
-				["x"] = 0.4255400000,
-				["zx"] = 0.5010809051,
-				["zy"] = 0.2989473609,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[11] = 
-			{
-				["y"] = 0.5141900000,
-				["z"] = 57,
-				["x"] = 0.7661900000,
-				["zx"] = 0.4539145704,
-				["zy"] = 0.5317033362,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[12] = 
-			{
-				["y"] = 0.3318500000,
-				["z"] = 19,
-				["x"] = 0.2409000000,
-				["zx"] = 0.6905800290,
-				["zy"] = 0.5584141851,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[13] = 
-			{
-				["d"] = true,
-				["y"] = 0.5294400000,
-				["z"] = 503,
-				["x"] = 0.5428800000,
-				["zx"] = 0.4604444132,
-				["zy"] = 0.7191110399,
-				["i"] = 12,
-				["m"] = 14,
-			},
-		},
-		["c"] = true,
-		["k"] = 238,
-	},
-	[239] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.7013500000,
-				["z"] = 383,
-				["x"] = 0.4470400000,
-				["zx"] = 0.6565612445,
-				["zy"] = 0.2843394332,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[2] = 
-			{
-				["y"] = 0.5189700000,
-				["z"] = 57,
-				["x"] = 0.8195700000,
-				["zx"] = 0.7877064783,
-				["zy"] = 0.5615932784,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[3] = 
-			{
-				["y"] = 0.5195100000,
-				["z"] = 181,
-				["x"] = 0.5805700000,
-				["zx"] = 0.6698332913,
-				["zy"] = 0.6639443739,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[4] = 
-			{
-				["y"] = 0.3293500000,
-				["z"] = 19,
-				["x"] = 0.2486900000,
-				["zx"] = 0.7462228857,
-				["zy"] = 0.5405570430,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[5] = 
-			{
-				["y"] = 0.7047700000,
-				["z"] = 383,
-				["x"] = 0.4466400000,
-				["zx"] = 0.6536685870,
-				["zy"] = 0.3090716672,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[6] = 
-			{
-				["y"] = 0.3255100000,
-				["z"] = 19,
-				["x"] = 0.2427300000,
-				["zx"] = 0.7036514575,
-				["zy"] = 0.5131284726,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[7] = 
-			{
-				["y"] = 0.7081600000,
-				["z"] = 383,
-				["x"] = 0.4450200000,
-				["zx"] = 0.6419533243,
-				["zy"] = 0.3335869518,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[8] = 
-			{
-				["y"] = 0.3246500000,
-				["z"] = 19,
-				["x"] = 0.2484500000,
-				["zx"] = 0.7445086000,
-				["zy"] = 0.5069856157,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[9] = 
-			{
-				["y"] = 0.5104800000,
-				["z"] = 57,
-				["x"] = 0.8213300000,
-				["zx"] = 0.7987119814,
-				["zy"] = 0.5085042389,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[10] = 
-			{
-				["y"] = 0.3291100000,
-				["z"] = 19,
-				["x"] = 0.2535100000,
-				["zx"] = 0.7806514569,
-				["zy"] = 0.5388427573,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[11] = 
-			{
-				["y"] = 0.5188000000,
-				["z"] = 57,
-				["x"] = 0.8238600000,
-				["zx"] = 0.8145323922,
-				["zy"] = 0.5605302470,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[12] = 
-			{
-				["y"] = 0.7062600000,
-				["z"] = 383,
-				["x"] = 0.4403000000,
-				["zx"] = 0.6078199660,
-				["zy"] = 0.3198468218,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[13] = 
-			{
-				["y"] = 0.5066100000,
-				["z"] = 57,
-				["x"] = 0.8278000000,
-				["zx"] = 0.8391697117,
-				["zy"] = 0.4843046413,
-				["i"] = 12,
-				["m"] = 10,
-			},
-		},
-		["c"] = true,
-		["k"] = 239,
-	},
-	[240] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.6878400000,
-				["z"] = 383,
-				["x"] = 0.4218000000,
-				["zx"] = 0.4740345577,
-				["zy"] = 0.1866398772,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[2] = 
-			{
-				["y"] = 0.3185800000,
-				["z"] = 19,
-				["x"] = 0.2615900000,
-				["zx"] = 0.8383657422,
-				["zy"] = 0.4636284746,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[3] = 
-			{
-				["y"] = 0.4917500000,
-				["z"] = 57,
-				["x"] = 0.7835200000,
-				["zx"] = 0.5622812576,
-				["zy"] = 0.3913831893,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[4] = 
-			{
-				["y"] = 0.6945700000,
-				["z"] = 383,
-				["x"] = 0.4246200000,
-				["zx"] = 0.4944277929,
-				["zy"] = 0.2353088640,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[5] = 
-			{
-				["y"] = 0.3155900000,
-				["z"] = 19,
-				["x"] = 0.2671800000,
-				["zx"] = 0.8782943133,
-				["zy"] = 0.4422713326,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[6] = 
-			{
-				["y"] = 0.6990600000,
-				["z"] = 383,
-				["x"] = 0.4196900000,
-				["zx"] = 0.4587757895,
-				["zy"] = 0.2677789607,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[7] = 
-			{
-				["y"] = 0.4902600000,
-				["z"] = 57,
-				["x"] = 0.7912900000,
-				["zx"] = 0.6108680527,
-				["zy"] = 0.3820660316,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[8] = 
-			{
-				["y"] = 0.3136200000,
-				["z"] = 19,
-				["x"] = 0.2641300000,
-				["zx"] = 0.8565085992,
-				["zy"] = 0.4281999046,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[9] = 
-			{
-				["y"] = 0.4813000000,
-				["z"] = 57,
-				["x"] = 0.7885100000,
-				["zx"] = 0.5934843603,
-				["zy"] = 0.3260380229,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[10] = 
-			{
-				["y"] = 0.3235400000,
-				["z"] = 19,
-				["x"] = 0.2680000000,
-				["zx"] = 0.8841514561,
-				["zy"] = 0.4990570446,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[11] = 
-			{
-				["y"] = 0.6938400000,
-				["z"] = 383,
-				["x"] = 0.4157100000,
-				["zx"] = 0.4299938476,
-				["zy"] = 0.2300297614,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[12] = 
-			{
-				["y"] = 0.5278700000,
-				["z"] = 181,
-				["x"] = 0.5100400000,
-				["zx"] = 0.2779999781,
-				["zy"] = 0.7103888178,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[13] = 
-			{
-				["zy"] = 0.4426284734,
-				["z"] = 19,
-				["y"] = 0.3156400000,
-				["zx"] = 0.8778656697,
-				["x"] = 0.2671200000,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[14] = 
-			{
-				["zy"] = 0.4426285113,
-				["zx"] = 0.8778656603,
-				["i"] = 12,
-				["m"] = 4,
-				["x"] = 0.2671200000,
-				["y"] = 0.3156400000,
-				["z"] = 19,
-			},
-		},
-		["c"] = true,
-		["k"] = 240,
-	},
-	[241] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.4765600000,
-				["z"] = 181,
-				["x"] = 0.5895100000,
-				["zx"] = 0.7194999555,
-				["zy"] = 0.4253332652,
-				["i"] = 12,
-				["m"] = 14,
-			},
-		},
-		["c"] = true,
-		["k"] = 241,
-	},
-	[242] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.4989300000,
-				["z"] = 181,
-				["x"] = 0.5048000000,
-				["zx"] = 0.2488888685,
-				["zy"] = 0.5496110417,
-				["i"] = 12,
-				["m"] = 14,
-			},
-		},
-		["c"] = true,
-		["k"] = 242,
-	},
-	[243] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.3176200000,
-				["z"] = 19,
-				["x"] = 0.2149800000,
-				["zx"] = 0.5054371733,
-				["zy"] = 0.4567713320,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[2] = 
-			{
-				["y"] = 0.7178400000,
-				["z"] = 383,
-				["x"] = 0.4008100000,
-				["zx"] = 0.3222423566,
-				["zy"] = 0.4035892984,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[3] = 
-			{
-				["y"] = 0.7089300000,
-				["z"] = 383,
-				["x"] = 0.4033900000,
-				["zx"] = 0.3408999973,
-				["zy"] = 0.3391553203,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[4] = 
-			{
-				["y"] = 0.3100300000,
-				["z"] = 19,
-				["x"] = 0.2135900000,
-				["zx"] = 0.4955086020,
-				["zy"] = 0.4025570484,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[5] = 
-			{
-				["y"] = 0.3074400000,
-				["z"] = 19,
-				["x"] = 0.2179700000,
-				["zx"] = 0.5267943160,
-				["zy"] = 0.3840570491,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[6] = 
-			{
-				["y"] = 0.7162400000,
-				["z"] = 383,
-				["x"] = 0.4089000000,
-				["zx"] = 0.3807463541,
-				["zy"] = 0.3920186626,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[7] = 
-			{
-				["y"] = 0.3165500000,
-				["z"] = 19,
-				["x"] = 0.2224500000,
-				["zx"] = 0.5587943158,
-				["zy"] = 0.4491284752,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[8] = 
-			{
-				["y"] = 0.4991500000,
-				["z"] = 57,
-				["x"] = 0.8387300000,
-				["zx"] = 0.9075163875,
-				["zy"] = 0.4376563216,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[9] = 
-			{
-				["y"] = 0.4939700000,
-				["z"] = 57,
-				["x"] = 0.8412500000,
-				["zx"] = 0.9232742670,
-				["zy"] = 0.4052651290,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[10] = 
-			{
-				["y"] = 0.4957600000,
-				["z"] = 57,
-				["x"] = 0.8376100000,
-				["zx"] = 0.9005128855,
-				["zy"] = 0.4164582245,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[11] = 
-			{
-				["y"] = 0.7081700000,
-				["z"] = 383,
-				["x"] = 0.3960300000,
-				["zx"] = 0.2876750998,
-				["zy"] = 0.3336592683,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[12] = 
-			{
-				["y"] = 0.5020600000,
-				["z"] = 57,
-				["x"] = 0.8434900000,
-				["zx"] = 0.9372812710,
-				["zy"] = 0.4558529182,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[13] = 
-			{
-				["y"] = 0.5201600000,
-				["z"] = 181,
-				["x"] = 0.5077900000,
-				["zx"] = 0.2654999788,
-				["zy"] = 0.6675554849,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[14] = 
-			{
-				["y"] = 0.8143200000,
-				["z"] = 1011,
-				["x"] = 0.1715800000,
-				["zx"] = 0.6644709345,
-				["zy"] = 0.7887041613,
-				["i"] = 12,
-				["m"] = 32,
-			},
-			[15] = 
-			{
-				["y"] = 0.7866000000,
-				["z"] = 1011,
-				["x"] = 0.1451600000,
-				["zx"] = 0.5642204445,
-				["zy"] = 0.6835207971,
-				["i"] = 12,
-				["m"] = 32,
-			},
-			[16] = 
-			{
-				["y"] = 0.7983600000,
-				["z"] = 1011,
-				["x"] = 0.1863600000,
-				["zx"] = 0.7205535327,
-				["zy"] = 0.7281440425,
-				["i"] = 12,
-				["m"] = 32,
-			},
-			[17] = 
-			{
-				["y"] = 0.7804800000,
-				["z"] = 1011,
-				["x"] = 0.1301600000,
-				["zx"] = 0.5073030580,
-				["zy"] = 0.6602984959,
-				["i"] = 12,
-				["m"] = 32,
-			},
-		},
-		["c"] = true,
-		["k"] = 243,
-	},
-	[244] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.4923200000,
-				["z"] = 57,
-				["x"] = 0.8158300000,
-				["zx"] = 0.7643197841,
-				["zy"] = 0.3949474711,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[2] = 
-			{
-				["y"] = 0.7049800000,
-				["z"] = 383,
-				["x"] = 0.3932800000,
-				["zx"] = 0.2677880796,
-				["zy"] = 0.3105903132,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[3] = 
-			{
-				["y"] = 0.3261300000,
-				["z"] = 19,
-				["x"] = 0.2188500000,
-				["zx"] = 0.5330800303,
-				["zy"] = 0.5175570439,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[4] = 
-			{
-				["y"] = 0.3185000000,
-				["z"] = 19,
-				["x"] = 0.2265500000,
-				["zx"] = 0.5880800298,
-				["zy"] = 0.4630570460,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[5] = 
-			{
-				["y"] = 0.6934300000,
-				["z"] = 383,
-				["x"] = 0.3949300000,
-				["zx"] = 0.2797202917,
-				["zy"] = 0.2270647860,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[6] = 
-			{
-				["y"] = 0.6975600000,
-				["z"] = 383,
-				["x"] = 0.3960200000,
-				["zx"] = 0.2876027833,
-				["zy"] = 0.2569314897,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[7] = 
-			{
-				["y"] = 0.3237900000,
-				["z"] = 19,
-				["x"] = 0.2245300000,
-				["zx"] = 0.5736514585,
-				["zy"] = 0.5008427588,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[8] = 
-			{
-				["y"] = 0.3180700000,
-				["z"] = 19,
-				["x"] = 0.2188100000,
-				["zx"] = 0.5327943160,
-				["zy"] = 0.4599856176,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[9] = 
-			{
-				["y"] = 0.4910700000,
-				["z"] = 57,
-				["x"] = 0.8144200000,
-				["zx"] = 0.7555028753,
-				["zy"] = 0.3871310637,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[10] = 
-			{
-				["y"] = 0.4376100000,
-				["z"] = 181,
-				["x"] = 0.5306300000,
-				["zx"] = 0.3923888611,
-				["zy"] = 0.2089443785,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[11] = 
-			{
-				["y"] = 0.4946100000,
-				["z"] = 57,
-				["x"] = 0.8185700000,
-				["zx"] = 0.7814533515,
-				["zy"] = 0.4092671296,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[12] = 
-			{
-				["y"] = 0.4869300000,
-				["z"] = 57,
-				["x"] = 0.8163000000,
-				["zx"] = 0.7672587537,
-				["zy"] = 0.3612431221,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[13] = 
-			{
-				["y"] = 0.6518600000,
-				["z"] = 1011,
-				["x"] = 0.1261300000,
-				["zx"] = 0.4920112535,
-				["zy"] = 0.1722507214,
-				["i"] = 12,
-				["m"] = 32,
-			},
-			[14] = 
-			{
-				["y"] = 0.7228600000,
-				["z"] = 1011,
-				["x"] = 0.0599900000,
-				["zx"] = 0.2410435240,
-				["zy"] = 0.4416597713,
-				["i"] = 12,
-				["m"] = 32,
-			},
-		},
-		["c"] = true,
-		["k"] = 244,
-	},
-	[245] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.5266600000,
-				["z"] = 57,
-				["x"] = 0.7943400000,
-				["zx"] = 0.6299400894,
-				["zy"] = 0.6096798172,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[2] = 
-			{
-				["y"] = 0.5292800000,
-				["z"] = 57,
-				["x"] = 0.8117700000,
-				["zx"] = 0.7389320893,
-				["zy"] = 0.6260630072,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[3] = 
-			{
-				["y"] = 0.6835700000,
-				["z"] = 383,
-				["x"] = 0.4025100000,
-				["zx"] = 0.3345361509,
-				["zy"] = 0.1557607429,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[4] = 
-			{
-				["y"] = 0.3063300000,
-				["z"] = 19,
-				["x"] = 0.2216700000,
-				["zx"] = 0.5532228872,
-				["zy"] = 0.3761284780,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[5] = 
-			{
-				["y"] = 0.3046500000,
-				["z"] = 19,
-				["x"] = 0.2307600000,
-				["zx"] = 0.6181514582,
-				["zy"] = 0.3641284785,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[6] = 
-			{
-				["y"] = 0.6843600000,
-				["z"] = 383,
-				["x"] = 0.3947900000,
-				["zx"] = 0.2787078616,
-				["zy"] = 0.1614737444,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[7] = 
-			{
-				["y"] = 0.3052300000,
-				["z"] = 19,
-				["x"] = 0.2241900000,
-				["zx"] = 0.5712228871,
-				["zy"] = 0.3682713355,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[8] = 
-			{
-				["y"] = 0.3127600000,
-				["z"] = 19,
-				["x"] = 0.2290300000,
-				["zx"] = 0.6057943154,
-				["zy"] = 0.4220570477,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[9] = 
-			{
-				["y"] = 0.5335700000,
-				["z"] = 57,
-				["x"] = 0.8013600000,
-				["zx"] = 0.6738370395,
-				["zy"] = 0.6528889177,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[10] = 
-			{
-				["y"] = 0.6800800000,
-				["z"] = 383,
-				["x"] = 0.3893000000,
-				["zx"] = 0.2390061377,
-				["zy"] = 0.1305222936,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[11] = 
-			{
-				["y"] = 0.6840600000,
-				["z"] = 383,
-				["x"] = 0.3954000000,
-				["zx"] = 0.2831191642,
-				["zy"] = 0.1593042501,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[12] = 
-			{
-				["y"] = 0.5275000000,
-				["z"] = 57,
-				["x"] = 0.8045800000,
-				["zx"] = 0.6939721077,
-				["zy"] = 0.6149324430,
-				["i"] = 12,
-				["m"] = 10,
-			},
-		},
-		["c"] = true,
-		["k"] = 245,
-	},
-	[246] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.6944300000,
-				["z"] = 383,
-				["x"] = 0.4015100000,
-				["zx"] = 0.3273045072,
-				["zy"] = 0.2342964334,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[2] = 
-			{
-				["y"] = 0.3123500000,
-				["z"] = 19,
-				["x"] = 0.2334100000,
-				["zx"] = 0.6370800295,
-				["zy"] = 0.4191284763,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[3] = 
-			{
-				["y"] = 0.6991800000,
-				["z"] = 383,
-				["x"] = 0.4107600000,
-				["zx"] = 0.3941972114,
-				["zy"] = 0.2686467584,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[4] = 
-			{
-				["y"] = 0.3185800000,
-				["z"] = 19,
-				["x"] = 0.2403200000,
-				["zx"] = 0.6864371719,
-				["zy"] = 0.4636284746,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[5] = 
-			{
-				["y"] = 0.3168400000,
-				["z"] = 19,
-				["x"] = 0.2366300000,
-				["zx"] = 0.6600800293,
-				["zy"] = 0.4511999036,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[6] = 
-			{
-				["y"] = 0.5153700000,
-				["z"] = 57,
-				["x"] = 0.7153100000,
-				["zx"] = 0.1357554795,
-				["zy"] = 0.5390820249,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[7] = 
-			{
-				["y"] = 0.3132700000,
-				["z"] = 19,
-				["x"] = 0.2416200000,
-				["zx"] = 0.6957228861,
-				["zy"] = 0.4256999047,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[8] = 
-			{
-				["y"] = 0.6989700000,
-				["z"] = 383,
-				["x"] = 0.4034000000,
-				["zx"] = 0.3409723138,
-				["zy"] = 0.2671281125,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[9] = 
-			{
-				["y"] = 0.5068200000,
-				["z"] = 57,
-				["x"] = 0.7095800000,
-				["zx"] = 0.0999250630,
-				["zy"] = 0.4856177978,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[10] = 
-			{
-				["y"] = 0.5117000000,
-				["z"] = 57,
-				["x"] = 0.7112600000,
-				["zx"] = 0.1104303160,
-				["zy"] = 0.5161330526,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[11] = 
-			{
-				["y"] = 0.5086600000,
-				["z"] = 57,
-				["x"] = 0.7135900000,
-				["zx"] = 0.1250001015,
-				["zy"] = 0.4971235496,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[12] = 
-			{
-				["y"] = 0.5334800000,
-				["z"] = 181,
-				["x"] = 0.5259100000,
-				["zx"] = 0.3661666403,
-				["zy"] = 0.7415554842,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[13] = 
-			{
-				["y"] = 0.6937500000,
-				["z"] = 383,
-				["x"] = 0.4045400000,
-				["zx"] = 0.3492163876,
-				["zy"] = 0.2293789132,
-				["i"] = 12,
-				["m"] = 7,
-			},
-		},
-		["c"] = true,
-		["k"] = 246,
-	},
-	[247] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.5232300000,
-				["z"] = 57,
-				["x"] = 0.7631600000,
-				["zx"] = 0.4349675962,
-				["zy"] = 0.5882315951,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[2] = 
-			{
-				["y"] = 0.6838200000,
-				["z"] = 383,
-				["x"] = 0.3832300000,
-				["zx"] = 0.1951100605,
-				["zy"] = 0.1575686548,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[3] = 
-			{
-				["y"] = 0.5048500000,
-				["z"] = 181,
-				["x"] = 0.5897100000,
-				["zx"] = 0.7206110665,
-				["zy"] = 0.5824999302,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[4] = 
-			{
-				["y"] = 0.5273100000,
-				["z"] = 57,
-				["x"] = 0.7671000000,
-				["zx"] = 0.4596049158,
-				["zy"] = 0.6137443491,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[5] = 
-			{
-				["y"] = 0.6902000000,
-				["z"] = 383,
-				["x"] = 0.3917100000,
-				["zx"] = 0.2564343990,
-				["zy"] = 0.2037065650,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[6] = 
-			{
-				["y"] = 0.6931500000,
-				["z"] = 383,
-				["x"] = 0.3871800000,
-				["zx"] = 0.2236750531,
-				["zy"] = 0.2250399248,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[7] = 
-			{
-				["y"] = 0.3256300000,
-				["z"] = 19,
-				["x"] = 0.2322100000,
-				["zx"] = 0.6285086009,
-				["zy"] = 0.5139856155,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[8] = 
-			{
-				["y"] = 0.3250500000,
-				["z"] = 19,
-				["x"] = 0.2359700000,
-				["zx"] = 0.6553657436,
-				["zy"] = 0.5098427585,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[9] = 
-			{
-				["y"] = 0.3226600000,
-				["z"] = 19,
-				["x"] = 0.2421300000,
-				["zx"] = 0.6993657433,
-				["zy"] = 0.4927713306,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[10] = 
-			{
-				["y"] = 0.3215400000,
-				["z"] = 19,
-				["x"] = 0.2348900000,
-				["zx"] = 0.6476514579,
-				["zy"] = 0.4847713309,
-				["i"] = 12,
-				["m"] = 4,
-			},
-			[11] = 
-			{
-				["y"] = 0.5194400000,
-				["z"] = 57,
-				["x"] = 0.7761600000,
-				["zx"] = 0.5162582445,
-				["zy"] = 0.5645322476,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[12] = 
-			{
-				["y"] = 0.6903400000,
-				["z"] = 383,
-				["x"] = 0.3830500000,
-				["zx"] = 0.1938083646,
-				["zy"] = 0.2047189956,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[13] = 
-			{
-				["y"] = 0.5231500000,
-				["z"] = 57,
-				["x"] = 0.7685600000,
-				["zx"] = 0.4687344809,
-				["zy"] = 0.5877313450,
-				["i"] = 12,
-				["m"] = 10,
-			},
-		},
-		["c"] = true,
-		["k"] = 247,
-	},
-	[248] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.7143100000,
-				["z"] = 108,
-				["x"] = 0.3113200000,
-				["zx"] = 0.3368212534,
-				["zy"] = 0.6745639471,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[2] = 
-			{
-				["y"] = 0.2492800000,
-				["z"] = 20,
-				["x"] = 0.1586400000,
-				["zx"] = 0.3306070483,
-				["zy"] = 0.5574180580,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[3] = 
-			{
-				["y"] = 0.5853200000,
-				["z"] = 117,
-				["x"] = 0.7859300000,
-				["zx"] = 0.7870465215,
-				["zy"] = 0.5957664323,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[4] = 
-			{
-				["y"] = 0.5204800000,
-				["z"] = 181,
-				["x"] = 0.5889400000,
-				["zx"] = 0.7163332890,
-				["zy"] = 0.6693332627,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[5] = 
-			{
-				["y"] = 0.5431300000,
-				["z"] = 117,
-				["x"] = 0.7239600000,
-				["zx"] = 0.2706300165,
-				["zy"] = 0.2441832313,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[6] = 
-			{
-				["y"] = 0.7017800000,
-				["z"] = 108,
-				["x"] = 0.3140100000,
-				["zx"] = 0.3597912885,
-				["zy"] = 0.5675696042,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[7] = 
-			{
-				["y"] = 0.5443400000,
-				["z"] = 117,
-				["x"] = 0.7307400000,
-				["zx"] = 0.3271299988,
-				["zy"] = 0.2542665608,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[8] = 
-			{
-				["d"] = true,
-				["y"] = 0.7062300000,
-				["z"] = 553,
-				["x"] = 0.3139200000,
-				["zx"] = 0.3590227743,
-				["zy"] = 0.6055683931,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[9] = 
-			{
-				["y"] = 0.2440900000,
-				["z"] = 20,
-				["x"] = 0.1561000000,
-				["zx"] = 0.3096990175,
-				["zy"] = 0.5146965312,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[10] = 
-			{
-				["y"] = 0.7021400000,
-				["z"] = 108,
-				["x"] = 0.3068300000,
-				["zx"] = 0.2984809346,
-				["zy"] = 0.5706436635,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[11] = 
-			{
-				["y"] = 0.2413900000,
-				["z"] = 20,
-				["x"] = 0.1588800000,
-				["zx"] = 0.3325826103,
-				["zy"] = 0.4924714595,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[12] = 
-			{
-				["y"] = 0.5393500000,
-				["z"] = 117,
-				["x"] = 0.7212100000,
-				["zx"] = 0.2477133570,
-				["zy"] = 0.2126832431,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[13] = 
-			{
-				["y"] = 0.2470300000,
-				["z"] = 20,
-				["x"] = 0.1619700000,
-				["zx"] = 0.3580179705,
-				["zy"] = 0.5388971649,
-				["i"] = 12,
-				["m"] = 3,
-			},
-		},
-		["c"] = true,
-		["k"] = 248,
-	},
-	[249] = 
-	{
-		["e"] = 
-		{
-			[16] = 
-			{
-				["y"] = 0.4533800000,
-				["z"] = 181,
-				["x"] = 0.6055700000,
-				["zx"] = 0.8087221731,
-				["zy"] = 0.2965554887,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[1] = 
-			{
-				["y"] = 0.7129900000,
-				["z"] = 108,
-				["x"] = 0.2973400000,
-				["zx"] = 0.2174453833,
-				["zy"] = 0.6632923962,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[2] = 
-			{
-				["y"] = 0.2133300000,
-				["z"] = 20,
-				["x"] = 0.2190900000,
-				["zx"] = 0.8282017181,
-				["zy"] = 0.2614953439,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[3] = 
-			{
-				["y"] = 0.7097600000,
-				["z"] = 108,
-				["x"] = 0.3014400000,
-				["zx"] = 0.2524554740,
-				["zy"] = 0.6357112527,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[4] = 
-			{
-				["y"] = 0.5499600000,
-				["z"] = 117,
-				["x"] = 0.7526700000,
-				["zx"] = 0.5098799416,
-				["zy"] = 0.3010998765,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[5] = 
-			{
-				["y"] = 0.2465200000,
-				["z"] = 684,
-				["x"] = 0.2574900000,
-				["zx"] = 0.4763571734,
-				["zy"] = 0.5457143109,
-				["i"] = 12,
-				["m"] = 27,
-			},
-			[6] = 
-			{
-				["y"] = 0.7136800000,
-				["z"] = 108,
-				["x"] = 0.3021100000,
-				["zx"] = 0.2581766351,
-				["zy"] = 0.6691843432,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[7] = 
-			{
-				["y"] = 0.2133700000,
-				["z"] = 20,
-				["x"] = 0.2102400000,
-				["zx"] = 0.7553528706,
-				["zy"] = 0.2618246042,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[8] = 
-			{
-				["y"] = 0.5495600000,
-				["z"] = 117,
-				["x"] = 0.7579000000,
-				["zx"] = 0.5534632613,
-				["zy"] = 0.2977665444,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[9] = 
-			{
-				["y"] = 0.2419400000,
-				["z"] = 684,
-				["x"] = 0.2555700000,
-				["zx"] = 0.4626428863,
-				["zy"] = 0.5130000266,
-				["i"] = 12,
-				["m"] = 27,
-			},
-			[10] = 
-			{
-				["y"] = 0.5554100000,
-				["z"] = 117,
-				["x"] = 0.7516600000,
-				["zx"] = 0.5014632776,
-				["zy"] = 0.3465165261,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[11] = 
-			{
-				["y"] = 0.7047600000,
-				["z"] = 108,
-				["x"] = 0.2999900000,
-				["zx"] = 0.2400738566,
-				["zy"] = 0.5930159842,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[12] = 
-			{
-				["y"] = 0.2192100000,
-				["z"] = 20,
-				["x"] = 0.2092800000,
-				["zx"] = 0.7474506228,
-				["zy"] = 0.3098966112,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[13] = 
-			{
-				["y"] = 0.2341800000,
-				["z"] = 684,
-				["x"] = 0.2553200000,
-				["zx"] = 0.4608571718,
-				["zy"] = 0.4575714576,
-				["i"] = 12,
-				["m"] = 27,
-			},
-			[14] = 
-			{
-				["y"] = 0.5532800000,
-				["z"] = 117,
-				["x"] = 0.7492800000,
-				["zx"] = 0.4816299505,
-				["zy"] = 0.3287665328,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[15] = 
-			{
-				["y"] = 0.2184700000,
-				["z"] = 20,
-				["x"] = 0.2156800000,
-				["zx"] = 0.8001322752,
-				["zy"] = 0.3038052952,
-				["i"] = 12,
-				["m"] = 3,
-			},
-		},
-		["c"] = true,
-		["k"] = 249,
-	},
-	[250] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.2535100000,
-				["z"] = 20,
-				["x"] = 0.1597200000,
-				["zx"] = 0.3394970771,
-				["zy"] = 0.5922373370,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[2] = 
-			{
-				["y"] = 0.5672100000,
-				["z"] = 117,
-				["x"] = 0.7795400000,
-				["zx"] = 0.7337965382,
-				["zy"] = 0.4448498224,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[3] = 
-			{
-				["y"] = 0.6965000000,
-				["z"] = 108,
-				["x"] = 0.2857700000,
-				["zx"] = 0.1186486153,
-				["zy"] = 0.5224834006,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[4] = 
-			{
-				["y"] = 0.5643600000,
-				["z"] = 117,
-				["x"] = 0.7891200000,
-				["zx"] = 0.8136298465,
-				["zy"] = 0.4210998314,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[5] = 
-			{
-				["y"] = 0.5738100000,
-				["z"] = 117,
-				["x"] = 0.7839300000,
-				["zx"] = 0.7703798601,
-				["zy"] = 0.4998498017,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[6] = 
-			{
-				["y"] = 0.6995200000,
-				["z"] = 108,
-				["x"] = 0.2894900000,
-				["zx"] = 0.1504138683,
-				["zy"] = 0.5482713428,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[7] = 
-			{
-				["y"] = 0.7037400000,
-				["z"] = 108,
-				["x"] = 0.2950200000,
-				["zx"] = 0.1976347955,
-				["zy"] = 0.5843061494,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[8] = 
-			{
-				["y"] = 0.5248100000,
-				["z"] = 181,
-				["x"] = 0.5657500000,
-				["zx"] = 0.5874999622,
-				["zy"] = 0.6933888180,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[9] = 
-			{
-				["y"] = 0.6996100000,
-				["z"] = 108,
-				["x"] = 0.2990400000,
-				["zx"] = 0.2319617624,
-				["zy"] = 0.5490398576,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[10] = 
-			{
-				["y"] = 0.2544900000,
-				["z"] = 20,
-				["x"] = 0.1555900000,
-				["zx"] = 0.3055009483,
-				["zy"] = 0.6003042149,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[11] = 
-			{
-				["y"] = 0.2575200000,
-				["z"] = 20,
-				["x"] = 0.1622000000,
-				["zx"] = 0.3599112174,
-				["zy"] = 0.6252456843,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[12] = 
-			{
-				["y"] = 0.2514300000,
-				["z"] = 20,
-				["x"] = 0.1549900000,
-				["zx"] = 0.3005620434,
-				["zy"] = 0.5751158003,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[13] = 
-			{
-				["y"] = 0.5674600000,
-				["z"] = 117,
-				["x"] = 0.7919900000,
-				["zx"] = 0.8375465057,
-				["zy"] = 0.4469331550,
-				["i"] = 12,
-				["m"] = 9,
-			},
-		},
-		["c"] = true,
-		["k"] = 250,
-	},
-	[251] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["d"] = true,
-				["y"] = 0.5495900000,
-				["z"] = 826,
-				["x"] = 0.3404500000,
-				["zx"] = 0.5370080158,
-				["zy"] = 0.3155079038,
-				["i"] = 12,
-				["m"] = 29,
-			},
-			[2] = 
-			{
-				["y"] = 0.7170000000,
-				["z"] = 108,
-				["x"] = 0.2913500000,
-				["zx"] = 0.1662964948,
-				["zy"] = 0.6975340015,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[3] = 
-			{
-				["y"] = 0.2561600000,
-				["z"] = 20,
-				["x"] = 0.1839500000,
-				["zx"] = 0.5389465205,
-				["zy"] = 0.6140508333,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[4] = 
-			{
-				["y"] = 0.5812200000,
-				["z"] = 117,
-				["x"] = 0.7833300000,
-				["zx"] = 0.7653798616,
-				["zy"] = 0.5615997785,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[5] = 
-			{
-				["y"] = 0.2525400000,
-				["z"] = 20,
-				["x"] = 0.1833100000,
-				["zx"] = 0.5336783552,
-				["zy"] = 0.5842527742,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[6] = 
-			{
-				["y"] = 0.5865200000,
-				["z"] = 117,
-				["x"] = 0.7857000000,
-				["zx"] = 0.7851298554,
-				["zy"] = 0.6057664285,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[7] = 
-			{
-				["y"] = 0.2526100000,
-				["z"] = 20,
-				["x"] = 0.1860100000,
-				["zx"] = 0.5559034273,
-				["zy"] = 0.5848289798,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[8] = 
-			{
-				["y"] = 0.5852100000,
-				["z"] = 117,
-				["x"] = 0.7935700000,
-				["zx"] = 0.8507131682,
-				["zy"] = 0.5948497660,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[9] = 
-			{
-				["y"] = 0.5751500000,
-				["z"] = 117,
-				["x"] = 0.7931300000,
-				["zx"] = 0.8470465027,
-				["zy"] = 0.5110164642,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[10] = 
-			{
-				["y"] = 0.2563700000,
-				["z"] = 20,
-				["x"] = 0.1894500000,
-				["zx"] = 0.5842198155,
-				["zy"] = 0.6157794500,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[11] = 
-			{
-				["d"] = true,
-				["y"] = 0.4864600000,
-				["z"] = 493,
-				["x"] = 0.5120800000,
-				["zx"] = 0.2893333109,
-				["zy"] = 0.4803332646,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[12] = 
-			{
-				["y"] = 0.7076900000,
-				["z"] = 108,
-				["x"] = 0.2826200000,
-				["zx"] = 0.0917506189,
-				["zy"] = 0.6180354116,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[13] = 
-			{
-				["y"] = 0.7053800000,
-				["z"] = 108,
-				["x"] = 0.2903100000,
-				["zx"] = 0.1574158865,
-				["zy"] = 0.5983101975,
-				["i"] = 12,
-				["m"] = 16,
-			},
-		},
-		["c"] = true,
-		["k"] = 251,
-	},
-	[252] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.4960000000,
-				["z"] = 181,
-				["x"] = 0.5887500000,
-				["zx"] = 0.7152777335,
-				["zy"] = 0.5333332641,
-				["i"] = 12,
-				["m"] = 14,
-			},
-		},
-		["c"] = true,
-		["k"] = 252,
-	},
-	[253] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.2496800000,
-				["z"] = 20,
-				["x"] = 0.1796600000,
-				["zx"] = 0.5036333503,
-				["zy"] = 0.5607106612,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[2] = 
-			{
-				["y"] = 0.5790100000,
-				["z"] = 117,
-				["x"] = 0.7484900000,
-				["zx"] = 0.4750466192,
-				["zy"] = 0.5431831187,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[3] = 
-			{
-				["y"] = 0.7195200000,
-				["z"] = 108,
-				["x"] = 0.2968700000,
-				["zx"] = 0.2134320315,
-				["zy"] = 0.7190524168,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[4] = 
-			{
-				["y"] = 0.2487500000,
-				["z"] = 20,
-				["x"] = 0.1861300000,
-				["zx"] = 0.5568912083,
-				["zy"] = 0.5530553587,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[5] = 
-			{
-				["y"] = 0.7262500000,
-				["z"] = 108,
-				["x"] = 0.2989200000,
-				["zx"] = 0.2309370768,
-				["zy"] = 0.7765202483,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[6] = 
-			{
-				["y"] = 0.5819400000,
-				["z"] = 117,
-				["x"] = 0.7553000000,
-				["zx"] = 0.5317966014,
-				["zy"] = 0.5675997762,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[7] = 
-			{
-				["y"] = 0.4785000000,
-				["z"] = 643,
-				["x"] = 0.5485200000,
-				["zx"] = 0.4521846391,
-				["zy"] = 0.5850451471,
-				["i"] = 12,
-				["m"] = 26,
-			},
-			[8] = 
-			{
-				["y"] = 0.7259500000,
-				["z"] = 108,
-				["x"] = 0.3023500000,
-				["zx"] = 0.2602260063,
-				["zy"] = 0.7739585322,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[9] = 
-			{
-				["y"] = 0.2435900000,
-				["z"] = 20,
-				["x"] = 0.1801300000,
-				["zx"] = 0.5075021592,
-				["zy"] = 0.5105807772,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[10] = 
-			{
-				["y"] = 0.5761900000,
-				["z"] = 117,
-				["x"] = 0.7520300000,
-				["zx"] = 0.5045466100,
-				["zy"] = 0.5196831276,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[11] = 
-			{
-				["y"] = 0.7236800000,
-				["z"] = 108,
-				["x"] = 0.2950700000,
-				["zx"] = 0.1980617478,
-				["zy"] = 0.7545748802,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[12] = 
-			{
-				["y"] = 0.4704000000,
-				["z"] = 181,
-				["x"] = 0.4816400000,
-				["zx"] = 0.1202222084,
-				["zy"] = 0.3911110433,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[13] = 
-			{
-				["y"] = 0.2446300000,
-				["z"] = 20,
-				["x"] = 0.1781900000,
-				["zx"] = 0.4915330333,
-				["zy"] = 0.5191415456,
-				["i"] = 12,
-				["m"] = 3,
-			},
-		},
-		["c"] = true,
-		["k"] = 253,
-	},
-	[254] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.5740800000,
-				["z"] = 117,
-				["x"] = 0.7744600000,
-				["zx"] = 0.6914632181,
-				["zy"] = 0.5020998009,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[2] = 
-			{
-				["y"] = 0.7227500000,
-				["z"] = 108,
-				["x"] = 0.3048700000,
-				["zx"] = 0.2817444035,
-				["zy"] = 0.7466335603,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[3] = 
-			{
-				["d"] = true,
-				["y"] = 0.2256700000,
-				["z"] = 20,
-				["x"] = 0.1553900000,
-				["zx"] = 0.3038546467,
-				["zy"] = 0.3630721531,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[4] = 
-			{
-				["y"] = 0.2333400000,
-				["z"] = 20,
-				["x"] = 0.1629600000,
-				["zx"] = 0.3661671636,
-				["zy"] = 0.4262078198,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[5] = 
-			{
-				["y"] = 0.5773300000,
-				["z"] = 117,
-				["x"] = 0.7666600000,
-				["zx"] = 0.6264632384,
-				["zy"] = 0.5291831240,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[6] = 
-			{
-				["y"] = 0.7176800000,
-				["z"] = 108,
-				["x"] = 0.3127400000,
-				["zx"] = 0.3489466994,
-				["zy"] = 0.7033405580,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[7] = 
-			{
-				["y"] = 0.5791400000,
-				["z"] = 117,
-				["x"] = 0.7755100000,
-				["zx"] = 0.7002132154,
-				["zy"] = 0.5442664517,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[8] = 
-			{
-				["y"] = 0.7172300000,
-				["z"] = 108,
-				["x"] = 0.3049600000,
-				["zx"] = 0.2825129177,
-				["zy"] = 0.6994979839,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[9] = 
-			{
-				["y"] = 0.4809000000,
-				["z"] = 643,
-				["x"] = 0.5455800000,
-				["zx"] = 0.2801903038,
-				["zy"] = 0.7254481825,
-				["i"] = 12,
-				["m"] = 26,
-			},
-			[10] = 
-			{
-				["y"] = 0.4444600000,
-				["z"] = 181,
-				["x"] = 0.5169200000,
-				["zx"] = 0.3162221984,
-				["zy"] = 0.2469999337,
-				["i"] = 12,
-				["m"] = 14,
-			},
-		},
-		["c"] = true,
-		["k"] = 254,
-	},
-	[255] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.6688200000,
-				["z"] = 108,
-				["x"] = 0.3247200000,
-				["zx"] = 0.4512444765,
-				["zy"] = 0.2861223942,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[2] = 
-			{
-				["y"] = 0.2561300000,
-				["z"] = 20,
-				["x"] = 0.1515300000,
-				["zx"] = 0.2720810251,
-				["zy"] = 0.6138038881,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[3] = 
-			{
-				["y"] = 0.5864200000,
-				["z"] = 117,
-				["x"] = 0.7754200000,
-				["zx"] = 0.6994632156,
-				["zy"] = 0.6049330955,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[4] = 
-			{
-				["y"] = 0.6616400000,
-				["z"] = 108,
-				["x"] = 0.3270200000,
-				["zx"] = 0.4708842834,
-				["zy"] = 0.2248119886,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[5] = 
-			{
-				["y"] = 0.6619200000,
-				["z"] = 108,
-				["x"] = 0.3246400000,
-				["zx"] = 0.4505613528,
-				["zy"] = 0.2272029236,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[6] = 
-			{
-				["y"] = 0.2557900000,
-				["z"] = 20,
-				["x"] = 0.1446900000,
-				["zx"] = 0.2157775091,
-				["zy"] = 0.6110051753,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[7] = 
-			{
-				["y"] = 0.5886200000,
-				["z"] = 117,
-				["x"] = 0.7653000000,
-				["zx"] = 0.6151299087,
-				["zy"] = 0.6232664219,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[8] = 
-			{
-				["y"] = 0.5918600000,
-				["z"] = 117,
-				["x"] = 0.7715200000,
-				["zx"] = 0.6669632258,
-				["zy"] = 0.6502664118,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[9] = 
-			{
-				["y"] = 0.2595100000,
-				["z"] = 20,
-				["x"] = 0.1490700000,
-				["zx"] = 0.2518315150,
-				["zy"] = 0.6416263853,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[10] = 
-			{
-				["y"] = 0.6650400000,
-				["z"] = 108,
-				["x"] = 0.3306100000,
-				["zx"] = 0.5015394604,
-				["zy"] = 0.2538447712,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[11] = 
-			{
-				["y"] = 0.5868500000,
-				["z"] = 117,
-				["x"] = 0.7568300000,
-				["zx"] = 0.5445465974,
-				["zy"] = 0.6085164275,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[12] = 
-			{
-				["y"] = 0.2605500000,
-				["z"] = 20,
-				["x"] = 0.1505600000,
-				["zx"] = 0.2640964622,
-				["zy"] = 0.6501871536,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[13] = 
-			{
-				["y"] = 0.5099800000,
-				["z"] = 181,
-				["x"] = 0.5789200000,
-				["zx"] = 0.6606666251,
-				["zy"] = 0.6109999300,
-				["i"] = 12,
-				["m"] = 14,
-			},
-		},
-		["c"] = true,
-		["k"] = 255,
-	},
-	[256] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.2544700000,
-				["z"] = 20,
-				["x"] = 0.1932600000,
-				["zx"] = 0.6155818617,
-				["zy"] = 0.6001395847,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[2] = 
-			{
-				["y"] = 0.6053800000,
-				["z"] = 117,
-				["x"] = 0.7626100000,
-				["zx"] = 0.5927132490,
-				["zy"] = 0.7629330361,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[3] = 
-			{
-				["y"] = 0.2472900000,
-				["z"] = 20,
-				["x"] = 0.1888800000,
-				["zx"] = 0.5795278558,
-				["zy"] = 0.5410373570,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[4] = 
-			{
-				["y"] = 0.2491000000,
-				["z"] = 20,
-				["x"] = 0.1949600000,
-				["zx"] = 0.6295754256,
-				["zy"] = 0.5559363865,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[5] = 
-			{
-				["y"] = 0.6170700000,
-				["z"] = 117,
-				["x"] = 0.7720800000,
-				["zx"] = 0.6716298910,
-				["zy"] = 0.8603496661,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[6] = 
-			{
-				["y"] = 0.6111800000,
-				["z"] = 117,
-				["x"] = 0.7702300000,
-				["zx"] = 0.6562132291,
-				["zy"] = 0.8112663512,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[7] = 
-			{
-				["y"] = 0.7396200000,
-				["z"] = 108,
-				["x"] = 0.3478700000,
-				["zx"] = 0.6489234029,
-				["zy"] = 0.8906873963,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[8] = 
-			{
-				["y"] = 0.2507700000,
-				["z"] = 20,
-				["x"] = 0.1887300000,
-				["zx"] = 0.5782931296,
-				["zy"] = 0.5696830050,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[9] = 
-			{
-				["y"] = 0.7382500000,
-				["z"] = 108,
-				["x"] = 0.3430900000,
-				["zx"] = 0.6081067607,
-				["zy"] = 0.8789888927,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[10] = 
-			{
-				["y"] = 0.6117000000,
-				["z"] = 117,
-				["x"] = 0.7611600000,
-				["zx"] = 0.5806299195,
-				["zy"] = 0.8155996829,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[11] = 
-			{
-				["y"] = 0.7411200000,
-				["z"] = 108,
-				["x"] = 0.3332000000,
-				["zx"] = 0.5236555908,
-				["zy"] = 0.9034959768,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[12] = 
-			{
-				["y"] = 0.7421700000,
-				["z"] = 108,
-				["x"] = 0.3442200000,
-				["zx"] = 0.6177558832,
-				["zy"] = 0.9124619832,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[13] = 
-			{
-				["y"] = 1.0811600000,
-				["z"] = 980,
-				["x"] = 0.3326700000,
-				["zx"] = 0.8767482348,
-				["zy"] = 0.6055447311,
-				["i"] = 12,
-				["m"] = 31,
-			},
-			[14] = 
-			{
-				["d"] = true,
-				["y"] = 0.4453900000,
-				["z"] = 498,
-				["x"] = 0.6060800000,
-				["zx"] = 0.8115555044,
-				["zy"] = 0.2521666000,
-				["i"] = 12,
-				["m"] = 14,
-			},
-		},
-		["c"] = true,
-		["k"] = 256,
-	},
-	[257] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.5983900000,
-				["z"] = 117,
-				["x"] = 0.7622600000,
-				["zx"] = 0.5897965833,
-				["zy"] = 0.7046830580,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[2] = 
-			{
-				["y"] = 0.7340300000,
-				["z"] = 108,
-				["x"] = 0.3570900000,
-				["zx"] = 0.7276534117,
-				["zy"] = 0.8429540861,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[3] = 
-			{
-				["y"] = 0.5966300000,
-				["z"] = 117,
-				["x"] = 0.7760300000,
-				["zx"] = 0.7045465473,
-				["zy"] = 0.6900163968,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[4] = 
-			{
-				["y"] = 0.2433900000,
-				["z"] = 20,
-				["x"] = 0.1914400000,
-				["zx"] = 0.6006005168,
-				["zy"] = 0.5089344756,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[5] = 
-			{
-				["y"] = 0.2414900000,
-				["z"] = 20,
-				["x"] = 0.1882200000,
-				["zx"] = 0.5740950604,
-				["zy"] = 0.4932946103,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[6] = 
-			{
-				["y"] = 0.7343600000,
-				["z"] = 108,
-				["x"] = 0.3598200000,
-				["zx"] = 0.7509650086,
-				["zy"] = 0.8457719738,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[7] = 
-			{
-				["y"] = 0.4802800000,
-				["z"] = 643,
-				["x"] = 0.5482300000,
-				["zx"] = 0.4352192114,
-				["zy"] = 0.6891773983,
-				["i"] = 12,
-				["m"] = 26,
-			},
-			[8] = 
-			{
-				["d"] = true,
-				["y"] = 0.4427800000,
-				["z"] = 499,
-				["x"] = 0.4875000000,
-				["zx"] = 0.1527777623,
-				["zy"] = 0.2376666005,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[9] = 
-			{
-				["y"] = 0.2439700000,
-				["z"] = 20,
-				["x"] = 0.1945500000,
-				["zx"] = 0.6262005072,
-				["zy"] = 0.5137087503,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[10] = 
-			{
-				["y"] = 0.7384000000,
-				["z"] = 108,
-				["x"] = 0.3523800000,
-				["zx"] = 0.6874345027,
-				["zy"] = 0.8802697507,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[11] = 
-			{
-				["y"] = 0.2397900000,
-				["z"] = 20,
-				["x"] = 0.1890700000,
-				["zx"] = 0.5810918424,
-				["zy"] = 0.4793010467,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[12] = 
-			{
-				["y"] = 0.6001200000,
-				["z"] = 117,
-				["x"] = 0.7663400000,
-				["zx"] = 0.6237965726,
-				["zy"] = 0.7190997192,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[13] = 
-			{
-				["y"] = 0.6045700000,
-				["z"] = 117,
-				["x"] = 0.7712000000,
-				["zx"] = 0.6642965599,
-				["zy"] = 0.7561830386,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[14] = 
-			{
-				["d"] = true,
-				["y"] = 0.7290600000,
-				["z"] = 547,
-				["x"] = 0.3519200000,
-				["zx"] = 0.6835065562,
-				["zy"] = 0.8005151597,
-				["i"] = 12,
-				["m"] = 16,
-			},
-		},
-		["c"] = true,
-		["k"] = 257,
-	},
-	[258] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.6673700000,
-				["z"] = 108,
-				["x"] = 0.3161600000,
-				["zx"] = 0.3781502385,
-				["zy"] = 0.2737407663,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[2] = 
-			{
-				["y"] = 0.5942800000,
-				["z"] = 117,
-				["x"] = 0.7839100000,
-				["zx"] = 0.7702131934,
-				["zy"] = 0.6704330709,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[3] = 
-			{
-				["y"] = 0.5970200000,
-				["z"] = 117,
-				["x"] = 0.7907900000,
-				["zx"] = 0.8275465088,
-				["zy"] = 0.6932663956,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[4] = 
-			{
-				["y"] = 0.6605800000,
-				["z"] = 108,
-				["x"] = 0.3206100000,
-				["zx"] = 0.4161489954,
-				["zy"] = 0.2157605917,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[5] = 
-			{
-				["y"] = 0.6670500000,
-				["z"] = 108,
-				["x"] = 0.3039600000,
-				["zx"] = 0.2739738712,
-				["zy"] = 0.2710082691,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[6] = 
-			{
-				["y"] = 0.2664400000,
-				["z"] = 20,
-				["x"] = 0.2049900000,
-				["zx"] = 0.7121374527,
-				["zy"] = 0.6986707360,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[7] = 
-			{
-				["y"] = 0.6068200000,
-				["z"] = 117,
-				["x"] = 0.7827400000,
-				["zx"] = 0.7604631965,
-				["zy"] = 0.7749330315,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[8] = 
-			{
-				["y"] = 0.2630200000,
-				["z"] = 20,
-				["x"] = 0.2019400000,
-				["zx"] = 0.6870313527,
-				["zy"] = 0.6705189785,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[9] = 
-			{
-				["y"] = 0.5995800000,
-				["z"] = 117,
-				["x"] = 0.7866000000,
-				["zx"] = 0.7926298531,
-				["zy"] = 0.7145997209,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[10] = 
-			{
-				["y"] = 0.2702300000,
-				["z"] = 20,
-				["x"] = 0.2044000000,
-				["zx"] = 0.7072808628,
-				["zy"] = 0.7298681515,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[11] = 
-			{
-				["y"] = 0.6658800000,
-				["z"] = 108,
-				["x"] = 0.3125600000,
-				["zx"] = 0.3474096711,
-				["zy"] = 0.2610175763,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[12] = 
-			{
-				["y"] = 0.4593400000,
-				["z"] = 181,
-				["x"] = 0.5275200000,
-				["zx"] = 0.3751110842,
-				["zy"] = 0.3296665995,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[13] = 
-			{
-				["y"] = 0.2669400000,
-				["z"] = 20,
-				["x"] = 0.2023200000,
-				["zx"] = 0.6901593258,
-				["zy"] = 0.7027864900,
-				["i"] = 12,
-				["m"] = 3,
-			},
-		},
-		["c"] = true,
-		["k"] = 258,
-	},
-	[259] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.6078800000,
-				["z"] = 117,
-				["x"] = 0.7901800000,
-				["zx"] = 0.8224631771,
-				["zy"] = 0.7837663615,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[2] = 
-			{
-				["y"] = 0.6070700000,
-				["z"] = 117,
-				["x"] = 0.7940000000,
-				["zx"] = 0.8542965004,
-				["zy"] = 0.7770163641,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[3] = 
-			{
-				["y"] = 0.7064300000,
-				["z"] = 108,
-				["x"] = 0.3183900000,
-				["zx"] = 0.3971923121,
-				["zy"] = 0.6072762039,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[4] = 
-			{
-				["y"] = 0.2675700000,
-				["z"] = 20,
-				["x"] = 0.1912900000,
-				["zx"] = 0.5993657905,
-				["zy"] = 0.7079723401,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[5] = 
-			{
-				["y"] = 0.7215600000,
-				["z"] = 108,
-				["x"] = 0.3189000000,
-				["zx"] = 0.4015472259,
-				["zy"] = 0.7364720864,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[6] = 
-			{
-				["y"] = 0.4473800000,
-				["z"] = 181,
-				["x"] = 0.4938700000,
-				["zx"] = 0.1881666494,
-				["zy"] = 0.2632221558,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[7] = 
-			{
-				["y"] = 0.2714000000,
-				["z"] = 20,
-				["x"] = 0.1897300000,
-				["zx"] = 0.5865246378,
-				["zy"] = 0.7394990159,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[8] = 
-			{
-				["y"] = 0.7088800000,
-				["z"] = 108,
-				["x"] = 0.3193700000,
-				["zx"] = 0.4055605777,
-				["zy"] = 0.6281968855,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[9] = 
-			{
-				["y"] = 0.7183000000,
-				["z"] = 108,
-				["x"] = 0.3163000000,
-				["zx"] = 0.3793457050,
-				["zy"] = 0.7086347713,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[10] = 
-			{
-				["y"] = 0.2685100000,
-				["z"] = 20,
-				["x"] = 0.1953600000,
-				["zx"] = 0.6328680289,
-				["zy"] = 0.7157099576,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[11] = 
-			{
-				["y"] = 0.2732100000,
-				["z"] = 20,
-				["x"] = 0.1936700000,
-				["zx"] = 0.6189567800,
-				["zy"] = 0.7543980454,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[12] = 
-			{
-				["y"] = 0.6054000000,
-				["z"] = 117,
-				["x"] = 0.7986200000,
-				["zx"] = 0.8927964884,
-				["zy"] = 0.7630997027,
-				["i"] = 12,
-				["m"] = 9,
-			},
-		},
-		["c"] = true,
-		["k"] = 259,
-	},
-	[260] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.2392200000,
-				["z"] = 20,
-				["x"] = 0.1954800000,
-				["zx"] = 0.6338558098,
-				["zy"] = 0.4746090871,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[2] = 
-			{
-				["y"] = 0.6630300000,
-				["z"] = 108,
-				["x"] = 0.3113800000,
-				["zx"] = 0.3373335962,
-				["zy"] = 0.2366812732,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[3] = 
-			{
-				["y"] = 0.6132700000,
-				["z"] = 117,
-				["x"] = 0.7884100000,
-				["zx"] = 0.8077131817,
-				["zy"] = 0.8286830113,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[4] = 
-			{
-				["y"] = 0.6119000000,
-				["z"] = 117,
-				["x"] = 0.7777700000,
-				["zx"] = 0.7190465428,
-				["zy"] = 0.8172663489,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[5] = 
-			{
-				["y"] = 0.2330700000,
-				["z"] = 20,
-				["x"] = 0.1974000000,
-				["zx"] = 0.6496603055,
-				["zy"] = 0.4239853126,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[6] = 
-			{
-				["y"] = 0.6153400000,
-				["z"] = 117,
-				["x"] = 0.7787300000,
-				["zx"] = 0.7270465403,
-				["zy"] = 0.8459330048,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[7] = 
-			{
-				["y"] = 0.6635300000,
-				["z"] = 108,
-				["x"] = 0.3081600000,
-				["zx"] = 0.3098378665,
-				["zy"] = 0.2409508001,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[8] = 
-			{
-				["y"] = 0.2363800000,
-				["z"] = 20,
-				["x"] = 0.1912300000,
-				["zx"] = 0.5988719000,
-				["zy"] = 0.4512316042,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[9] = 
-			{
-				["y"] = 0.6599700000,
-				["z"] = 108,
-				["x"] = 0.3119100000,
-				["zx"] = 0.3418592908,
-				["zy"] = 0.2105517689,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[10] = 
-			{
-				["y"] = 0.6113000000,
-				["z"] = 117,
-				["x"] = 0.7850900000,
-				["zx"] = 0.7800465237,
-				["zy"] = 0.8122663508,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[11] = 
-			{
-				["y"] = 0.2349200000,
-				["z"] = 20,
-				["x"] = 0.1928400000,
-				["zx"] = 0.6121246282,
-				["zy"] = 0.4392136025,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[12] = 
-			{
-				["y"] = 0.6581700000,
-				["z"] = 108,
-				["x"] = 0.3073300000,
-				["zx"] = 0.3027504579,
-				["zy"] = 0.1951814722,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[13] = 
-			{
-				["y"] = 0.5018100000,
-				["z"] = 181,
-				["x"] = 0.5703100000,
-				["zx"] = 0.6128332943,
-				["zy"] = 0.5656110415,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[14] = 
-			{
-				["y"] = 0.4717500000,
-				["z"] = 584,
-				["x"] = 0.5521300000,
-				["zx"] = 0.6633749623,
-				["zy"] = 0.1901616103,
-				["i"] = 12,
-				["m"] = 26,
-			},
-			[15] = 
-			{
-				["zy"] = 0.8118500228,
-				["zx"] = 0.7804635359,
-				["i"] = 12,
-				["m"] = 9,
-				["x"] = 0.7851400000,
-				["y"] = 0.6112500000,
-				["z"] = 117,
-			},
-		},
-		["c"] = true,
-		["k"] = 260,
-	},
-	[261] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["d"] = true,
-				["y"] = 0.4912700000,
-				["z"] = 506,
-				["x"] = 0.4969600000,
-				["zx"] = 0.2053333152,
-				["zy"] = 0.5070554866,
-				["i"] = 12,
-				["m"] = 14,
-			},
-		},
-		["c"] = true,
-		["k"] = 261,
-	},
-	[262] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.4744500000,
-				["z"] = 181,
-				["x"] = 0.5873400000,
-				["zx"] = 0.7074444005,
-				["zy"] = 0.4136110431,
-				["i"] = 12,
-				["m"] = 14,
-			},
-		},
-		["c"] = true,
-		["k"] = 262,
-	},
-	[263] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.6504400000,
-				["z"] = 58,
-				["x"] = 0.3813700000,
-				["zx"] = 0.6506836539,
-				["zy"] = 0.7135432348,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[2] = 
-			{
-				["d"] = true,
-				["y"] = 0.6511300000,
-				["z"] = 58,
-				["x"] = 0.3798100000,
-				["zx"] = 0.6386257076,
-				["zy"] = 0.7188765549,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[3] = 
-			{
-				["y"] = 0.5397800000,
-				["z"] = 181,
-				["x"] = 0.5765700000,
-				["zx"] = 0.6476110703,
-				["zy"] = 0.7765554838,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[4] = 
-			{
-				["y"] = 0.3185300000,
-				["z"] = 101,
-				["x"] = 0.6530200000,
-				["zx"] = 0.6182774952,
-				["zy"] = 0.6120424499,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[5] = 
-			{
-				["y"] = 0.3909100000,
-				["z"] = 104,
-				["x"] = 0.1963100000,
-				["zx"] = 0.5752422983,
-				["zy"] = 0.4358340793,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[6] = 
-			{
-				["y"] = 0.3055900000,
-				["z"] = 101,
-				["x"] = 0.6061300000,
-				["zx"] = 0.3252149947,
-				["zy"] = 0.5311674532,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[7] = 
-			{
-				["y"] = 0.6572300000,
-				["z"] = 58,
-				["x"] = 0.3809200000,
-				["zx"] = 0.6472054002,
-				["zy"] = 0.7660261959,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[8] = 
-			{
-				["y"] = 0.3862100000,
-				["z"] = 104,
-				["x"] = 0.1919300000,
-				["zx"] = 0.5479831046,
-				["zy"] = 0.4065833778,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[9] = 
-			{
-				["y"] = 0.3897900000,
-				["z"] = 104,
-				["x"] = 0.1936700000,
-				["zx"] = 0.5588120994,
-				["zy"] = 0.4288636993,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[10] = 
-			{
-				["y"] = 0.3011500000,
-				["z"] = 101,
-				["x"] = 0.6234000000,
-				["zx"] = 0.4331524949,
-				["zy"] = 0.5034174544,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[11] = 
-			{
-				["y"] = 0.3093400000,
-				["z"] = 101,
-				["x"] = 0.5960700000,
-				["zx"] = 0.2623399946,
-				["zy"] = 0.5546049523,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[12] = 
-			{
-				["y"] = 0.3946400000,
-				["z"] = 104,
-				["x"] = 0.1973500000,
-				["zx"] = 0.5817148009,
-				["zy"] = 0.4590479339,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[13] = 
-			{
-				["y"] = 0.6601900000,
-				["z"] = 58,
-				["x"] = 0.3831400000,
-				["zx"] = 0.6643647853,
-				["zy"] = 0.7889053659,
-				["i"] = 12,
-				["m"] = 8,
-			},
-		},
-		["c"] = true,
-		["k"] = 263,
-	},
-	[264] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.3821500000,
-				["z"] = 104,
-				["x"] = 0.2120400000,
-				["zx"] = 0.6731389002,
-				["zy"] = 0.3813157505,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[2] = 
-			{
-				["y"] = 0.3241600000,
-				["z"] = 101,
-				["x"] = 0.6176300000,
-				["zx"] = 0.3970899948,
-				["zy"] = 0.6472299484,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[3] = 
-			{
-				["y"] = 0.6311900000,
-				["z"] = 58,
-				["x"] = 0.3722200000,
-				["zx"] = 0.5799591612,
-				["zy"] = 0.5647513349,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[4] = 
-			{
-				["y"] = 0.4671100000,
-				["z"] = 181,
-				["x"] = 0.4900600000,
-				["zx"] = 0.1669999838,
-				["zy"] = 0.3728332657,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[5] = 
-			{
-				["y"] = 0.6388600000,
-				["z"] = 58,
-				["x"] = 0.3724500000,
-				["zx"] = 0.5817369353,
-				["zy"] = 0.6240362114,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[6] = 
-			{
-				["d"] = true,
-				["y"] = 0.3778900000,
-				["z"] = 330,
-				["x"] = 0.2095600000,
-				["zx"] = 0.6577044709,
-				["zy"] = 0.3548034126,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[7] = 
-			{
-				["y"] = 0.3787700000,
-				["z"] = 104,
-				["x"] = 0.1992300000,
-				["zx"] = 0.5934150940,
-				["zy"] = 0.3602801396,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[8] = 
-			{
-				["y"] = 0.6235000000,
-				["z"] = 58,
-				["x"] = 0.3797600000,
-				["zx"] = 0.6382392350,
-				["zy"] = 0.5053118695,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[9] = 
-			{
-				["y"] = 0.3256500000,
-				["z"] = 101,
-				["x"] = 0.6090200000,
-				["zx"] = 0.3432774947,
-				["zy"] = 0.6565424480,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[10] = 
-			{
-				["y"] = 0.3814100000,
-				["z"] = 104,
-				["x"] = 0.2020900000,
-				["zx"] = 0.6112144762,
-				["zy"] = 0.3767103209,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[11] = 
-			{
-				["y"] = 0.3293400000,
-				["z"] = 101,
-				["x"] = 0.6060900000,
-				["zx"] = 0.3249649947,
-				["zy"] = 0.6796049471,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[12] = 
-			{
-				["y"] = 0.3293500000,
-				["z"] = 101,
-				["x"] = 0.6164500000,
-				["zx"] = 0.3897149948,
-				["zy"] = 0.6796674471,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[13] = 
-			{
-				["y"] = 0.6363400000,
-				["z"] = 58,
-				["x"] = 0.3699800000,
-				["zx"] = 0.5626451870,
-				["zy"] = 0.6045579990,
-				["i"] = 12,
-				["m"] = 8,
-			},
-		},
-		["c"] = true,
-		["k"] = 264,
-	},
-	[265] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.3961400000,
-				["z"] = 104,
-				["x"] = 0.1582200000,
-				["zx"] = 0.3381868904,
-				["zy"] = 0.4683832641,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[2] = 
-			{
-				["y"] = 0.6253400000,
-				["z"] = 58,
-				["x"] = 0.3526200000,
-				["zx"] = 0.4284618872,
-				["zy"] = 0.5195340563,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[3] = 
-			{
-				["y"] = 0.3882500000,
-				["z"] = 104,
-				["x"] = 0.1557100000,
-				["zx"] = 0.3225657543,
-				["zy"] = 0.4192794269,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[4] = 
-			{
-				["y"] = 0.3821900000,
-				["z"] = 104,
-				["x"] = 0.1590100000,
-				["zx"] = 0.3431035030,
-				["zy"] = 0.3815646927,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[5] = 
-			{
-				["y"] = 0.3170800000,
-				["z"] = 101,
-				["x"] = 0.6198200000,
-				["zx"] = 0.4107774948,
-				["zy"] = 0.6029799502,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[6] = 
-			{
-				["y"] = 0.4412100000,
-				["z"] = 181,
-				["x"] = 0.5876800000,
-				["zx"] = 0.7093332893,
-				["zy"] = 0.2289443783,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[7] = 
-			{
-				["y"] = 0.6173500000,
-				["z"] = 58,
-				["x"] = 0.3464800000,
-				["zx"] = 0.3810030472,
-				["zy"] = 0.4577757560,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[8] = 
-			{
-				["y"] = 0.3164700000,
-				["z"] = 101,
-				["x"] = 0.6150000000,
-				["zx"] = 0.3806524948,
-				["zy"] = 0.5991674504,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[9] = 
-			{
-				["y"] = 0.6299400000,
-				["z"] = 58,
-				["x"] = 0.3434700000,
-				["zx"] = 0.3577373944,
-				["zy"] = 0.5550895232,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[10] = 
-			{
-				["y"] = 0.6237000000,
-				["z"] = 58,
-				["x"] = 0.3456200000,
-				["zx"] = 0.3743557179,
-				["zy"] = 0.5068577593,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[11] = 
-			{
-				["y"] = 0.3910600000,
-				["z"] = 104,
-				["x"] = 0.1609100000,
-				["zx"] = 0.3549282673,
-				["zy"] = 0.4367676123,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[12] = 
-			{
-				["y"] = 0.3149200000,
-				["z"] = 101,
-				["x"] = 0.6120300000,
-				["zx"] = 0.3620899947,
-				["zy"] = 0.5894799508,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[13] = 
-			{
-				["y"] = 0.3188100000,
-				["z"] = 101,
-				["x"] = 0.6128700000,
-				["zx"] = 0.3673399948,
-				["zy"] = 0.6137924498,
-				["i"] = 12,
-				["m"] = 13,
-			},
-		},
-		["c"] = true,
-		["k"] = 265,
-	},
-	[266] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.4052800000,
-				["z"] = 104,
-				["x"] = 0.2153300000,
-				["zx"] = 0.6936144132,
-				["zy"] = 0.5252665432,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[2] = 
-			{
-				["y"] = 0.3097000000,
-				["z"] = 101,
-				["x"] = 0.6248600000,
-				["zx"] = 0.4422774949,
-				["zy"] = 0.5568549522,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[3] = 
-			{
-				["y"] = 0.3099500000,
-				["z"] = 101,
-				["x"] = 0.6116200000,
-				["zx"] = 0.3595274947,
-				["zy"] = 0.5584174521,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[4] = 
-			{
-				["y"] = 0.4019100000,
-				["z"] = 104,
-				["x"] = 0.2142700000,
-				["zx"] = 0.6870174394,
-				["zy"] = 0.5042931679,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[5] = 
-			{
-				["y"] = 0.3072300000,
-				["z"] = 101,
-				["x"] = 0.6173100000,
-				["zx"] = 0.3950899948,
-				["zy"] = 0.5414174528,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[6] = 
-			{
-				["y"] = 0.3075500000,
-				["z"] = 101,
-				["x"] = 0.6207600000,
-				["zx"] = 0.4166524948,
-				["zy"] = 0.5434174527,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[7] = 
-			{
-				["y"] = 0.3905800000,
-				["z"] = 104,
-				["x"] = 0.2035600000,
-				["zx"] = 0.6203631097,
-				["zy"] = 0.4337803066,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[8] = 
-			{
-				["y"] = 0.5943000000,
-				["z"] = 58,
-				["x"] = 0.3809800000,
-				["zx"] = 0.6476691673,
-				["zy"] = 0.2796119486,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[9] = 
-			{
-				["y"] = 0.6016000000,
-				["z"] = 58,
-				["x"] = 0.3804900000,
-				["zx"] = 0.6438817355,
-				["zy"] = 0.3360369288,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[10] = 
-			{
-				["y"] = 0.5962100000,
-				["z"] = 58,
-				["x"] = 0.3755800000,
-				["zx"] = 0.6059301225,
-				["zy"] = 0.2943751969,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[11] = 
-			{
-				["y"] = 0.5288500000,
-				["z"] = 181,
-				["x"] = 0.5148800000,
-				["zx"] = 0.3048888656,
-				["zy"] = 0.7158332622,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[12] = 
-			{
-				["y"] = 0.5960800000,
-				["z"] = 58,
-				["x"] = 0.3749700000,
-				["zx"] = 0.6012151563,
-				["zy"] = 0.2933703684,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[13] = 
-			{
-				["y"] = 0.3950400000,
-				["z"] = 104,
-				["x"] = 0.2151500000,
-				["zx"] = 0.6924941724,
-				["zy"] = 0.4615373553,
-				["i"] = 12,
-				["m"] = 5,
-			},
-		},
-		["c"] = true,
-		["k"] = 266,
-	},
-	[267] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.6209900000,
-				["z"] = 58,
-				["x"] = 0.3205200000,
-				["zx"] = 0.1803464537,
-				["zy"] = 0.4859109516,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[2] = 
-			{
-				["y"] = 0.3748900000,
-				["z"] = 104,
-				["x"] = 0.1925100000,
-				["zx"] = 0.5515927695,
-				["zy"] = 0.3361327520,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[3] = 
-			{
-				["y"] = 0.2992700000,
-				["z"] = 101,
-				["x"] = 0.6204000000,
-				["zx"] = 0.4144024948,
-				["zy"] = 0.4916674549,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[4] = 
-			{
-				["y"] = 0.2962100000,
-				["z"] = 101,
-				["x"] = 0.6211700000,
-				["zx"] = 0.4192149948,
-				["zy"] = 0.4725424557,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[5] = 
-			{
-				["y"] = 0.6006800000,
-				["z"] = 58,
-				["x"] = 0.4061000000,
-				["zx"] = 0.8418330206,
-				["zy"] = 0.3289258354,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[6] = 
-			{
-				["y"] = 0.5116500000,
-				["z"] = 816,
-				["x"] = 0.2387900000,
-				["zx"] = 0.5413018254,
-				["zy"] = 0.5358519011,
-				["i"] = 12,
-				["m"] = 28,
-			},
-			[7] = 
-			{
-				["y"] = 0.2948200000,
-				["z"] = 101,
-				["x"] = 0.6153900000,
-				["zx"] = 0.3830899948,
-				["zy"] = 0.4638549560,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[8] = 
-			{
-				["y"] = 0.3607800000,
-				["z"] = 104,
-				["x"] = 0.1944400000,
-				["zx"] = 0.5636042407,
-				["zy"] = 0.2483184120,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[9] = 
-			{
-				["y"] = 0.5060300000,
-				["z"] = 816,
-				["x"] = 0.2264100000,
-				["zx"] = 0.4039470657,
-				["zy"] = 0.4734986368,
-				["i"] = 12,
-				["m"] = 28,
-			},
-			[10] = 
-			{
-				["y"] = 0.5167100000,
-				["z"] = 816,
-				["x"] = 0.2302200000,
-				["zx"] = 0.4462186032,
-				["zy"] = 0.5919920287,
-				["i"] = 12,
-				["m"] = 28,
-			},
-			[11] = 
-			{
-				["y"] = 0.5035800000,
-				["z"] = 816,
-				["x"] = 0.2305800000,
-				["zx"] = 0.4502127642,
-				["zy"] = 0.4463161639,
-				["i"] = 12,
-				["m"] = 28,
-			},
-			[12] = 
-			{
-				["y"] = 0.5805500000,
-				["z"] = 823,
-				["x"] = 0.3547700000,
-				["zx"] = 0.6802080166,
-				["zy"] = 0.6251078620,
-				["i"] = 12,
-				["m"] = 29,
-			},
-			[13] = 
-			{
-				["y"] = 0.3763000000,
-				["z"] = 104,
-				["x"] = 0.1935100000,
-				["zx"] = 0.5578163297,
-				["zy"] = 0.3449079625,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[14] = 
-			{
-				["y"] = 0.6137800000,
-				["z"] = 58,
-				["x"] = 0.3089900000,
-				["zx"] = 0.0912258634,
-				["zy"] = 0.4301816218,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[15] = 
-			{
-				["y"] = 0.6162800000,
-				["z"] = 58,
-				["x"] = 0.3192800000,
-				["zx"] = 0.1707619323,
-				["zy"] = 0.4495052452,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[16] = 
-			{
-				["y"] = 0.3639600000,
-				["z"] = 104,
-				["x"] = 0.1931800000,
-				["zx"] = 0.5557625549,
-				["zy"] = 0.2681093121,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[17] = 
-			{
-				["y"] = 0.3014600000,
-				["z"] = 101,
-				["x"] = 0.6132800000,
-				["zx"] = 0.3699024948,
-				["zy"] = 0.5053549543,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[18] = 
-			{
-				["y"] = 0.6125000000,
-				["z"] = 58,
-				["x"] = 0.3168100000,
-				["zx"] = 0.1516701839,
-				["zy"] = 0.4202879267,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[19] = 
-			{
-				["d"] = true,
-				["y"] = 0.4372900000,
-				["z"] = 531,
-				["x"] = 0.5519000000,
-				["zx"] = 0.5105555144,
-				["zy"] = 0.2071666006,
-				["i"] = 12,
-				["m"] = 14,
-			},
-		},
-		["c"] = true,
-		["k"] = 267,
-	},
-	[268] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.4126000000,
-				["z"] = 104,
-				["x"] = 0.1543700000,
-				["zx"] = 0.3142261837,
-				["zy"] = 0.5708229550,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[2] = 
-			{
-				["y"] = 0.6549000000,
-				["z"] = 58,
-				["x"] = 0.3947600000,
-				["zx"] = 0.7541810263,
-				["zy"] = 0.7480165789,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[3] = 
-			{
-				["y"] = 0.4078200000,
-				["z"] = 104,
-				["x"] = 0.1644700000,
-				["zx"] = 0.3770841416,
-				["zy"] = 0.5410743692,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[4] = 
-			{
-				["y"] = 0.3027400000,
-				["z"] = 101,
-				["x"] = 0.6312400000,
-				["zx"] = 0.4821524949,
-				["zy"] = 0.5133549540,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[5] = 
-			{
-				["y"] = 0.5479900000,
-				["z"] = 181,
-				["x"] = 0.5514100000,
-				["zx"] = 0.5078332997,
-				["zy"] = 0.8221665944,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[6] = 
-			{
-				["y"] = 0.4030100000,
-				["z"] = 104,
-				["x"] = 0.1579100000,
-				["zx"] = 0.3362575868,
-				["zy"] = 0.5111390768,
-				["i"] = 12,
-				["m"] = 5,
-			},
-			[7] = 
-			{
-				["y"] = 0.3064000000,
-				["z"] = 101,
-				["x"] = 0.6293300000,
-				["zx"] = 0.4702149949,
-				["zy"] = 0.5362299530,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[8] = 
-			{
-				["y"] = 0.6326100000,
-				["z"] = 58,
-				["x"] = 0.3974800000,
-				["zx"] = 0.7752051378,
-				["zy"] = 0.5757271530,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[9] = 
-			{
-				["y"] = 0.3108900000,
-				["z"] = 101,
-				["x"] = 0.5980600000,
-				["zx"] = 0.2747774946,
-				["zy"] = 0.5642924519,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[10] = 
-			{
-				["y"] = 0.3078900000,
-				["z"] = 101,
-				["x"] = 0.6028400000,
-				["zx"] = 0.3046524947,
-				["zy"] = 0.5455424526,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[11] = 
-			{
-				["y"] = 0.6319900000,
-				["z"] = 58,
-				["x"] = 0.3998900000,
-				["zx"] = 0.7938331190,
-				["zy"] = 0.5709348944,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[12] = 
-			{
-				["y"] = 0.6554700000,
-				["z"] = 58,
-				["x"] = 0.3913900000,
-				["zx"] = 0.7281327705,
-				["zy"] = 0.7524223650,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[13] = 
-			{
-				["y"] = 0.4044500000,
-				["z"] = 104,
-				["x"] = 0.1663900000,
-				["zx"] = 0.3890333772,
-				["zy"] = 0.5201009938,
-				["i"] = 12,
-				["m"] = 5,
-			},
-		},
-		["c"] = true,
-		["k"] = 268,
-	},
-	[269] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.5784300000,
-				["z"] = 382,
-				["x"] = 0.4285900000,
-				["zx"] = 0.2841752240,
-				["zy"] = 0.2597297926,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[2] = 
-			{
-				["y"] = 0.3656300000,
-				["z"] = 103,
-				["x"] = 0.5763300000,
-				["zx"] = 0.2607551372,
-				["zy"] = 0.4151100440,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[3] = 
-			{
-				["y"] = 0.3619500000,
-				["z"] = 103,
-				["x"] = 0.5717700000,
-				["zx"] = 0.2322551359,
-				["zy"] = 0.3921100462,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[4] = 
-			{
-				["y"] = 0.4702000000,
-				["z"] = 181,
-				["x"] = 0.5894400000,
-				["zx"] = 0.7191110666,
-				["zy"] = 0.3899999322,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[5] = 
-			{
-				["y"] = 0.5609500000,
-				["z"] = 382,
-				["x"] = 0.4334600000,
-				["zx"] = 0.3208542340,
-				["zy"] = 0.1280777803,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[6] = 
-			{
-				["y"] = 0.3521300000,
-				["z"] = 92,
-				["x"] = 0.3067700000,
-				["zx"] = 0.5854797668,
-				["zy"] = 0.6375621305,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[7] = 
-			{
-				["y"] = 0.3629400000,
-				["z"] = 103,
-				["x"] = 0.5732200000,
-				["zx"] = 0.2413176363,
-				["zy"] = 0.3982975456,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[8] = 
-			{
-				["y"] = 0.3589000000,
-				["z"] = 103,
-				["x"] = 0.5756700000,
-				["zx"] = 0.2566301370,
-				["zy"] = 0.3730475480,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[9] = 
-			{
-				["y"] = 0.3504900000,
-				["z"] = 92,
-				["x"] = 0.3007900000,
-				["zx"] = 0.5394522136,
-				["zy"] = 0.6249391786,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[10] = 
-			{
-				["y"] = 0.5713700000,
-				["z"] = 382,
-				["x"] = 0.4355300000,
-				["zx"] = 0.3364446962,
-				["zy"] = 0.2065568403,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[11] = 
-			{
-				["y"] = 0.5795900000,
-				["z"] = 823,
-				["x"] = 0.3695200000,
-				["zx"] = 0.8277080175,
-				["zy"] = 0.6155078633,
-				["i"] = 12,
-				["m"] = 29,
-			},
-			[12] = 
-			{
-				["y"] = 0.5654700000,
-				["z"] = 382,
-				["x"] = 0.4232700000,
-				["zx"] = 0.2441069830,
-				["zy"] = 0.1621205203,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[13] = 
-			{
-				["y"] = 0.3652100000,
-				["z"] = 92,
-				["x"] = 0.3012000000,
-				["zx"] = 0.5426079488,
-				["zy"] = 0.7382378690,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[14] = 
-			{
-				["y"] = 0.3578700000,
-				["z"] = 92,
-				["x"] = 0.3033200000,
-				["zx"] = 0.5589254092,
-				["zy"] = 0.6817424622,
-				["i"] = 12,
-				["m"] = 6,
-			},
-		},
-		["c"] = true,
-		["k"] = 269,
-	},
-	[270] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.3661000000,
-				["z"] = 92,
-				["x"] = 0.3110400000,
-				["zx"] = 0.6183455949,
-				["zy"] = 0.7450881295,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[2] = 
-			{
-				["y"] = 0.5610200000,
-				["z"] = 382,
-				["x"] = 0.4447200000,
-				["zx"] = 0.4056603229,
-				["zy"] = 0.1286049909,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[3] = 
-			{
-				["y"] = 0.3636600000,
-				["z"] = 92,
-				["x"] = 0.3079100000,
-				["zx"] = 0.5942542502,
-				["zy"] = 0.7263076400,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[4] = 
-			{
-				["y"] = 0.5719500000,
-				["z"] = 382,
-				["x"] = 0.4546800000,
-				["zx"] = 0.4806753003,
-				["zy"] = 0.2109251565,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[5] = 
-			{
-				["y"] = 0.3744500000,
-				["z"] = 103,
-				["x"] = 0.6176300000,
-				["zx"] = 0.5188801487,
-				["zy"] = 0.4702350387,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[6] = 
-			{
-				["y"] = 0.5670600000,
-				["z"] = 382,
-				["x"] = 0.4581200000,
-				["zx"] = 0.5065840877,
-				["zy"] = 0.1740957320,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[7] = 
-			{
-				["y"] = 0.3700400000,
-				["z"] = 103,
-				["x"] = 0.6152000000,
-				["zx"] = 0.5036926480,
-				["zy"] = 0.4426725413,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[8] = 
-			{
-				["y"] = 0.4491300000,
-				["z"] = 181,
-				["x"] = 0.4919200000,
-				["zx"] = 0.1773333166,
-				["zy"] = 0.2729443779,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[9] = 
-			{
-				["y"] = 0.3597300000,
-				["z"] = 92,
-				["x"] = 0.3080100000,
-				["zx"] = 0.5950239417,
-				["zy"] = 0.6960587369,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[10] = 
-			{
-				["y"] = 0.3633200000,
-				["z"] = 92,
-				["x"] = 0.3130300000,
-				["zx"] = 0.6336624563,
-				["zy"] = 0.7236906866,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[11] = 
-			{
-				["d"] = true,
-				["y"] = 0.3749800000,
-				["z"] = 484,
-				["x"] = 0.6144500000,
-				["zx"] = 0.4990051478,
-				["zy"] = 0.4735475384,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[12] = 
-			{
-				["y"] = 0.3745500000,
-				["z"] = 103,
-				["x"] = 0.6143500000,
-				["zx"] = 0.4983801478,
-				["zy"] = 0.4708600387,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[13] = 
-			{
-				["y"] = 0.5610600000,
-				["z"] = 382,
-				["x"] = 0.4527200000,
-				["zx"] = 0.4659133168,
-				["zy"] = 0.1289062541,
-				["i"] = 12,
-				["m"] = 17,
-			},
-		},
-		["c"] = true,
-		["k"] = 270,
-	},
-	[271] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.5656200000,
-				["z"] = 382,
-				["x"] = 0.4656800000,
-				["zx"] = 0.5635231669,
-				["zy"] = 0.1632502573,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[2] = 
-			{
-				["y"] = 0.3530600000,
-				["z"] = 103,
-				["x"] = 0.6180300000,
-				["zx"] = 0.5213801488,
-				["zy"] = 0.3365475514,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[3] = 
-			{
-				["y"] = 0.3505100000,
-				["z"] = 92,
-				["x"] = 0.3095000000,
-				["zx"] = 0.6064923454,
-				["zy"] = 0.6250931170,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[4] = 
-			{
-				["y"] = 0.5278800000,
-				["z"] = 181,
-				["x"] = 0.5172900000,
-				["zx"] = 0.3182777538,
-				["zy"] = 0.7104443734,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[5] = 
-			{
-				["y"] = 0.3624500000,
-				["z"] = 103,
-				["x"] = 0.6276900000,
-				["zx"] = 0.5817551515,
-				["zy"] = 0.3952350459,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[6] = 
-			{
-				["y"] = 0.3638400000,
-				["z"] = 103,
-				["x"] = 0.6196200000,
-				["zx"] = 0.5313176492,
-				["zy"] = 0.4039225450,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[7] = 
-			{
-				["y"] = 0.3579700000,
-				["z"] = 103,
-				["x"] = 0.6143800000,
-				["zx"] = 0.4985676478,
-				["zy"] = 0.3672350485,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[8] = 
-			{
-				["y"] = 0.3532300000,
-				["z"] = 92,
-				["x"] = 0.3176000000,
-				["zx"] = 0.6688373590,
-				["zy"] = 0.6460287446,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[9] = 
-			{
-				["y"] = 0.3570700000,
-				["z"] = 92,
-				["x"] = 0.3150900000,
-				["zx"] = 0.6495181017,
-				["zy"] = 0.6755849247,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[10] = 
-			{
-				["y"] = 0.3578200000,
-				["z"] = 92,
-				["x"] = 0.3205700000,
-				["zx"] = 0.6916971973,
-				["zy"] = 0.6813576161,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[11] = 
-			{
-				["y"] = 0.4517600000,
-				["z"] = 181,
-				["x"] = 0.5545200000,
-				["zx"] = 0.5251110765,
-				["zy"] = 0.2875554888,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[12] = 
-			{
-				["y"] = 0.5690600000,
-				["z"] = 382,
-				["x"] = 0.4649100000,
-				["zx"] = 0.5577238162,
-				["zy"] = 0.1891588913,
-				["i"] = 12,
-				["m"] = 17,
-			},
-		},
-		["c"] = true,
-		["k"] = 271,
-	},
-	[272] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.5895900000,
-				["z"] = 382,
-				["x"] = 0.4278100000,
-				["zx"] = 0.2783005571,
-				["zy"] = 0.3437822215,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[2] = 
-			{
-				["y"] = 0.4079800000,
-				["z"] = 103,
-				["x"] = 0.6635300000,
-				["zx"] = 0.8057551614,
-				["zy"] = 0.6797975188,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[3] = 
-			{
-				["y"] = 0.3433200000,
-				["z"] = 92,
-				["x"] = 0.2950500000,
-				["zx"] = 0.4952719200,
-				["zy"] = 0.5697522485,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[4] = 
-			{
-				["y"] = 0.4001100000,
-				["z"] = 103,
-				["x"] = 0.6726900000,
-				["zx"] = 0.8630051640,
-				["zy"] = 0.6306100235,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[5] = 
-			{
-				["y"] = 0.5914900000,
-				["z"] = 382,
-				["x"] = 0.4344600000,
-				["zx"] = 0.3283858582,
-				["zy"] = 0.3580922228,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[6] = 
-			{
-				["y"] = 0.5245100000,
-				["z"] = 181,
-				["x"] = 0.5734100000,
-				["zx"] = 0.6300555156,
-				["zy"] = 0.6917221513,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[7] = 
-			{
-				["y"] = 0.3420900000,
-				["z"] = 92,
-				["x"] = 0.2944200000,
-				["zx"] = 0.4904228634,
-				["zy"] = 0.5602850346,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[8] = 
-			{
-				["y"] = 0.5878200000,
-				["z"] = 382,
-				["x"] = 0.4348200000,
-				["zx"] = 0.3310972430,
-				["zy"] = 0.3304513255,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[9] = 
-			{
-				["y"] = 0.3448000000,
-				["z"] = 92,
-				["x"] = 0.2978000000,
-				["zx"] = 0.5164384370,
-				["zy"] = 0.5811436929,
-				["i"] = 12,
-				["m"] = 6,
-			},
-			[10] = 
-			{
-				["y"] = 0.4231500000,
-				["z"] = 103,
-				["x"] = 0.6635300000,
-				["zx"] = 0.8057551614,
-				["zy"] = 0.7746100098,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[11] = 
-			{
-				["d"] = true,
-				["y"] = 0.4131500000,
-				["z"] = 415,
-				["x"] = 0.6618100000,
-				["zx"] = 0.7950051610,
-				["zy"] = 0.7121100157,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[12] = 
-			{
-				["y"] = 0.5892100000,
-				["z"] = 382,
-				["x"] = 0.4221200000,
-				["zx"] = 0.2354456152,
-				["zy"] = 0.3409202212,
-				["i"] = 12,
-				["m"] = 17,
-			},
-		},
-		["c"] = true,
-		["k"] = 272,
-	},
-	[273] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.7275300000,
-				["z"] = 381,
-				["x"] = 0.2498400000,
-				["zx"] = 0.7130800525,
-				["zy"] = 0.8273550893,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[2] = 
-			{
-				["y"] = 0.3015100000,
-				["z"] = 3,
-				["x"] = 0.1098100000,
-				["zx"] = 0.6050353420,
-				["zy"] = 0.1854354437,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[3] = 
-			{
-				["y"] = 0.2998000000,
-				["z"] = 3,
-				["x"] = 0.1225000000,
-				["zx"] = 0.6905258088,
-				["zy"] = 0.1739154520,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[4] = 
-			{
-				["y"] = 0.4602000000,
-				["z"] = 41,
-				["x"] = 0.7536900000,
-				["zx"] = 0.6520613213,
-				["zy"] = 0.5594503851,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[5] = 
-			{
-				["y"] = 0.4464200000,
-				["z"] = 41,
-				["x"] = 0.7459100000,
-				["zx"] = 0.5975184136,
-				["zy"] = 0.4628435508,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[6] = 
-			{
-				["y"] = 0.4568500000,
-				["z"] = 41,
-				["x"] = 0.7520900000,
-				["zx"] = 0.6408442709,
-				["zy"] = 0.5359646888,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[7] = 
-			{
-				["y"] = 0.7315400000,
-				["z"] = 381,
-				["x"] = 0.2373600000,
-				["zx"] = 0.6340526697,
-				["zy"] = 0.8527476501,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[8] = 
-			{
-				["d"] = true,
-				["y"] = 0.5617600000,
-				["z"] = 825,
-				["x"] = 0.3451700000,
-				["zx"] = 0.5842080161,
-				["zy"] = 0.4372078874,
-				["i"] = 12,
-				["m"] = 29,
-			},
-			[9] = 
-			{
-				["y"] = 0.5056500000,
-				["z"] = 181,
-				["x"] = 0.5167400000,
-				["zx"] = 0.3152221984,
-				["zy"] = 0.5869443746,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[10] = 
-			{
-				["y"] = 0.7328400000,
-				["z"] = 381,
-				["x"] = 0.2447900000,
-				["zx"] = 0.6811018247,
-				["zy"] = 0.8609796524,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[11] = 
-			{
-				["y"] = 0.3042000000,
-				["z"] = 3,
-				["x"] = 0.1157500000,
-				["zx"] = 0.6450521563,
-				["zy"] = 0.2035575358,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[12] = 
-			{
-				["y"] = 0.7380700000,
-				["z"] = 381,
-				["x"] = 0.2356800000,
-				["zx"] = 0.6234143682,
-				["zy"] = 0.8940976307,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[13] = 
-			{
-				["y"] = 0.2969600000,
-				["z"] = 3,
-				["x"] = 0.1174000000,
-				["zx"] = 0.6561679380,
-				["zy"] = 0.1547828343,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[14] = 
-			{
-				["y"] = 0.4505600000,
-				["z"] = 41,
-				["x"] = 0.7463000000,
-				["zx"] = 0.6002525697,
-				["zy"] = 0.4918676650,
-				["i"] = 12,
-				["m"] = 11,
-			},
-		},
-		["c"] = true,
-		["k"] = 273,
-	},
-	[274] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.3111100000,
-				["z"] = 3,
-				["x"] = 0.1145100000,
-				["zx"] = 0.6366984779,
-				["zy"] = 0.2501090811,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[2] = 
-			{
-				["y"] = 0.7402700000,
-				["z"] = 381,
-				["x"] = 0.2333100000,
-				["zx"] = 0.6084067643,
-				["zy"] = 0.9080287115,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[3] = 
-			{
-				["y"] = 0.4866600000,
-				["z"] = 41,
-				["x"] = 0.7154300000,
-				["zx"] = 0.3838336031,
-				["zy"] = 0.7449523326,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[4] = 
-			{
-				["y"] = 0.2382700000,
-				["z"] = 20,
-				["x"] = 0.2008400000,
-				["zx"] = 0.6779766937,
-				["zy"] = 0.4667891544,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[5] = 
-			{
-				["y"] = 0.7473700000,
-				["z"] = 381,
-				["x"] = 0.2282100000,
-				["zx"] = 0.5761119203,
-				["zy"] = 0.9529881084,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[6] = 
-			{
-				["y"] = 0.3085200000,
-				["z"] = 3,
-				["x"] = 0.1094200000,
-				["zx"] = 0.6024079754,
-				["zy"] = 0.2326606726,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[7] = 
-			{
-				["y"] = 0.7456900000,
-				["z"] = 381,
-				["x"] = 0.2362800000,
-				["zx"] = 0.6272137616,
-				["zy"] = 0.9423498286,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[8] = 
-			{
-				["y"] = 0.3086300000,
-				["z"] = 3,
-				["x"] = 0.1168100000,
-				["zx"] = 0.6521932039,
-				["zy"] = 0.2334017247,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[9] = 
-			{
-				["y"] = 0.7414900000,
-				["z"] = 381,
-				["x"] = 0.2459700000,
-				["zx"] = 0.6885739651,
-				["zy"] = 0.9157541290,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[10] = 
-			{
-				["y"] = 0.4759500000,
-				["z"] = 41,
-				["x"] = 0.7315900000,
-				["zx"] = 0.4971258123,
-				["zy"] = 0.6698682110,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[11] = 
-			{
-				["y"] = 0.2363700000,
-				["z"] = 20,
-				["x"] = 0.2035400000,
-				["zx"] = 0.7002017658,
-				["zy"] = 0.4511492892,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[12] = 
-			{
-				["y"] = 0.2420000000,
-				["z"] = 20,
-				["x"] = 0.2030000000,
-				["zx"] = 0.6957567514,
-				["zy"] = 0.4974926794,
-				["i"] = 12,
-				["m"] = 3,
-			},
-			[13] = 
-			{
-				["y"] = 0.3115100000,
-				["z"] = 3,
-				["x"] = 0.1216000000,
-				["zx"] = 0.6844626551,
-				["zy"] = 0.2528038160,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[14] = 
-			{
-				["y"] = 0.4831600000,
-				["z"] = 41,
-				["x"] = 0.7298400000,
-				["zx"] = 0.4848571634,
-				["zy"] = 0.7204150380,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[15] = 
-			{
-				["y"] = 0.4713000000,
-				["z"] = 41,
-				["x"] = 0.7285600000,
-				["zx"] = 0.4758835231,
-				["zy"] = 0.6372686624,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[16] = 
-			{
-				["y"] = 0.5456800000,
-				["z"] = 181,
-				["x"] = 0.5567200000,
-				["zx"] = 0.5373332981,
-				["zy"] = 0.8093332612,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[17] = 
-			{
-				["y"] = 0.2362200000,
-				["z"] = 20,
-				["x"] = 0.2068500000,
-				["zx"] = 0.7274483297,
-				["zy"] = 0.4499155132,
-				["i"] = 12,
-				["m"] = 3,
-			},
-		},
-		["c"] = true,
-		["k"] = 274,
-	},
-	[275] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.4321100000,
-				["z"] = 41,
-				["x"] = 0.7360100000,
-				["zx"] = 0.5281129141,
-				["zy"] = 0.3625210690,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[2] = 
-			{
-				["y"] = 0.3144800000,
-				["z"] = 3,
-				["x"] = 0.1148400000,
-				["zx"] = 0.6389216342,
-				["zy"] = 0.2728122225,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[3] = 
-			{
-				["y"] = 0.4333100000,
-				["z"] = 41,
-				["x"] = 0.7386200000,
-				["zx"] = 0.5464107277,
-				["zy"] = 0.3709338557,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[4] = 
-			{
-				["y"] = 0.3183800000,
-				["z"] = 3,
-				["x"] = 0.1196700000,
-				["zx"] = 0.6714605589,
-				["zy"] = 0.2990858877,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[5] = 
-			{
-				["y"] = 0.7353700000,
-				["z"] = 381,
-				["x"] = 0.2259000000,
-				["zx"] = 0.5614842557,
-				["zy"] = 0.8770003952,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[6] = 
-			{
-				["y"] = 0.7405600000,
-				["z"] = 381,
-				["x"] = 0.2174300000,
-				["zx"] = 0.5078494855,
-				["zy"] = 0.9098650812,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[7] = 
-			{
-				["y"] = 0.7322600000,
-				["z"] = 381,
-				["x"] = 0.2229100000,
-				["zx"] = 0.5425506120,
-				["zy"] = 0.8573069129,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[8] = 
-			{
-				["y"] = 0.3244100000,
-				["z"] = 3,
-				["x"] = 0.1186000000,
-				["zx"] = 0.6642521429,
-				["zy"] = 0.3397090162,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[9] = 
-			{
-				["y"] = 0.7396700000,
-				["z"] = 381,
-				["x"] = 0.2259900000,
-				["zx"] = 0.5620541648,
-				["zy"] = 0.9042293258,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[10] = 
-			{
-				["y"] = 0.4288100000,
-				["z"] = 41,
-				["x"] = 0.7396500000,
-				["zx"] = 0.5536317039,
-				["zy"] = 0.3393859055,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[11] = 
-			{
-				["y"] = 0.3212300000,
-				["z"] = 3,
-				["x"] = 0.1156500000,
-				["zx"] = 0.6443784725,
-				["zy"] = 0.3182858738,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[12] = 
-			{
-				["y"] = 0.4323500000,
-				["z"] = 41,
-				["x"] = 0.7401900000,
-				["zx"] = 0.5574174584,
-				["zy"] = 0.3642036263,
-				["i"] = 12,
-				["m"] = 11,
-			},
-		},
-		["c"] = true,
-		["k"] = 275,
-	},
-	[276] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.3222300000,
-				["z"] = 3,
-				["x"] = 0.1096600000,
-				["zx"] = 0.6040248164,
-				["zy"] = 0.3250227110,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[2] = 
-			{
-				["y"] = 0.7308700000,
-				["z"] = 381,
-				["x"] = 0.2308200000,
-				["zx"] = 0.5926392816,
-				["zy"] = 0.8485050028,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[3] = 
-			{
-				["y"] = 0.4735300000,
-				["z"] = 41,
-				["x"] = 0.6947400000,
-				["zx"] = 0.2387831198,
-				["zy"] = 0.6529024244,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[4] = 
-			{
-				["y"] = 0.4704900000,
-				["z"] = 41,
-				["x"] = 0.6972900000,
-				["zx"] = 0.2566602939,
-				["zy"] = 0.6315900314,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[5] = 
-			{
-				["y"] = 0.7274400000,
-				["z"] = 381,
-				["x"] = 0.2268500000,
-				["zx"] = 0.5674999620,
-				["zy"] = 0.8267851815,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[6] = 
-			{
-				["y"] = 0.3157800000,
-				["z"] = 3,
-				["x"] = 0.1107500000,
-				["zx"] = 0.6113679692,
-				["zy"] = 0.2815701109,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[7] = 
-			{
-				["y"] = 0.4712800000,
-				["z"] = 41,
-				["x"] = 0.6866600000,
-				["zx"] = 0.1821370151,
-				["zy"] = 0.6371284493,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[8] = 
-			{
-				["y"] = 0.7225800000,
-				["z"] = 381,
-				["x"] = 0.2318500000,
-				["zx"] = 0.5991615737,
-				["zy"] = 0.7960101576,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[9] = 
-			{
-				["y"] = 0.4674400000,
-				["z"] = 41,
-				["x"] = 0.6927700000,
-				["zx"] = 0.2249721264,
-				["zy"] = 0.6102075318,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[10] = 
-			{
-				["y"] = 0.3168300000,
-				["z"] = 3,
-				["x"] = 0.1076000000,
-				["zx"] = 0.5901469313,
-				["zy"] = 0.2886437900,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[11] = 
-			{
-				["y"] = 0.4535300000,
-				["z"] = 181,
-				["x"] = 0.5750800000,
-				["zx"] = 0.6393332929,
-				["zy"] = 0.2973888221,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[12] = 
-			{
-				["y"] = 0.7271100000,
-				["z"] = 381,
-				["x"] = 0.2351100000,
-				["zx"] = 0.6198049445,
-				["zy"] = 0.8246955194,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[13] = 
-			{
-				["y"] = 0.3186700000,
-				["z"] = 3,
-				["x"] = 0.1056600000,
-				["zx"] = 0.5770774668,
-				["zy"] = 0.3010395705,
-				["i"] = 12,
-				["m"] = 2,
-			},
-		},
-		["c"] = true,
-		["k"] = 276,
-	},
-	[277] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.7219400000,
-				["z"] = 381,
-				["x"] = 0.2258300000,
-				["zx"] = 0.5610409932,
-				["zy"] = 0.7919574796,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[2] = 
-			{
-				["y"] = 0.3087300000,
-				["z"] = 3,
-				["x"] = 0.0975700000,
-				["zx"] = 0.5225764521,
-				["zy"] = 0.2340754085,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[3] = 
-			{
-				["y"] = 0.3131300000,
-				["z"] = 3,
-				["x"] = 0.1048400000,
-				["zx"] = 0.5715532601,
-				["zy"] = 0.2637174923,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[4] = 
-			{
-				["y"] = 0.4269300000,
-				["z"] = 41,
-				["x"] = 0.7823000000,
-				["zx"] = 0.8526362042,
-				["zy"] = 0.3262058729,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[5] = 
-			{
-				["y"] = 0.7275300000,
-				["z"] = 381,
-				["x"] = 0.2137100000,
-				["zx"] = 0.4842932465,
-				["zy"] = 0.8273550893,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[6] = 
-			{
-				["y"] = 0.7192400000,
-				["z"] = 381,
-				["x"] = 0.2229800000,
-				["zx"] = 0.5429938745,
-				["zy"] = 0.7748602442,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[7] = 
-			{
-				["y"] = 0.4219200000,
-				["z"] = 41,
-				["x"] = 0.7892500000,
-				["zx"] = 0.9013602670,
-				["zy"] = 0.2910824883,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[8] = 
-			{
-				["y"] = 0.3073100000,
-				["z"] = 3,
-				["x"] = 0.1050200000,
-				["zx"] = 0.5727658908,
-				["zy"] = 0.2245090996,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[9] = 
-			{
-				["y"] = 0.7262300000,
-				["z"] = 381,
-				["x"] = 0.2209000000,
-				["zx"] = 0.5298226441,
-				["zy"] = 0.8191230871,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[10] = 
-			{
-				["y"] = 0.3079200000,
-				["z"] = 3,
-				["x"] = 0.1027700000,
-				["zx"] = 0.5576080066,
-				["zy"] = 0.2286185703,
-				["i"] = 12,
-				["m"] = 2,
-			},
-			[11] = 
-			{
-				["y"] = 0.4320600000,
-				["z"] = 41,
-				["x"] = 0.7871300000,
-				["zx"] = 0.8864976752,
-				["zy"] = 0.3621705362,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[12] = 
-			{
-				["y"] = 0.4263700000,
-				["z"] = 41,
-				["x"] = 0.7919800000,
-				["zx"] = 0.9204993593,
-				["zy"] = 0.3222799058,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[13] = 
-			{
-				["y"] = 0.4694900000,
-				["z"] = 181,
-				["x"] = 0.5977400000,
-				["zx"] = 0.7652221753,
-				["zy"] = 0.3860554878,
-				["i"] = 12,
-				["m"] = 14,
-			},
-		},
-		["c"] = true,
-		["k"] = 277,
-	},
-	[278] = 
-	{
-		["e"] = 
-		{
-			[2] = 
-			{
-				["y"] = 0.4727800000,
-				["z"] = 181,
-				["x"] = 0.5300500000,
-				["zx"] = 0.3891666391,
-				["zy"] = 0.4043332654,
-				["i"] = 12,
-				["m"] = 14,
-			},
-			[1] = 
-			{
-				["y"] = 0.5687200000,
-				["z"] = 823,
-				["x"] = 0.3725900000,
-				["zx"] = 0.8584080177,
-				["zy"] = 0.5068078780,
-				["i"] = 12,
-				["m"] = 29,
-			},
-		},
-		["c"] = true,
-		["k"] = 278,
-	},
-	[279] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.4465000000,
-				["z"] = 181,
-				["x"] = 0.6106400000,
-				["zx"] = 0.8368888383,
-				["zy"] = 0.2583332669,
-				["i"] = 12,
-				["m"] = 14,
-			},
-		},
-		["c"] = true,
-		["k"] = 279,
-	},
-	[280] = 
-	{
-		["e"] = 
-		{
-			[2] = 
-			{
-				["y"] = 0.4770700000,
-				["z"] = 584,
-				["x"] = 0.5528600000,
-				["zx"] = 0.7060810387,
-				["zy"] = 0.5013883386,
-				["i"] = 12,
-				["m"] = 26,
-			},
-			[1] = 
-			{
-				["y"] = 0.5242600000,
-				["z"] = 181,
-				["x"] = 0.5831900000,
-				["zx"] = 0.6843888462,
-				["zy"] = 0.6903332625,
-				["i"] = 12,
-				["m"] = 14,
-			},
-		},
-		["c"] = true,
-		["k"] = 280,
-	},
-	[281] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.2691600000,
-				["z"] = 684,
-				["x"] = 0.2303500000,
-				["zx"] = 0.2825000098,
-				["zy"] = 0.7074285896,
-				["i"] = 12,
-				["m"] = 27,
-			},
-			[2] = 
-			{
-				["y"] = 0.2673600000,
-				["z"] = 684,
-				["x"] = 0.2310300000,
-				["zx"] = 0.2873571532,
-				["zy"] = 0.6945714473,
-				["i"] = 12,
-				["m"] = 27,
-			},
-			[3] = 
-			{
-				["y"] = 0.2723700000,
-				["z"] = 684,
-				["x"] = 0.2255600000,
-				["zx"] = 0.2482857204,
-				["zy"] = 0.7303571600,
-				["i"] = 12,
-				["m"] = 27,
-			},
-			[4] = 
-			{
-				["y"] = 0.2662500000,
-				["z"] = 684,
-				["x"] = 0.2390800000,
-				["zx"] = 0.3448571593,
-				["zy"] = 0.6866428762,
-				["i"] = 12,
-				["m"] = 27,
-			},
-			[5] = 
-			{
-				["y"] = 0.4374700000,
-				["z"] = 181,
-				["x"] = 0.5447600000,
-				["zx"] = 0.4708888571,
-				["zy"] = 0.2081666008,
-				["i"] = 12,
-				["m"] = 14,
-			},
-		},
-		["c"] = true,
-		["k"] = 281,
-	},
-	[282] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.5193700000,
-				["z"] = 181,
-				["x"] = 0.5151100000,
-				["zx"] = 0.3061666433,
-				["zy"] = 0.6631665961,
-				["i"] = 12,
-				["m"] = 14,
-			},
-		},
-		["c"] = true,
-		["k"] = 282,
-	},
-	[289] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.6112500000,
-				["z"] = 117,
-				["x"] = 0.7027800000,
-				["zx"] = 0.0941300718,
-				["zy"] = 0.8118496843,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[1] = 
-			{
-				["y"] = 0.6036300000,
-				["z"] = 117,
-				["x"] = 0.7138800000,
-				["zx"] = 0.1866300428,
-				["zy"] = 0.7483497082,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[2] = 
-			{
-				["y"] = 0.6123700000,
-				["z"] = 117,
-				["x"] = 0.7094300000,
-				["zx"] = 0.1495467211,
-				["zy"] = 0.8211830141,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[3] = 
-			{
-				["y"] = 0.6106600000,
-				["z"] = 117,
-				["x"] = 0.7128600000,
-				["zx"] = 0.1781300455,
-				["zy"] = 0.8069330195,
-				["i"] = 12,
-				["m"] = 9,
-			},
-		},
-		["c"] = true,
-		["k"] = 289,
-	},
-	[290] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.6129700000,
-				["z"] = 117,
-				["x"] = 0.7136300000,
-				["zx"] = 0.1845467102,
-				["zy"] = 0.8261830123,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[1] = 
-			{
-				["y"] = 0.5904800000,
-				["z"] = 117,
-				["x"] = 0.7354700000,
-				["zx"] = 0.3665466532,
-				["zy"] = 0.6387664161,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[2] = 
-			{
-				["y"] = 0.6053100000,
-				["z"] = 117,
-				["x"] = 0.7260800000,
-				["zx"] = 0.2882966777,
-				["zy"] = 0.7623497029,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[3] = 
-			{
-				["y"] = 0.5600600000,
-				["z"] = 117,
-				["x"] = 0.7641900000,
-				["zx"] = 0.6058799116,
-				["zy"] = 0.3852665115,
-				["i"] = 12,
-				["m"] = 9,
-			},
-		},
-		["c"] = true,
-		["k"] = 290,
-	},
-	[291] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.6030300000,
-				["z"] = 117,
-				["x"] = 0.7504700000,
-				["zx"] = 0.4915466140,
-				["zy"] = 0.7433497101,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[1] = 
-			{
-				["y"] = 0.6066900000,
-				["z"] = 117,
-				["x"] = 0.7476100000,
-				["zx"] = 0.4677132882,
-				["zy"] = 0.7738496986,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[2] = 
-			{
-				["y"] = 0.6142200000,
-				["z"] = 117,
-				["x"] = 0.7463600000,
-				["zx"] = 0.4572966248,
-				["zy"] = 0.8365996750,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[3] = 
-			{
-				["y"] = 0.6143500000,
-				["z"] = 117,
-				["x"] = 0.7540400000,
-				["zx"] = 0.5212966047,
-				["zy"] = 0.8376830079,
-				["i"] = 12,
-				["m"] = 9,
-			},
-		},
-		["c"] = true,
-		["k"] = 291,
-	},
-	[292] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.5983700000,
-				["z"] = 117,
-				["x"] = 0.7490900000,
-				["zx"] = 0.4800466176,
-				["zy"] = 0.7045163914,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[1] = 
-			{
-				["y"] = 0.5918400000,
-				["z"] = 117,
-				["x"] = 0.7458700000,
-				["zx"] = 0.4532132927,
-				["zy"] = 0.6500997452,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[2] = 
-			{
-				["y"] = 0.5886300000,
-				["z"] = 117,
-				["x"] = 0.7448700000,
-				["zx"] = 0.4448799620,
-				["zy"] = 0.6233497552,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[3] = 
-			{
-				["y"] = 0.5960800000,
-				["z"] = 117,
-				["x"] = 0.7418000000,
-				["zx"] = 0.4192966367,
-				["zy"] = 0.6854330652,
-				["i"] = 12,
-				["m"] = 9,
-			},
-		},
-		["c"] = true,
-		["k"] = 292,
-	},
-	[293] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.5827700000,
-				["z"] = 117,
-				["x"] = 0.7279000000,
-				["zx"] = 0.3034633396,
-				["zy"] = 0.5745164403,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[1] = 
-			{
-				["y"] = 0.5841100000,
-				["z"] = 117,
-				["x"] = 0.7114400000,
-				["zx"] = 0.1662967159,
-				["zy"] = 0.5856831028,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[2] = 
-			{
-				["y"] = 0.5870400000,
-				["z"] = 117,
-				["x"] = 0.7239400000,
-				["zx"] = 0.2704633499,
-				["zy"] = 0.6100997602,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[3] = 
-			{
-				["y"] = 0.5761100000,
-				["z"] = 117,
-				["x"] = 0.7242900000,
-				["zx"] = 0.2733800157,
-				["zy"] = 0.5190164612,
-				["i"] = 12,
-				["m"] = 9,
-			},
-		},
-		["c"] = true,
-		["k"] = 293,
-	},
-	[294] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.5766100000,
-				["z"] = 117,
-				["x"] = 0.7310300000,
-				["zx"] = 0.3295466648,
-				["zy"] = 0.5231831263,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[1] = 
-			{
-				["y"] = 0.5680200000,
-				["z"] = 117,
-				["x"] = 0.7366000000,
-				["zx"] = 0.3759633169,
-				["zy"] = 0.4515998199,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[2] = 
-			{
-				["y"] = 0.5711600000,
-				["z"] = 117,
-				["x"] = 0.7325800000,
-				["zx"] = 0.3424633274,
-				["zy"] = 0.4777664767,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[3] = 
-			{
-				["y"] = 0.5734000000,
-				["z"] = 117,
-				["x"] = 0.7282500000,
-				["zx"] = 0.3063800053,
-				["zy"] = 0.4964331363,
-				["i"] = 12,
-				["m"] = 9,
-			},
-		},
-		["c"] = true,
-		["k"] = 294,
-	},
-	[295] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.5968900000,
-				["z"] = 117,
-				["x"] = 0.7144700000,
-				["zx"] = 0.1915467080,
-				["zy"] = 0.6921830627,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[1] = 
-			{
-				["y"] = 0.5928800000,
-				["z"] = 117,
-				["x"] = 0.7136900000,
-				["zx"] = 0.1850467100,
-				["zy"] = 0.6587664086,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[2] = 
-			{
-				["y"] = 0.5925700000,
-				["z"] = 117,
-				["x"] = 0.7201200000,
-				["zx"] = 0.2386300266,
-				["zy"] = 0.6561830762,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[3] = 
-			{
-				["y"] = 0.5972000000,
-				["z"] = 117,
-				["x"] = 0.7222900000,
-				["zx"] = 0.2567133542,
-				["zy"] = 0.6947663950,
-				["i"] = 12,
-				["m"] = 9,
-			},
-		},
-		["c"] = true,
-		["k"] = 295,
-	},
-	[296] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.5854900000,
-				["z"] = 117,
-				["x"] = 0.7370700000,
-				["zx"] = 0.3798799823,
-				["zy"] = 0.5971830984,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[1] = 
-			{
-				["y"] = 0.5858500000,
-				["z"] = 117,
-				["x"] = 0.7306500000,
-				["zx"] = 0.3263799991,
-				["zy"] = 0.6001830973,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[2] = 
-			{
-				["y"] = 0.5731700000,
-				["z"] = 117,
-				["x"] = 0.7405000000,
-				["zx"] = 0.4084633067,
-				["zy"] = 0.4945164704,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[3] = 
-			{
-				["y"] = 0.5813000000,
-				["z"] = 117,
-				["x"] = 0.7425300000,
-				["zx"] = 0.4253799681,
-				["zy"] = 0.5622664449,
-				["i"] = 12,
-				["m"] = 9,
-			},
-		},
-		["c"] = true,
-		["k"] = 296,
-	},
-	[297] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.6047900000,
-				["z"] = 117,
-				["x"] = 0.7377200000,
-				["zx"] = 0.3852966473,
-				["zy"] = 0.7580163712,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[1] = 
-			{
-				["y"] = 0.5949400000,
-				["z"] = 117,
-				["x"] = 0.7310600000,
-				["zx"] = 0.3297966647,
-				["zy"] = 0.6759330688,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[2] = 
-			{
-				["y"] = 0.5949500000,
-				["z"] = 117,
-				["x"] = 0.7257300000,
-				["zx"] = 0.2853800119,
-				["zy"] = 0.6760164021,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[3] = 
-			{
-				["y"] = 0.5940100000,
-				["z"] = 117,
-				["x"] = 0.7377300000,
-				["zx"] = 0.3853799806,
-				["zy"] = 0.6681830717,
-				["i"] = 12,
-				["m"] = 9,
-			},
-		},
-		["c"] = true,
-		["k"] = 297,
-	},
-	[298] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.5929900000,
-				["z"] = 117,
-				["x"] = 0.7520700000,
-				["zx"] = 0.5048799432,
-				["zy"] = 0.6596830749,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[2] = 
-			{
-				["y"] = 0.5986100000,
-				["z"] = 117,
-				["x"] = 0.7578300000,
-				["zx"] = 0.5528799282,
-				["zy"] = 0.7065163906,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[3] = 
-			{
-				["y"] = 0.6006500000,
-				["z"] = 117,
-				["x"] = 0.7547900000,
-				["zx"] = 0.5275466028,
-				["zy"] = 0.7235163842,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[4] = 
-			{
-				["y"] = 0.5923000000,
-				["z"] = 117,
-				["x"] = 0.7599600000,
-				["zx"] = 0.5706299226,
-				["zy"] = 0.6539330771,
-				["i"] = 12,
-				["m"] = 9,
-			},
-			[5] = 
-			{
-				["zy"] = 0.5697896086,
-				["zx"] = 0.2355895922,
-				["i"] = 12,
-				["m"] = 36,
-				["x"] = 0.4905400000,
-				["y"] = 0.6608500000,
-				["z"] = 1086,
-			},
-		},
-		["c"] = true,
-		["k"] = 298,
-	},
-	[311] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.4638000000,
-				["z"] = 41,
-				["x"] = 0.7716800000,
-				["zx"] = 0.7781830321,
-				["zy"] = 0.5846887453,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[1] = 
-			{
-				["y"] = 0.4726900000,
-				["z"] = 41,
-				["x"] = 0.7686500000,
-				["zx"] = 0.7569407428,
-				["zy"] = 0.6470134737,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[2] = 
-			{
-				["y"] = 0.4688400000,
-				["z"] = 41,
-				["x"] = 0.7742300000,
-				["zx"] = 0.7960602062,
-				["zy"] = 0.6200224496,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[3] = 
-			{
-				["y"] = 0.4693000000,
-				["z"] = 41,
-				["x"] = 0.7617200000,
-				["zx"] = 0.7083568932,
-				["zy"] = 0.6232473512,
-				["i"] = 12,
-				["m"] = 11,
-			},
-		},
-		["c"] = true,
-		["k"] = 311,
-	},
-	[312] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.4534000000,
-				["z"] = 41,
-				["x"] = 0.7779100000,
-				["zx"] = 0.8218594221,
-				["zy"] = 0.5117779270,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[2] = 
-			{
-				["y"] = 0.4597000000,
-				["z"] = 41,
-				["x"] = 0.7717700000,
-				["zx"] = 0.7788139911,
-				["zy"] = 0.5559450573,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[3] = 
-			{
-				["y"] = 0.4538100000,
-				["z"] = 41,
-				["x"] = 0.7706900000,
-				["zx"] = 0.7712424821,
-				["zy"] = 0.5146522958,
-				["i"] = 12,
-				["m"] = 11,
-			},
-		},
-		["c"] = true,
-		["k"] = 312,
-	},
-	[313] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.3668200000,
-				["z"] = 849,
-				["x"] = 0.7538500000,
-				["zx"] = 0.4039834112,
-				["zy"] = 0.8088494429,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[2] = 
-			{
-				["y"] = 0.3163400000,
-				["z"] = 849,
-				["x"] = 0.7405200000,
-				["zx"] = 0.3299202869,
-				["zy"] = 0.5283763541,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[3] = 
-			{
-				["y"] = 0.3313200000,
-				["z"] = 849,
-				["x"] = 0.8398400000,
-				["zx"] = 0.8817544582,
-				["zy"] = 0.6116070766,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[4] = 
-			{
-				["y"] = 0.4384500000,
-				["z"] = 41,
-				["x"] = 0.7059100000,
-				["zx"] = 0.3170921530,
-				["zy"] = 0.4069686256,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[5] = 
-			{
-				["y"] = 0.4337400000,
-				["z"] = 41,
-				["x"] = 0.7034000000,
-				["zx"] = 0.2994954052,
-				["zy"] = 0.3739484376,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[6] = 
-			{
-				["y"] = 0.4319400000,
-				["z"] = 41,
-				["x"] = 0.7072900000,
-				["zx"] = 0.3267668590,
-				["zy"] = 0.3613292575,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[7] = 
-			{
-				["y"] = 0.4286400000,
-				["z"] = 41,
-				["x"] = 0.7105800000,
-				["zx"] = 0.3498319190,
-				["zy"] = 0.3381940940,
-				["i"] = 12,
-				["m"] = 11,
-			},
-		},
-		["c"] = true,
-		["k"] = 313,
-	},
-	[315] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.4384200000,
-				["z"] = 41,
-				["x"] = 0.6849600000,
-				["zx"] = 0.1702188990,
-				["zy"] = 0.4067583059,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[1] = 
-			{
-				["y"] = 0.4343500000,
-				["z"] = 41,
-				["x"] = 0.6931700000,
-				["zx"] = 0.2277763890,
-				["zy"] = 0.3782249376,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[2] = 
-			{
-				["y"] = 0.4375600000,
-				["z"] = 41,
-				["x"] = 0.6900000000,
-				["zx"] = 0.2055526079,
-				["zy"] = 0.4007291421,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[3] = 
-			{
-				["y"] = 0.4314300000,
-				["z"] = 41,
-				["x"] = 0.6936400000,
-				["zx"] = 0.2310713976,
-				["zy"] = 0.3577538232,
-				["i"] = 12,
-				["m"] = 11,
-			},
-		},
-		["c"] = true,
-		["k"] = 315,
-	},
-	[316] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.4453400000,
-				["z"] = 41,
-				["x"] = 0.7324700000,
-				["zx"] = 0.5032951901,
-				["zy"] = 0.4552720427,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[1] = 
-			{
-				["y"] = 0.4518800000,
-				["z"] = 41,
-				["x"] = 0.7438900000,
-				["zx"] = 0.5833568875,
-				["zy"] = 0.5011217304,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[2] = 
-			{
-				["y"] = 0.4495100000,
-				["z"] = 41,
-				["x"] = 0.7403700000,
-				["zx"] = 0.5586793766,
-				["zy"] = 0.4845064766,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[3] = 
-			{
-				["y"] = 0.4561900000,
-				["z"] = 41,
-				["x"] = 0.7379800000,
-				["zx"] = 0.5419239075,
-				["zy"] = 0.5313376561,
-				["i"] = 12,
-				["m"] = 11,
-			},
-		},
-		["c"] = true,
-		["k"] = 316,
-	},
-	[317] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.4472400000,
-				["z"] = 41,
-				["x"] = 0.7169300000,
-				["zx"] = 0.3943495878,
-				["zy"] = 0.4685922884,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[1] = 
-			{
-				["y"] = 0.4535400000,
-				["z"] = 41,
-				["x"] = 0.7115000000,
-				["zx"] = 0.3562817230,
-				["zy"] = 0.5127594188,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[2] = 
-			{
-				["y"] = 0.4506400000,
-				["z"] = 41,
-				["x"] = 0.7011300000,
-				["zx"] = 0.2835812149,
-				["zy"] = 0.4924285175,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[3] = 
-			{
-				["y"] = 0.4423400000,
-				["z"] = 41,
-				["x"] = 0.7058500000,
-				["zx"] = 0.3166715136,
-				["zy"] = 0.4342400759,
-				["i"] = 12,
-				["m"] = 11,
-			},
-		},
-		["c"] = true,
-		["k"] = 317,
-	},
-	[318] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.4137100000,
-				["z"] = 41,
-				["x"] = 0.6959000000,
-				["zx"] = 0.2469154813,
-				["zy"] = 0.2335250057,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[1] = 
-			{
-				["y"] = 0.4218400000,
-				["z"] = 41,
-				["x"] = 0.7013700000,
-				["zx"] = 0.2852637724,
-				["zy"] = 0.2905216359,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[2] = 
-			{
-				["y"] = 0.4098400000,
-				["z"] = 41,
-				["x"] = 0.6931300000,
-				["zx"] = 0.2274959628,
-				["zy"] = 0.2063937685,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[3] = 
-			{
-				["y"] = 0.4177900000,
-				["z"] = 41,
-				["x"] = 0.7014100000,
-				["zx"] = 0.2855441987,
-				["zy"] = 0.2621284806,
-				["i"] = 12,
-				["m"] = 11,
-			},
-		},
-		["c"] = true,
-		["k"] = 318,
-	},
-	[319] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.3675300000,
-				["z"] = 849,
-				["x"] = 0.7940300000,
-				["zx"] = 0.6272284474,
-				["zy"] = 0.8127942903,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[2] = 
-			{
-				["y"] = 0.4792900000,
-				["z"] = 41,
-				["x"] = 0.7510700000,
-				["zx"] = 0.6336934013,
-				["zy"] = 0.6932838008,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[3] = 
-			{
-				["y"] = 0.4802500000,
-				["z"] = 41,
-				["x"] = 0.7390900000,
-				["zx"] = 0.5497057362,
-				["zy"] = 0.7000140302,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[4] = 
-			{
-				["y"] = 0.3740000000,
-				["z"] = 849,
-				["x"] = 0.8016400000,
-				["zx"] = 0.6695105461,
-				["zy"] = 0.8487424061,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[5] = 
-			{
-				["y"] = 0.2584000000,
-				["z"] = 849,
-				["x"] = 0.7611000000,
-				["zx"] = 0.4442653055,
-				["zy"] = 0.2064545877,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[6] = 
-			{
-				["y"] = 0.2567900000,
-				["z"] = 849,
-				["x"] = 0.7572700000,
-				["zx"] = 0.4229853530,
-				["zy"] = 0.1975092297,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[7] = 
-			{
-				["y"] = 0.4785400000,
-				["z"] = 41,
-				["x"] = 0.7537900000,
-				["zx"] = 0.6527623870,
-				["zy"] = 0.6880258091,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[8] = 
-			{
-				["y"] = 0.4770700000,
-				["z"] = 41,
-				["x"] = 0.7447900000,
-				["zx"] = 0.5896664784,
-				["zy"] = 0.6777201453,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[9] = 
-			{
-				["y"] = 1.0862700000,
-				["z"] = 980,
-				["x"] = 0.2951700000,
-				["zx"] = 0.6889943252,
-				["zy"] = 0.6311292468,
-				["i"] = 12,
-				["m"] = 31,
-			},
-		},
-		["c"] = true,
-		["k"] = 319,
-	},
-	[320] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.4223900000,
-				["z"] = 41,
-				["x"] = 0.6897500000,
-				["zx"] = 0.2037999437,
-				["zy"] = 0.2943774964,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[1] = 
-			{
-				["y"] = 0.4321300000,
-				["z"] = 41,
-				["x"] = 0.6883600000,
-				["zx"] = 0.1940551312,
-				["zy"] = 0.3626612821,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[2] = 
-			{
-				["y"] = 0.4258700000,
-				["z"] = 41,
-				["x"] = 0.6894900000,
-				["zx"] = 0.2019771730,
-				["zy"] = 0.3187745780,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[3] = 
-			{
-				["y"] = 0.4324500000,
-				["z"] = 41,
-				["x"] = 0.6846500000,
-				["zx"] = 0.1680455955,
-				["zy"] = 0.3649046919,
-				["i"] = 12,
-				["m"] = 11,
-			},
-		},
-		["c"] = true,
-		["k"] = 320,
-	},
-	[354] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.6163400000,
-				["z"] = 58,
-				["x"] = 0.3952600000,
-				["zx"] = 0.7580457527,
-				["zy"] = 0.4499690122,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[1] = 
-			{
-				["y"] = 0.6113400000,
-				["z"] = 58,
-				["x"] = 0.3940800000,
-				["zx"] = 0.7489249985,
-				["zy"] = 0.4113217654,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[2] = 
-			{
-				["d"] = true,
-				["y"] = 0.6221600000,
-				["z"] = 472,
-				["x"] = 0.3893000000,
-				["zx"] = 0.7119782143,
-				["zy"] = 0.4949544073,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[3] = 
-			{
-				["y"] = 0.6219400000,
-				["z"] = 58,
-				["x"] = 0.3914100000,
-				["zx"] = 0.7282873596,
-				["zy"] = 0.4932539285,
-				["i"] = 12,
-				["m"] = 8,
-			},
-		},
-		["c"] = true,
-		["k"] = 354,
-	},
-	[355] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.6184000000,
-				["z"] = 58,
-				["x"] = 0.3229500000,
-				["zx"] = 0.1991290239,
-				["zy"] = 0.4658916778,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[1] = 
-			{
-				["y"] = 0.6284300000,
-				["z"] = 58,
-				["x"] = 0.3163600000,
-				["zx"] = 0.1481919302,
-				["zy"] = 0.5434180547,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[2] = 
-			{
-				["y"] = 0.6199200000,
-				["z"] = 58,
-				["x"] = 0.3233200000,
-				["zx"] = 0.2019889214,
-				["zy"] = 0.4776404408,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[3] = 
-			{
-				["y"] = 0.6273100000,
-				["z"] = 58,
-				["x"] = 0.3240300000,
-				["zx"] = 0.2074768329,
-				["zy"] = 0.5347610715,
-				["i"] = 12,
-				["m"] = 8,
-			},
-		},
-		["c"] = true,
-		["k"] = 355,
-	},
-	[356] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.6034100000,
-				["z"] = 58,
-				["x"] = 0.4012000000,
-				["zx"] = 0.8039587021,
-				["zy"] = 0.3500272321,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[2] = 
-			{
-				["y"] = 0.6197700000,
-				["l"] = true,
-				["zx"] = 0.7942195916,
-				["i"] = 12,
-				["m"] = 8,
-				["d"] = true,
-				["x"] = 0.3999400000,
-				["z"] = 58,
-				["zy"] = 0.4764810234,
-			},
-			[3] = 
-			{
-				["y"] = 0.6259600000,
-				["z"] = 58,
-				["x"] = 0.3984700000,
-				["zx"] = 0.7828572961,
-				["zy"] = 0.5243263149,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[4] = 
-			{
-				["y"] = 0.6222200000,
-				["z"] = 58,
-				["x"] = 0.4044500000,
-				["zx"] = 0.8290794235,
-				["zy"] = 0.4954181743,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[5] = 
-			{
-				["zy"] = 0.4761717433,
-				["l"] = true,
-				["zx"] = 0.7946843904,
-				["i"] = 12,
-				["m"] = 8,
-				["d"] = true,
-				["x"] = 0.4000000000,
-				["y"] = 0.6197300000,
-				["z"] = 58,
-			},
-		},
-		["c"] = true,
-		["k"] = 356,
-	},
-	[357] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.6214000000,
-				["z"] = 58,
-				["x"] = 0.3271400000,
-				["zx"] = 0.2315154309,
-				["zy"] = 0.4890800258,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[1] = 
-			{
-				["y"] = 0.6188300000,
-				["z"] = 58,
-				["x"] = 0.3286700000,
-				["zx"] = 0.2433414936,
-				["zy"] = 0.4692153410,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[2] = 
-			{
-				["y"] = 0.6194300000,
-				["z"] = 58,
-				["x"] = 0.3274700000,
-				["zx"] = 0.2340661503,
-				["zy"] = 0.4738530106,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[3] = 
-			{
-				["y"] = 0.6177100000,
-				["z"] = 58,
-				["x"] = 0.3251500000,
-				["zx"] = 0.2161338199,
-				["zy"] = 0.4605583578,
-				["i"] = 12,
-				["m"] = 8,
-			},
-		},
-		["c"] = true,
-		["k"] = 357,
-	},
-	[358] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.6228000000,
-				["z"] = 58,
-				["x"] = 0.3707600000,
-				["zx"] = 0.5686741602,
-				["zy"] = 0.4999012549,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[1] = 
-			{
-				["y"] = 0.6264500000,
-				["z"] = 58,
-				["x"] = 0.3751700000,
-				["zx"] = 0.6027610468,
-				["zy"] = 0.5281137450,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[2] = 
-			{
-				["y"] = 0.6263000000,
-				["z"] = 58,
-				["x"] = 0.3736200000,
-				["zx"] = 0.5907803951,
-				["zy"] = 0.5269543276,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[3] = 
-			{
-				["y"] = 0.6245600000,
-				["z"] = 58,
-				["x"] = 0.3664500000,
-				["zx"] = 0.5353602188,
-				["zy"] = 0.5135050858,
-				["i"] = 12,
-				["m"] = 8,
-			},
-		},
-		["c"] = true,
-		["k"] = 358,
-	},
-	[359] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["d"] = true,
-				["y"] = 0.6121100000,
-				["z"] = 468,
-				["x"] = 0.3424700000,
-				["zx"] = 0.3500079417,
-				["zy"] = 0.4172734414,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[1] = 
-			{
-				["y"] = 0.6095600000,
-				["z"] = 58,
-				["x"] = 0.3483000000,
-				["zx"] = 0.3950706513,
-				["zy"] = 0.3975633456,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[2] = 
-			{
-				["y"] = 0.6118400000,
-				["z"] = 58,
-				["x"] = 0.3423200000,
-				["zx"] = 0.3488485238,
-				["zy"] = 0.4151864901,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[3] = 
-			{
-				["y"] = 0.6101300000,
-				["z"] = 58,
-				["x"] = 0.3271500000,
-				["zx"] = 0.2315927255,
-				["zy"] = 0.4019691317,
-				["i"] = 12,
-				["m"] = 8,
-			},
-		},
-		["c"] = true,
-		["k"] = 359,
-	},
-	[360] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.5800500000,
-				["z"] = 58,
-				["x"] = 0.4012400000,
-				["zx"] = 0.8042678802,
-				["zy"] = 0.1694672954,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[1] = 
-			{
-				["d"] = true,
-				["y"] = 0.5800900000,
-				["z"] = 58,
-				["x"] = 0.4012800000,
-				["zx"] = 0.8045770583,
-				["zy"] = 0.1697764734,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[2] = 
-			{
-				["y"] = 0.5864900000,
-				["z"] = 58,
-				["x"] = 0.3915800000,
-				["zx"] = 0.7296013666,
-				["zy"] = 0.2192449492,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[3] = 
-			{
-				["y"] = 0.5883000000,
-				["z"] = 58,
-				["x"] = 0.4017700000,
-				["zx"] = 0.8083644902,
-				["zy"] = 0.2332352525,
-				["i"] = 12,
-				["m"] = 8,
-			},
-		},
-		["c"] = true,
-		["k"] = 360,
-	},
-	[361] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.6411000000,
-				["z"] = 58,
-				["x"] = 0.3664900000,
-				["zx"] = 0.5356693969,
-				["zy"] = 0.6413501779,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[1] = 
-			{
-				["y"] = 0.6431300000,
-				["z"] = 58,
-				["x"] = 0.3516600000,
-				["zx"] = 0.4210416125,
-				["zy"] = 0.6570409601,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[2] = 
-			{
-				["d"] = true,
-				["y"] = 0.6309300000,
-				["z"] = 470,
-				["x"] = 0.3587500000,
-				["zx"] = 0.4758434326,
-				["zy"] = 0.5627416781,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[3] = 
-			{
-				["y"] = 0.6494300000,
-				["z"] = 58,
-				["x"] = 0.3585700000,
-				["zx"] = 0.4744521311,
-				["zy"] = 0.7057364910,
-				["i"] = 12,
-				["m"] = 8,
-			},
-		},
-		["c"] = true,
-		["k"] = 361,
-	},
-	[362] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.6423200000,
-				["z"] = 58,
-				["x"] = 0.3742800000,
-				["zx"] = 0.5958818339,
-				["zy"] = 0.6507801061,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[1] = 
-			{
-				["y"] = 0.6491200000,
-				["z"] = 58,
-				["x"] = 0.3712400000,
-				["zx"] = 0.5723842975,
-				["zy"] = 0.7033403617,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[2] = 
-			{
-				["y"] = 0.6521500000,
-				["z"] = 58,
-				["x"] = 0.3750400000,
-				["zx"] = 0.6017562180,
-				["zy"] = 0.7267605932,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[3] = 
-			{
-				["y"] = 0.6573600000,
-				["z"] = 58,
-				["x"] = 0.3766900000,
-				["zx"] = 0.6145098150,
-				["zy"] = 0.7670310243,
-				["i"] = 12,
-				["m"] = 8,
-			},
-		},
-		["c"] = true,
-		["k"] = 362,
-	},
-	[363] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.6143600000,
-				["z"] = 58,
-				["x"] = 0.3593600000,
-				["zx"] = 0.4805583987,
-				["zy"] = 0.4346647025,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[1] = 
-			{
-				["y"] = 0.6096100000,
-				["z"] = 58,
-				["x"] = 0.3620600000,
-				["zx"] = 0.5014279212,
-				["zy"] = 0.3979498181,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[2] = 
-			{
-				["y"] = 0.6137300000,
-				["z"] = 58,
-				["x"] = 0.3635900000,
-				["zx"] = 0.5132539839,
-				["zy"] = 0.4297951494,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[3] = 
-			{
-				["y"] = 0.6124800000,
-				["z"] = 58,
-				["x"] = 0.3610400000,
-				["zx"] = 0.4935438794,
-				["zy"] = 0.4201333377,
-				["i"] = 12,
-				["m"] = 8,
-			},
-		},
-		["c"] = true,
-		["k"] = 363,
-	},
-	[364] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.4667600000,
-				["z"] = 41,
-				["x"] = 0.6800800000,
-				["zx"] = 0.1360068952,
-				["zy"] = 0.6054402859,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[2] = 
-			{
-				["y"] = 0.4636100000,
-				["z"] = 41,
-				["x"] = 0.6867500000,
-				["zx"] = 0.1827679742,
-				["zy"] = 0.5833567208,
-				["i"] = 12,
-				["m"] = 11,
-			},
-			[3] = 
-			{
-				["y"] = 0.4616300000,
-				["z"] = 41,
-				["x"] = 0.6817400000,
-				["zx"] = 0.1476445851,
-				["zy"] = 0.5694756227,
-				["i"] = 12,
-				["m"] = 11,
-			},
-		},
-		["c"] = true,
-		["k"] = 364,
-	},
-	[897] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.6197200000,
-				["z"] = 381,
-				["x"] = 0.1903000000,
-				["zx"] = 0.3360535805,
-				["zy"] = 0.1446688097,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[1] = 
-			{
-				["y"] = 0.6054600000,
-				["z"] = 381,
-				["x"] = 0.1877100000,
-				["zx"] = 0.3196528657,
-				["zy"] = 0.0543700773,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[2] = 
-			{
-				["y"] = 0.6112100000,
-				["z"] = 381,
-				["x"] = 0.1829000000,
-				["zx"] = 0.2891943952,
-				["zy"] = 0.0907808565,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[3] = 
-			{
-				["y"] = 0.6139000000,
-				["z"] = 381,
-				["x"] = 0.1915100000,
-				["zx"] = 0.3437156906,
-				["zy"] = 0.1078147689,
-				["i"] = 12,
-				["m"] = 15,
-			},
-		},
-		["c"] = true,
-		["k"] = 897,
-	},
-	[898] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.6345200000,
-				["z"] = 381,
-				["x"] = 0.1966300000,
-				["zx"] = 0.3761371809,
-				["zy"] = 0.2383869893,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[1] = 
-			{
-				["y"] = 0.6383900000,
-				["z"] = 381,
-				["x"] = 0.1923400000,
-				["zx"] = 0.3489715181,
-				["zy"] = 0.2628930268,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[2] = 
-			{
-				["y"] = 0.6444400000,
-				["z"] = 381,
-				["x"] = 0.1938500000,
-				["zx"] = 0.3585333248,
-				["zy"] = 0.3012034988,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[3] = 
-			{
-				["y"] = 0.6281600000,
-				["z"] = 381,
-				["x"] = 0.1947700000,
-				["zx"] = 0.3643590614,
-				["zy"] = 0.1981135013,
-				["i"] = 12,
-				["m"] = 15,
-			},
-		},
-		["c"] = true,
-		["k"] = 898,
-	},
-	[899] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.6453900000,
-				["z"] = 381,
-				["x"] = 0.2027700000,
-				["zx"] = 0.4150176401,
-				["zy"] = 0.3072191928,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[1] = 
-			{
-				["y"] = 0.6472000000,
-				["z"] = 381,
-				["x"] = 0.2078300000,
-				["zx"] = 0.4470591911,
-				["zy"] = 0.3186806729,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[2] = 
-			{
-				["y"] = 0.6541300000,
-				["z"] = 381,
-				["x"] = 0.2005800000,
-				["zx"] = 0.4011498542,
-				["zy"] = 0.3625635772,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[3] = 
-			{
-				["y"] = 0.6536100000,
-				["z"] = 381,
-				["x"] = 0.2080400000,
-				["zx"] = 0.4483889788,
-				["zy"] = 0.3592707763,
-				["i"] = 12,
-				["m"] = 15,
-			},
-		},
-		["c"] = true,
-		["k"] = 899,
-	},
-	[900] = 
-	{
-		["e"] = 
-		{
-			[8] = 
-			{
-				["y"] = 0.7302900000,
-				["z"] = 1011,
-				["x"] = 0.1094800000,
-				["zx"] = 0.4288329545,
-				["zy"] = 0.4698528591,
-				["i"] = 12,
-				["m"] = 32,
-			},
-			[1] = 
-			{
-				["y"] = 0.7454600000,
-				["z"] = 1011,
-				["x"] = 0.0944400000,
-				["zx"] = 0.3717637883,
-				["zy"] = 0.5274153280,
-				["i"] = 12,
-				["m"] = 32,
-			},
-			[2] = 
-			{
-				["y"] = 0.6955400000,
-				["z"] = 1011,
-				["x"] = 0.0812200000,
-				["zx"] = 0.3216005983,
-				["zy"] = 0.3379942045,
-				["i"] = 12,
-				["m"] = 32,
-			},
-			[3] = 
-			{
-				["y"] = 0.6438700000,
-				["z"] = 381,
-				["x"] = 0.2196500000,
-				["zx"] = 0.5219072411,
-				["zy"] = 0.2975940825,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[4] = 
-			{
-				["y"] = 0.6354100000,
-				["z"] = 381,
-				["x"] = 0.2301100000,
-				["zx"] = 0.5881433328,
-				["zy"] = 0.2440227447,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[5] = 
-			{
-				["y"] = 0.6396900000,
-				["z"] = 381,
-				["x"] = 0.2243800000,
-				["zx"] = 0.5518591258,
-				["zy"] = 0.2711250290,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[6] = 
-			{
-				["y"] = 0.6398800000,
-				["z"] = 381,
-				["x"] = 0.2151900000,
-				["zx"] = 0.4936650835,
-				["zy"] = 0.2723281678,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[7] = 
-			{
-				["y"] = 0.7209500000,
-				["z"] = 1011,
-				["x"] = 0.1121300000,
-				["zx"] = 0.4388883594,
-				["zy"] = 0.4344122884,
-				["i"] = 12,
-				["m"] = 32,
-			},
-		},
-		["c"] = true,
-		["k"] = 900,
-	},
-	[1414] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.7678900000,
-				["z"] = 383,
-				["x"] = 0.4138900000,
-				["zx"] = 0.4168322561,
-				["zy"] = 0.7655332494,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[2] = 
-			{
-				["y"] = 0.7699100000,
-				["z"] = 383,
-				["x"] = 0.4093200000,
-				["zx"] = 0.3837836444,
-				["zy"] = 0.7801411771,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[3] = 
-			{
-				["y"] = 0.7655300000,
-				["z"] = 383,
-				["x"] = 0.4156700000,
-				["zx"] = 0.4297045819,
-				["zy"] = 0.7484665616,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[4] = 
-			{
-				["y"] = 0.7668400000,
-				["z"] = 383,
-				["x"] = 0.4124300000,
-				["zx"] = 0.4062740563,
-				["zy"] = 0.7579400196,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[5] = 
-			{
-				["zy"] = 0.1660647885,
-				["zx"] = 0.4998401398,
-				["i"] = 12,
-				["m"] = 36,
-				["x"] = 0.5288300000,
-				["y"] = 0.6023500000,
-				["z"] = 1086,
-			},
-		},
-		["c"] = true,
-		["k"] = 1414,
-	},
-	[1415] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.7473300000,
-				["z"] = 383,
-				["x"] = 0.4233000000,
-				["zx"] = 0.4848820233,
-				["zy"] = 0.6168505794,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[1] = 
-			{
-				["y"] = 0.7395400000,
-				["z"] = 383,
-				["x"] = 0.4241700000,
-				["zx"] = 0.4911735533,
-				["zy"] = 0.5605160464,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[2] = 
-			{
-				["y"] = 0.7527300000,
-				["z"] = 383,
-				["x"] = 0.4136500000,
-				["zx"] = 0.4150966616,
-				["zy"] = 0.6559014752,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[3] = 
-			{
-				["y"] = 0.7557200000,
-				["z"] = 383,
-				["x"] = 0.4093700000,
-				["zx"] = 0.3841452266,
-				["zy"] = 0.6775241008,
-				["i"] = 12,
-				["m"] = 7,
-			},
-		},
-		["c"] = true,
-		["k"] = 1415,
-	},
-	[1416] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.7563100000,
-				["z"] = 383,
-				["x"] = 0.4305900000,
-				["zx"] = 0.5376007058,
-				["zy"] = 0.6817907728,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[1] = 
-			{
-				["y"] = 0.7574600000,
-				["z"] = 383,
-				["x"] = 0.4189600000,
-				["zx"] = 0.4534966896,
-				["zy"] = 0.6901071673,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[2] = 
-			{
-				["y"] = 0.7505800000,
-				["z"] = 383,
-				["x"] = 0.4299600000,
-				["zx"] = 0.5330447703,
-				["zy"] = 0.6403534334,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[3] = 
-			{
-				["y"] = 0.7592600000,
-				["z"] = 383,
-				["x"] = 0.4255500000,
-				["zx"] = 0.5011532216,
-				["zy"] = 0.7031241325,
-				["i"] = 12,
-				["m"] = 7,
-			},
-		},
-		["c"] = true,
-		["k"] = 1416,
-	},
-	[905] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.6685200000,
-				["z"] = 381,
-				["x"] = 0.2319200000,
-				["zx"] = 0.5996048362,
-				["zy"] = 0.4536855099,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[1] = 
-			{
-				["y"] = 0.6652000000,
-				["z"] = 381,
-				["x"] = 0.2262800000,
-				["zx"] = 0.5638905382,
-				["zy"] = 0.4326622426,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[2] = 
-			{
-				["y"] = 0.6676300000,
-				["z"] = 381,
-				["x"] = 0.2212000000,
-				["zx"] = 0.5317223408,
-				["zy"] = 0.4480497545,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[3] = 
-			{
-				["y"] = 0.6715900000,
-				["z"] = 381,
-				["x"] = 0.2256100000,
-				["zx"] = 0.5596478823,
-				["zy"] = 0.4731256998,
-				["i"] = 12,
-				["m"] = 15,
-			},
-		},
-		["c"] = true,
-		["k"] = 905,
-	},
-	[906] = 
-	{
-		["e"] = 
-		{
-			[8] = 
-			{
-				["y"] = 0.7468100000,
-				["z"] = 1011,
-				["x"] = 0.0672100000,
-				["zx"] = 0.2684397594,
-				["zy"] = 0.5325378944,
-				["i"] = 12,
-				["m"] = 32,
-			},
-			[1] = 
-			{
-				["y"] = 0.7444400000,
-				["z"] = 1011,
-				["x"] = 0.1567000000,
-				["zx"] = 0.6080090834,
-				["zy"] = 0.5235454555,
-				["i"] = 12,
-				["m"] = 32,
-			},
-			[2] = 
-			{
-				["y"] = 0.7444400000,
-				["x"] = 0.1567000000,
-				["z"] = 1011,
-				["i"] = 12,
-				["m"] = 32,
-			},
-			[3] = 
-			{
-				["y"] = 0.6414000000,
-				["z"] = 381,
-				["x"] = 0.1703000000,
-				["zx"] = 0.2094071338,
-				["zy"] = 0.2819532782,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[4] = 
-			{
-				["y"] = 0.6412500000,
-				["z"] = 381,
-				["x"] = 0.1750000000,
-				["zx"] = 0.2391690488,
-				["zy"] = 0.2810034318,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[5] = 
-			{
-				["y"] = 0.6337800000,
-				["z"] = 381,
-				["x"] = 0.1728100000,
-				["zx"] = 0.2253012629,
-				["zy"] = 0.2337010803,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[6] = 
-			{
-				["y"] = 0.6329900000,
-				["z"] = 381,
-				["x"] = 0.1656500000,
-				["zx"] = 0.1799618349,
-				["zy"] = 0.2286985559,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[7] = 
-			{
-				["y"] = 0.7204100000,
-				["z"] = 1011,
-				["x"] = 0.1483400000,
-				["zx"] = 0.5762869304,
-				["zy"] = 0.4323632618,
-				["i"] = 12,
-				["m"] = 32,
-			},
-		},
-		["c"] = true,
-		["k"] = 906,
-	},
-	[907] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.6249500000,
-				["z"] = 381,
-				["x"] = 0.2241300000,
-				["zx"] = 0.5502760452,
-				["zy"] = 0.1777867881,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[2] = 
-			{
-				["y"] = 0.6296600000,
-				["z"] = 381,
-				["x"] = 0.2189800000,
-				["zx"] = 0.5176645852,
-				["zy"] = 0.2076119655,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[3] = 
-			{
-				["y"] = 0.6352200000,
-				["z"] = 381,
-				["x"] = 0.2225600000,
-				["zx"] = 0.5403342991,
-				["zy"] = 0.2428196059,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[4] = 
-			{
-				["y"] = 0.6241700000,
-				["z"] = 381,
-				["x"] = 0.2199300000,
-				["zx"] = 0.5236802914,
-				["zy"] = 0.1728475867,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[5] = 
-			{
-				["zy"] = 0.6014664791,
-				["zx"] = 0.4121937059,
-				["i"] = 12,
-				["m"] = 36,
-				["x"] = 0.5161300000,
-				["y"] = 0.6654400000,
-				["z"] = 1086,
-			},
-		},
-		["c"] = true,
-		["k"] = 907,
-	},
-	[908] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.6214600000,
-				["z"] = 381,
-				["x"] = 0.1819900000,
-				["zx"] = 0.2834319819,
-				["zy"] = 0.1556870281,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[1] = 
-			{
-				["y"] = 0.6350800000,
-				["z"] = 381,
-				["x"] = 0.1862100000,
-				["zx"] = 0.3101543822,
-				["zy"] = 0.2419330826,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[2] = 
-			{
-				["y"] = 0.6276300000,
-				["z"] = 381,
-				["x"] = 0.1763200000,
-				["zx"] = 0.2475277143,
-				["zy"] = 0.1947573773,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[3] = 
-			{
-				["y"] = 0.6278700000,
-				["z"] = 381,
-				["x"] = 0.1885800000,
-				["zx"] = 0.3251619861,
-				["zy"] = 0.1962771316,
-				["i"] = 12,
-				["m"] = 15,
-			},
-		},
-		["c"] = true,
-		["k"] = 908,
-	},
-	[909] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.6283000000,
-				["z"] = 381,
-				["x"] = 0.2034100000,
-				["zx"] = 0.4190703264,
-				["zy"] = 0.1990000246,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[1] = 
-			{
-				["y"] = 0.6223000000,
-				["z"] = 381,
-				["x"] = 0.2113500000,
-				["zx"] = 0.4693489657,
-				["zy"] = 0.1610061681,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[2] = 
-			{
-				["y"] = 0.6191400000,
-				["z"] = 381,
-				["x"] = 0.1975900000,
-				["zx"] = 0.3822162104,
-				["zy"] = 0.1409960703,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[3] = 
-			{
-				["y"] = 0.6154700000,
-				["z"] = 381,
-				["x"] = 0.2061300000,
-				["zx"] = 0.4362942431,
-				["zy"] = 0.1177564947,
-				["i"] = 12,
-				["m"] = 15,
-			},
-		},
-		["c"] = true,
-		["k"] = 909,
-	},
-	[910] = 
-	{
-		["e"] = 
-		{
-			[8] = 
-			{
-				["y"] = 0.7766100000,
-				["z"] = 1011,
-				["x"] = 0.1803000000,
-				["zx"] = 0.6975589085,
-				["zy"] = 0.6456138055,
-				["i"] = 12,
-				["m"] = 32,
-			},
-			[1] = 
-			{
-				["y"] = 0.7444700000,
-				["z"] = 1011,
-				["x"] = 0.1566100000,
-				["zx"] = 0.6076673828,
-				["zy"] = 0.5236587792,
-				["i"] = 12,
-				["m"] = 32,
-			},
-			[2] = 
-			{
-				["y"] = 0.6849200000,
-				["z"] = 1011,
-				["x"] = 0.1356900000,
-				["zx"] = 0.5282866011,
-				["zy"] = 0.2976966818,
-				["i"] = 12,
-				["m"] = 32,
-			},
-			[3] = 
-			{
-				["y"] = 0.6528300000,
-				["z"] = 381,
-				["x"] = 0.1745600000,
-				["zx"] = 0.2363828269,
-				["zy"] = 0.3543315749,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[4] = 
-			{
-				["y"] = 0.6552600000,
-				["z"] = 381,
-				["x"] = 0.1879700000,
-				["zx"] = 0.3212992695,
-				["zy"] = 0.3697190869,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[5] = 
-			{
-				["y"] = 0.6484000000,
-				["z"] = 381,
-				["x"] = 0.1882800000,
-				["zx"] = 0.3232622894,
-				["zy"] = 0.3262794442,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[6] = 
-			{
-				["y"] = 0.6563200000,
-				["z"] = 381,
-				["x"] = 0.1805200000,
-				["zx"] = 0.2741234681,
-				["zy"] = 0.3764313349,
-				["i"] = 12,
-				["m"] = 15,
-			},
-			[7] = 
-			{
-				["y"] = 0.7639800000,
-				["z"] = 1011,
-				["x"] = 0.1678500000,
-				["zx"] = 0.6503174777,
-				["zy"] = 0.5976893505,
-				["i"] = 12,
-				["m"] = 32,
-			},
-		},
-		["c"] = true,
-		["k"] = 910,
-	},
-	[1423] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.7588600000,
-				["z"] = 383,
-				["x"] = 0.4620400000,
-				["zx"] = 0.7650358999,
-				["zy"] = 0.7002314736,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[1] = 
-			{
-				["y"] = 0.7607000000,
-				["z"] = 383,
-				["x"] = 0.4708300000,
-				["zx"] = 0.8286020480,
-				["zy"] = 0.7135377048,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[2] = 
-			{
-				["y"] = 0.7652700000,
-				["z"] = 383,
-				["x"] = 0.4603300000,
-				["zx"] = 0.7526697892,
-				["zy"] = 0.7465863333,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[3] = 
-			{
-				["y"] = 0.7678400000,
-				["z"] = 383,
-				["x"] = 0.4717000000,
-				["zx"] = 0.8348935780,
-				["zy"] = 0.7651716670,
-				["i"] = 12,
-				["m"] = 7,
-			},
-		},
-		["c"] = true,
-		["k"] = 1423,
-	},
-	[1424] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.6735600000,
-				["z"] = 108,
-				["x"] = 0.3215700000,
-				["zx"] = 0.4243464800,
-				["zy"] = 0.3265975087,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[1] = 
-			{
-				["y"] = 0.6758000000,
-				["z"] = 108,
-				["x"] = 0.3223500000,
-				["zx"] = 0.4310069363,
-				["zy"] = 0.3457249890,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[2] = 
-			{
-				["y"] = 0.6701500000,
-				["z"] = 108,
-				["x"] = 0.3190700000,
-				["zx"] = 0.4029988638,
-				["zy"] = 0.2974793356,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[3] = 
-			{
-				["y"] = 0.6702000000,
-				["z"] = 108,
-				["x"] = 0.3257100000,
-				["zx"] = 0.4596981325,
-				["zy"] = 0.2979062883,
-				["i"] = 12,
-				["m"] = 16,
-			},
-		},
-		["c"] = true,
-		["k"] = 1424,
-	},
-	[1425] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.7096800000,
-				["z"] = 108,
-				["x"] = 0.3412500000,
-				["zx"] = 0.5923949151,
-				["zy"] = 0.6350281284,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[1] = 
-			{
-				["y"] = 0.7185500000,
-				["z"] = 108,
-				["x"] = 0.3367500000,
-				["zx"] = 0.5539692059,
-				["zy"] = 0.7107695348,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[2] = 
-			{
-				["y"] = 0.7193100000,
-				["z"] = 108,
-				["x"] = 0.3335300000,
-				["zx"] = 0.5264734761,
-				["zy"] = 0.7172592156,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[3] = 
-			{
-				["y"] = 0.7117300000,
-				["z"] = 108,
-				["x"] = 0.3392700000,
-				["zx"] = 0.5754876031,
-				["zy"] = 0.6525331885,
-				["i"] = 12,
-				["m"] = 16,
-			},
-		},
-		["c"] = true,
-		["k"] = 1425,
-	},
-	[1426] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.7133300000,
-				["z"] = 108,
-				["x"] = 0.3253500000,
-				["zx"] = 0.4566240758,
-				["zy"] = 0.6661956744,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[1] = 
-			{
-				["y"] = 0.7158900000,
-				["z"] = 108,
-				["x"] = 0.3316100000,
-				["zx"] = 0.5100785069,
-				["zy"] = 0.6880556519,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[2] = 
-			{
-				["y"] = 0.7203500000,
-				["z"] = 108,
-				["x"] = 0.3239000000,
-				["zx"] = 0.4442424584,
-				["zy"] = 0.7261398314,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[3] = 
-			{
-				["y"] = 0.7242300000,
-				["z"] = 108,
-				["x"] = 0.3279400000,
-				["zx"] = 0.4787402062,
-				["zy"] = 0.7592713598,
-				["i"] = 12,
-				["m"] = 16,
-			},
-		},
-		["c"] = true,
-		["k"] = 1426,
-	},
-	[1427] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.7270300000,
-				["z"] = 108,
-				["x"] = 0.3310800000,
-				["zx"] = 0.5055528122,
-				["zy"] = 0.7831807101,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[1] = 
-			{
-				["y"] = 0.7271000000,
-				["z"] = 108,
-				["x"] = 0.3254200000,
-				["zx"] = 0.4572218090,
-				["zy"] = 0.7837784439,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[2] = 
-			{
-				["y"] = 0.7350000000,
-				["z"] = 108,
-				["x"] = 0.3243400000,
-				["zx"] = 0.4479996388,
-				["zy"] = 0.8512369682,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[3] = 
-			{
-				["y"] = 0.7364800000,
-				["z"] = 108,
-				["x"] = 0.3295100000,
-				["zx"] = 0.4921465092,
-				["zy"] = 0.8638747676,
-				["i"] = 12,
-				["m"] = 16,
-			},
-		},
-		["c"] = true,
-		["k"] = 1427,
-	},
-	[1428] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.7278100000,
-				["z"] = 108,
-				["x"] = 0.3450000000,
-				["zx"] = 0.6244163395,
-				["zy"] = 0.7898411720,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[1] = 
-			{
-				["y"] = 0.7235900000,
-				["z"] = 108,
-				["x"] = 0.3433800000,
-				["zx"] = 0.6105830842,
-				["zy"] = 0.7538063654,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[2] = 
-			{
-				["y"] = 0.7292500000,
-				["z"] = 108,
-				["x"] = 0.3389100000,
-				["zx"] = 0.5724135463,
-				["zy"] = 0.8021374094,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[3] = 
-			{
-				["y"] = 0.7329300000,
-				["z"] = 108,
-				["x"] = 0.3470500000,
-				["zx"] = 0.6419213848,
-				["zy"] = 0.8335611270,
-				["i"] = 12,
-				["m"] = 16,
-			},
-		},
-		["c"] = true,
-		["k"] = 1428,
-	},
-	[1429] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.6933300000,
-				["z"] = 108,
-				["x"] = 0.3063700000,
-				["zx"] = 0.2945529732,
-				["zy"] = 0.4954146004,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[1] = 
-			{
-				["y"] = 0.6909600000,
-				["z"] = 108,
-				["x"] = 0.3114100000,
-				["zx"] = 0.3375897676,
-				["zy"] = 0.4751770431,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[2] = 
-			{
-				["y"] = 0.6968200000,
-				["z"] = 108,
-				["x"] = 0.3143700000,
-				["zx"] = 0.3628653452,
-				["zy"] = 0.5252158978,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[3] = 
-			{
-				["y"] = 0.6993500000,
-				["z"] = 108,
-				["x"] = 0.3084800000,
-				["zx"] = 0.3125703613,
-				["zy"] = 0.5468197037,
-				["i"] = 12,
-				["m"] = 16,
-			},
-		},
-		["c"] = true,
-		["k"] = 1429,
-	},
-	[1430] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.6891100000,
-				["z"] = 108,
-				["x"] = 0.3202500000,
-				["zx"] = 0.4130749386,
-				["zy"] = 0.4593797938,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[1] = 
-			{
-				["y"] = 0.6892100000,
-				["z"] = 108,
-				["x"] = 0.3138600000,
-				["zx"] = 0.3585104315,
-				["zy"] = 0.4602336991,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[2] = 
-			{
-				["y"] = 0.6948800000,
-				["z"] = 108,
-				["x"] = 0.3186900000,
-				["zx"] = 0.3997540261,
-				["zy"] = 0.5086501336,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[3] = 
-			{
-				["y"] = 0.7015300000,
-				["z"] = 108,
-				["x"] = 0.3167700000,
-				["zx"] = 0.3833590568,
-				["zy"] = 0.5654348408,
-				["i"] = 12,
-				["m"] = 16,
-			},
-		},
-		["c"] = true,
-		["k"] = 1430,
-	},
-	[1431] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.6703800000,
-				["z"] = 108,
-				["x"] = 0.2986700000,
-				["zx"] = 0.2288023152,
-				["zy"] = 0.2994433179,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[1] = 
-			{
-				["y"] = 0.6798700000,
-				["z"] = 108,
-				["x"] = 0.3084600000,
-				["zx"] = 0.3123995804,
-				["zy"] = 0.3804789376,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[2] = 
-			{
-				["y"] = 0.6770000000,
-				["z"] = 108,
-				["x"] = 0.3072000000,
-				["zx"] = 0.3016403818,
-				["zy"] = 0.3559718534,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[3] = 
-			{
-				["y"] = 0.6801900000,
-				["z"] = 108,
-				["x"] = 0.3013000000,
-				["zx"] = 0.2512600075,
-				["zy"] = 0.3832114348,
-				["i"] = 12,
-				["m"] = 16,
-			},
-		},
-		["c"] = true,
-		["k"] = 1431,
-	},
-	[1432] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.6917500000,
-				["z"] = 108,
-				["x"] = 0.3283800000,
-				["zx"] = 0.4824973867,
-				["zy"] = 0.4819228955,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[1] = 
-			{
-				["d"] = true,
-				["y"] = 0.6950100000,
-				["z"] = 108,
-				["x"] = 0.3291200000,
-				["zx"] = 0.4888162811,
-				["zy"] = 0.5097602106,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[2] = 
-			{
-				["y"] = 0.6936300000,
-				["z"] = 108,
-				["x"] = 0.3330400000,
-				["zx"] = 0.5222893434,
-				["zy"] = 0.4979763165,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[3] = 
-			{
-				["y"] = 0.6875400000,
-				["z"] = 108,
-				["x"] = 0.3361900000,
-				["zx"] = 0.5491873398,
-				["zy"] = 0.4459734795,
-				["i"] = 12,
-				["m"] = 16,
-			},
-		},
-		["c"] = true,
-		["k"] = 1432,
-	},
-	[1433] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.6704100000,
-				["z"] = 108,
-				["x"] = 0.3345600000,
-				["zx"] = 0.5352686940,
-				["zy"] = 0.2996994895,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[1] = 
-			{
-				["y"] = 0.6762300000,
-				["z"] = 108,
-				["x"] = 0.3407700000,
-				["zx"] = 0.5882961728,
-				["zy"] = 0.3493967821,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[2] = 
-			{
-				["y"] = 0.6737300000,
-				["z"] = 108,
-				["x"] = 0.3385000000,
-				["zx"] = 0.5689125372,
-				["zy"] = 0.3280491478,
-				["i"] = 12,
-				["m"] = 16,
-			},
-			[3] = 
-			{
-				["y"] = 0.6720300000,
-				["z"] = 108,
-				["x"] = 0.3428100000,
-				["zx"] = 0.6057158277,
-				["zy"] = 0.3135327565,
-				["i"] = 12,
-				["m"] = 16,
-			},
-		},
-		["c"] = true,
-		["k"] = 1433,
-	},
-	[1434] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.5582800000,
-				["z"] = 382,
-				["x"] = 0.4520000000,
-				["zx"] = 0.4604905473,
-				["zy"] = 0.1079684627,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[2] = 
-			{
-				["y"] = 0.6430800000,
-				["z"] = 382,
-				["x"] = 0.4584700000,
-				["zx"] = 0.5092201562,
-				["zy"] = 0.7466464169,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[3] = 
-			{
-				["y"] = 0.6345000000,
-				["z"] = 382,
-				["x"] = 0.4642300000,
-				["zx"] = 0.5526023118,
-				["zy"] = 0.6820254635,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[4] = 
-			{
-				["y"] = 0.6300000000,
-				["z"] = 382,
-				["x"] = 0.4588400000,
-				["zx"] = 0.5120068571,
-				["zy"] = 0.6481333551,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[5] = 
-			{
-				["y"] = 0.6419900000,
-				["z"] = 382,
-				["x"] = 0.4655100000,
-				["zx"] = 0.5622427908,
-				["zy"] = 0.7384369951,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[6] = 
-			{
-				["zy"] = 0.6900789011,
-				["zx"] = 0.5792050209,
-				["i"] = 12,
-				["m"] = 36,
-				["x"] = 0.5403300000,
-				["y"] = 0.6782800000,
-				["z"] = 1086,
-			},
-		},
-		["c"] = true,
-		["k"] = 1434,
-	},
-	[1435] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.5699100000,
-				["z"] = 382,
-				["x"] = 0.4806300000,
-				["zx"] = 0.6761209492,
-				["zy"] = 0.1955607340,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[2] = 
-			{
-				["y"] = 0.5640400000,
-				["z"] = 382,
-				["x"] = 0.4887800000,
-				["zx"] = 0.7375036868,
-				["zy"] = 0.1513503615,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[3] = 
-			{
-				["y"] = 0.5707400000,
-				["z"] = 382,
-				["x"] = 0.4851300000,
-				["zx"] = 0.7100132583,
-				["zy"] = 0.2018119451,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[4] = 
-			{
-				["y"] = 0.5687600000,
-				["z"] = 382,
-				["x"] = 0.4928600000,
-				["zx"] = 0.7682327136,
-				["zy"] = 0.1868994174,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[5] = 
-			{
-				["zy"] = 0.3987069028,
-				["zx"] = 0.7272377774,
-				["i"] = 12,
-				["m"] = 36,
-				["x"] = 0.5617800000,
-				["y"] = 0.6360600000,
-				["z"] = 1086,
-			},
-		},
-		["c"] = true,
-		["k"] = 1435,
-	},
-	[1436] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.5754600000,
-				["z"] = 382,
-				["x"] = 0.4825200000,
-				["zx"] = 0.6903557190,
-				["zy"] = 0.2373610010,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[1] = 
-			{
-				["y"] = 0.5772100000,
-				["z"] = 382,
-				["x"] = 0.4868500000,
-				["zx"] = 0.7229676520,
-				["zy"] = 0.2505412654,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[2] = 
-			{
-				["y"] = 0.5728200000,
-				["z"] = 382,
-				["x"] = 0.4932400000,
-				["zx"] = 0.7710947308,
-				["zy"] = 0.2174776308,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[3] = 
-			{
-				["y"] = 0.5842900000,
-				["z"] = 382,
-				["x"] = 0.4917300000,
-				["zx"] = 0.7597219782,
-				["zy"] = 0.3038648493,
-				["i"] = 12,
-				["m"] = 17,
-			},
-		},
-		["c"] = true,
-		["k"] = 1436,
-	},
-	[1437] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.5875000000,
-				["z"] = 382,
-				["x"] = 0.4959100000,
-				["zx"] = 0.7912041676,
-				["zy"] = 0.3280412200,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[1] = 
-			{
-				["y"] = 0.5979100000,
-				["z"] = 382,
-				["x"] = 0.4941400000,
-				["zx"] = 0.7778731927,
-				["zy"] = 0.4064449642,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[2] = 
-			{
-				["y"] = 0.5894700000,
-				["z"] = 382,
-				["x"] = 0.4923800000,
-				["zx"] = 0.7646175340,
-				["zy"] = 0.3428784319,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[3] = 
-			{
-				["y"] = 0.5960100000,
-				["z"] = 382,
-				["x"] = 0.4872300000,
-				["zx"] = 0.7258296692,
-				["zy"] = 0.3921349628,
-				["i"] = 12,
-				["m"] = 17,
-			},
-		},
-		["c"] = true,
-		["k"] = 1437,
-	},
-	[1438] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.5914700000,
-				["z"] = 382,
-				["x"] = 0.4691500000,
-				["zx"] = 0.5896579030,
-				["zy"] = 0.3579415912,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[1] = 
-			{
-				["y"] = 0.5819200000,
-				["z"] = 382,
-				["x"] = 0.4757300000,
-				["zx"] = 0.6392159905,
-				["zy"] = 0.2860150056,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[2] = 
-			{
-				["y"] = 0.5853600000,
-				["z"] = 382,
-				["x"] = 0.4673300000,
-				["zx"] = 0.5759503469,
-				["zy"] = 0.3119236396,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[3] = 
-			{
-				["y"] = 0.5750700000,
-				["z"] = 382,
-				["x"] = 0.4705800000,
-				["zx"] = 0.6004281257,
-				["zy"] = 0.2344236850,
-				["i"] = 12,
-				["m"] = 17,
-			},
-		},
-		["c"] = true,
-		["k"] = 1438,
-	},
-	[1439] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.5873900000,
-				["z"] = 382,
-				["x"] = 0.4876900000,
-				["zx"] = 0.7292942163,
-				["zy"] = 0.3272127463,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[1] = 
-			{
-				["y"] = 0.5815500000,
-				["z"] = 382,
-				["x"] = 0.4870300000,
-				["zx"] = 0.7243233443,
-				["zy"] = 0.2832283211,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[2] = 
-			{
-				["y"] = 0.5905100000,
-				["z"] = 382,
-				["x"] = 0.4822400000,
-				["zx"] = 0.6882468642,
-				["zy"] = 0.3507112748,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[3] = 
-			{
-				["y"] = 0.5856000000,
-				["z"] = 382,
-				["x"] = 0.4826000000,
-				["zx"] = 0.6909582490,
-				["zy"] = 0.3137312187,
-				["i"] = 12,
-				["m"] = 17,
-			},
-		},
-		["c"] = true,
-		["k"] = 1439,
-	},
-	[1440] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.5900700000,
-				["z"] = 382,
-				["x"] = 0.4623000000,
-				["zx"] = 0.5380662770,
-				["zy"] = 0.3473973797,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[2] = 
-			{
-				["y"] = 0.5929400000,
-				["z"] = 382,
-				["x"] = 0.4615000000,
-				["zx"] = 0.5320409776,
-				["zy"] = 0.3690130133,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[3] = 
-			{
-				["y"] = 0.5982000000,
-				["z"] = 382,
-				["x"] = 0.4663900000,
-				["zx"] = 0.5688706201,
-				["zy"] = 0.4086291223,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[4] = 
-			{
-				["y"] = 0.6029000000,
-				["z"] = 382,
-				["x"] = 0.4599300000,
-				["zx"] = 0.5202163275,
-				["zy"] = 0.4440275466,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[5] = 
-			{
-				["y"] = 0.6167800000,
-				["z"] = 1086,
-				["x"] = 0.5599600000,
-				["zx"] = 0.7146764447,
-				["zy"] = 0.2656533329,
-				["i"] = 12,
-				["m"] = 36,
-			},
-			[6] = 
-			{
-				["zy"] = 0.2657882697,
-				["zx"] = 0.7144703835,
-				["i"] = 12,
-				["m"] = 36,
-				["x"] = 0.5599300000,
-				["y"] = 0.6168000000,
-				["z"] = 1086,
-			},
-		},
-		["c"] = true,
-		["k"] = 1440,
-	},
-	[1441] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.5946000000,
-				["z"] = 382,
-				["x"] = 0.4667400000,
-				["zx"] = 0.5715066886,
-				["zy"] = 0.3815154355,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[2] = 
-			{
-				["y"] = 0.5955200000,
-				["z"] = 382,
-				["x"] = 0.4772500000,
-				["zx"] = 0.6506640593,
-				["zy"] = 0.3884444888,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[3] = 
-			{
-				["y"] = 0.5966700000,
-				["z"] = 382,
-				["x"] = 0.4737000000,
-				["zx"] = 0.6239267933,
-				["zy"] = 0.3971058054,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[4] = 
-			{
-				["y"] = 0.6199200000,
-				["z"] = 1086,
-				["x"] = 0.5702400000,
-				["zx"] = 0.7856210798,
-				["zy"] = 0.2873232458,
-				["i"] = 12,
-				["m"] = 36,
-			},
-			[5] = 
-			{
-				["zy"] = 0.2867681578,
-				["zx"] = 0.7857607506,
-				["i"] = 12,
-				["m"] = 36,
-				["x"] = 0.5702600000,
-				["y"] = 0.6198400000,
-				["z"] = 1086,
-			},
-		},
-		["c"] = true,
-		["k"] = 1441,
-	},
-	[1442] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.6075500000,
-				["z"] = 382,
-				["x"] = 0.4556900000,
-				["zx"] = 0.4882822408,
-				["zy"] = 0.4790493920,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[2] = 
-			{
-				["y"] = 0.6040300000,
-				["z"] = 382,
-				["x"] = 0.4620500000,
-				["zx"] = 0.5361833709,
-				["zy"] = 0.4525382316,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[3] = 
-			{
-				["y"] = 0.6111500000,
-				["z"] = 382,
-				["x"] = 0.4632600000,
-				["zx"] = 0.5452966362,
-				["zy"] = 0.5061630787,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[4] = 
-			{
-				["y"] = 0.6046400000,
-				["z"] = 382,
-				["x"] = 0.4534400000,
-				["zx"] = 0.4713360862,
-				["zy"] = 0.4571324952,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[5] = 
-			{
-				["y"] = 0.6538900000,
-				["z"] = 1086,
-				["x"] = 0.5125100000,
-				["zx"] = 0.3872131243,
-				["zy"] = 0.5217585774,
-				["i"] = 12,
-				["m"] = 36,
-			},
-			[6] = 
-			{
-				["zy"] = 0.5218947325,
-				["zx"] = 0.3870729957,
-				["i"] = 12,
-				["m"] = 36,
-				["x"] = 0.5124900000,
-				["y"] = 0.6539100000,
-				["z"] = 1086,
-			},
-		},
-		["c"] = true,
-		["k"] = 1442,
-	},
-	[1443] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.6167400000,
-				["z"] = 382,
-				["x"] = 0.4684000000,
-				["zx"] = 0.5840091848,
-				["zy"] = 0.5482646090,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[1] = 
-			{
-				["y"] = 0.6241600000,
-				["z"] = 382,
-				["x"] = 0.4674900000,
-				["zx"] = 0.5771554068,
-				["zy"] = 0.6041489300,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[2] = 
-			{
-				["y"] = 0.6160400000,
-				["z"] = 382,
-				["x"] = 0.4718600000,
-				["zx"] = 0.6100686047,
-				["zy"] = 0.5429925032,
-				["i"] = 12,
-				["m"] = 17,
-			},
-			[3] = 
-			{
-				["y"] = 0.6102700000,
-				["z"] = 382,
-				["x"] = 0.4692400000,
-				["zx"] = 0.5903357492,
-				["zy"] = 0.4995352886,
-				["i"] = 12,
-				["m"] = 17,
-			},
-		},
-		["c"] = true,
-		["k"] = 1443,
-	},
-	[1465] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.2324500000,
-				["z"] = 347,
-				["x"] = -0.1286100000,
-				["zx"] = 0.3256410241,
-				["zy"] = 0.5190222651,
-				["i"] = 12,
-				["m"] = 23,
-			},
-			[2] = 
-			{
-				["y"] = 0.2526300000,
-				["z"] = 347,
-				["x"] = -0.1195100000,
-				["zx"] = 0.3798051251,
-				["zy"] = 0.6391356198,
-				["i"] = 12,
-				["m"] = 23,
-			},
-			[3] = 
-			{
-				["d"] = true,
-				["y"] = -0.0163300000,
-				["x"] = 0.0096700000,
-				["z"] = 595,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[4] = 
-			{
-				["y"] = 0.2457500000,
-				["z"] = 347,
-				["x"] = -0.1351800000,
-				["zx"] = 0.2865357336,
-				["zy"] = 0.5981851798,
-				["i"] = 12,
-				["m"] = 23,
-			},
-			[5] = 
-			{
-				["y"] = 0.2375900000,
-				["z"] = 347,
-				["x"] = -0.1166100000,
-				["zx"] = 0.3970662122,
-				["zy"] = 0.5496160532,
-				["i"] = 12,
-				["m"] = 23,
-			},
-		},
-		["c"] = true,
-		["k"] = 1465,
-	},
-	[1466] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["d"] = true,
-				["y"] = 0.3378100000,
-				["x"] = 0.2235200000,
-				["z"] = 207,
-				["i"] = 12,
-				["m"] = 1,
-			},
-			[2] = 
-			{
-				["y"] = 0.2621700000,
-				["z"] = 347,
-				["x"] = -0.1395500000,
-				["zx"] = 0.2605250609,
-				["zy"] = 0.6959186428,
-				["i"] = 12,
-				["m"] = 23,
-			},
-			[3] = 
-			{
-				["y"] = 0.2481400000,
-				["z"] = 347,
-				["x"] = -0.1471400000,
-				["zx"] = 0.2153486294,
-				["zy"] = 0.6124106960,
-				["i"] = 12,
-				["m"] = 23,
-			},
-			[4] = 
-			{
-				["y"] = 0.2662400000,
-				["z"] = 347,
-				["x"] = -0.1344300000,
-				["zx"] = 0.2909998078,
-				["zy"] = 0.7201436852,
-				["i"] = 12,
-				["m"] = 23,
-			},
-			[5] = 
-			{
-				["y"] = 0.2534500000,
-				["z"] = 347,
-				["x"] = -0.1280600000,
-				["zx"] = 0.3289146785,
-				["zy"] = 0.6440163409,
-				["i"] = 12,
-				["m"] = 23,
-			},
-		},
-		["c"] = true,
-		["k"] = 1466,
-	},
-	[1467] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.2693100000,
-				["z"] = 347,
-				["x"] = -0.1124200000,
-				["zx"] = 0.4220055070,
-				["zy"] = 0.7384166286,
-				["i"] = 12,
-				["m"] = 23,
-			},
-			[1] = 
-			{
-				["y"] = 0.2716700000,
-				["z"] = 347,
-				["x"] = -0.1221600000,
-				["zx"] = 0.3640320627,
-				["zy"] = 0.7524635819,
-				["i"] = 12,
-				["m"] = 23,
-			},
-			[2] = 
-			{
-				["y"] = 0.2833000000,
-				["z"] = 347,
-				["x"] = -0.1301100000,
-				["zx"] = 0.3167128756,
-				["zy"] = 0.8216864915,
-				["i"] = 12,
-				["m"] = 23,
-			},
-			[3] = 
-			{
-				["y"] = 0.2576700000,
-				["z"] = 347,
-				["x"] = -0.1183400000,
-				["zx"] = 0.3867690809,
-				["zy"] = 0.6691341980,
-				["i"] = 12,
-				["m"] = 23,
-			},
-		},
-		["c"] = true,
-		["k"] = 1467,
-	},
-	[1468] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.2608700000,
-				["z"] = 347,
-				["x"] = -0.0974300000,
-				["zx"] = 0.5112274712,
-				["zy"] = 0.6881809143,
-				["i"] = 12,
-				["m"] = 23,
-			},
-			[1] = 
-			{
-				["y"] = 0.2616600000,
-				["z"] = 347,
-				["x"] = -0.1043600000,
-				["zx"] = 0.4699794251,
-				["zy"] = 0.6928830724,
-				["i"] = 12,
-				["m"] = 23,
-			},
-			[2] = 
-			{
-				["y"] = 0.2553000000,
-				["z"] = 347,
-				["x"] = -0.1010100000,
-				["zx"] = 0.4899189567,
-				["zy"] = 0.6550277238,
-				["i"] = 12,
-				["m"] = 23,
-			},
-			[3] = 
-			{
-				["y"] = 0.2554400000,
-				["z"] = 347,
-				["x"] = -0.0936800000,
-				["zx"] = 0.5335478425,
-				["zy"] = 0.6558610176,
-				["i"] = 12,
-				["m"] = 23,
-			},
-		},
-		["c"] = true,
-		["k"] = 1468,
-	},
-	[1469] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.2615900000,
-				["z"] = 347,
-				["x"] = -0.0855300000,
-				["zx"] = 0.5820574494,
-				["zy"] = 0.6924664255,
-				["i"] = 12,
-				["m"] = 23,
-			},
-			[1] = 
-			{
-				["y"] = 0.2724500000,
-				["z"] = 347,
-				["x"] = -0.0869700000,
-				["zx"] = 0.5734864268,
-				["zy"] = 0.7571062190,
-				["i"] = 12,
-				["m"] = 23,
-			},
-			[2] = 
-			{
-				["y"] = 0.2464500000,
-				["z"] = 347,
-				["x"] = -0.0810500000,
-				["zx"] = 0.6087228530,
-				["zy"] = 0.6023516490,
-				["i"] = 12,
-				["m"] = 23,
-			},
-			[3] = 
-			{
-				["y"] = 0.2659200000,
-				["z"] = 347,
-				["x"] = -0.0813100000,
-				["zx"] = 0.6071753072,
-				["zy"] = 0.7182390135,
-				["i"] = 12,
-				["m"] = 23,
-			},
-		},
-		["c"] = true,
-		["k"] = 1469,
-	},
-	[1470] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.2730100000,
-				["z"] = 347,
-				["x"] = -0.0638400000,
-				["zx"] = 0.7111584769,
-				["zy"] = 0.7604393944,
-				["i"] = 12,
-				["m"] = 23,
-			},
-			[1] = 
-			{
-				["y"] = 0.2629700000,
-				["z"] = 347,
-				["x"] = -0.0697000000,
-				["zx"] = 0.6762791767,
-				["zy"] = 0.7006803219,
-				["i"] = 12,
-				["m"] = 23,
-			},
-			[2] = 
-			{
-				["y"] = 0.2532200000,
-				["z"] = 347,
-				["x"] = -0.0686800000,
-				["zx"] = 0.6823503177,
-				["zy"] = 0.6426473582,
-				["i"] = 12,
-				["m"] = 23,
-			},
-			[3] = 
-			{
-				["y"] = 0.2828800000,
-				["z"] = 347,
-				["x"] = -0.0558400000,
-				["zx"] = 0.7587752690,
-				["zy"] = 0.8191866100,
-				["i"] = 12,
-				["m"] = 23,
-			},
-		},
-		["c"] = true,
-		["k"] = 1470,
-	},
-	[1471] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.2413000000,
-				["z"] = 347,
-				["x"] = -0.0698100000,
-				["zx"] = 0.6756244459,
-				["zy"] = 0.5716983399,
-				["i"] = 12,
-				["m"] = 23,
-			},
-			[1] = 
-			{
-				["y"] = 0.2352700000,
-				["z"] = 347,
-				["x"] = -0.0834500000,
-				["zx"] = 0.5944378154,
-				["zy"] = 0.5358071838,
-				["i"] = 12,
-				["m"] = 23,
-			},
-			[2] = 
-			{
-				["y"] = 0.2349700000,
-				["z"] = 347,
-				["x"] = -0.0626600000,
-				["zx"] = 0.7181819538,
-				["zy"] = 0.5340215542,
-				["i"] = 12,
-				["m"] = 23,
-			},
-			[3] = 
-			{
-				["y"] = 0.2268700000,
-				["z"] = 347,
-				["x"] = -0.0627000000,
-				["zx"] = 0.7179438698,
-				["zy"] = 0.4858095535,
-				["i"] = 12,
-				["m"] = 23,
-			},
-		},
-		["c"] = true,
-		["k"] = 1471,
-	},
-	[1472] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.2230100000,
-				["z"] = 347,
-				["x"] = -0.0758700000,
-				["zx"] = 0.6395547259,
-				["zy"] = 0.4628344520,
-				["i"] = 12,
-				["m"] = 23,
-			},
-			[1] = 
-			{
-				["y"] = 0.2210700000,
-				["z"] = 347,
-				["x"] = -0.0811300000,
-				["zx"] = 0.6082466851,
-				["zy"] = 0.4512873802,
-				["i"] = 12,
-				["m"] = 23,
-			},
-			[2] = 
-			{
-				["y"] = 0.2191500000,
-				["z"] = 347,
-				["x"] = -0.0786800000,
-				["zx"] = 0.6228293276,
-				["zy"] = 0.4398593504,
-				["i"] = 12,
-				["m"] = 23,
-			},
-			[3] = 
-			{
-				["y"] = 0.2138000000,
-				["z"] = 347,
-				["x"] = -0.0839300000,
-				["zx"] = 0.5915808078,
-				["zy"] = 0.4080156216,
-				["i"] = 12,
-				["m"] = 23,
-			},
-		},
-		["c"] = true,
-		["k"] = 1472,
-	},
-	[1473] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.2152500000,
-				["z"] = 347,
-				["x"] = -0.1081300000,
-				["zx"] = 0.4475400118,
-				["zy"] = 0.4166461649,
-				["i"] = 12,
-				["m"] = 23,
-			},
-			[2] = 
-			{
-				["y"] = 0.2108100000,
-				["z"] = 347,
-				["x"] = -0.1043700000,
-				["zx"] = 0.4699199041,
-				["zy"] = 0.3902188460,
-				["i"] = 12,
-				["m"] = 23,
-			},
-			[3] = 
-			{
-				["y"] = 0.2099800000,
-				["z"] = 347,
-				["x"] = -0.0927700000,
-				["zx"] = 0.5389642526,
-				["zy"] = 0.3852786040,
-				["i"] = 12,
-				["m"] = 23,
-			},
-		},
-		["c"] = true,
-		["k"] = 1473,
-	},
-	[1474] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.2310100000,
-				["z"] = 347,
-				["x"] = -0.1070500000,
-				["zx"] = 0.4539682787,
-				["zy"] = 0.5104512428,
-				["i"] = 12,
-				["m"] = 23,
-			},
-			[1] = 
-			{
-				["y"] = 0.2219600000,
-				["z"] = 347,
-				["x"] = -0.1080200000,
-				["zx"] = 0.4481947427,
-				["zy"] = 0.4565847482,
-				["i"] = 12,
-				["m"] = 23,
-			},
-			[2] = 
-			{
-				["y"] = 0.2217000000,
-				["z"] = 347,
-				["x"] = -0.0913500000,
-				["zx"] = 0.5474162240,
-				["zy"] = 0.4550375478,
-				["i"] = 12,
-				["m"] = 23,
-			},
-			[3] = 
-			{
-				["y"] = 0.2304800000,
-				["z"] = 347,
-				["x"] = -0.0877600000,
-				["zx"] = 0.5687842686,
-				["zy"] = 0.5072966304,
-				["i"] = 12,
-				["m"] = 23,
-			},
-		},
-		["c"] = true,
-		["k"] = 1474,
-	},
-	[471] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.3200900000,
-				["z"] = 101,
-				["x"] = 0.6226400000,
-				["zx"] = 0.4284024948,
-				["zy"] = 0.6217924495,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[2] = 
-			{
-				["y"] = 0.3144900000,
-				["z"] = 101,
-				["x"] = 0.6340100000,
-				["zx"] = 0.4994649950,
-				["zy"] = 0.5867924509,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[3] = 
-			{
-				["y"] = 0.2664800000,
-				["z"] = 101,
-				["x"] = 0.6336200000,
-				["zx"] = 0.4970274950,
-				["zy"] = 0.2867299634,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[4] = 
-			{
-				["y"] = 0.3202200000,
-				["z"] = 101,
-				["x"] = 0.5948000000,
-				["zx"] = 0.2544024946,
-				["zy"] = 0.6226049494,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[5] = 
-			{
-				["y"] = 0.3170200000,
-				["z"] = 101,
-				["x"] = 0.6275100000,
-				["zx"] = 0.4588399949,
-				["zy"] = 0.6026049503,
-				["i"] = 12,
-				["m"] = 13,
-			},
-		},
-		["c"] = true,
-		["k"] = 471,
-	},
-	[472] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3087700000,
-				["z"] = 101,
-				["x"] = 0.6444800000,
-				["zx"] = 0.5649024951,
-				["zy"] = 0.5510424524,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[1] = 
-			{
-				["y"] = 0.3057100000,
-				["z"] = 101,
-				["x"] = 0.6467500000,
-				["zx"] = 0.5790899951,
-				["zy"] = 0.5319174532,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[2] = 
-			{
-				["y"] = 0.3076100000,
-				["z"] = 101,
-				["x"] = 0.6434900000,
-				["zx"] = 0.5587149951,
-				["zy"] = 0.5437924527,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[3] = 
-			{
-				["y"] = 0.3016100000,
-				["z"] = 101,
-				["x"] = 0.6417200000,
-				["zx"] = 0.5476524950,
-				["zy"] = 0.5062924543,
-				["i"] = 12,
-				["m"] = 13,
-			},
-		},
-		["c"] = true,
-		["k"] = 472,
-	},
-	[473] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3062600000,
-				["z"] = 101,
-				["x"] = 0.6647000000,
-				["zx"] = 0.6912774953,
-				["zy"] = 0.5353549531,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[1] = 
-			{
-				["y"] = 0.3129800000,
-				["z"] = 101,
-				["x"] = 0.6704200000,
-				["zx"] = 0.7270274953,
-				["zy"] = 0.5773549513,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[2] = 
-			{
-				["y"] = 0.3054100000,
-				["z"] = 101,
-				["x"] = 0.6606400000,
-				["zx"] = 0.6659024952,
-				["zy"] = 0.5300424533,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[3] = 
-			{
-				["y"] = 0.3035600000,
-				["z"] = 101,
-				["x"] = 0.6544000000,
-				["zx"] = 0.6269024952,
-				["zy"] = 0.5184799538,
-				["i"] = 12,
-				["m"] = 13,
-			},
-		},
-		["c"] = true,
-		["k"] = 473,
-	},
-	[474] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3193000000,
-				["z"] = 101,
-				["x"] = 0.6412200000,
-				["zx"] = 0.5445274950,
-				["zy"] = 0.6168549497,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[1] = 
-			{
-				["y"] = 0.3135900000,
-				["z"] = 101,
-				["x"] = 0.6432800000,
-				["zx"] = 0.5574024951,
-				["zy"] = 0.5811674512,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[2] = 
-			{
-				["y"] = 0.3227900000,
-				["z"] = 101,
-				["x"] = 0.6430700000,
-				["zx"] = 0.5560899951,
-				["zy"] = 0.6386674488,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[3] = 
-			{
-				["y"] = 0.3172100000,
-				["z"] = 101,
-				["x"] = 0.6472400000,
-				["zx"] = 0.5821524951,
-				["zy"] = 0.6037924502,
-				["i"] = 12,
-				["m"] = 13,
-			},
-		},
-		["c"] = true,
-		["k"] = 474,
-	},
-	[475] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3167000000,
-				["z"] = 101,
-				["x"] = 0.6521900000,
-				["zx"] = 0.6130899951,
-				["zy"] = 0.6006049503,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[1] = 
-			{
-				["y"] = 0.3163400000,
-				["z"] = 101,
-				["x"] = 0.6591300000,
-				["zx"] = 0.6564649952,
-				["zy"] = 0.5983549504,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[2] = 
-			{
-				["y"] = 0.3143500000,
-				["z"] = 101,
-				["x"] = 0.6631500000,
-				["zx"] = 0.6815899953,
-				["zy"] = 0.5859174510,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[3] = 
-			{
-				["y"] = 0.3130300000,
-				["z"] = 101,
-				["x"] = 0.6564400000,
-				["zx"] = 0.6396524952,
-				["zy"] = 0.5776674513,
-				["i"] = 12,
-				["m"] = 13,
-			},
-		},
-		["c"] = true,
-		["k"] = 475,
-	},
-	[476] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3104100000,
-				["z"] = 101,
-				["x"] = 0.6598700000,
-				["zx"] = 0.6610899952,
-				["zy"] = 0.5612924520,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[1] = 
-			{
-				["y"] = 0.3129300000,
-				["z"] = 101,
-				["x"] = 0.6491400000,
-				["zx"] = 0.5940274951,
-				["zy"] = 0.5770424513,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[2] = 
-			{
-				["y"] = 0.3088400000,
-				["z"] = 101,
-				["x"] = 0.6583400000,
-				["zx"] = 0.6515274952,
-				["zy"] = 0.5514799524,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[3] = 
-			{
-				["y"] = 0.3113500000,
-				["z"] = 101,
-				["x"] = 0.6527700000,
-				["zx"] = 0.6167149951,
-				["zy"] = 0.5671674517,
-				["i"] = 12,
-				["m"] = 13,
-			},
-		},
-		["c"] = true,
-		["k"] = 476,
-	},
-	[477] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3199100000,
-				["z"] = 101,
-				["x"] = 0.6511200000,
-				["zx"] = 0.6064024951,
-				["zy"] = 0.6206674495,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[1] = 
-			{
-				["y"] = 0.3210800000,
-				["z"] = 101,
-				["x"] = 0.6561200000,
-				["zx"] = 0.6376524952,
-				["zy"] = 0.6279799492,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[2] = 
-			{
-				["y"] = 0.3201000000,
-				["z"] = 101,
-				["x"] = 0.6628900000,
-				["zx"] = 0.6799649952,
-				["zy"] = 0.6218549495,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[3] = 
-			{
-				["y"] = 0.3269400000,
-				["z"] = 101,
-				["x"] = 0.6601000000,
-				["zx"] = 0.6625274952,
-				["zy"] = 0.6646049477,
-				["i"] = 12,
-				["m"] = 13,
-			},
-		},
-		["c"] = true,
-		["k"] = 477,
-	},
-	[478] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3170000000,
-				["z"] = 101,
-				["x"] = 0.6676200000,
-				["zx"] = 0.7095274953,
-				["zy"] = 0.6024799503,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[1] = 
-			{
-				["y"] = 0.3239600000,
-				["z"] = 101,
-				["x"] = 0.6639900000,
-				["zx"] = 0.6868399953,
-				["zy"] = 0.6459799485,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[2] = 
-			{
-				["y"] = 0.3111400000,
-				["z"] = 101,
-				["x"] = 0.6671000000,
-				["zx"] = 0.7062774953,
-				["zy"] = 0.5658549518,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[3] = 
-			{
-				["y"] = 0.3226300000,
-				["z"] = 101,
-				["x"] = 0.6686100000,
-				["zx"] = 0.7157149953,
-				["zy"] = 0.6376674488,
-				["i"] = 12,
-				["m"] = 13,
-			},
-		},
-		["c"] = true,
-		["k"] = 478,
-	},
-	[479] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.2885800000,
-				["z"] = 849,
-				["x"] = 0.7109100000,
-				["zx"] = 0.1654034745,
-				["zy"] = 0.3741383797,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[2] = 
-			{
-				["y"] = 0.2983900000,
-				["z"] = 101,
-				["x"] = 0.6795200000,
-				["zx"] = 0.7839024954,
-				["zy"] = 0.4861674551,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[3] = 
-			{
-				["y"] = 0.2990100000,
-				["z"] = 101,
-				["x"] = 0.6907100000,
-				["zx"] = 0.8538399955,
-				["zy"] = 0.4900424549,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[4] = 
-			{
-				["y"] = 0.3089000000,
-				["z"] = 101,
-				["x"] = 0.6879700000,
-				["zx"] = 0.8367149955,
-				["zy"] = 0.5518549524,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[5] = 
-			{
-				["y"] = 0.3704200000,
-				["z"] = 849,
-				["x"] = 0.8106600000,
-				["zx"] = 0.7196267788,
-				["zy"] = 0.8288514857,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[6] = 
-			{
-				["y"] = 0.3029100000,
-				["z"] = 101,
-				["x"] = 0.6851800000,
-				["zx"] = 0.8192774955,
-				["zy"] = 0.5144174539,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[7] = 
-			{
-				["y"] = 0.3384000000,
-				["z"] = 849,
-				["x"] = 0.7684700000,
-				["zx"] = 0.4852139346,
-				["zy"] = 0.6509444274,
-				["i"] = 12,
-				["m"] = 30,
-			},
-		},
-		["c"] = true,
-		["k"] = 479,
-	},
-	[480] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["y"] = 0.3309000000,
-				["z"] = 101,
-				["x"] = 0.6636300000,
-				["zx"] = 0.6845899953,
-				["zy"] = 0.6893549467,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[2] = 
-			{
-				["y"] = 0.3261400000,
-				["z"] = 101,
-				["x"] = 0.6747400000,
-				["zx"] = 0.7540274954,
-				["zy"] = 0.6596049479,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[3] = 
-			{
-				["y"] = 0.3313100000,
-				["z"] = 101,
-				["x"] = 0.6723200000,
-				["zx"] = 0.7389024953,
-				["zy"] = 0.6919174465,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[4] = 
-			{
-				["y"] = 0.3291100000,
-				["z"] = 101,
-				["x"] = 0.6683900000,
-				["zx"] = 0.7143399953,
-				["zy"] = 0.6781674471,
-				["i"] = 12,
-				["m"] = 13,
-			},
-			[5] = 
-			{
-				["zy"] = 0.6779174729,
-				["zx"] = 0.7142774726,
-				["i"] = 12,
-				["m"] = 13,
-				["x"] = 0.6683800000,
-				["y"] = 0.3290700000,
-				["z"] = 101,
-			},
-		},
-		["c"] = true,
-		["k"] = 480,
-	},
-	[1505] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["d"] = true,
-				["y"] = 0.5859900000,
-				["z"] = 148,
-				["x"] = 0.7027100000,
-				["zx"] = 0.0935467387,
-				["zy"] = 0.6013497635,
-				["i"] = 12,
-				["m"] = 9,
-			},
-		},
-		["c"] = true,
-		["k"] = 1505,
-	},
-	[1506] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["d"] = true,
-				["y"] = 0.6710000000,
-				["z"] = 176,
-				["x"] = 0.3519200000,
-				["zx"] = 0.6835064105,
-				["zy"] = 0.3047384742,
-				["i"] = 12,
-				["m"] = 16,
-			},
-		},
-		["c"] = true,
-		["k"] = 1506,
-	},
-	[1507] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["d"] = true,
-				["y"] = -0.0553100000,
-				["x"] = 0.1840200000,
-				["z"] = 38,
-				["i"] = 12,
-				["m"] = 6,
-			},
-		},
-		["c"] = true,
-		["k"] = 1507,
-	},
-	[1508] = 
-	{
-		["e"] = 
-		{
-			[2] = 
-			{
-				["d"] = true,
-				["y"] = 0.6025600000,
-				["x"] = 0.2806000000,
-				["z"] = 131,
-				["i"] = 12,
-				["m"] = 8,
-			},
-			[1] = 
-			{
-				["d"] = true,
-				["y"] = 0.6053700000,
-				["x"] = 0.2805700000,
-				["z"] = 131,
-				["i"] = 12,
-				["m"] = 8,
-			},
-		},
-		["c"] = true,
-		["k"] = 1508,
-	},
-	[1509] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["d"] = true,
-				["y"] = 0.6498500000,
-				["z"] = 31,
-				["x"] = 0.4171800000,
-				["zx"] = 0.1982393914,
-				["zy"] = 0.7976352111,
-				["i"] = 12,
-				["m"] = 17,
-			},
-		},
-		["c"] = true,
-		["k"] = 1509,
-	},
-	[1510] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
-				["d"] = true,
-				["y"] = 0.2264200000,
-				["x"] = 0.1174600000,
-				["z"] = 11,
-				["i"] = 12,
-				["m"] = 23,
-			},
 		},
+		["n"] = "On Plunder Skulls",
 		["c"] = true,
-		["k"] = 1510,
 	},
-	[1417] = 
+	[5702] = 
 	{
+		["k"] = 5702,
 		["e"] = 
 		{
-			[4] = 
-			{
-				["y"] = 0.7646500000,
-				["z"] = 383,
-				["x"] = 0.4455700000,
-				["zx"] = 0.6459307283,
-				["zy"] = 0.7421027119,
-				["i"] = 12,
-				["m"] = 7,
-			},
 			[1] = 
-			{
-				["y"] = 0.7605200000,
-				["z"] = 383,
-				["x"] = 0.4461800000,
-				["zx"] = 0.6503420310,
-				["zy"] = 0.7122360082,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[2] = 
-			{
-				["y"] = 0.7652600000,
-				["z"] = 383,
-				["x"] = 0.4375700000,
-				["zx"] = 0.5880775788,
-				["zy"] = 0.7465140168,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[3] = 
 			{
-				["y"] = 0.7606800000,
-				["z"] = 383,
-				["x"] = 0.4342100000,
-				["zx"] = 0.5637792560,
-				["zy"] = 0.7133930718,
+				["r"] = false,
+				["x"] = 0.7063500000,
 				["i"] = 12,
-				["m"] = 7,
+				["y"] = 0.3735200000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
 			},
 		},
+		["n"] = "Vijari is Unwell",
 		["c"] = true,
-		["k"] = 1417,
 	},
-	[1418] = 
+	[5705] = 
 	{
+		["k"] = 5705,
 		["e"] = 
 		{
-			[4] = 
-			{
-				["y"] = 0.7698900000,
-				["z"] = 383,
-				["x"] = 0.4191600000,
-				["zx"] = 0.4549430184,
-				["zy"] = 0.7799965441,
-				["i"] = 12,
-				["m"] = 7,
-			},
 			[1] = 
-			{
-				["y"] = 0.7739800000,
-				["z"] = 383,
-				["x"] = 0.4241200000,
-				["zx"] = 0.4908119711,
-				["zy"] = 0.8095739819,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[2] = 
 			{
-				["y"] = 0.7714800000,
-				["z"] = 383,
-				["x"] = 0.4321100000,
-				["zx"] = 0.5485928042,
-				["zy"] = 0.7914948634,
+				["r"] = false,
+				["x"] = 0.5801400000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7754100000,
+				["zy"] = 0.6354771135,
+				["zx"] = 0.6431392615,
 				["i"] = 12,
-				["m"] = 7,
 			},
-			[3] = 
-			{
-				["y"] = 0.7659700000,
-				["z"] = 383,
-				["x"] = 0.4271900000,
-				["zx"] = 0.5130131172,
-				["zy"] = 0.7516484864,
-				["i"] = 12,
-				["m"] = 7,
-			},
 		},
+		["n"] = "Turo's Cargo Manifest",
 		["c"] = true,
-		["k"] = 1418,
 	},
-	[1419] = 
+	[5706] = 
 	{
+		["n"] = "Moon-Sugar Plans",
+		["k"] = 5706,
 		["e"] = 
 		{
 			[1] = 
-			{
-				["y"] = 0.7503800000,
-				["z"] = 383,
-				["x"] = 0.4414000000,
-				["zx"] = 0.6157747741,
-				["zy"] = 0.6389071039,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[2] = 
-			{
-				["y"] = 0.7435300000,
-				["z"] = 383,
-				["x"] = 0.4458100000,
-				["zx"] = 0.6476663228,
-				["zy"] = 0.5893703194,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[3] = 
 			{
+				["r"] = false,
+				["x"] = 0.5315400000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
 				["y"] = 0.7513400000,
-				["z"] = 383,
-				["x"] = 0.4475400000,
-				["zx"] = 0.6601770664,
-				["zy"] = 0.6458494854,
+				["zy"] = 0.4634394634,
+				["zx"] = 0.2957764488,
 				["i"] = 12,
-				["m"] = 7,
-			},
-			[4] = 
-			{
-				["y"] = 0.7540400000,
-				["z"] = 383,
-				["x"] = 0.4479900000,
-				["zx"] = 0.6634313060,
-				["zy"] = 0.6653749333,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[5] = 
-			{
-				["y"] = 1.0750800000,
-				["z"] = 980,
-				["x"] = 0.2400500000,
-				["zx"] = 0.4130211135,
-				["zy"] = 0.5751036875,
-				["i"] = 12,
-				["m"] = 31,
 			},
 		},
+		["q"] = "Another Khajiit's Tale",
 		["c"] = true,
-		["k"] = 1419,
 	},
-	[1420] = 
+	[5707] = 
 	{
+		["n"] = "Lost Cat",
+		["k"] = 5707,
 		["e"] = 
 		{
-			[4] = 
-			{
-				["y"] = 0.7403400000,
-				["z"] = 383,
-				["x"] = 0.4590300000,
-				["zx"] = 0.7432686524,
-				["zy"] = 0.5663013643,
-				["i"] = 12,
-				["m"] = 7,
-			},
 			[1] = 
 			{
-				["y"] = 0.7340100000,
-				["z"] = 383,
-				["x"] = 0.4630200000,
-				["zx"] = 0.7721229107,
-				["zy"] = 0.5205250364,
+				["r"] = false,
+				["x"] = 0.5249700000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7702700000,
+				["zy"] = 0.5987395347,
+				["zx"] = 0.2488181426,
 				["i"] = 12,
-				["m"] = 7,
+			},
+		},
+		["q"] = "Little Lost Cat",
+		["c"] = true,
+	},
+	[5710] = 
+	{
+		["k"] = 5710,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5446500000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7743100000,
+				["zy"] = 0.6276149858,
+				["zx"] = 0.3894786396,
+				["i"] = 12,
 			},
 			[2] = 
 			{
+				["r"] = false,
+				["x"] = 0.5280000000,
+				["i"] = 12,
+				["y"] = 0.8710800000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+			},
+		},
+		["n"] = "Soul of the Sword",
+		["c"] = true,
+	},
+	[5711] = 
+	{
+		["k"] = 5711,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5370300000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7106500000,
+				["zy"] = 0.1726122101,
+				["zx"] = 0.3350155813,
+				["i"] = 12,
+			},
+		},
+		["n"] = "Ja'darri the Endless",
+		["c"] = true,
+	},
+	[5715] = 
+	{
+		["k"] = 5715,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5216000000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7520900000,
+				["zy"] = 0.4688000050,
+				["zx"] = 0.2247314620,
+				["i"] = 12,
+			},
+		},
+		["n"] = "Terror from the East",
+		["c"] = true,
+	},
+	[5716] = 
+	{
+		["n"] = "Moon-Sugar: A Better Plan",
+		["k"] = 5716,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5479700000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7690800000,
+				["zy"] = 0.5902341420,
+				["zx"] = 0.4132079511,
+				["i"] = 12,
+			},
+			[2] = 
+			{
+				["r"] = false,
+				["x"] = 0.5322500000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7595900000,
+				["zy"] = 0.5224054216,
+				["zx"] = 0.3008510907,
+				["i"] = 12,
+			},
+		},
+		["q"] = "Another Khajiit's Tale",
+		["c"] = true,
+	},
+	[5722] = 
+	{
+		["k"] = 5722,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5705300000,
 				["d"] = true,
-				["y"] = 0.7404700000,
-				["z"] = 383,
-				["x"] = 0.4741700000,
-				["zx"] = 0.8527557379,
-				["zy"] = 0.5672414784,
+				["m"] = 37,
+				["z"] = 1150,
+				["y"] = 0.7090200000,
+				["zy"] = 0.1609619662,
+				["zx"] = 0.5744529111,
 				["i"] = 12,
-				["m"] = 7,
-			},
-			[3] = 
-			{
-				["y"] = 0.7394200000,
-				["z"] = 383,
-				["x"] = 0.4551100000,
-				["zx"] = 0.7149206091,
-				["zy"] = 0.5596482487,
-				["i"] = 12,
-				["m"] = 7,
 			},
 		},
+		["n"] = "Battle of the Black Beast",
 		["c"] = true,
-		["k"] = 1420,
 	},
-	[1421] = 
+	[5851] = 
 	{
+		["k"] = 5851,
 		["e"] = 
 		{
-			[4] = 
-			{
-				["y"] = 0.7317200000,
-				["z"] = 383,
-				["x"] = 0.4638000000,
-				["zx"] = 0.7777635928,
-				["zy"] = 0.5039645639,
-				["i"] = 12,
-				["m"] = 7,
-			},
 			[1] = 
 			{
-				["y"] = 0.7452500000,
-				["z"] = 383,
-				["x"] = 0.4568900000,
-				["zx"] = 0.7277929349,
-				["zy"] = 0.6018087529,
+				["r"] = false,
+				["x"] = 0.5310200000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7518600000,
+				["zy"] = 0.4671561056,
+				["zx"] = 0.2920598096,
 				["i"] = 12,
-				["m"] = 7,
+			},
+		},
+		["n"] = "Dragons of Southern Elsweyr",
+		["c"] = true,
+	},
+	[5725] = 
+	{
+		["k"] = 5725,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5178200000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7400400000,
+				["zy"] = 0.3826739691,
+				["zx"] = 0.1977143543,
+				["i"] = 12,
+			},
+		},
+		["n"] = "The Sky Spirits",
+		["c"] = true,
+	},
+	[5726] = 
+	{
+		["k"] = 5726,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.7959700000,
+				["i"] = 12,
+				["y"] = 0.2966700000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+			},
+		},
+		["n"] = "The Dark Spirits",
+		["c"] = true,
+	},
+	[5727] = 
+	{
+		["k"] = 5727,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5970800000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7809600000,
+				["zy"] = 0.6751451218,
+				["zx"] = 0.7642159292,
+				["i"] = 12,
+			},
+		},
+		["n"] = "The Worldly Spirits",
+		["c"] = true,
+	},
+	[5728] = 
+	{
+		["k"] = 5728,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5364100000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7104000000,
+				["zy"] = 0.1708253629,
+				["zx"] = 0.3305842039,
+				["i"] = 12,
+			},
+		},
+		["n"] = "The Wandering Spirits",
+		["c"] = true,
+	},
+	[5729] = 
+	{
+		["k"] = 5729,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5315800000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7639200000,
+				["zy"] = 0.5533536154,
+				["zx"] = 0.2960623441,
+				["i"] = 12,
 			},
 			[2] = 
 			{
-				["y"] = 0.7493300000,
-				["z"] = 383,
-				["x"] = 0.4722800000,
-				["zx"] = 0.8390879313,
-				["zy"] = 0.6313138741,
+				["r"] = false,
+				["x"] = 0.6221800000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7521200000,
+				["zy"] = 0.4690144267,
+				["zx"] = 0.9436152420,
 				["i"] = 12,
-				["m"] = 7,
-			},
-			[3] = 
-			{
-				["y"] = 0.7453500000,
-				["z"] = 383,
-				["x"] = 0.4622300000,
-				["zx"] = 0.7664099122,
-				["zy"] = 0.6025319176,
-				["i"] = 12,
-				["m"] = 7,
 			},
 		},
+		["n"] = "The Adversarial Spirits",
 		["c"] = true,
-		["k"] = 1421,
 	},
-	[1422] = 
+	[5730] = 
 	{
+		["k"] = 5730,
 		["e"] = 
 		{
 			[1] = 
 			{
-				["y"] = 0.7544800000,
-				["z"] = 383,
-				["x"] = 0.4542200000,
-				["zx"] = 0.7084844462,
-				["zy"] = 0.6685568581,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[2] = 
-			{
-				["y"] = 0.7626900000,
-				["z"] = 383,
-				["x"] = 0.4558600000,
-				["zx"] = 0.7203443419,
-				["zy"] = 0.7279286830,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[3] = 
-			{
-				["y"] = 0.7654500000,
-				["z"] = 383,
-				["x"] = 0.4522700000,
-				["zx"] = 0.6943827410,
-				["zy"] = 0.7478880298,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[4] = 
-			{
-				["y"] = 0.7558600000,
-				["z"] = 383,
-				["x"] = 0.4587300000,
-				["zx"] = 0.7410991593,
-				["zy"] = 0.6785365315,
-				["i"] = 12,
-				["m"] = 7,
-			},
-			[5] = 
-			{
-				["zy"] = 0.3037453040,
-				["zx"] = 0.3638846478,
-				["i"] = 12,
-				["m"] = 36,
-				["x"] = 0.5091300000,
-				["y"] = 0.6223000000,
-				["z"] = 1086,
-			},
-		},
-		["c"] = true,
-		["k"] = 1422,
-	},
-	[2293] = 
-	{
-		["e"] = 
-		{
-			[1] = 
-			{
+				["r"] = false,
+				["x"] = 0.5181700000,
 				["d"] = true,
-				["y"] = 0.4064200000,
-				["z"] = 64,
-				["x"] = 0.6756700000,
-				["zx"] = 0.8816301648,
-				["zy"] = 0.6700475197,
+				["m"] = 37,
+				["z"] = 1148,
+				["y"] = 0.7533300000,
+				["zy"] = 0.4776627672,
+				["zx"] = 0.2002159384,
 				["i"] = 12,
-				["m"] = 12,
 			},
 		},
+		["n"] = "By Gentle Winds",
 		["c"] = true,
-		["k"] = 2293,
 	},
-	[698] = 
+	[5731] = 
 	{
+		["k"] = 5731,
 		["e"] = 
 		{
-			[4] = 
-			{
-				["y"] = 0.3525300000,
-				["z"] = 103,
-				["x"] = 0.6161700000,
-				["zx"] = 0.5097551483,
-				["zy"] = 0.3332350518,
-				["i"] = 12,
-				["m"] = 12,
-			},
 			[1] = 
 			{
-				["y"] = 0.3457300000,
-				["z"] = 103,
-				["x"] = 0.6141700000,
-				["zx"] = 0.4972551477,
-				["zy"] = 0.2907350558,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[2] = 
-			{
+				["r"] = false,
+				["x"] = 0.5176000000,
 				["d"] = true,
-				["y"] = 0.3391200000,
-				["z"] = 403,
-				["x"] = 0.6044800000,
-				["zx"] = 0.4366926450,
-				["zy"] = 0.2494225597,
+				["m"] = 37,
+				["z"] = 1148,
+				["y"] = 0.7533300000,
+				["zy"] = 0.4776627672,
+				["zx"] = 0.1961419301,
 				["i"] = 12,
-				["m"] = 12,
-			},
-			[3] = 
-			{
-				["y"] = 0.3441100000,
-				["z"] = 103,
-				["x"] = 0.6117600000,
-				["zx"] = 0.4821926470,
-				["zy"] = 0.2806100568,
-				["i"] = 12,
-				["m"] = 12,
 			},
 		},
+		["n"] = "Through Doom and Darkness",
 		["c"] = true,
-		["k"] = 698,
 	},
-	[697] = 
+	[5732] = 
 	{
+		["k"] = 5732,
 		["e"] = 
 		{
-			[4] = 
-			{
-				["y"] = 0.3422400000,
-				["z"] = 103,
-				["x"] = 0.6278300000,
-				["zx"] = 0.5826301515,
-				["zy"] = 0.2689225579,
-				["i"] = 12,
-				["m"] = 12,
-			},
 			[1] = 
 			{
-				["y"] = 0.3542000000,
-				["z"] = 103,
-				["x"] = 0.6289000000,
-				["zx"] = 0.5893176518,
-				["zy"] = 0.3436725508,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[2] = 
-			{
-				["y"] = 0.3432700000,
-				["z"] = 103,
-				["x"] = 0.6379100000,
-				["zx"] = 0.6456301543,
-				["zy"] = 0.2753600573,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[3] = 
-			{
+				["r"] = false,
+				["x"] = 0.5177800000,
 				["d"] = true,
-				["y"] = 0.3416100000,
-				["z"] = 404,
-				["x"] = 0.6341200000,
-				["zx"] = 0.6219426533,
-				["zy"] = 0.2649850582,
+				["m"] = 37,
+				["z"] = 1137,
+				["y"] = 0.7527100000,
+				["zy"] = 0.4732313861,
+				["zx"] = 0.1974284590,
 				["i"] = 12,
-				["m"] = 12,
 			},
 		},
+		["n"] = "Mend the Threads",
 		["c"] = true,
-		["k"] = 697,
 	},
-	[696] = 
+	[5734] = 
 	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3825800000,
-				["z"] = 103,
-				["x"] = 0.6335200000,
-				["zx"] = 0.6181926531,
-				["zy"] = 0.5210475339,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[1] = 
-			{
-				["y"] = 0.3772900000,
-				["z"] = 103,
-				["x"] = 0.6281700000,
-				["zx"] = 0.5847551516,
-				["zy"] = 0.4879850370,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[2] = 
-			{
-				["y"] = 0.3795200000,
-				["z"] = 103,
-				["x"] = 0.6238900000,
-				["zx"] = 0.5580051504,
-				["zy"] = 0.5019225357,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[3] = 
-			{
-				["y"] = 0.3842400000,
-				["z"] = 103,
-				["x"] = 0.6213800000,
-				["zx"] = 0.5423176497,
-				["zy"] = 0.5314225329,
-				["i"] = 12,
-				["m"] = 12,
-			},
-		},
-		["c"] = true,
-		["k"] = 696,
-	},
-	[695] = 
-	{
+		["k"] = 5734,
 		["e"] = 
 		{
 			[1] = 
 			{
-				["y"] = 0.3826300000,
-				["z"] = 103,
-				["x"] = 0.6706000000,
-				["zx"] = 0.8499426634,
-				["zy"] = 0.5213600339,
+				["r"] = false,
+				["x"] = 0.6189600000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1146,
+				["y"] = 0.7885200000,
+				["zy"] = 0.7291793817,
+				["zx"] = 0.9206006688,
 				["i"] = 12,
-				["m"] = 12,
-			},
-			[2] = 
-			{
-				["y"] = 0.3905700000,
-				["z"] = 103,
-				["x"] = 0.6684100000,
-				["zx"] = 0.8362551628,
-				["zy"] = 0.5709850291,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[3] = 
-			{
-				["y"] = 0.3846900000,
-				["z"] = 103,
-				["x"] = 0.6680000000,
-				["zx"] = 0.8336926627,
-				["zy"] = 0.5342350326,
-				["i"] = 12,
-				["m"] = 12,
 			},
 		},
+		["n"] = "To Sai Sahan",
 		["c"] = true,
-		["k"] = 695,
 	},
-	[694] = 
+	[5736] = 
 	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3840400000,
-				["z"] = 103,
-				["x"] = 0.6004500000,
-				["zx"] = 0.4115051439,
-				["zy"] = 0.5301725330,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[1] = 
-			{
-				["y"] = 0.3756600000,
-				["z"] = 103,
-				["x"] = 0.6038900000,
-				["zx"] = 0.4330051448,
-				["zy"] = 0.4777975380,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[2] = 
-			{
-				["y"] = 0.3692600000,
-				["z"] = 103,
-				["x"] = 0.5969700000,
-				["zx"] = 0.3897551429,
-				["zy"] = 0.4377975418,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[3] = 
-			{
-				["y"] = 0.3750500000,
-				["z"] = 103,
-				["x"] = 0.5929700000,
-				["zx"] = 0.3647551418,
-				["zy"] = 0.4739850384,
-				["i"] = 12,
-				["m"] = 12,
-			},
-		},
-		["c"] = true,
-		["k"] = 694,
-	},
-	[693] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3872000000,
-				["z"] = 103,
-				["x"] = 0.6165100000,
-				["zx"] = 0.5118801484,
-				["zy"] = 0.5499225311,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[1] = 
-			{
-				["y"] = 0.3954900000,
-				["z"] = 103,
-				["x"] = 0.6161500000,
-				["zx"] = 0.5096301483,
-				["zy"] = 0.6017350262,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[2] = 
-			{
-				["y"] = 0.3955200000,
-				["z"] = 103,
-				["x"] = 0.6112800000,
-				["zx"] = 0.4791926469,
-				["zy"] = 0.6019225262,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[3] = 
-			{
-				["y"] = 0.3885100000,
-				["z"] = 103,
-				["x"] = 0.6104500000,
-				["zx"] = 0.4740051467,
-				["zy"] = 0.5581100304,
-				["i"] = 12,
-				["m"] = 12,
-			},
-		},
-		["c"] = true,
-		["k"] = 693,
-	},
-	[692] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3665500000,
-				["z"] = 103,
-				["x"] = 0.5662600000,
-				["zx"] = 0.1978176344,
-				["zy"] = 0.4208600434,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[1] = 
-			{
-				["y"] = 0.3643000000,
-				["z"] = 103,
-				["x"] = 0.5639100000,
-				["zx"] = 0.1831301337,
-				["zy"] = 0.4067975448,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[2] = 
-			{
-				["y"] = 0.3620700000,
-				["z"] = 103,
-				["x"] = 0.5668300000,
-				["zx"] = 0.2013801345,
-				["zy"] = 0.3928600461,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[3] = 
-			{
-				["y"] = 0.3637200000,
-				["z"] = 103,
-				["x"] = 0.5685400000,
-				["zx"] = 0.2120676350,
-				["zy"] = 0.4031725451,
-				["i"] = 12,
-				["m"] = 12,
-			},
-		},
-		["c"] = true,
-		["k"] = 692,
-	},
-	[691] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3682700000,
-				["z"] = 103,
-				["x"] = 0.6098200000,
-				["zx"] = 0.4700676465,
-				["zy"] = 0.4316100424,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[1] = 
-			{
-				["y"] = 0.3636000000,
-				["z"] = 103,
-				["x"] = 0.6131600000,
-				["zx"] = 0.4909426474,
-				["zy"] = 0.4024225452,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[2] = 
-			{
-				["y"] = 0.3557100000,
-				["z"] = 103,
-				["x"] = 0.6056000000,
-				["zx"] = 0.4436926453,
-				["zy"] = 0.3531100499,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[3] = 
-			{
-				["y"] = 0.3497300000,
-				["z"] = 103,
-				["x"] = 0.5949700000,
-				["zx"] = 0.3772551424,
-				["zy"] = 0.3157350534,
-				["i"] = 12,
-				["m"] = 12,
-			},
-		},
-		["c"] = true,
-		["k"] = 691,
-	},
-	[690] = 
-	{
+		["k"] = 5736,
 		["e"] = 
 		{
 			[1] = 
 			{
-				["y"] = 0.3806800000,
-				["z"] = 103,
-				["x"] = 0.6499600000,
-				["zx"] = 0.7209426577,
-				["zy"] = 0.5091725350,
+				["r"] = false,
+				["x"] = 0.6190700000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1146,
+				["y"] = 0.7887700000,
+				["zy"] = 0.7309662289,
+				["zx"] = 0.9213868809,
 				["i"] = 12,
-				["m"] = 12,
 			},
 			[2] = 
 			{
-				["y"] = 0.3815600000,
-				["z"] = 103,
-				["x"] = 0.6441100000,
-				["zx"] = 0.6843801560,
-				["zy"] = 0.5146725345,
+				["r"] = false,
+				["x"] = 0.6140200000,
+				["d"] = true,
+				["m"] = 37,
+				["z"] = 1146,
+				["y"] = 0.7921300000,
+				["zy"] = 0.7549814555,
+				["zx"] = 0.8852925969,
 				["i"] = 12,
-				["m"] = 12,
-			},
-			[3] = 
-			{
-				["y"] = 0.3787200000,
-				["z"] = 103,
-				["x"] = 0.6383800000,
-				["zx"] = 0.6485676544,
-				["zy"] = 0.4969225362,
-				["i"] = 12,
-				["m"] = 12,
 			},
 		},
+		["n"] = "Ra'khajin's Orders",
 		["c"] = true,
-		["k"] = 690,
 	},
-	[689] = 
+	[5869] = 
 	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.3529700000,
-				["z"] = 103,
-				["x"] = 0.6415300000,
-				["zx"] = 0.6682551553,
-				["zy"] = 0.3359850515,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[1] = 
-			{
-				["y"] = 0.3489800000,
-				["z"] = 103,
-				["x"] = 0.6395400000,
-				["zx"] = 0.6558176548,
-				["zy"] = 0.3110475539,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[2] = 
-			{
-				["y"] = 0.3478300000,
-				["z"] = 103,
-				["x"] = 0.6443000000,
-				["zx"] = 0.6855676561,
-				["zy"] = 0.3038600545,
-				["i"] = 12,
-				["m"] = 12,
-			},
-			[3] = 
-			{
-				["y"] = 0.3454700000,
-				["z"] = 103,
-				["x"] = 0.6417300000,
-				["zx"] = 0.6695051554,
-				["zy"] = 0.2891100559,
-				["i"] = 12,
-				["m"] = 12,
-			},
-		},
-		["c"] = true,
-		["k"] = 689,
-	},
-	[573] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.5108200000,
-				["z"] = 57,
-				["x"] = 0.7210800000,
-				["zx"] = 0.1718360211,
-				["zy"] = 0.5106303017,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[1] = 
-			{
-				["y"] = 0.5178500000,
-				["z"] = 57,
-				["x"] = 0.7245100000,
-				["zx"] = 0.1932842460,
-				["zy"] = 0.5545897773,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[2] = 
-			{
-				["y"] = 0.5174400000,
-				["z"] = 57,
-				["x"] = 0.7199800000,
-				["zx"] = 0.1649575816,
-				["zy"] = 0.5520259957,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[3] = 
-			{
-				["y"] = 0.5080200000,
-				["z"] = 57,
-				["x"] = 0.7178100000,
-				["zx"] = 0.1513882965,
-				["zy"] = 0.4931215490,
-				["i"] = 12,
-				["m"] = 10,
-			},
-		},
-		["c"] = true,
-		["k"] = 573,
-	},
-	[572] = 
-	{
-		["e"] = 
-		{
-			[8] = 
-			{
-				["y"] = 0.5305900000,
-				["z"] = 57,
-				["x"] = 0.7476800000,
-				["zx"] = 0.3381691936,
-				["zy"] = 0.6342546023,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[1] = 
-			{
-				["y"] = 0.3511700000,
-				["z"] = 849,
-				["x"] = 0.7511400000,
-				["zx"] = 0.3889263169,
-				["zy"] = 0.7218961180,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[2] = 
-			{
-				["y"] = 0.5374800000,
-				["z"] = 57,
-				["x"] = 0.7622900000,
-				["zx"] = 0.4295273759,
-				["zy"] = 0.6773386402,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[3] = 
-			{
-				["y"] = 0.5318600000,
-				["z"] = 57,
-				["x"] = 0.7523000000,
-				["zx"] = 0.3670586393,
-				["zy"] = 0.6421960723,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[4] = 
-			{
-				["y"] = 0.2820500000,
-				["z"] = 849,
-				["x"] = 0.7371200000,
-				["zx"] = 0.3110294675,
-				["zy"] = 0.3378568965,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[5] = 
-			{
-				["y"] = 0.3851100000,
-				["z"] = 849,
-				["x"] = 0.7904900000,
-				["zx"] = 0.6075597708,
-				["zy"] = 0.9104709325,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[6] = 
-			{
-				["y"] = 0.3472600000,
-				["z"] = 849,
-				["x"] = 0.7853400000,
-				["zx"] = 0.5789457355,
-				["zy"] = 0.7001716771,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[7] = 
-			{
-				["y"] = 0.5329200000,
-				["z"] = 57,
-				["x"] = 0.7634600000,
-				["zx"] = 0.4368435343,
-				["zy"] = 0.6488243858,
-				["i"] = 12,
-				["m"] = 10,
-			},
-		},
-		["c"] = true,
-		["k"] = 572,
-	},
-	[571] = 
-	{
-		["e"] = 
-		{
-			[4] = 
-			{
-				["y"] = 0.5017900000,
-				["z"] = 57,
-				["x"] = 0.7258400000,
-				["zx"] = 0.2016009046,
-				["zy"] = 0.4541645741,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[1] = 
-			{
-				["y"] = 0.5017000000,
-				["z"] = 57,
-				["x"] = 0.7155600000,
-				["zx"] = 0.1373187612,
-				["zy"] = 0.4536017928,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[2] = 
-			{
-				["y"] = 0.5042000000,
-				["z"] = 57,
-				["x"] = 0.7217200000,
-				["zx"] = 0.1758380222,
-				["zy"] = 0.4692346077,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[3] = 
-			{
-				["y"] = 0.4952000000,
-				["z"] = 57,
-				["x"] = 0.7231400000,
-				["zx"] = 0.1847174623,
-				["zy"] = 0.4129564740,
-				["i"] = 12,
-				["m"] = 10,
-			},
-		},
-		["c"] = true,
-		["k"] = 571,
-	},
-	[570] = 
-	{
+		["k"] = 5869,
 		["e"] = 
 		{
 			[1] = 
 			{
-				["y"] = 0.4937400000,
-				["z"] = 57,
-				["x"] = 0.7129000000,
-				["zx"] = 0.1206854440,
-				["zy"] = 0.4038269100,
+				["r"] = false,
+				["x"] = 0.5584600000,
+				["d"] = true,
+				["m"] = 37,
+				["z"] = 1139,
+				["y"] = 0.7598000000,
+				["zy"] = 0.5239063732,
+				["zx"] = 0.4881839986,
 				["i"] = 12,
-				["m"] = 10,
-			},
-			[2] = 
-			{
-				["y"] = 0.3172900000,
-				["z"] = 849,
-				["x"] = 0.8432500000,
-				["zx"] = 0.9007008388,
-				["zy"] = 0.5336546709,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[3] = 
-			{
-				["y"] = 0.3498800000,
-				["z"] = 849,
-				["x"] = 0.8211700000,
-				["zx"] = 0.7780216352,
-				["zy"] = 0.7147287194,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[4] = 
-			{
-				["y"] = 0.5006300000,
-				["z"] = 57,
-				["x"] = 0.7179400000,
-				["zx"] = 0.1522012030,
-				["zy"] = 0.4469109480,
-				["i"] = 12,
-				["m"] = 10,
-			},
-			[5] = 
-			{
-				["y"] = 0.2734400000,
-				["z"] = 849,
-				["x"] = 0.7327400000,
-				["zx"] = 0.2866936472,
-				["zy"] = 0.2900186775,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[6] = 
-			{
-				["y"] = 0.2681700000,
-				["z"] = 849,
-				["x"] = 0.8163800000,
-				["zx"] = 0.7514078043,
-				["zy"] = 0.2607379094,
-				["i"] = 12,
-				["m"] = 30,
-			},
-			[7] = 
-			{
-				["y"] = 1.0458500000,
-				["z"] = 980,
-				["x"] = 0.2948200000,
-				["zx"] = 0.6872419554,
-				["zy"] = 0.4287563149,
-				["i"] = 12,
-				["m"] = 31,
 			},
 		},
+		["n"] = "Black Kiergo: Primed for Peryite?",
 		["c"] = true,
-		["k"] = 570,
+	},
+	[5870] = 
+	{
+		["k"] = 5870,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5612100000,
+				["d"] = true,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7572800000,
+				["zy"] = 0.5058949533,
+				["zx"] = 0.5078393018,
+				["i"] = 12,
+			},
+		},
+		["n"] = "The Shields of Senchal",
+		["c"] = true,
+	},
+	[5873] = 
+	{
+		["k"] = 5873,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5210700000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7538000000,
+				["zy"] = 0.4810220400,
+				["zx"] = 0.2209433490,
+				["i"] = 12,
+			},
+		},
+		["n"] = "Azurah's Crossing",
+		["c"] = true,
+	},
+	[5877] = 
+	{
+		["k"] = 5877,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5102900000,
+				["d"] = true,
+				["m"] = 37,
+				["z"] = 1135,
+				["y"] = 0.7712700000,
+				["zy"] = 0.6058869236,
+				["zx"] = 0.1438945605,
+				["i"] = 12,
+			},
+		},
+		["n"] = "Khunzar-ri and the Lost Alfiq",
+		["c"] = true,
+	},
+	[5878] = 
+	{
+		["k"] = 5878,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5117200000,
+				["d"] = true,
+				["m"] = 37,
+				["z"] = 1135,
+				["y"] = 0.7709000000,
+				["zy"] = 0.6032423897,
+				["zx"] = 0.1541153181,
+				["i"] = 12,
+			},
+		},
+		["n"] = "The Favored Daughter of Fadomai",
+		["c"] = true,
+	},
+	[5752] = 
+	{
+		["k"] = 5752,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5115200000,
+				["d"] = true,
+				["m"] = 37,
+				["z"] = 1135,
+				["y"] = 0.7717200000,
+				["zy"] = 0.6091032486,
+				["zx"] = 0.1526858415,
+				["i"] = 12,
+			},
+		},
+		["n"] = "Elsweyr My Love, Page 5",
+		["c"] = true,
+	},
+	[5753] = 
+	{
+		["k"] = 5753,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5202000000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7540200000,
+				["zy"] = 0.4825944655,
+				["zx"] = 0.2147251258,
+				["i"] = 12,
+			},
+		},
+		["n"] = "Elsweyr My Love, Page 9",
+		["c"] = true,
+	},
+	[5754] = 
+	{
+		["k"] = 5754,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5663000000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7129400000,
+				["zy"] = 0.1889797306,
+				["zx"] = 0.5442194811,
+				["i"] = 12,
+			},
+		},
+		["n"] = "Elsweyr My Love, Page 16",
+		["c"] = true,
+	},
+	[5755] = 
+	{
+		["k"] = 5755,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5204000000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7288000000,
+				["zy"] = 0.3023373182,
+				["zx"] = 0.2161546024,
+				["i"] = 12,
+			},
+		},
+		["n"] = "Elsweyr My Love, Page 19",
+		["c"] = true,
+	},
+	[5767] = 
+	{
+		["k"] = 5767,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5840900000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7783200000,
+				["zy"] = 0.6562760152,
+				["zx"] = 0.6713714243,
+				["i"] = 12,
+			},
+		},
+		["n"] = "Fleeing Senchal",
+		["c"] = true,
+	},
+	[5850] = 
+	{
+		["k"] = 5850,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5507700000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7346200000,
+				["zy"] = 0.3439351214,
+				["zx"] = 0.4332206235,
+				["i"] = 12,
+			},
+		},
+		["n"] = "New Moon Obligations",
+		["c"] = true,
+	},
+	[5723] = 
+	{
+		["k"] = 5723,
+		["e"] = 
+		{
+			[1] = 
+			{
+				["r"] = false,
+				["x"] = 0.5803400000,
+				["d"] = false,
+				["m"] = 37,
+				["z"] = 1133,
+				["y"] = 0.7847700000,
+				["zy"] = 0.7023766734,
+				["zx"] = 0.6445687381,
+				["i"] = 12,
+			},
+		},
+		["n"] = "Letter from Turo",
+		["c"] = true,
 	},
 }
+
 
 function LoreBooks_GetBookData()
 	return bookData
 end
-function LoreBooks_GetShaliData()
-	return shaliData
-end
---Global API
 
-function LoreBooks_GetNewEideticDataFromBookId(bookId, useShali)
-	local data = useShali and shaliData or bookData
-    if not data[bookId] then
-        data[bookId] = {k = bookId}
+--Global API
+function LoreBooks_GetNewEideticDataFromBookId(bookId)
+    if not bookData[bookId] then
+        bookData[bookId] = {k = bookId}
     end
-    return data[bookId]
+    return bookData[bookId]
 end
 
 function LoreBooks_GetNewEideticData(categoryIndex, collectionIndex, bookIndex)
