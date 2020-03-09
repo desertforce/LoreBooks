@@ -2691,6 +2691,7 @@ lorebooksData["stormhaven"] = {
 		{ 0.655, 0.510, 16, 5 },
 		-- Dungeon Lore
 		{ 0.562, 0.577, 11, 9, 146 },		-- Wayrest Sewers: A Short History
+		--{ 0.5574, 0.5243, 9, 9, 146 }, 		-- The All-Beneficent King Fahara'jad
 	},
 	["alcairecastle_base"] = {
 		-- Stormhaven Lore
@@ -2720,6 +2721,8 @@ lorebooksData["stormhaven"] = {
 		{ 0.970, 0.454, 15, 6 },		-- On the Detachment of the Sheath
 		-- Myths of the Mundus
 		{ 0.361, 0.080, 16, 2 },		-- Before the Ages of Man: Merethic Era
+		-- Dungeon Lore
+		--{ 0.4843, 0.1141, 9, 9, 146 },	-- The All-Beneficent King Fahara'jad
 	},
 	["wayrestsewers_base"] = {
 		-- Dungeon Lore
@@ -2949,15 +2952,18 @@ lorebooksData["thievesguild"] = {
 }
 
 lorebooksData["darkbrotherhood"] = {
-	-- Dark Botherhood
-   ["goldcoast_base"] = {          -- Gold Coast
-      { 0.8587, 0.5059, 19, 6 },		-- Eulogy for Emperor Varen
+	["goldcoast_base"] = { -- Gold Coast (Dark Botherhood DLC)
+		{ 0.8587, 0.5059, 19, 6 },		-- Eulogy for Emperor Varen
 		{ 0.7735, 0.4055, 9, 8 },		-- Trials of St. Alessia
 		{ 0.8283, 0.6145, 18, 7 },		-- Proper-Life: Three Chants
 		{ 0.8692, 0.5962, 13, 4 },		-- The Cleansing of the Fane
 		{ 0.8222, 0.3747, 13, 2 },		-- The Adabal-a
 		{ 0.6805, 0.625, 18, 5 },		-- Flesh to Cut from Bone
-   },
+		{ 0.5397, 0.3190, 16, 9 },		-- Sithis
+	},
+	["kvatchcity_base"] = {
+		{ 0.5650, 0.3459, 13, 2, 1 },	-- The Adabal-a
+	},
 }
 
 lorebooksData["vvardenfell"] = {
@@ -3061,8 +3067,15 @@ lorebooksData["summerset"] = {
 	},
 }
 
+lorebooksData["murkmire"] = {
+	["murkmire_base"] = {
+		{ 0.7377, 0.5599, 14, 3 },		-- The Lusty Argonian Maid, Volume 1
+		{ 0.7376, 0.5599, 14, 4 },		-- The Lusty Argonian Maid, Volume 2
+	}, 
+}
+
 lorebooksData["elsweyr"] = {
-	["elsweyr_base"] = { -- Elsweyr
+	["elsweyr_base"] = { -- (Northern) Elsweyr
 		{ 0.2353, 0.5703, 6, 10 }, 		-- On the Knahaten Flu
 		{ 0.4122, 0.6014, 25, 7 }, 		-- The Rise of Queen Ayrenn
 		{ 0.4998, 0.1661, 26, 1 }, 		-- Varieties of Faith: The Khajiit
@@ -3075,15 +3088,39 @@ lorebooksData["elsweyr"] = {
 		{ 0.1382, 0.7498, 1, 2 }, 		-- A Warning to the Aldmeri Dominion
 	},
 	["rimmen_base"] = { 
-		{ 0.4391, 0.5035, 28, 8, 1 }, -- Master Zoaraym's Tale, Part 1
+		{ 0.4391, 0.5035, 28, 8, 1 },	-- Master Zoaraym's Tale, Part 1
+	},
+	["stitches_base"] = {
+		{ 0.5774, 0.5063, 28, 9, 1 },	-- Master Zoaraym's Tale, Part 2",
 	},
 	["riverholdcity_base"] = { 
-		{ 0.5424, 0.6056, 26, 1, 1 }, -- Varieties of Faith: The Khajiit
+		{ 0.5424, 0.6056, 26, 1, 1 },	-- Varieties of Faith: The Khajiit
 	},
-
 }
 
-
+lorebooksData["southernelsweyr"] = {
+	["southernelsweyr_base"] = { -- Southern Elsweyr
+		{ 0.1826, 0.6512, 6, 8 },		-- A Mother's Nursery Rhyme
+		{ 0.3996, 0.6158, 6, 10 },		-- On the Knahaten Flu
+		{ 0.5043, 0.5094, 21, 8 },		-- A Nereid Stole My Husband
+		{ 0.3855, 0.3836, 28, 5 },		-- The Eagle and the Cat
+		{ 0.3718, 0.2511, 28, 6 },		-- Elven Eyes, Elven Spies
+		{ 0.4481, 0.3572, 28, 8 },		-- Master Zoaraym's Tale, Part 1
+		{ 0.9184, 0.7123, 28, 9 },		-- Master Zoaraym's Tale, Part 2
+	},
+	["senchal_base"] = { -- Senchal
+		{ 0.5307, 0.4735, 21, 8, 1 },	-- A Nereid Stole My Husband
+	},
+	["senchalpalace01_base"] = { -- Senchal Palace
+		{ 0.1460, 0.4266, 21, 8, 1 },	-- A Nereid Stole My Husband
+	},
+	["els_dragonguard_island01_base"] = { -- Tideholm
+		{ 0.6481, 0.2633, 28, 9, 1 },	-- Master Zoaraym's Tale, Part 2
+	}, 
+	["els_dg_sanctuary_base"] = { -- Dragonguard Sanctum
+		{ 0.2834, 0.4420, 28, 9, 1 },	-- Master Zoaraym's Tale, Part 2
+	}, 
+}
 
 lorebooksData["guildmaps"] = {
 	-- Fighters guild maps
@@ -3346,10 +3383,17 @@ lorebooksCorrespondance["clockwork"] = {
 lorebooksCorrespondance["summerset"] = {
 	["summerset_base"] = 32,
 	["shimmerene_base"] = 000,
+	["artaeum_base"] = 33,
 }
-
+lorebooksCorrespondance["murkmire"] = {
+	["murkmire_base"] = 34,
+	["swampisland_ext_base"] = 35, 
+}
 lorebooksCorrespondance["elsweyr"] = {
 	["elsweyr_base"] = 36,
+}
+lorebooksCorrespondance["southernelsweyr"] = {
+	["southernelsweyr_base"] = 37,
 }
 
 
@@ -3362,7 +3406,7 @@ lorebooksCorrespondance["guildmaps"] = {
 	["cheesemongershollow_base"] = 000,
 }
 
-local mapIndexCorrespondance = {
+local mapIndexCorrespondance = { --unused
 	[2] = { ["glenumbra"] = "glenumbra_base" },
 	[3] = { ["rivenspire"] = "rivenspire_base" },
 	[4] = { ["stormhaven"] = "stormhaven_base" },
@@ -3387,8 +3431,11 @@ local mapIndexCorrespondance = {
 	[30] = { ["vvardenfell"] = "vvardenfell_base" },
 	[31] = { ["clockwork"] = "clockwork_base" },
 	[32] = { ["summerset"] = "summerset_base" },
-	-- [33] = { ["murkmire"] = "murkmire_base" },
+	[33] = { ["summerset"] = "artaeum_base" },
+	[34] = { ["murkmire"] = "murkmire_base" },
+	[35] = { ["murkmire"] = "swampisland_ext_base" },
 	[36] = { ["elsweyr"] = "elsweyr_base" },
+	[37] = { ["southernelsweyr"] = "southernelsweyr_base" },
 }
 
 local lorebooksExplorationIDs = {
@@ -3512,81 +3559,14 @@ function LoreBooks_GetImmersiveModeCondition(mode, mapIndex)
 	end
 end
 
+function LoreBooks_GetZoneAndSubzone()
+	return select(3, GetMapTileTexture():lower():gsub("_+%d+\.dds", ""):find("maps/([%w%-]+)/([%w_%-]+)"))
+end
+
 function LoreBooks_GetLocalData(zone, subzone)
 	if type(zone) == "string" and type(subzone) == "string" and lorebooksData[zone] and lorebooksData[zone][subzone] then
 		return lorebooksData[zone][subzone]
 	end
-end
-
-function LoreBooks_GetMapIndexMainData(mapIndex)
-	if mapIndexCorrespondance[mapIndex] then
-		local mapName, mapTile = next(mapIndexCorrespondance[mapIndex])
-		if lorebooksData[mapName][mapTile] then
-			return lorebooksData[mapName][mapTile]
-		end
-	end
-end
-
-function LoreBooks_GetMissingBooksData()
-
-	local missingBooks = {}
-	local COLLECTION_DUNGEON_LORE = 11
-	local MAP_CYRODIIL = 14
-	local MAP_IMPERIAL_CITY = 26
-	local MAP_HEWS_BANE = 28
-	local MAP_GOLD_COAST = 29
-	local MAP_VVARDENFELL = 30
-
-	--[[
-	for mapIndex=1, GetNumMaps() do
-		if not (mapIndex == MAP_CYRODIIL or mapIndex == MAP_IMPERIAL_CITY or mapIndex == MAP_HEWS_BANE or mapIndex == MAP_GOLD_COAST or mapIndex == MAP_VVARDENFELL) then
-			if mapIndexCorrespondance[mapIndex] then
-				
-				local mapName, mapTile = next(mapIndexCorrespondance[mapIndex])
-				if lorebooksData[mapName][mapTile] then
-					
-					missingBooks[mapName] = {
-						[mapTile] = {},
-					}
-					
-					local bookPins = 0
-					local collectionIndex = lorebooksData[mapName][mapTile][1][3]
-					local bookIndex = lorebooksData[mapName][mapTile][1][4]
-					local existingData = {}
-					
-					for bookPin, bookData in ipairs(lorebooksData[mapName][mapTile]) do
-						
-						if collectionIndex == bookData[3] and bookIndex == bookData[4] then	
-							bookPins = bookPins + 1
-							table.insert(existingData, bookData)
-						else
-						
-							if collectionIndex ~= COLLECTION_DUNGEON_LORE and bookPins < 4 then
-								local _, _, _, bookId = GetLoreBookInfo(1, collectionIndex, bookIndex)
-								missingBooks[mapName][mapTile][bookId] = {
-									count = bookPins,
-									existingData = existingData,
-								}
-							end
-							
-							existingData = {bookData}
-							bookPins = 1
-
-						end
-						
-						collectionIndex = bookData[3]
-						bookIndex = bookData[4]
-						
-					end
-					
-				end
-			end
-		end
-	end
-	-- --]]
-	
-	return missingBooks
-	
 end
 
 function LoreBooks_GetLocalDataForBook(categoryIndex, collectionIndex, bookIndex, zone, subzone)

@@ -24,7 +24,7 @@ Please read full licence at :
 http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
 ]]
 
-local GPS = LibStub("LibGPS2")
+local LibGPS2 = LibGPS2
 
 local pinInserts
 local creations
@@ -42,10 +42,10 @@ local NUM_MAPS = GetNumMaps()
 
 -- The mastermind that will be sniffing all the data
 local MASTER_MINER = "@Kyoma"
-local DEADLINE = 20191030
-local MINER_ESOVERSION = 526
+local DEADLINE = 20200305
+local MINER_ESOVERSION = 534
 
-local NEW_BOOKS_ONLY = false
+local NEW_BOOKS_ONLY = true
 local VERSION_MUST_MATCH = false
 
 local ALL_MODE       = 0
@@ -86,7 +86,6 @@ local function CoordsNearby(locX, locY, x, y, nearyIs)
 		return true
 	end
 	return false
-	
 end
 
 
@@ -173,7 +172,9 @@ local function Explode(divider, stringtoParse)
 	return values
 end
 
-
+local function GetMapBaseAndTile()
+	return LoreBooks_GetZoneAndSubzone()
+end
 ------------------------------
 --    Miner Callback & Co   --
 ------------------------------
@@ -213,13 +214,13 @@ local function BuildDataToShare(bookId)
 		local mapContentType = GetMapContentType()
 		
 		local xLocal, yLocal = GetMapPlayerPosition("player")
-		local xGPS, yGPS, mapIndexGPS = GPS:LocalToGlobal(xLocal, yLocal)
+		local xGPS, yGPS, mapIndexGPS = LibGPS2:LocalToGlobal(xLocal, yLocal)
 		
 		if mapIndexGPS == 1 and zoneId == 0 then
 			return
 		end
 		
-		local mapBase, mapTile = select(3,(GetMapTileTexture()):lower():gsub("ui_map_", ""):find("maps/([%w%-]+)/([%w%-]+_[%w%-]+)"))
+		local mapBase, mapTile = GetMapBaseAndTile()
 
 		if not mapIndexGPS then
 			mapIndexGPS = 0
@@ -261,7 +262,6 @@ local function BuildDataToShare(bookId)
 		dataToShare = dataToShare ..";" .. clang .. ";" .. UnsignedBase62(MINER_VERSION) ..";" .. UnsignedBase62(tonumber(ESOVersion))
 		
 		local categoryIndex, collectionIndex, bookIndex = GetLoreBookIndicesFromBookId(bookId)
-		
 		local bookName = GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex)
 		
 		local extraData = ""
@@ -272,7 +272,7 @@ local function BuildDataToShare(bookId)
 					if string.lower(itemData.name) == string.lower(bookName) then
 						extraData = GetJournalQuestInfo(questIndex)
                         isObject = true -- so we don't skip this 
-                        --d(extraData)
+                        d(extraData)
 						break
 					end
 				end
@@ -291,7 +291,7 @@ local function BuildDataToShare(bookId)
 				local bookData = LoreBooks_GetLocalData(mapBase, mapTile)
 				if bookData then
 					for _, entry in ipairs(bookData) do
-						if CoordsNearby(xLocal, yLocal, entry[1], entry[2], 0.01) then
+						if CoordsNearby(xLocal, yLocal, entry[1], entry[2], 0.015) and collectionIndex == entry[3] and bookIndex == entry[4] then
 							return
 						end
 					end
@@ -370,6 +370,7 @@ local function CheckShalidorBook(bookId)
 		[117] = true, -- Shalidor special book
 		[101] = true, -- Shalidor special book
 		[119] = true, -- Shalidor special book
+		[136] = true,
 	}
 	
 	if dontCheck[bookId] then
@@ -475,22 +476,33 @@ local forceRandom =
 local eideticMemory = LoreBooks_GetBookData()
 
 local BOOK_MISSING 		= 1
-local BOOK_QUESTONLY	= 2
-local BOOK_EXISTS 		= 3
+local BOOK_QUEST_ONLY	= 2
+local BOOK_RANDOM_ONLY	= 3
+local BOOK_EXISTS 		= 4
 local function getBookStatus(bookId)
 	local bookData = eideticMemory[bookId]
 	if not bookData or not bookData.c then
 		return BOOK_MISSING
-	elseif bookData.q and not bookData.e or #bookData.e == 0 then
-		return BOOK_QUESTONLY
+	elseif not bookData.e or #bookData.e == 0 then
+		if bookData.q then
+			return BOOK_QUEST_ONLY
+		elseif bookData.r then
+			return BOOK_RANDOM_ONLY
+		else
+			return BOOK_MISSING
+		end
 	else
 		return BOOK_EXISTS
 	end
 end
 
 local function GetMaxZoneId()
-	return LibZone.libraryInfo.maxZoneIds
+	return (LibZone:GetMaxZoneId())
 end
+
+local function GetBaseAndTileForMapIndex(mapIndex)
+	return DATAMINED_DATA.mapTiles[mapIndex][1], DATAMINED_DATA.mapTiles[mapIndex][2]
+end 
 
 ExtractBookData = function(index)
 	
@@ -517,20 +529,14 @@ ExtractBookData = function(index)
 	local categoryIndex, collectionIndex, bookIndex = GetLoreBookIndicesFromBookId(bookId)
 	local bookName = GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex)
 	
-	if questLinked ~= "0" then
-		df("[%s] - %s", bookName, questLinked)
-	end
+	--if questLinked ~= "0" then
+	--	df("[%s] - %s", bookName, questLinked)
+	--end
 
 	if not categoryIndex or (version ~= MINER_ESOVERSION and VERSION_MUST_MATCH) or ignoreList[bookId] then
 		JumpToNextBook(index)
 		return
 	end
-
-	--if not forceRandom[bookId] then
-	--	JumpToNextBook(index)
-	--	return
-    --end
-    
 	local status = getBookStatus(bookId)
 	
 	if NEW_BOOKS_ONLY and status ~= BOOK_MISSING then
@@ -538,27 +544,21 @@ ExtractBookData = function(index)
 		return
 	end
 	
-	--[[
-	/script ZO_WorldMap_SetMapByIndex(GetMapIndexByZoneId(GetZoneId(GetUnitZoneIndex("player"))))
-	
-	/script ZO_WorldMap_SetMapByIndex(GetMapIndexByZoneId(GetZoneId(GetUnitZoneIndex("player"))))
-	
-	local mid = GetMapIndexByZoneId(id)
-	
-	d(GetMapTileTexture()
-	df("Index: %d, Id: %d", idx, id))+
-	
-	GetMapIndexByZoneId(
-	
-	ZO_WorldMap_SetMapByIndex
-	
-	--]]
+	if not EideticValidEntry(categoryIndex) then
+		JumpToNextBook(index)
+		return
+	end
 
 	local isRandom					= true
 
     if bookData.r == 0 and not forceRandom[bookId] then
 		isRandom = false
 	end
+	
+	if bookId == 5733 then
+		--d(bookData)
+	end
+	
 	
 	local bookConfirmed
 	local bookLost
@@ -592,7 +592,59 @@ ExtractBookData = function(index)
 		
 	end
 
-	if categoryIndex == EIDETIC_MODE then -- EideticValidEntry(categoryIndex) then
+	if categoryIndex == SHALIDOR_MODE then
+	
+		local function InsertIfUnique(base, tile, x, y, collectionIndex, bookIndex, bookName)
+			local bookData = LoreBooks_GetLocalData(base, tile)
+			if bookData then
+				for _, entry in ipairs(bookData) do
+					if CoordsNearby(x, y, entry[1], entry[2], 0.015) and collectionIndex == entry[3] and bookIndex == entry[4] then
+						return
+					end
+				end
+			end
+			table.insert(DATAMINED_DATA.shaliBuild, string.format("[%s,%s] = { %.4f, %.4f, %d, %d },        -- %s", base, tile, x, y, collectionIndex, bookIndex, bookName))
+		end
+
+		if CheckShalidorBook(bookId) then
+			local mapTile = questLinked
+
+			if SetMapToPlayerLocation() == SET_MAP_RESULT_MAP_CHANGED then
+				--CALLBACK_MANAGER:FireCallbacks("OnWorldMapChanged")
+			end
+
+			local top, topTile = GetBaseAndTileForMapIndex(mapIndex)
+			local base, baseTile = GetMapBaseAndTile()
+
+			local xLocal, yLocal, found
+
+			-- try player location for areas that cannot be reached by clicking on the parent area
+			if baseTile == mapTile then
+				xLocal, yLocal = LibGPS2:GlobalToLocal(x, y)
+				InsertIfUnique(base, baseTile, xLocal, yLocal, collectionIndex, bookIndex, bookName)
+			end
+
+			-- Top map
+			if baseTile ~= topTile then 
+				ZO_WorldMap_SetMapByIndex(mapIndex)
+				xLocal, yLocal = LibGPS2:GlobalToLocal(x, y)
+				InsertIfUnique(top, topTile, xLocal, yLocal, collectionIndex, bookIndex, bookName)
+			end
+
+			if topTile ~= mapTile and mapTile ~= "0" then
+				if ProcessMapClick(xLocal, yLocal) == SET_MAP_RESULT_MAP_CHANGED then
+					local base2, baseTile2 = GetMapBaseAndTile()
+					if baseTile2 ~= baseTile then -- also check if its target map?
+						xLocal, yLocal = LibGPS2:GlobalToLocal(x, y)
+						InsertIfUnique(base2, baseTile2, xLocal, yLocal, collectionIndex, bookIndex, bookName)
+					elseif baseTile2 ~= mapTile then
+						table.insert(DATAMINED_DATA.shaliBuild, string.format("[%s,%s] = Failed to find location for %s", top, mapTile, bookName))
+					end
+				end
+			end
+		end
+
+	elseif categoryIndex == EIDETIC_MODE then -- EideticValidEntry(categoryIndex) then
 		
 		if not DATAMINED_DATA.build[bookId] then DATAMINED_DATA.build[bookId] = {} end
 		
@@ -712,6 +764,7 @@ ExtractBookData = function(index)
 						end
 						
 					end
+				else
 					
 				end
 				
@@ -767,30 +820,30 @@ ExtractBookData = function(index)
 		-- New random entry
 		elseif isRandom then
 		
-		--d("NewRandom: #" .. bookId .. "/" .. categoryIndex .."/" .. collectionIndex .."/" .. bookIndex .. " [".. GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex) .."]")
-		--
-		--DATAMINED_DATA.build[bookId].e = {}
-		--
-		--table.insert(DATAMINED_DATA.build[bookId].e, {
-		--	r = isRandom,
-		--	x = x,
-		--	y = y,
-		--	z = zoneId,
-		--	m = mapIndex,
-		--	d = inDungeon,
-		--	i = interactionType,
-		--	l = bookLost,
-		--})
-		--
-		--DATAMINED_DATA.build[bookId].r = true
-		--DATAMINED_DATA.build[bookId].m = {}
-		--DATAMINED_DATA.build[bookId].m[mapIndex] = 1
-		--
-		--if questLinked ~= "0" then
-		--	DATAMINED_DATA.build[bookId].q = questLinked
-		--end
-		--
-		--pinInserts = pinInserts + 1
+			d("NewRandom: #" .. bookId .. "/" .. categoryIndex .."/" .. collectionIndex .."/" .. bookIndex .. " [".. GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex) .."]")
+			
+			DATAMINED_DATA.build[bookId].e = {}
+			
+			table.insert(DATAMINED_DATA.build[bookId].e, {
+				r = isRandom,
+				x = x,
+				y = y,
+				z = zoneId,
+				m = mapIndex,
+				d = inDungeon,
+				i = interactionType,
+				l = bookLost,
+			})
+			
+			DATAMINED_DATA.build[bookId].r = true
+			DATAMINED_DATA.build[bookId].m = {}
+			DATAMINED_DATA.build[bookId].m[mapIndex] = 1
+			
+			if questLinked ~= "0" then
+				DATAMINED_DATA.build[bookId].q = questLinked
+			end
+			
+			pinInserts = pinInserts + 1
 			
 		elseif not bookFound then
 			
@@ -835,7 +888,7 @@ end
 
 local function ExtractData()
 	
-	if not ZO_WorldMap_IsWorldMapShowing() and (not LBooks_SavedVariables or (LBooks_SavedVariables and LBooks_SavedVariables.Default[GetDisplayName()][GetUnitName("player")].unlockEidetic == false)) then
+	if not ZO_WorldMap_IsWorldMapShowing() then --and (not LBooks_SavedVariables or (LBooks_SavedVariables and LBooks_SavedVariables.Default[GetDisplayName()][GetUnitName("player")].unlockEidetic == false)) then
 	
 		d("DO NOT OPEN MAP UNTIL PROCESS IS FINISHED")
 		d("LOREBOOKS PREHOOKING MUST BE DISABLED WHILE EXTRACTING")
@@ -905,7 +958,7 @@ local function BuildBooks()
 	d("LOREBOOKS PREHOOKING MUST BE DISABLED WHILE EXTRACTING")
 
     DATAMINED_DATA.additionalQuestData = {}
-	if not LBooks_SavedVariables or LBooks_SavedVariables.Default[GetDisplayName()][GetUnitName("player")].unlockEidetic == false then
+	--if not LBooks_SavedVariables then -- or LBooks_SavedVariables.Default[GetDisplayName()][GetUnitName("player")].unlockEidetic == false then
 		
 		if extractionDone then
 			DATAMINED_DATA.decoded = nil -- too much data in sv will crash eso
@@ -939,47 +992,7 @@ local function BuildBooks()
 				else
 					bookData.q = nil
 				end
-				
-				if #bookData.e >= 1 then
-					
-					for entryIndex, entryData in ipairs(bookData.e) do
-						
-						-- Shalidor warning
-						if categoryIndex == 1 and zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetMapNameByIndex(entryData.m)) == zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetZoneNameByIndex(GetZoneIndex(entryData.z))) then
-							
-							local bookFound
-							if CheckShalidorBook(bookId) then
-								local mapData = LoreBooks_GetMapIndexMainData(entryData.m)
-								if mapData then
-									for index, data in ipairs(mapData) do
-										if data[3] == collectionIndex and data[4] == bookIndex then
-											local gX, gY = GPS:ZoneToGlobal(entryData.m, data[1], data[2])
-											if CoordsNearby(gX, gY, entryData.x, entryData.y) then
-												bookFound = true
-												break
-											end
-										end
-									end
-									if not bookFound then
-										local xT, yT, coords
-										if entryData.zx then
-											xT = ("%0.05f"):format(zo_round(entryData.zx*10000)/100)
-											yT = ("%0.05f"):format(zo_round(entryData.zy*10000)/100)
-											coords= "Z"
-										else
-											xT = entryData.x
-											yT = entryData.y
-											coords = "G"
-										end
-										d("Shali : [" .. GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex) .."], Coords : " .. zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetZoneNameByIndex(GetZoneIndex(entryData.z))) .. " : " .. coords .. " " .. xT .. "x" .. yT .. " (Dungeon=" .. tostring(entryData.d) .. ")")
-									end
-								end
-							end
-						end
-						
-					end
-					
-				end
+
 			elseif extractionDone and not bookData.r then
 				if EideticValidEntry(categoryIndex) then
 					d("StillUnknown : " .. categoryIndex .. "/" .. collectionIndex .. "/" .. bookIndex .. " [".. GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex) .."]")
@@ -994,7 +1007,7 @@ local function BuildBooks()
 		d("DATAMINED_DATA.build done")
 		d("Order is /lbd (decode) /lbb (each language prebuild) /lbe (extract) /lbc (coords) /lbb (postbuild)")
 	
-	end
+	--end
 
 end
 
@@ -1004,7 +1017,7 @@ local function CalculateCoordsForMap(mapIndex)
 		if bookData.e and #bookData.e >= 1 then
 			for entryIndex, entryData in ipairs(bookData.e) do
 				if not entryData.zx and entryData.m == mapIndex then
-					local xLoc, yLoc = GPS:GlobalToLocal(entryData.x, entryData.y)
+					local xLoc, yLoc = LibGPS2:GlobalToLocal(entryData.x, entryData.y)
 					if xLoc ~= nil and yLoc ~= nil and xLoc > 0 and yLoc > 0 and xLoc < 1 and yLoc < 1 then
 						entryData.zx = xLoc
 						entryData.zy = yLoc
@@ -1018,16 +1031,18 @@ end
 
 local function PrecalculateCoords(mapIndex)
 	
-	if mapIndex == "" then mapIndex = 1 end
+	if mapIndex == "" then
+		mapIndex = 1 
+	end
 	
-	if not LBooks_SavedVariables or LBooks_SavedVariables.Default[GetDisplayName()][GetUnitName("player")].unlockEidetic == false then
+	--if not LBooks_SavedVariables or LBooks_SavedVariables.Default[GetDisplayName()][GetUnitName("player")].unlockEidetic == false then
 		if mapIndex <= NUM_MAPS then
 			if mapIndex ~= 0 and mapIndex ~= 1 and mapIndex ~= 24 then -- Tamriel & Aurbis
 				ZO_WorldMap_SetMapByIndex(mapIndex)
 				CalculateCoordsForMap(mapIndex)
 			end
 		end
-	end
+	--end
 	
 	if mapIndex == NUM_MAPS then
 		d("PrecalculateCoords finished")
@@ -1128,8 +1143,20 @@ local function CleanCollab()
 	end
 	
 	DATAMINED_DATA.build = {}
+	DATAMINED_DATA.shaliBuild = {}
 	DATAMINED_DATA.decoded = {}
 	DATAMINED_DATA.libraryData = {}
+	
+	if not DATAMINED_DATA.mapTiles or GetNumMaps() ~= #DATAMINED_DATA.mapTiles then
+		DATAMINED_DATA.mapTiles = {}
+		for mapIndex=1, GetNumMaps() do
+			ZO_WorldMap_SetMapByIndex(mapIndex)
+			DATAMINED_DATA.mapTiles[mapIndex] = {GetMapBaseAndTile()}
+		end
+		if SetMapToPlayerLocation() == SET_MAP_RESULT_MAP_CHANGED then
+			CALLBACK_MANAGER:FireCallbacks("OnWorldMapChanged")
+		end
+	end
 	
 	d("Cleaned")
 	
@@ -1359,6 +1386,80 @@ function LB_MergeEideticData()
 end
 --]]
 
+
+
+function LB_Test()
+
+	--local dataList = 
+	--{
+	--	{
+	--		["mapIndex"] = 37,
+	--		["y"] = 0.7401700000,
+	--		["mapTile"] = "southernelsweyr_base",
+	--		["bookId"] = 1438,
+	--		["x"] = 0.5440900000,
+	--	},
+	--	{
+	--		["x"] = 0.6186500000,
+	--		["mapIndex"] = 37,
+	--		["y"] = 0.7861600000,
+	--		["mapTile"] = "els_dg_sanctuary_base",
+	--		["bookId"] = 1442,
+	--	},
+	--	{
+	--		["mapIndex"] = 37,
+	--		["y"] = 0.7776100000,
+	--		["mapTile"] = "southernelsweyr_base",
+	--		["bookId"] = 296,
+	--		["x"] = 0.5157100000,
+	--	},
+	--}
+    --
+	--for _, data in ipairs(dataList) do
+    --
+	--	local categoryIndex, collectionIndex, bookIndex = GetLoreBookIndicesFromBookId(data.bookId)
+	--	local bookName = GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex)
+	--	
+	--	if SetMapToPlayerLocation() == SET_MAP_RESULT_MAP_CHANGED then
+	--		CALLBACK_MANAGER:FireCallbacks("OnWorldMapChanged")
+	--	end
+    --
+	--	local _, topTile = GetBaseAndTileForMapIndex(data.mapIndex)
+	--	local base, baseTile = GetMapBaseAndTile()
+    --
+	--	local xLocal, yLocal 
+	--	
+	--	-- try player location for areas that cannot be reached by clicking on the parent area
+	--	if baseTile == data.mapTile then
+	--		xLocal, yLocal = LibGPS2:GlobalToLocal(data.x, data.y)
+	--		df("[%s] = { %.4f, %.4f, %d, %d, 1 }, \t\t -- %s", baseTile, xLocal, yLocal, collectionIndex, bookIndex, bookName)
+	--	end
+    --
+	--	-- Top map
+	--	if baseTile ~= topTile then 
+	--		ZO_WorldMap_SetMapByIndex(data.mapIndex)
+	--		xLocal, yLocal = LibGPS2:GlobalToLocal(data.x, data.y)
+	--		df("[%s] = { %.4f, %.4f, %d, %d }, \t\t -- %s", topTile, xLocal, yLocal, collectionIndex, bookIndex, bookName)
+	--	end
+    --
+	--	if topTile ~= data.mapTile and data.mapTile ~= "0" then
+	--		if ProcessMapClick(xLocal, yLocal) == SET_MAP_RESULT_MAP_CHANGED then
+	--			local _, baseTile2 = GetMapBaseAndTile()
+	--			if baseTile2 ~= baseTile then -- also check if its target map?
+	--				xLocal, yLocal = LibGPS2:GlobalToLocal(data.x, data.y)
+	--				df("[%s] = { %.4f, %.4f, %d, %d, 1 }, \t\t -- %s", baseTile2, xLocal, yLocal, collectionIndex, bookIndex, bookName)
+	--			end
+	--		end
+	--	end
+    --
+	--end
+    --
+	--if SetMapToPlayerLocation() == SET_MAP_RESULT_MAP_CHANGED then
+	--	CALLBACK_MANAGER:FireCallbacks("OnWorldMapChanged")
+	--end
+
+end
+
 function LoreBooks_InitializeCollab()
 
 	if MASTER_MINER == GetDisplayName() then
@@ -1370,11 +1471,11 @@ function LoreBooks_InitializeCollab()
 		SLASH_COMMANDS["/lbe"] = ExtractData
 		SLASH_COMMANDS["/lbb"] = BuildBooks
 		SLASH_COMMANDS["/lbc"] = PrecalculateCoords
-
 		SLASH_COMMANDS["/lbd"] = DecodeCollab
-		SLASH_COMMANDS["/lbs"] = SeeData
-		SLASH_COMMANDS["/lbp"] = PushData
-		SLASH_COMMANDS["/lbi"] = InitLibrary
+
+		SLASH_COMMANDS["/lbsee"] = SeeData
+		SLASH_COMMANDS["/lbpush"] = PushData
+		SLASH_COMMANDS["/lbinit"] = InitLibrary
 		SLASH_COMMANDS["/lbcollab"] = CleanCollab
 		SLASH_COMMANDS["/lblibrary"] = CollectLoreLibrary
 		SLASH_COMMANDS["/lbsort"] = SortLibrary
@@ -1392,7 +1493,7 @@ end
 
 function LoreBooks_IsMinerEnabled()
 	ESOVersion = GetESOVersionString():gsub("eso%.%a+%.(%d)%.(%d)%.(%d+)%.%d+", "%1%2%3")
-	if GetAPIVersion() == 100029 and (lang == "fr" or lang == "en" or lang == "de") then
+	if GetAPIVersion() == 100030 and (lang == "fr" or lang == "en" or lang == "de") then
 		if (GetDate() - DEADLINE) < 1 then
 			return true, BuildDataToShare
 		end

@@ -25,15 +25,15 @@ http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
 ]]
 
 --Libraries--------------------------------------------------------------------
-local LAM = LibStub("LibAddonMenu-2.0")
-local LMP = LibStub("LibMapPins-1.0")
-local GPS = LibStub("LibGPS2")
+local LAM = LibAddonMenu2
+local LMP = LibMapPins
+local GPS = LibGPS2
 local Postmail = {}
 
 --Local constants -------------------------------------------------------------
 local ADDON_NAME = "LoreBooks"
 local ADDON_AUTHOR = "Ayantir, Garkin & Kyoma"
-local ADDON_VERSION = "17"
+local ADDON_VERSION = "18"
 local ADDON_WEBSITE = "http://www.esoui.com/downloads/info288-LoreBooks.html"
 local PINS_UNKNOWN = "LBooksMapPin_unknown"
 local PINS_COLLECTED = "LBooksMapPin_collected"
@@ -45,16 +45,18 @@ local PINS_COMPASS_EIDETIC = "LBooksCompassPin_eidetic"
 
 local MISSING_TEXTURE = "/esoui/art/icons/icon_missing.dds"
 local PLACEHOLDER_TEXTURE = "/esoui/art/icons/lore_book4_detail1_color2.dds"
-local SUPPORTED_API = 100029
-local EIDETIC_BOOKS = 3338
---[[
-/script local t, _, n = 0, GetLoreCategoryInfo(3)
-for i = 1, n do
-	local _, _, _, totalBooks, h = GetLoreCollectionInfo(3, i)
-	if not h then t = t + totalBooks end
+local SUPPORTED_API = 100030
+local EIDETIC_BOOKS = 3347
+if GetDisplayName() == "@Kyoma" then
+	local t, _, n = 0, GetLoreCategoryInfo(3)
+	for i = 1, n do
+		local _, _, _, totalBooks, h = GetLoreCollectionInfo(3, i)
+		if not h then t = t + totalBooks end
+	end
+	if t ~= EIDETIC_BOOKS then
+		zo_callLater(function() d("OUTDATED EIDETIC BOOKS COUNT: " .. t) end, 2000)
+	end
 end
-d(t)
---]]
 
 
 --Local variables -------------------------------------------------------------
@@ -432,10 +434,10 @@ local function CreatePins()
 	if (updatePins[PINS_COLLECTED] and LMP:IsEnabled(PINS_COLLECTED)) or (shouldDisplay and updatePins[PINS_UNKNOWN] and LMP:IsEnabled(PINS_UNKNOWN)) or (shouldDisplay and updatePins[PINS_COMPASS] and db.filters[PINS_COMPASS]) then
 		local zoneIndex = GetUnitZoneIndex("player")
 		if IsValidZone(zoneIndex) then 
-			local zone, subzone = LMP:GetZoneAndSubzone()
+			local zone, subzone = LoreBooks_GetZoneAndSubzone()
 			local lorebooks = LoreBooks_GetLocalData(zone, subzone)
 			if lorebooks then
-				for _, pinData in ipairs(lorebooks) do	
+				for _, pinData in ipairs(lorebooks) do
 					local _, _, known = GetLoreBookInfo(1, pinData[3], pinData[4])
 					
 					if known and updatePins[PINS_COLLECTED] and LMP:IsEnabled(PINS_COLLECTED) then
@@ -1220,6 +1222,10 @@ local function BuildCategoryList(self)
 	
 	self.totalCurrentlyCollected = 0
 	self.totalPossibleCollected = 0
+	self.motifsCurrentlyCollected = 0
+	self.motifsPossibleCollected = 0
+	self.shalidorCurrentlyCollected = 0
+	self.shalidorPossibleCollected = 0
 	
 	self.navigationTree:Reset()
 	
@@ -1249,6 +1255,11 @@ local function BuildCategoryList(self)
 				lbcategories[i].lbcollections[#lbcategories[i].lbcollections + 1] = { categoryIndex = categoryData.categoryIndex, collectionIndex = collectionIndex, name = collectionName, description = description, numKnownBooks = numKnownBooks, totalBooks = totalBooks }
 				self.totalCurrentlyCollected = self.totalCurrentlyCollected + numKnownBooks
 				self.totalPossibleCollected = self.totalPossibleCollected + totalBooks
+				
+				if categoryData.categoryIndex == 2 then -- CRAFTING
+					self.motifsCurrentlyCollected = self.motifsCurrentlyCollected + numKnownBooks
+					self.motifsPossibleCollected = self.motifsPossibleCollected + totalBooks
+				end
 			end
 		end
 		
@@ -1643,6 +1654,27 @@ local function RebuildLoreLibrary()
 		BuildBookListPostHook()
 	end
 	
+	
+	local includeMotifsCheckbox = WINDOW_MANAGER:CreateControlFromVirtual("$(parent)IncludeMotifs", LORE_LIBRARY.totalCollectedLabel, "ZO_CheckButton")
+	
+    includeMotifsCheckbox:SetAnchor(LEFT, LORE_LIBRARY.totalCollectedLabel, RIGHT, 85, 0)
+
+	ZO_CheckButton_SetLabelText(includeMotifsCheckbox, "Include Motifs")
+    ZO_CheckButton_SetToggleFunction(includeMotifsCheckbox, function()
+		LORE_LIBRARY:RefreshCollectedInfo()
+    end)
+
+	LORE_LIBRARY.RefreshCollectedInfo = function(library)
+	
+		local currentlyCollected = library.totalCurrentlyCollected
+		local possibleCollected  = library.totalPossibleCollected
+	
+		if not ZO_CheckButton_IsChecked(includeMotifsCheckbox) then
+			currentlyCollected = currentlyCollected - library.motifsCurrentlyCollected
+			possibleCollected  = possibleCollected  - library.motifsPossibleCollected
+		end
+		library.totalCollectedLabel:SetText(zo_strformat(SI_LORE_LIBRARY_TOTAL_COLLECTED, currentlyCollected, possibleCollected))
+	end
 end
 
 local function IsPlayerOnCurrentMap()
@@ -1653,10 +1685,6 @@ local function IsPlayerOnCurrentMap()
 	end
 	return false
 	
-end
-
-local function BuildUnknownBooksQuest()
-	missingBooks = LoreBooks_GetMissingBooksData()
 end
 
 local function InitializePins()
@@ -2158,7 +2186,7 @@ local function OnLoad(eventCode, name)
         
         ToggleUseQuestBooks()
 		
-		--BuildUnknownBooksQuest()
+		--HookBookCount()
 		
 		LoreBooks_InitializeCollab()
 		
