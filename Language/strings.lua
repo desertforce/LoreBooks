@@ -162,7 +162,11 @@ local strings = {
 	LBOOKS_IMMERSIVE_CHOICE3			= GetString(SI_MAPFILTER8),
 	LBOOKS_IMMERSIVE_CHOICE4			= GetAchievementCategoryInfo(6),
 	LBOOKS_IMMERSIVE_CHOICE5			= "Zone Quests",
-	
+    
+    -- Quest Books
+    LBOOKS_USE_QUEST_BOOKS              = "Use Quest Books (Beta)",
+    LBOOKS_USE_QUEST_BOOKS_DESC         = "Will try to use quest tools when they are received to avoid missing inventory-only books. May also use things like maps because there's no distinction between books and other usable quest items.",
+
 }
 
 for stringId, stringValue in pairs(strings) do
