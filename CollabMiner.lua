@@ -48,7 +48,11 @@ local MINER_ESOVERSION = 439
 
 local NEW_BOOKS_ONLY = false
 local VERSION_MUST_MATCH = false
-local SHALIDOR_ONLY = false
+
+local ALL_MODE       = 0
+local SHALIDOR_MODE  = 1
+local EIDETIC_MODE   = 3
+local MODE = EIDETIC_MODE
 
 local lang = GetCVar("Language.2")
 
@@ -175,14 +179,13 @@ end
 ------------------------------
 local function EideticValidEntry(categoryIndex)
 	-- Check if book actually exists in Shalidor's Library or Eidetic Memory
-	if categoryIndex and (categoryIndex == 1 or (categoryIndex == 3 and not SHALIDOR_ONLY)) then
+	if categoryIndex and (categoryIndex == MODE or MODE == ALL_MODE) then
 		return true
 	end
 end
 
 local function BuildDataToShare(bookId)
-	
-	--d(bookId)
+
 	if bookId then
 		local dataToShare
 		
@@ -479,19 +482,27 @@ end
 
 local ignoreList = 
 {
-    [1138] = true, -- Begger's Prince, at Illumination Academy but is otherwise random
 }
 
 local forceRandom = 
 {
-    [4877] = true, -- [Words and Power]
-    [4896] = true, -- [Words of the Fallen]
-    [4494] = true,
-    [4879] = true,
-    [5108] = true,
 }
 
 local eideticMemory = LoreBooks_GetBookData()
+
+local BOOK_MISSING 		= 1
+local BOOK_QUESTONLY	= 2
+local BOOK_EXISTS 		= 3
+local function getBookStatus(bookId)
+	local bookData = eideticMemory[bookId]
+	if not bookData or not bookData.c then
+		return BOOK_MISSING
+	elseif bookData.q and not bookData.e or #bookData.e == 0 then
+		return BOOK_QUESTONLY
+	else
+		return BOOK_EXISTS
+	end
+end
 
 ExtractBookData = function(index)
 	
@@ -527,7 +538,9 @@ ExtractBookData = function(index)
 	--	return
     --end
     
-	if LoreBooks_GetNewEideticDataFromBookId(bookId).c and NEW_BOOKS_ONLY then
+	local status = getBookStatus(bookId)
+	
+	if NEW_BOOKS_ONLY and status ~= BOOK_MISSING then
 		JumpToNextBook(index)
 		return
 	end
@@ -569,7 +582,7 @@ ExtractBookData = function(index)
 		end
 		
 	end
-	
+
 	if EideticValidEntry(categoryIndex) then
 		
 		if not DATAMINED_DATA.build[bookId] then DATAMINED_DATA.build[bookId] = {} end
@@ -578,13 +591,28 @@ ExtractBookData = function(index)
 		
 			DATAMINED_DATA.build[bookId].c = true
 			DATAMINED_DATA.build[bookId].k = bookId
-			
-			creations = creations + 1
-			
-			if categoryIndex == 3 then
-				eideticCreations = eideticCreations + 1
-			end
+			DATAMINED_DATA.build[bookId].n = GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex)
 		end
+
+		local function CompareCoords(bookData, x, y, zoneId, inDungeon, useZone)
+			if bookData and bookData.e then
+				for entryIndex = #bookData.e, 1, -1 do
+					local zX, zY
+					zX = bookData.e[entryIndex].zx or bookData.e[entryIndex].x
+					zY = bookData.e[entryIndex].zy or bookData.e[entryIndex].y
+					if CoordsNearby(x, y, bookData.e[entryIndex].x, bookData.e[entryIndex].y) then
+						if bookData.e[entryIndex].z == zoneId then
+							--df("Comparing #%d: %.4f, %.4f / %.4f, %.4f / %.4f, %.4f", bookData.k, x, y, bookData.e[entryIndex].x, bookData.e[entryIndex].y, zX, zY)
+							return true
+						end
+					end
+				end
+			end
+			return false
+		end
+
+		-- Check if we have the book at its coordinates (now also checking with stuff from EideticData.lua)
+		local bookFound = CompareCoords(DATAMINED_DATA.build[bookId], x, y, zoneId, inDungeon) or CompareCoords(eideticMemory[bookId], x, y, zoneId, inDungeon, true)
 
 		if (DATAMINED_DATA.build[bookId].e and #DATAMINED_DATA.build[bookId].e >= 1) or DATAMINED_DATA.build[bookId].r then
 			
@@ -686,33 +714,25 @@ ExtractBookData = function(index)
 					DATAMINED_DATA.build[bookId].m = nil
 					DATAMINED_DATA.build[bookId].e = {}
 				end
-                
-                --if LoreBooks_GetNewEideticDataFromBookId(bookId).c then
-                --    DATAMINED_DATA.build[bookId].u = true
-                --    --DATAMINED_DATA.build[bookId].e =  LoreBooks_GetNewEideticDataFromBookId(bookId).e
-                --end
-				
-				local bookFound
-				
-				-- Check if we have the book at its coordinates
-				if DATAMINED_DATA.build[bookId].e then
-					for entryIndex = #DATAMINED_DATA.build[bookId].e, 1, -1 do
-						if DATAMINED_DATA.build[bookId].e[entryIndex].d == inDungeon and CoordsNearby(x, y, DATAMINED_DATA.build[bookId].e[entryIndex].x, DATAMINED_DATA.build[bookId].e[entryIndex].y) then
-							if DATAMINED_DATA.build[bookId].e[entryIndex].z == zoneId then
-								bookFound = true
-								break
-							elseif DATAMINED_DATA.build[bookId].e[entryIndex].z == GetZoneIdWithMapIndex(DATAMINED_DATA.build[bookId].e[entryIndex].m) then
-								d("DungeonCorrection: Book: " .. bookId .. " ; Entry: " .. entryIndex .. " NewZoneEntry: " .. zoneId .. " (" .. zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetZoneNameByIndex(GetZoneIndex(zoneId))) .. ") ; Was: " .. DATAMINED_DATA.build[bookId].e[entryIndex].z .. " (" .. zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetZoneNameByIndex(GetZoneIndex(DATAMINED_DATA.build[bookId].e[entryIndex].z)))..")")
-								table.remove(DATAMINED_DATA.build[bookId].e, entryIndex)
-							end
-						end
-					end
-				end
+
+				--if DATAMINED_DATA.build[bookId].e then
+				--	for entryIndex = #DATAMINED_DATA.build[bookId].e, 1, -1 do
+				--		if DATAMINED_DATA.build[bookId].e[entryIndex].d == inDungeon and CoordsNearby(x, y, DATAMINED_DATA.build[bookId].e[entryIndex].x, DATAMINED_DATA.build[bookId].e[entryIndex].y) then
+				--			if DATAMINED_DATA.build[bookId].e[entryIndex].z == zoneId then
+				--				bookFound = true
+				--				break
+				--			--elseif DATAMINED_DATA.build[bookId].e[entryIndex].z == GetZoneIdWithMapIndex(DATAMINED_DATA.build[bookId].e[entryIndex].m) then
+				--			--	d("DungeonCorrection: Book: " .. bookId .. " ; Entry: " .. entryIndex .. " NewZoneEntry: " .. zoneId .. " (" .. zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetZoneNameByIndex(GetZoneIndex(zoneId))) .. ") ; Was: " .. DATAMINED_DATA.build[bookId].e[entryIndex].z .. " (" .. zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetZoneNameByIndex(GetZoneIndex(DATAMINED_DATA.build[bookId].e[entryIndex].z)))..")")
+				--			--	table.remove(DATAMINED_DATA.build[bookId].e, entryIndex)
+				--			end
+				--		end
+				--	end
+				--end
 				
 				-- New pin
 				if not bookFound then
 				
-					d("NewStaticPos: " .. categoryIndex .."/" .. collectionIndex .."/" .. bookIndex .. " [".. GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex) .."]")
+					d("NewStaticPos: #" .. bookId .. "/" .. categoryIndex .."/" .. collectionIndex .."/" .. bookIndex .. " [".. GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex) .."]")
 					
 					table.insert(DATAMINED_DATA.build[bookId].e, {
 						r = isRandom,
@@ -738,34 +758,34 @@ ExtractBookData = function(index)
 		-- New random entry
 		elseif isRandom then
 		
-			d("NewRandom: " .. categoryIndex .."/" .. collectionIndex .."/" .. bookIndex .. " [".. GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex) .."]")
-		
-			DATAMINED_DATA.build[bookId].e = {}
+		--d("NewRandom: #" .. bookId .. "/" .. categoryIndex .."/" .. collectionIndex .."/" .. bookIndex .. " [".. GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex) .."]")
+		--
+		--DATAMINED_DATA.build[bookId].e = {}
+		--
+		--table.insert(DATAMINED_DATA.build[bookId].e, {
+		--	r = isRandom,
+		--	x = x,
+		--	y = y,
+		--	z = zoneId,
+		--	m = mapIndex,
+		--	d = inDungeon,
+		--	i = interactionType,
+		--	l = bookLost,
+		--})
+		--
+		--DATAMINED_DATA.build[bookId].r = true
+		--DATAMINED_DATA.build[bookId].m = {}
+		--DATAMINED_DATA.build[bookId].m[mapIndex] = 1
+		--
+		--if questLinked ~= "0" then
+		--	DATAMINED_DATA.build[bookId].q = questLinked
+		--end
+		--
+		--pinInserts = pinInserts + 1
 			
-			table.insert(DATAMINED_DATA.build[bookId].e, {
-				r = isRandom,
-				x = x,
-				y = y,
-				z = zoneId,
-				m = mapIndex,
-				d = inDungeon,
-				i = interactionType,
-				l = bookLost,
-			})
+		elseif not bookFound then
 			
-			DATAMINED_DATA.build[bookId].r = true
-			DATAMINED_DATA.build[bookId].m = {}
-			DATAMINED_DATA.build[bookId].m[mapIndex] = 1
-			
-			if questLinked ~= "0" then
-				DATAMINED_DATA.build[bookId].q = questLinked
-			end
-			
-			pinInserts = pinInserts + 1
-			
-		else
-			
-			d("NewStatic: " .. categoryIndex .."/" .. collectionIndex .."/" .. bookIndex .. " [".. GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex) .."]")
+			d("NewStatic: #" .. bookId .. "/" .. categoryIndex .."/" .. collectionIndex .."/" .. bookIndex .. " [".. GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex) .."]")
 			
 			-- New static entry
 			DATAMINED_DATA.build[bookId].e = {}
@@ -787,6 +807,15 @@ ExtractBookData = function(index)
 			
 			pinInserts = pinInserts + 1
 			
+		end
+		
+		if DATAMINED_DATA.build[bookId].e and #DATAMINED_DATA.build[bookId].e > 0 then
+			creations = creations + 1
+			if categoryIndex == 3 then
+				eideticCreations = eideticCreations + 1
+			end
+		else
+			DATAMINED_DATA.build[bookId] = nil
 		end
 		
 	end
@@ -831,12 +860,7 @@ local function CleanKnownErrors()
 	local questRelated = {
 	--	[3046] = select(3, GetQuestsDataByName("Taking the Undaunted Pledge")), -- [Tome of the Undaunted]
 	}
-    
-    --local forceRandom = {
-    --    [4879] = 32, -- [The Inexplicable Patron: Mephala]
-    --    [4896] = 32, -- [Words of the Fallen]
-    --}
-	
+
 	local bugged = {
 	--	[1733] = true, -- [A Plea for the Elder Scrolls]
 	}
@@ -1178,134 +1202,14 @@ local function DecodeCollab()
 
 end
 
-local function SortLibrary()
-	
-	df("Sorting %d books", #DATAMINED_DATA.build)
-	local function CompareData(data1, data2)
-		local result = false
-		for index, entryData in pairs(data1.e) do
-			local new = true
-			if data2.e then
-				for index2, entryData2 in pairs(data2.e) do
-					if entryData.m ~= entryData2.m then
-						--d("different map")
-					elseif entryData.i ~= entryData2.i then
-						--d("different index")
-					elseif entryData.z ~= entryData2.z then
-						--d("different zone")
-					elseif entryData.d and entryData2.d and entryData.d ~= entryData2.d then
-						--d("different dungeon")
-					elseif entryData.r and entryData2.r and entryData.r ~= entryData2.r then
-						--d("different random")
-					else
-						if entryData.zx and entryData2.zx then
-							if CoordsNearby(entryData.zx, entryData.zy, entryData2.zx, entryData2.zy) then
-								--d("nearby zone coords")
-								new = false
-							end
-						elseif CoordsNearby(entryData.x, entryData.y, entryData2.x, entryData2.y) then
-							--d("nearby coords")
-							new = false
-						end
-					end
-				end
-			end
-			result = result or new
-		end
-		return result
-	end
-	
-	local newBuild = {}
-	local shaliBuild = {}
-
-	DATAMINED_DATA.buildSorted = {}
-	DATAMINED_DATA.buildSorted["new"] = {}
-	DATAMINED_DATA.buildSorted["shalidor"] = {}
-	DATAMINED_DATA.buildSorted["shelves"] = {}
-	
-	local shali = DATAMINED_DATA.buildSorted["shalidor"]
-	local new = DATAMINED_DATA.buildSorted["new"]
-	local shelves = DATAMINED_DATA.buildSorted["shelves"]
-
-	for bookId, bookData in pairs(DATAMINED_DATA.build) do
-		local existingData = LoreBooks_GetNewEideticDataFromBookId(bookId)
-		local categoryIndex, collectionIndex, bookIndex = GetLoreBookIndicesFromBookId(bookId)
-		local bookName = GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex)
-		local isNew = false
-		if not existingData.c or not existingData.e then
-			isNew = true
-		end
-		local isUpdate = not isNew and CompareData(bookData, existingData)
-		if categoryIndex == 1 then
-			shali[bookId] = bookData
-			for _, e in pairs(bookData.e) do
-				if e.l then
-					d("LOST BOOK")
-				end
-				d(string.format("[\"%s\"]{ %.4f, %.4f, %d, %d }, -- %s", GetZoneNameById(e.z), e.zx, e.zy, collectionIndex, bookIndex, bookName))
-			end
-		elseif isNew then
-			new[bookId] = bookData
-		end
-	end
-
-	for k, v in pairs(DATAMINED_DATA.buildSorted) do
-		df("%s #%d", k, #v)
-	end
-	
-	--for bookId, bookData in pairs(LoreBooks_GetBookData()) do
-	--	local categoryIndex, collectionIndex, bookIndex = GetLoreBookIndicesFromBookId(bookId)
-	--	if categoryIndex == 1 then
-	--		shaliBuild[bookId] = bookData
-	--	else
-	--		newBuild[bookId] = bookData
-	--	end
-	--end
-
-	--DATAMINED_DATA.build = newBuild
-	DATAMINED_DATA.shaliBuild = shaliBuild
-
-end
-
 local function CompletedQuests()
 	if not DATAMINED_DATA then DATAMINED_DATA = {} end
     if not DATAMINED_DATA.quests then DATAMINED_DATA.quests = {} end
-    
-    --local en, de, fr = {}, {}, {}
-    --
-    --local processedQuests = {}
-    --
-    --for _, map in pairs(DATAMINED_DATA.quests2) do
-    --    d("Checking")
-    --    for questId, data in pairs(map) do
-    --        if not processedQuests[questId] then
-    --            processedQuests[questId] = true
-    --            en[questId] = data.n.en
-    --            de[questId] = data.n.de
-    --            fr[questId] = data.n.fr
-    --        end
-    --    end
-    --end
-    --DATAMINED_DATA.quests3 = {en=en, de=de, fr=fr}
-	--local lang = GetCVar("Language.2")
+
     local gameQuestData = LoreBooks_GetGameWholeQuestsData(lang)
     local questId = GetNextCompletedQuestId()
     while questId ~= nil do
-        if not gameQuestData[questId] then
-            --if not DATAMINED_DATA.quests[questId] then
-            --    DATAMINED_DATA.quests[questId] = {k=questId, n={}}
-            --end
-            --local questData = DATAMINED_DATA.quests[questId]
-            local questName, questType = GetCompletedQuestInfo(questId)
-			DATAMINED_DATA.quests[questId] = questName
-            --if not questData.n[lang] then
-            --    questData.n[lang] = questName
-            --end
-            
-            
-            --df("%d (%d) - %s", questId, questType, questName)
-        end
-    
+
         questId = GetNextCompletedQuestId(questId)
     end
 end
