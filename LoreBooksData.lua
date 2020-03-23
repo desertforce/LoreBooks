@@ -113,7 +113,7 @@ lorebooksData["alikr"] = {
 		{ 0.746, 0.456, 13, 3, 1 },		-- The Amulet of Kings
 		{ 0.766, 0.459, 13, 3, 1 },
 		{ 0.772, 0.440, 13, 3, 1 },
-		{ 0.7667, 0.4814, 13, 3, 1 },
+		{ 0.7667, 0.4814, 13, 3, 1, 1 },
 		{ 0.4369, 0.6918, 13, 4 },		-- The Cleansing of the Fane
 		{ 0.401, 0.689, 13, 4 },
 		{ 0.405, 0.689, 13, 4 },
@@ -200,6 +200,7 @@ lorebooksData["alikr"] = {
 		{ 0.412, 0.481, 13, 3 },		-- The Amulet of Kings
 		{ 0.637, 0.376, 13, 3 },
 		{ 0.586, 0.696, 13, 3 },
+		{ 0.6014, 0.5290, 13, 3 },
 	},
 	["smugglerkingtunnel_base"] = {
 		{ 0.433, 0.455, 5, 3 },		-- Redguards, History and Heroes, V. 3
@@ -492,6 +493,7 @@ lorebooksData["bangkorai"] = {
 		{ 0.337, 0.691, 14, 9 },
 		{ 0.3827, 0.6531, 14, 9 },
 		{ 0.4107, 0.6483, 14, 9 },
+		{ 0.3915, 0.3464, 14, 9, 1 },
 		{ 0.487, 0.659, 14, 10 },			-- Wabbajack
 		{ 0.521, 0.709, 14, 10 },
 		{ 0.523, 0.673, 14, 10 },
@@ -522,6 +524,7 @@ lorebooksData["bangkorai"] = {
 		{ 0.512, 0.839, 4, 1 },
 		{ 0.374, 0.697, 4, 1 },
 		{ 0.686, 0.858, 14, 1 },		-- The Homilies of Blessed Almalexia
+		{ 0.3836, 0.4300, 14, 9 },        -- Crow and Raven: Three Short Fables",
 	},
 	["onsisbreathmine_base"] = {
 		-- Literature
@@ -1524,6 +1527,7 @@ lorebooksData["grahtwood"] = {
 		{ 0.730, 0.484, 15, 1 },
 		{ 0.566, 0.655, 15, 2 },		-- Liminal Bridges
 		{ 0.440, 0.808, 15, 2 },
+		{ 0.6272, 0.8960, 15, 2 },
 	},
 	["haven_base"] = {
 		-- Grahtwood Lore
@@ -1807,6 +1811,7 @@ lorebooksData["malabaltor"] = {
 		{ 0.625, 0.827, 13, 6 },
 		{ 0.236, 0.543, 13, 7 },			-- The Order of the Ancestor Moth
 		{ 0.2633, 0.5527, 13, 7 },
+		{ 0.2691, 0.5002, 13, 7 },
 		{ 0.578, 0.734, 13, 8 },			-- Tamrielic Artifacts, Part One
 		{ 0.502, 0.736, 13, 8 },
 		{ 0.580, 0.793, 13, 8 },
@@ -2326,6 +2331,7 @@ lorebooksData["shadowfen"] = {
 		{ 0.691, 0.502, 17, 2 },		-- Darkest Darkness
 		{ 0.625, 0.529, 17, 2 },
 		{ 0.6996, 0.5453, 17, 2 },
+		{ 0.6105, 0.5058, 17, 2 },
 		{ 0.6662, 0.6514, 17, 3, 1 },		-- The Doors of Oblivion, Part 1
 		{ 0.543, 0.607, 17, 3 },
 		{ 0.615, 0.623, 17, 3 },
@@ -2527,6 +2533,7 @@ lorebooksData["stonefalls"] = {
 		{ 0.455, 0.755, 20, 5 },
 		{ 0.535, 0.535, 20, 5 },
 		{ 0.272, 0.396, 20, 5 },
+		{ 0.6525, 0.6123, 20, 5 },
 	},
 	["kragenmoor_base"] = {
 		-- Tamriel History
@@ -2691,7 +2698,7 @@ lorebooksData["stormhaven"] = {
 		{ 0.655, 0.510, 16, 5 },
 		-- Dungeon Lore
 		{ 0.562, 0.577, 11, 9, 146 },		-- Wayrest Sewers: A Short History
-		--{ 0.5574, 0.5243, 9, 9, 146 }, 		-- The All-Beneficent King Fahara'jad
+		{ 0.5574, 0.5243, 9, 9, 146, true }, 	-- The All-Beneficent King Fahara'jad (hidden)
 	},
 	["alcairecastle_base"] = {
 		-- Stormhaven Lore
@@ -2722,7 +2729,7 @@ lorebooksData["stormhaven"] = {
 		-- Myths of the Mundus
 		{ 0.361, 0.080, 16, 2 },		-- Before the Ages of Man: Merethic Era
 		-- Dungeon Lore
-		--{ 0.4843, 0.1141, 9, 9, 146 },	-- The All-Beneficent King Fahara'jad
+		{ 0.4843, 0.1141, 9, 9, 146, true },	-- The All-Beneficent King Fahara'jad (hidden)
 	},
 	["wayrestsewers_base"] = {
 		-- Dungeon Lore
@@ -2854,6 +2861,7 @@ lorebooksData["therift"] = {
 		{ 0.354, 0.586, 24, 10 },		-- Clans of the Reach: A Guide
 		{ 0.451, 0.434, 24, 10 },
 		{ 0.566, 0.540, 24, 10 },
+		{ 0.4452, 0.7681, 24, 10 },
 	},
 	["nimalten_base"] = {
 		-- Poetry and Song
@@ -2954,15 +2962,16 @@ lorebooksData["thievesguild"] = {
 lorebooksData["darkbrotherhood"] = {
 	["goldcoast_base"] = { -- Gold Coast (Dark Botherhood DLC)
 		{ 0.8587, 0.5059, 19, 6 },		-- Eulogy for Emperor Varen
-		{ 0.7735, 0.4055, 9, 8 },		-- Trials of St. Alessia
+		{ 0.7735, 0.4055, 9, 8, 1 },		-- Trials of St. Alessia
 		{ 0.8283, 0.6145, 18, 7 },		-- Proper-Life: Three Chants
 		{ 0.8692, 0.5962, 13, 4 },		-- The Cleansing of the Fane
-		{ 0.8222, 0.3747, 13, 2 },		-- The Adabal-a
+		{ 0.8222, 0.3747, 13, 2, 1 },		-- The Adabal-a
 		{ 0.6805, 0.625, 18, 5 },		-- Flesh to Cut from Bone
 		{ 0.5397, 0.3190, 16, 9 },		-- Sithis
 	},
 	["kvatchcity_base"] = {
-		{ 0.5650, 0.3459, 13, 2, 1 },	-- The Adabal-a
+		{ 0.5650, 0.3459, 13, 2 },	-- The Adabal-a
+		{ 0.2924, 0.5143, 9, 8 },		-- Trials of Saint Alessia",
 	},
 }
 

@@ -33,7 +33,7 @@ local Postmail = {}
 --Local constants -------------------------------------------------------------
 local ADDON_NAME = "LoreBooks"
 local ADDON_AUTHOR = "Ayantir, Garkin & Kyoma"
-local ADDON_VERSION = "18"
+local ADDON_VERSION = "18.1"
 local ADDON_WEBSITE = "http://www.esoui.com/downloads/info288-LoreBooks.html"
 local PINS_UNKNOWN = "LBooksMapPin_unknown"
 local PINS_COLLECTED = "LBooksMapPin_collected"
@@ -440,7 +440,8 @@ local function CreatePins()
 				for _, pinData in ipairs(lorebooks) do
 					local _, _, known = GetLoreBookInfo(1, pinData[3], pinData[4])
 					
-					if known and updatePins[PINS_COLLECTED] and LMP:IsEnabled(PINS_COLLECTED) then
+					if pinData[6] then
+					elseif known and updatePins[PINS_COLLECTED] and LMP:IsEnabled(PINS_COLLECTED) then
 						LMP:CreatePin(PINS_COLLECTED, pinData, pinData[1], pinData[2])
 					elseif not known then
 						if updatePins[PINS_UNKNOWN] and LMP:IsEnabled(PINS_UNKNOWN) then
@@ -631,25 +632,6 @@ local function CompassCallbackEidetic()
 	if not db.filters[PINS_COMPASS_EIDETIC] or GetMapType() > MAPTYPE_ZONE then return end
 	QueueCreatePins(PINS_COMPASS_EIDETIC)
 end
-
--- Slash commands -------------------------------------------------------------
-local function ShowMyPosition()
-	--if SetMapToPlayerLocation() == SET_MAP_RESULT_MAP_CHANGED then
-	--	CALLBACK_MANAGER:FireCallbacks("OnWorldMapChanged")
-	--end
-
-	local x, y = GetMapPlayerPosition("player")
-
-	local locX = ("%05.02f"):format(zo_round(x*10000)/100)
-	local locY = ("%05.02f"):format(zo_round(y*10000)/100)
-
-	MyPrint(zo_strformat("<<1>>: <<2>>\195\151<<3>> (<<4>>)", GetMapName(), locX, locY, LMP:GetZoneAndSubzone(true)))
-	
-	local globX, globY, mapI = GPS:LocalToGlobal(x, y)
-end
-
-SLASH_COMMANDS["/mypos2"] = ShowMyPosition 
-SLASH_COMMANDS["/myloc"] = ShowMyPosition
 
 local function ConfigureMail(data)
 
@@ -1136,8 +1118,12 @@ local function BuildEideticReportPerCollection(lastObject)
 						if bookData then
 							if bookData.r then
 								bookLocation = "[B] "
-							elseif bookData.e then	
-								bookLocation = string.format("[%s] ", zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetMapNameByIndex(bookData.e[1].m)))
+							elseif bookData.e then
+								if bookData.e[1] then
+									bookLocation = string.format("[%s] ", zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetMapNameByIndex(bookData.e[1].m)))
+								else
+									bookLocation = "[Q] "
+								end
 							end
 						end
 						
