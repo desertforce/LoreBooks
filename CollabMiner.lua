@@ -42,7 +42,7 @@ local NUM_MAPS = GetNumMaps()
 
 -- The mastermind that will be sniffing all the data
 local MASTER_MINER = "@Kyoma"
-local DEADLINE = 20200305
+local DEADLINE = 20200402
 local MINER_ESOVERSION = 534
 
 local NEW_BOOKS_ONLY = true
