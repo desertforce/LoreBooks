@@ -434,7 +434,7 @@ local function CreatePins()
 	if (updatePins[PINS_COLLECTED] and LMP:IsEnabled(PINS_COLLECTED)) or (shouldDisplay and updatePins[PINS_UNKNOWN] and LMP:IsEnabled(PINS_UNKNOWN)) or (shouldDisplay and updatePins[PINS_COMPASS] and db.filters[PINS_COMPASS]) then
 		local zoneIndex = GetUnitZoneIndex("player")
 		if IsValidZone(zoneIndex) then 
-			local zone, subzone = LMP:GetZoneAndSubZone()
+			local zone, subzone = LMP:GetZoneAndSubzone()
 			local lorebooks = LoreBooks_GetLocalData(zone, subzone)
 			if lorebooks then
 				for _, pinData in ipairs(lorebooks) do
@@ -2158,7 +2158,7 @@ local function ShowMyPosition()
 	local locX = ("%05.02f"):format(zo_round(x*10000)/100)
 	local locY = ("%05.02f"):format(zo_round(y*10000)/100)
 
-	MyPrint(zo_strformat("<<1>>: <<2>>\195\151<<3>> (<<4>>/<<5>>)", GetMapName(), locX, locY, LMP:GetZoneAndSubZone()))
+	MyPrint(zo_strformat("<<1>>: <<2>>\195\151<<3>> (<<4>>/<<5>>)", GetMapName(), locX, locY, LMP:GetZoneAndSubzone()))
 
 end
 SLASH_COMMANDS["/lbpos"] = ShowMyPosition
