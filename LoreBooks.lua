@@ -434,7 +434,7 @@ local function CreatePins()
 	if (updatePins[PINS_COLLECTED] and LMP:IsEnabled(PINS_COLLECTED)) or (shouldDisplay and updatePins[PINS_UNKNOWN] and LMP:IsEnabled(PINS_UNKNOWN)) or (shouldDisplay and updatePins[PINS_COMPASS] and db.filters[PINS_COMPASS]) then
 		local zoneIndex = GetUnitZoneIndex("player")
 		if IsValidZone(zoneIndex) then 
-			local zone, subzone = LoreBooks_GetZoneAndSubzone()
+			local zone, subzone = LMP:GetZoneAndSubZone()
 			local lorebooks = LoreBooks_GetLocalData(zone, subzone)
 			if lorebooks then
 				for _, pinData in ipairs(lorebooks) do
@@ -2145,6 +2145,23 @@ local function CreateSettingsMenu()
 	}
 	LAM:RegisterOptionControls(ADDON_NAME, optionsTable)
 end
+
+-- Slash commands -------------------------------------------------------------
+local function ShowMyPosition()
+
+	if SetMapToPlayerLocation() == SET_MAP_RESULT_MAP_CHANGED then
+		CALLBACK_MANAGER:FireCallbacks("OnWorldMapChanged")
+	end
+
+	local x, y = GetMapPlayerPosition("player")
+
+	local locX = ("%05.02f"):format(zo_round(x*10000)/100)
+	local locY = ("%05.02f"):format(zo_round(y*10000)/100)
+
+	MyPrint(zo_strformat("<<1>>: <<2>>\195\151<<3>> (<<4>>/<<5>>)", GetMapName(), locX, locY, LMP:GetZoneAndSubZone())
+
+end
+SLASH_COMMANDS["/lbpos"] = ShowMyPosition
 
 local function OnLoad(eventCode, name)
 

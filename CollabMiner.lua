@@ -172,9 +172,6 @@ local function Explode(divider, stringtoParse)
 	return values
 end
 
-local function GetMapBaseAndTile()
-	return LoreBooks_GetZoneAndSubzone()
-end
 ------------------------------
 --    Miner Callback & Co   --
 ------------------------------
@@ -220,7 +217,7 @@ local function BuildDataToShare(bookId)
 			return
 		end
 		
-		local mapBase, mapTile = GetMapBaseAndTile()
+		local mapBase, mapTile = LMP:GetZoneAndSubZone()
 
 		if not mapIndexGPS then
 			mapIndexGPS = 0
@@ -614,7 +611,7 @@ ExtractBookData = function(index)
 			end
 
 			local top, topTile = GetBaseAndTileForMapIndex(mapIndex)
-			local base, baseTile = GetMapBaseAndTile()
+			local base, baseTile = LMP:GetZoneAndSubZone()
 
 			local xLocal, yLocal, found
 
@@ -633,7 +630,7 @@ ExtractBookData = function(index)
 
 			if topTile ~= mapTile and mapTile ~= "0" then
 				if ProcessMapClick(xLocal, yLocal) == SET_MAP_RESULT_MAP_CHANGED then
-					local base2, baseTile2 = GetMapBaseAndTile()
+					local base2, baseTile2 = LMP:GetZoneAndSubZone()
 					if baseTile2 ~= baseTile then -- also check if its target map?
 						xLocal, yLocal = GPS:GlobalToLocal(x, y)
 						InsertIfUnique(base2, baseTile2, xLocal, yLocal, collectionIndex, bookIndex, bookName)
@@ -1151,7 +1148,7 @@ local function CleanCollab()
 		DATAMINED_DATA.mapTiles = {}
 		for mapIndex=1, GetNumMaps() do
 			ZO_WorldMap_SetMapByIndex(mapIndex)
-			DATAMINED_DATA.mapTiles[mapIndex] = {GetMapBaseAndTile()}
+			DATAMINED_DATA.mapTiles[mapIndex] = {LMP:GetZoneAndSubZone()}
 		end
 		if SetMapToPlayerLocation() == SET_MAP_RESULT_MAP_CHANGED then
 			CALLBACK_MANAGER:FireCallbacks("OnWorldMapChanged")
@@ -1425,7 +1422,7 @@ function LB_Test()
 	--	end
     --
 	--	local _, topTile = GetBaseAndTileForMapIndex(data.mapIndex)
-	--	local base, baseTile = GetMapBaseAndTile()
+	--	local base, baseTile = LMP:GetZoneAndSubZone()
     --
 	--	local xLocal, yLocal 
 	--	
@@ -1444,7 +1441,7 @@ function LB_Test()
     --
 	--	if topTile ~= data.mapTile and data.mapTile ~= "0" then
 	--		if ProcessMapClick(xLocal, yLocal) == SET_MAP_RESULT_MAP_CHANGED then
-	--			local _, baseTile2 = GetMapBaseAndTile()
+	--			local _, baseTile2 = LMP:GetZoneAndSubZone()
 	--			if baseTile2 ~= baseTile then -- also check if its target map?
 	--				xLocal, yLocal = GPS:GlobalToLocal(data.x, data.y)
 	--				df("[%s] = { %.4f, %.4f, %d, %d, 1 }, \t\t -- %s", baseTile2, xLocal, yLocal, collectionIndex, bookIndex, bookName)

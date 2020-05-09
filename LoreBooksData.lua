@@ -3568,10 +3568,6 @@ function LoreBooks_GetImmersiveModeCondition(mode, mapIndex)
 	end
 end
 
-function LoreBooks_GetZoneAndSubzone()
-	return select(3, GetMapTileTexture():lower():gsub("_+%d+\.dds", ""):find("maps/([%w%-]+)/([%w_%-]+)"))
-end
-
 function LoreBooks_GetLocalData(zone, subzone)
 	if type(zone) == "string" and type(subzone) == "string" and lorebooksData[zone] and lorebooksData[zone][subzone] then
 		return lorebooksData[zone][subzone]
