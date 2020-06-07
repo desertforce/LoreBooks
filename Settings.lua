@@ -3,7 +3,7 @@ local c = LoreBooks.Constants
 local LAM = LibAddonMenu2
 local LMP = LibMapPins
 
-local db 
+local db
 local defaults = {			--default settings for saved variables
 	compassMaxDistance = 0.04,
 	pinTexture = {
@@ -33,11 +33,11 @@ local defaults = {			--default settings for saved variables
 local lang = GetCVar("Language.2")
 
 function LoreBooks:GetSettings()
-    return db 
-end 
+    return db
+end
 
 function LoreBooks:CreateSettings()
-    
+
     db = ZO_SavedVars:NewCharacterNameSettings("LBooks_SavedVariables", 2, nil, defaults)
 
 	local panelData = {
@@ -66,7 +66,7 @@ function LoreBooks:CreateSettings()
 		[4] = GetString(LBOOKS_PIN_TEXTURE4),
     }
     local pinTextures = c.PIN_TEXTURES
-    
+
 	local CreateIcons, unknownIcon, collectedIcon, unknownIconEidetic, collectedIconEidetic
 	CreateIcons = function(panel)
 		if panel == LoreBooksPanel then
@@ -79,7 +79,7 @@ function LoreBooks:CreateSettings()
 			collectedIcon:SetTexture(pinTextures[db.pinTexture.type][1])
 			collectedIcon:SetDimensions(db.pinTexture.size, db.pinTexture.size)
 			collectedIcon:SetDesaturation((db.pinTexture.type == c.PIN_ICON_REAL) and 1 or 0)
-			
+
 			unknownIconEidetic = WINDOW_MANAGER:CreateControl(nil, panel.controlsToRefresh[2], CT_TEXTURE)
 			unknownIconEidetic:SetAnchor(RIGHT, panel.controlsToRefresh[2].combobox, LEFT, -10, 0)
 			unknownIconEidetic:SetTexture(pinTextures[db.pinTextureEidetic][2])
@@ -89,7 +89,7 @@ function LoreBooks:CreateSettings()
 			collectedIconEidetic:SetTexture(pinTextures[db.pinTextureEidetic][1])
 			collectedIconEidetic:SetDimensions(db.pinTexture.size, db.pinTexture.size)
 			collectedIconEidetic:SetDesaturation((db.pinTextureEidetic == c.PIN_ICON_REAL) and 1 or 0)
-			
+
 			CALLBACK_MANAGER:UnregisterCallback("LAM-PanelControlsCreated", CreateIcons)
 		end
 	end
@@ -107,7 +107,7 @@ function LoreBooks:CreateSettings()
         LMP:SetLayoutKey(pin, key, value)
         LMP:RefreshPins(pin)
     end
-	
+
 	local optionsTable = {
 		{
 			type = "dropdown",
@@ -140,7 +140,7 @@ function LoreBooks:CreateSettings()
 					db.pinTextureEidetic = value
 					unknownIconEidetic:SetTexture(pinTextures[value][2])
 					collectedIconEidetic:SetDesaturation(value == defaults.pinTextureEidetic and 1 or 0)
-					collectedIconEidetic:SetTexture(pinTextures[index][1])
+					collectedIconEidetic:SetTexture(pinTextures[value][1])
 					LMP:RefreshPins(c.PINS_EIDETIC)
 					LMP:RefreshPins(c.PINS_EIDETIC_COLLECTED)
 					COMPASS_PINS.pinLayouts[c.PINS_COMPASS_EIDETIC].texture = pinTextures[value][2]
@@ -290,7 +290,7 @@ function LoreBooks:CreateSettings()
 		{
 			type = "checkbox",
 			name = GetString(LBOOKS_UNLOCK_EIDETIC),
-			tooltip = function() 
+			tooltip = function()
 				if LoreBooks.CanEmulateLibrary() then
 					return GetString(LBOOKS_UNLOCK_EIDETIC_DESC)
 				else

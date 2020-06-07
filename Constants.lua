@@ -6,7 +6,7 @@ LoreBooks.Constants = c
 --Local constants -------------------------------------------------------------
 c.ADDON_NAME    = "LoreBooks"
 c.ADDON_AUTHOR  = "Ayantir, Garkin & Kyoma"
-c.ADDON_VERSION = "19"
+c.ADDON_VERSION = "19.2"
 c.ADDON_WEBSITE = "http://www.esoui.com/downloads/info288-LoreBooks.html"
 c.ADDON_PANEL   = "LoreBooksPanel"
 
@@ -46,7 +46,7 @@ c.IMMERSIVE_ZONEQUESTS  = 5
 c.SUPPORTED_API      = 100031
 c.EIDETIC_BOOKS      = 3504
 c.EIDETIC_THRESHOLD  = 225 -- If you crash at startup, you may lower this value.
-c.SUPPORTED_LANG     = 
+c.SUPPORTED_LANG     =
 {
 	["en"] = true,
 	["de"] = true,

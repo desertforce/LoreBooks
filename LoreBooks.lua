@@ -363,7 +363,7 @@ local function CreatePins()
 						if updatePins[c.PINS_UNKNOWN] and LMP:IsEnabled(c.PINS_UNKNOWN) then
 							LMP:CreatePin(c.PINS_UNKNOWN, pinData, pinData[1], pinData[2])
 						end
-						if updatePins[c.PINS_COMPASS] and db.filters[PINS_COMPASS] then
+						if updatePins[c.PINS_COMPASS] and db.filters[c.PINS_COMPASS] then
 							COMPASS_PINS.pinManager:CreatePin(c.PINS_COMPASS, pinData, pinData[1], pinData[2])
 						end
 					end
@@ -734,6 +734,8 @@ local function OnShowBook(_, bookTitle, body, medium, showTitle, bookId)
 end
 
 function LoreBooks.ToggleShareData()
+
+	if not LoreBooks.CanShareData() then return end
 
 	local PostmailData = {
 		subject = "CM_DATA", -- Subject of the mail
@@ -1541,7 +1543,7 @@ local canShare
 function LoreBooks.CanShareData()
 	if canShare == nil then
 		canShare = false
-		if GetAPIVersion() == c.SUPPORTED_API and c.SUPPORTED_LANG[lang] and GetWorldName() == "EU" then
+		if GetAPIVersion() == c.SUPPORTED_API and c.SUPPORTED_LANG[lang] and GetWorldName() == "EU Megaserver" then
 			canShare = true
 		end
 	end

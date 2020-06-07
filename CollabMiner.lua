@@ -25,6 +25,7 @@ http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
 ]]
 
 local LibGPS3 = LibGPS3
+local LMP = LibMapPins
 
 local pinInserts
 local creations
