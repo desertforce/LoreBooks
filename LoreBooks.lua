@@ -451,11 +451,7 @@ local function QueueCreatePins(pinType)
 	if not updating then
 		updating = true
 		if IsPlayerActivated() then
-			if LMP.AUI.IsMinimapEnabled() then
-				zo_callLater(CreatePins, 150) -- See SkyShards
-			else
-				CreatePins()
-			end
+            CreatePins()
 		else
 			EVENT_MANAGER:RegisterForEvent("LoreBooks_PinUpdate", EVENT_PLAYER_ACTIVATED,
 				function(event)
