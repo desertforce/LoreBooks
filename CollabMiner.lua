@@ -24,7 +24,7 @@ Please read full licence at :
 http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
 ]]
 
-local LibGPS3 = LibGPS3
+local GPS = LibGPS3
 local LMP = LibMapPins
 
 local pinInserts
@@ -215,7 +215,7 @@ local function BuildDataToShare(bookId)
 		local mapContentType = GetMapContentType()
 
 		local xLocal, yLocal = GetMapPlayerPosition("player")
-		local xGPS, yGPS, mapIndexGPS = LibGPS2:LocalToGlobal(xLocal, yLocal)
+		local xGPS, yGPS, mapIndexGPS = GPS:LocalToGlobal(xLocal, yLocal)
 
 		if mapIndexGPS == 1 and zoneId == 0 then
 			return
@@ -621,14 +621,14 @@ ExtractBookData = function(index)
 
 			-- try player location for areas that cannot be reached by clicking on the parent area
 			if baseTile == mapTile then
-				xLocal, yLocal = LibGPS2:GlobalToLocal(x, y)
+				xLocal, yLocal = GPS:GlobalToLocal(x, y)
 				InsertIfUnique(base, baseTile, xLocal, yLocal, collectionIndex, bookIndex, bookName)
 			end
 
 			-- Top map
 			if baseTile ~= topTile then
 				ZO_WorldMap_SetMapByIndex(mapIndex)
-				xLocal, yLocal = LibGPS2:GlobalToLocal(x, y)
+				xLocal, yLocal = GPS:GlobalToLocal(x, y)
 				InsertIfUnique(top, topTile, xLocal, yLocal, collectionIndex, bookIndex, bookName)
 			end
 
@@ -636,7 +636,7 @@ ExtractBookData = function(index)
 				if ProcessMapClick(xLocal, yLocal) == SET_MAP_RESULT_MAP_CHANGED then
 					local base2, baseTile2 = LMP:GetZoneAndSubzone()
 					if baseTile2 ~= baseTile then -- also check if its target map?
-						xLocal, yLocal = LibGPS2:GlobalToLocal(x, y)
+						xLocal, yLocal = GPS:GlobalToLocal(x, y)
 						InsertIfUnique(base2, baseTile2, xLocal, yLocal, collectionIndex, bookIndex, bookName)
 					elseif baseTile2 ~= mapTile then
 						table.insert(DATAMINED_DATA.shaliBuild, string.format("[%s,%s] = Failed to find location for %s", top, mapTile, bookName))
@@ -1018,7 +1018,7 @@ local function CalculateCoordsForMap(mapIndex)
 		if bookData.e and #bookData.e >= 1 then
 			for entryIndex, entryData in ipairs(bookData.e) do
 				if not entryData.zx and entryData.m == mapIndex then
-					local xLoc, yLoc = LibGPS2:GlobalToLocal(entryData.x, entryData.y)
+					local xLoc, yLoc = GPS:GlobalToLocal(entryData.x, entryData.y)
 					if xLoc ~= nil and yLoc ~= nil and xLoc > 0 and yLoc > 0 and xLoc < 1 and yLoc < 1 then
 						entryData.zx = xLoc
 						entryData.zy = yLoc

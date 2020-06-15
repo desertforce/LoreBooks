@@ -147,7 +147,7 @@ function LoreBooks:CreateSettings()
 					COMPASS_PINS:RefreshPins(c.PINS_COMPASS_EIDETIC)
 				end,
 			--disabled = function() return not (db.filters[c.PINS_EIDETIC] or db.filters[c.PINS_EIDETIC_COLLECTED]) end,
-			default = pinTexturesList[defaults.pinTextureEidetic],
+			default = defaults.pinTextureEidetic,
 		},
 		{
 			type = "slider",

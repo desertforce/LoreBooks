@@ -134,11 +134,18 @@ pinTooltipCreator.creator = function(pin)
 
 end
 
+local LQI = LibQuestInfo
+local LUESP = LibUespQuestData
+
 local function getQuestName(q)
 	if type(q) == "string" then
 		return q
+	elseif LQI and LQI.get_quest_name then
+		return LQI:get_quest_name(q)
+	elseif LUESP and LUESP.GetUespQuestName then
+		return LUESP:GetUespQuestName(q)
 	else
-		return LoreBooks_GetQuestName(q, lang)
+		return LoreBooks_GetQuestName(q, lang) --TODO: remove this completely
 	end
 end
 
@@ -451,7 +458,7 @@ local function QueueCreatePins(pinType)
 	if not updating then
 		updating = true
 		if IsPlayerActivated() then
-            CreatePins()
+			CreatePins()
 		else
 			EVENT_MANAGER:RegisterForEvent("LoreBooks_PinUpdate", EVENT_PLAYER_ACTIVATED,
 				function(event)
@@ -1328,7 +1335,7 @@ local function OnRowMouseUp(control, button)
 								mapAvailable = false
 							end
 							mapAvailable = false
-							zo_callLater(function() GPS:PanToMapPosition(resultData.locX, resultData.locY) end, 1000)
+							zo_callLater(function() ZO_WorldMap_GetPanAndZoom():PanToNormalizedPosition(resultData.locX, resultData.locY) end, 1000)
 						end
 
 					end)
@@ -1363,7 +1370,7 @@ local function OnRowMouseUp(control, button)
 								end
 								mapIsShowing = true
 								zo_callLater(function() mapIsShowing = false end, 500) -- Bit dirty but ZO_WorldMap_IsWorldMapShowing() isn't fast enought
-								zo_callLater(function() GPS:PanToMapPosition(data.zx, data.zy) end, 1000)
+								zo_callLater(function() ZO_WorldMap_GetPanAndZoom():PanToNormalizedPosition(data.zx, data.zy) end, 1000)
 							end
 
 						end)
