@@ -32,18 +32,6 @@ local Postmail = {}
 
 local c = LoreBooks.Constants
 
---Local constants -------------------------------------------------------------
-if GetDisplayName() == "@Kyoma" then
-	local t, _, n = 0, GetLoreCategoryInfo(3)
-	for i = 1, n do
-		local _, _, _, totalBooks, h = GetLoreCollectionInfo(3, i)
-		if not h then t = t + totalBooks end
-	end
-	if t ~= c.EIDETIC_BOOKS then
-		zo_callLater(function() d("OUTDATED EIDETIC BOOKS COUNT: " .. t) end, 2000)
-	end
-end
-
 
 --Local variables -------------------------------------------------------------
 local lang = GetCVar("Language.2")
@@ -88,11 +76,11 @@ local function GetPinTextureEidetic(self)
 end
 
 local function IsShaliPinGrayscale()
-	return db.pinTexture.type == c.PIN_ICON_REAL
+	return db.pinTexture.type == c.PIN_ICON_REAL and db.pinGrayscale
 end
 
 local function IsEideticPinGrayscale()
-	return db.pinTextureEidetic == c.PIN_ICON_REAL
+	return db.pinTextureEidetic == c.PIN_ICON_REAL and db.pinGrayscaleEidetic
 end
 
 --tooltip creator
@@ -134,16 +122,13 @@ pinTooltipCreator.creator = function(pin)
 
 end
 
-local LQI = LibQuestInfo
-local LUESP = LibUespQuestData
-
 local function getQuestName(q)
 	if type(q) == "string" then
 		return q
-	elseif LQI and LQI.get_quest_name then
-		return LQI:get_quest_name(q)
-	elseif LUESP and LUESP.GetUespQuestName then
-		return LUESP:GetUespQuestName(q)
+	elseif LibQuestData and LibQuestData.get_quest_name then
+		return LibQuestData:get_quest_name(q)
+	elseif LibUespQuestData and LibUespQuestData.GetUespQuestName then
+		return LibUespQuestData:GetUespQuestName(q)
 	else
 		return LoreBooks_GetQuestName(q, lang) --TODO: remove this completely
 	end
@@ -1538,6 +1523,7 @@ function BuildBookListPostHook()
 			control:SetHandler("OnMouseUp", OnRowMouseUp)
 			control:SetHandler("OnMouseEnter", function(control) OnMouseEnter(control, control.categoryIndex, control.collectionIndex, control.bookIndex) end)
 			control:SetHandler("OnMouseExit", function(control) OnMouseExit(control) end)
+			control:GetNamedChild("Text"):SetMouseEnabled(false)
 		end
 	end
 end

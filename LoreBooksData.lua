@@ -3131,6 +3131,27 @@ lorebooksData["southernelsweyr"] = {
 	},
 }
 
+-- For some reason ZOS decided to make these appear randomly in bookshelves too, making it a bit difficult to see which ones have a physical location and which don't
+lorebooksData["skyrim"] = {
+	["westernskryim_base"] = {
+		{ 0.1478, 0.5074, 22, 4, }, -- Orcs of Skyrim
+		{ 0.7057, 0.6172, 22, 5, }, -- The Crown of Freydis
+		{ 0.6037, 0.4249, 22, 1, }, -- The Brothers' War
+	},
+	["solitudecity_base"] = {
+		{ 0.7730, 0.7699, 22, 1,}, -- The Brothers' War
+	},
+	["blackreach_base"] = {
+		{ 0.3421, 0.8050, 24, 6, }, --  The Road to Sovngarde
+		{ 0.4544, 0.1576, 3, 3, }, -- Bloodfiends of Rivenspire
+	},
+	["morthalburialcave_base"] = {
+		{ 0.3762, 0.7236, 22, 5, }, -- The Crown of Freydis
+	},
+}
+--]]
+
+
 lorebooksData["guildmaps"] = {
 	-- Fighters guild maps
 	["abagarlas_base"] = {
@@ -3566,10 +3587,6 @@ function LoreBooks_GetImmersiveModeCondition(mode, mapIndex)
 	elseif mode == 5 then
 		return lorebooksZoneQuestIDs[mapIndex]
 	end
-end
-
-function LoreBooks_GetZoneAndSubzone()
-	return select(3, GetMapTileTexture():lower():gsub("_+%d+\.dds", ""):find("maps/([%w%-]+)/([%w_%-]+)"))
 end
 
 function LoreBooks_GetLocalData(zone, subzone)
