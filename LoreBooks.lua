@@ -49,8 +49,6 @@ local eideticModeAsked
 local reportShown
 local copyReport
 
-local THREESHOLD_EIDETIC = 225 -- If you crash at startup, you may lower this value.
-
 --prints message to chat
 local function MyPrint(...)
 	CHAT_SYSTEM:AddMessage(...)
@@ -1014,7 +1012,7 @@ local function BuildEideticReportPerCollection(lastObject)
 
 	eideticHeaderText:SetAnchor(TOPLEFT, LoreBooksReportContainerScrollChild, TOPLEFT, 4, lastObject)
 
-	if c.EIDETIC_BOOKS - eideticCurrentlyCollected <= c.THREESHOLD_EIDETIC then
+	if c.EIDETIC_BOOKS - eideticCurrentlyCollected <= c.THRESHOLD_EIDETIC then
 
 		eideticHeaderText:SetText(GetString(LBOOKS_RE_FEW_BOOKS_MISSING))
 		copyReport = copyReport .. "\n\n" .. GetString(LBOOKS_RE_FEW_BOOKS_MISSING)

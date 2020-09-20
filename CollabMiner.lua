@@ -46,8 +46,8 @@ local NUM_MAPS = GetNumMaps()
 
 -- The mastermind that will be sniffing all the data
 local MASTER_MINER = "@Kyoma"
-local DEADLINE = 20200621
-local MINER_ESOVERSION = 605
+local DEADLINE = 20200920
+local MINER_ESOVERSION = 616
 
 local NEW_BOOKS_ONLY = true
 local VERSION_MUST_MATCH = false
@@ -1464,7 +1464,7 @@ end
 
 function LoreBooks.IsMinerEnabled()
 	ESOVersion = GetESOVersionString():gsub("eso%.%a+%.(%d)%.(%d)%.(%d+)%.%d+", "%1%2%3")
-	if GetAPIVersion() == 100031 and (lang == "fr" or lang == "en" or lang == "de") then
+	if GetAPIVersion() == 100032 and (lang == "fr" or lang == "en" or lang == "de") then
 		if (GetDate() - DEADLINE) < 1 then
 			return true, BuildDataToShare
 		end
@@ -1474,3 +1474,11 @@ function LoreBooks.IsMinerEnabled()
 	end
 	return false
 end
+
+
+--[[
+
+	The Reach's Progress -> Crisis at Dragon Bridge
+
+5926 -> Of Ice and Death
+--]]
