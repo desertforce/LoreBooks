@@ -305,6 +305,7 @@ function LoreBooks:CreateSettings()
 				end,
 			default = immersiveChoices[defaults.immersiveMode],
 		},
+		--[[
 		{
 			type = "checkbox",
 			name = GetString(LBOOKS_UNLOCK_EIDETIC),
@@ -346,6 +347,7 @@ function LoreBooks:CreateSettings()
 			default = defaults.shareData,
 			disabled = GetWorldName() ~= "EU Megaserver" or not c.SUPPORTED_LANG[lang],
 		},
+		--]]
 	}
 	LAM:RegisterOptionControls(c.ADDON_PANEL, optionsTable)
 
