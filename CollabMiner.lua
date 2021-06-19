@@ -45,8 +45,8 @@ local NUM_MAPS = GetNumMaps()
 
 -- The mastermind that will be sniffing all the data
 local MASTER_MINER = "@Kyoma"
-local DEADLINE = 20210403
-local MINER_ESOVERSION = 616
+local DEADLINE = 20210426
+local MINER_ESOVERSION = 638
 
 local NEW_BOOKS_ONLY = true
 local VERSION_MUST_MATCH = false
@@ -279,7 +279,7 @@ local function BuildDataToShare(bookId)
 		--	return
 		--end
 
-		local mapIndexGPS = 0
+		local mapIndexGPS = GPS:GetCurrentMapMeasurement():GetMapIndex() or 0
 		local locX = zo_round(xGPS*100000) -- 5 decimals because of Cyrodiil map
 		local locY = zo_round(yGPS*100000)
 		
@@ -314,7 +314,7 @@ local function BuildDataToShare(bookId)
 		if lang == "de" then clang = 3 end
 		if lang == "ru" then clang = 4 end
 
-		local MINER_VERSION = 15
+		local MINER_VERSION = 16
 		dataToShare = dataToShare ..";" .. clang .. ";" .. UnsignedBase62(MINER_VERSION) ..";" .. UnsignedBase62(tonumber(ESOVersion))
 		
 		local categoryIndex, collectionIndex, bookIndex = GetLoreBookIndicesFromBookId(bookId)
@@ -391,35 +391,6 @@ local function BuildDataToShare(bookId)
 	end
 end
 
-
--- Book we know that they are book quest but not mined for now (mainly used to avoid  tons of pins everywhere).
-local function IsBookQuest(bookId)
-	
-	local data = LoreBooks_GetAdditionnalBookData(bookId)
-	if data and data.q then
-		return true
-	end
-	
-end
-
-local function GetQuestData(bookId)
-	
-	local data = LoreBooks_GetAdditionnalBookData(bookId)
-	if data and data.q then
-		return data.q
-	end
-	
-end
-
-local function GetQuestMapData(bookId)
-
-	local data = LoreBooks_GetAdditionnalBookData(bookId)
-	if data and data.m then
-		return data.m
-	end
-
-end
-
 local function CheckShalidorBook(bookId)
 
 	local dontCheck = {
@@ -437,6 +408,15 @@ local function CheckShalidorBook(bookId)
 
 end
 
+function SetCurrentMapId(mapId)
+	local result = SetMapToMapId(mapId)
+	if result == SET_MAP_RESULT_MAP_CHANGED then
+		CALLBACK_MANAGER:FireCallbacks("OnWorldMapChanged")
+		return true
+	end
+	return result ~= SET_MAP_RESULT_FAILED
+end
+
 local function ExtractBookData() end
 local function JumpToNextBook(index)
 
@@ -447,7 +427,7 @@ local function JumpToNextBook(index)
 		end
 		
 		if index % 100 == 0 then
-			zo_callLater(function() ExtractBookData(index + 1) end, 1) -- Mandatory or game will crash
+			zo_callLater(function() ExtractBookData(index + 1) end, 10) -- Mandatory or game will crash
 		else
 			ExtractBookData(index + 1)
 		end
@@ -496,25 +476,18 @@ local function GetMaxZoneId()
 	return (LibZone:GetMaxZoneId())
 end
 
-local function GetBaseAndTileForMapIndex(mapIndex)
-	if not DATAMINED_DATA.mapTiles[mapIndex] then
-		d("Invalid mapIndex: " .. mapIndex)
-		return "dummy", "dummy_sub"
-	end
-	return DATAMINED_DATA.mapTiles[mapIndex][1], DATAMINED_DATA.mapTiles[mapIndex][2]
-end 
-
+local notFound = false
 local rawShaliTemp = {}
 ExtractBookData = function(index)
-	
+
 	local key = ""
-	
+
 	local bookData = DATAMINED_DATA.decoded[index]
 	if not bookData then return end
 	
 	local coordsOK = false
 	local bookOK = false
-	
+
 	local x							= bookData.x / 100000
 	local y							= bookData.y / 100000
 	
@@ -526,8 +499,10 @@ ExtractBookData = function(index)
 	local langCode					= bookData.a
 	local interactionType			= bookData.i
 	local bookId					= bookData.k
-	local mapId = 0
-	
+
+	local result = SetCurrentMapId(mapId)
+	local mapIndex = GPS:GetCurrentMapMeasurement():GetMapIndex() or 0
+
 	local lang = ""
 	if langCode == 1 then
 		lang = "en" 
@@ -538,7 +513,6 @@ ExtractBookData = function(index)
 	elseif langCode == 4 then 
 		lang = "ru" 
 	end
-
 
 	local categoryIndex, collectionIndex, bookIndex = GetLoreBookIndicesFromBookId(bookId)
 	local bookName = GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex)
@@ -573,33 +547,20 @@ ExtractBookData = function(index)
 	--if mapIndex == GetCyrodiilMapIndex() and (zoneId == 584 or zoneId == 643 or zoneId == 678 or zoneId == 688) then -- IC/Sewers/ICP/WGT
 	--	mapIndex = GetImperialCityMapIndex()
 	--end
-	
-	if zoneId < 1 or zoneId > GetMaxZoneId() then --mapIndex < 1 or mapIndex > NUM_MAPS then
-	
-		--if mapIndex > 1 and mapIndex ~= 24 then
-		--	zoneId = GetZoneIdWithMapIndex(mapIndex)
-		--	inDungeon = true
-		--	bookLost = true
-		--elseif not InvalidPoint(x, y) then
-		--	
-		--	ZO_WorldMap_SetMapByIndex(1) -- Tamriel
-		--	local wouldProcess, resultingMapIndex = WouldProcessMapClick(x, y)
-		--	if wouldProcess then
-		--		mapIndex = resultingMapIndex
-		--		-- zoneId = GetZoneIdWithMapIndex(mapIndex)
-		--		inDungeon = true
-		--		bookLost = true
-		--	end
-		--else
-			d("Book Lost : [".. GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex) .."]")
-		--end
-		
+	if zoneId < 1 or zoneId > GetMaxZoneId() or mapIndex < 1 or mapIndex > NUM_MAPS then
+		d("Book Lost : [".. GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex) .."]")
+		df("MapId: %d, MapIndex: %d, ZoneId: %d", mapId, mapIndex, zoneId)
 	end
 
 	if categoryIndex == SHALIDOR_MODE then
 		if isRandom then
 			JumpToNextBook(index)
 			return
+		end
+		
+		if true then 
+			JumpToNextBook(index)
+			return 
 		end
 
 		local function InsertIfUnique(mapId, x, y, collectionIndex, bookIndex, bookName)
@@ -694,19 +655,11 @@ ExtractBookData = function(index)
 		-- Check if we have the book at its coordinates (now also checking with stuff from EideticData.lua)
 		local bookFound = CompareCoords(DATAMINED_DATA.build[bookId], x, y, zoneId, inDungeon) or CompareCoords(eideticMemory[bookId], x, y, zoneId, inDungeon, true)
 
-		local isQuest = false
+		--local isQuest = false
 		if questLinked ~= "0" then
-			local questTable = LibQuestData:get_questids_table(questLinked, lang)
-			if questTable then
-				df("Found quest table for: %s (%s) - %d", questLinked, lang, questTable[1])
-				questLinked = questTable[1]
-				isQuest = true
-			else
-				df("Unknown quest? %s - %s", questLinked, lang)
-				questLinked = 0
+			if not DATAMINED_DATA.build[bookId].q or lang == "en" then --only overwrite existing string if it's english
+				DATAMINED_DATA.build[bookId].q = questLinked
 			end
-		else
-			questLinked = 0
 		end
 		
 		if (DATAMINED_DATA.build[bookId].e and #DATAMINED_DATA.build[bookId].e >= 1) or DATAMINED_DATA.build[bookId].r then
@@ -714,9 +667,9 @@ ExtractBookData = function(index)
 			if interactionType == INTERACTION_NONE then
 				
 				-- book have quest data but reference don't have
-				if questLinked ~= 0 and (not DATAMINED_DATA.build[bookId].q or DATAMINED_DATA.build[bookId].q == 0) then
-					DATAMINED_DATA.build[bookId].q = questLinked
-				end
+				--if questLinked ~= 0 and (not DATAMINED_DATA.build[bookId].q or DATAMINED_DATA.build[bookId].q == 0) then
+				--	DATAMINED_DATA.build[bookId].q = questLinked
+				--end
 
 				-- If book was read from inventory (or with case addon breaking interaction) and we have a book read from an interaction, don't push it
 				for entryIndex, entryData in ipairs(DATAMINED_DATA.build[bookId].e) do
@@ -765,11 +718,11 @@ ExtractBookData = function(index)
 						-- New pin
 						if not bookFound then
 						
-							if questLinked ~= 0 then
-								DATAMINED_DATA.build[bookId].q = questLinked
-								--DATAMINED_DATA.build[bookId].m = mapIndex
-								--DATAMINED_DATA.build[bookId].qm = mapIndex
-							end
+							--if questLinked ~= 0 then
+							--	DATAMINED_DATA.build[bookId].q = questLinked
+							--	--DATAMINED_DATA.build[bookId].m = mapIndex
+							--	--DATAMINED_DATA.build[bookId].qm = mapIndex
+							--end
 							DATAMINED_DATA.build[bookId].m[mapIndex] = DATAMINED_DATA.build[bookId].m[mapIndex] + 1
 							table.insert(DATAMINED_DATA.build[bookId].e, {
 								r = isRandom,
@@ -777,6 +730,7 @@ ExtractBookData = function(index)
 								y = y,
 								z = zoneId,
 								m = mapIndex,
+								md = mapId,
 								d = inDungeon,
 								i = interactionType,
 								l = bookLost,
@@ -835,15 +789,16 @@ ExtractBookData = function(index)
 						y = y,
 						z = zoneId,
 						m = mapIndex,
+						md = mapId,
 						d = inDungeon,
 						i = interactionType,
 						l = bookLost,
 					})
-					
-					if questLinked ~= 0 then
-						DATAMINED_DATA.build[bookId].q = questLinked
-					end
-					
+
+					--if questLinked ~= "0" then
+					--	DATAMINED_DATA.build[bookId].q = questLinked
+					--end
+
 					pinInserts = pinInserts + 1
 				
 				end
@@ -884,14 +839,15 @@ ExtractBookData = function(index)
 				y = y,
 				z = zoneId,
 				m = mapIndex,
+				md = mapId,
 				d = inDungeon,
 				i = interactionType,
 				l = bookLost,
 			})
 			
-			if questLinked ~= 0 then
-				DATAMINED_DATA.build[bookId].q = questLinked
-			end
+			--if questLinked ~= 0 then
+			--	DATAMINED_DATA.build[bookId].q = questLinked
+			--end
 			
 			DATAMINED_DATA.build[bookId].r = true
 			DATAMINED_DATA.build[bookId].m = {}
@@ -912,14 +868,15 @@ ExtractBookData = function(index)
 				y = y,
 				z = zoneId,
 				m = mapIndex,
+				md = mapId,
 				d = inDungeon,
 				i = interactionType,
 				l = bookLost,
 			})
 			
-			if questLinked ~= 0 then
-				DATAMINED_DATA.build[bookId].q = questLinked
-			end
+			--if questLinked ~= 0 then
+			--	DATAMINED_DATA.build[bookId].q = questLinked
+			--end
 			
 			pinInserts = pinInserts + 1
 			
@@ -1010,6 +967,15 @@ end
 local function BuildBooks()
 	
 	d("LOREBOOKS PREHOOKING MUST BE DISABLED WHILE EXTRACTING")
+	
+	
+	-- we dont care about the quests that'll have multiple instances 
+	local uespQuestIds = {}
+	if LibUespQuestData and LibUespQuestData.questNames then
+		for key, value in pairs(LibUespQuestData.questNames) do
+			uespQuestIds[value] = key
+		end
+	end
 
     DATAMINED_DATA.additionalQuestData = {}
 	--if not LBooks_SavedVariables then -- or LBooks_SavedVariables.Default[GetDisplayName()][GetUnitName("player")].unlockEidetic == false then
@@ -1025,18 +991,31 @@ local function BuildBooks()
 				
 				if categoryIndex == 3 then
 					-- Add q flag to books we know they are book quests
-					if bookData.q and bookData.q ~= 0 then
-						if type(bookData.m) == "table" then
-							df("#%d - Fix bookData.m == table", bookId)
-							bookData.qm = bookData.m[1]
-							bookData.m = bookData.m[1]
-						elseif not bookData.m then
-							df("#%d - Fix bookData.m == nil", bookId)
-							bookData.m = bookData.e[1].m
-							bookData.qm = bookData.m
+					if type(bookData.q) == "string" and bookData.q ~= "0" then
+						df("Resolving quest name: %s", bookData.q)
+						local questId = uespQuestIds[bookData.q] or 0
+						if questId == 0 then
+							local questTable = LibQuestData:get_questids_table(bookData.q, "en") or LibQuestData:get_questids_table(bookData.q, "de") or LibQuestData:get_questids_table(bookData.q, "fr")
+							questId = questTable and questTable[1] or 0
+						end
+						
+						if questId > 0 then 
+							df("QuestId: %d", questId)
+							bookData.q = questId
+							if type(bookData.m) == "table" then
+								df("#%d - Fix bookData.m == table", bookId)
+								bookData.qm = bookData.m[1]
+								bookData.m = bookData.m[1]
+							elseif not bookData.m then
+								df("#%d - Fix bookData.m == nil", bookId)
+								bookData.m = bookData.e[1].m
+								bookData.qm = bookData.m
+							else
+								df("#%d - Else.... nil q", bookId)
+								bookData.q = nil
+							end
 						else
-							df("#%d - Else.... nil q", bookId)
-							bookData.q = nil
+							
 						end
 					else
 						--bookData.q = nil
@@ -1158,7 +1137,7 @@ local function DecodeData(data, onlyOne)
          
          if xGPS == false or yGPS == false then
 				d(entryData)
-         else --if esoVersion >= 335 and minerVersion == 15 then
+         elseif esoVersion >= 636 and minerVersion >= 15 then
 				
 				local data = {
 					x		= xGPS,					-- X
@@ -1174,7 +1153,11 @@ local function DecodeData(data, onlyOne)
 					e		= minerVersion,		-- LoreBooks Version
 					k		= bookId,				-- bookId
 				}
-				--d(data)
+				-- because I forgot to increment miner version properly....
+				--if esoVersion < 636 then
+				--	data.m = GetMapIdByZoneId(data.z)
+				--end
+
 				if onlyOne then
 					return data
 				else
@@ -1369,74 +1352,6 @@ end
 local function PrintBook(bookId)
     df("%s |H1:book:%s|h|h", bookId, bookId)
 end
-
---[[
-function LB_CleanEideticData()
-	
-	local keysToNil = { "xLoc", "yLoc", "i", "b", "c", "q", "qm" }
-	
-	local eideticData = {}
-	for bookId, bookData in pairs(LoreBooks_GetBookData()) do
-		bookData = ZO_DeepTableCopy(bookData)
-		if bookData.e then
-			for _, entry in ipairs(bookData.e) do
-				for _, key in ipairs(keysToNil) do
-					if entry[key] ~= nil then
-						entry[key] = nil
-					end
-				end
-			end
-		end
-		
-		if type(bookData.q) == "table" then
-			bookData.q = GetQuestsDataByName(bookData.q.en)
-		end
-		eideticData[bookId] = bookData
-	end
-	DATAMINED_DATA.eideticData = eideticData
-end
-
-function LB_MergeEideticData()
-	
-	local function AddEntryIfNew(existingData, entry)
-		local insert = true
-		if existingData.e then
-			for _, e in ipairs(existingData.e) do
-				if e.z == entry.z and e.m == entry.m and CoordsNearby(e.x, e.y, entry.x, entry.y) then
-					insert = false
-				end
-			end
-		end
-
-		if insert then
-			existingData.e = existingData.e or {}
-			table.insert(existingData.e, entry)
-		end
-	end
-	
-	local eideticData = LoreBooks_GetBookData()
-	for bookId, buildData in pairs(DATAMINED_DATA.build) do
-		local bookData = LoreBooks_GetNewEideticDataFromBookId(bookId)
-		for _, entry in ipairs(buildData.e or {}) do
-			AddEntryIfNew(bookData, entry)
-		end
-		
-		if buildData.r then
-			bookData.r = buildData.r
-		end
-		if buildData.q then
-			bookData.q = buildData.q
-		end
-		if buildData.qm then
-			bookData.qm = buildData.qm
-		end
-		bookData.c = true
-	end
-	
-	LB_CleanEideticData()
-end
---]]
-
 
 function LoreBooks_InitializeCollab()
 

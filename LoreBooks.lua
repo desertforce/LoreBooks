@@ -36,8 +36,6 @@ local c = LoreBooks.Constants
 --Local variables -------------------------------------------------------------
 local lang = GetCVar("Language.2")
 local updatePins = {}
-local totalCurrentlyCollected = 0
-local eideticCurrentlyCollected = 0
 local updating = false
 local mapIsShowing
 local missingBooks
@@ -123,12 +121,22 @@ end
 local function getQuestName(q)
 	if type(q) == "string" then
 		return q
-	elseif LibQuestData and LibQuestData.get_quest_name then
-		return LibQuestData:get_quest_name(q)
-	elseif LibUespQuestData and LibUespQuestData.GetUespQuestName then
-		return LibUespQuestData:GetUespQuestName(q)
 	else
-		return LoreBooks_GetQuestName(q, lang) --TODO: remove this completely
+		local questName = ""
+		if not questName or questName == "" then
+			--if LibUespQuestData and LibUespQuestData.GetUespQuestName then
+			--	questName = LibUespQuestData:GetUespQuestName(q)
+			--end
+			if LibUespQuestData and LibUespQuestData.questNames then
+				questName = LibUespQuestData.questNames[q]
+			end
+		end
+		if not questName or questName == "" then
+			if LibQuestData and LibQuestData.get_quest_name then
+				questName = LibQuestData:get_quest_name(q)
+			end
+		end
+		return questName
 	end
 end
 
@@ -376,8 +384,7 @@ local function CreatePins()
 			if zoneId == 643 then --IC Sewers
 				mapIndex = GetImperialCityMapIndex()
 			elseif mapContentType ~= MAP_CONTENT_DUNGEON then
-				local measurements = GPS:GetCurrentMapMeasurement()
-				--mapIndex = measurements:GetMapIndex()
+				mapIndex = GPS:GetCurrentMapMeasurement():GetMapIndex()
 			end
 		end
 		
@@ -677,23 +684,23 @@ end
 
 local function BuildLorebooksLoreLibrary()
 
-	for categoryIndex = 1, GetNumLoreCategories() do
-		local _, numCollections = GetLoreCategoryInfo(categoryIndex)
-		for collectionIndex = 1, numCollections do
-			local _, _, _, totalBooks, hidden = LoreBooks_GetNewLoreCollectionInfo(categoryIndex, collectionIndex)
-			if not hidden and totalBooks ~= nil then
-				for bookIndex = 1, totalBooks do
-					local _, _, known = GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex)
-					if known then
-						if categoryIndex == 3 then
-							eideticCurrentlyCollected = eideticCurrentlyCollected + 1
-						end
-						totalCurrentlyCollected = totalCurrentlyCollected + 1
-					end
-				end
-			end
-		end
-	end
+	--for categoryIndex = 1, GetNumLoreCategories() do
+	--	local _, numCollections = GetLoreCategoryInfo(categoryIndex)
+	--	for collectionIndex = 1, numCollections do
+	--		local _, _, _, totalBooks, hidden = LoreBooks_GetNewLoreCollectionInfo(categoryIndex, collectionIndex)
+	--		if not hidden and totalBooks ~= nil then
+	--			for bookIndex = 1, totalBooks do
+	--				local _, _, known = GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex)
+	--				if known then
+	--					if categoryIndex == 3 then
+	--						eideticCurrentlyCollected = eideticCurrentlyCollected + 1
+	--					end
+	--					totalCurrentlyCollected = totalCurrentlyCollected + 1
+	--				end
+	--			end
+	--		end
+	--	end
+	--end
 	
 end
 
@@ -915,6 +922,10 @@ local function BuildShalidorReport()
 
 end
 
+local function AllowEideticReport()
+	return c.EIDETIC_BOOKS - (LORE_LIBRARY.eideticCurrentlyCollected or 0) <= c.EIDETIC_THRESHOLD
+end
+
 local function BuildEideticReportPerMap(lastObject)
 
 	local eideticHeaderText = GetControl(LoreBooksReport, "EideticHeaderText")
@@ -922,7 +933,7 @@ local function BuildEideticReportPerMap(lastObject)
 	
 	eideticHeaderText:SetAnchor(TOPLEFT, LoreBooksReportContainerScrollChild, TOPLEFT, 4, lastObject)
 	
-	if c.EIDETIC_BOOKS - eideticCurrentlyCollected <= c.EIDETIC_THRESHOLD then
+	if AllowEideticReport() then
 		
 		eideticHeaderText:SetText(GetString(LBOOKS_RE_FEW_BOOKS_MISSING))
 		copyReport = copyReport .. "\n\n" .. GetString(LBOOKS_RE_FEW_BOOKS_MISSING)
@@ -1010,7 +1021,7 @@ local function BuildEideticReportPerCollection(lastObject)
 	
 	eideticHeaderText:SetAnchor(TOPLEFT, LoreBooksReportContainerScrollChild, TOPLEFT, 4, lastObject)
 	
-	if c.EIDETIC_BOOKS - eideticCurrentlyCollected <= c.THRESHOLD_EIDETIC then
+	if AllowEideticReport() then
 		
 		eideticHeaderText:SetText(GetString(LBOOKS_RE_FEW_BOOKS_MISSING))
 		copyReport = copyReport .. "\n\n" .. GetString(LBOOKS_RE_FEW_BOOKS_MISSING)
@@ -1166,6 +1177,8 @@ local function BuildCategoryList(self)
 	self.motifsPossibleCollected = 0
 	self.shalidorCurrentlyCollected = 0
 	self.shalidorPossibleCollected = 0
+	self.eideticCurrentlyCollected = 0
+	self.eideticPossibleCollected = 0
 	
 	self.navigationTree:Reset()
 	
@@ -1199,6 +1212,9 @@ local function BuildCategoryList(self)
 				if categoryData.categoryIndex == 2 then -- CRAFTING
 					self.motifsCurrentlyCollected = self.motifsCurrentlyCollected + numKnownBooks
 					self.motifsPossibleCollected = self.motifsPossibleCollected + totalBooks
+				elseif categoryData.categoryIndex == 3 then -- 
+					self.eideticCurrentlyCollected = self.eideticCurrentlyCollected + numKnownBooks
+					self.eideticPossibleCollected = self.eideticPossibleCollected + totalBooks
 				end
 			end
 		end
@@ -1305,15 +1321,13 @@ local function OnRowMouseUp(control, button)
 						PingMap(MAP_PIN_TYPE_PLAYER_WAYPOINT, MAP_TYPE_LOCATION_CENTERED, resultData.locX, resultData.locY)
 						
 						ZO_WorldMap_SetMapByIndex(1) -- dummy call needed since we cannot access g_playerChoseCurrentMap 
-						SetMapToMapId(resultData.mapId)
+						SetCurrentMapId(resultData.mapId)
 						if(not ZO_WorldMap_IsWorldMapShowing()) then
 							if IsInGamepadPreferredMode() then
 								SCENE_MANAGER:Push("gamepad_worldMap")
 							else
 								MAIN_MENU_KEYBOARD:ShowCategory(MENU_CATEGORY_MAP)
-								mapAvailable = false
 							end
-							mapAvailable = false
 							zo_callLater(function() ZO_WorldMap_GetPanAndZoom():PanToNormalizedPosition(resultData.locX, resultData.locY) end, 1000)
 						end
 					end)
@@ -1347,7 +1361,6 @@ local function OnRowMouseUp(control, button)
 									MAIN_MENU_KEYBOARD:ShowCategory(MENU_CATEGORY_MAP)
 								end
 								mapIsShowing = true
-								zo_callLater(function() mapIsShowing = false end, 500) -- Bit dirty but ZO_WorldMap_IsWorldMapShowing() isn't fast enought
 								zo_callLater(function() ZO_WorldMap_GetPanAndZoom():PanToNormalizedPosition(data.zx, data.zy) end, 1000)
 							end
 							
@@ -1370,7 +1383,7 @@ local function OnMouseEnter(self, categoryIndex, collectionIndex, bookIndex)
 	local STD_ZONE = 0
 
 	-- No 1 for now.
-	if categoryIndex == 3 and not mapIsShowing then
+	if categoryIndex == 3 then
 
 		local bookData = LoreBooks_GetNewEideticData(categoryIndex, collectionIndex, bookIndex)
 
@@ -1655,15 +1668,9 @@ local function IsPlayerOnCurrentMap()
 end
 
 local function OnBookLearned(_, categoryIndex)
-	
-	totalCurrentlyCollected = totalCurrentlyCollected + 1
-	
+
 	if categoryIndex ~= 2 then
-		
-		if categoryIndex == 3 then
-			eideticCurrentlyCollected = eideticCurrentlyCollected + 1
-		end
-		
+
 		--Refresh map if needed and get player position
 		if SetMapToPlayerLocation() == SET_MAP_RESULT_MAP_CHANGED then
 			CALLBACK_MANAGER:FireCallbacks("OnWorldMapChanged")

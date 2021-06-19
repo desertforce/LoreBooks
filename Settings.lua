@@ -56,10 +56,10 @@ function LoreBooks:CreateSettings()
 	LAM:RegisterAddonPanel(c.ADDON_PANEL, panelData)
 
     local pinTexturesValues = {
-        c.PIN_ICON_REAL,
-        c.PIN_ICON_SET1,
-        c.PIN_ICON_SET2,
-        c.PIN_ICON_ESOHEAD,
+        [1] = c.PIN_ICON_REAL,
+        [2] = c.PIN_ICON_SET1,
+        [3] = c.PIN_ICON_SET2,
+        [4] = c.PIN_ICON_ESOHEAD,
     }
     local pinTexturesList = {
 		[1] = GetString(LBOOKS_PIN_TEXTURE1),
