@@ -1,10 +1,11 @@
 ## Title: |cEFEBBELoreBooks|r
 ## Description: Displays map pins for Shalidor's and Eidetic Libraries books
-## Version: 23
+## Version: 24
+## AddOnVersion: 24
 ## Author: Kyoma, Ayantir & Garkin
-## APIVersion: 100035
+## APIVersion: 101032 101033
 ## SavedVariables: LBooks_SavedVariables
-## DependsOn: LibAddonMenu-2.0>=30 LibMapPins-1.0>=10022 CustomCompassPins LibGPS>=30 LibCustomMenu>=692 LibLoreLibrary>=1
+## DependsOn: LibAddonMenu-2.0>=33 LibMapPins-1.0>=10034 CustomCompassPins>=32 LibGPS>=66 LibCustomMenu>=712 LibLoreLibrary>=1
 
 Language/strings.lua
 Language/$(language).lua
@@ -18,7 +19,7 @@ LoreBooks.lua
 LoreBooks.xml
 
 ; This Add-on is not created by, affiliated with or sponsored by ZeniMax
-; Media Inc. or its affiliates. The Elder Scrolls® and related logos are
+; Media Inc. or its affiliates. The Elder ScrollsÂ® and related logos are
 ; registered trademarks or trademarks of ZeniMax Media Inc. in the United
 ; States and/or other countries. All rights reserved.
 ;
