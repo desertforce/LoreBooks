@@ -20,11 +20,11 @@ Under the following terms:
     No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
 
 
-Please read full licence at :
+Please read full licence at : 
 http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
 --]]
 
-local lorebooksData = {}
+
 -- GetLoreBookInfo(categoryID, collectionID, bookID)
 -- categoryID is always 1, so storing the rest
 
@@ -36,8 +36,11 @@ local lorebooksData = {}
 -- 		3 = in public dungeon
 -- 		4 = under ground
 -- 		5+ = group instance zoneId
-lorebooksData["alikr"] = {
-	["alikr_base"] = {
+
+local lorebooksData = 
+{
+	-- alikr
+	[30] = { -- alikr_base
 		-- Alik'r Desert Lore
 		{ 0.162, 0.493, 5, 1 },		-- Redguards, History and Heroes, V. 1
 		{ 0.124, 0.516, 5, 1 },
@@ -169,7 +172,7 @@ lorebooksData["alikr"] = {
 		-- Dungeon Lore
 		{ 0.873, 0.463, 11, 2, 22 },		-- What is Volendrung?
 	},
-	["sentinel_base"] = {
+	[83] = { -- sentinel_base
 		-- Alik'r Desert Lore
 		{ 0.103, 0.459, 5, 6 },		-- Varieties of Faith, The Forebears
 		{ 0.387, 0.398, 5, 6 },
@@ -188,55 +191,54 @@ lorebooksData["alikr"] = {
 		{ 0.828, 0.542, 18, 3 },		-- The Cantatas of Vivec
 		{ 0.819, 0.747, 18, 6 },		-- Ode to the Tundrastriders
 	},
-	["bergama_base"] = {
+	[539] = { -- bergama_base
 		-- Alik'r Desert Lore
 		{ 0.259, 0.607, 5, 5 },		-- Varieties of Faith, Crown Redguards
 		{ 0.679, 0.558, 5, 5 },
 		{ 0.262, 0.434, 5, 5 },
 		{ 0.569, 0.351, 5, 5 },
 	},
-	["kozanset_base"] = {
+	[538] = { -- kozanset_base
 		-- Legends of Nirn
 		{ 0.412, 0.481, 13, 3 },		-- The Amulet of Kings
 		{ 0.637, 0.376, 13, 3 },
 		{ 0.586, 0.696, 13, 3 },
 		{ 0.6014, 0.5290, 13, 3 },
 	},
-	["smugglerkingtunnel_base"] = {
+	[773] = { -- smugglerkingtunnel_base
 		{ 0.433, 0.455, 5, 3 },		-- Redguards, History and Heroes, V. 3
 	},
-	["aldunz_base"] = {
+	[231] = { -- aldunz_base
 		-- Dwemer
-		{ 0.194, 0.743, 12, 11 },		-- Guylaine's Dwemer Architecture
+		{ 0.194, 0.743, 12, 11 },		-- Guylaine's Dwemer Architecture	
 	},
-	["santaki_base"] = {
+	[246] = { -- santaki_base
 		-- Dwemer
 		{ 0.710, 0.792, 12, 10 },		-- Ancient Scrolls of the Dwemer I-B
 	},
-	["yldzuun_base"] = {
+	[233] = { -- yldzuun_base
 		-- Dwemer
 		{ 0.627, 0.291, 12, 12 },		-- Ancient Scrolls of the Dwemer VIII
 	},
-	["sandblownmine_base"] = {
+	[230] = { -- sandblownmine_base
 		-- Legends of Nirn
 		{ 0.669, 0.446, 13, 9 },		-- Tamrielic Artifacts, Part Two
 	},
-	["coldrockdiggings_base"] = {
+	[224] = { -- coldrockdiggings_base
 		-- Poetry and Song
 		{ 0.808, 0.438, 18, 2 },		-- The Book of Dawn and Dusk
 	},
-	["divadschagrinmine_base"] = {
+	[226] = { -- divadschagrinmine_base
 		-- Legends of Nirn
 		{ 0.418, 0.698, 13, 8 },		-- Tamrielic Artifacts, Part One
 	},
-	["volenfell_base"] = {
+	[3] = { -- volenfell_base
 		-- Dungeon Lore
 		{ 0.141, 0.441, 11, 2, 22 },		-- What is Volendrung?
-	},
-}
+	},--}
 
-lorebooksData["auridon"] = {
-	["auridon_base"] = {
+-- auridon
+	[143] = { -- auridon_base
 		-- Auridon Lore
 		{ 0.3443, 0.1079, 25, 1 },		-- Crimes of the Daggerfall Covenant
 		{ 0.3359, 0.1450, 25, 1 },
@@ -369,13 +371,13 @@ lorebooksData["auridon"] = {
 		-- Dungeon Lore
 		{ 0.322, 0.113, 11, 7, 380 },		-- The Binding Stone
 	},
-	["firsthold_base"] = {
+	[540] = { -- firsthold_base
 		-- Auridon Lore
 		{ 0.487, 0.314, 25, 8 },		-- Kinlord Rilis and the Mages Guild
 		{ 0.648, 0.834, 25, 8 },
 		{ 0.734, 0.558, 25, 8 },
 	},
-	["skywatch_base"] = {
+	[545] = { -- skywatch_base
 		-- Biographies
 		{ 0.27, 0.051, 9, 2 },		-- Great Harbingers of the Companions
 		{ 0.27, 0.46, 9, 4 },		-- Jorunn the Skald-King
@@ -384,7 +386,7 @@ lorebooksData["auridon"] = {
 		{ 0.66, 0.73, 9, 4 },
 		{ 0.014, 0.388, 9, 5 },		-- Triumphs of a Monarch, Ch. 3
 	},
-	["vulkhelguard_base"] = {
+	[243] = { -- vulkhelguard_base
 		-- Tamriel History
 		{ 0.508, 0.387, 19, 1 },		-- Ayleid Inscriptions Translated
 		{ 0.830, 0.490, 19, 2 },		-- Frontier, Conquest
@@ -393,14 +395,13 @@ lorebooksData["auridon"] = {
 		{ 0.436, 0.455, 19, 2 },
 		{ 0.206, 0.437, 19, 3 },		-- History of the Fighters Guild Pt. 1
 	},
-	["thebanishedcells_base"] = {
+	[279] = { -- thebanishedcells_base
 		-- Dungeon Lore
 		{ 0.481, 0.838, 11, 7, 380 },		-- The Binding Stone
-	}
-}
+	},
 
-lorebooksData["bangkorai"] = {
-	["bangkorai_base"] = {
+	-- bangkorai
+	[20] = { -- bangkorai_base
 		-- Bangkorai Lore
 		{ 0.398, 0.301, 4, 1, 1 },		-- The Legend of Fallen Grotto
 		{ 0.414, 0.417, 4, 1, 1 },
@@ -517,7 +518,7 @@ lorebooksData["bangkorai"] = {
 		-- Dungeon Lore
 		{ 0.372, 0.277, 11, 13, 38 },		-- Civility and Etiquette V. 5: Undead
 	},
-	["evermore_base"] = {
+	[84] = { -- evermore_base
 		-- Bangkorai Lore
 		{ 0.423, 0.165, 4, 1 },		-- The Legend of Fallen Grotto
 		{ 0.354, 0.551, 4, 1 },
@@ -526,24 +527,23 @@ lorebooksData["bangkorai"] = {
 		{ 0.686, 0.858, 14, 1 },		-- The Homilies of Blessed Almalexia
 		{ 0.3836, 0.4300, 14, 9 },        -- Crow and Raven: Three Short Fables",
 	},
-	["onsisbreathmine_base"] = {
+	[431] = { -- onsisbreathmine_base
 		-- Literature
 		{ 0.207, 0.640, 14, 6 },		-- Myths of Sheogorath, Volume 2
 	},
-	["hallinsstand_base"] = {
+	[360] = { -- hallinsstand_base
 		-- Literature
 		{ 0.540, 0.376, 14, 4 },		-- The Lusty Argonian Maid, Volume 2
 		{ 0.477, 0.259, 14, 4 },
 		{ 0.292, 0.574, 14, 4 },
 	},
-	["blackhearthavenarea1_base"] = {
+	[347] = { -- blackhearthavenarea1_base
 		-- Dungeon Lore
 		{ 0.708, 0.486, 11, 13, 38 },		-- Civility and Etiquette V. 5: Undead
 	},
-}
 
-lorebooksData["coldharbor"] = {
-	["coldharbour_base"] = {
+	-- coldharbor
+	[255] = { -- coldharbour_base
 		{ 0.285, 0.598, 29, 1 },		-- Exegesis of Merid-Nunda
 		{ 0.378, 0.639, 29, 1 },
 		{ 0.3259, 0.5192, 29, 1 },
@@ -587,26 +587,25 @@ lorebooksData["coldharbor"] = {
 		-- Dungeon Lore
 		{ 0.579, 0.484, 11, 16, 11 },		-- To All Who Pass Through
 	},
-	["hollowcity_base"] = {
+	[422] = { -- hollowcity_base
 		{ 0.646, 0.569, 29, 4 },		-- I was Summoned by a Mortal
 		{ 0.301, 0.611, 29, 4 },
 		{ 0.839, 0.289, 29, 4 },
 	},
-	["vaultsofmadness1_base"] = {
+	[454] = { -- vaultsofmadness1_base
 		-- Dungeon Lore
 		{ 0.16, 0.85, 11, 16, 11 },		-- To All Who Pass Through
 	},
-}
 
-lorebooksData["cyrodiil"] = {
-	["ava_whole"] = {
+	-- cyrodiil
+	[16] = { -- ava_whole
 		-- Daedric Princes
 		{ 0.526, 0.577, 8, 1 },			-- Aedra and Daedra
 		{ 0.734, 0.483, 8, 3 },			-- The Dreamstride
 		{ 0.271, 0.228, 8, 4 },			-- The House of Troubles
 		{ 0.721, 0.695, 8, 5, 2 },		-- Invocation of Azura
 		{ 0.128, 0.385, 8, 6 },			-- Modern Heretics
-		{ 0.267, 0.228, 8, 9 },			-- Fragmentae Abyssum Hermaeus Morus
+		{ 0.267, 0.228, 8, 9 },			-- Fragmentae Abyssum Hermaeus Morus	
 		{ 0.339, 0.637, 8, 10 },		-- The Spawn of Molag Bal
 		{ 0.768, 0.5393, 8, 7 },		-- Opusculus Lamae Bal ta Mezzamortie
 		{ 0.6783, 0.5081, 8, 8 },		-- The Totems of Hircine
@@ -616,7 +615,7 @@ lorebooksData["cyrodiil"] = {
 		{ 0.422, 0.147, 9, 4, 2 },		-- Jorunn the Skald-King
 		{ 0.220, 0.244, 9, 5 },			-- Triumphs of a Monarch, Ch. 3
 		{ 0.624, 0.582, 9, 7 },			-- Triumphs of a Monarch, Ch. 10
-		{ 0.275, 0.704, 9, 8 },			-- Trials of St. Alessia
+		{ 0.275, 0.704, 9, 8 },			-- Trials of St. Alessia		
 		{ 0.293, 0.170, 9, 9 },			-- The All-Beneficent King Fahara'jad
 		{ 0.583, 0.195, 9, 10, 2 },	-- Ayrenn: The Unforeseen Queen
 		-- Divines and Deities
@@ -637,13 +636,13 @@ lorebooksData["cyrodiil"] = {
 		{ 0.710, 0.490, 11, 5, 2 },	-- Civility and Etiquette: Wood Orcs I -- Kodiak
 		{ 0.608, 0.451, 11, 6 },		-- The Art of Kwama Egg Cooking
 		{ 0.355, 0.135, 11, 7, 2 },	-- The Binding Stone
-		{ 0.592, 0.388, 11, 8 },		-- Where Magical Paths Meet
+		{ 0.592, 0.388, 11, 8 },		-- Where Magical Paths Meet	
 		{ 0.779, 0.216, 11, 9 },		-- Wayrest Sewers: A Short History
 		{ 0.714, 0.536, 11, 10 },		-- To Posterity
 		-- Dwemer
 		{ 0.3053, 0.2204, 12, 1 },		-- Ancient Scrolls of the Dwemer I-A
 		{ 0.3756, 0.1541, 12, 3 },		-- Ancient Scrolls of the Dwemer III
-		{ 0.241, 0.397, 12, 5 },		-- Ancient Scrolls of the Dwemer VI
+		{ 0.241, 0.397, 12, 5 },		-- Ancient Scrolls of the Dwemer VI	
 		{ 0.6042, 0.3084, 12, 6 },		-- Ancient Scrolls of the Dwemer X
 		{ 0.6627, 0.5644, 12, 7 },		-- Ancient Scrolls of the Dwemer XI
 		{ 0.316, 0.563, 12, 8, 2 },	-- Antecedents of Dwemer Law
@@ -657,18 +656,18 @@ lorebooksData["cyrodiil"] = {
 		{ 0.184, 0.459, 12, 16 },		-- Ancient Scrolls of the Dwemer IV
 		-- Legends of Nirn
 		{ 0.122, 0.272, 13, 1 },		-- An Accounting of the Elder Scrolls
-		{ 0.568, 0.841, 13, 1 },
-		{ 0.483, 0.611, 13, 1 },
-		{ 0.815, 0.180, 13, 1 },
+		{ 0.568, 0.841, 13, 1 },							
+		{ 0.483, 0.611, 13, 1 },							
+		{ 0.815, 0.180, 13, 1 },							
 		{ 0.629, 0.684, 13, 2 },		-- The Adabal-a
 		{ 0.702, 0.376, 13, 3 },		-- The Amulet of Kings
-		{ 0.222, 0.489, 13, 4 },		-- The Cleansing of the Fane
+		{ 0.222, 0.489, 13, 4 },		-- The Cleansing of the Fane	
 		{ 0.807, 0.279, 13, 5 },		-- The Exclusionary Mandates
 		{ 0.501, 0.761, 13, 6 },		-- The Last King of the Ayleids
 		{ 0.778, 0.204, 13, 7 },		-- The Order of the Ancestor Moth
-		{ 0.569, 0.835, 13, 7 },
-		{ 0.117, 0.271, 13, 7 },
-		{ 0.810, 0.180, 13, 7 },
+		{ 0.569, 0.835, 13, 7 },							
+		{ 0.117, 0.271, 13, 7 },							
+		{ 0.810, 0.180, 13, 7 },							
 		{ 0.361, 0.221, 13, 8, 2 },	-- Tamrielic Artifacts, Part One
 		{ 0.363, 0.698, 13, 9, 2 },	-- Tamrielic Artifacts, Part Two
 		{ 0.363, 0.415, 13, 10 },		-- Tamrielic Artifacts, Part Three
@@ -688,11 +687,11 @@ lorebooksData["cyrodiil"] = {
 		{ 0.901, 0.346, 15, 2 },		-- Liminal Bridges
 		{ 0.5366, 0.1454, 15, 3 },		-- Magic from the Sky
 		{ 0.1953, 0.3091, 15, 4 },		-- Manual of Spellcraft
-		{ 0.673, 0.596, 15, 5, 2 },	-- The Old Ways
+		{ 0.673, 0.596, 15, 5, 2 },	-- The Old Ways		
 		{ 0.455, 0.725, 15, 6, 2 },	-- On the Detachment of the Sheath
 		{ 0.670, 0.664, 15, 7 },		-- Reality and Other Falsehoods
 		{ 0.278, 0.711, 15, 8 },		-- Guild Memo on Soul Trapping
-		{ 0.720, 0.425, 15, 9 },		-- Wayshrines of Tamriel
+		{ 0.720, 0.425, 15, 9 },		-- Wayshrines of Tamriel		
 		{ 0.249, 0.550, 15, 10 },		-- Proposal: Schools of Magic
 		-- Myths of the Mundus
 		{ 0.2655, 0.6676, 16, 1 },		-- Before the Ages of Man: Dawn Era
@@ -702,14 +701,14 @@ lorebooksData["cyrodiil"] = {
 		{ 0.716, 0.669, 16, 6 },		-- The Firmament
 		{ 0.809, 0.297, 16, 7 },		-- The Pig Children
 		{ 0.587, 0.693, 16, 8 },		-- Ruminations on the Elder Scrolls
-		{ 0.289, 0.485, 16, 9, 2 },	-- Sithis
+		{ 0.289, 0.485, 16, 9, 2 },	-- Sithis			
 		{ 0.715, 0.533, 16, 10 },		-- The Consecrations of Arkay
 		-- Oblivion Lore
 		{ 0.1202, 0.3911, 17, 1 },		-- The Book of Daedra
 		{ 0.316, 0.247, 17, 2 },		-- Darkest Darkness
 		{ 0.661, 0.611, 17, 3 },		-- The Doors of Oblivion, Part 1
 		{ 0.807, 0.251, 17, 4, 2 },	-- The Doors of Oblivion, Part 2
-		{ 0.154, 0.241, 17, 5, 2 },	-- On Oblivion
+		{ 0.154, 0.241, 17, 5, 2 },	-- On Oblivion			
 		{ 0.375, 0.330, 17, 6 },		-- Spirit of the Daedra
 		{ 0.188, 0.263, 17, 7 },		-- Varieties of Daedra, Part 1
 		{ 0.613, 0.565, 17, 8 },		-- Varieties of Daedra, Part 2
@@ -718,10 +717,10 @@ lorebooksData["cyrodiil"] = {
 		-- Poetry and Song
 		{ 0.647, 0.776, 18, 1 },		-- The Battle of Glenumbria Moors
 		{ 0.167, 0.373, 18, 2 },		-- The Book of Dawn and Dusk
-		{ 0.709, 0.229, 18, 3 },		-- The Cantatas of Vivec
-		{ 0.305, 0.715, 18, 4 },		-- The Five Far Stars
+		{ 0.709, 0.229, 18, 3 },		-- The Cantatas of Vivec		
+		{ 0.305, 0.715, 18, 4 },		-- The Five Far Stars		
 		{ 0.503, 0.215, 18, 5, 2 },	-- Flesh to Cut from Bone
-		{ 0.508, 0.822, 18, 6 },		-- Ode to the Tundrastriders
+		{ 0.508, 0.822, 18, 6 },		-- Ode to the Tundrastriders	
 		{ 0.719, 0.390, 18, 7 },		-- Proper-Life: Three Chants
 		{ 0.177, 0.273, 18, 8 },		-- Song of the Askelde Men
 		{ 0.525, 0.288, 18, 9 },		-- The Warrior's Charge -- ZOS BUG book have 2 spots
@@ -731,76 +730,76 @@ lorebooksData["cyrodiil"] = {
 		{ 0.3152, 0.5869, 19, 1 },		-- Ayleid Inscriptions Translated
 		{ 0.537, 0.809, 19, 2 },		-- Frontier, Conquest
 		{ 0.765, 0.386, 19, 5 },		-- Origin of the Mages Guild
-		{ 0.389, 0.404, 19, 6 },		-- Eulogy for Emperor Varen
-		{ 0.837, 0.258, 19, 7 },		-- House Tharn of Nibenay
+		{ 0.389, 0.404, 19, 6 },		-- Eulogy for Emperor Varen	
+		{ 0.837, 0.258, 19, 7 },		-- House Tharn of Nibenay		
 		{ 0.685, 0.690, 19, 8 },		-- The Order of the Black Worm
-		{ 0.471, 0.208, 19, 9 },		-- Return to Orsinium
+		{ 0.471, 0.208, 19, 9 },		-- Return to Orsinium		
 		{ 0.306, 0.663, 19, 10 },		-- The Second Akaviri Invasion
 		{ 0.6393, 0.2971, 19, 4 },		-- History of the Fighter's Guilds Pt.2
 	},
-	["bloodmaynecave_base"] = {
+	[469] = { -- bloodmaynecave_base
 		-- Dungeon Lore
 		{ 0.451, 0.532, 11, 3 },		-- The Thief God's Treasures			-- bug #398,473
 	},
-	["breakneckcave_base"] = {
+	[285] = { -- breakneckcave_base
 		{ 0.537, 0.594, 16, 9 },		-- Sithis					, bug #798
 	},
-	["capstonecave_base"] = {
+	[470] = { -- capstonecave_base
 		{ 0.635, 0.218, 9, 4 },		-- Jorunn the Skald-King
 	},
-	["crackedwoodcave_base"] = {
+	[474] = { -- crackedwoodcave_base
 		{ 0.345, 0.257, 15, 5 },		-- The Old Ways
 	},
-	["echocave_base"] = {
-		{ 0.664, 0.655, 11, 7 },		-- The Binding Stone
+	[473] = { -- echocave_base
+		{ 0.664, 0.655, 11, 7 },		-- The Binding Stone		
 	},
-	["haynotecave_base"] = {
-		{ 0.30, 0.43, 12, 8 },		-- Antecedents of Dwemer Law
+	[286] = { -- haynotecave_base
+		{ 0.30, 0.43, 12, 8 },		-- Antecedents of Dwemer Law	
 	},
-	["kingscrest_base"] = {
+	[340] = { -- kingscrest_base
 		{ 0.687, 0.753, 17, 4 },		-- The Doors of Oblivion, Part 2
 	},
-	["lipsandtarn_base"] = {
+	[290] = { -- lipsandtarn_base
 		-- Oblivion Lore
 		{ 0.541, 0.394, 17, 5 },		-- On Oblivion
 	},
-	["muckvalleycavern_base"] = {
+	[287] = { -- muckvalleycavern_base
 		{ 0.226, 0.750, 11, 5 },		-- Civility and Etiquette: Wood Orcs I
 	},
-	["newtcave_base"] = {
-		{ 0.320, 0.465, 8, 5 },		-- Invocation of Azura
+	[468] = { -- newtcave_base
+		{ 0.320, 0.465, 8, 5 },		-- Invocation of Azura		
 	},
-	["nisincave_base"] = {
+	[467] = { -- nisincave_base
 		-- Legends of Nirn
 		{ 0.490, 0.425, 13, 9 },		-- Tamrielic Artifacts, Part Two
 	},
-	["potholecavern_base"] = {
+	[291] = { -- potholecavern_base
 		{ 0.615, 0.460, 15, 6 },		-- On the Detachment of the Sheath, bug #798
 	},
-	["quickwatercave_base"] = {
+	[471] = { -- quickwatercave_base
 		{ 0.473, 0.817, 10, 5, 2 },		-- Monomyth: "Shezarr's Song"
 	},
-	["redrubycave_base"] = {
+	[289] = { -- redrubycave_base
 		-- Biographies
-		{ 0.300, 0.360, 9, 10 },		-- Ayrenn: The Unforeseen Queen
+		{ 0.300, 0.360, 9, 10 },		-- Ayrenn: The Unforeseen Queen	
 	},
-	["serpenthollowcave_base"] = {
+	[466] = { -- serpenthollowcave_base
 		-- Oblivion Lore
 		{ 0.276, 0.572, 17, 9 },		-- The Slave Pits of Coldharbour,798 addon comment
 	},
-	["toadstoolhollowlower_base"] = {
+	[294] = { -- toadstoolhollowlower_base
 		-- Poetry and Song
 		{ 0.908, 0.368, 18, 5 },		-- Flesh to Cut from Bone
 	},
-	["underpallcave_base"] = {
+	[288] = { -- underpallcave_base
 		-- Legends of Nirn
 		{ 0.311, 0.181, 13, 8 },		-- Tamrielic Artifacts, Part One
 	},
-	["vahtacen_base"] = {
+	[299] = { -- vahtacen_base
 		-- Literature
 		{ 0.571, 0.642, 14, 5 },		-- Myths of Sheogorath, Volume 1
 	},
-	["imperialcity_base"] = {
+	[660] = { -- imperialcity_base
 		-- Legends of Nirn
 		{ 0.3669, 0.2425, 13, 1 },		-- An Accounting of the Elder Scrolls
 		{ 0.3106, 0.7851, 13, 3 },		-- The Amulet of Kings
@@ -809,7 +808,7 @@ lorebooksData["cyrodiil"] = {
 		-- Tamriel History
 		{ 0.7039, 0.5023, 19, 8 },		-- The Order of the Black Worm
 	},
-	["imperialsewer_daggerfall1"] = {
+	[900] = { -- imperialsewer_daggerfall1_base
 		-- Oblivion Lore
 		{ 0.5470, 0.2651, 17, 1 },		-- The Book of Daedra
 		-- Daedric Princes
@@ -817,7 +816,7 @@ lorebooksData["cyrodiil"] = {
 		-- Oblivion Lore
 		{ 0.0854, 0.6429, 17, 2 },		-- Darkest Darkness
 	},
-	["imperialsewer_daggerfall2"] = {
+	[901] = { -- imperialsewer_daggerfall2_base
 		-- Oblivion Lore
 		{ 0.5470, 0.2651, 17, 1 },		-- The Book of Daedra
 		-- Daedric Princes
@@ -825,7 +824,7 @@ lorebooksData["cyrodiil"] = {
 		-- Oblivion Lore
 		{ 0.0854, 0.6429, 17, 2 },		-- Darkest Darkness
 	},
-	["imperialsewer_daggerfall3"] = {
+	[902] = { -- imperialsewer_daggerfall3_base
 		-- Oblivion Lore
 		{ 0.5470, 0.2651, 17, 1 },		-- The Book of Daedra
 		-- Daedric Princes
@@ -833,7 +832,7 @@ lorebooksData["cyrodiil"] = {
 		-- Oblivion Lore
 		{ 0.0854, 0.6429, 17, 2 },		-- Darkest Darkness
 	},
-	["imperialsewers_ebon1"] = {
+	[890] = { -- imperialsewers_ebon1_base
 		-- Oblivion Lore
 		{ 0.5470, 0.2651, 17, 1 },		-- The Book of Daedra
 		-- Daedric Princes
@@ -841,7 +840,7 @@ lorebooksData["cyrodiil"] = {
 		-- Oblivion Lore
 		{ 0.0854, 0.6429, 17, 2 },		-- Darkest Darkness
 	},
-	["imperialsewers_ebon2"] = {
+	[891] = { -- imperialsewers_ebon2_base
 		-- Oblivion Lore
 		{ 0.5470, 0.2651, 17, 1 },		-- The Book of Daedra
 		-- Daedric Princes
@@ -849,7 +848,7 @@ lorebooksData["cyrodiil"] = {
 		-- Oblivion Lore
 		{ 0.0854, 0.6429, 17, 2 },		-- Darkest Darkness
 	},
-	["imperialsewer_ebonheart3"] = {
+	[892] = { -- imperialsewers_ebon2_base
 		-- Oblivion Lore
 		{ 0.5470, 0.2651, 17, 1 },		-- The Book of Daedra
 		-- Daedric Princes
@@ -857,7 +856,7 @@ lorebooksData["cyrodiil"] = {
 		-- Oblivion Lore
 		{ 0.0854, 0.6429, 17, 2 },		-- Darkest Darkness
 	},
-	["imperialsewers_aldmeri1"] = {
+	[897] = { -- imperialsewers_aldmeri1_base
 		-- Oblivion Lore
 		{ 0.5470, 0.2651, 17, 1 },		-- The Book of Daedra
 		-- Daedric Princes
@@ -865,7 +864,7 @@ lorebooksData["cyrodiil"] = {
 		-- Oblivion Lore
 		{ 0.0854, 0.6429, 17, 2 },		-- Darkest Darkness
 	},
-	["imperialsewers_aldmeri2"] = {
+	[898] = { -- imperialsewers_aldmeri2_base
 		-- Oblivion Lore
 		{ 0.5470, 0.2651, 17, 1 },		-- The Book of Daedra
 		-- Daedric Princes
@@ -873,7 +872,7 @@ lorebooksData["cyrodiil"] = {
 		-- Oblivion Lore
 		{ 0.0854, 0.6429, 17, 2 },		-- Darkest Darkness
 	},
-	["imperialsewers_aldmeri3"] = {
+	[899] = { -- imperialsewers_aldmeri3_base
 		-- Oblivion Lore
 		{ 0.5470, 0.2651, 17, 1 },		-- The Book of Daedra
 		-- Daedric Princes
@@ -881,7 +880,7 @@ lorebooksData["cyrodiil"] = {
 		-- Oblivion Lore
 		{ 0.0854, 0.6429, 17, 2 },		-- Darkest Darkness
 	},
-	["imperialsewershub_base"] = {
+	[657] = { -- imperialsewershub_base
 		-- Oblivion Lore
 		{ 0.5470, 0.2651, 17, 1 },		-- The Book of Daedra
 		-- Daedric Princes
@@ -889,11 +888,9 @@ lorebooksData["cyrodiil"] = {
 		-- Oblivion Lore
 		{ 0.0854, 0.6429, 17, 2 },		-- Darkest Darkness
 	},
-}
 
-lorebooksData["deshaan"] = {
-	-- Deshaan
-	["deshaan_base"] = {
+	-- deshaan
+	[13] = { -- deshaan_base
 		-- Deshaan Lore
 		{ 0.152, 0.447, 23, 1 },		-- The Living Gods
 		{ 0.121, 0.404, 23, 1 },
@@ -1022,7 +1019,7 @@ lorebooksData["deshaan"] = {
 		-- Dungeon Lore
 		{ 0.790, 0.585, 11, 6, 63 },		-- The Art of Kwama Egg Cooking
 	},
-	["mournhold_base"] = {
+	[205] = { -- mournhold_base
 		-- Daedric Princes
 		{ 0.204, 0.733, 8, 3 },		-- The Dreamstride
 		{ 0.422, 0.030, 8, 4 },		-- The House of Troubles
@@ -1035,31 +1032,30 @@ lorebooksData["deshaan"] = {
 		{ 0.743, 0.587, 15, 6 },		-- On the Detachment of the Sheath
 		{ 0.551, 0.589, 15, 6 },
 		{ 0.324, 0.605, 15, 6 },
-		{ 0.408, 0.392, 15, 6 },
+		{ 0.408, 0.392, 15, 6 },					
 		-- Myths of the Mundus
-		{ 0.853, 0.748, 16, 5 },		-- A Werewolf's Confession
-		{ 0.460, 0.860, 16, 5 },
+		{ 0.853, 0.748, 16, 5 },		-- A Werewolf's Confession	
+		{ 0.460, 0.860, 16, 5 },					
 	},
-	["narsis_base"] = {
+	[537] = { -- narsis_base
 		-- Deshaan Lore
 		{ 0.606, 0.703, 23, 4 },		-- Shad Astula Academy Handbook
 		{ 0.370, 0.680, 23, 4 },
-		{ 0.855, 0.269, 23, 10 },		-- Dark Ruins
+		{ 0.855, 0.269, 23, 10 },		-- Dark Ruins		
 		-- Myths of the Mundus
 		{ 0.132, 0.568, 16, 4 },		-- Noxiphilic Sanguivoria
 	},
-	["obsidiangorge_base"] = {
+	[547] = { -- obsidiangorge_base
 		-- Deshaan Lore
 		{ 0.1687, 0.2554, 23, 9 },		-- Sanctioned Murder
 	},
-	["darkshadecaverns_base"] = {
+	[118] = { -- darkshadecaverns_base
 		-- Dungeon Lore
 		{ 0.309, 0.222, 11, 6, 63 },		-- The Art of Kwama Egg Cooking
 	},
-}
 
-lorebooksData["eastmarch"] = {
-	["eastmarch_base"] = {
+	-- eastmarch
+	[61] = { -- eastmarch_base
 		-- Eastmarch Lore
 		{ 0.4976, 0.2865, 22, 1, 1 },		-- The Brothers' War
 		{ 0.428, 0.622, 22, 1 },
@@ -1099,15 +1095,15 @@ lorebooksData["eastmarch"] = {
 		{ 0.837, 0.552, 22, 9 },
 		{ 0.854, 0.490, 22, 9 },
 		{ 0.714, 0.678, 22, 10 },		-- Dreamwalkers
-		{ 0.738, 0.692, 22, 10 },
-		{ 0.684, 0.689, 22, 10 },
-		{ 0.754, 0.659, 22, 10 },
+		{ 0.738, 0.692, 22, 10 },	
+		{ 0.684, 0.689, 22, 10 },	
+		{ 0.754, 0.659, 22, 10 },	
 		-- Daedric Princes
 		{ 0.558, 0.414, 8, 7 },		-- Opusculus Lamae Bal ta Mezzamortie
 		{ 0.506, 0.415, 8, 7 },
 		{ 0.494, 0.464, 8, 7 },
 		{ 0.518, 0.431, 8, 7 },
-		{ 0.157, 0.559, 8, 8 },		-- The Totems of Hircine
+		{ 0.157, 0.559, 8, 8 },		-- The Totems of Hircine		
 		{ 0.164, 0.580, 8, 8 },
 		{ 0.143, 0.561, 8, 8 },
 		{ 0.1368, 0.5942, 8, 8 },
@@ -1129,7 +1125,7 @@ lorebooksData["eastmarch"] = {
 		{ 0.437, 0.407, 13, 1 },
 		{ 0.445, 0.355, 13, 1 },
 		{ 0.413, 0.378, 13, 1 },
-		{ 0.350, 0.360, 13, 2 },		-- The Adabal-a
+		{ 0.350, 0.360, 13, 2 },		-- The Adabal-a	
 		{ 0.384, 0.384, 13, 2 },
 		{ 0.365, 0.411, 13, 2 },
 		{ 0.3313, 0.3920, 13, 2 },
@@ -1191,7 +1187,7 @@ lorebooksData["eastmarch"] = {
 		-- Dungeon Lore
 		{ 0.737, 0.703, 11, 10, 449 },		-- To Posterity
 	},
-	["fortamol_base"] = {
+	[578] = { -- fortamol_base
 		-- Eastmarch Lore
 		{ 0.302, 0.441, 22, 1 },		-- The Brothers' War
 		-- Legends of Nirn
@@ -1199,7 +1195,7 @@ lorebooksData["eastmarch"] = {
 		{ 0.274, 0.473, 13, 10 },		-- Tamrielic Artifacts, Part Three
 		{ 0.252, 0.220, 13, 10 },
 	},
-	["windhelm_base"] = {
+	[160] = { -- windhelm_base
 		{ 0.5133, 0.4830, 22, 1 },		-- The Brothers' War
 		-- Dwemer
 		{ 0.2580, 0.2827, 12, 11 },	-- Guylaine's Dwemer Architecture
@@ -1207,14 +1203,13 @@ lorebooksData["eastmarch"] = {
 		{ 0.4748, 0.4821, 12, 11 },
 		{ 0.5945, 0.697, 13, 3 },		-- The Amulet of Kings
 	},
-	["direfrostkeep_base"] = {
+	[348] = { -- direfrostkeep_base
 		-- Dungeon Lore
 		{ 0.541, 0.653, 11, 10, 449 },		-- To Posterity
 	},
-}
 
-lorebooksData["glenumbra"] = {
-	["glenumbra_base"] = {
+	-- glenumbra
+	[1] = { -- glenumbra_base
 		-- Glenumbra Lore
 		{ 0.2823, 0.7946, 1, 1, 1 },	-- The Code of Mauloch
 		{ 0.3304, 0.8083, 1, 1, 1 },
@@ -1348,19 +1343,19 @@ lorebooksData["glenumbra"] = {
 		-- Dungeon Lore
 		{ 0.714, 0.336, 11, 8, 144 },	-- Where Magical Paths Meet
 	},
-	["aldcroft_base"] = {
+	[531] = { -- aldcroft_base
 		-- Biographies
 		{ 0.387, 0.648, 9, 2 },			-- Great Harbingers of the Companions
 		{ 0.381, 0.878, 9, 2 },
 	},
-	["crosswych_base"] = {
+	[541] = { -- crosswych_base
 		-- Dwemer
 		{ 0.554, 0.822, 12, 1 },		-- Ancient Scrolls of the Dwemer I-A
 		{ 0.568, 0.621, 12, 1 },
 		{ 0.397, 0.654, 12, 1 },
 		{ 0.683, 0.648, 12, 1 },
 	},
-	["daggerfall_base"] = {
+	[63] = { -- daggerfall_base
 		-- Glenumbra Lore
 		{ 0.749, 0.699, 1, 1 },		-- The Code of Mauloch
 		{ 0.517, 0.636, 1, 1 },
@@ -1372,22 +1367,21 @@ lorebooksData["glenumbra"] = {
 		{ 0.606, 0.325, 1, 2 },
 		{ 0.892, 0.254, 1, 3 },		-- True Heirs of the Empire
 	},
-	["desolationsend_base"] = {
+	[712] = { -- desolationsend_base
 		-- Biographies
 		{ 0.856, 0.376, 9, 8 },		-- Trials of St. Alessia
 	},
-	["spindleclutch_base"] = {
+	[174] = { -- spindleclutch_base
 		-- Dungeon Lore
 		{ 0.677, 0.475, 11, 8, 144 },		-- Where Magical Paths Meet
 	},
-	["strosmkai_base"] = {
+	[201] = { -- strosmkai_base
 		-- Dwemer
 		{ 0.403, 0.509, 12, 11 },		-- Guylaine's Dwemer Architecture
 	},
-}
 
-lorebooksData["grahtwood"] = {
-	["grahtwood_base"] = {
+	-- grahtwood
+	[9] = { -- grahtwood_base
 		-- Grahtwood Lore
 		{ 0.430, 0.749, 26, 1 },		-- Varieties of Faith: The Khajiit
 		{ 0.406, 0.758, 26, 1 },
@@ -1521,7 +1515,7 @@ lorebooksData["grahtwood"] = {
 		-- Dungeon Lore
 		{ 0.526, 0.484, 11, 5, 126 },		-- Civility and Etiquette: Wood Orcs I
 	},
-	["eldenrootgroundfloor_base"] = {
+	[445] = { -- eldenrootgroundfloor_base
 		-- Magic and Magica
 		{ 0.745, 0.733, 15, 1 },		-- Arcana Restored
 		{ 0.730, 0.484, 15, 1 },
@@ -1529,7 +1523,7 @@ lorebooksData["grahtwood"] = {
 		{ 0.440, 0.808, 15, 2 },
 		{ 0.6272, 0.8960, 15, 2 },
 	},
-	["haven_base"] = {
+	[512] = { -- haven_base
 		-- Grahtwood Lore
 		{ 0.398, 0.252, 26, 9 },		-- The Legend of Vastarie
 		{ 0.235, 0.205, 26, 9 },
@@ -1540,24 +1534,23 @@ lorebooksData["grahtwood"] = {
 		{ 0.453, 0.586, 26, 10 },
 		{ 0.514, 0.355, 26, 10 },
 	},
-	["redfurtradingpost_base"] = {
+	[536] = { -- redfurtradingpost_base
 		-- Myths of the Mundus
 		{ 0.778, 0.392, 16, 3 },		-- Ebony Blade History
 		{ 0.229, 0.439, 16, 3 },
 		{ 0.279, 0.419, 16, 3 },
 	},
-	["sacredleapgrotto_base"] = {
+	[749] = { -- sacredleapgrotto_base
 		-- Grahtwood Lore
 		{ 0.698, 0.528, 26, 7 },		-- Ayleid Survivals in Valenwood
 	},
-	["eldenhollow_base"] = {
+	[28] = { -- eldenhollow_base
 		-- Dungeon Lore
 		{ 0.786, 0.624, 11, 5, 126 },		-- Civility and Etiquette: Wood Orcs I
 	},
-}
 
-lorebooksData["greenshade"] = {
-	["greenshade_base"] = {
+	-- greenshade
+	[300] = { -- greenshade_base
 		-- Greenshade Lore
 		{ 0.459, 0.299, 27, 1 },		-- Words of Clan Mother Ahnissi, Pt. 1
 		{ 0.432, 0.345, 27, 1 },
@@ -1596,8 +1589,8 @@ lorebooksData["greenshade"] = {
 		{ 0.481, 0.497, 27, 9, 2 },
 		{ 0.5223, 0.4980, 27, 9 },
 		{ 0.569, 0.327, 27, 10 },		-- The Wood Elf Gourmet, Ch. 1
-		{ 0.605, 0.313, 27, 10 },
-		{ 0.535, 0.300, 27, 10 },
+		{ 0.605, 0.313, 27, 10 },	
+		{ 0.535, 0.300, 27, 10 },	
 		{ 0.589, 0.349, 27, 10 },
 		-- Daedric Princes
 		{ 0.317, 0.803, 8, 5 },		-- Invocation of Azura
@@ -1689,18 +1682,18 @@ lorebooksData["greenshade"] = {
 		-- Dungeon Lore
 		{ 0.658, 0.300, 11, 12, 176 },		-- Burning Vestige, Vol. I
 	},
-	["falinesticave_base"] = {
+	[568] = { -- falinesticave_base
 		-- Greenshade Lore
 		{ 0.398, 0.759, 27, 9 },		-- Gifts of the Nereids
 	},
-	["marbruk_base"] = {
+	[378] = { -- marbruk_base
 		-- Divines and Deities
 		{ 0.245, 0.368, 10, 7 },		-- Monomyth: The Heart of the World
 		{ 0.245, 0.607, 10, 7 },
 		{ 0.565, 0.660, 10, 7 },
 		{ 0.734, 0.355, 10, 7 },
 	},
-	["woodhearth_base"] = {
+	[529] = { -- woodhearth_base
 		-- Myths of the Mundus
 		{ 0.795, 0.336, 16, 7 },		-- The Pig Children		-- bug #212, #293, #302
 		{ 0.841, 0.498, 16, 7 },
@@ -1712,18 +1705,17 @@ lorebooksData["greenshade"] = {
 		-- Oblivion Lore
 		{ 0.692, 0.815, 17, 1 },
 	},
-	["shroudedhollowcenter_base"] = {
+	[592] = { -- shroudedhollowcenter_base
 		 -- Oblivion Lore
 		{ 0.6088, 0.8202, 17, 5 },	-- On Oblivion
 	},
-	["cityofashmain_base"] = {
+	[326] = { -- cityofashmain_base
 		-- Dungeon Lore
 		{ 0.275, 0.444, 11, 12, 176 },	-- Burning Vestige, Vol. I
 	},
-}
 
-lorebooksData["malabaltor"] = {
-	["malabaltor_base"] = {
+	-- malabaltor
+	[22] = { -- malabaltor_base
 		-- Malabal Tor Lore
 		{ 0.728, 0.494, 21, 1 },		-- The Voice of the People
 		{ 0.748, 0.411, 21, 1 },
@@ -1852,7 +1844,7 @@ lorebooksData["malabaltor"] = {
 		-- Dungeon Lore
 		{ 0.460, 0.330, 11, 14, 131 },		-- Tempest Island Briefing
 	},
-	["baandaritradingpost_base"] = {
+	[282] = { -- baandaritradingpost_base
 		-- Malabal Toe Lore
 		{ 0.300, 0.613, 21, 3 },			-- Green Lady, My Lady
 		-- Legends of Nirn
@@ -1861,15 +1853,15 @@ lorebooksData["malabaltor"] = {
 		-- Poetry and Song
 		{ 0.565, 0.470, 18, 5 },			-- Flesh to Cut from Bone
 	},
-	["hoarvorpit_base"] = {
+	[262] = { -- hoarvorpit_base
 		-- Malabal Tore Lore
 		{ 0.454, 0.434, 21, 8 },		-- A Nereid Stole My Husband
 	},
-	["deadmansdrop_base"] = {
+	[222] = { -- deadmansdrop_base
 		-- Malabal Toe Lore
 		{ 0.517, 0.399, 21, 6 },		-- Pirates of the Abecean
 	},
-	["vulkwasten_base"] = {
+	[534] = { -- vulkwasten_base
 		-- Malabal Tor Lore
 		{ 0.607, 0.587, 21, 5 },		-- The Humor of Wood Elves,495
 		{ 0.409, 0.669, 21, 5 },
@@ -1877,16 +1869,16 @@ lorebooksData["malabaltor"] = {
 		{ 0.437, 0.212, 13, 3 },		-- The Amulet of Kings
 		{ 0.694, 0.378, 13, 3 },
 	},
-	["ouze_base"] = {
+	[273] = { -- ouze_base
 		{ 0.274, 0.471, 21, 3 },		-- Green Lady, My Lady
 	},
-	["rootsofsilvenar_base"] = {
+	[267] = { -- rootsofsilvenar_base
 		-- Malabal Tor Lore
 		{ 0.260, 0.447, 21, 1 },		-- The Voice of the People
 		-- Legends of Nirn
 		{ 0.249, 0.644, 13, 10 },		-- Tamrielic Artifacts, Part Three
 	},
-	["velynharbor_base"] = {
+	[275] = { -- velynharbor_base
 		-- Malabal Tor Lore
 		{ 0.880, 0.603, 21, 2 },		-- The Woodsmer
 		{ 0.843, 0.309, 21, 2 },
@@ -1895,19 +1887,18 @@ lorebooksData["malabaltor"] = {
 		{ 0.637, 0.106, 18, 5 },
 		{ 0.373, 0.150, 18, 5 },
 	},
-	["blackvineruins_base"] = {
+	[199] = { -- blackvineruins_base
 		-- Legends of Nirn
 		{ 0.154, 0.484, 13, 2 },	-- The Adabal-a
 	},
-	["tempestisland_base"] = {
+	[292] = { -- tempestisland_base
 		-- Dungeon Lore
 		{ 0.445, 0.367, 11, 4, 131 },			-- War Weather
 		{ 0.365, 0.812, 11, 14, 131 },		-- Tempest Island Briefing
 	},
-}
 
-lorebooksData["reapersmarch"] = {
-	["reapersmarch_base"] = {
+	-- reapersmarch
+	[256] = { -- reapersmarch_base
 		-- Reaper's March Lore
 		{ 0.460, 0.107, 28, 1 },		-- The Moon Cats and their Dance
 		{ 0.562, 0.738, 28, 1 },
@@ -1947,8 +1938,8 @@ lorebooksData["reapersmarch"] = {
 		{ 0.472, 0.457, 28, 9 },
 		{ 0.590, 0.499, 28, 10 },		-- Cohort Briefing: Arenthia
 		{ 0.610, 0.543, 28, 10 },
-		{ 0.577, 0.605, 28, 10 },
-		{ 0.584, 0.548, 28, 10 },
+		{ 0.577, 0.605, 28, 10 },	
+		{ 0.584, 0.548, 28, 10 },	
 		-- Dwemer
 		{ 0.412, 0.247, 12, 13 },		-- Dwemer Inquiries Volume I
 		{ 0.407, 0.191, 12, 13 },
@@ -2003,7 +1994,7 @@ lorebooksData["reapersmarch"] = {
 		{ 0.331, 0.689, 14, 9 },
 		{ 0.343, 0.607, 14, 9 },
 		{ 0.316, 0.660, 14, 9 },
-		{ 0.426, 0.789, 14, 10 },		-- Wabbajack
+		{ 0.426, 0.789, 14, 10 },		-- Wabbajack	
 		{ 0.385, 0.734, 14, 10 },
 		{ 0.485, 0.771, 14, 10 },
 		{ 0.442, 0.725, 14, 10 },
@@ -2025,34 +2016,33 @@ lorebooksData["reapersmarch"] = {
 		-- Dungeon Lore
 		{ 0.206, 0.795, 11, 15, 31 },		-- Soul-Trapping I: An Introduction
 	},
-	["arenthia_base"] = {
+	[535] = { -- arenthia_base
 		-- Poetry and Song
 		{ 0.157, 0.700, 18, 8 },		-- Song of the Askelde Men
-		{ 0.459, 0.643, 18, 9 },		-- The Warrior's Charge
+		{ 0.459, 0.643, 18, 9 },		-- The Warrior's Charge	
 		{ 0.429, 0.782, 18, 9 },
 	},
-	["dune_base"] = {
+	[533] = { -- dune_base
 		-- Reaper's March Lore
 		{ 0.480, 0.104, 28, 3 },		-- Yours for the Taking!
 		{ 0.645, 0.229, 28, 4 },		-- A Looter's Paradise
 		{ 0.312, 0.554, 28, 4 },
 		{ 0.5748, 0.6286, 28, 4 },
-		{ 0.327, 0.228, 28, 6 },		-- Elven Eyes, Elven Spies
+		{ 0.327, 0.228, 28, 6 },		-- Elven Eyes, Elven Spies	
 		{ 0.126, 0.350, 28, 6 },
 	},
-	["rawlkha_base"] = {
+	[312] = { -- rawlkha_base
 		-- Literature
 		{ 0.551, 0.611, 14, 7 },		-- The Red Book of Riddles
 		{ 0.555, 0.323, 14, 7 },
 	},
-	["selenesweb_base"] = {
+	[334] = { -- selenesweb_base
 		-- Dungeon Lore
 		{ 0.706, 0.916, 11, 15, 31 },		-- Soul-Trapping I: An Introduction
 	},
-}
 
-lorebooksData["rivenspire"] = {
-	["rivenspire_base"] = {
+	-- rivenspire
+	[10] = { -- rivenspire_base
 		-- Rivenspire Lore
 		{ 0.184, 0.664, 3, 1 },		-- The Barrows of Westmark Moor
 		{ 0.183, 0.624, 3, 1 },
@@ -2135,7 +2125,7 @@ lorebooksData["rivenspire"] = {
 		{ 0.310, 0.516, 16, 6 },
 		{ 0.333, 0.492, 16, 6 },
 		{ 0.3583, 0.5384, 16, 6 },
-		{ 0.800, 0.303, 16, 7 },		-- The Pig Children
+		{ 0.800, 0.303, 16, 7 },		-- The Pig Children			
 		{ 0.748, 0.310, 16, 7 },
 		{ 0.754, 0.261, 16, 7, 1 },
 		{ 0.827, 0.262, 16, 7, 1 },
@@ -2152,7 +2142,7 @@ lorebooksData["rivenspire"] = {
 		{ 0.557, 0.553, 17, 1 },
 		{ 0.506, 0.510, 17, 1 },
 		{ 0.4922, 0.5194, 17, 1 },
-		{ 0.366, 0.426, 17, 2 },		-- Darkest Darkness
+		{ 0.366, 0.426, 17, 2 },		-- Darkest Darkness			
 		{ 0.3038, 0.363, 17, 2 },
 		{ 0.263, 0.651, 17, 3 },		-- The Doors of Oblivion, Part 1
 		{ 0.252, 0.642, 17, 3 },
@@ -2186,13 +2176,13 @@ lorebooksData["rivenspire"] = {
 		-- Dungeon Lore
 		{ 0.721, 0.736, 11, 3, 130 },		-- The Thief God's Treasures
 	},
-	["hoarfrost_base"] = {
+	[528] = { -- hoarfrost_base
 		-- Oblivion Lore
 		{ 0.386, 0.385, 17, 4 },		-- The Doors of Oblivion, Part 2
 		{ 0.400, 0.094, 17, 4 },
 		{ 0.776, 0.694, 17, 4 },
 	},
-	["shornhelm_base"] = {
+	[85] = { -- shornhelm_base
 		-- Divines and Deities
 		{ 0.681, 0.633, 10, 10 },		-- Vivec and Mephala
 		{ 0.339, 0.736, 10, 10 },
@@ -2201,9 +2191,9 @@ lorebooksData["rivenspire"] = {
 		{ 0.418, 0.271, 12, 7 },
 		{ 0.627, 0.309, 12, 7 },
 		-- Oblivion Lore
-		{ 0.979, 0.533, 17, 1 },		-- The Book of Daedra
+		{ 0.979, 0.533, 17, 1 },		-- The Book of Daedra		
 	},
-	["northpoint_base"] = {
+	[513] = { -- northpoint_base
 		-- Rivenspire Lore
 		{ 0.087, 0.604, 3, 7 },		-- House Tamrith: A Recent History
 		{ 0.072, 0.213, 3, 8 },		-- Shornhelm, Crown City of the North
@@ -2214,20 +2204,19 @@ lorebooksData["rivenspire"] = {
 		{ 0.597, 0.214, 3, 10 },		-- House Ravenwatch Proclamation
 		{ 0.213, 0.115, 3, 10 },
 		-- Myths of the Mundus
-		{ 0.243, 0.811, 16, 7 },		-- The Pig Children
+		{ 0.243, 0.811, 16, 7 },		-- The Pig Children			
 	},
-	["shroudedpass_base"] = {
+	[477] = { -- shroudedpass_base
 		-- Oblivion Lore
-		{ 0.183, 0.263, 17, 2 },		-- Darkest Darkness
+		{ 0.183, 0.263, 17, 2 },		-- Darkest Darkness			
 	},
-	["cryptofhearts_base"] = {
+	[151] = { -- cryptofhearts_base
 		{ 0.457, 0.240, 11, 3, 130 },		-- The Thief God's Treasures
 		{ 0.678, 0.181, 11, 3, 130 },
 	},
-}
 
-lorebooksData["shadowfen"] = {
-	["shadowfen_base"] = {
+	-- shadowfen
+	[26] = { -- shadowfen_base
 		-- Shadowfen Lore
 		{ 0.187, 0.748, 6, 1 },		-- Suril's Journal
 		{ 0.177, 0.805, 6, 1 },
@@ -2358,7 +2347,7 @@ lorebooksData["shadowfen"] = {
 		-- Dungeon Lore
 		{ 0.165, 0.584, 11, 11, 148 },		-- Arx Corinium - First Seed Report
 	},
-	["stormhold_base"] = {
+	[217] = { -- stormhold_base
 		-- Divines and Deities
 		{ 0.768, 0.490, 10, 10 },		-- Vivec and Mephala
 		{ 0.441, 0.407, 10, 10 },
@@ -2369,20 +2358,19 @@ lorebooksData["shadowfen"] = {
 		-- Myths of the Mundus
 		{ 0.860, 0.678, 16, 7 },		-- The Pig Children
 	},
-	["altencorimont_base"] = {
+	[544] = { -- altencorimont_base
 		-- Oblivion Lore
 		{ 0.405, 0.821, 17, 3 },		-- The Doors of Oblivion, Part 1
 		{ 0.570, 0.592, 17, 3 },
 		{ 0.153, 0.680, 17, 3 },
 	},
-	["arxcorinium_base"] = {
+	[141] = { -- arxcorinium_base
 		-- Dungeon Lore
 		{ 0.143, 0.315, 11, 11, 148 },		-- Arx Corinium - First Seed Report
 	},
-}
 
-lorebooksData["stonefalls"] = {
-	["stonefalls_base"] = {
+	-- stonefalls
+	[7] = { -- stonefalls_base
 		-- Stonefalls Lore
 		{ 0.755, 0.647, 20, 1 },		-- Ancestors and the Dunmer (Abridged)
 		{ 0.706, 0.622, 20, 1 },
@@ -2423,7 +2411,7 @@ lorebooksData["stonefalls"] = {
 		{ 0.146, 0.569, 20, 10 },		-- Guide to the Ebonheart Pact
 		{ 0.135, 0.605, 20, 10 },
 		{ 0.181, 0.583, 20, 10 },
-		{ 0.186, 0.593, 20, 10 },
+		{ 0.186, 0.593, 20, 10 },	
 		-- Daedric Princes
 		{ 0.859, 0.430, 8, 1 },		-- Aedra and Daedra
 		{ 0.808, 0.380, 8, 1 },
@@ -2512,7 +2500,7 @@ lorebooksData["stonefalls"] = {
 		{ 0.9199, 0.3228, 19, 5 },
 		{ 0.9014, 0.291, 19, 5 },
 	},
-	["davonswatch_base"] = {
+	[24] = { -- davonswatch_base
 		-- Biographies
 		{ 0.708, 0.665, 9, 4 },		-- Jorunn the Skald-King
 		{ 0.687, 0.962, 9, 4 },
@@ -2520,14 +2508,14 @@ lorebooksData["stonefalls"] = {
 		{ 0.117, 0.332, 9, 6 },		-- Triumphs of a Monarch, Ch. 6
 		-- Daedric Princes
 		{ 0.256, 0.679, 8, 1 },		-- Aedra and Daedra
-		{ 0.504, 0.931, 8, 1 },
+		{ 0.504, 0.931, 8, 1 },	
 		-- Tamriel History
 		{ 0.799, 0.395, 19, 5 },		-- Origin of the Mages Guild
 		{ 0.464, 0.409, 19, 5 },
 		{ 0.634, 0.592, 19, 5 },
 		{ 0.706, 0.237, 19, 5 },
 	},
-	["ebonheart_base"] = {
+	[511] = { -- ebonheart_base
 		-- Stonefalls Lore
 		{ 0.632, 0.579, 20, 5 },		-- Nords of Skyrim
 		{ 0.455, 0.755, 20, 5 },
@@ -2535,37 +2523,36 @@ lorebooksData["stonefalls"] = {
 		{ 0.272, 0.396, 20, 5 },
 		{ 0.6525, 0.6123, 20, 5 },
 	},
-	["kragenmoor_base"] = {
+	[510] = { -- kragenmoor_base
 		-- Tamriel History
 		{ 0.515, 0.367, 19, 4 },		-- History of the Fighters Guild Pt. 2
 		{ 0.597, 0.623, 19, 4 },
 		{ 0.702, 0.497, 19, 4 },
 		{ 0.257, 0.524, 19, 4 },
 	},
-	["hightidehollow_base"] = {
+	[97] = { -- hightidehollow_base
 		-- Biographies
 		{ 0.140, 0.328, 9, 3 },		-- The Illusion of Death
 	},
-	["innerseaarmature_base"] = {
+	[90] = { -- innerseaarmature_base
 		-- Dwemer
 		{ 0.539, 0.229, 12, 1 },		-- Ancient Scrolls of the Dwemer I-A
 	},
-	["mephalasnest_base"] = {
+	[114] = { -- mephalasnest_base
 		-- Daedric Princes
 		{ 0.564, 0.292, 8, 2 },		-- Boethiah's Proving
 	},
-	["softloamcavern_base"] = {
+	[110] = { -- softloamcavern_base
 		-- Divines and Deities
 		{ 0.428, 0.435, 10, 3 },		-- Monomyth: Dragon God & Missing God
 	},
-	["fungalgrotto_base"] = {
+	[77] = { -- fungalgrotto_base
 		-- Dungeon Lore
 		{ 0.331, 0.785, 11, 1, 111 },		-- With Regards to the Ebony Blade
 	},
-}
 
-lorebooksData["stormhaven"] = {
-	["stormhaven_base"] = {
+	-- stormhaven
+	[12] = { -- stormhaven_base
 		-- Stormhaven Lore
 		{ 0.245, 0.198, 2, 1 },		-- Once
 		{ 0.179, 0.232, 2, 1, 1 },
@@ -2700,19 +2687,19 @@ lorebooksData["stormhaven"] = {
 		{ 0.562, 0.577, 11, 9, 146 },		-- Wayrest Sewers: A Short History
 		{ 0.5574, 0.5243, 9, 9, 146, true }, 	-- The All-Beneficent King Fahara'jad (hidden)
 	},
-	["alcairecastle_base"] = {
+	[34] = { -- alcairecastle_base
 		-- Stormhaven Lore
 		{ 0.603, 0.351, 2, 1 },		-- Once
 		{ 0.863, 0.293, 2, 1 },
 		{ 0.770, 0.593, 2, 10 },		-- Wayrest, Jewel of the Bay
 		{ 0.496, 0.753, 2, 10 },
 	},
-	["koeglinvillage_base"] = {
+	[532] = { -- koeglinvillage_base
 		-- Stormhaven Lore
 		{ 0.245, 0.672, 2, 2 },		-- Founding of the Spirit Wardens
 		{ 0.525, 0.303, 2, 2 },		 -- addon comment, bug #941
 	},
-	["wayrest_base"] = {
+	[33] = { -- wayrest_base
 		-- Divines and Deities
 		{ 0.226, 0.410, 10, 4 },		-- Monomyth: Lorkhan and Satakal
 		{ 0.610, 0.298, 10, 4 },
@@ -2724,21 +2711,20 @@ lorebooksData["stormhaven"] = {
 		{ 0.0959, 0.5078, 10, 6 },
 		{ 0.3891, 0.6048, 10, 6 },
 		-- Magic and Magica
-		{ 0.215, 0.096, 15, 1 },		-- Arcana Restored
+		{ 0.215, 0.096, 15, 1 },		-- Arcana Restored		
 		{ 0.970, 0.454, 15, 6 },		-- On the Detachment of the Sheath
 		-- Myths of the Mundus
 		{ 0.361, 0.080, 16, 2 },		-- Before the Ages of Man: Merethic Era
 		-- Dungeon Lore
 		{ 0.4843, 0.1141, 9, 9, 146, true },	-- The All-Beneficent King Fahara'jad (hidden)
 	},
-	["wayrestsewers_base"] = {
+	[46] = { -- wayrestsewers_base
 		-- Dungeon Lore
 		{ 0.830, 0.100, 11, 9, 146 },		-- Wayrest Sewers: A Short History
 	},
-}
 
-lorebooksData["therift"] = {
-	["therift_base"] = {
+	-- therift
+	[125] = { -- therift_base
 		-- The Rift Lore
 		{ 0.497, 0.291, 24, 1 },		-- Songs of the Return, Volume 49
 		{ 0.482, 0.280, 24, 1 },
@@ -2850,79 +2836,77 @@ lorebooksData["therift"] = {
 		-- Dungeon Lore
 		{ 0.891, 0.646, 11, 17, 64 },		-- Josef the Intolerant
 	},
-	["riften_base"] = {
+	[198] = { -- riften_base
 		-- The Rift Lore
 		{ 0.552, 0.677, 24, 9 },		-- Rivers of Profit in Riften
 		{ 0.813, 0.634, 24, 9 },
 		{ 0.298, 0.551, 24, 9 },
 	},
-	["shorsstone_base"] = {
+	[542] = { -- shorsstone_base
 		-- The Rift Lore
 		{ 0.354, 0.586, 24, 10 },		-- Clans of the Reach: A Guide
 		{ 0.451, 0.434, 24, 10 },
 		{ 0.566, 0.540, 24, 10 },
 		{ 0.4452, 0.7681, 24, 10 },
 	},
-	["nimalten_base"] = {
+	[543] = { -- nimalten_base
 		-- Poetry and Song
 		{ 0.494, 0.523, 18, 7 },		-- Proper-Life: Three Chants
 		{ 0.606, 0.619, 18, 7 },
 		{ 0.582, 0.380, 18, 7 },
 		{ 0.443, 0.489, 18, 7 },
 	},
-	["avancheznel_base"] = {
+	[169] = { -- avancheznel_base
 		-- Dwemer
 		{ 0.770, 0.526, 12, 14 },		-- Dwemer Inquiries Volume II
 	},
-	["brokenhelm_base"] = {
+	[703] = { -- brokenhelm_base
 		-- Literature
 		{ 0.305, 0.582, 14, 5 },		-- Myths of Sheogorath, Volume 1
 	},
-	["ebonmeretower_base"] = {
+	[214] = { -- ebonmeretower_base
 		-- Poetry and Song
 		{ 0.342, 0.378, 18, 8 },		-- Song of the Askelde Men
 	},
-	["fallowstonevault_base"] = {
+	[460] = { -- fallowstonevault_base
 		-- The Rift Lore
 		{ 0.101, 0.448, 24, 2 },		-- Songs of the Return, Volume 27
 	},
-	["forelhost_base"] = {
+	[463] = { -- forelhost_base
 		-- Literature
 		{ 0.281, 0.613, 14, 5 },		-- Myths of Sheogorath, Volume 1
 	},
-	["fortgreenwall_base"] = {
+	[254] = { -- fortgreenwall_base
 		-- Dwemer
 		{ 0.454, 0.672, 12, 13 },		-- Dwemer Inquiries Volume  I
 	},
-	["snaplegcave_base"] = {
+	[265] = { -- snaplegcave_base
 		-- Dwemer
 		{ 0.74, 0.59, 12, 16 },		-- Ancient Scrolls of Dwemer IV
 	},
-	["trolhettacave_base"] = {
+	[176] = { -- trolhettacave_base
 		-- Poetry and Song
 		{ 0.502, 0.261, 18, 10 },		-- Words of the Wind
 	},
-	["blessedcrucible2_base"] = {
+	[398] = { -- blessedcrucible2_base
 		-- Dungeon Lore
 		{ 0.240, 0.443, 11, 17 },		-- Josef the Intolerant
 	},
-	["blessedcrucible4_base"] = {
+	[400] = { -- blessedcrucible4_base
 		{ 0.240, 0.443, 11, 17 },		-- Josef the Intolerant
 	},
-	["blessedcrucible5_base"] = {
+	[401] = { -- blessedcrucible5_base
 		{ 0.240, 0.443, 11, 17 },		-- Josef the Intolerant
 	},
-	["blessedcrucible6_base"] = {
+	[402] = { -- blessedcrucible6_base
 		{ 0.240, 0.443, 11, 17 },		-- Josef the Intolerant
 	},
-	["blessedcrucible7_base"] = {
+	[403] = { -- blessedcrucible7_base
 		{ 0.240, 0.443, 11, 17, 64 },		-- Josef the Intolerant
 	},
-}
 
-lorebooksData["wrothgar"] = {
-	-- Wrothgar (Orsinium DLC)
-	["wrothgar_base"] = {
+	-- wrothgar
+	[667] = { -- wrothgar_base
 		{ 0.6349, 0.3096, 11, 5 },		-- Civility and etiquette : Wood Orcs I
 		{ 0.6498, 0.3292, 11, 5 },
 		{ 0.5396, 0.3988, 11, 5 },
@@ -2943,11 +2927,9 @@ lorebooksData["wrothgar"] = {
 		{ 0.2484, 0.7306, 19, 9 },
 		{ 0.345, 0.6865, 19, 9 },
 	},
-}
 
-lorebooksData["thievesguild"] = {
-	-- Hew's Bane (Thieves Guild DLC)
-	["hewsbane_base"] = {		 -- Hew's Bane
+	-- thievesguild
+	[994] = { -- hewsbane_base
 		{ 0.3432, 0.6059, 11, 3 },		-- The Thief God's Treasures
 		{ 0.3844, 0.5982, 11, 3 },
 		{ 0.3855, 0.8008, 11, 3 },
@@ -2957,10 +2939,9 @@ lorebooksData["thievesguild"] = {
 		{ 0.5417, 0.5365, 18, 5 },
 		{ 0.4469, 0.5925, 18, 5 },
 	},
-}
 
-lorebooksData["darkbrotherhood"] = {
-	["goldcoast_base"] = { -- Gold Coast (Dark Botherhood DLC)
+	-- darkbrotherhood
+	[1006] = { -- goldcoast_base
 		{ 0.8587, 0.5059, 19, 6 },		-- Eulogy for Emperor Varen
 		{ 0.7735, 0.4055, 9, 8, 1 },		-- Trials of St. Alessia
 		{ 0.8283, 0.6145, 18, 7 },		-- Proper-Life: Three Chants
@@ -2969,14 +2950,13 @@ lorebooksData["darkbrotherhood"] = {
 		{ 0.6805, 0.625, 18, 5 },		-- Flesh to Cut from Bone
 		{ 0.5397, 0.3190, 16, 9 },		-- Sithis
 	},
-	["kvatchcity_base"] = {
+	[1064] = { -- kvatchcity_base
 		{ 0.5650, 0.3459, 13, 2 },	-- The Adabal-a
 		{ 0.2924, 0.5143, 9, 8 },		-- Trials of Saint Alessia",
 	},
-}
 
-lorebooksData["vvardenfell"] = {
-   ["vvardenfell_base"] = {          -- Vvardenfell
+	-- vvardenfell
+	[1060] = { -- vvardenfell_base
 		{ 0.4040, 0.8088, 20, 3 },			-- The Great Houses and Their Uses
 		{ 0.8816, 0.6117, 20, 3 },
 		{ 0.3299, 0.5284, 20, 3 },
@@ -3015,10 +2995,9 @@ lorebooksData["vvardenfell"] = {
 		{ 0.6858, 0.6227, 23, 9 },
 		{ 0.7125, 0.4565, 23, 9 },
 	},
-}
 
-lorebooksData["clockwork"] = {
-   ["clockwork_base"] = {          -- Clockwork City
+	-- clockwork
+	[1313] = { -- clockwork_base
 		{ 0.7863, 0.5314, 8, 4 },		-- The House of Troubles
 		{ 0.4110, 0.4609, 14, 9, 4 },	-- Crow and Raven: Three Short Fables
 		{ 0.4423, 0.5048, 15, 5 },		-- The Old Ways
@@ -3027,22 +3006,21 @@ lorebooksData["clockwork"] = {
 		{ 0.6872, 0.4288, 23, 1 },		-- The Living Gods
 		{ 0.4130, 0.5751, 26, 6 },		-- The Devouring of Gil-Var-Delle
 	},
-	["ccunderground_base"] = {
+	[1335] = { -- ccunderground_base
 		-- Literature
 		{ 0.4920, 0.9400, 14, 9, 4 },		-- Crow and Raven: Three Short Fables
 	},
-	["ccunderground02_base"] = {
+	[1362] = { -- ccunderground02_base
 		-- Literature
 		{ 0.4920, 0.9400, 14, 9, 4 },		-- Crow and Raven: Three Short Fables
 	},
-	["brassfortress_base"] = {
+	[1348] = { -- brassfortress_base
 		-- Literature
 		{ 0.4576, 0.5555, 14, 9, 4 }, 	-- Crow and Raven: Three Short Fables
 	},
-}
 
-lorebooksData["summerset"] = {
-	["summerset_base"] = { -- Summerset
+	-- summerset
+	[1349] = { -- summerset_base
 		{ 0.6650, 0.7887, 16, 1 },		-- Before the Ages of Man: Dawn Era
 		{ 0.5072, 0.6602, 16, 1 },
 		{ 0.7203, 0.7285, 16, 1 },
@@ -3071,20 +3049,18 @@ lorebooksData["summerset"] = {
 		{ 0.6076, 0.5236, 25, 10 },
 		{ 0.5282, 0.2976, 25, 10 },
 	},
-	["shimmerene_base"] = {
+	[1431] = { -- shimmerene_base
 		{ 0.3013, 0.4342, 25, 6, 1 },	-- Fang of the Sea Vipers
 	},
-}
 
-lorebooksData["murkmire"] = {
-	["murkmire_base"] = {
+	-- murkmire
+	[1484] = { -- murkmire_base
 		{ 0.7377, 0.5599, 14, 3 },		-- The Lusty Argonian Maid, Volume 1
 		{ 0.7376, 0.5599, 14, 4 },		-- The Lusty Argonian Maid, Volume 2
-	},
-}
+	}, --}
 
-lorebooksData["elsweyr"] = {
-	["elsweyr_base"] = { -- (Northern) Elsweyr
+	-- elsweyr
+	[1555] = { -- elsweyr_base
 		{ 0.2353, 0.5703, 6, 10 }, 		-- On the Knahaten Flu
 		{ 0.4122, 0.6014, 25, 7 }, 		-- The Rise of Queen Ayrenn
 		{ 0.4998, 0.1661, 26, 1 }, 		-- Varieties of Faith: The Khajiit
@@ -3096,19 +3072,18 @@ lorebooksData["elsweyr"] = {
 		{ 0.3869, 0.5218, 28, 9 }, 		-- Master Zoaraym's Tale, Part 2
 		{ 0.1382, 0.7498, 1, 2 }, 		-- A Warning to the Aldmeri Dominion
 	},
-	["rimmen_base"] = {
+	[1576] = { -- rimmen_base
 		{ 0.4391, 0.5035, 28, 8, 1 },	-- Master Zoaraym's Tale, Part 1
 	},
-	["stitches_base"] = {
+	[1663] = { -- stitches_base
 		{ 0.5774, 0.5063, 28, 9, 1 },	-- Master Zoaraym's Tale, Part 2",
 	},
-	["riverholdcity_base"] = {
+	[1591] = { -- riverholdcity_base
 		{ 0.5424, 0.6056, 26, 1, 1 },	-- Varieties of Faith: The Khajiit
 	},
-}
 
-lorebooksData["southernelsweyr"] = {
-	["southernelsweyr_base"] = { -- Southern Elsweyr
+	-- southernelsweyr
+	[1654] = { -- southernelsweyr_base
 		{ 0.1826, 0.6512, 6, 8 },		-- A Mother's Nursery Rhyme
 		{ 0.3996, 0.6158, 6, 10 },		-- On the Knahaten Flu
 		{ 0.5043, 0.5094, 21, 8 },		-- A Nereid Stole My Husband
@@ -3117,356 +3092,64 @@ lorebooksData["southernelsweyr"] = {
 		{ 0.4481, 0.3572, 28, 8 },		-- Master Zoaraym's Tale, Part 1
 		{ 0.9184, 0.7123, 28, 9 },		-- Master Zoaraym's Tale, Part 2
 	},
-	["senchal_base"] = { -- Senchal
+	[1675] = { -- senchal_base
 		{ 0.5307, 0.4735, 21, 8, 1 },	-- A Nereid Stole My Husband
 	},
-	["senchalpalace01_base"] = { -- Senchal Palace
+	[1690] = { -- senchalpalace01_base
 		{ 0.1460, 0.4266, 21, 8, 1 },	-- A Nereid Stole My Husband
 	},
-	["els_dragonguard_island01_base"] = { -- Tideholm
+	[1684] = { -- els_dragonguard_island01_base
 		{ 0.6481, 0.2633, 28, 9, 1 },	-- Master Zoaraym's Tale, Part 2
-	},
-	["els_dg_sanctuary_base"] = { -- Dragonguard Sanctum
+	}, 
+	[1682] = { -- els_dg_sanctuary_base
 		{ 0.2834, 0.4420, 28, 9, 1 },	-- Master Zoaraym's Tale, Part 2
 	},
-}
 
--- For some reason ZOS decided to make these appear randomly in bookshelves too, making it a bit difficult to see which ones have a physical location and which don't
-lorebooksData["skyrim"] = {
-	["westernskryim_base"] = {
+	-- skyrim
+	[1719] = { -- westernskryim_base
 		{ 0.1478, 0.5074, 22, 4, }, -- Orcs of Skyrim
 		{ 0.7057, 0.6172, 22, 5, }, -- The Crown of Freydis
 		{ 0.6037, 0.4249, 22, 1, }, -- The Brothers' War
 	},
-	["solitudecity_base"] = {
+	[1773] = { -- solitudecity_base
 		{ 0.7730, 0.7699, 22, 1,}, -- The Brothers' War
 	},
-	["blackreach_base"] = {
+	[1747] = { -- blackreach_base
 		{ 0.3421, 0.8050, 24, 6, }, --  The Road to Sovngarde
 		{ 0.4544, 0.1576, 3, 3, }, -- Bloodfiends of Rivenspire
 	},
-	["morthalburialcave_base"] = {
+	[1754] = { -- morthalburialcave_base
 		{ 0.3762, 0.7236, 22, 5, }, -- The Crown of Freydis
 	},
-}
---]]
 
-
-lorebooksData["guildmaps"] = {
-	-- Fighters guild maps
-	["abagarlas_base"] = {
+	-- guild maps
+	[563] = { -- abagarlas_base
 		-- Coldharbour Lore
 		{ 0.247, 0.548, 29, 1 },		-- Exegesis of Merid-Nunda
 	},
-	["mzendeldt_base"] = {
+	[102] = { -- mzendeldt_base
 		-- Coldharbour Lore
 		{ 0.39, 0.92, 29, 2 },		-- The Whithering of Delodiil
 	},
-	["chateaumasterbedroom_base"] = {
+	[600] = { -- chateaumasterbedroom_base
 		-- The Trial of Eyevea
 		{ 0.422, 0.482, 7, 2 },		-- A Gift of Sanctuary
 	},
-	["circusofcheerfulslaughter_base"] = {
+	[106] = { -- circusofcheerfulslaughter_base
 		-- The Trial of Eyevea
 		{ 0.279, 0.699, 7, 3 },		-- Robier's Vegetable Garden
 	},
-	["gladeofthedivineshivering_base"] = {
+	[319] = { -- gladeofthedivineshivering_base
 		-- The Trial of Eyevea
 		{ 0.516, 0.561, 7, 4 },		-- Circus of Cheerful Slaughter
 	},
-	["cheesemongershollow_base"] = {
+	[105] = { -- cheesemongershollow_base
 		-- The Trial of Eyevea
 		{ 0.790, 0.253, 7, 1 },		-- How the Kwama Lost His Shoes
 	},
+
 }
 
-lorebooksData["main"] = { -- need some work
-	-- Main quest maps
-}
-
--- Correspondance of zone, subzones with mapIndexes (GetMapNameByIndex, etc).
--- zoneIndex is not used because there is no way to display a map by its zoneIndex, only mapIndex
-
-local lorebooksCorrespondance= {}
-
-lorebooksCorrespondance["alikr"] = {
-	["alikr_base"] = 5,
-	["sentinel_base"] = 000,
-	["bergama_base"] = 000,
-	["kozanset_base"] = 000,
-	["smugglerkingtunnel_base"] = 000,
-	["aldunz_base"] = 000,
-	["santaki_base"] = 000,
-	["yldzuun_base"] = 000,
-	["sandblownmine_base"] = 000,
-	["coldrockdiggings_base"] = 000,
-	["divadschagrinmine_base"] = 000,
-	["volenfell_base"] = 000,
-}
-lorebooksCorrespondance["auridon"] = {
-	["auridon_base"] = 15,
-	["firsthold_base"] = 000,
-	["skywatch_base"] = 000,
-	["vulkhelguard_base"] = 000,
-	["thebanishedcells_base"] = 000,
-}
-lorebooksCorrespondance["bangkorai"] = {
-	["bangkorai_base"] = 6,
-	["evermore_base"] = 000,
-	["onsisbreathmine_base"] = 000,
-	["blackhearthavenarea1_base"] = 000,
-	["hallinsstand_base"] = 000,
-}
-lorebooksCorrespondance["coldharbor"] = {
-	["coldharbour_base"] = 23,
-	["hollowcity_base"] = 000,
-	["vaultsofmadness1_base"] = 000,
-}
-lorebooksCorrespondance["cyrodiil"] = {
-	["ava_whole"] = 14,
-	["bloodmaynecave_base"] = 000,
-	["breakneckcave_base"] = 000,
-	["capstonecave_base"] = 000,
-	["crackedwoodcave_base"] = 000,
-	["echocave_base"] = 000,
-	["haynotecave_base"] = 000,
-	["kingscrest_base"] = 000,
-	["lipsandtarn_base"] = 000,
-	["muckvalleycavern_base"] = 000,
-	["newtcave_base"] = 000,
-	["nisincave_base"] = 000,
-	["potholecavern_base"] = 000,
-	["quickwatercave_base"] = 000,
-	["redrubycave_base"] = 000,
-	["serpenthollowcave_base"] = 000,
-	["toadstoolhollowlower_base"] = 000,
-	["underpallcave_base"] = 000,
-	["vahtacen_base"] = 000,
-	["imperialcity_base"] = 26,
-	["imperialsewer_daggerfall1"] = 000,
-	["imperialsewer_daggerfall2"] = 000,
-	["imperialsewer_daggerfall3"] = 000,
-	["imperialsewers_ebon1"] = 000,
-	["imperialsewers_ebon2"] = 000,
-	["imperialsewer_ebonheart3"] = 000,
-	["imperialsewers_aldmeri1"] = 000,
-	["imperialsewers_aldmeri2"] = 000,
-	["imperialsewers_aldmeri3"] = 000,
-	["imperialsewershub_base"] = 000,
-}
-lorebooksCorrespondance["deshaan"] = {
-	["deshaan_base"] = 10,
-	["mournhold_base"] = 000,
-	["narsis_base"] = 000,
-	["darkshadecaverns_base"] = 000,
-	["fortamol_base"] = 000,
-	["windhelm_base"] = 000,
-	["icehammersvault_base"] = 000,
-	["direfrostkeep_base"] = 000,
-	["glenumbra_base"] = 000,
-	["aldcroft_base"] = 000,
-	["crosswych_base"] = 000,
-	["daggerfall_base"] = 000,
-	["desolationsend_base"] = 000,
-	["spindleclutch_base"] = 000,
-	["strosmkai_base"] = 000,
-}
-lorebooksCorrespondance["eastmarch"] = {
-	["eastmarch_base"] = 13,
-	["fortamol_base"] = 000,
-	["windhelm_base"] = 000,
-	["icehammersvault_base"] = 000,
-	["direfrostkeep_base"] = 000,
-}
-lorebooksCorrespondance["glenumbra"] = {
-	["glenumbra_base"] = 2,
-	["aldcroft_base"] = 000,
-	["crosswych_base"] = 000,
-	["daggerfall_base"] = 000,
-	["desolationsend_base"] = 000,
-	["spindleclutch_base"] = 000,
-	["strosmkai_base"] = 000,
-}
-lorebooksCorrespondance["grahtwood"] = {
-	["grahtwood_base"] = 7,
-	["eldenhollow_base"] = 000,
-	["eldenrootgroundfloor_base"] = 000,
-	["haven_base"] = 000,
-	["redfurtradingpost_base"] = 000,
-	["sacredleapgrotto_base"] = 000,
-	["greenshade_base"] = 000,
-	["falinesticave_base"] = 000,
-	["marbruk_base"] = 000,
-	["woodhearth_base"] = 000,
-	["cityofashmain_base"] = 000,
-}
-lorebooksCorrespondance["greenshade"] = {
-	["greenshade_base"] = 16,
-	["falinesticave_base"] = 000,
-	["marbruk_base"] = 000,
-	["woodhearth_base"] = 000,
-	["cityofashmain_base"] = 000,
-}
-lorebooksCorrespondance["malabaltor"] = {
-	["malabaltor_base"] = 8,
-	["baandaritradingpost_base"] = 000,
-	["hoarvorpit_base"] = 000,
-	["deadmansdrop_base"] = 000,
-	["vulkwasten_base"] = 000,
-	["ouze_base"] = 000,
-	["tempestisland_base"] = 000,
-	["rootsofsilvenar_base"] = 000,
-	["velynharbor_base"] = 000,
-	["blackvineruins_base"] = 000,
-	["reapersmarch_base"] = 000,
-	["arenthia_base"] = 000,
-	["dune_base"] = 000,
-	["rawlkha_base"] = 000,
-	["selenesweb_base"] = 000,
-	["rivenspire_base"] = 000,
-	["hoarfrost_base"] = 000,
-	["shornhelm_base"] = 000,
-	["northpoint_base"] = 000,
-	["shroudedpass_base"] = 000,
-	["cryptofhearts_base"] = 000,
-}
-lorebooksCorrespondance["reapersmarch"] = {
-	["reapersmarch_base"] = 17,
-	["arenthia_base"] = 000,
-	["dune_base"] = 000,
-	["rawlkha_base"] = 000,
-	["selenesweb_base"] = 000,
-}
-lorebooksCorrespondance["rivenspire"] = {
-	["rivenspire_base"] = 3,
-	["arenthia_base"] = 000,
-	["dune_base"] = 000,
-	["rawlkha_base"] = 000,
-	["selenesweb_base"] = 000,
-}
-lorebooksCorrespondance["stonefalls"] = {
-	["stonefalls_base"] = 11,
-	["davonswatch_base"] = 000,
-	["ebonheart_base"] = 000,
-	["kragenmoor_base"] = 000,
-	["hightidehollow_base"] = 000,
-	["innerseaarmature_base"] = 000,
-	["mephalasnest_base"] = 000,
-	["softloamcavern_base"] = 000,
-	["fungalgrotto_base"] = 000,
-}
-lorebooksCorrespondance["shadowfen"] = {
-	["shadowfen_base"] = 9,
-	["stormhold_base"] = 000,
-	["altencorimont_base"] = 000,
-	["arxcorinium_base"] = 000,
-	["stonefalls_base"] = 000,
-	["davonswatch_base"] = 000,
-	["ebonheart_base"] = 000,
-	["kragenmoor_base"] = 000,
-	["hightidehollow_base"] = 000,
-	["innerseaarmature_base"] = 000,
-	["mephalasnest_base"] = 000,
-	["softloamcavern_base"] = 000,
-	["fungalgrotto_base"] = 000,
-}
-lorebooksCorrespondance["stormhaven"] = {
-	["stormhaven_base"] = 4,
-	["alcairecastle_base"] = 000,
-	["koeglinvillage_base"] = 000,
-	["wayrest_base"] = 000,
-	["wayrestsewers_base"] = 000,
-}
-lorebooksCorrespondance["therift"] = {
-	["therift_base"] = 12,
-	["riften_base"] = 000,
-	["shorsstone_base"] = 000,
-	["nimalten_base"] = 000,
-	["avancheznel_base"] = 000,
-	["brokenhelm_base"] = 000,
-	["ebonmeretower_base"] = 000,
-	["fallowstonevault_base"] = 000,
-	["forelhost_base"] = 000,
-	["fortgreenwall_base"] = 000,
-	["snaplegcave_base"] = 000,
-	["trolhettacave_base"] = 000,
-	["blessedcrucible4_base"] = 000,
-	["blessedcrucible5_base"] = 000,
-	["blessedcrucible6_base"] = 000,
-	["blessedcrucible7_base"] = 000,
-}
-lorebooksCorrespondance["wrothgar"] = {
-	["wrothgar_base"] = 27,
-}
-lorebooksCorrespondance["thievesguild"] = {
-	["hewsbane_base"] = 28,
-}
-lorebooksCorrespondance["darkbrotherhood"] = {
-	["goldcoast_base"] = 29,
-}
-lorebooksCorrespondance["vvardenfell"] = {
-	["vvardenfell_base"] = 30,
-}
-lorebooksCorrespondance["clockwork"] = {
-	["clockwork_base"] = 31,
-}
-lorebooksCorrespondance["summerset"] = {
-	["summerset_base"] = 32,
-	["shimmerene_base"] = 000,
-	["artaeum_base"] = 33,
-}
-lorebooksCorrespondance["murkmire"] = {
-	["murkmire_base"] = 34,
-	["swampisland_ext_base"] = 35,
-}
-lorebooksCorrespondance["elsweyr"] = {
-	["elsweyr_base"] = 36,
-}
-lorebooksCorrespondance["southernelsweyr"] = {
-	["southernelsweyr_base"] = 37,
-}
-
-
-lorebooksCorrespondance["guildmaps"] = {
-	["abagarlas_base"] = 000,
-	["mzendeldt_base"] = 000,
-	["chateaumasterbedroom_base"] = 000,
-	["circusofcheerfulslaughter_base"] = 000,
-	["gladeofthedivineshivering_base"] = 000,
-	["cheesemongershollow_base"] = 000,
-}
-
-local mapIndexCorrespondance = { --unused
-	[2] = { ["glenumbra"] = "glenumbra_base" },
-	[3] = { ["rivenspire"] = "rivenspire_base" },
-	[4] = { ["stormhaven"] = "stormhaven_base" },
-	[5] = { ["alikr"] = "alikr_base" },
-	[6] = { ["bangkorai"] = "bangkorai_base" },
-	[7] = { ["grahtwood"] = "grahtwood_base" },
-	[8] = { ["malabaltor"] = "malabaltor_base" },
-	[9] = { ["shadowfen"] = "shadowfen_base" },
-	[10] = { ["deshaan"] = "deshaan_base" },
-	[11] = { ["stonefalls"] = "stonefalls_base" },
-	[12] = { ["therift"] = "therift_base" },
-	[13] = { ["eastmarch"] = "eastmarch_base" },
-	[14] = { ["cyrodiil"] = "ava_whole" },
-	[15] = { ["auridon"] = "auridon_base" },
-	[16] = { ["greenshade"] = "greenshade_base" },
-	[17] = { ["reapersmarch"] = "reapersmarch_base" },
-	[23] = { ["coldharbor"] = "coldharbour_base" },
-	[26] = { ["cyrodiil"] = "imperialcity_base" },
-	[27] = { ["wrothgar"] = "wrothgar_base" },
-	[28] = { ["thievesguild"] = "hewsbane_base" },
-	[29] = { ["darkbrotherhood"] = "goldcoast_base" },
-	[30] = { ["vvardenfell"] = "vvardenfell_base" },
-	[31] = { ["clockwork"] = "clockwork_base" },
-	[32] = { ["summerset"] = "summerset_base" },
-	[33] = { ["summerset"] = "artaeum_base" },
-	[34] = { ["murkmire"] = "murkmire_base" },
-	[35] = { ["murkmire"] = "swampisland_ext_base" },
-	[36] = { ["elsweyr"] = "elsweyr_base" },
-	[37] = { ["southernelsweyr"] = "southernelsweyr_base" },
-}
 
 local lorebooksExplorationIDs = {
 	[2] = 964,
@@ -3578,7 +3261,8 @@ local function AreAllWayshrinesUnlocked()
 end
 
 function LoreBooks_GetImmersiveModeCondition(mode, mapIndex)
-   if mode == 2 then
+
+	if mode == 2 then
 		return lorebooksMainQuestIDs[mapIndex]
 	elseif mode == 3 then
 		return AreAllWayshrinesUnlocked()
@@ -3587,57 +3271,26 @@ function LoreBooks_GetImmersiveModeCondition(mode, mapIndex)
 	elseif mode == 5 then
 		return lorebooksZoneQuestIDs[mapIndex]
 	end
-end
-
-function LoreBooks_GetLocalData(zone, subzone)
-	if type(zone) == "string" and type(subzone) == "string" and lorebooksData[zone] and lorebooksData[zone][subzone] then
-		return lorebooksData[zone][subzone]
-	end
-end
-
-function LoreBooks_GetLocalDataForBook(categoryIndex, collectionIndex, bookIndex, zone, subzone)
-
-	local results = {}
-	if categoryIndex == 1 then
-		local zoneData = LoreBooks_GetLocalData(zone, subzone)
-		for bookEntry, bookData in ipairs(zoneData) do
-			if bookData[3] and bookData[4] then
-				if bookData[3] == collectionIndex and bookData[4] == bookIndex then
-					table.insert(results, {zoneName = zoneName, subZoneName = subZoneName, locX = bookData[1], locY = bookData[2] })
-				end
-			end
-		end
-	end
-
-	return results
 
 end
 
-function LoreBooks_GetMapIndexFromMapTile(zone, subZone)
+function LoreBooks_GetZoneAndSubzone()
+	return select(3, GetMapTileTexture():lower():gsub("_+%d+\.dds", ""):find("maps/([%w%-]+)/([%w_%-]+)"))
+end
 
-	if zone and subZone then
-		if lorebooksCorrespondance[zone] and lorebooksCorrespondance[zone][subZone] then
-			if lorebooksCorrespondance[zone][subZone] ~= 0 then
-				return lorebooksCorrespondance[zone][subZone]
-			end
-		end
-	end
-
+function LoreBooks_GetLocalData(mapId)
+	return lorebooksData[mapId]
 end
 
 function LoreBooks_GetDataOfBook(categoryIndex, collectionIndex, bookIndex)
 
 	local results = {}
-	if categoryIndex == 1 then -- 1 = Shalidor, 2 = Eidetic. I will need to rebuild the whole array when Eidetic will go live, but not yet.
+	if categoryIndex == 1 then -- 1 = Shalidor
 		if collectionIndex and bookIndex then
-			for zoneName, zoneData in pairs(lorebooksData) do
-				for subZoneName, subZoneData in pairs(zoneData) do
-					for bookEntry, bookData in ipairs(subZoneData) do
-						if bookData[3] and bookData[4] then
-							if bookData[3] == collectionIndex and bookData[4] == bookIndex then
-								table.insert(results, {zoneName = zoneName, subZoneName = subZoneName, locX = bookData[1], locY = bookData[2] })
-							end
-						end
+			for mapId, mapData in pairs(lorebooksData) do
+				for bookEntry, bookData in pairs(mapData) do
+					if bookData[3] == collectionIndex and bookData[4] == bookIndex then
+						table.insert(results, {mapId = mapId, locX = bookData[1], locY = bookData[2] })
 					end
 				end
 			end
@@ -3648,10 +3301,7 @@ function LoreBooks_GetDataOfBook(categoryIndex, collectionIndex, bookIndex)
 
 end
 
-function LoreBooks_SetLocalData(zone, subzone, data)
-	if type(zone) == "string" and type(subzone) == "string" and type(data) == "table" then
-		lorebooksData[zone] = lorebooksData[zone] or {}
-		lorebooksData[zone][subzone] = lorebooksData[zone][subzone] or {}
-		table.insert(lorebooksData[zone][subzone], data)
-	end
+
+function LoreBooks_GetAllData()
+	return lorebooksData
 end
