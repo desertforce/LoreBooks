@@ -45,7 +45,7 @@ local NUM_MAPS = GetNumMaps()
 
 -- The mastermind that will be sniffing all the data
 local MASTER_MINER = "@Kyoma"
-local DEADLINE = 20210401
+local DEADLINE = 20210403
 local MINER_ESOVERSION = 616
 
 local NEW_BOOKS_ONLY = true
@@ -1477,7 +1477,7 @@ end
 
 function LoreBooks.IsMinerEnabled()
 	ESOVersion = GetESOVersionString():gsub("eso%.%a+%.(%d)%.(%d)%.(%d+)%.%d+", "%1%2%3")
-	if GetAPIVersion() == 100032 and (lang == "fr" or lang == "en" or lang == "de") then
+	if GetAPIVersion() == c.SUPPORTED_API and (lang == "fr" or lang == "en" or lang == "de") then
 		if (GetDate() - DEADLINE) < 1 then
 			return true, BuildDataToShare
 		end
