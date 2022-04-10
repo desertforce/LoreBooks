@@ -176,7 +176,7 @@ local lorebooksData = {
     { 0.103, 0.459, 5, 6 }, -- Varieties of Faith, The Forebears
     { 0.387, 0.398, 5, 6 },
     { 0.264, 0.187, 5, 6 },
-    { 0.179, 0.572, 5, 6 },
+    { 0.178178, 0.572218, 5, 6 },
     { 0.436, 0.483, 5, 9 }, -- Sentinel, the Jewel of Alik'r
     { 0.391, 0.577, 5, 9 },
     { 0.630, 0.715, 5, 9 },
@@ -2059,7 +2059,7 @@ local lorebooksData = {
     { 0.787, 0.328, 3, 4 },
     { 0.824, 0.355, 3, 4 },
     { 0.826, 0.332, 3, 4 },
-    { 0.423, 0.399, 3, 5 }, -- The Horse-Folk of Silverhoof
+    { 0.423169, 0.400568, 3, 5 }, -- The Horse-Folk of Silverhoof
     { 0.387, 0.359, 3, 5 },
     { 0.397, 0.408, 3, 5 },
     { 0.388, 0.442, 3, 5 },
@@ -2372,7 +2372,7 @@ local lorebooksData = {
   [7] = { -- stonefalls_base
     -- Stonefalls Lore
     { 0.755, 0.647, 20, 1 }, -- Ancestors and the Dunmer (Abridged)
-    { 0.706, 0.622, 20, 1 },
+    { 0.707942, 0.622916, 20, 1 },
     { 0.776, 0.584, 20, 1 },
     { 0.795, 0.620, 20, 1 },
     { 0.777, 0.555, 20, 2 }, -- The Brothers of Strife
@@ -2384,7 +2384,7 @@ local lorebooksData = {
     { 0.2995, 0.374, 20, 3 },
     { 0.229, 0.357, 20, 4 }, -- Argonians Among Us
     { 0.226, 0.378, 20, 4 },
-    { 0.168, 0.407, 20, 4 },
+    { 0.169714, 0.406697, 20, 4 },
     { 0.2063, 0.4004, 20, 4 },
     { 0.57, 0.51, 20, 5, 1 }, -- Nords of Skyrim
     { 0.5421, 0.5315, 20, 5, 1 },
@@ -2409,7 +2409,7 @@ local lorebooksData = {
     { 0.202, 0.293, 20, 9 },
     { 0.146, 0.569, 20, 10 }, -- Guide to the Ebonheart Pact
     { 0.135, 0.605, 20, 10 },
-    { 0.181, 0.583, 20, 10 },
+    { 0.182860, 0.583598, 20, 10 },
     { 0.186, 0.593, 20, 10 },
     -- Daedric Princes
     { 0.859, 0.430, 8, 1 }, -- Aedra and Daedra
@@ -3085,10 +3085,10 @@ local lorebooksData = {
   [1654] = { -- southernelsweyr_base
     { 0.1826, 0.6512, 6, 8 }, -- A Mother's Nursery Rhyme
     { 0.3996, 0.6158, 6, 10 }, -- On the Knahaten Flu
-    {.664,.696,21,6},--Pirates of Abecean
+    { .664, .696, 21, 6 }, --Pirates of Abecean
     { 0.5043, 0.5094, 21, 8 }, -- A Nereid Stole My Husband
-    {.298,.459,26,1},--Varieties of Faith: The Khajiit
-    {.184,.313,28,1},--The Moon Cats and Their Dance
+    { .298, .459, 26, 1 }, --Varieties of Faith: The Khajiit
+    { .184, .313, 28, 1 }, --The Moon Cats and Their Dance
     { 0.3855, 0.3836, 28, 5 }, -- The Eagle and the Cat
     { 0.3718, 0.2511, 28, 6 }, -- Elven Eyes, Elven Spies
     { 0.4481, 0.3572, 28, 8 }, -- Master Zoaraym's Tale, Part 1
@@ -3136,12 +3136,12 @@ local lorebooksData = {
   -- The Reach
   [1814] = { -- reach_base_0
     { .415, .599, 1, 4 }, --The Werewolf's Hide
-    { .346, .487, 3, 3 }, --Bloodfiends of Rivenspire
-    { .573, .491, 4, 2 }, --Living with Lycanthropy
+    --{ .346, .487, 3, 3 }, --Bloodfiends of Rivenspire
+    { 0.573139, 0.492006, 4, 2, }, --Living with Lycanthropy
     { 0.439162, 0.685270, 4, 9 }, --A Life Barbaric and Brutal
-    { .583, .44, 22.5 }, --The Crown of Freydis
-    { .54, .288, 22, 7 }, --All About Giants
-    { .504, .626, 24, 10 }, --Clans of the Reach: A Guide
+    { 0.583863, 0.440658, 22, 5 }, --The Crown of Freydis
+    { 0.540232, 0.289004, 22, 7 }, --All About Giants
+    { 0.504645, 0.626682, 24, 10 }, --Clans of the Reach: A Guide
     { 0.390826, 0.674602, 24, 4 }, --Thenephan's Mysteries of Mead
   },
 
@@ -3154,27 +3154,18 @@ local lorebooksData = {
     { .696, .507, 8, 4 }, --The House of Troubles
     { .707, .453, 29, 9 }, --Oath of a Dishonored Clan
     { .432, .484, 29, 4 }, --I was Summoned by a Mortal
-    { .438, .653, 23, 10 }
+    { .438, .653, 23, 10 },
   },
   [2119] = {-- u32_fargravezone_base_0
     { .527, .239, 14, 5 }, -- Myths of Sheogorath, Volume 1
     { .345, .616, 2, 8 }, --To Dream Beyond Dreams
   },
   [2035] = { -- u32_fargrave_base_0
-    { .406, .176, 2, 8 }
+    { .406, .176, 2, 8 },
   },
   [2082] = { -- u32_theshambles_base_0
-    { .366, .32, 14, 5 }
+    { .366, .32, 14, 5 },
   },
-  --[[
-  ={ -- u32_dreaded
-  {.263,.248,3140,5}
-  },
-  ={ -- u32_folly
-  {.755,.552,3140,6}
-  },
-  ]]--
-
 
   -- blackwood
   [1887] = { -- blackwood_base
