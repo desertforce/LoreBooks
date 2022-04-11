@@ -14,6 +14,7 @@ SafeAddString(LBOOKS_LBPOS_ERROR, "Something went wrong", 1)
 
 --tooltips
 SafeAddString(LBOOKS_KNOWN, "Eingesammelt", 1)
+SafeAddString(LBOOKS_BOOKSHELF, "Bookshelf", 1)
 
 SafeAddString(LBOOKS_MOREINFO1, "Stadt", 1)
 SafeAddString(LBOOKS_MOREINFO2, "Verlies", 1)
@@ -56,17 +57,20 @@ SafeAddString(LBOOKS_COLLECTED, "Zeige gesammelte Bücher", 1)
 SafeAddString(LBOOKS_COLLECTED_DESC, "Zeige/Verberge bereits eingesammelte Bücher auf der Karte.", 1)
 
 SafeAddString(LBOOKS_SHARE_DATA, "Teile deine Funde mit LoreBooks Author", 1)
-SafeAddString(LBOOKS_SHARE_DATA_DESC,
-  "Bei der Aktivierung dieser Option wirst du deine Funde direkt mit dem LoreBooks Author teilen können. Es wird automatisch eine Ingame Nachricht mit den erfassten Daten zugeschickt.\nBitte beachte, dass leichte Verzögerungen bei deinen Fertigkeiten auftreten können, solange die Nachricht geschickt wird. Die Nachricht wird alle 30 gelesenen Bücher lautlos verschickt.", 1)
+SafeAddString(LBOOKS_SHARE_DATA_DESC, "Bei der Aktivierung dieser Option wirst du deine Funde direkt mit dem LoreBooks Author teilen können. Es wird automatisch eine Ingame Nachricht mit den erfassten Daten zugeschickt.\nBitte beachte, dass leichte Verzögerungen bei deinen Fertigkeiten auftreten können, solange die Nachricht geschickt wird. Die Nachricht wird alle 30 gelesenen Bücher lautlos verschickt.", 1)
 
 SafeAddString(LBOOKS_EIDETIC, "Zeige unbekannte Ewige Erinnerung", 1)
 SafeAddString(LBOOKS_EIDETIC_DESC, "Zeige/Verberge unbekannte Schriften auf der Karte, die nicht den Magiergilden-Skill steigern.", 1)
 SafeAddString(LBOOKS_EIDETIC_COLLECTED, "Zeige bekannte Ewige Erinnerung", 1)
 SafeAddString(LBOOKS_EIDETIC_COLLECTED_DESC, "Zeige/Verberge Schriften der Ewigen Erinnerung auf der Karte. Diese Schriften sind lore-bezogene Schriften, die nicht zur Reihe der Magiergilde gehören. Sie sind rein informativ über Tamriel.", 1)
 
+SafeAddString(LBOOKS_BOOKSHELF_NAME, "Show bookshelves", 1)
+SafeAddString(LBOOKS_BOOKSHELF_DESC, "Show/Hide bookshelves on map. Bookshelves contain a random book from the zone.", 1)
 SafeAddString(LBOOKS_COMPASS_EIDETIC, "Zeige unbekannte Ewige Erinnerung im Kompass", 1)
 SafeAddString(LBOOKS_COMPASS_EIDETIC_DESC, "Zeige/Verberge unbekannte Schriften im Kompass. Diese Schriften sind auf das Lore bezogen und nicht aus der Magiergilden Reihe. Sie sind rein informativ über Tamriel.", 1)
 
+SafeAddString(LBOOKS_COMPASS_BOOKSHELF_NAME, "Show bookshelves on compass", 1)
+SafeAddString(LBOOKS_COMPASS_BOOKSHELF_DESC, "Show/Hide bookshelves on compass. Bookshelves contain a random book from the zone.", 1)
 SafeAddString(LBOOKS_UNLOCK_EIDETIC, "Ewige Erinnerung freischalten", 1)
 SafeAddString(LBOOKS_UNLOCK_EIDETIC_DESC, "Dies schaltet die Ewige Erinnerung frei, auch wenn Du die Questreihe der Magiergilde nicht abgeschlossen hast. Diese Option ist nur für EN/FR/DE verfügbar.", 1)
 SafeAddString(LBOOKS_UNLOCK_EIDETIC_WARNING, "This option is disabled because either LoreBooks has not yet been updated for the latest game update or your language is not supported", 1)
@@ -75,6 +79,7 @@ SafeAddString(LBOOKS_UNLOCK_EIDETIC_WARNING, "This option is disabled because ei
 SafeAddString(LBOOKS_FILTER_UNKNOWN, "Unbekannte Bücher", 1)
 SafeAddString(LBOOKS_FILTER_COLLECTED, "Eingesammelte Bücher", 1)
 SafeAddString(LBOOKS_FILTER_EICOLLECTED, "<<1>> (Eingesammelte)", 1)
+SafeAddString(LBOOKS_FILTER_BOOKSHELF, "Lorebooks Bookshelf", 1)
 
 --research
 SafeAddString(LBOOKS_SEARCH_LABEL, "Suche in der Bibliothek :", 1)

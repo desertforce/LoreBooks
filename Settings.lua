@@ -21,6 +21,9 @@ local defaults = {      --default settings for saved variables
     [c.PINS_COLLECTED] = false,
     [c.PINS_EIDETIC] = false,
     [c.PINS_EIDETIC_COLLECTED] = false,
+    [c.PINS_BOOKSHELF] = true,
+    [c.PINS_COMPASS_BOOKSHELF] = false,
+
   },
   shareData = true,
   postmailData = "",
@@ -183,7 +186,7 @@ function LoreBooks:CreateSettings()
         SetLayoutKeyAndRefresh(c.PINS_EIDETIC, "size", size)
         SetLayoutKeyAndRefresh(c.PINS_EIDETIC_COLLECTED, "size", size)
       end,
-      disabled = function() return not (db.filters[c.PINS_UNKNOWN] or db.filters[c.PINS_COLLECTED] or db.filters[c.PINS_EIDETIC] or db.filters[c.PINS_EIDETIC_COLLECTED]) end,
+      disabled = function() return not (db.filters[c.PINS_UNKNOWN] or db.filters[c.PINS_COLLECTED] or db.filters[c.PINS_EIDETIC] or db.filters[c.PINS_EIDETIC_COLLECTED] or db.filters[c.PINS_BOOKSHELF]) end,
       default = defaults.pinTexture.size
     },
     {
@@ -201,7 +204,7 @@ function LoreBooks:CreateSettings()
         SetLayoutKeyAndRefresh(c.PINS_EIDETIC, "level", level)
         SetLayoutKeyAndRefresh(c.PINS_EIDETIC_COLLECTED, "level", level)
       end,
-      disabled = function() return not (db.filters[c.PINS_UNKNOWN] or db.filters[c.PINS_COLLECTED] or db.filters[c.PINS_EIDETIC] or db.filters[c.PINS_EIDETIC_COLLECTED]) end,
+      disabled = function() return not (db.filters[c.PINS_UNKNOWN] or db.filters[c.PINS_COLLECTED] or db.filters[c.PINS_EIDETIC] or db.filters[c.PINS_EIDETIC_COLLECTED] or db.filters[c.PINS_BOOKSHELF]) end,
       default = defaults.pinTexture.level,
     },
     {
@@ -248,6 +251,17 @@ function LoreBooks:CreateSettings()
       end,
       default = defaults.filters[c.PINS_EIDETIC_COLLECTED]
     },
+    { -- Bookshelf
+      type = "checkbox",
+      name = GetString(LBOOKS_BOOKSHELF_NAME),
+      tooltip = GetString(LBOOKS_BOOKSHELF_DESC),
+      getFunc = function() return db.filters[c.PINS_BOOKSHELF] end,
+      setFunc = function(state)
+        db.filters[c.PINS_BOOKSHELF] = state
+        LMP:SetEnabled(c.PINS_BOOKSHELF, state)
+      end,
+      default = defaults.filters[c.PINS_BOOKSHELF]
+    },
     {
       type = "checkbox",
       name = GetString(LBOOKS_COMPASS_UNKNOWN),
@@ -270,6 +284,17 @@ function LoreBooks:CreateSettings()
       end,
       default = defaults.filters[c.PINS_COMPASS_EIDETIC],
     },
+    { -- Bookshelf
+      type = "checkbox",
+      name = GetString(LBOOKS_COMPASS_BOOKSHELF_NAME),
+      tooltip = GetString(LBOOKS_COMPASS_BOOKSHELF_DESC),
+      getFunc = function() return db.filters[c.PINS_COMPASS_BOOKSHELF] end,
+      setFunc = function(state)
+        db.filters[c.PINS_COMPASS_BOOKSHELF] = state
+        COMPASS_PINS:RefreshPins(c.PINS_COMPASS_BOOKSHELF)
+      end,
+      default = defaults.filters[c.PINS_COMPASS_BOOKSHELF],
+    },
     {
       type = "slider",
       name = GetString(LBOOKS_COMPASS_DIST),
@@ -284,8 +309,10 @@ function LoreBooks:CreateSettings()
         COMPASS_PINS:RefreshPins(c.PINS_COMPASS)
         COMPASS_PINS.pinLayouts[c.PINS_COMPASS_EIDETIC].maxDistance = maxDistance / 1000
         COMPASS_PINS:RefreshPins(c.PINS_COMPASS_EIDETIC)
+        COMPASS_PINS.pinLayouts[c.PINS_COMPASS_BOOKSHELF].maxDistance = maxDistance / 1000
+        COMPASS_PINS:RefreshPins(c.PINS_COMPASS_BOOKSHELF)
       end,
-      disabled = function() return not (db.filters[c.PINS_COMPASS] or db.filters[c.PINS_COMPASS_EIDETIC]) end,
+      disabled = function() return not (db.filters[c.PINS_COMPASS] or db.filters[c.PINS_COMPASS_EIDETIC] or db.filters[c.PINS_COMPASS_BOOKSHELF]) end,
       default = defaults.compassMaxDistance * 1000,
     },
     {

@@ -6,7 +6,7 @@ LoreBooks.Constants = c
 --Local constants -------------------------------------------------------------
 c.ADDON_NAME = "LoreBooks"
 c.ADDON_AUTHOR = "Ayantir, Garkin & Kyoma"
-c.ADDON_VERSION = "25"
+c.ADDON_VERSION = "26"
 c.ADDON_WEBSITE = "http://www.esoui.com/downloads/info288-LoreBooks.html"
 c.ADDON_PANEL = "LoreBooksPanel"
 
@@ -18,6 +18,8 @@ c.PINS_EIDETIC = "LBooksMapPin_eidetic"
 c.PINS_EIDETIC_COLLECTED = "LBooksMapPin_eideticCollected"
 c.PINS_COMPASS = "LBooksCompassPin_unknown"
 c.PINS_COMPASS_EIDETIC = "LBooksCompassPin_eidetic"
+c.PINS_BOOKSHELF = "LBooksMapPin_bookshelf"
+c.PINS_COMPASS_BOOKSHELF = "LBooksCompassPin_bookshelf"
 
 -- Pin Textures
 c.PIN_ICON_REAL = 1
@@ -47,7 +49,7 @@ c.icon_list_zoneid = {
   [57] = "/esoui/art/icons/housing_coh_inc_housingbookcase001.dds", -- deshaan_base_0
   [101] = "/esoui/art/icons/housing_coh_inc_housingbookcase001.dds", -- eastmarch_base_0
   [117] = "/esoui/art/icons/housing_coh_inc_housingbookcase001.dds", -- shadowfen_base_0
-  [41] ="/esoui/art/icons/housing_coh_inc_housingbookcase001.dds", -- stonefalls_base_0
+  [41] = "/esoui/art/icons/housing_coh_inc_housingbookcase001.dds", -- stonefalls_base_0
   [103] = "/esoui/art/icons/housing_coh_inc_housingbookcase001.dds", -- therift_base_0
   [104] = "/esoui/art/icons/housing_coh_inc_housingbookcase001.dds", -- alikr_base_0
   [92] = "/esoui/art/icons/housing_coh_inc_housingbookcase001.dds", -- bangkorai_base_0

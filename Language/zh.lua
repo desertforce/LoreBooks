@@ -14,6 +14,7 @@ SafeAddString(LBOOKS_LBPOS_ERROR, "Something went wrong", 1)
 
 --tooltips
 SafeAddString(LBOOKS_KNOWN, "已收集", 1)
+SafeAddString(LBOOKS_BOOKSHELF, "Bookshelf", 1)
 
 SafeAddString(LBOOKS_MOREINFO1, "城镇", 1)
 SafeAddString(LBOOKS_MOREINFO2, "洞穴", 1)
@@ -63,9 +64,13 @@ SafeAddString(LBOOKS_EIDETIC_DESC, "在地图上 显示/隐藏 未知永恒记�
 SafeAddString(LBOOKS_EIDETIC_COLLECTED, "显示已知永恒记忆", 1)
 SafeAddString(LBOOKS_EIDETIC_COLLECTED_DESC, "在地图上 显示/隐藏 已知永恒记忆卷轴。 这些卷轴是一些不计入法师公会进度的相关知识卷轴, 只提供一些与塔姆瑞尔世界观相关的信息", 1)
 
+SafeAddString(LBOOKS_BOOKSHELF_NAME, "Show bookshelves", 1)
+SafeAddString(LBOOKS_BOOKSHELF_DESC, "Show/Hide bookshelves on map. Bookshelves contain a random book from the zone.", 1)
 SafeAddString(LBOOKS_COMPASS_EIDETIC, "在罗盘上显示未知永恒记忆", 1)
 SafeAddString(LBOOKS_COMPASS_EIDETIC_DESC, "在罗盘上 显示/隐藏 未知永恒记忆卷轴。 这些卷轴是一些不计入法师公会进度的相关知识卷轴, 只提供一些与塔姆瑞尔世界观相关的信息", 1)
 
+SafeAddString(LBOOKS_COMPASS_BOOKSHELF_NAME, "Show bookshelves on compass", 1)
+SafeAddString(LBOOKS_COMPASS_BOOKSHELF_DESC, "Show/Hide bookshelves on compass. Bookshelves contain a random book from the zone.", 1)
 SafeAddString(LBOOKS_UNLOCK_EIDETIC, "解锁永恒图书馆", 1)
 SafeAddString(LBOOKS_UNLOCK_EIDETIC_DESC, "即使你还没有完成法师公会的任务线，此选项依然能为您解锁永恒图书馆。此选项只对 英语/法语/德语 用户生效。", 1)
 SafeAddString(LBOOKS_UNLOCK_EIDETIC_WARNING, "This option is disabled because either LoreBooks has not yet been updated for the latest game update or your language is not supported", 1)
@@ -74,6 +79,7 @@ SafeAddString(LBOOKS_UNLOCK_EIDETIC_WARNING, "This option is disabled because ei
 SafeAddString(LBOOKS_FILTER_UNKNOWN, "未知典籍", 1)
 SafeAddString(LBOOKS_FILTER_COLLECTED, "已收集典籍", 1)
 SafeAddString(LBOOKS_FILTER_EICOLLECTED, "<<1>> (已收集)", 1)
+SafeAddString(LBOOKS_FILTER_BOOKSHELF, "Lorebooks Bookshelf", 1)
 
 --research
 SafeAddString(LBOOKS_SEARCH_LABEL, "在典籍图书馆中搜索:", 1)

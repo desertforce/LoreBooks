@@ -9,6 +9,7 @@ local strings = {
 
   --tooltips
   LBOOKS_KNOWN = "Collected",
+  LBOOKS_BOOKSHELF = "Bookshelf",
 
   LBOOKS_MOREINFO1 = "Town",
   LBOOKS_MOREINFO2 = "Delve",
@@ -57,9 +58,13 @@ local strings = {
   LBOOKS_EIDETIC_DESC = "Show/Hide unknown Eidetic Memory scrolls on map. Those scrolls are lore-related scrolls not involved into Mages Guild Progression, but only informative about Tamriel",
   LBOOKS_EIDETIC_COLLECTED = "Show known Eidetic Memory",
   LBOOKS_EIDETIC_COLLECTED_DESC = "Show/Hide known Eidetic Memory scrolls on map. Those scrolls are lore-related scrolls not involved into Mages Guild Progression, but only informative about Tamriel",
+  LBOOKS_BOOKSHELF_NAME = "Show bookshelves",
+  LBOOKS_BOOKSHELF_DESC = "Show/Hide bookshelves on map. Bookshelves contain a random book from the zone.",
 
   LBOOKS_COMPASS_EIDETIC = "Show unknown Eidetic Memory on compass",
   LBOOKS_COMPASS_EIDETIC_DESC = "Show/Hide unknown Eidetic Memory scrolls on compass. Those scrolls are lore-related scrolls not involved into Mages Guild Progression, but only informative about Tamriel",
+  LBOOKS_COMPASS_BOOKSHELF_NAME = "Show bookshelves on compass",
+  LBOOKS_COMPASS_BOOKSHELF_DESC = "Show/Hide bookshelves on compass. Bookshelves contain a random book from the zone.",
 
   LBOOKS_UNLOCK_EIDETIC = "Unlock Eidetic Library",
   LBOOKS_UNLOCK_EIDETIC_DESC = "This will unlock Eidetic Library even if you haven't done the Mage Guild questline. This option is only valid for EN/FR/DE users.",
@@ -69,6 +74,7 @@ local strings = {
   LBOOKS_FILTER_UNKNOWN = "Unknown lorebooks",
   LBOOKS_FILTER_COLLECTED = "Collected lorebooks",
   LBOOKS_FILTER_EICOLLECTED = "<<1>> (Collected)",
+  LBOOKS_FILTER_BOOKSHELF = "Lorebooks Bookshelf",
 
   --research
   LBOOKS_SEARCH_LABEL = "Search in the lore library :",

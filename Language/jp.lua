@@ -14,6 +14,7 @@ SafeAddString(LBOOKS_LBPOS_ERROR, "Something went wrong", 1)
 
 --tooltips
 SafeAddString(LBOOKS_KNOWN, "収集済", 1)
+SafeAddString(LBOOKS_BOOKSHELF, "Bookshelf", 1)
 
 SafeAddString(LBOOKS_MOREINFO1, "町", 1)
 SafeAddString(LBOOKS_MOREINFO2, "ダンジョン", 1)
@@ -63,9 +64,13 @@ SafeAddString(LBOOKS_EIDETIC_DESC, "未発見の直観記憶の巻物をマッ�
 SafeAddString(LBOOKS_EIDETIC_COLLECTED, "発見済の直観記憶を表示", 1)
 SafeAddString(LBOOKS_EIDETIC_COLLECTED_DESC, "発見済の直観記憶の巻物をマップに表示するかどうか。この巻物は魔術師ギルド進行に関連しない伝承関連のもので、タムリエルの情報を提供するだけです。", 1)
 
+SafeAddString(LBOOKS_BOOKSHELF_NAME, "Show bookshelves", 1)
+SafeAddString(LBOOKS_BOOKSHELF_DESC, "Show/Hide bookshelves on map. Bookshelves contain a random book from the zone.", 1)
 SafeAddString(LBOOKS_COMPASS_EIDETIC, "未発見の直観記憶をコンパスに表示", 1)
 SafeAddString(LBOOKS_COMPASS_EIDETIC_DESC, "未発見の直観記憶の巻物をコンパスに表示するかどうか。この巻物は魔術師ギルド進行に関連しない伝承関連のもので、タムリエルの情報を提供するだけです。", 1)
 
+SafeAddString(LBOOKS_COMPASS_BOOKSHELF_NAME, "Show bookshelves on compass", 1)
+SafeAddString(LBOOKS_COMPASS_BOOKSHELF_DESC, "Show/Hide bookshelves on compass. Bookshelves contain a random book from the zone.", 1)
 SafeAddString(LBOOKS_UNLOCK_EIDETIC, "未発見の直観記憶のアンロック", 1)
 SafeAddString(LBOOKS_UNLOCK_EIDETIC_DESC, "魔術師ギルドのクエストラインが未完了でも未発見の直観記憶をアンロックします。このオプションはEN/FR/DEユーザーにのみ有効です。", 1)
 SafeAddString(LBOOKS_UNLOCK_EIDETIC_WARNING, "This option is disabled because either LoreBooks has not yet been updated for the latest game update or your language is not supported", 1)
@@ -74,6 +79,7 @@ SafeAddString(LBOOKS_UNLOCK_EIDETIC_WARNING, "This option is disabled because ei
 SafeAddString(LBOOKS_FILTER_UNKNOWN, "未発見の伝説の書物", 1)
 SafeAddString(LBOOKS_FILTER_COLLECTED, "収集済みの伝説の書物", 1)
 SafeAddString(LBOOKS_FILTER_EICOLLECTED, "<<1>> (収集済)", 1)
+SafeAddString(LBOOKS_FILTER_BOOKSHELF, "Lorebooks Bookshelf", 1)
 
 --research
 SafeAddString(LBOOKS_SEARCH_LABEL, "伝承の蔵書庫から検索 :", 1)

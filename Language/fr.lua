@@ -15,6 +15,7 @@ SafeAddString(LBOOKS_LBPOS_ERROR, "Quelque chose s'est mal passé", 1)
 
 --tooltips
 SafeAddString(LBOOKS_KNOWN, "collecté", 1)
+SafeAddString(LBOOKS_BOOKSHELF, "Bookshelf", 1)
 
 SafeAddString(LBOOKS_MOREINFO1, "Ville", 1)
 SafeAddString(LBOOKS_MOREINFO2, "Antres", 1)
@@ -63,9 +64,14 @@ SafeAddString(LBOOKS_EIDETIC, "Mémoire Éidétique inconnue sur la carte", 1)
 SafeAddString(LBOOKS_EIDETIC_DESC, "Affiche/Masque les parchemins inconnus présents dans la Mémoire Éidétique sur la carte. Ces parchemins promulguent diverses informations sur le lore de Tamriel et ne sont en rien impliqués dans la progression de la Guilde des Mages", 1)
 SafeAddString(LBOOKS_EIDETIC_COLLECTED, "Mémoire Éidétique connue sur la carte", 1)
 SafeAddString(LBOOKS_EIDETIC_COLLECTED_DESC, "Affiche/Masque les parchemins connus présents dans la Mémoire Éidétique sur la carte. Ces parchemins promulguent diverses informations sur le lore de Tamriel et ne sont en rien impliqués dans la progression de la Guilde des Mages", 1)
+
+SafeAddString(LBOOKS_BOOKSHELF_NAME, "Show bookshelves", 1)
+SafeAddString(LBOOKS_BOOKSHELF_DESC, "Show/Hide bookshelves on map. Bookshelves contain a random book from the zone.", 1)
 SafeAddString(LBOOKS_COMPASS_EIDETIC, "Mémoire Éidétique inconnue sur le compas", 1)
 SafeAddString(LBOOKS_COMPASS_EIDETIC_DESC, "Affiche/Masque les parchemins inconnus présents dans la Mémoire Éidétique sur le compas. Ces parchemins promulguent diverses informations sur le lore de Tamriel et ne sont en rien impliqués dans la progression de la Guilde des Mages", 1)
 
+SafeAddString(LBOOKS_COMPASS_BOOKSHELF_NAME, "Show bookshelves on compass", 1)
+SafeAddString(LBOOKS_COMPASS_BOOKSHELF_DESC, "Show/Hide bookshelves on compass. Bookshelves contain a random book from the zone.", 1)
 SafeAddString(LBOOKS_UNLOCK_EIDETIC, "Déverrouiller la bibliothèque eidétique", 1)
 SafeAddString(LBOOKS_UNLOCK_EIDETIC_DESC, "Cela débloquera la bibliothèque eidétique même si vous n'avez pas terminé la série de quêtes de la guilde des mages. Cette option n'est valable que pour les utilisateurs EN/FR/DE.", 1)
 SafeAddString(LBOOKS_UNLOCK_EIDETIC_WARNING, "Cette option est désactivée car soit LoreBooks n'a pas encore été mis à jour pour la dernière mise à jour du jeu, soit votre langue n'est pas prise en charge", 1)
@@ -74,6 +80,7 @@ SafeAddString(LBOOKS_UNLOCK_EIDETIC_WARNING, "Cette option est désactivée car 
 SafeAddString(LBOOKS_FILTER_UNKNOWN, "Livres inconnus", 1)
 SafeAddString(LBOOKS_FILTER_COLLECTED, "Livres collectés", 1)
 SafeAddString(LBOOKS_FILTER_EICOLLECTED, "<<1>> (Collectés)", 1)
+SafeAddString(LBOOKS_FILTER_BOOKSHELF, "Lorebooks Bookshelf", 1)
 
 --research
 SafeAddString(LBOOKS_SEARCH_LABEL, "Recherche dans la bibliothèque :", 1)

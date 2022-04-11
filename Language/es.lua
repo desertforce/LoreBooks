@@ -14,6 +14,7 @@ SafeAddString(LBOOKS_LBPOS_ERROR, "Something went wrong", 1)
 
 --tooltips
 SafeAddString(LBOOKS_KNOWN, "Coleccionado", 1)
+SafeAddString(LBOOKS_BOOKSHELF, "Bookshelf", 1)
 
 SafeAddString(LBOOKS_MOREINFO1, "Ciudad", 1)
 SafeAddString(LBOOKS_MOREINFO2, "Cueva", 1)
@@ -56,18 +57,20 @@ SafeAddString(LBOOKS_COLLECTED, "Mostrar libros coleccionados", 1)
 SafeAddString(LBOOKS_COLLECTED_DESC, "Muestra los iconos de los libros ya coleccionados en el mapa.", 1)
 
 SafeAddString(LBOOKS_SHARE_DATA, "Comparte tus descubrimientos con el autor de LoreBooks", 1)
-SafeAddString(LBOOKS_SHARE_DATA_DESC,
-  "Activar esta opción compartirá tus descubrimientos con el autor de LoreBooks enviando automáticamente un correo con la información recolectada.\nEsta opción sólo está disponible para usuarios de EU, incluso si la información compartida se comparte con los usuarios de NA.\nPor favor, ten en cuenta que podrías encontrarte con un corto retraso en tus habilidades cuando el correo está siendo enviado. Los correos se enviarán en segundo plano cada 30 libros leídos.",
-  1)
+SafeAddString(LBOOKS_SHARE_DATA_DESC, "Activar esta opción compartirá tus descubrimientos con el autor de LoreBooks enviando automáticamente un correo con la información recolectada.\nEsta opción sólo está disponible para usuarios de EU, incluso si la información compartida se comparte con los usuarios de NA.\nPor favor, ten en cuenta que podrías encontrarte con un corto retraso en tus habilidades cuando el correo está siendo enviado. Los correos se enviarán en segundo plano cada 30 libros leídos.", 1)
 
 SafeAddString(LBOOKS_EIDETIC, "Mostrar desconocidos de Memoria eidética", 1)
 SafeAddString(LBOOKS_EIDETIC_DESC, "Muestra libros desconocidos de la biblioteca de memoria eidética en el mapa. Estos libros están relacionados con la historia y sucesos de las distintas regiones de Tamriel y no afectan la progresión en el Gremio de Magos.", 1)
 SafeAddString(LBOOKS_EIDETIC_COLLECTED, "Mostrar conocidos de Memoria eidética", 1)
 SafeAddString(LBOOKS_EIDETIC_COLLECTED_DESC, "Muestra libros ya coleccionados de la biblioteca de memoria eidética en el mapa. Estos libros están relacionados con la historia y sucesos de las distintas regiones de Tamriel y no afectan la progresión en el Gremio de Magos.", 1)
 
+SafeAddString(LBOOKS_BOOKSHELF_NAME, "Show bookshelves", 1)
+SafeAddString(LBOOKS_BOOKSHELF_DESC, "Show/Hide bookshelves on map. Bookshelves contain a random book from the zone.", 1)
 SafeAddString(LBOOKS_COMPASS_EIDETIC, "Mostrar desconocidos de Memoria eidética en la brújula", 1)
 SafeAddString(LBOOKS_COMPASS_EIDETIC_DESC, "Muestra libros desconocidos de la biblioteca de memoria eidética en la brújula. Estos libros están relacionados con la historia y sucesos de las distintas regiones de Tamriel y no afectan la progresión en el Gremio de Magos.", 1)
 
+SafeAddString(LBOOKS_COMPASS_BOOKSHELF_NAME, "Show bookshelves on compass", 1)
+SafeAddString(LBOOKS_COMPASS_BOOKSHELF_DESC, "Show/Hide bookshelves on compass. Bookshelves contain a random book from the zone.", 1)
 SafeAddString(LBOOKS_UNLOCK_EIDETIC, "Desbloquear biblioteca eidética", 1)
 SafeAddString(LBOOKS_UNLOCK_EIDETIC_DESC, "Desbloquea la biblioteca de memoria eidética incluso si no has completado la historia del Gremio de Magos. Sólo disponible para clientes EN/FR/DE.", 1)
 SafeAddString(LBOOKS_UNLOCK_EIDETIC_WARNING, "Esta opción está desactivada porque LoreBooks no ha sido actualizado a la última versión del juego, o el idioma de tu cliente aún no es soportado.", 1)
@@ -76,6 +79,7 @@ SafeAddString(LBOOKS_UNLOCK_EIDETIC_WARNING, "Esta opción está desactivada por
 SafeAddString(LBOOKS_FILTER_UNKNOWN, "Libros desconocidos", 1)
 SafeAddString(LBOOKS_FILTER_COLLECTED, "Libros coleccionados", 1)
 SafeAddString(LBOOKS_FILTER_EICOLLECTED, "<<1>> (Coleccionado)", 1)
+SafeAddString(LBOOKS_FILTER_BOOKSHELF, "Lorebooks Bookshelf", 1)
 
 --research
 SafeAddString(LBOOKS_SEARCH_LABEL, "Search in the lore library :", 1)

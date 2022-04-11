@@ -14,6 +14,7 @@ SafeAddString(LBOOKS_LBPOS_ERROR, "Something went wrong", 1)
 
 --tooltips
 SafeAddString(LBOOKS_KNOWN, "Zebrane", 1)
+SafeAddString(LBOOKS_BOOKSHELF, "Bookshelf", 1)
 
 SafeAddString(LBOOKS_MOREINFO1, "Miasto", 1)
 SafeAddString(LBOOKS_MOREINFO2, "Loch", 1)
@@ -63,9 +64,13 @@ SafeAddString(LBOOKS_EIDETIC_DESC, "Pokaż/ukryj niepoznane zwoje Eidetic Memory
 SafeAddString(LBOOKS_EIDETIC_COLLECTED, "Pokaż poznane Eidetic Memory", 1)
 SafeAddString(LBOOKS_EIDETIC_COLLECTED_DESC, "Pokaż ukryj poznane zwoje Eidetic Memory na mapie. Te zwoje są zwyczajne, nie są zaliczane do progresu Gildi Magów, informują tylko o Tamriel", 1)
 
+SafeAddString(LBOOKS_BOOKSHELF_NAME, "Show bookshelves", 1)
+SafeAddString(LBOOKS_BOOKSHELF_DESC, "Show/Hide bookshelves on map. Bookshelves contain a random book from the zone.", 1)
 SafeAddString(LBOOKS_COMPASS_EIDETIC, "Pokaż niepoznane  Eidetic Memory na kompasie", 1)
 SafeAddString(LBOOKS_COMPASS_EIDETIC_DESC, "Pokaż ukryj niepoznane zwoje Eidetic Memory na kompasie. Te zwoje są zwyczajne, nie są zaliczane do progresu Gildi Magów, informują tylko o Tamriel", 1)
 
+SafeAddString(LBOOKS_COMPASS_BOOKSHELF_NAME, "Show bookshelves on compass", 1)
+SafeAddString(LBOOKS_COMPASS_BOOKSHELF_DESC, "Show/Hide bookshelves on compass. Bookshelves contain a random book from the zone.", 1)
 SafeAddString(LBOOKS_UNLOCK_EIDETIC, "Odblokuj bibliotekę Eidetic", 1)
 SafeAddString(LBOOKS_UNLOCK_EIDETIC_DESC, "Odblokuje bibliotekę Eidetic, nawet jeśli nie zrobiłeś linii fabularnej Gildi Magów. Ta opcja jest dostępna tylko dla użytkowników EN / FR / DE.", 1)
 SafeAddString(LBOOKS_UNLOCK_EIDETIC_WARNING, "This option is disabled because either LoreBooks has not yet been updated for the latest game update or your language is not supported", 1)
@@ -74,6 +79,7 @@ SafeAddString(LBOOKS_UNLOCK_EIDETIC_WARNING, "This option is disabled because ei
 SafeAddString(LBOOKS_FILTER_UNKNOWN, "niepoznane księgi fabularne", 1)
 SafeAddString(LBOOKS_FILTER_COLLECTED, "Zebrane księgi fabularne", 1)
 SafeAddString(LBOOKS_FILTER_EICOLLECTED, "<<1>> (Poznano)", 1)
+SafeAddString(LBOOKS_FILTER_BOOKSHELF, "Lorebooks Bookshelf", 1)
 
 --research
 SafeAddString(LBOOKS_SEARCH_LABEL, "Wyszukaj księgi fabularne :", 1)

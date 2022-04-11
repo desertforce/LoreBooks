@@ -14,6 +14,7 @@ SafeAddString(LBOOKS_LBPOS_ERROR, "Something went wrong", 1)
 
 --tooltips
 SafeAddString(LBOOKS_KNOWN, "Собрано", 1)
+SafeAddString(LBOOKS_BOOKSHELF, "Bookshelf", 1)
 
 SafeAddString(LBOOKS_MOREINFO1, "Город", 1)
 SafeAddString(LBOOKS_MOREINFO2, "Соло-подземелье", 1)
@@ -63,9 +64,13 @@ SafeAddString(LBOOKS_EIDETIC_DESC, "Show/Hide unknown Eidetic Memory scrolls on 
 SafeAddString(LBOOKS_EIDETIC_COLLECTED, "Show known Eidetic Memory", 1)
 SafeAddString(LBOOKS_EIDETIC_COLLECTED_DESC, "Show/Hide known Eidetic Memory scrolls on map. Those scrolls are lore-related scrolls not involved into Mages Guild Progression, but only informative about Tamriel", 1)
 
+SafeAddString(LBOOKS_BOOKSHELF_NAME, "Show bookshelves", 1)
+SafeAddString(LBOOKS_BOOKSHELF_DESC, "Show/Hide bookshelves on map. Bookshelves contain a random book from the zone.", 1)
 SafeAddString(LBOOKS_COMPASS_EIDETIC, "Show unknown Eidetic Memory on compass", 1)
 SafeAddString(LBOOKS_COMPASS_EIDETIC_DESC, "Show/Hide unknown Eidetic Memory scrolls on compass. Those scrolls are lore-related scrolls not involved into Mages Guild Progression, but only informative about Tamriel", 1)
 
+SafeAddString(LBOOKS_COMPASS_BOOKSHELF_NAME, "Show bookshelves on compass", 1)
+SafeAddString(LBOOKS_COMPASS_BOOKSHELF_DESC, "Show/Hide bookshelves on compass. Bookshelves contain a random book from the zone.", 1)
 SafeAddString(LBOOKS_UNLOCK_EIDETIC, "Unlock Eidetic Library", 1)
 SafeAddString(LBOOKS_UNLOCK_EIDETIC_DESC, "This will unlock Eidetic Library even if you haven't done the Mage Guild questline. This option is only valid for EN/FR/DE users.", 1)
 SafeAddString(LBOOKS_UNLOCK_EIDETIC_WARNING, "This option is disabled because either LoreBooks has not yet been updated for the latest game update or your language is not supported", 1)
@@ -74,6 +79,7 @@ SafeAddString(LBOOKS_UNLOCK_EIDETIC_WARNING, "This option is disabled because ei
 SafeAddString(LBOOKS_FILTER_UNKNOWN, "Неизвестные книги знаний", 1)
 SafeAddString(LBOOKS_FILTER_COLLECTED, "Собранные книги знаний", 1)
 SafeAddString(LBOOKS_FILTER_EICOLLECTED, "<<1>> (Collected)", 1)
+SafeAddString(LBOOKS_FILTER_BOOKSHELF, "Lorebooks Bookshelf", 1)
 
 --research
 SafeAddString(LBOOKS_SEARCH_LABEL, "ПОИСК в библиотеке lоrе :", 1)

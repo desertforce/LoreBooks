@@ -14,6 +14,7 @@ SafeAddString(LBOOKS_LBPOS_ERROR, "Something went wrong", 1)
 
 --tooltips
 SafeAddString(LBOOKS_KNOWN, "Coletado", 1)
+SafeAddString(LBOOKS_BOOKSHELF, "Bookshelf", 1)
 
 SafeAddString(LBOOKS_MOREINFO1, "Cidade", 1)
 SafeAddString(LBOOKS_MOREINFO2, "Covil", 1)
@@ -56,18 +57,20 @@ SafeAddString(LBOOKS_COLLECTED, "Mostrar livros já coletados", 1)
 SafeAddString(LBOOKS_COLLECTED_DESC, "Mostrar/Ocultar ícones de livros já coletados no mapa.", 1)
 
 SafeAddString(LBOOKS_SHARE_DATA, "Compartilhe suas descobertas com o autor do LoreBooks", 1)
-SafeAddString(LBOOKS_SHARE_DATA_DESC,
-  "Habilitar esta opção compartilhará suas descobertas com o autor do LoreBooks enviando automaticamente um e-mail no jogo com dados coletados.\Esta opção só está disponível para usuários da UE, mesmo se os dados coletados forem compartilhados com os NAs\Por favor, observe que você pode encontrar um pequeno atraso nas suas habilidades quando o email é enviado. O correio é enviado silenciosamente a cada 30 livros lidos.",
-  1)
+SafeAddString(LBOOKS_SHARE_DATA_DESC, "Habilitar esta opção compartilhará suas descobertas com o autor do LoreBooks enviando automaticamente um e-mail no jogo com dados coletados.\Esta opção só está disponível para usuários da UE, mesmo se os dados coletados forem compartilhados com os NAs\Por favor, observe que você pode encontrar um pequeno atraso nas suas habilidades quando o email é enviado. O correio é enviado silenciosamente a cada 30 livros lidos.", 1)
 
 SafeAddString(LBOOKS_EIDETIC, "Mostrar Memória Eidética desconhecida", 1)
 SafeAddString(LBOOKS_EIDETIC_DESC, "Mostrar/Esconder Pergaminhos de Memória Eidética desconhecidos no mapa. Esses pergaminhos são relacionados ao folclore e não envolvidos na Progressão da Guilda dos Magos, mas apenas informativos sobre Tamriel.", 1)
 SafeAddString(LBOOKS_EIDETIC_COLLECTED, "Mostrar Memória Eidética conhecida", 1)
 SafeAddString(LBOOKS_EIDETIC_COLLECTED_DESC, "Mostrar/Ocultar a Memória Eidética conhecida no mapa. Esses pergaminhos são pergaminhos relacionados ao folclore e não envolvidos na Progressão da Guilda dos Magos, mas apenas informativos sobre Tamriel.", 1)
 
+SafeAddString(LBOOKS_BOOKSHELF_NAME, "Show bookshelves", 1)
+SafeAddString(LBOOKS_BOOKSHELF_DESC, "Show/Hide bookshelves on map. Bookshelves contain a random book from the zone.", 1)
 SafeAddString(LBOOKS_COMPASS_EIDETIC, "Mostrar Memória Eidética desconhecida na bússola", 1)
 SafeAddString(LBOOKS_COMPASS_EIDETIC_DESC, "Mostrar/Ocultar Pergaminhos de Memória Eidética desconhecidos na bússola. Esses pergaminhos são relacionados ao folclore e não envolvidos na Progressão da Guilda dos Magos, mas apenas informativos sobre Tamriel.", 1)
 
+SafeAddString(LBOOKS_COMPASS_BOOKSHELF_NAME, "Show bookshelves on compass", 1)
+SafeAddString(LBOOKS_COMPASS_BOOKSHELF_DESC, "Show/Hide bookshelves on compass. Bookshelves contain a random book from the zone.", 1)
 SafeAddString(LBOOKS_UNLOCK_EIDETIC, "Desbloquear Biblioteca Eidética", 1)
 SafeAddString(LBOOKS_UNLOCK_EIDETIC_DESC, "Isto irá desbloquear a Biblioteca Eidética, mesmo que você não tenha feito a linha de missão do Mago. Esta opção é válida apenas para usuários EN/FR/DE.", 1)
 SafeAddString(LBOOKS_UNLOCK_EIDETIC_WARNING, "This option is disabled because either LoreBooks has not yet been updated for the latest game update or your language is not supported", 1)
@@ -76,6 +79,7 @@ SafeAddString(LBOOKS_UNLOCK_EIDETIC_WARNING, "This option is disabled because ei
 SafeAddString(LBOOKS_FILTER_UNKNOWN, "Livross desconhecidos", 1)
 SafeAddString(LBOOKS_FILTER_COLLECTED, "Livros Coletados", 1)
 SafeAddString(LBOOKS_FILTER_EICOLLECTED, "<<1>> (Coletado)", 1)
+SafeAddString(LBOOKS_FILTER_BOOKSHELF, "Lorebooks Bookshelf", 1)
 
 --research
 SafeAddString(LBOOKS_SEARCH_LABEL, "Pesquise na biblioteca de conhecimento :", 1)
