@@ -6,6 +6,7 @@ local strings = {
   LBOOKS_SPECIAL_QUEST = "Special quest in <<1>>",
   LBOOKS_LBPOS_OPEN_BOOK = "You must be reading a book to use /lbpos",
   LBOOKS_LBPOS_ERROR = "Something went wrong",
+  LBOOKS_PIN_UPDATE = "Please Help Update",
 
   --tooltips
   LBOOKS_KNOWN = "Collected",

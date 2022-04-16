@@ -12,6 +12,7 @@ SafeAddString(LBOOKS_QUEST_IN_ZONE, "Quête en <<1>>", 1)
 SafeAddString(LBOOKS_SPECIAL_QUEST, "Quête spéciale dans <<1>>", 1)
 SafeAddString(LBOOKS_LBPOS_OPEN_BOOK, "Vous devez lire un livre pour utiliser /lbpos", 1)
 SafeAddString(LBOOKS_LBPOS_ERROR, "Quelque chose s'est mal passé", 1)
+SafeAddString(LBOOKS_PIN_UPDATE = "Please Help Update", 1)
 
 --tooltips
 SafeAddString(LBOOKS_KNOWN, "collecté", 1)

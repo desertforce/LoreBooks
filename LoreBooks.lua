@@ -1463,7 +1463,7 @@ local function OnRowMouseUp(control, button)
           local mapId = data.pm
           local mapName = GetMapNameById(mapId)
 
-          if not data.r and not data.fp and data.px and data.py then
+          if not data.r and not data.fp and data.px and data.py and not data.zt then
 
             local xTooltip = ("%0.02f"):format(zo_round(data.px * 10000) / 100)
             local yTooltip = ("%0.02f"):format(zo_round(data.py * 10000) / 100)
@@ -1567,10 +1567,15 @@ local function OnMouseEnter(self, categoryIndex, collectionIndex, bookIndex)
             local insert = true
             local isRandom = data.r
             local inDungeon = data.d
+            local hasZoneTag = data.zt
             local isFromBag = data.i == INTERACTION_NONE
 
             local mapId = data.pm
             local name, _, _, zoneIndex, _ = GetMapInfoById(mapId)
+            local zoneNameZondId = nil
+            if hasZoneTag then
+              zoneNameZondId = GetZoneNameById(data.zt)
+            end
             --d(name)
             --d(zoneIndex)
 
@@ -1586,13 +1591,17 @@ local function OnMouseEnter(self, categoryIndex, collectionIndex, bookIndex)
             local mapName = zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetMapNameById(mapId))
 
             local bookPosition
-            if zoneName ~= mapName then
+            if zoneName ~= mapName and not hasZoneTag then
               bookPosition = zo_strformat("<<1>> - <<2>>", mapName, zoneName)
               if entryWeight[bookPosition] and entryWeight[bookPosition][weight] then
                 insert = false
               end
             else
-              bookPosition = mapName
+              if hasZoneTag then
+                bookPosition = zoneNameZondId
+              else
+                bookPosition = mapName
+              end
               if entryWeight[bookPosition] and entryWeight[bookPosition][weight] then
                 insert = false
               end
@@ -1608,6 +1617,10 @@ local function OnMouseEnter(self, categoryIndex, collectionIndex, bookIndex)
               addDivider = true
 
               InformationTooltip:AddLine(bookPosition, "", ZO_HIGHLIGHT_TEXT:UnpackRGB())
+
+              if hasZoneTag then
+                InformationTooltip:AddLine(GetString(LBOOKS_PIN_UPDATE), "", ZO_HIGHLIGHT_TEXT:UnpackRGB())
+              end
 
               if inDungeon then
                 InformationTooltip:AddLine(zo_strformat("[<<1>>]", GetString(SI_QUESTTYPE5)), "", ZO_SELECTED_TEXT:UnpackRGB())
@@ -1990,9 +2003,9 @@ local function GetLorebookNames()
             local badMapIndex = (data.mn and data.mn == 1 or data.mn and data.mn == 24)
             local validZoneId = data.z ~= 0
             if data.g then isDungeon = true end
-            
+
             if data and data.z then
-              local mapId = GetMapIdByZoneId(data.z) 
+              local mapId = GetMapIdByZoneId(data.z)
               if mapId ~= 0 then mapIdFromZoneId = mapId end
             end
             if data and data.mn then
@@ -2012,34 +2025,34 @@ local function GetLorebookNames()
             elseif not data.md and mapIdFromMapIndex then
               data.pm = mapIdFromMapIndex
             elseif not data.md and data.z and data.z ~= 0 then
-                local zoneName = GetZoneNameById(data.z) or "[Empty String]"
-                local theMapIndex = data.mn or "[No MapIndex]"
-                if zoneName and LMD.mapNamesLookup[zoneName] then
-                  --[[
-                  for i = LMD.MAPINDEX_MIN, LMD.MAPINDEX_MAX do
-                    if LMD.mapIndexData[i].zoneId == GetParentZoneId(data.z) then
-                      --d("Works")
-                    else
-                      d("Nope")
-                    end
+              local zoneName = GetZoneNameById(data.z) or "[Empty String]"
+              local theMapIndex = data.mn or "[No MapIndex]"
+              if zoneName and LMD.mapNamesLookup[zoneName] then
+                --[[
+                for i = LMD.MAPINDEX_MIN, LMD.MAPINDEX_MAX do
+                  if LMD.mapIndexData[i].zoneId == GetParentZoneId(data.z) then
+                    --d("Works")
+                  else
+                    d("Nope")
                   end
-                  ]]--
-                  data.pm = LMD.mapNamesLookup[zoneName]
-                  count = count + 1
-                else
-                  d(string.format("[LookUp] zoneName %s : zoneId: %s : mapIndex: %s : BookId : %s", zoneName, data.z, theMapIndex, bookId))
-                  --d(data)
-                  count2 = count2 + 1
-                  data.zt = data.z
                 end
+                ]]--
+                data.pm = LMD.mapNamesLookup[zoneName]
+                count = count + 1
+              else
+                d(string.format("[LookUp] zoneName %s : zoneId: %s : mapIndex: %s : BookId : %s", zoneName, data.z, theMapIndex, bookId))
+                --d(data)
+                count2 = count2 + 1
+                data.zt = data.z
+              end
             elseif not data.md then
-                d("-----")
-                d(data)
-                bad = bad + 1
-                saveData = false
+              d("-----")
+              d(data)
+              bad = bad + 1
+              saveData = false
             end
-            if data.md then 
-              data.pm = mapIdFromMapId 
+            if data.md then
+              data.pm = mapIdFromMapId
               count3 = count3 + 1
             end
             data.md = nil
@@ -2262,7 +2275,7 @@ local function OnLoad(eventCode, name)
 
     -- SLASH_COMMANDS["/lbgetn"] = GetLorebookNames
 
-    --SLASH_COMMANDS["/lbshow"] = ShowLorebookMissingMapId
+    -- SLASH_COMMANDS["/lbshow"] = ShowLorebookMissingMapId
 
     --events
     EVENT_MANAGER:RegisterForEvent(c.ADDON_NAME, EVENT_SHOW_BOOK, OnShowBook)

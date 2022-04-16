@@ -62,7 +62,6 @@ function lib.on_map_zone_changed()
 end
 ]]--
 local function UpdateMapInfo()
-LibMapData:dm("Debug", "UpdateMapInfo")
 local zoneIndex = GetCurrentMapZoneIndex()
 local mapIndex = GetCurrentMapIndex()
 local mapId = GetCurrentMapId()
@@ -97,7 +96,6 @@ lib.subzoneName = subzoneName
 end
 
 local function OnZoneChanged(eventCode, zoneName, subZoneName, newSubzone, zoneId, subZoneId)
-  LibMapData:dm("Debug", "UpdateMapInfo")
   UpdateMapInfo()
 end
 EVENT_MANAGER:RegisterForEvent(libName .. "_zone_changed", EVENT_ZONE_CHANGED, OnZoneChanged)
@@ -174,17 +172,13 @@ end
 EVENT_MANAGER:RegisterForEvent(libName .. "_onload", EVENT_ADD_ON_LOADED, OnAddOnLoaded)
 
 CALLBACK_MANAGER:RegisterCallback("OnWorldMapChanged", function()
-    LibMapData:dm("Debug", "OnWorldMapChanged")
     UpdateMapInfo()
 end)
 
 WORLD_MAP_SCENE:RegisterCallback("StateChange", function(oldState, newState)
-    LibMapData:dm("Debug", "StateChange")
     if newState == SCENE_SHOWING then
-        LibMapData:dm("Debug", "SCENE_SHOWING")
         UpdateMapInfo()
     elseif newState == SCENE_HIDDEN then
-        LibMapData:dm("Debug", "SCENE_HIDDEN")
         UpdateMapInfo()
     end
 end)
@@ -195,10 +189,11 @@ if LibDebugLogger then
 end
 
 local function create_log(log_type, log_content)
-  if DebugLogViewer and log_type == "Info" then
+  if not DebugLogViewer and log_type == "Info" then
     CHAT_ROUTER:AddSystemMessage(log_content)
     return
   end
+  if not LibDebugLogger then return end
   if log_type == "Debug" then
     LibMapData.logger:Debug(log_content)
   end

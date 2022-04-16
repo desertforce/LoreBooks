@@ -68222,7 +68222,7 @@ local bookData = {
             ["c"] = true,
             ["cn"] = "Research Notes",
             ["n"] = "Kasura's Notes",
-            ["q"] = "The Dragonguard's Legacy",
+            ["q"] = 6395,
             ["e"] = 
             {
                 [1] = 
@@ -68399,7 +68399,7 @@ local bookData = {
             ["c"] = true,
             ["cn"] = "Mysteries and Clues",
             ["n"] = "Letter to Marillan",
-            ["q"] = "The Dragonguard's Legacy",
+            ["q"] = 6395,
             ["e"] = 
             {
                 [1] = 
@@ -68523,7 +68523,7 @@ local bookData = {
             ["c"] = true,
             ["cn"] = "Pellitine Postings",
             ["n"] = "Mantra of Redemption",
-            ["q"] = "Chiaroscuro Crossroads",
+            ["q"] = 6396,
             ["e"] = 
             {
                 [1] = 
@@ -68541,7 +68541,7 @@ local bookData = {
             ["c"] = true,
             ["cn"] = "Pellitine Postings",
             ["n"] = "Letter to Shirnama",
-            ["q"] = "Order of the New Moon",
+            ["q"] = 6399,
             ["e"] = 
             {
                 [1] = 
@@ -68568,7 +68568,7 @@ local bookData = {
                     ["i"] = 12,
                 },
             },
-            ["n"] = "The Pride of Alkosh",
+            ["n"] = 6403,
             ["cn"] = "Pellitine Postings",
         },
         [5667] = 
@@ -68593,7 +68593,7 @@ local bookData = {
             ["c"] = true,
             ["cn"] = "Mysteries and Clues",
             ["n"] = "Final Letter of Sergeant Berarah",
-            ["q"] = "The Horn of Ja'darri",
+            ["q"] = 6398,
             ["e"] = 
             {
                 [1] = 
@@ -68685,7 +68685,7 @@ local bookData = {
             ["c"] = true,
             ["cn"] = "Pellitine Postings",
             ["n"] = "Singed Lady G Note",
-            ["q"] = "The Deadliest Prey",
+            ["q"] = 6408,
             ["e"] = 
             {
                 [1] = 
@@ -68703,7 +68703,7 @@ local bookData = {
             ["c"] = true,
             ["cn"] = "Pellitine Postings",
             ["n"] = "Invitation to the Hunt",
-            ["q"] = "The Deadliest Prey",
+            ["q"] = 6408,
             ["e"] = 
             {
                 [1] = 
@@ -68979,7 +68979,7 @@ local bookData = {
             ["c"] = true,
             ["cn"] = "Pellitine Postings",
             ["n"] = "Vijari is Unwell",
-            ["q"] = "Chiaroscuro Crossroads",
+            ["q"] = 6396,
             ["e"] = 
             {
                 [1] = 
@@ -69178,7 +69178,7 @@ local bookData = {
             ["c"] = true,
             ["qs"] = true,
             ["n"] = "Sealed Letter",
-            ["q"] = "The Dragonguard's Legacy",
+            ["q"] = 6395,
             ["cn"] = "Mysteries and Clues",
             ["e"] = 
             {
@@ -69206,7 +69206,7 @@ local bookData = {
             ["c"] = true,
             ["cn"] = "Pellitine Postings",
             ["n"] = "Moon-Sugar Plans",
-            ["q"] = "Another Khajiit's Tale",
+            ["q"] = 6413,
             ["e"] = 
             {
                 [1] = 
@@ -69224,7 +69224,7 @@ local bookData = {
             ["c"] = true,
             ["cn"] = "Pellitine Postings",
             ["n"] = "Lost Cat",
-            ["q"] = "Little Lost Cat",
+            ["q"] = 6442,
             ["e"] = 
             {
                 [1] = 
@@ -69242,7 +69242,7 @@ local bookData = {
             ["c"] = true,
             ["cn"] = "Pellitine Postings",
             ["n"] = "J'saad's Note",
-            ["q"] = "J'saads Stein",
+            ["q"] = 6445,
             ["e"] = 
             {
                 [1] = 
@@ -69285,7 +69285,7 @@ local bookData = {
             ["c"] = true,
             ["cn"] = "Pellitine Postings",
             ["n"] = "Ja'darri the Endless",
-            ["q"] = "The Pride of Alkosh",
+            ["q"] = 6403,
             ["e"] = 
             {
                 [1] = 
@@ -69346,7 +69346,7 @@ local bookData = {
             ["c"] = true,
             ["cn"] = "Pellitine Postings",
             ["n"] = "Moon-Sugar: A Better Plan",
-            ["q"] = "Another Khajiit's Tale",
+            ["q"] = 6413,
             ["e"] = 
             {
                 [1] = 
@@ -69514,7 +69514,7 @@ local bookData = {
             ["c"] = true,
             ["cn"] = "Pellitine Postings",
             ["n"] = "The Wandering Spirits",
-            ["q"] = "The Pride of Alkosh",
+            ["q"] = 6403,
             ["e"] = 
             {
                 [1] = 
@@ -69640,7 +69640,7 @@ local bookData = {
             ["c"] = true,
             ["cn"] = "Pellitine Postings",
             ["n"] = "To Sai Sahan",
-            ["q"] = "The Dark Aeon",
+            ["q"] = 6393,
             ["e"] = 
             {
                 [1] = 

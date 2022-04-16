@@ -1,6 +1,7 @@
 local lib = _G["LibMapData"]
 
 LIBMAPDATA_BANGKORAI_PSEUDOMAPINDEX = 6
+LIBMAPDATA_VVARDENFELL_PSEUDOMAPINDEX = 30
 
 lib.tamrielData = {
 }
@@ -93,6 +94,15 @@ lib.gold_CoastData = {
 }
 
 lib.vvardenfellData = {
+  [1162] = {
+    ["pseudoMapIndex"] = LIBMAPDATA_VVARDENFELL_PSEUDOMAPINDEX,
+    ["mapTexture"] = "vvardenfell/nchuleft_base_0",
+    ["mapScale"] = {
+      x = 0.6046329141,
+      y = 0.3318561316,
+      zoom_factor = 0.0031403303,
+    },
+  },
 }
 
 lib.clockwork_CityData = {
