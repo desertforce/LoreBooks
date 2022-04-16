@@ -7,6 +7,16 @@ lib.tamrielData = {
 }
 
 lib.glenumbraData = {
+  [1] = {
+    ["Impresario"] = {
+      x = 0.3420265614,
+      y = 0.7411329746,
+    },
+    ["Chef_Donolon"] = {
+      x = 0.2082464247,
+      y = 0.7187666893,
+    },
+  },
 }
 
 lib.rivenspireData = {
@@ -37,6 +47,16 @@ lib.deshaanData = {
 }
 
 lib.stonefallsData = {
+  [7] = {
+    ["Impresario"] = {
+      x = 0.9201570153,
+      y = 0.4024004340,
+    },
+    ["Chef_Donolon"] = {
+      x = 0.9166180491,
+      y = 0.3022293746,
+    },
+  },
 }
 
 lib.the_RiftData = {
@@ -49,6 +69,16 @@ lib.cyrodiilData = {
 }
 
 lib.auridonData = {
+  [143] = {
+    ["Impresario"] = {
+      x = 0.6482877135,
+      y = 0.8675177097,
+    },
+    ["Chef_Donolon"] = {
+      x = 0.6562538146,
+      y = 0.9370744824,
+    },
+  },
 }
 
 lib.greenshadeData = {
@@ -103,12 +133,24 @@ lib.vvardenfellData = {
       zoom_factor = 0.0031403303,
     },
   },
+  [1060] = {
+    ["Impresario"] = {
+      x = 0.4671077430,
+      y = 0.8333740830,
+    },
+  },
 }
 
 lib.clockwork_CityData = {
 }
 
 lib.summersetData = {
+  [1349] = {
+    ["Impresario"] = {
+      x = 0.2842602431,
+      y = 0.5381632447,
+    },
+  },
 }
 
 lib.artaeumData = {
@@ -121,12 +163,24 @@ lib.norg_TzelData = {
 }
 
 lib.northern_ElsweyrData = {
+  [1555] = {
+    ["Impresario"] = {
+      x = 0.7474783062,
+      y = 0.3210040330,
+    },
+  },
 }
 
 lib.southern_ElsweyrData = {
 }
 
 lib.western_SkyrimData = {
+  [1719] = {
+    ["Impresario"] = {
+      x = 0.5106408596,
+      y = 0.4133806228,
+    },
+  },
 }
 
 lib.blackreach_Greymoor_CavernsData = {
@@ -142,6 +196,12 @@ lib.the_ReachData = {
 }
 
 lib.blackwoodData = {
+  [1887] = {
+    ["Impresario"] = {
+      x = 0.2744835615,
+      y = 0.5430571436,
+    },
+  },
 }
 
 lib.fargraveData = {
