@@ -15,7 +15,7 @@ SafeAddString(LBOOKS_LBPOS_ERROR, "Quelque chose s'est mal passé", 1)
 
 --tooltips
 SafeAddString(LBOOKS_KNOWN, "collecté", 1)
-SafeAddString(LBOOKS_BOOKSHELF, "Bookshelf", 1)
+SafeAddString(LBOOKS_BOOKSHELF, "Bibliothèque", 1)
 
 SafeAddString(LBOOKS_MOREINFO1, "Ville", 1)
 SafeAddString(LBOOKS_MOREINFO2, "Antres", 1)
@@ -53,25 +53,25 @@ SafeAddString(LBOOKS_COMPASS_DIST_DESC, "Choisir la distance à partir de laquel
 
 --filters
 SafeAddString(LBOOKS_UNKNOWN, "Afficher les Livres inconnus", 1)
-SafeAddString(LBOOKS_UNKNOWN_DESC, "Afficher/cacher les icônes des Livres (de la Guilde des Mages) inconnus sur la carte.", 1)
+SafeAddString(LBOOKS_UNKNOWN_DESC, "Afficher/Masquer les icônes des Livres (de la Guilde des Mages) inconnus sur la carte.", 1)
 SafeAddString(LBOOKS_COLLECTED, "Afficher les Livres collectés", 1)
-SafeAddString(LBOOKS_COLLECTED_DESC, "Afficher/cacher les icônes des Livres (de la Guilde des Mages) déjà collectés sur la carte.", 1)
+SafeAddString(LBOOKS_COLLECTED_DESC, "Afficher/Masquer les icônes des Livres (de la Guilde des Mages) déjà collectés sur la carte.", 1)
 
 SafeAddString(LBOOKS_SHARE_DATA, "Partagez vos découvertes avec l'auteur de LoreBooks", 1)
 SafeAddString(LBOOKS_SHARE_DATA_DESC, "L'activation de cette option partagera vos découvertes avec l'auteur de LoreBooks en envoyant automatiquement un e-mail dans le jeu avec les données collectées.\nCette option n'est disponible que pour les utilisateurs de l'UE, même si les données collectées sont partagées avec ceux de NA\nVeuillez noter que vous pouvez rencontrer un léger décalage avec vos compétences lors de l'envoi du courrier. Le courrier est envoyé silencieusement tous les 30 livres lus.", 1)
 
 SafeAddString(LBOOKS_EIDETIC, "Mémoire Éidétique inconnue sur la carte", 1)
-SafeAddString(LBOOKS_EIDETIC_DESC, "Affiche/Masque les parchemins inconnus présents dans la Mémoire Éidétique sur la carte. Ces parchemins promulguent diverses informations sur le lore de Tamriel et ne sont en rien impliqués dans la progression de la Guilde des Mages", 1)
+SafeAddString(LBOOKS_EIDETIC_DESC, "Afficher/Masquer les parchemins inconnus présents dans la Mémoire Éidétique sur la carte. Ces parchemins promulguent diverses informations sur le lore de Tamriel et ne sont en rien impliqués dans la progression de la Guilde des Mages", 1)
 SafeAddString(LBOOKS_EIDETIC_COLLECTED, "Mémoire Éidétique connue sur la carte", 1)
 SafeAddString(LBOOKS_EIDETIC_COLLECTED_DESC, "Affiche/Masque les parchemins connus présents dans la Mémoire Éidétique sur la carte. Ces parchemins promulguent diverses informations sur le lore de Tamriel et ne sont en rien impliqués dans la progression de la Guilde des Mages", 1)
 
-SafeAddString(LBOOKS_BOOKSHELF_NAME, "Show bookshelves", 1)
-SafeAddString(LBOOKS_BOOKSHELF_DESC, "Show/Hide bookshelves on map. Bookshelves contain a random book from the zone.", 1)
+SafeAddString(LBOOKS_BOOKSHELF_NAME, "Voir la Bibliothèque", 1)
+SafeAddString(LBOOKS_BOOKSHELF_DESC, "Afficher/Masquer les Bibliothèques sur la carte. Les Bibliothèques contiennent un livre aléatoire de la zone.", 1)
 SafeAddString(LBOOKS_COMPASS_EIDETIC, "Mémoire Éidétique inconnue sur le compas", 1)
 SafeAddString(LBOOKS_COMPASS_EIDETIC_DESC, "Affiche/Masque les parchemins inconnus présents dans la Mémoire Éidétique sur le compas. Ces parchemins promulguent diverses informations sur le lore de Tamriel et ne sont en rien impliqués dans la progression de la Guilde des Mages", 1)
 
-SafeAddString(LBOOKS_COMPASS_BOOKSHELF_NAME, "Show bookshelves on compass", 1)
-SafeAddString(LBOOKS_COMPASS_BOOKSHELF_DESC, "Show/Hide bookshelves on compass. Bookshelves contain a random book from the zone.", 1)
+SafeAddString(LBOOKS_COMPASS_BOOKSHELF_NAME, "Afficher les Bibliothèques sur la boussole", 1)
+SafeAddString(LBOOKS_COMPASS_BOOKSHELF_DESC, "Afficher/Masquer les Bibliothèques sur la boussole. Les Bibliothèques contiennent un livre aléatoire de la zone.", 1)
 SafeAddString(LBOOKS_UNLOCK_EIDETIC, "Déverrouiller la bibliothèque eidétique", 1)
 SafeAddString(LBOOKS_UNLOCK_EIDETIC_DESC, "Cela débloquera la bibliothèque eidétique même si vous n'avez pas terminé la série de quêtes de la guilde des mages. Cette option n'est valable que pour les utilisateurs EN/FR/DE.", 1)
 SafeAddString(LBOOKS_UNLOCK_EIDETIC_WARNING, "Cette option est désactivée car soit LoreBooks n'a pas encore été mis à jour pour la dernière mise à jour du jeu, soit votre langue n'est pas prise en charge", 1)
@@ -80,7 +80,7 @@ SafeAddString(LBOOKS_UNLOCK_EIDETIC_WARNING, "Cette option est désactivée car 
 SafeAddString(LBOOKS_FILTER_UNKNOWN, "Livres inconnus", 1)
 SafeAddString(LBOOKS_FILTER_COLLECTED, "Livres collectés", 1)
 SafeAddString(LBOOKS_FILTER_EICOLLECTED, "<<1>> (Collectés)", 1)
-SafeAddString(LBOOKS_FILTER_BOOKSHELF, "Lorebooks Bookshelf", 1)
+SafeAddString(LBOOKS_FILTER_BOOKSHELF, "Bibliothèque Lorebooks", 1)
 
 --research
 SafeAddString(LBOOKS_SEARCH_LABEL, "Recherche dans la bibliothèque :", 1)
