@@ -1,5 +1,145 @@
 local lib = _G["LibMapData"]
 
+LIBMAPDATA_BANGKORAI_PSEUDOMAPINDEX = 6
+
+lib.tamrielData = {
+}
+
+lib.glenumbraData = {
+}
+
+lib.rivenspireData = {
+}
+
+lib.stormhavenData = {
+}
+
+lib.alikr_DesertData = {
+}
+
+lib.bangkoraiData = {
+  [1153] = {
+   ["pseudoMapIndex"] = LIBMAPDATA_BANGKORAI_PSEUDOMAPINDEX,
+  },
+}
+
+lib.grahtwoodData = {
+}
+
+lib.malabal_TorData = {
+}
+
+lib.shadowfenData = {
+}
+
+lib.deshaanData = {
+}
+
+lib.stonefallsData = {
+}
+
+lib.the_RiftData = {
+}
+
+lib.eastmarchData = {
+}
+
+lib.cyrodiilData = {
+}
+
+lib.auridonData = {
+}
+
+lib.greenshadeData = {
+}
+
+lib.reapers_MarchData = {
+}
+
+lib.bal_FoyenData = {
+}
+
+lib.stros_MKaiData = {
+}
+
+lib.betnikhData = {
+}
+
+lib.khenarthis_RoostData = {
+}
+
+lib.bleakrock_IsleData = {
+}
+
+lib.coldharbourData = {
+}
+
+lib.the_AurbisData = {
+}
+
+lib.craglornData = {
+}
+
+lib.imperial_CityData = {
+}
+
+lib.wrothgarData = {
+}
+
+lib.hews_BaneData = {
+}
+
+lib.gold_CoastData = {
+}
+
+lib.vvardenfellData = {
+}
+
+lib.clockwork_CityData = {
+}
+
+lib.summersetData = {
+}
+
+lib.artaeumData = {
+}
+
+lib.murkmireData = {
+}
+
+lib.norg_TzelData = {
+}
+
+lib.northern_ElsweyrData = {
+}
+
+lib.southern_ElsweyrData = {
+}
+
+lib.western_SkyrimData = {
+}
+
+lib.blackreach_Greymoor_CavernsData = {
+}
+
+lib.blackreachData = {
+}
+
+lib.blackreach_Arkthzand_CavernData = {
+}
+
+lib.the_ReachData = {
+}
+
+lib.blackwoodData = {
+}
+
+lib.fargraveData = {
+}
+
+lib.the_DeadlandsData = {
+}
+
 lib.mapIndexData = {
   [1] = {
     ["mapTexture"] = "",
@@ -8,6 +148,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 1,
     ["zoneName"] = "Tamriel",
     ["zoneId"] = 0, -- 2  zoneInfo
+    ["mapsData"] = lib.tamrielData,
   },
   [2] = {
     ["mapTexture"] = "glenumbra/glenumbra_base_0",
@@ -16,6 +157,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 2,
     ["zoneName"] = "Glenumbra",
     ["zoneId"] = 3,
+    ["mapsData"] = lib.glenumbraData,
   },
   [3] = {
     ["mapTexture"] = "rivenspire/rivenspire_base_0",
@@ -24,6 +166,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 5,
     ["zoneName"] = "Rivenspire",
     ["zoneId"] = 20,
+    ["mapsData"] = lib.rivenspireData,
   },
   [4] = {
     ["mapTexture"] = "stormhaven/stormhaven_base_0",
@@ -32,6 +175,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 4,
     ["zoneName"] = "Stormhaven",
     ["zoneId"] = 19,
+    ["mapsData"] = lib.stormhavenData,
   },
   [5] = {
     ["mapTexture"] = "alikr/alikr_base_0",
@@ -40,6 +184,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 17,
     ["zoneName"] = "Alik'r Desert",
     ["zoneId"] = 104,
+    ["mapsData"] = lib.alikr_DesertData,
   },
   [6] = {
     ["mapTexture"] = "bangkorai/bangkorai_base_0",
@@ -48,6 +193,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 14,
     ["zoneName"] = "Bangkorai",
     ["zoneId"] = 92,
+    ["mapsData"] = lib.bangkoraiData,
   },
   [7] = {
     ["mapTexture"] = "grahtwood/grahtwood_base_0",
@@ -56,6 +202,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 180,
     ["zoneName"] = "Grahtwood",
     ["zoneId"] = 383,
+    ["mapsData"] = lib.grahtwoodData,
   },
   [8] = {
     ["mapTexture"] = "malabaltor/malabaltor_base_0",
@@ -64,6 +211,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 11,
     ["zoneName"] = "Malabal Tor",
     ["zoneId"] = 58,
+    ["mapsData"] = lib.malabal_TorData,
   },
   [9] = {
     ["mapTexture"] = "shadowfen/shadowfen_base_0",
@@ -72,6 +220,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 19,
     ["zoneName"] = "Shadowfen",
     ["zoneId"] = 117,
+    ["mapsData"] = lib.shadowfenData,
   },
   [10] = {
     ["mapTexture"] = "deshaan/deshaan_base_0",
@@ -80,6 +229,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 10,
     ["zoneName"] = "Deshaan",
     ["zoneId"] = 57,
+    ["mapsData"] = lib.deshaanData,
   },
   [11] = {
     ["mapTexture"] = "stonefalls/stonefalls_base_0",
@@ -88,6 +238,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 9,
     ["zoneName"] = "Stonefalls",
     ["zoneId"] = 41,
+    ["mapsData"] = lib.stonefallsData,
   },
   [12] = {
     ["mapTexture"] = "therift/therift_base_0",
@@ -96,6 +247,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 16,
     ["zoneName"] = "The Rift",
     ["zoneId"] = 103,
+    ["mapsData"] = lib.the_RiftData,
   },
   [13] = {
     ["mapTexture"] = "eastmarch/eastmarch_base_0",
@@ -104,6 +256,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 15,
     ["zoneName"] = "Eastmarch",
     ["zoneId"] = 101,
+    ["mapsData"] = lib.eastmarchData,
   },
   [14] = {
     ["mapTexture"] = "cyrodiil/ava_whole_0",
@@ -112,6 +265,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 37,
     ["zoneName"] = "Cyrodiil",
     ["zoneId"] = 181,
+    ["mapsData"] = lib.cyrodiilData,
   },
   [15] = {
     ["mapTexture"] = "auridon/auridon_base_0",
@@ -120,6 +274,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 178,
     ["zoneName"] = "Auridon",
     ["zoneId"] = 381,
+    ["mapsData"] = lib.auridonData,
   },
   [16] = {
     ["mapTexture"] = "greenshade/greenshade_base_0",
@@ -128,6 +283,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 18,
     ["zoneName"] = "Greenshade",
     ["zoneId"] = 108,
+    ["mapsData"] = lib.greenshadeData,
   },
   [17] = {
     ["mapTexture"] = "reapersmarch/reapersmarch_base_0",
@@ -136,6 +292,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 179,
     ["zoneName"] = "Reaper's March",
     ["zoneId"] = 382,
+    ["mapsData"] = lib.reapers_MarchData,
   },
   [18] = {
     ["mapTexture"] = "stonefalls/balfoyen_base_0",
@@ -144,6 +301,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 110,
     ["zoneName"] = "Bal Foyen",
     ["zoneId"] = 281,
+    ["mapsData"] = lib.bal_FoyenData,
   },
   [19] = {
     ["mapTexture"] = "glenumbra/strosmkai_base_0",
@@ -152,6 +310,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 304,
     ["zoneName"] = "Stros M'Kai",
     ["zoneId"] = 534,
+    ["mapsData"] = lib.stros_MKaiData,
   },
   [20] = {
     ["mapTexture"] = "glenumbra/betnihk_base_0",
@@ -160,6 +319,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 305,
     ["zoneName"] = "Betnikh",
     ["zoneId"] = 535,
+    ["mapsData"] = lib.betnikhData,
   },
   [21] = {
     ["mapTexture"] = "auridon/khenarthisroost_base_0",
@@ -168,6 +328,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 306,
     ["zoneName"] = "Khenarthi's Roost",
     ["zoneId"] = 537,
+    ["mapsData"] = lib.khenarthis_RoostData,
   },
   [22] = {
     ["mapTexture"] = "stonefalls/bleakrock_base_0",
@@ -176,6 +337,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 109,
     ["zoneName"] = "Bleakrock Isle",
     ["zoneId"] = 280,
+    ["mapsData"] = lib.bleakrock_IsleData,
   },
   [23] = {
     ["mapTexture"] = "coldharbor/coldharbour_base_0",
@@ -184,6 +346,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 154,
     ["zoneName"] = "Coldharbour",
     ["zoneId"] = 347,
+    ["mapsData"] = lib.coldharbourData,
   },
   [24] = {
     ["mapTexture"] = "",
@@ -192,6 +355,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 1,
     ["zoneName"] = "The Aurbis",
     ["zoneId"] = 0, -- 2 zoneInfo
+    ["mapsData"] = lib.the_AurbisData,
   },
   [25] = {
     ["mapTexture"] = "craglorn/craglorn_base_0",
@@ -200,6 +364,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 500,
     ["zoneName"] = "Craglorn",
     ["zoneId"] = 888,
+    ["mapsData"] = lib.craglornData,
   },
   [26] = {
     ["mapTexture"] = "cyrodiil/imperialcity_base_0",
@@ -208,6 +373,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 346,
     ["zoneName"] = "Imperial City",
     ["zoneId"] = 584,
+    ["mapsData"] = lib.imperial_CityData,
   },
   [27] = {
     ["mapTexture"] = "wrothgar/wrothgar_base_0",
@@ -216,6 +382,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 379,
     ["zoneName"] = "Wrothgar",
     ["zoneId"] = 684,
+    ["mapsData"] = lib.wrothgarData,
   },
   [28] = {
     ["mapTexture"] = "thievesguild/hewsbane_base_0",
@@ -224,6 +391,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 442,
     ["zoneName"] = "Hew's Bane",
     ["zoneId"] = 816,
+    ["mapsData"] = lib.hews_BaneData,
   },
   [29] = {
     ["mapTexture"] = "darkbrotherhood/goldcoast_base_0",
@@ -232,6 +400,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 448,
     ["zoneName"] = "Gold Coast",
     ["zoneId"] = 823,
+    ["mapsData"] = lib.gold_CoastData,
   },
   [30] = {
     ["mapTexture"] = "vvardenfell/vvardenfell_base_0",
@@ -240,6 +409,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 467,
     ["zoneName"] = "Vvardenfell",
     ["zoneId"] = 849,
+    ["mapsData"] = lib.vvardenfellData,
   },
   [31] = {
     ["mapTexture"] = "clockwork/clockwork_base_0",
@@ -248,6 +418,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 589,
     ["zoneName"] = "Clockwork City",
     ["zoneId"] = 980,
+    ["mapsData"] = lib.clockwork_CityData,
   },
   [32] = {
     ["mapTexture"] = "summerset/summerset_base_0",
@@ -256,6 +427,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 616,
     ["zoneName"] = "Summerset",
     ["zoneId"] = 1011,
+    ["mapsData"] = lib.summersetData,
   },
   [33] = {
     ["mapTexture"] = "summerset/artaeum_base_0",
@@ -264,6 +436,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 632,
     ["zoneName"] = "Artaeum",
     ["zoneId"] = 1027,
+    ["mapsData"] = lib.artaeumData,
   },
   [34] = {
     ["mapTexture"] = "murkmire/murkmire_base_0",
@@ -272,6 +445,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 407,
     ["zoneName"] = "Murkmire",
     ["zoneId"] = 726,
+    ["mapsData"] = lib.murkmireData,
   },
   [35] = {
     ["mapTexture"] = "murkmire/swampisland_ext_base_0",
@@ -280,6 +454,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 668,
     ["zoneName"] = "Norg-Tzel",
     ["zoneId"] = 1072,
+    ["mapsData"] = lib.norg_TzelData,
   },
   [36] = {
     ["mapTexture"] = "elsweyr/elsweyr_base_0",
@@ -288,6 +463,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 681,
     ["zoneName"] = "Northern Elsweyr",
     ["zoneId"] = 1086,
+    ["mapsData"] = lib.northern_ElsweyrData,
   },
   [37] = {
     ["mapTexture"] = "southernelsweyr/southernelsweyr_base_0",
@@ -296,6 +472,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 720,
     ["zoneName"] = "Southern Elsweyr",
     ["zoneId"] = 1133,
+    ["mapsData"] = lib.southern_ElsweyrData,
   },
   [38] = {
     ["mapTexture"] = "skyrim/westernskryim_base_0",
@@ -304,6 +481,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 743,
     ["zoneName"] = "Western Skyrim",
     ["zoneId"] = 1160,
+    ["mapsData"] = lib.western_SkyrimData,
   },
   [39] = {
     ["mapTexture"] = "skyrim/blackreach_base_0",
@@ -312,6 +490,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 744,
     ["zoneName"] = "Blackreach: Greymoor Caverns",
     ["zoneId"] = 1161,
+    ["mapsData"] = lib.blackreach_Greymoor_CavernsData,
   },
   [40] = -- nil dungeon nil main zone
   {
@@ -321,6 +500,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 1,
     ["zoneName"] = "Blackreach",
     ["zoneId"] = 0, -- 2 zoneInfo
+    ["mapsData"] = lib.blackreachData,
   },
   [41] = {
     ["mapTexture"] = "reach/u28_blackreach_base_0",
@@ -329,6 +509,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 784,
     ["zoneName"] = "Blackreach: Arkthzand Cavern",
     ["zoneId"] = 1208,
+    ["mapsData"] = lib.blackreach_Arkthzand_CavernData,
   },
   [42] = {
     ["mapTexture"] = "reach/reach_base_0",
@@ -337,6 +518,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 783,
     ["zoneName"] = "The Reach",
     ["zoneId"] = 1207,
+    ["mapsData"] = lib.the_ReachData,
   },
   [43] = {
     ["mapTexture"] = "blackwood/blackwood_base_0",
@@ -345,6 +527,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 834,
     ["zoneName"] = "Blackwood",
     ["zoneId"] = 1261,
+    ["mapsData"] = lib.blackwoodData,
   },
   [44] = {
     ["mapTexture"] = "deadlands/u32_fargravezone_base_0",
@@ -353,6 +536,7 @@ lib.mapIndexData = {
     ["zoneIndex"] = 854,
     ["zoneName"] = "Fargrave",
     ["zoneId"] = 1283,
+    ["mapsData"] = lib.fargraveData,
   },
   [45] = {
     ["mapTexture"] = "deadlands/u32deadlandszone_base_0",
@@ -361,5 +545,6 @@ lib.mapIndexData = {
     ["zoneIndex"] = 857,
     ["zoneName"] = "The Deadlands",
     ["zoneId"] = 1286,
+    ["mapsData"] = lib.the_DeadlandsData,
   },
 }
