@@ -57,16 +57,11 @@ end
 
 local function GetLorebooksMapInfo()
   LMD:UpdateMapInfo()
-  local _, zone = LMP:GetZoneAndSubzone(false, false, true)
   local zoneId = GetZoneId(GetCurrentMapZoneIndex())
   local mapIndex = GetCurrentMapIndex()
   if IsInImperialCity() then mapIndex = GetImperialCityMapIndex() end
   if IsInCyrodiil() then mapIndex = GetCyrodiilMapIndex end
   local mapId = GetCurrentMapId()
-  --d(zone)
-  --d(zoneId)
-  --d(mapIndex)
-  --d(mapId)
 
   local name, mapType, mapContentType, zoneIndex, description = GetMapInfoById(mapId)
   local isMainZone = mapType == MAPTYPE_ZONE
@@ -196,7 +191,7 @@ pinTooltipCreatorEidetic.creator = function(pin)
   local collection = GetLoreCollectionInfo(3, pinTag.c)
   if icon == MISSING_TEXTURE then icon = PLACEHOLDER_TEXTURE end
   local mapId = pinTag.pm
-  local name, _, _, zoneIndex, _ = GetMapInfoById(mapId)
+  local _, _, _, zoneIndex, _ = GetMapInfoById(mapId)
   local zoneName = zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetZoneNameByIndex(zoneIndex))
   local mapName = zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetMapNameById(mapId))
 
@@ -462,8 +457,8 @@ local function CreatePins()
   if (updatePins[c.PINS_EIDETIC_COLLECTED] and LMP:IsEnabled(c.PINS_EIDETIC_COLLECTED))
     or (shouldDisplay and updatePins[c.PINS_EIDETIC] and LMP:IsEnabled(c.PINS_EIDETIC))
     or (shouldDisplay and updatePins[c.PINS_COMPASS_EIDETIC] and db.filters[c.PINS_COMPASS_EIDETIC]) then
-    local mapContentType = GetMapContentType()
     local eideticBooks
+    -- used with ["zm"] when the pin is in a city and on the zone map
     local z_mapId = GetMapIdByZoneId(zoneId)
 
     eideticBooks = LoreBooks_GetNewEideticDataForMapUniqueId(mapId, z_mapId)
@@ -1895,193 +1890,6 @@ ZO_PreHook(ZO_Reticle, "TryHandlingInteraction", function(interactionPossible, c
   end
 end)
 
-local function is_in(search_value, search_table)
-  for _, v in pairs(search_table) do
-    if search_value == v then return true end
-    if type(search_value) == "string" then
-      if string.find(string.lower(v), string.lower(search_value)) then return true end
-    end
-  end
-  return false
-end
-
-local function isMainMapId(mapId)
-  if mapId == 0 or mapId == nil then return false end
-  for _, data in pairs(LoreBooks.mapIndexData) do
-    if data.mapId then return true end
-  end
-  if LoreBooks.mapIndexData then return true end
-  return false
-end
-local function isMainZoneId(zoneId)
-  if zoneId == 0 or zoneId == nil then return false end
-  for _, data in pairs(LoreBooks.mapIndexData) do
-    if data.zoneId then return true end
-  end
-  return false
-end
-
-local function GetLorebookNames()
-  local categoryIndex
-  local collectionIndex
-  local bookIndex
-  local bookTitle
-  local name
-  local bookId
-  local mapIdFromZoneId
-  local mapIdFromMapIndex
-  local mapIdFromMapId
-  local local_x
-  local local_y
-  local saveData = true
-  local count = 0
-  local count2 = 0
-  local count3 = 0
-  local bad = 0
-  local isDungeon = false
-
-  local allBookData = LoreBooks_GetBookData()
-  local LoreBooks_bookData = ZO_DeepTableCopy(allBookData)
-  for i = 1, 10000 do
-    -- 45 zones by index
-    local name, mapType, mapContentType, zoneIndex, description = GetMapInfoByIndex(i)
-    local zoneNameByZoneIndex = GetZoneNameByIndex(zoneIndex)
-    local zoneIdByZoneIndex = GetZoneId(zoneIndex)
-    local mapIdByZoneId = GetMapIdByZoneId(zoneIdByZoneIndex)
-    local mapTextureByMapId = GetMapTileTextureForMapId(mapIdByZoneId, 1)
-    local mapTexture = string.lower(mapTextureByMapId)
-    mapTexture = mapTexture:gsub("^.*/maps/", "")
-    mapTexture = mapTexture:gsub("%.dds$", "")
-    local theInfo = {
-      zoneName = name,
-      zoneId = zoneIdByZoneIndex,
-      mapId = mapIdByZoneId,
-      mapTexture = mapTexture,
-      zoneIndex = zoneIndex,
-      mapIndex = i,
-    }
-    local mapNameByMapIndex = GetMapNameByIndex(i)
-    local categoryIndex, collectionIndex, bookIndex = GetLoreBookIndicesFromBookId(i)
-    if categoryIndex == 3 and collectionIndex and bookIndex then
-      bookTitle, _, _, bookId = GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex)
-      name, _, _, _, _, _, _ = GetLoreCollectionInfo(categoryIndex, collectionIndex)
-      if not LoreBooks_bookData[bookId] then LoreBooks_bookData[bookId] = {} end
-      if LoreBooks_bookData[bookId] then
-        if bookTitle then LoreBooks_bookData[bookId].n = bookTitle end
-        if name then LoreBooks_bookData[bookId].cn = name end
-        if not LoreBooks_bookData[bookId].e then
-          LoreBooks_bookData[bookId].e = {}
-          LoreBooks_bookData[bookId].c = false
-        end
-        LoreBooks_bookData[bookId].k = nil
-        LoreBooks_bookData[bookId].qt = nil
-        LoreBooks_bookData[bookId].qm = nil
-        local newMapData = {}
-        if LoreBooks_bookData[bookId].r and LoreBooks_bookData[bookId].m and NonContiguousCount(LoreBooks_bookData[bookId].m) > 1 then
-          for mapIndex, numSeen in pairs(LoreBooks_bookData[bookId].m) do
-            local mapId = GetMapIdByIndex(mapIndex)
-            newMapData[mapId] = numSeen
-          end
-          LoreBooks_bookData[bookId].m = newMapData
-        end -- good
-        if LoreBooks_bookData[bookId].q then
-          LoreBooks_bookData[bookId].m = nil
-        end
-
-        local newMapData = {}
-        if NonContiguousCount(LoreBooks_bookData[bookId].e) > 0 then
-          for _, data in pairs(LoreBooks_bookData[bookId].e) do
-            mapIdFromZoneId = nil
-            mapIdFromMapIndex = nil
-            mapIdFromMapId = nil
-            local_x = nil
-            local_y = nil
-            saveData = true
-            isDungeon = false
-
-            local badMapIndex = (data.mn and data.mn == 1 or data.mn and data.mn == 24)
-            local validZoneId = data.z ~= 0
-            if data.g then isDungeon = true end
-
-            if data and data.z then
-              local mapId = GetMapIdByZoneId(data.z)
-              if mapId ~= 0 then mapIdFromZoneId = mapId end
-            end
-            if data and data.mn then
-              local mapIndex = GetMapIndexByZoneId(data.z)
-              data.mn = mapIndex
-              local mapId = GetMapIdByZoneId(data.mn)
-              if mapId ~= 0 then mapIdFromMapIndex = mapId end
-            end
-            if data and data.md then mapIdFromMapId = data.md end
-
-            if data.x and data.y then
-              local_x = data.x
-              local_y = data.y
-            end
-            if not data.md and mapIdFromZoneId then
-              data.pm = mapIdFromZoneId
-            elseif not data.md and mapIdFromMapIndex then
-              data.pm = mapIdFromMapIndex
-            elseif not data.md and data.z and data.z ~= 0 then
-              local zoneName = GetZoneNameById(data.z) or "[Empty String]"
-              local theMapIndex = data.mn or "[No MapIndex]"
-              if zoneName and LMD.mapNamesLookup[zoneName] then
-                --[[
-                for i = LMD.MAPINDEX_MIN, LMD.MAPINDEX_MAX do
-                  if LMD.mapIndexData[i].zoneId == GetParentZoneId(data.z) then
-                    --d("Works")
-                  else
-                    d("Nope")
-                  end
-                end
-                ]]--
-                data.pm = LMD.mapNamesLookup[zoneName]
-                count = count + 1
-              else
-                d(string.format("[LookUp] zoneName %s : zoneId: %s : mapIndex: %s : BookId : %s", zoneName, data.z, theMapIndex, bookId))
-                --d(data)
-                count2 = count2 + 1
-                data.zt = data.z
-              end
-            elseif not data.md then
-              d("-----")
-              d(data)
-              bad = bad + 1
-              saveData = false
-            end
-            if data.md then
-              data.pm = mapIdFromMapId
-              count3 = count3 + 1
-            end
-            data.md = nil
-            data.z = nil
-            data.zx = nil
-            data.zy = nil
-            data.x = nil
-            data.y = nil
-
-            data.px = local_x
-            data.py = local_y
-
-            if data.px and data.py and saveData then
-              table.insert(newMapData, data)
-            end
-
-          end -- end for
-          LoreBooks_bookData[bookId].e = newMapData
-        end -- end if
-
-      end
-    end
-  end
-  d(count) -- keep
-  d(count2) -- keep
-  d(count3) -- keep
-  d(bad) -- keep
-  LBooks_SavedVariables.names = LoreBooks_bookData
-end
-
 --/script SetCVar("Language.2", "fr")
 local bookShelfLocalization = {
   ["en"] = "Bookshelf",
@@ -2274,10 +2082,6 @@ local function OnLoad(eventCode, name)
 
     SLASH_COMMANDS["/lbfake"] = CreateFakePin
 
-    -- SLASH_COMMANDS["/lbgetn"] = GetLorebookNames
-
-    -- SLASH_COMMANDS["/lbshow"] = ShowLorebookMissingMapId
-
     --events
     EVENT_MANAGER:RegisterForEvent(c.ADDON_NAME, EVENT_SHOW_BOOK, OnShowBook)
     EVENT_MANAGER:RegisterForEvent(c.ADDON_NAME, EVENT_HIDE_BOOK, OnHideBook)
@@ -2287,5 +2091,4 @@ local function OnLoad(eventCode, name)
   end
 
 end
-
 EVENT_MANAGER:RegisterForEvent(c.ADDON_NAME, EVENT_ADD_ON_LOADED, OnLoad)
