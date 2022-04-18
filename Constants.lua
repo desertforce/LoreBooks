@@ -6,7 +6,7 @@ LoreBooks.Constants = c
 --Local constants -------------------------------------------------------------
 c.ADDON_NAME = "LoreBooks"
 c.ADDON_AUTHOR = "Garkin, Ayantir, Kyoma, Sharlikran"
-c.ADDON_VERSION = "32"
+c.ADDON_VERSION = "33"
 c.ADDON_WEBSITE = "http://www.esoui.com/downloads/info288-LoreBooks.html"
 c.ADDON_PANEL = "LoreBooksPanel"
 

@@ -56,6 +56,7 @@ local function InvalidPoint(x, y)
 end
 
 local function GetLorebooksMapInfo()
+  LMD:UpdateMapInfo()
   local _, zone = LMP:GetZoneAndSubzone(false, false, true)
   local zoneId = GetZoneId(GetCurrentMapZoneIndex())
   local mapIndex = GetCurrentMapIndex()
@@ -1574,7 +1575,7 @@ local function OnMouseEnter(self, categoryIndex, collectionIndex, bookIndex)
             local name, _, _, zoneIndex, _ = GetMapInfoById(mapId)
             local zoneNameZondId = nil
             if hasZoneTag then
-              zoneNameZondId = GetZoneNameById(data.zt)
+              zoneNameZondId = zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetZoneNameById(data.zt))
             end
             --d(name)
             --d(zoneIndex)
@@ -1808,9 +1809,7 @@ local function OnBookLearned(_, categoryIndex)
   if categoryIndex ~= 2 then
 
     --Refresh map if needed and get player position
-    if SetMapToPlayerLocation() == SET_MAP_RESULT_MAP_CHANGED then
-      CALLBACK_MANAGER:FireCallbacks("OnWorldMapChanged")
-    end
+    LMD:SetPlayerLocation()
 
     local x, y = GetMapPlayerPosition("player")
 
@@ -2091,6 +2090,7 @@ local bookShelfLocalization = {
   ["ru"] = "Книжная полка",
 }
 local function ShowMyPosition()
+  LMD:SetPlayerLocation()
   local _, zone = LMP:GetZoneAndSubzone()
   local x, y = GetMapPlayerPosition("player")
   local xpos, ypos = GPS:LocalToGlobal(x, y)
@@ -2193,7 +2193,7 @@ local function ShowMyPosition()
     -- [2828] = { ["m"] = { [1940] = 1, }, ["k"] = 2828, }, [1940] = { ["x"] = 0.255800, ["y"] = 0.455359, ["z"] = 1261 }, -- The Black Fin: Foreign Adventures, Part 2, u30_leyawiincity_base
     if isBookshelf then
       outText = string.format("[%d] = { [%s] = { [%d] = 1, }, }, [%d] = { [%s] = %.10f, [%s] = %.10f, [%s] = %d, }, -- %s, %s",
-        shownBookId, mf, mapId, mapId, xf, xpos, yf, ypos, zf, zoneId, bookName, zone)
+        shownBookId, mf, mapId, mapId, xf, x, yf, y, zf, zoneId, bookName, zone)
     end
     -- [6473] = { ["e"] = { [1] = { ["zx"] = 0.562083, ["zy"] = 0.524402, ["x"] = 0.378672, ["y"] = 0.287162, ["z"] = 1207, }, }, ["k"] = 6473, }, -- Great Spirits of the Reach: Volume 2, reach_base
     -- [6071] = { ["e"] = { [1] = { ["zx"] = 0.434603, ["zy"] = 0.227340, ["x"] = 0.344336, ["y"] = 0.305401, ["md"] = 1871, ["d"] = true, }, }, ["k"] = 6071, }, -- How to Pronounce Dwemer Words, briarrockruins_int01_base
@@ -2221,6 +2221,7 @@ ZO_ChatWindowTextEntryEditBox_Enter:3: in function '(main chunk)'
 end
 
 local function CreateFakePin()
+  LMD:SetPlayerLocation()
   local _, zone = LMP:GetZoneAndSubzone()
   local x, y = GetMapPlayerPosition("player")
   local xpos, ypos = GPS:LocalToGlobal(x, y)
