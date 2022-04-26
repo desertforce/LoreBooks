@@ -56,8 +56,8 @@ local function InvalidPoint(x, y)
   local invalidPos = (x < 0 or x > 1 or y < 0 or y > 1)
   if invalidPos then
     local zone = LMP:GetZoneAndSubzone(true, false, true)
-    internal:dm("Warn", "InvalidPoint calculated, is it really invalid")
-    internal:dm("Warn", zone)
+    LMDI:dm("Warn", "InvalidPoint calculated, is it really invalid")
+    LMDI:dm("Warn", zone)
   end
   return invalidPos
 end

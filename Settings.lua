@@ -173,7 +173,7 @@ function LoreBooks:CreateSettings()
       type = "slider",
       name = GetString(LBOOKS_PIN_SIZE),
       tooltip = GetString(LBOOKS_PIN_SIZE_DESC),
-      min = 20,
+      min = 10,
       max = 70,
       step = 1,
       getFunc = function() return db.pinTexture.size end,
