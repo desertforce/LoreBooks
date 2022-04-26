@@ -27,6 +27,7 @@ http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
 --Libraries--------------------------------------------------------------------
 local LMP = LibMapPins
 local LMD = LibMapData
+local LMDI = LibMapData_Internal
 local GPS = LibGPS3
 local Postmail = {}
 local c = LoreBooks.Constants
@@ -56,7 +57,7 @@ local function InvalidPoint(x, y)
 end
 
 local function GetLorebooksMapInfo()
-  LMD:UpdateMapInfo()
+  LMDI:UpdateMapInfo()
   local zoneId = GetZoneId(GetCurrentMapZoneIndex())
   local mapIndex = GetCurrentMapIndex()
   if IsInImperialCity() then mapIndex = GetImperialCityMapIndex() end
@@ -1804,7 +1805,7 @@ local function OnBookLearned(_, categoryIndex)
   if categoryIndex ~= 2 then
 
     --Refresh map if needed and get player position
-    LMD:SetPlayerLocation()
+    LMDI:SetPlayerLocation()
 
     local x, y = GetMapPlayerPosition("player")
 
@@ -1898,7 +1899,7 @@ local bookShelfLocalization = {
   ["ru"] = "Книжная полка",
 }
 local function ShowMyPosition()
-  LMD:SetPlayerLocation()
+  LMDI:SetPlayerLocation()
   local _, zone = LMP:GetZoneAndSubzone()
   local x, y = GetMapPlayerPosition("player")
   local xpos, ypos = GPS:LocalToGlobal(x, y)
@@ -2007,29 +2008,11 @@ local function ShowMyPosition()
     -- [6071] = { ["e"] = { [1] = { ["zx"] = 0.434603, ["zy"] = 0.227340, ["x"] = 0.344336, ["y"] = 0.305401, ["md"] = 1871, ["d"] = true, }, }, ["k"] = 6071, }, -- How to Pronounce Dwemer Words, briarrockruins_int01_base
     MyPrint(outText)
     -- [6531] = { ["e"] = { [1] = { ["zx"] = 0.163823, ["zy"] = 0.579908, ["x"] = 0.597716, ["y"] = 0.680002, ["z"] = 1261, ["mn"] = 0, }, }, ["c"] = true, ["k"] = 6531, }, -- Tribes of Blackwood: Gideon and the Border, u30_leyawiincity_base
-    --[[
-          bad argument #15 to 'string.format' (integer expected, got nil)
-|rstack traceback:
-[C]: in function 'string.format'
-user:/AddOns/LoreBooks/LoreBooks.lua:1812: in function 'ShowMyPosition'
-|caaaaaa<Locals> _ = "blackwood", zone = "u30_leyawiincity_base", x = 0.16342504322529, y = 0.57929885387421, xpos = 0.59770880491514, ypos = 0.67999160724935, zoneId = 1261, measurement = [table:1]{zoneId = 1261, offsetY = 0.67010320723057, offsetX = 0.59491920471191, scaleY = 0.017069600522518, scaleX = 0.017069600522518, id = 1940}, gpsZoneId = 1261, mapId = 1940, locX = 0.163425, locY = 0.579299, bookName = "Tribes of Blackwood: Gideon an...", bookID = "", categoryIndex = 3, collectionIndex = 42, bookIndex = 75, _ = "Tribes of Blackwood: Gideon an...", _ = "/esoui/art/icons/lore_book5_de...", _ = T </Locals>|r
-/EsoUI/Ingame/SlashCommands/SlashCommands_Shared.lua:204: in function 'DoCommand'
-|caaaaaa<Locals> text = "/lbpos", command = "/lbpos", arguments = "", fn = user:/AddOns/LoreBooks/LoreBooks.lua:1742 </Locals>|r
-/EsoUI/Ingame/ChatSystem/SharedChatSystem.lua:1807: in function 'SharedChatSystem:SubmitTextEntry'
-|caaaaaa<Locals> self = [table:2]{numUnreadMails = 0, ignoreTextEntryChangedEvent = F, minContainerHeight = 170, shouldMinimizeAfterEntry = F, maxContainerWidth = 550, currentNumNotifications = 0, currentChannel = 0, maxContainerHeight = 380, isMinimized = F, allowMultipleContainers = F, isMinimizingOrMaximizing = F, minContainerWidth = 300, isAgentChatActive = F, suppressSave = F, loaded = T}, text = "/lbpos", valid = F, prefix = 47 </Locals>|r
-/EsoUI/Ingame/ChatSystem/SharedChatSystem.lua:2532: in function 'ZO_ChatTextEntry_Execute'
-|caaaaaa<Locals> control = ud </Locals>|r
-(tail call): ?
-ZO_ChatWindowTextEntryEditBox_Enter:3: in function '(main chunk)'
-|caaaaaa<Locals> self = ud </Locals>|r
-(tail call): ?
-(tail call): ?
-]]--
   end
 end
 
 local function CreateFakePin()
-  LMD:SetPlayerLocation()
+  LMDI:SetPlayerLocation()
   local _, zone = LMP:GetZoneAndSubzone()
   local x, y = GetMapPlayerPosition("player")
   local xpos, ypos = GPS:LocalToGlobal(x, y)
