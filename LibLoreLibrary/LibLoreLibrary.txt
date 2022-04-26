@@ -12,6 +12,5 @@
 ##
 ## You can read the full terms at https://account.elderscrollsonline.com/add-on-terms
 
-LibLoreLibrary.lua
-Data.lua
+LibLoreLibrary_$(APIVersion).lua
 Data_$(APIVersion).lua

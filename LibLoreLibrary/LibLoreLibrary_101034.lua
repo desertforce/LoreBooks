@@ -46,12 +46,6 @@ function lib:Initialize()
   end
 end
 
---EVENT_LORE_BOOK_LEARNED
---* EVENT_LORE_BOOK_LEARNED (*luaindex* _categoryIndex_, *luaindex* _collectionIndex_, *luaindex* _bookIndex_, *luaindex* _guildIndex_, *bool* _isMaxRank_)
-local function OnLoreBookLearned(categoryIndex, collectionIndex, bookIndex)
-
-end
-
 function lib:GetNumKnownBooksInCollection(categoryIndex, collectionIndex, booksInCollection)
   local numKnownBooks = 0
   if categoryIndex and collectionIndex and booksInCollection then

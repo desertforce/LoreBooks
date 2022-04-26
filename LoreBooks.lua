@@ -52,16 +52,6 @@ local function MyPrint(...)
   ChatEditControl:InsertText(...)
 end
 
-local function InvalidPoint(x, y)
-  local invalidPos = (x < 0 or x > 1 or y < 0 or y > 1)
-  if invalidPos then
-    local zone = LMP:GetZoneAndSubzone(true, false, true)
-    LMDI:dm("Warn", "InvalidPoint calculated, is it really invalid")
-    LMDI:dm("Warn", zone)
-  end
-  return invalidPos
-end
-
 -- Pins -----------------------------------------------------------------------
 local function GetPinTextureBookshelf(self)
   local zoneId
@@ -1710,76 +1700,21 @@ local function OnHideBook(eventCode)
   shownBookId = nil
 end
 
-local function OnBookLearned(_, categoryIndex)
-
+local function OnBookLearned(eventCode, categoryIndex, collectionIndex, bookIndex, guildIndex, isMaxRank)
   if categoryIndex ~= c.LORE_LIBRARY_CRAFTING then
-
-    --Refresh map if needed and get player position
-    LMDI:SetPlayerLocation()
-
-    local x, y = GetMapPlayerPosition("player")
-
-    if not InvalidPoint(x, y) then
-      -- can be false in some very rare place (mainly fighters/mages/main questline dungeons).
-
-      if categoryIndex == c.LORE_LIBRARY_SHALIDOR then
-        LMP:RefreshPins(c.PINS_UNKNOWN)
-        LMP:RefreshPins(c.PINS_COLLECTED)
-        COMPASS_PINS:RefreshPins(c.PINS_COMPASS)
-      elseif categoryIndex == c.LORE_LIBRARY_EIDETIC then
-        LMP:RefreshPins(c.PINS_EIDETIC)
-        LMP:RefreshPins(c.PINS_EIDETIC_COLLECTED)
-        LMP:RefreshPins(c.PINS_BOOKSHELF)
-        COMPASS_PINS:RefreshPins(c.PINS_COMPASS_EIDETIC)
-        COMPASS_PINS:RefreshPins(c.PINS_COMPASS_BOOKSHELF)
-      end
-
+    if categoryIndex == c.LORE_LIBRARY_SHALIDOR then
+      LMP:RefreshPins(c.PINS_UNKNOWN)
+      LMP:RefreshPins(c.PINS_COLLECTED)
+      COMPASS_PINS:RefreshPins(c.PINS_COMPASS)
+    elseif categoryIndex == c.LORE_LIBRARY_EIDETIC then
+      LMP:RefreshPins(c.PINS_EIDETIC)
+      LMP:RefreshPins(c.PINS_EIDETIC_COLLECTED)
+      LMP:RefreshPins(c.PINS_BOOKSHELF)
+      COMPASS_PINS:RefreshPins(c.PINS_COMPASS_EIDETIC)
+      COMPASS_PINS:RefreshPins(c.PINS_COMPASS_BOOKSHELF)
     end
   end
-
   --BuildLoreBookSummary()
-
-end
-
-function LoreBooks.ToggleUseQuestBooks()
-
-  if db.useQuestBooks then
-
-    local function ScanQuestTools(_, journalIndex, questName)
-      local questData = SHARED_INVENTORY:GetOrCreateQuestCache(journalIndex)
-      if questData then
-        for itemId, itemData in pairs(questData) do
-          if itemData.toolIndex and CanUseQuestTool(journalIndex, itemData.toolIndex) and db.questTools[itemId] ~= questName then
-            db.questTools[itemId] = questName
-            if itemData.name ~= lastReadBook then
-              -- some quests are started by reading a note/book which is then also added as a quest item, skip those
-              UseQuestTool(journalIndex, itemData.toolIndex)
-            end
-          end
-        end
-      end
-    end
-
-    local function ClearQuestTools(_, isCompleted, journalIndex, questName)
-      if isCompleted then
-        -- we only clear it when it gets completed so it doesn't keep reading it if the player restart the quest
-        for itemId, parentQuest in pairs(db.questTools) do
-          if parentQuest == questName then
-            db.questTools[itemId] = nil
-          end
-        end
-      end
-    end
-    EVENT_MANAGER:RegisterForEvent("LoreBooks", EVENT_QUEST_ADDED, ScanQuestTools)
-    EVENT_MANAGER:RegisterForEvent("LoreBooks", EVENT_QUEST_ADVANCED, ScanQuestTools)
-    EVENT_MANAGER:RegisterForEvent("LoreBooks", EVENT_QUEST_REMOVED, ClearQuestTools)
-  else
-    EVENT_MANAGER:UnregisterForEvent("LoreBooks", EVENT_QUEST_ADDED)
-    EVENT_MANAGER:UnregisterForEvent("LoreBooks", EVENT_QUEST_ADVANCED)
-    EVENT_MANAGER:UnregisterForEvent("LoreBooks", EVENT_QUEST_REMOVED)
-
-  end
-
 end
 
 -- slash commands -------------------------------------------------------------
@@ -1897,8 +1832,6 @@ local function OnLoad(eventCode, name)
 
     -- Data sniffer
     --LoreBooks.ToggleShareData()
-
-    --LoreBooks.ToggleUseQuestBooks()
 
     --LoreBooks_InitializeCollab()
 
