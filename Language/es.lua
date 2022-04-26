@@ -10,8 +10,12 @@ SafeAddString(LBOOKS_MAYBE_NOT_HERE, "[Podría no estar ahí]", 1)
 SafeAddString(LBOOKS_QUEST_IN_ZONE, "Misión en <<1>>", 1)
 SafeAddString(LBOOKS_SPECIAL_QUEST, "Special quest in <<1>>", 1)
 SafeAddString(LBOOKS_LBPOS_OPEN_BOOK, "You must be reading a book to use /lbpos", 1)
-SafeAddString(LBOOKS_LBPOS_ERROR, "Something went wrong", 1)
+SafeAddString(LBOOKS_LBPOS_ERROR, "Crafting Book or no relation to Eidetic Memory or Shalidor's Library.", 1)
 SafeAddString(LBOOKS_PIN_UPDATE, "Please Help Update", 1)
+
+--Camera Actions
+SafeAddString(LBOOKS_CLIMB, "Climb", 1)
+
 
 --tooltips
 SafeAddString(LBOOKS_KNOWN, "Coleccionado", 1)
@@ -58,7 +62,9 @@ SafeAddString(LBOOKS_COLLECTED, "Mostrar libros coleccionados", 1)
 SafeAddString(LBOOKS_COLLECTED_DESC, "Muestra los iconos de los libros ya coleccionados en el mapa.", 1)
 
 SafeAddString(LBOOKS_SHARE_DATA, "Comparte tus descubrimientos con el autor de LoreBooks", 1)
-SafeAddString(LBOOKS_SHARE_DATA_DESC, "Activar esta opción compartirá tus descubrimientos con el autor de LoreBooks enviando automáticamente un correo con la información recolectada.\nEsta opción sólo está disponible para usuarios de EU, incluso si la información compartida se comparte con los usuarios de NA.\nPor favor, ten en cuenta que podrías encontrarte con un corto retraso en tus habilidades cuando el correo está siendo enviado. Los correos se enviarán en segundo plano cada 30 libros leídos.", 1)
+SafeAddString(LBOOKS_SHARE_DATA_DESC,
+  "Activar esta opción compartirá tus descubrimientos con el autor de LoreBooks enviando automáticamente un correo con la información recolectada.\nEsta opción sólo está disponible para usuarios de EU, incluso si la información compartida se comparte con los usuarios de NA.\nPor favor, ten en cuenta que podrías encontrarte con un corto retraso en tus habilidades cuando el correo está siendo enviado. Los correos se enviarán en segundo plano cada 30 libros leídos.",
+  1)
 
 SafeAddString(LBOOKS_EIDETIC, "Mostrar desconocidos de Memoria eidética", 1)
 SafeAddString(LBOOKS_EIDETIC_DESC, "Muestra libros desconocidos de la biblioteca de memoria eidética en el mapa. Estos libros están relacionados con la historia y sucesos de las distintas regiones de Tamriel y no afectan la progresión en el Gremio de Magos.", 1)

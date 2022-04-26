@@ -31,7 +31,7 @@ local LMDI = LibMapData_Internal
 local GPS = LibGPS3
 local Postmail = {}
 local c = LoreBooks.Constants
-
+local bookshelfZoneId = LMD.zoneId or 1261
 
 --Local variables -------------------------------------------------------------
 local updatePins = {}
@@ -53,27 +53,21 @@ local function MyPrint(...)
 end
 
 local function InvalidPoint(x, y)
-  return (x < 0 or x > 1 or y < 0 or y > 1)
-end
-
-local function GetLorebooksMapInfo()
-  LMDI:UpdateMapInfo()
-  local zoneId = GetZoneId(GetCurrentMapZoneIndex())
-  local mapIndex = GetCurrentMapIndex()
-  if IsInImperialCity() then mapIndex = GetImperialCityMapIndex() end
-  if IsInCyrodiil() then mapIndex = GetCyrodiilMapIndex end
-  local mapId = GetCurrentMapId()
-
-  local name, mapType, mapContentType, zoneIndex, description = GetMapInfoById(mapId)
-  local isMainZone = mapType == MAPTYPE_ZONE
-  --d(isMainZone)
-
-  return { ["z"] = zoneId, ["mn"] = mapIndex, ["md"] = mapId, ["mt"] = isMainZone }
+  local invalidPos = (x < 0 or x > 1 or y < 0 or y > 1)
+  if invalidPos then
+    local zone = LMP:GetZoneAndSubzone(true, false, true)
+    internal:dm("Warn", "InvalidPoint calculated, is it really invalid")
+    internal:dm("Warn", zone)
+  end
+  return invalidPos
 end
 
 -- Pins -----------------------------------------------------------------------
 local function GetPinTextureBookshelf(self)
-  local zoneId = self.m_PinTag.z
+  local zoneId
+  if self and self.m_PinTag.z then zoneId = self.m_PinTag.z end
+  if not zoneId and bookshelfZoneId then zoneId = GetParentZoneId(bookshelfZoneId) end
+  if not zoneId then zoneId = 1261 end
   local texture
   if LoreBooks.Constants.icon_list_zoneid[zoneId] then
     texture = LoreBooks.Constants.icon_list_zoneid[zoneId]
@@ -295,15 +289,7 @@ local function ShouldDisplayLoreBooks()
     return true
   end
 
-  local info = GetLorebooksMapInfo()
-  local zoneId
-  local mapIndex
-  local mapId
-  local isMainZone
-  if info.z then zoneId = info.z end
-  if info.mn then mapIndex = info.mn end
-  if info.md then mapId = info.md end
-  if info.mt then isMainZone = info.mt end
+  local mapIndex = LMD.mapIndex
 
   if mapIndex then
     if db.immersiveMode == 2 then
@@ -374,62 +360,33 @@ local function ShouldDisplayLoreBooks()
 
 end
 
-local function IsValidZone()
-  local zoneIndex = GetCurrentMapZoneIndex()
-  local invalidZones = {
-    [0] = true, -- is the value returned when there is no zoneIndex
-    [930] = true, -- Darkshade Caverns II
-    [931] = true, -- Elden Hollow II
-    [932] = true, -- Crypt of Hearts II
-    [933] = true, -- Wayrest Sewers II
-    [934] = true, -- Fungal Grotto II
-    [935] = true, -- The Banished Cells II
-    [936] = true, -- Spindleclutch II
-  }
-
-  if invalidZones[zoneIndex] then
-    return false
-  end
-
-  return true
-
-end
-
 local function CreatePins()
-
+  LMDI:UpdateMapInfo()
+  local zoneId = LMD.zoneId
+  local mapId = LMD.mapId
+  local zoneMapId = LMD:GetZoneMapIdFromZoneId(LMD.zoneId)
+  local isDungeon = LMD.isDungeon
   local shouldDisplay = ShouldDisplayLoreBooks()
-  local info = GetLorebooksMapInfo()
-  local zoneId
-  local mapIndex
-  local mapId
-  local isMainZone
-  local zoneidToMapId
-  if info.z then zoneId = info.z end
-  if info.mn then mapIndex = info.mn end
-  if info.md then mapId = info.md end
-  if info.mt then isMainZone = info.mt end
-  zoneidToMapId = GetMapIdByZoneId(zoneId)
+  local fakePinInfo
 
   -- Shalidor's Books
   if (updatePins[c.PINS_COLLECTED] and LMP:IsEnabled(c.PINS_COLLECTED))
     or (shouldDisplay and updatePins[c.PINS_UNKNOWN] and LMP:IsEnabled(c.PINS_UNKNOWN))
     or (shouldDisplay and updatePins[c.PINS_COMPASS] and db.filters[c.PINS_COMPASS]) then
-    if IsValidZone() then
-      local lorebooks = LoreBooks_GetLocalData(mapId)
-      if lorebooks then
-        for _, pinData in ipairs(lorebooks) do
-          local _, _, known = GetLoreBookInfo(1, pinData[3], pinData[4])
+    local lorebooks = LoreBooks_GetLocalData(mapId)
+    if lorebooks then
+      for _, pinData in ipairs(lorebooks) do
+        local _, _, known = GetLoreBookInfo(c.LORE_LIBRARY_SHALIDOR, pinData[3], pinData[4])
 
-          if pinData[6] then
-          elseif known and updatePins[c.PINS_COLLECTED] and LMP:IsEnabled(c.PINS_COLLECTED) then
-            LMP:CreatePin(c.PINS_COLLECTED, pinData, pinData[1], pinData[2])
-          elseif not known then
-            if updatePins[c.PINS_UNKNOWN] and LMP:IsEnabled(c.PINS_UNKNOWN) then
-              LMP:CreatePin(c.PINS_UNKNOWN, pinData, pinData[1], pinData[2])
-            end
-            if updatePins[c.PINS_COMPASS] and db.filters[c.PINS_COMPASS] then
-              COMPASS_PINS.pinManager:CreatePin(c.PINS_COMPASS, pinData, pinData[1], pinData[2])
-            end
+        if pinData[6] then
+        elseif known and updatePins[c.PINS_COLLECTED] and LMP:IsEnabled(c.PINS_COLLECTED) then
+          LMP:CreatePin(c.PINS_COLLECTED, pinData, pinData[1], pinData[2])
+        elseif not known then
+          if updatePins[c.PINS_UNKNOWN] and LMP:IsEnabled(c.PINS_UNKNOWN) then
+            LMP:CreatePin(c.PINS_UNKNOWN, pinData, pinData[1], pinData[2])
+          end
+          if updatePins[c.PINS_COMPASS] and db.filters[c.PINS_COMPASS] then
+            COMPASS_PINS.pinManager:CreatePin(c.PINS_COMPASS, pinData, pinData[1], pinData[2])
           end
         end
       end
@@ -442,7 +399,7 @@ local function CreatePins()
     local bookshelves = LoreBooks_GetBookshelfDataFromMapId(mapId)
     if bookshelves then
       for _, pinData in ipairs(bookshelves) do
-        pinData.texture = LoreBooks.Constants.icon_list_zoneid[zoneId]
+        pinData.texture = GetPinTextureBookshelf()
         pinData.pinName = GetString(LBOOKS_BOOKSHELF)
         if updatePins[c.PINS_BOOKSHELF] and db.filters[c.PINS_BOOKSHELF] then
           LMP:CreatePin(c.PINS_BOOKSHELF, pinData, pinData.x, pinData.y)
@@ -458,75 +415,40 @@ local function CreatePins()
   if (updatePins[c.PINS_EIDETIC_COLLECTED] and LMP:IsEnabled(c.PINS_EIDETIC_COLLECTED))
     or (shouldDisplay and updatePins[c.PINS_EIDETIC] and LMP:IsEnabled(c.PINS_EIDETIC))
     or (shouldDisplay and updatePins[c.PINS_COMPASS_EIDETIC] and db.filters[c.PINS_COMPASS_EIDETIC]) then
-    local eideticBooks
-    -- used with ["zm"] when the pin is in a city and on the zone map
-    local z_mapId = GetMapIdByZoneId(zoneId)
 
-    eideticBooks = LoreBooks_GetNewEideticDataForMapUniqueId(mapId, z_mapId)
+    local eideticBooks
+    eideticBooks = LoreBooks_GetNewEideticDataForMapUniqueId(mapId, zoneMapId)
 
     if eideticBooks then
       for _, pinData in ipairs(eideticBooks) do
-        local _, _, known = GetLoreBookInfo(3, pinData.c, pinData.b)
+        fakePinInfo = false
+        local _, _, known = GetLoreBookInfo(c.LORE_LIBRARY_EIDETIC, pinData.c, pinData.b)
         if (not known and LMP:IsEnabled(c.PINS_EIDETIC)) or (known and LMP:IsEnabled(c.PINS_EIDETIC_COLLECTED)) then
 
-          if zoneId == 584 and (pinData.z == 643 or pinData.z == 678 or pinData.z == 688) then
-            --IC Sewers/ICP/WGT
-            -- Don't render
-          else
-            --[[ if qm or the map location which could be the zoneId or
-            the mapIndex is not there OR when qm equals mn which means
-            when the quest location equals the mapInedx.
-
-            elseif not pinData.qm or pinData.qm == pinData.mn then
-
-            so if there is no qm or when qm equals the mapIndex then display
-            the pin
-
-            04/22 changed to else only because the old conditions were
-
-            -- if not .qm show the pin
-            -- if the quest location equals the mapIndex show the pin
-
-            mn (mapIndex) may not exist and eideticBooks are already correct
-            and even when mn exists, it is ignored because q (questId) is used
-            for the zone name
-            ]]--
-
-            --[[
-            if usePrecalculatedCoords and pinData.zx and pinData.zy then
-              pinData.xLoc = pinData.zx
-              pinData.yLoc = pinData.zy
+          if mapId == pinData.pm then
+            pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.px, pinData.py)
+          elseif zoneMapId == pinData.zm then
+            if pinData.zx and pinData.zy then
+              pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.zx, pinData.zy)
             else
-              pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.x, pinData.y)
-            end
-
-            .px
-            ]]--
-
-            if mapId == pinData.pm then
               pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.px, pinData.py)
-            elseif z_mapId == pinData.zm then
-              if pinData.zx and pinData.zy then
-                pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.zx, pinData.zy)
-              else
-                pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.px, pinData.py)
-              end
             end
+          end
 
-            local _, currentMapType, currentMapContentType, _, _ = GetMapInfoById(pinData.pm)
-            if (currentMapContentType == MAP_CONTENT_DUNGEON and pinData.d) or (currentMapContentType ~= MAP_CONTENT_DUNGEON and not pinData.d) then
-              if not known and updatePins[c.PINS_EIDETIC] and LMP:IsEnabled(c.PINS_EIDETIC) then
-                LMP:CreatePin(c.PINS_EIDETIC, pinData, pinData.xLoc, pinData.yLoc)
-              elseif known and updatePins[c.PINS_EIDETIC_COLLECTED] and LMP:IsEnabled(c.PINS_EIDETIC_COLLECTED) then
-                LMP:CreatePin(c.PINS_EIDETIC_COLLECTED, pinData, pinData.xLoc, pinData.yLoc)
-              end
+          if pinData.zx and pinData.zy and pinData.zm then fakePinInfo = true end
+
+          if (isDungeon and pinData.d) or (not isDungeon and not pinData.d) or (not isDungeon and fakePinInfo) then
+            if not known and updatePins[c.PINS_EIDETIC] and LMP:IsEnabled(c.PINS_EIDETIC) then
+              LMP:CreatePin(c.PINS_EIDETIC, pinData, pinData.xLoc, pinData.yLoc)
+            elseif known and updatePins[c.PINS_EIDETIC_COLLECTED] and LMP:IsEnabled(c.PINS_EIDETIC_COLLECTED) then
+              LMP:CreatePin(c.PINS_EIDETIC_COLLECTED, pinData, pinData.xLoc, pinData.yLoc)
             end
-            if not known then
-              if updatePins[c.PINS_COMPASS_EIDETIC] and db.filters[c.PINS_COMPASS_EIDETIC] and ((currentMapContentType == MAP_CONTENT_DUNGEON and pinData.d) or (currentMapContentType ~= MAP_CONTENT_DUNGEON and not pinData.d)) then
-                COMPASS_PINS.pinManager:CreatePin(c.PINS_COMPASS_EIDETIC, pinData, pinData.xLoc, pinData.yLoc)
-              end
-            end -- end show Compass Pin
-          end -- end of if not IC or if not qm
+          end
+          if not known and updatePins[c.PINS_COMPASS_EIDETIC] and db.filters[c.PINS_COMPASS_EIDETIC] then
+            if (isDungeon and pinData.d) or (not isDungeon and not pinData.d) or (not isDungeon and fakePinInfo) then
+              COMPASS_PINS.pinManager:CreatePin(c.PINS_COMPASS_EIDETIC, pinData, pinData.xLoc, pinData.yLoc)
+            end
+          end -- end show Compass Pin
         end -- end of if not known or known Eidetic Memory
       end -- end of for loop
 
@@ -655,7 +577,7 @@ local function InitializePins()
                                       end
                                     }
   }
-  local compassPinLayoutBookshelf = { maxDistance = compassMaxDistance, texture = LoreBooks.Constants.icon_list_zoneid[1261],
+  local compassPinLayoutBookshelf = { maxDistance = compassMaxDistance, texture = GetPinTextureBookshelf(self),
                                       sizeCallback = function(pin, angle, normalizedAngle, normalizedDistance)
                                         if zo_abs(normalizedAngle) > 0.25 then
                                           pin:SetDimensions(54 - 24 * zo_abs(normalizedAngle), 54 - 24 * zo_abs(normalizedAngle))
@@ -1322,11 +1244,11 @@ local function BuildCategoryList(self)
         self.totalCurrentlyCollected = self.totalCurrentlyCollected + numKnownBooks
         self.totalPossibleCollected = self.totalPossibleCollected + totalBooks
 
-        if categoryData.categoryIndex == 2 then
+        if categoryData.categoryIndex == c.LORE_LIBRARY_CRAFTING then
           -- CRAFTING
           self.motifsCurrentlyCollected = self.motifsCurrentlyCollected + numKnownBooks
           self.motifsPossibleCollected = self.motifsPossibleCollected + totalBooks
-        elseif categoryData.categoryIndex == 3 then
+        elseif categoryData.categoryIndex == c.LORE_LIBRARY_EIDETIC then
           --
           self.eideticCurrentlyCollected = self.eideticCurrentlyCollected + numKnownBooks
           self.eideticPossibleCollected = self.eideticPossibleCollected + totalBooks
@@ -1425,7 +1347,7 @@ local function OnRowMouseUp(control, button)
       end)
     end
 
-    if control.categoryIndex == 1 then
+    if control.categoryIndex == c.LORE_LIBRARY_SHALIDOR then
       local lorebookInfoOnBook = LoreBooks_GetDataOfBook(control.categoryIndex, control.collectionIndex, control.bookIndex)
       for resultEntry, resultData in ipairs(lorebookInfoOnBook) do
 
@@ -1450,7 +1372,7 @@ local function OnRowMouseUp(control, button)
         end
 
       end
-    elseif control.categoryIndex == 3 then
+    elseif control.categoryIndex == c.LORE_LIBRARY_EIDETIC then
 
       local bookData = LoreBooks_GetNewEideticData(control.categoryIndex, control.collectionIndex, control.bookIndex)
 
@@ -1462,9 +1384,9 @@ local function OnRowMouseUp(control, button)
 
           if not data.r and not data.fp and data.px and data.py and not data.zt then
 
+            local xLoc, yLoc = GPS:GlobalToLocal(data.px, data.py)
             local xTooltip = ("%0.02f"):format(zo_round(data.px * 10000) / 100)
             local yTooltip = ("%0.02f"):format(zo_round(data.py * 10000) / 100)
-            local xLoc, yLoc = GPS:GlobalToLocal(data.px, data.py)
             AddCustomMenuItem(zo_strformat("<<1>> (<<2>>x<<3>>)", zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, mapName), xTooltip, yTooltip),
               function()
                 local changeResult = SetMapToMapId(mapId)
@@ -1499,10 +1421,9 @@ end
 -- Mouse "hover"
 local function OnMouseEnter(self, categoryIndex, collectionIndex, bookIndex)
   --d("we are here")
-  local STD_ZONE = 0
 
-  -- No 1 for now.
-  if categoryIndex == 3 then
+  -- No LORE_LIBRARY_SHALIDOR for now.
+  if categoryIndex == c.LORE_LIBRARY_EIDETIC then
 
     local bookData = LoreBooks_GetNewEideticData(categoryIndex, collectionIndex, bookIndex)
     --d(bookData)
@@ -1769,17 +1690,6 @@ local function RebuildLoreLibrary()
   end
 end
 
---[[TODO is this needed anymore? ]]--
-local function IsPlayerOnCurrentMap()
-
-  local x, y = GetMapPlayerPosition("player")
-  if not InvalidPoint(x, y) then
-    return true
-  end
-  return false
-
-end
-
 local lastReadBook
 local shownBookId
 local currentOpenBook
@@ -1802,7 +1712,7 @@ end
 
 local function OnBookLearned(_, categoryIndex)
 
-  if categoryIndex ~= 2 then
+  if categoryIndex ~= c.LORE_LIBRARY_CRAFTING then
 
     --Refresh map if needed and get player position
     LMDI:SetPlayerLocation()
@@ -1812,11 +1722,11 @@ local function OnBookLearned(_, categoryIndex)
     if not InvalidPoint(x, y) then
       -- can be false in some very rare place (mainly fighters/mages/main questline dungeons).
 
-      if categoryIndex == 1 then
+      if categoryIndex == c.LORE_LIBRARY_SHALIDOR then
         LMP:RefreshPins(c.PINS_UNKNOWN)
         LMP:RefreshPins(c.PINS_COLLECTED)
         COMPASS_PINS:RefreshPins(c.PINS_COMPASS)
-      elseif categoryIndex == 3 then
+      elseif categoryIndex == c.LORE_LIBRARY_EIDETIC then
         LMP:RefreshPins(c.PINS_EIDETIC)
         LMP:RefreshPins(c.PINS_EIDETIC_COLLECTED)
         LMP:RefreshPins(c.PINS_BOOKSHELF)
@@ -1873,23 +1783,6 @@ function LoreBooks.ToggleUseQuestBooks()
 end
 
 -- slash commands -------------------------------------------------------------
-local approved_interaction_types = {
-  [GetString(SI_GAMECAMERAACTIONTYPE1)] = true, -- Search
-  [GetString(SI_GAMECAMERAACTIONTYPE6)] = true, -- Read
-  [GetString(SI_GAMECAMERAACTIONTYPE10)] = true, -- Inspect
-  [GetString(SI_GAMECAMERAACTIONTYPE15)] = true, -- Examine
-}
-
-local reticleInteractionName
-ZO_PreHook(ZO_Reticle, "TryHandlingInteraction", function(interactionPossible, currentFrameTimeSeconds)
-  local action, name, interactBlocked, isOwned, additionalInfo, contextualInfo, contextualLink, isCriminalInteract = GetGameCameraInteractableActionInfo()
-  if name and approved_interaction_types[action] then
-    --d(name)
-    reticleInteractionName = name
-  else
-    reticleInteractionName = nil
-  end
-end)
 
 --/script SetCVar("Language.2", "fr")
 local bookShelfLocalization = {
@@ -1899,30 +1792,28 @@ local bookShelfLocalization = {
   ["ru"] = "Книжная полка",
 }
 local function ShowMyPosition()
+  LMDI:SetPlayerLocation(true)
   LMDI:UpdateMapInfo()
-  local _, zone = LMP:GetZoneAndSubzone()
+  local zone = LMP:GetZoneAndSubzone(true, false, true)
   local x, y = GetMapPlayerPosition("player")
   local xpos, ypos = GPS:LocalToGlobal(x, y)
-  local info = GetLorebooksMapInfo()
-  local zoneId
-  local mapIndex
-  local mapId
-  local isMainZone
-  local mapContentType = GetMapContentType()
+  local outText = GetString(LBOOKS_LBPOS_ERROR)
+  local zoneId = LMD.zoneId
+  local mapIndex = LMD.mapIndex
+  local mapId = LMD.mapId
+  local zoneMapId = LMD:GetZoneMapIdFromZoneId(LMD.zoneId)
+  local isMainZone = LMD.isMainZone
+  local isDungeon = LMD.isDungeon
   local bookName = ""
   local categoryIndex = 0
   local collectionIndex = ""
   local bookIndex = ""
   local bookId
   local isBookshelf
-  if reticleInteractionName then
-    isBookshelf = reticleInteractionName == bookShelfLocalization[GetCVar("Language.2")]
+  if LMD.reticleInteractionName then
+    isBookshelf = LMD.reticleInteractionName == bookShelfLocalization[GetCVar("Language.2")]
   end
   --d(isBookshelf)
-  if info.z then zoneId = info.z end
-  if info.mn then mapIndex = info.mn end
-  if info.md then mapId = info.md end
-  if info.mt then isMainZone = info.mt end
   if currentOpenBook then
     bookName = currentOpenBook
   end
@@ -1936,92 +1827,43 @@ local function ShowMyPosition()
     categoryIndex, collectionIndex, bookIndex = GetLoreBookIndicesFromBookId(shownBookId)
   end
   if collectionIndex and bookIndex then
-    _, _, _, bookId = GetLoreBookInfo(3, collectionIndex, bookIndex)
+    _, _, _, bookId = GetLoreBookInfo(c.LORE_LIBRARY_EIDETIC, collectionIndex, bookIndex)
   end
   -- /script d({GetLoreBookIndicesFromBookId(151)})
   -- /script d({GetLoreBookInfo(3, 21, 1)})
-  if categoryIndex and categoryIndex == 1 then
+  if categoryIndex and categoryIndex == c.LORE_LIBRARY_SHALIDOR then
     MyPrint(string.format("[%d] = { %.6f, %.6f, %s, %s, moreInfo }, -- %s, %s", mapId, x, y, collectionIndex, bookIndex, bookName, zone))
-  elseif categoryIndex and categoryIndex > 1 then
-    --[[
-              local mapIndex = data.mn
-            local zoneId = data.z
-            local isRandom = data.r
-            local inDungeon = data.d
-            local isFromBag = data.i == INTERACTION_NONE
-
-            TODO Why do we have a data field for the InteractionType but
-            GetInteractionType isn't used
-  ]]--
+  elseif categoryIndex and categoryIndex == c.LORE_LIBRARY_EIDETIC then
     local ef = '"e"'
-    local rf = '"r"' -- isRandom
     local df = '"d"' -- inDungeon
     local mdf = '"pm"' -- mapId
     local pxf = '"px"' -- LibGPS x
     local pyf = '"py"' -- LibGPS y
     local xf = '"x"' -- used for zone bookshelf
     local yf = '"y"' -- used for zone bookshelf
-    local i_f = '"i"' -- InteractionType, INTERACTION_NONE 12, 7, 0 values found
-    local qf = '"q"' -- integer of QuestId or quest name
-    local qmf = '"qm"' -- integer of zone quest belongs to ???
-    local cf = '"c"' -- true/false seems used for quests
-    local nf = '"n"' -- name, used with quests accompanied by c = true and possibly q
     local mf = '"m"' -- used for zone booklist
     local zf = '"z"' -- used for zone bookshelf
-    local eideticBookName = '"' .. bookName .. '"'
-    -- local unum = 0
-    -- [6531] = { ["e"] = { [1] = { ["zx"] = 0.163847, ["zy"] = 0.579908, ["x"] = 0.597716, ["y"] = 0.680002, ["z"] = 1261, ["mn"] = 0, }, }, ["c"] = true, ["k"] = 6531, }, -- Tribes of Blackwood: Gideon and the Border, u30_leyawiincity_base
-    --[[Note: with /tbugm the map pin for the Eidetic Data will have a ["b"] and ["c"]
-    ["b"] = bookIndex from GetLoreBookIndicesFromBookId
-    ["c"] = collectionIndex GetLoreBookIndicesFromBookId
-    ]]--
-    -- [6262] = { ["e"] = { [1] = { ["r"] = false, ["d"] = true, ["md"] = 1875, ["i"] = 12, ["mn"] = 29, ["x"] = 0.3408000000, ["y"] = 0.5460000000, ["zx"] = 0.5405206747, ["zy"] = 0.2796056287, ["z"] = 1228, }, }, ["c"] = true, ["n"] = "The Crowned Dragon", ["k"] = 6262, },
-    -- [8] = { ["e"] = { [1] = { ["r"] = false, ["d"] = true, ["d"] = 0, ["i"] = 0, ["mn"] = 0, ["x"] = 0, ["y"] = 0, ["zx"] = 0, ["zy"] = 0, ["z"] = 0, }, }, ["c"] = true, ["n"] = "The Wolf and the Pirate Queen", ["k"] = 8, },
-    -- [8] = { ["e"] = { [1] = { ["r"] = false, ["d"] = true, ["md"] = 0, ["i"] = 0, ["mn"] = 0, ["x"] = 0.679438, ["y"] = 0.251476, ["zx"] = 0.678918, ["zy"] = 0.627487, ["z"] = 0, }, }, ["c"] = true, ["n"] = "The Wolf and the Pirate Queen", ["k"] = 8, },
-    -- [3651] = { ["e"] = { [1] = { ["r"] = false, ["d"] = true, ["md"] = 0, ["i"] = 0, ["mn"] = 29, ["zx"] = 0.548708, ["zy"] = 0.404540, ["x"] = 0.341620, ["y"] = 0.558493, ["z"] = 823, }, }, ["c"] = true, ["n"] = "Gold Coast Guide, Part Two", ["k"] = 3651, },
-    -- verified working MyPrint, still a few unknown fields
-    -- MyPrint(string.format("[%d] = { [%s] = { [1] = { [%s] = false, [%s] = true, [%s] = %d, [%s] = %d, [%s] = %d, [%s] = %.6f, [%s] = %.6f, [%s] = %.6f, [%s] = %.6f, [%s] = %d, }, }, [%s] = true, [%s] = %s, },",
-    -- shownBookId, ef, rf, df, mdf, unum, i_f, unum, mnf, mapIndex, xf, x, yf, y, gxf, xpos, gyf, ypos, zf, zoneId, cf, nf, eideticBookName))
-
-    -- [3999] = { ["e"] = { [1] = { ["zx"] = 0.1864611820, ["zy"] = 0.3665820524, ["x"] = 0.7147000000, ["y"] = 0.2872200000, ["z"] = 849, ["mn"] = 30, }, }, ["c"] = true, ["k"] = 3999,
-    -- [3678] = { ["e"] = { [1] = { ["zx"] = 0.269644, ["zy"] = 0.179828, ["x"] = 0.313714, ["y"] = 0.536022, ["z"] = 823, ["mn"] = 29, }, }, ["c"] = true, ["k"] = 3678, }, -- Knightsgrave: Legend or Legacy, goldcoast_base
-    -- [3706] = { ["e"] = { [1] = { ["zx"] = 0.217336, ["zy"] = 0.196732, ["x"] = 0.308483, ["y"] = 0.537712, ["z"] = 823, ["mn"] = 29, }, }, ["c"] = true, ["k"] = 3706, }, -- Fantos Epilion's Journal, goldcoast_base
-    -- verified working MyPrint, all fields match truncated data
-    local outText = GetString(LBOOKS_LBPOS_ERROR)
-    local dvalue = mapContentType == MAP_CONTENT_DUNGEON
-    if dvalue then
+    if isDungeon then
       outText = string.format("[%d] = { [%s] = { [1] = { [%s] = %.10f, [%s] = %.10f, [%s] = %d, [%s] = %s, }, }, }, -- %s, %s",
-        shownBookId, ef, pxf, xpos, pyf, ypos, mdf, mapId, df, tostring(dvalue), bookName, zone)
+        shownBookId, ef, pxf, xpos, pyf, ypos, mdf, mapId, df, tostring(isDungeon), bookName, zone)
     else
       outText = string.format("[%d] = { [%s] = { [1] = { [%s] = %.10f, [%s] = %.10f, [%s] = %d, }, }, }, -- %s, %s",
         shownBookId, ef, pxf, xpos, pyf, ypos, mdf, mapId, bookName, zone)
     end
-    -- [2828] = { ["e"] = { [1] = { ["zx"] = 0.255800, ["zy"] = 0.455359, ["x"] = 0.599286, ["y"] = 0.677876, ["md"] = 1940, }, }, ["k"] = 2828, }, -- The Black Fin: Foreign Adventures, Part 2, u30_leyawiincity_base
-    -- [2828] = { ["m"] = { [mapId] = 1, }, ["k"] = 2828, }, [mapId] = { ["x"] = 0.255308, ["y"] = 0.454024, ["z"] = zoneId }, -- The Black Fin: Foreign Adventures, Part 2, u30_leyawiincity_base
-    -- using the zone normalized coords but the key is x, y for bookshelf pin data
-    -- [2828] = { ["m"] = { [1940] = 1, }, ["k"] = 2828, }, [1940] = { ["x"] = 0.255800, ["y"] = 0.455359, ["z"] = 1261 }, -- The Black Fin: Foreign Adventures, Part 2, u30_leyawiincity_base
     if isBookshelf then
-      outText = string.format("[%d] = { [%s] = { [%d] = 1, }, }, [%d] = { [%s] = %.10f, [%s] = %.10f, [%s] = %d, }, -- %s, %s",
-        shownBookId, mf, mapId, mapId, xf, x, yf, y, zf, zoneId, bookName, zone)
+      outText = string.format("[%d] = { [%s] = { [%d] = 1, }, }, [%d] = { { [%s] = %.10f, [%s] = %.10f, [%s] = %d, }, },  -- %s, %s",
+        shownBookId, mf, zoneMapId, mapId, xf, x, yf, y, zf, zoneId, bookName, zone)
     end
-    -- [6473] = { ["e"] = { [1] = { ["zx"] = 0.562083, ["zy"] = 0.524402, ["x"] = 0.378672, ["y"] = 0.287162, ["z"] = 1207, }, }, ["k"] = 6473, }, -- Great Spirits of the Reach: Volume 2, reach_base
-    -- [6071] = { ["e"] = { [1] = { ["zx"] = 0.434603, ["zy"] = 0.227340, ["x"] = 0.344336, ["y"] = 0.305401, ["md"] = 1871, ["d"] = true, }, }, ["k"] = 6071, }, -- How to Pronounce Dwemer Words, briarrockruins_int01_base
-    MyPrint(outText)
-    -- [6531] = { ["e"] = { [1] = { ["zx"] = 0.163823, ["zy"] = 0.579908, ["x"] = 0.597716, ["y"] = 0.680002, ["z"] = 1261, ["mn"] = 0, }, }, ["c"] = true, ["k"] = 6531, }, -- Tribes of Blackwood: Gideon and the Border, u30_leyawiincity_base
   end
+  MyPrint(outText)
 end
 
 local function CreateFakePin()
   LMDI:UpdateMapInfo()
-  local _, zone = LMP:GetZoneAndSubzone()
+  local zone = LMP:GetZoneAndSubzone(true, false, true)
   local x, y = GetMapPlayerPosition("player")
   local xpos, ypos = GPS:LocalToGlobal(x, y)
-  local info = GetLorebooksMapInfo()
-  local zoneId
-  local mapId
-
-  if info.z then zoneId = info.z end
-  if info.md then mapId = info.md end
+  local mapId = LMD.mapId
 
   local ef = '"e"'
   local mdf = '"pm"' -- mapId

@@ -42,7 +42,7 @@ end
 
 function LoreBooks:CreateSettings()
 
-  db = ZO_SavedVars:NewCharacterNameSettings("LBooks_SavedVariables", 2, nil, defaults)
+  db = ZO_SavedVars:NewAccountWide("LBooks_SavedVariables", c.SAVEDVARIABLES_VERSION, nil, defaults)
 
   local panelData = {
     type = "panel",

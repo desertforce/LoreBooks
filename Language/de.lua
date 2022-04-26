@@ -10,8 +10,12 @@ SafeAddString(LBOOKS_MAYBE_NOT_HERE, "[Das Buch ist möglicherweise nicht hier]"
 SafeAddString(LBOOKS_QUEST_IN_ZONE, "Quest in <<1>>", 1)
 SafeAddString(LBOOKS_SPECIAL_QUEST, "Special quest in <<1>>", 1)
 SafeAddString(LBOOKS_LBPOS_OPEN_BOOK, "You must be reading a book to use /lbpos", 1)
-SafeAddString(LBOOKS_LBPOS_ERROR, "Something went wrong", 1)
+SafeAddString(LBOOKS_LBPOS_ERROR, "Crafting Book or no relation to Eidetic Memory or Shalidor's Library.", 1)
 SafeAddString(LBOOKS_PIN_UPDATE, "Please Help Update", 1)
+
+--Camera Actions
+SafeAddString(LBOOKS_CLIMB, "Climb", 1)
+
 
 --tooltips
 SafeAddString(LBOOKS_KNOWN, "Eingesammelt", 1)
@@ -58,7 +62,8 @@ SafeAddString(LBOOKS_COLLECTED, "Zeige gesammelte Bücher", 1)
 SafeAddString(LBOOKS_COLLECTED_DESC, "Zeige/Verberge bereits eingesammelte Bücher auf der Karte.", 1)
 
 SafeAddString(LBOOKS_SHARE_DATA, "Teile deine Funde mit LoreBooks Author", 1)
-SafeAddString(LBOOKS_SHARE_DATA_DESC, "Bei der Aktivierung dieser Option wirst du deine Funde direkt mit dem LoreBooks Author teilen können. Es wird automatisch eine Ingame Nachricht mit den erfassten Daten zugeschickt.\nBitte beachte, dass leichte Verzögerungen bei deinen Fertigkeiten auftreten können, solange die Nachricht geschickt wird. Die Nachricht wird alle 30 gelesenen Bücher lautlos verschickt.", 1)
+SafeAddString(LBOOKS_SHARE_DATA_DESC,
+  "Bei der Aktivierung dieser Option wirst du deine Funde direkt mit dem LoreBooks Author teilen können. Es wird automatisch eine Ingame Nachricht mit den erfassten Daten zugeschickt.\nBitte beachte, dass leichte Verzögerungen bei deinen Fertigkeiten auftreten können, solange die Nachricht geschickt wird. Die Nachricht wird alle 30 gelesenen Bücher lautlos verschickt.", 1)
 
 SafeAddString(LBOOKS_EIDETIC, "Zeige unbekannte Ewige Erinnerung", 1)
 SafeAddString(LBOOKS_EIDETIC_DESC, "Zeige/Verberge unbekannte Schriften auf der Karte, die nicht den Magiergilden-Skill steigern.", 1)

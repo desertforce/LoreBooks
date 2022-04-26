@@ -5,8 +5,11 @@ local strings = {
   LBOOKS_QUEST_IN_ZONE = "Quest in <<1>>",
   LBOOKS_SPECIAL_QUEST = "Special quest in <<1>>",
   LBOOKS_LBPOS_OPEN_BOOK = "You must be reading a book to use /lbpos",
-  LBOOKS_LBPOS_ERROR = "Something went wrong",
+  LBOOKS_LBPOS_ERROR = "Crafting Book or no relation to Eidetic Memory or Shalidor's Library.",
   LBOOKS_PIN_UPDATE = "Please Help Update",
+
+  --Camera Actions
+  LBOOKS_CLIMB = "Climb",
 
   --tooltips
   LBOOKS_KNOWN = "Collected",

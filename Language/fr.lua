@@ -11,8 +11,12 @@ SafeAddString(LBOOKS_MAYBE_NOT_HERE, "[Le livre n'est peut être pas là]", 1)
 SafeAddString(LBOOKS_QUEST_IN_ZONE, "Quête en <<1>>", 1)
 SafeAddString(LBOOKS_SPECIAL_QUEST, "Quête spéciale dans <<1>>", 1)
 SafeAddString(LBOOKS_LBPOS_OPEN_BOOK, "Vous devez lire un livre pour utiliser /lbpos", 1)
-SafeAddString(LBOOKS_LBPOS_ERROR, "Quelque chose s'est mal passé", 1)
+SafeAddString(LBOOKS_LBPOS_ERROR, "Crafting Book or no relation to Eidetic Memory or Shalidor's Library.", 1)
 SafeAddString(LBOOKS_PIN_UPDATE, "Please Help Update", 1)
+
+--Camera Actions
+SafeAddString(LBOOKS_CLIMB, "Climb", 1)
+
 
 --tooltips
 SafeAddString(LBOOKS_KNOWN, "collecté", 1)
@@ -59,7 +63,9 @@ SafeAddString(LBOOKS_COLLECTED, "Afficher les Livres collectés", 1)
 SafeAddString(LBOOKS_COLLECTED_DESC, "Afficher/Masquer les icônes des Livres (de la Guilde des Mages) déjà collectés sur la carte.", 1)
 
 SafeAddString(LBOOKS_SHARE_DATA, "Partagez vos découvertes avec l'auteur de LoreBooks", 1)
-SafeAddString(LBOOKS_SHARE_DATA_DESC, "L'activation de cette option partagera vos découvertes avec l'auteur de LoreBooks en envoyant automatiquement un e-mail dans le jeu avec les données collectées.\nCette option n'est disponible que pour les utilisateurs de l'UE, même si les données collectées sont partagées avec ceux de NA\nVeuillez noter que vous pouvez rencontrer un léger décalage avec vos compétences lors de l'envoi du courrier. Le courrier est envoyé silencieusement tous les 30 livres lus.", 1)
+SafeAddString(LBOOKS_SHARE_DATA_DESC,
+  "L'activation de cette option partagera vos découvertes avec l'auteur de LoreBooks en envoyant automatiquement un e-mail dans le jeu avec les données collectées.\nCette option n'est disponible que pour les utilisateurs de l'UE, même si les données collectées sont partagées avec ceux de NA\nVeuillez noter que vous pouvez rencontrer un léger décalage avec vos compétences lors de l'envoi du courrier. Le courrier est envoyé silencieusement tous les 30 livres lus.",
+  1)
 
 SafeAddString(LBOOKS_EIDETIC, "Mémoire Éidétique inconnue sur la carte", 1)
 SafeAddString(LBOOKS_EIDETIC_DESC, "Afficher/Masquer les parchemins inconnus présents dans la Mémoire Éidétique sur la carte. Ces parchemins promulguent diverses informations sur le lore de Tamriel et ne sont en rien impliqués dans la progression de la Guilde des Mages", 1)

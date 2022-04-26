@@ -10,8 +10,12 @@ SafeAddString(LBOOKS_MAYBE_NOT_HERE, "[本は多分ここにない]", 1)
 SafeAddString(LBOOKS_QUEST_IN_ZONE, "<<1>> のクエスト", 1)
 SafeAddString(LBOOKS_SPECIAL_QUEST, "Special quest in <<1>>", 1)
 SafeAddString(LBOOKS_LBPOS_OPEN_BOOK, "You must be reading a book to use /lbpos", 1)
-SafeAddString(LBOOKS_LBPOS_ERROR, "Something went wrong", 1)
+SafeAddString(LBOOKS_LBPOS_ERROR, "Crafting Book or no relation to Eidetic Memory or Shalidor's Library.", 1)
 SafeAddString(LBOOKS_PIN_UPDATE, "Please Help Update", 1)
+
+--Camera Actions
+SafeAddString(LBOOKS_CLIMB, "Climb", 1)
+
 
 --tooltips
 SafeAddString(LBOOKS_KNOWN, "収集済", 1)

@@ -9,7 +9,7 @@ local lang = GetCVar("Language.2")
 
 local GetOriginalLoreCollectionInfo = GetLoreCollectionInfo
 
-lib.locales = { "en", "de", "fr", "ru" }
+lib.locales = { "en", "es", "de", "fr", "ru", "br", "it", "pl", "zh" }
 function lib:IsLanguageSupported(language)
   for _, l in ipairs(self.locales) do
     if language == l then
@@ -66,7 +66,7 @@ function lib:GetNumKnownBooksInCollection(categoryIndex, collectionIndex, booksI
 end
 
 -- copy of GetLoreCollectionInfo
--- Returns: string name, string description, number numKnownBooks, number totalBooks, boolean hidden, textureName gamepadIcon, number collectionId 
+-- Returns: string name, string description, number numKnownBooks, number totalBooks, boolean hidden, textureName gamepadIcon, number collectionId
 local function GetNewLoreCollectionInfo(categoryIndex, collectionIndex)
   if lib.libraryData[categoryIndex] and lib.libraryData[categoryIndex][collectionIndex] then
     local collectionData = lib.libraryData[categoryIndex][collectionIndex]
