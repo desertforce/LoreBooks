@@ -1899,7 +1899,7 @@ local bookShelfLocalization = {
   ["ru"] = "Книжная полка",
 }
 local function ShowMyPosition()
-  LMDI:SetPlayerLocation()
+  LMDI:UpdateMapInfo()
   local _, zone = LMP:GetZoneAndSubzone()
   local x, y = GetMapPlayerPosition("player")
   local xpos, ypos = GPS:LocalToGlobal(x, y)
@@ -2012,7 +2012,7 @@ local function ShowMyPosition()
 end
 
 local function CreateFakePin()
-  LMDI:SetPlayerLocation()
+  LMDI:UpdateMapInfo()
   local _, zone = LMP:GetZoneAndSubzone()
   local x, y = GetMapPlayerPosition("player")
   local xpos, ypos = GPS:LocalToGlobal(x, y)
