@@ -1,4 +1,5 @@
-local c = LoreBooks.Constants
+local LoreBooks = _G["LoreBooks"]
+local internal = _G["LoreBooks_Internal"]
 
 local LAM = LibAddonMenu2
 local LMP = LibMapPins
@@ -15,14 +16,14 @@ local defaults = {      --default settings for saved variables
   pinTextureEidetic = 1,
   pinGrayscaleEidetic = true,
   filters = {
-    [c.PINS_COMPASS_EIDETIC] = false,
-    [c.PINS_COMPASS] = true,
-    [c.PINS_UNKNOWN] = true,
-    [c.PINS_COLLECTED] = false,
-    [c.PINS_EIDETIC] = false,
-    [c.PINS_EIDETIC_COLLECTED] = false,
-    [c.PINS_BOOKSHELF] = true,
-    [c.PINS_COMPASS_BOOKSHELF] = false,
+    [internal.PINS_COMPASS_EIDETIC] = false,
+    [internal.PINS_COMPASS] = true,
+    [internal.PINS_UNKNOWN] = true,
+    [internal.PINS_COLLECTED] = false,
+    [internal.PINS_EIDETIC] = false,
+    [internal.PINS_EIDETIC_COLLECTED] = false,
+    [internal.PINS_BOOKSHELF] = true,
+    [internal.PINS_COMPASS_BOOKSHELF] = false,
 
   },
   shareData = true,
@@ -42,26 +43,26 @@ end
 
 function LoreBooks:CreateSettings()
 
-  db = ZO_SavedVars:NewAccountWide("LBooks_SavedVariables", c.SAVEDVARIABLES_VERSION, nil, defaults)
+  db = ZO_SavedVars:NewAccountWide("LBooks_SavedVariables", internal.SAVEDVARIABLES_VERSION, nil, defaults)
 
   local panelData = {
     type = "panel",
     name = GetString(LBOOKS_TITLE),
     displayName = ZO_HIGHLIGHT_TEXT:Colorize(GetString(LBOOKS_TITLE)),
-    author = c.ADDON_AUTHOR,
-    version = c.ADDON_VERSION,
+    author = internal.ADDON_AUTHOR,
+    version = internal.ADDON_VERSION,
     slashCommand = "/lorebooks",
     registerForRefresh = true,
     registerForDefaults = true,
-    website = c.ADDON_WEBSITE,
+    website = internal.ADDON_WEBSITE,
   }
-  LAM:RegisterAddonPanel(c.ADDON_PANEL, panelData)
+  LAM:RegisterAddonPanel(internal.ADDON_PANEL, panelData)
 
   local pinTexturesValues = {
-    [1] = c.PIN_ICON_REAL,
-    [2] = c.PIN_ICON_SET1,
-    [3] = c.PIN_ICON_SET2,
-    [4] = c.PIN_ICON_ESOHEAD,
+    [1] = internal.PIN_ICON_REAL,
+    [2] = internal.PIN_ICON_SET1,
+    [3] = internal.PIN_ICON_SET2,
+    [4] = internal.PIN_ICON_ESOHEAD,
   }
   local pinTexturesList = {
     [1] = GetString(LBOOKS_PIN_TEXTURE1),
@@ -69,7 +70,7 @@ function LoreBooks:CreateSettings()
     [3] = GetString(LBOOKS_PIN_TEXTURE3),
     [4] = GetString(LBOOKS_PIN_TEXTURE4),
   }
-  local pinTextures = c.PIN_TEXTURES
+  local pinTextures = internal.PIN_TEXTURES
 
   local CreateIcons, unknownIcon, collectedIcon, unknownIconEidetic, collectedIconEidetic
   CreateIcons = function(panel)
@@ -82,7 +83,7 @@ function LoreBooks:CreateSettings()
       collectedIcon:SetAnchor(RIGHT, unknownIcon, LEFT, -5, 0)
       collectedIcon:SetTexture(pinTextures[db.pinTexture.type][1])
       collectedIcon:SetDimensions(db.pinTexture.size, db.pinTexture.size)
-      collectedIcon:SetDesaturation((db.pinTexture.type == c.PIN_ICON_REAL) and 1 or 0)
+      collectedIcon:SetDesaturation((db.pinTexture.type == internal.PIN_ICON_REAL) and 1 or 0)
 
       unknownIconEidetic = WINDOW_MANAGER:CreateControl(nil, panel.controlsToRefresh[3], CT_TEXTURE)
       unknownIconEidetic:SetAnchor(RIGHT, panel.controlsToRefresh[3].combobox, LEFT, -10, 0)
@@ -92,7 +93,7 @@ function LoreBooks:CreateSettings()
       collectedIconEidetic:SetAnchor(RIGHT, unknownIconEidetic, LEFT, -5, 0)
       collectedIconEidetic:SetTexture(pinTextures[db.pinTextureEidetic][1])
       collectedIconEidetic:SetDimensions(db.pinTexture.size, db.pinTexture.size)
-      collectedIconEidetic:SetDesaturation((db.pinTextureEidetic == c.PIN_ICON_REAL) and 1 or 0)
+      collectedIconEidetic:SetDesaturation((db.pinTextureEidetic == internal.PIN_ICON_REAL) and 1 or 0)
 
       CALLBACK_MANAGER:UnregisterCallback("LAM-PanelControlsCreated", CreateIcons)
     end
@@ -125,10 +126,10 @@ function LoreBooks:CreateSettings()
         unknownIcon:SetTexture(pinTextures[value][2])
         collectedIcon:SetDesaturation(value == defaults.pinTexture.type and 1 or 0)
         collectedIcon:SetTexture(pinTextures[value][1])
-        LMP:RefreshPins(c.PINS_UNKNOWN)
-        LMP:RefreshPins(c.PINS_COLLECTED)
-        COMPASS_PINS.pinLayouts[c.PINS_COMPASS].texture = pinTextures[value][2]
-        COMPASS_PINS:RefreshPins(c.PINS_COMPASS)
+        LMP:RefreshPins(internal.PINS_UNKNOWN)
+        LMP:RefreshPins(internal.PINS_COLLECTED)
+        COMPASS_PINS.pinLayouts[internal.PINS_COMPASS].texture = pinTextures[value][2]
+        COMPASS_PINS:RefreshPins(internal.PINS_COMPASS)
       end,
       default = defaults.pinTexture.type,
     },
@@ -138,7 +139,7 @@ function LoreBooks:CreateSettings()
       tooltip = GetString(LBOOKS_PIN_GRAYSCALE_DESC),
       getFunc = function() return db.pinGrayscale end,
       setFunc = function(value) db.pinGrayscale = value end,
-      disabled = function() return db.pinTexture.type ~= c.PIN_ICON_REAL end,
+      disabled = function() return db.pinTexture.type ~= internal.PIN_ICON_REAL end,
       default = defaults.pinGrayscale,
     },
     {
@@ -153,10 +154,10 @@ function LoreBooks:CreateSettings()
         unknownIconEidetic:SetTexture(pinTextures[value][2])
         collectedIconEidetic:SetDesaturation(value == defaults.pinTextureEidetic and 1 or 0)
         collectedIconEidetic:SetTexture(pinTextures[value][1])
-        LMP:RefreshPins(c.PINS_EIDETIC)
-        LMP:RefreshPins(c.PINS_EIDETIC_COLLECTED)
-        COMPASS_PINS.pinLayouts[c.PINS_COMPASS_EIDETIC].texture = pinTextures[value][2]
-        COMPASS_PINS:RefreshPins(c.PINS_COMPASS_EIDETIC)
+        LMP:RefreshPins(internal.PINS_EIDETIC)
+        LMP:RefreshPins(internal.PINS_EIDETIC_COLLECTED)
+        COMPASS_PINS.pinLayouts[internal.PINS_COMPASS_EIDETIC].texture = pinTextures[value][2]
+        COMPASS_PINS:RefreshPins(internal.PINS_COMPASS_EIDETIC)
       end,
       default = defaults.pinTextureEidetic,
     },
@@ -166,7 +167,7 @@ function LoreBooks:CreateSettings()
       tooltip = GetString(LBOOKS_PIN_GRAYSCALE_EIDETIC_DESC),
       getFunc = function() return db.pinGrayscaleEidetic end,
       setFunc = function(value) db.pinGrayscaleEidetic = value end,
-      disabled = function() return db.pinTextureEidetic ~= c.PIN_ICON_REAL end,
+      disabled = function() return db.pinTextureEidetic ~= internal.PIN_ICON_REAL end,
       default = defaults.pinGrayscaleEidetic,
     },
     {
@@ -181,12 +182,12 @@ function LoreBooks:CreateSettings()
         db.pinTexture.size = size
         unknownIcon:SetDimensions(size, size)
         collectedIcon:SetDimensions(size, size)
-        SetLayoutKeyAndRefresh(c.PINS_UNKNOWN, "size", size)
-        SetLayoutKeyAndRefresh(c.PINS_COLLECTED, "size", size)
-        SetLayoutKeyAndRefresh(c.PINS_EIDETIC, "size", size)
-        SetLayoutKeyAndRefresh(c.PINS_EIDETIC_COLLECTED, "size", size)
+        SetLayoutKeyAndRefresh(internal.PINS_UNKNOWN, "size", size)
+        SetLayoutKeyAndRefresh(internal.PINS_COLLECTED, "size", size)
+        SetLayoutKeyAndRefresh(internal.PINS_EIDETIC, "size", size)
+        SetLayoutKeyAndRefresh(internal.PINS_EIDETIC_COLLECTED, "size", size)
       end,
-      disabled = function() return not (db.filters[c.PINS_UNKNOWN] or db.filters[c.PINS_COLLECTED] or db.filters[c.PINS_EIDETIC] or db.filters[c.PINS_EIDETIC_COLLECTED] or db.filters[c.PINS_BOOKSHELF]) end,
+      disabled = function() return not (db.filters[internal.PINS_UNKNOWN] or db.filters[internal.PINS_COLLECTED] or db.filters[internal.PINS_EIDETIC] or db.filters[internal.PINS_EIDETIC_COLLECTED] or db.filters[internal.PINS_BOOKSHELF]) end,
       default = defaults.pinTexture.size
     },
     {
@@ -199,12 +200,12 @@ function LoreBooks:CreateSettings()
       getFunc = function() return db.pinTexture.level end,
       setFunc = function(level)
         db.pinTexture.level = level
-        SetLayoutKeyAndRefresh(c.PINS_UNKNOWN, "level", level)
-        SetLayoutKeyAndRefresh(c.PINS_COLLECTED, "level", level)
-        SetLayoutKeyAndRefresh(c.PINS_EIDETIC, "level", level)
-        SetLayoutKeyAndRefresh(c.PINS_EIDETIC_COLLECTED, "level", level)
+        SetLayoutKeyAndRefresh(internal.PINS_UNKNOWN, "level", level)
+        SetLayoutKeyAndRefresh(internal.PINS_COLLECTED, "level", level)
+        SetLayoutKeyAndRefresh(internal.PINS_EIDETIC, "level", level)
+        SetLayoutKeyAndRefresh(internal.PINS_EIDETIC_COLLECTED, "level", level)
       end,
-      disabled = function() return not (db.filters[c.PINS_UNKNOWN] or db.filters[c.PINS_COLLECTED] or db.filters[c.PINS_EIDETIC] or db.filters[c.PINS_EIDETIC_COLLECTED] or db.filters[c.PINS_BOOKSHELF]) end,
+      disabled = function() return not (db.filters[internal.PINS_UNKNOWN] or db.filters[internal.PINS_COLLECTED] or db.filters[internal.PINS_EIDETIC] or db.filters[internal.PINS_EIDETIC_COLLECTED] or db.filters[internal.PINS_BOOKSHELF]) end,
       default = defaults.pinTexture.level,
     },
     { -- disable clicl menu
@@ -221,89 +222,89 @@ function LoreBooks:CreateSettings()
       type = "checkbox",
       name = GetString(LBOOKS_UNKNOWN),
       tooltip = GetString(LBOOKS_UNKNOWN_DESC),
-      getFunc = function() return db.filters[c.PINS_UNKNOWN] end,
+      getFunc = function() return db.filters[internal.PINS_UNKNOWN] end,
       setFunc = function(state)
-        db.filters[c.PINS_UNKNOWN] = state
-        LMP:SetEnabled(c.PINS_UNKNOWN, state)
+        db.filters[internal.PINS_UNKNOWN] = state
+        LMP:SetEnabled(internal.PINS_UNKNOWN, state)
       end,
-      default = defaults.filters[c.PINS_UNKNOWN],
+      default = defaults.filters[internal.PINS_UNKNOWN],
     },
     {
       type = "checkbox",
       name = GetString(LBOOKS_COLLECTED),
       tooltip = GetString(LBOOKS_COLLECTED_DESC),
-      getFunc = function() return db.filters[c.PINS_COLLECTED] end,
+      getFunc = function() return db.filters[internal.PINS_COLLECTED] end,
       setFunc = function(state)
-        db.filters[c.PINS_COLLECTED] = state
-        LMP:SetEnabled(c.PINS_COLLECTED, state)
+        db.filters[internal.PINS_COLLECTED] = state
+        LMP:SetEnabled(internal.PINS_COLLECTED, state)
       end,
-      default = defaults.filters[c.PINS_COLLECTED]
+      default = defaults.filters[internal.PINS_COLLECTED]
     },
     {
       type = "checkbox",
       name = GetString(LBOOKS_EIDETIC),
       tooltip = GetString(LBOOKS_EIDETIC_DESC),
-      getFunc = function() return db.filters[c.PINS_EIDETIC] end,
+      getFunc = function() return db.filters[internal.PINS_EIDETIC] end,
       setFunc = function(state)
-        db.filters[c.PINS_EIDETIC] = state
-        LMP:SetEnabled(c.PINS_EIDETIC, state)
+        db.filters[internal.PINS_EIDETIC] = state
+        LMP:SetEnabled(internal.PINS_EIDETIC, state)
       end,
-      default = defaults.filters[c.PINS_EIDETIC]
+      default = defaults.filters[internal.PINS_EIDETIC]
     },
     {
       type = "checkbox",
       name = GetString(LBOOKS_EIDETIC_COLLECTED),
       tooltip = GetString(LBOOKS_EIDETIC_COLLECTED_DESC),
-      getFunc = function() return db.filters[c.PINS_EIDETIC_COLLECTED] end,
+      getFunc = function() return db.filters[internal.PINS_EIDETIC_COLLECTED] end,
       setFunc = function(state)
-        db.filters[c.PINS_EIDETIC_COLLECTED] = state
-        LMP:SetEnabled(c.PINS_EIDETIC_COLLECTED, state)
+        db.filters[internal.PINS_EIDETIC_COLLECTED] = state
+        LMP:SetEnabled(internal.PINS_EIDETIC_COLLECTED, state)
       end,
-      default = defaults.filters[c.PINS_EIDETIC_COLLECTED]
+      default = defaults.filters[internal.PINS_EIDETIC_COLLECTED]
     },
     { -- Bookshelf
       type = "checkbox",
       name = GetString(LBOOKS_BOOKSHELF_NAME),
       tooltip = GetString(LBOOKS_BOOKSHELF_DESC),
-      getFunc = function() return db.filters[c.PINS_BOOKSHELF] end,
+      getFunc = function() return db.filters[internal.PINS_BOOKSHELF] end,
       setFunc = function(state)
-        db.filters[c.PINS_BOOKSHELF] = state
-        LMP:SetEnabled(c.PINS_BOOKSHELF, state)
+        db.filters[internal.PINS_BOOKSHELF] = state
+        LMP:SetEnabled(internal.PINS_BOOKSHELF, state)
       end,
-      default = defaults.filters[c.PINS_BOOKSHELF]
+      default = defaults.filters[internal.PINS_BOOKSHELF]
     },
     {
       type = "checkbox",
       name = GetString(LBOOKS_COMPASS_UNKNOWN),
       tooltip = GetString(LBOOKS_COMPASS_UNKNOWN_DESC),
-      getFunc = function() return db.filters[c.PINS_COMPASS] end,
+      getFunc = function() return db.filters[internal.PINS_COMPASS] end,
       setFunc = function(state)
-        db.filters[c.PINS_COMPASS] = state
-        COMPASS_PINS:RefreshPins(c.PINS_COMPASS)
+        db.filters[internal.PINS_COMPASS] = state
+        COMPASS_PINS:RefreshPins(internal.PINS_COMPASS)
       end,
-      default = defaults.filters[c.PINS_COMPASS],
+      default = defaults.filters[internal.PINS_COMPASS],
     },
     {
       type = "checkbox",
       name = GetString(LBOOKS_COMPASS_EIDETIC),
       tooltip = GetString(LBOOKS_COMPASS_EIDETIC_DESC),
-      getFunc = function() return db.filters[c.PINS_COMPASS_EIDETIC] end,
+      getFunc = function() return db.filters[internal.PINS_COMPASS_EIDETIC] end,
       setFunc = function(state)
-        db.filters[c.PINS_COMPASS_EIDETIC] = state
-        COMPASS_PINS:RefreshPins(c.PINS_COMPASS_EIDETIC)
+        db.filters[internal.PINS_COMPASS_EIDETIC] = state
+        COMPASS_PINS:RefreshPins(internal.PINS_COMPASS_EIDETIC)
       end,
-      default = defaults.filters[c.PINS_COMPASS_EIDETIC],
+      default = defaults.filters[internal.PINS_COMPASS_EIDETIC],
     },
     { -- Bookshelf
       type = "checkbox",
       name = GetString(LBOOKS_COMPASS_BOOKSHELF_NAME),
       tooltip = GetString(LBOOKS_COMPASS_BOOKSHELF_DESC),
-      getFunc = function() return db.filters[c.PINS_COMPASS_BOOKSHELF] end,
+      getFunc = function() return db.filters[internal.PINS_COMPASS_BOOKSHELF] end,
       setFunc = function(state)
-        db.filters[c.PINS_COMPASS_BOOKSHELF] = state
-        COMPASS_PINS:RefreshPins(c.PINS_COMPASS_BOOKSHELF)
+        db.filters[internal.PINS_COMPASS_BOOKSHELF] = state
+        COMPASS_PINS:RefreshPins(internal.PINS_COMPASS_BOOKSHELF)
       end,
-      default = defaults.filters[c.PINS_COMPASS_BOOKSHELF],
+      default = defaults.filters[internal.PINS_COMPASS_BOOKSHELF],
     },
     {
       type = "slider",
@@ -315,14 +316,14 @@ function LoreBooks:CreateSettings()
       getFunc = function() return db.compassMaxDistance * 1000 end,
       setFunc = function(maxDistance)
         db.compassMaxDistance = maxDistance / 1000
-        COMPASS_PINS.pinLayouts[c.PINS_COMPASS].maxDistance = maxDistance / 1000
-        COMPASS_PINS:RefreshPins(c.PINS_COMPASS)
-        COMPASS_PINS.pinLayouts[c.PINS_COMPASS_EIDETIC].maxDistance = maxDistance / 1000
-        COMPASS_PINS:RefreshPins(c.PINS_COMPASS_EIDETIC)
-        COMPASS_PINS.pinLayouts[c.PINS_COMPASS_BOOKSHELF].maxDistance = maxDistance / 1000
-        COMPASS_PINS:RefreshPins(c.PINS_COMPASS_BOOKSHELF)
+        COMPASS_PINS.pinLayouts[internal.PINS_COMPASS].maxDistance = maxDistance / 1000
+        COMPASS_PINS:RefreshPins(internal.PINS_COMPASS)
+        COMPASS_PINS.pinLayouts[internal.PINS_COMPASS_EIDETIC].maxDistance = maxDistance / 1000
+        COMPASS_PINS:RefreshPins(internal.PINS_COMPASS_EIDETIC)
+        COMPASS_PINS.pinLayouts[internal.PINS_COMPASS_BOOKSHELF].maxDistance = maxDistance / 1000
+        COMPASS_PINS:RefreshPins(internal.PINS_COMPASS_BOOKSHELF)
       end,
-      disabled = function() return not (db.filters[c.PINS_COMPASS] or db.filters[c.PINS_COMPASS_EIDETIC] or db.filters[c.PINS_COMPASS_BOOKSHELF]) end,
+      disabled = function() return not (db.filters[internal.PINS_COMPASS] or db.filters[internal.PINS_COMPASS_EIDETIC] or db.filters[internal.PINS_COMPASS_BOOKSHELF]) end,
       default = defaults.compassMaxDistance * 1000,
     },
     {
@@ -381,10 +382,10 @@ function LoreBooks:CreateSettings()
         LoreBooks.ToggleShareData()
       end,
       default = defaults.shareData,
-      disabled = GetWorldName() ~= "EU Megaserver" or not c.SUPPORTED_LANG[lang],
+      disabled = GetWorldName() ~= "EU Megaserver" or not internal.SUPPORTED_LANG[lang],
     },
     --]]
   }
-  LAM:RegisterOptionControls(c.ADDON_PANEL, optionsTable)
+  LAM:RegisterOptionControls(internal.ADDON_PANEL, optionsTable)
 
 end

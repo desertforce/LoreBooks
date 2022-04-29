@@ -23,7 +23,7 @@ Under the following terms:
 Please read full licence at :
 http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
 ]]
-local c = LoreBooks.Constants
+local internal = _G["LoreBooks_Internal"]
 
 local libraryData = {
   [1] = {
@@ -61170,13 +61170,13 @@ end
 function LoreBooks_GetNewEideticDataFor(mapId, z_mapId)
   --[[ bookData changed to booksData because of local assignment
   on ~ 2736 depending on changes]]--
-  local categoryName, numCollections = GetLoreCategoryInfo(c.LORE_LIBRARY_EIDETIC) -- Only Eidetic
+  local categoryName, numCollections = GetLoreCategoryInfo(internal.LORE_LIBRARY_EIDETIC) -- Only Eidetic
   local eideticInZone = {}
   local searchTable = {}
   for collectionIndex = 1, numCollections do
-    local _, _, _, totalBooks = GetLoreCollectionInfo(c.LORE_LIBRARY_EIDETIC, collectionIndex)
+    local _, _, _, totalBooks = GetLoreCollectionInfo(internal.LORE_LIBRARY_EIDETIC, collectionIndex)
     for bookIndex = 1, totalBooks do
-      local eideticData = LoreBooks_GetNewEideticData(c.LORE_LIBRARY_EIDETIC, collectionIndex, bookIndex)
+      local eideticData = LoreBooks_GetNewEideticData(internal.LORE_LIBRARY_EIDETIC, collectionIndex, bookIndex)
       local randomAndFixed
       if eideticData and eideticData.e and eideticData.m and not eideticData.q then
         randomAndFixed = NonContiguousCount(eideticData.e) > 0 and NonContiguousCount(eideticData.m) > 0
@@ -61234,7 +61234,7 @@ end
 
 local function GetMissingEideticBooks()
 
-  local categoryIndex = c.LORE_LIBRARY_EIDETIC
+  local categoryIndex = internal.LORE_LIBRARY_EIDETIC
   local _, numCollections = GetLoreCategoryInfo(categoryIndex)
 
   for collectionIndex = 1, numCollections do
