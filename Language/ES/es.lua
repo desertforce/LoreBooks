@@ -26,6 +26,7 @@ SafeAddString(LBOOKS_MOREINFO2, "Cueva", 1)
 SafeAddString(LBOOKS_MOREINFO3, "Mazmorra pública", 1)
 SafeAddString(LBOOKS_MOREINFO4, "Subterráneo", 1)
 SafeAddString(LBOOKS_MOREINFO5, "Instancia de grupo", 1)
+SafeAddString(LBOOKS_MOREINFO6, "Inside Inn", 1)
 
 SafeAddString(LBOOKS_SET_WAYPOINT, GetString(SI_WORLD_MAP_ACTION_SET_PLAYER_WAYPOINT) .. ": |cFFFFFF<<1>>|r", 1)
 
@@ -43,6 +44,8 @@ SafeAddString(LBOOKS_PIN_SIZE, "Tamaño de marcador", 1)
 SafeAddString(LBOOKS_PIN_SIZE_DESC, "Define el tamaño de los marcadores en el mapa.", 1)
 SafeAddString(LBOOKS_PIN_LAYER, "Nivel del marcador", 1)
 SafeAddString(LBOOKS_PIN_LAYER_DESC, "Define el nivel de los marcadores en el mapa.", 1)
+SafeAddString(LBOOKS_PIN_CLICK_MENU, "Enable Lorebook player waypoint click option", 1)
+SafeAddString(LBOOKS_PIN_CLICK_MENU_DESC, "Enable and disable the click option when Lorebooks are stacked to set player waypoint.", 1)
 
 SafeAddString(LBOOKS_PIN_TEXTURE1, "Iconos reales", 1)
 SafeAddString(LBOOKS_PIN_TEXTURE2, "Set de iconos 1", 1)

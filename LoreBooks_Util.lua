@@ -262,6 +262,31 @@ local function CheckLorebooks()
   LBooks_SavedVariables.names = LoreBooks_bookData
 end
 
+local function LookForPinFive()
+  allShalidorData = LoreBooks_GetAllData()
+  built_table = {}
+  for mapId, pinData in pairs(allShalidorData) do
+    for index, pinInfo in pairs(pinData) do
+      if pinInfo[5] and pinInfo[5] > 5 then
+        if pinInfo[6] then pinInfo[6] = nil end
+        local zoneId = pinInfo[5]
+        local map_id = GetMapIdByZoneId(pinInfo[5])
+        local zoneName = GetZoneNameById(pinInfo[5])
+        if map_id == 0 then
+          if zoneName then
+            map_id =  LMD:ReturnSingleIndex(LMD.mapNamesLookup[zoneName]) or zoneName
+          end
+        end
+        pinInfo[6] = map_id
+        pinInfo[5] = 5
+        local stringInfo = string.format("{ %.3f, %.3f, %d, %d, %d, %s },", pinInfo[1], pinInfo[2], pinInfo[3], pinInfo[4], pinInfo[5], pinInfo[6])
+        table.insert(built_table, stringInfo)
+      end
+    end
+  end
+  LBooks_SavedVariables.newLorebooksData = built_table
+end
+
 -----
 --- add to OnLoad
 -----
@@ -271,6 +296,8 @@ end
 -- SLASH_COMMANDS["/lbgetn"] = GetLorebookNames
 
 -- SLASH_COMMANDS["/lbshow"] = ShowLorebookMissingMapId
+
+--  SLASH_COMMANDS["/lbfive"] = function() LookForPinFive() end
 -----
 --- end of verification routines
 -----

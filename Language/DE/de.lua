@@ -26,6 +26,7 @@ SafeAddString(LBOOKS_MOREINFO2, "Verlies", 1)
 SafeAddString(LBOOKS_MOREINFO3, "Offenes Verlies", 1)
 SafeAddString(LBOOKS_MOREINFO4, "unter der Erde", 1)
 SafeAddString(LBOOKS_MOREINFO5, "Gruppeninstanz", 1)
+SafeAddString(LBOOKS_MOREINFO6, "Inside Inn", 1)
 
 SafeAddString(LBOOKS_SET_WAYPOINT, GetString(SI_WORLD_MAP_ACTION_SET_PLAYER_WAYPOINT) .. " : |cFFFFFF<<1>>|r", 1)
 
@@ -43,6 +44,8 @@ SafeAddString(LBOOKS_PIN_SIZE, "Größe der Kartenmarkierung", 1)
 SafeAddString(LBOOKS_PIN_SIZE_DESC, "Bestimmt die Größe der Kartenmarkierung auf der Karte.", 1)
 SafeAddString(LBOOKS_PIN_LAYER, "Ebene der Kartenmarkierung", 1)
 SafeAddString(LBOOKS_PIN_LAYER_DESC, "Bestimmt die Ebene der Kartenmarkierung.", 1)
+SafeAddString(LBOOKS_PIN_CLICK_MENU, "Enable Lorebook player waypoint click option", 1)
+SafeAddString(LBOOKS_PIN_CLICK_MENU_DESC, "Enable and disable the click option when Lorebooks are stacked to set player waypoint.", 1)
 
 SafeAddString(LBOOKS_PIN_TEXTURE1, "Real icons", 1)
 SafeAddString(LBOOKS_PIN_TEXTURE2, "Book icon set 1", 1)

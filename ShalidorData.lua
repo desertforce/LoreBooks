@@ -28,14 +28,30 @@ http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
 -- GetLoreBookInfo(categoryID, collectionID, bookID)
 -- categoryID is always 1, so storing the rest
 
--- format: locX, locY, collectionID, bookID, moreInfo
+-- format: locX, locY, collectionID, bookID, moreInfo, zoneId, location text
+--[[ For anything you need to skip, add nil
+]]--
 -- 	moreInfo:
 -- 		nil or false = default
 -- 		1 = on town map
 -- 		2 = in delve
 -- 		3 = in public dungeon
 -- 		4 = under ground
--- 		5+ = group instance zoneId
+-- 		5 = Group Instance
+-- 		6 = Inside Inn
+--       9999 = Breadcrumb so don't add to right click menu
+-- 	zoneId:
+-- 		Integer = group instance zoneId
+-- location text:
+-- ld = X where X is the arbitrary key for the location details
+-- ld = 1, and then [1] = "Guest Room"
+--[[ The location text will have to be localized so put it in the language files
+The location text will be on a single line on the tooltip so you can't say
+"In the Inn of the Seven Filthy Darves, on the second floor, through the doorway, up the stairs to the right of the guard, in the Guest Room."
+
+You just put "Guest Room"
+]]--
+
 
 local lorebooksData = {
   -- alikr
@@ -169,7 +185,7 @@ local lorebooksData = {
     { 0.3142, 0.571, 18, 6 },
     { 0.335, 0.510, 18, 6, 4 },
     -- Dungeon Lore
-    { 0.873, 0.463, 11, 2, 22 }, -- What is Volendrung?
+    { 0.873, 0.463, 11, 2, 9999, 3 }, -- What is Volendrung?
   },
   [83] = { -- sentinel_base
     -- Alik'r Desert Lore
@@ -233,7 +249,7 @@ local lorebooksData = {
   },
   [3] = { -- volenfell_base
     -- Dungeon Lore
-    { 0.141, 0.441, 11, 2, 22 }, -- What is Volendrung?
+    { 0.141, 0.441, 11, 2, 5, 3 }, -- What is Volendrung?
   }, --}
 
   -- auridon
@@ -368,7 +384,7 @@ local lorebooksData = {
     { 0.5607, 0.7909, 19, 5 },
     { 0.5430, 0.7749, 19, 5 },
     -- Dungeon Lore
-    { 0.322, 0.113, 11, 7, 380 }, -- The Binding Stone
+    { 0.322, 0.113, 11, 7, 9999, 279 }, -- The Binding Stone
   },
   [540] = { -- firsthold_base
     -- Auridon Lore
@@ -396,7 +412,7 @@ local lorebooksData = {
   },
   [279] = { -- thebanishedcells_base
     -- Dungeon Lore
-    { 0.481, 0.838, 11, 7, 380 }, -- The Binding Stone
+    { 0.481, 0.838, 11, 7, 5, 279 }, -- The Binding Stone
   },
 
   -- bangkorai
@@ -515,7 +531,7 @@ local lorebooksData = {
     { 0.490, 0.560, 18, 10 },
     { 0.5163, 0.5811, 18, 10 },
     -- Dungeon Lore
-    { 0.372, 0.277, 11, 13, 38 }, -- Civility and Etiquette V. 5: Undead
+    { 0.372, 0.277, 11, 13, 9999, 347 }, -- Civility and Etiquette V. 5: Undead
   },
   [84] = { -- evermore_base
     -- Bangkorai Lore
@@ -538,7 +554,7 @@ local lorebooksData = {
   },
   [347] = { -- blackhearthavenarea1_base
     -- Dungeon Lore
-    { 0.708, 0.486, 11, 13, 38 }, -- Civility and Etiquette V. 5: Undead
+    { 0.708, 0.486, 11, 13, 5, 347 }, -- Civility and Etiquette V. 5: Undead
   },
 
   -- coldharbor
@@ -584,7 +600,7 @@ local lorebooksData = {
     { 0.4482, 0.4566, 29, 10 },
     { 0.5474, 0.4550, 29, 10 },
     -- Dungeon Lore
-    { 0.579, 0.484, 11, 16, 11 }, -- To All Who Pass Through
+    { 0.579, 0.484, 11, 16, 9999, 454 }, -- To All Who Pass Through
   },
   [422] = { -- hollowcity_base
     { 0.646, 0.569, 29, 4 }, -- I was Summoned by a Mortal
@@ -593,7 +609,7 @@ local lorebooksData = {
   },
   [454] = { -- vaultsofmadness1_base
     -- Dungeon Lore
-    { 0.16, 0.85, 11, 16, 11 }, -- To All Who Pass Through
+    { 0.160, 0.850, 11, 16, 5, 454 }, -- To All Who Pass Through
   },
 
   -- cyrodiil
@@ -1016,7 +1032,7 @@ local lorebooksData = {
     { 0.435, 0.588, 16, 5 },
     { 0.4687, 0.5872, 16, 5 },
     -- Dungeon Lore
-    { 0.790, 0.585, 11, 6, 63 }, -- The Art of Kwama Egg Cooking
+    { 0.790, 0.585, 11, 6, 9999, 118 }, -- The Art of Kwama Egg Cooking
   },
   [205] = { -- mournhold_base
     -- Daedric Princes
@@ -1050,7 +1066,7 @@ local lorebooksData = {
   },
   [118] = { -- darkshadecaverns_base
     -- Dungeon Lore
-    { 0.309, 0.222, 11, 6, 63 }, -- The Art of Kwama Egg Cooking
+    { 0.309, 0.222, 11, 6, 5, 118 }, -- The Art of Kwama Egg Cooking
   },
 
   -- eastmarch
@@ -1184,7 +1200,7 @@ local lorebooksData = {
     { 0.3047, 0.545, 18, 6 },
     { 0.4702, 0.5361, 18, 6 },
     -- Dungeon Lore
-    { 0.737, 0.703, 11, 10, 449 }, -- To Posterity
+    { 0.737, 0.703, 11, 10, 9999, 348 }, -- To Posterity
   },
   [578] = { -- fortamol_base
     -- Eastmarch Lore
@@ -1204,7 +1220,7 @@ local lorebooksData = {
   },
   [348] = { -- direfrostkeep_base
     -- Dungeon Lore
-    { 0.541, 0.653, 11, 10, 449 }, -- To Posterity
+    { 0.541, 0.653, 11, 10, 5, 348 }, -- To Posterity
   },
 
   -- glenumbra
@@ -1340,7 +1356,7 @@ local lorebooksData = {
     { 0.557, 0.228, 19, 5 },
     { 0.522, 0.234, 19, 5 },
     -- Dungeon Lore
-    { 0.714, 0.336, 11, 8, 144 }, -- Where Magical Paths Meet
+    { 0.714, 0.336, 11, 8, 9999, 174 }, -- Where Magical Paths Meet
   },
   [531] = { -- aldcroft_base
     -- Biographies
@@ -1373,7 +1389,7 @@ local lorebooksData = {
   },
   [174] = { -- spindleclutch_base
     -- Dungeon Lore
-    { 0.677, 0.475, 11, 8, 144 }, -- Where Magical Paths Meet
+    { 0.677, 0.475, 11, 8, 5, 174 }, -- Where Magical Paths Meet
   },
   [201] = { -- strosmkai_base
     -- Dwemer
@@ -1513,7 +1529,7 @@ local lorebooksData = {
     { 0.224, 0.225, 16, 5 },
     { 0.256, 0.203, 16, 5 },
     -- Dungeon Lore
-    { 0.526, 0.484, 11, 5, 126 }, -- Civility and Etiquette: Wood Orcs I
+    { 0.526, 0.484, 11, 5, 9999, 28 }, -- Civility and Etiquette: Wood Orcs I
   },
   [445] = { -- eldenrootgroundfloor_base
     -- Magic and Magica
@@ -1546,7 +1562,7 @@ local lorebooksData = {
   },
   [28] = { -- eldenhollow_base
     -- Dungeon Lore
-    { 0.786, 0.624, 11, 5, 126 }, -- Civility and Etiquette: Wood Orcs I
+    { 0.786, 0.624, 11, 5, 5, 28 }, -- Civility and Etiquette: Wood Orcs I
   },
 
   -- greenshade
@@ -1680,7 +1696,7 @@ local lorebooksData = {
     { 0.301, 0.195, 17, 8 },
     { 0.3407, 0.2105, 17, 8 },
     -- Dungeon Lore
-    { 0.658, 0.300, 11, 12, 176 }, -- Burning Vestige, Vol. I
+    { 0.658, 0.300, 11, 12, 9999, 326 }, -- Burning Vestige, Vol. I
   },
   [568] = { -- falinesticave_base
     -- Greenshade Lore
@@ -1711,7 +1727,7 @@ local lorebooksData = {
   },
   [326] = { -- cityofashmain_base
     -- Dungeon Lore
-    { 0.275, 0.444, 11, 12, 176 }, -- Burning Vestige, Vol. I
+    { 0.275, 0.444, 11, 12, 5, 326 }, -- Burning Vestige, Vol. I
   },
 
   -- malabaltor
@@ -1842,7 +1858,7 @@ local lorebooksData = {
     { 0.794, 0.571, 18, 6 },
     { 0.755, 0.748, 18, 6 },
     -- Dungeon Lore
-    { 0.460, 0.330, 11, 14, 131 }, -- Tempest Island Briefing
+    { 0.460, 0.330, 11, 14, 9999, 292 }, -- Tempest Island Briefing
   },
   [282] = { -- baandaritradingpost_base
     -- Malabal Toe Lore
@@ -1893,8 +1909,8 @@ local lorebooksData = {
   },
   [292] = { -- tempestisland_base
     -- Dungeon Lore
-    { 0.445, 0.367, 11, 4, 131 }, -- War Weather
-    { 0.365, 0.812, 11, 14, 131 }, -- Tempest Island Briefing
+    { 0.445, 0.367, 11, 4, 5, 292 }, -- War Weather
+    { 0.365, 0.812, 11, 14, 5, 292 }, -- Tempest Island Briefing
   },
 
   -- reapersmarch
@@ -2014,7 +2030,7 @@ local lorebooksData = {
     { 0.235, 0.341, 18, 10 },
     { 0.3285, 0.3591, 18, 10 },
     -- Dungeon Lore
-    { 0.206, 0.795, 11, 15, 31 }, -- Soul-Trapping I: An Introduction
+    { 0.206, 0.795, 11, 15, 9999, 334 }, -- Soul-Trapping I: An Introduction
   },
   [535] = { -- arenthia_base
     -- Poetry and Song
@@ -2038,7 +2054,7 @@ local lorebooksData = {
   },
   [334] = { -- selenesweb_base
     -- Dungeon Lore
-    { 0.706, 0.916, 11, 15, 31 }, -- Soul-Trapping I: An Introduction
+    { 0.706, 0.916, 11, 15, 5, 334 }, -- Soul-Trapping I: An Introduction
   },
 
   -- rivenspire
@@ -2174,7 +2190,7 @@ local lorebooksData = {
     { 0.725, 0.450, 19, 2 },
     { 0.6955, 0.4972, 19, 2 },
     -- Dungeon Lore
-    { 0.721, 0.736, 11, 3, 130 }, -- The Thief God's Treasures
+    { 0.721, 0.736, 11, 3, 9999, 151 }, -- The Thief God's Treasures
   },
   [528] = { -- hoarfrost_base
     -- Oblivion Lore
@@ -2211,8 +2227,8 @@ local lorebooksData = {
     { 0.183, 0.263, 17, 2 }, -- Darkest Darkness
   },
   [151] = { -- cryptofhearts_base
-    { 0.457, 0.240, 11, 3, 130 }, -- The Thief God's Treasures
-    { 0.678, 0.181, 11, 3, 130 },
+    { 0.457, 0.240, 11, 3, 5, 151 }, -- The Thief God's Treasures
+    { 0.678, 0.181, 11, 3, 5, 151 },
   },
 
   -- shadowfen
@@ -2345,7 +2361,7 @@ local lorebooksData = {
     { 0.807, 0.828, 17, 8 },
     { 0.727, 0.847, 17, 8 },
     -- Dungeon Lore
-    { 0.165, 0.584, 11, 11, 148 }, -- Arx Corinium - First Seed Report
+    { 0.165, 0.584, 11, 11, 9999, 141 }, -- Arx Corinium - First Seed Report
   },
   [217] = { -- stormhold_base
     -- Divines and Deities
@@ -2366,7 +2382,7 @@ local lorebooksData = {
   },
   [141] = { -- arxcorinium_base
     -- Dungeon Lore
-    { 0.143, 0.315, 11, 11, 148 }, -- Arx Corinium - First Seed Report
+    { 0.143, 0.315, 11, 11, 5, 141 }, -- Arx Corinium - First Seed Report
   },
 
   -- stonefalls
@@ -2467,7 +2483,7 @@ local lorebooksData = {
     { 0.361, 0.408, 10, 3 },
     { 0.290, 0.558, 10, 3, 2 },
     -- Dungeon Lore
-    { 0.094, 0.447, 11, 1, 283 }, -- With Regards to the Ebony Blade
+    { 0.094, 0.447, 11, 1, 9999, 77 }, -- With Regards to the Ebony Blade
     -- Dwemer
     { 0.656, 0.373, 12, 1 }, -- Ancient Scrolls of the Dwemer I-A
     { 0.688, 0.367, 12, 1 },
@@ -2548,7 +2564,7 @@ local lorebooksData = {
   },
   [77] = { -- fungalgrotto_base
     -- Dungeon Lore
-    { 0.331, 0.785, 11, 1, 111 }, -- With Regards to the Ebony Blade
+    { 0.331, 0.785, 11, 1, 5, 77 }, -- With Regards to the Ebony Blade
   },
 
   -- stormhaven
@@ -2684,8 +2700,8 @@ local lorebooksData = {
     { 0.700, 0.493, 16, 5 },
     { 0.655, 0.510, 16, 5 },
     -- Dungeon Lore
-    { 0.562, 0.577, 11, 9, 146 }, -- Wayrest Sewers: A Short History
-    { 0.5574, 0.5243, 9, 9, 146, true }, -- The All-Beneficent King Fahara'jad (hidden)
+    { 0.562, 0.577, 11, 9, 9999, 46 }, -- Wayrest Sewers: A Short History
+    { 0.549, 0.536, 9, 9, 9999, 33 }, -- The All-Beneficent King Fahara'jad
   },
   [34] = { -- alcairecastle_base
     -- Stormhaven Lore
@@ -2716,11 +2732,11 @@ local lorebooksData = {
     -- Myths of the Mundus
     { 0.361, 0.080, 16, 2 }, -- Before the Ages of Man: Merethic Era
     -- Dungeon Lore
-    { 0.4843, 0.1141, 9, 9, 146, true }, -- The All-Beneficent King Fahara'jad (hidden)
+    { 0.486861, 0.115856, 9, 9, 6, 33, ld = 1 }, -- The All-Beneficent King Fahara'jad
   },
   [46] = { -- wayrestsewers_base
     -- Dungeon Lore
-    { 0.830, 0.100, 11, 9, 146 }, -- Wayrest Sewers: A Short History
+    { 0.830, 0.100, 11, 9, 5, 46 }, -- Wayrest Sewers: A Short History
   },
 
   -- therift
@@ -2834,7 +2850,7 @@ local lorebooksData = {
     { 0.806, 0.684, 18, 10, 2 },
     { 0.8058, 0.7746, 18, 10, 2 },
     -- Dungeon Lore
-    { 0.891, 0.646, 11, 17, 64 }, -- Josef the Intolerant
+    { 0.891, 0.646, 11, 17, 9999, 403 }, -- Josef the Intolerant
   },
   [198] = { -- riften_base
     -- The Rift Lore
@@ -2902,7 +2918,7 @@ local lorebooksData = {
     { 0.240, 0.443, 11, 17 }, -- Josef the Intolerant
   },
   [403] = { -- blessedcrucible7_base
-    { 0.240, 0.443, 11, 17, 64 }, -- Josef the Intolerant
+    { 0.240, 0.443, 11, 17, 5, 403 }, -- Josef the Intolerant
   },
 
   -- wrothgar
@@ -3356,7 +3372,7 @@ function LoreBooks_GetDataOfBook(categoryIndex, collectionIndex, bookIndex)
       for mapId, mapData in pairs(lorebooksData) do
         for bookEntry, bookData in pairs(mapData) do
           if bookData[3] == collectionIndex and bookData[4] == bookIndex then
-            table.insert(results, { mapId = mapId, locX = bookData[1], locY = bookData[2] })
+            table.insert(results, { data = bookData, mapId = mapId, locX = bookData[1], locY = bookData[2] })
           end
         end
       end

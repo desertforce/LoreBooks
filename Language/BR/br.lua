@@ -25,6 +25,7 @@ SafeAddString(LBOOKS_MOREINFO2, "Covil", 1)
 SafeAddString(LBOOKS_MOREINFO3, "Calabouço Público", 1)
 SafeAddString(LBOOKS_MOREINFO4, "Subterrâneo", 1)
 SafeAddString(LBOOKS_MOREINFO5, "Instância de Grupo", 1)
+SafeAddString(LBOOKS_MOREINFO6, "Inside Inn", 1)
 
 SafeAddString(LBOOKS_SET_WAYPOINT, GetString(SI_WORLD_MAP_ACTION_SET_PLAYER_WAYPOINT) .. " : |cFFFFFF<<1>>|r", 1)
 
@@ -42,6 +43,8 @@ SafeAddString(LBOOKS_PIN_SIZE, "Tamanho dos Pinos", 1)
 SafeAddString(LBOOKS_PIN_SIZE_DESC, "Defina o tamanho dos pinos do mapa.", 1)
 SafeAddString(LBOOKS_PIN_LAYER, "Camada dos Pinos", 1)
 SafeAddString(LBOOKS_PIN_LAYER_DESC, "Defina a camada dos pinos do mapa", 1)
+SafeAddString(LBOOKS_PIN_CLICK_MENU, "Enable Lorebook player waypoint click option", 1)
+SafeAddString(LBOOKS_PIN_CLICK_MENU_DESC, "Enable and disable the click option when Lorebooks are stacked to set player waypoint.", 1)
 
 SafeAddString(LBOOKS_PIN_TEXTURE1, "Real icons", 1)
 SafeAddString(LBOOKS_PIN_TEXTURE2, "Book icon set 1", 1)

@@ -33,7 +33,7 @@ local defaults = {      --default settings for saved variables
   steps = {},
   immersiveMode = 1,
   questTools = {},
-  useQuestBooks = false,
+  showClickMenu = true,
 }
 
 function LoreBooks:GetSettings()
@@ -206,6 +206,16 @@ function LoreBooks:CreateSettings()
       end,
       disabled = function() return not (db.filters[c.PINS_UNKNOWN] or db.filters[c.PINS_COLLECTED] or db.filters[c.PINS_EIDETIC] or db.filters[c.PINS_EIDETIC_COLLECTED] or db.filters[c.PINS_BOOKSHELF]) end,
       default = defaults.pinTexture.level,
+    },
+    { -- disable clicl menu
+      type = "checkbox",
+      name = GetString(LBOOKS_PIN_CLICK_MENU),
+      tooltip = GetString(LBOOKS_PIN_CLICK_MENU_DESC),
+      getFunc = function() return db.showClickMenu end,
+      setFunc = function(state)
+        db.showClickMenu = state
+      end,
+      default = defaults.showClickMenu,
     },
     {
       type = "checkbox",

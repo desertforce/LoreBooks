@@ -25,6 +25,7 @@ SafeAddString(LBOOKS_MOREINFO2, "洞穴", 1)
 SafeAddString(LBOOKS_MOREINFO3, "公共副本", 1)
 SafeAddString(LBOOKS_MOREINFO4, "地下", 1)
 SafeAddString(LBOOKS_MOREINFO5, "组队情况", 1)
+SafeAddString(LBOOKS_MOREINFO6, "Inside Inn", 1)
 
 SafeAddString(LBOOKS_SET_WAYPOINT, GetString(SI_WORLD_MAP_ACTION_SET_PLAYER_WAYPOINT) .. " : |cFFFFFF<<1>>|r", 1)
 
@@ -42,6 +43,8 @@ SafeAddString(LBOOKS_PIN_SIZE, "标记尺寸", 1)
 SafeAddString(LBOOKS_PIN_SIZE_DESC, "设置地图标记的尺寸", 1)
 SafeAddString(LBOOKS_PIN_LAYER, "标志图层", 1)
 SafeAddString(LBOOKS_PIN_LAYER_DESC, "设置地图标志的图层", 1)
+SafeAddString(LBOOKS_PIN_CLICK_MENU, "Enable Lorebook player waypoint click option", 1)
+SafeAddString(LBOOKS_PIN_CLICK_MENU_DESC, "Enable and disable the click option when Lorebooks are stacked to set player waypoint.", 1)
 
 SafeAddString(LBOOKS_PIN_TEXTURE1, "真实图标", 1)
 SafeAddString(LBOOKS_PIN_TEXTURE2, "书籍图标设置 1", 1)

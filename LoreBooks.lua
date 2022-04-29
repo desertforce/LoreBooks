@@ -31,7 +31,6 @@ local LMDI = LibMapData_Internal
 local GPS = LibGPS3
 local Postmail = {}
 local c = LoreBooks.Constants
-local bookshelfZoneId = LMD.zoneId or 1261
 
 --Local variables -------------------------------------------------------------
 local updatePins = {}
@@ -54,15 +53,15 @@ end
 
 -- Pins -----------------------------------------------------------------------
 local function GetPinTextureBookshelf(self)
-  local zoneId
-  if self and self.m_PinTag.z then zoneId = self.m_PinTag.z end
-  if not zoneId and bookshelfZoneId then zoneId = GetParentZoneId(bookshelfZoneId) end
+  if not self then return c.icon_list_zoneid[1261] end
+  if not self.m_PinTag and not self.m_PinTag.z then return c.icon_list_zoneid[1261] end
+  local zoneId = GetParentZoneId(self.m_PinTag.z)
   if not zoneId then zoneId = 1261 end
   local texture
-  if LoreBooks.Constants.icon_list_zoneid[zoneId] then
-    texture = LoreBooks.Constants.icon_list_zoneid[zoneId]
+  if c.icon_list_zoneid[zoneId] then
+    texture = c.icon_list_zoneid[zoneId]
   else
-    texture = LoreBooks.Constants.icon_list_zoneid[1261]
+    texture = c.icon_list_zoneid[1261]
   end
   return texture
 end
@@ -95,34 +94,46 @@ pinTooltipCreator.tooltip = 1 --TOOLTIP_MODE.INFORMATION
 pinTooltipCreator.creator = function(pin)
 
   local pinTag = pin.m_PinTag
-  local title, icon, known = GetLoreBookInfo(1, pinTag[3], pinTag[4])
-  local collection = GetLoreCollectionInfo(1, pinTag[3])
+  local title, icon, known, bookId = GetLoreBookInfo(c.LORE_LIBRARY_SHALIDOR, pinTag[3], pinTag[4])
+  local collection = GetLoreCollectionInfo(c.LORE_LIBRARY_SHALIDOR, pinTag[3])
   local moreinfo = {}
   if icon == c.MISSING_TEXTURE then icon = c.PLACEHOLDER_TEXTURE end
   -- /script d(zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetZoneNameByIndex(GetUnitZoneIndex("player"))))
-  if pinTag[5] then
-    if pinTag[5] < 5 then
-      table.insert(moreinfo, "[" .. GetString("LBOOKS_MOREINFO", pinTag[5]) .. "]")
-    else
-      table.insert(moreinfo, "[" .. zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetZoneNameByIndex(GetZoneIndex(pinTag[5]))) .. "]")
-    end
+  local fakePin = false
+  if pinTag[5] and pinTag[5] == 9999 then fakePin = true end
+  if pinTag[5] and not fakePin then
+    table.insert(moreinfo, "[" .. GetString("LBOOKS_MOREINFO", pinTag[5]) .. "]")
+  end
+  if pinTag[6] then
+    table.insert(moreinfo, "[" .. zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetMapNameById(pinTag[6])) .. "]")
   end
   if known then
     table.insert(moreinfo, "[" .. GetString(LBOOKS_KNOWN) .. "]")
   end
 
+  local bookColor = ZO_HIGHLIGHT_TEXT
+  if known then
+    bookColor = ZO_SUCCEEDED_TEXT
+  end
+
   if IsInGamepadPreferredMode() then
     INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, zo_strformat(collection), INFORMATION_TOOLTIP.tooltip:GetStyle("mapTitle"))
-    INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, icon, title, { fontSize = 27, fontColorField = GAMEPAD_TOOLTIP_COLOR_GENERAL_COLOR_3 })
+    INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, icon, bookColor:Colorize(title), { fontSize = 27, fontColorField = GAMEPAD_TOOLTIP_COLOR_GENERAL_COLOR_3 })
     if #moreinfo > 0 then
       INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, table.concat(moreinfo, " / "), INFORMATION_TOOLTIP.tooltip:GetStyle("worldMapTooltip"))
+    end
+    if pinTag.ld then
+      INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, zo_strformat(LoreBooks.locationDetails[pinTag.ld]), INFORMATION_TOOLTIP.tooltip:GetStyle("worldMapTooltip"))
     end
   else
     INFORMATION_TOOLTIP:AddLine(zo_strformat(collection), "ZoFontGameOutline", ZO_SELECTED_TEXT:UnpackRGB())
     ZO_Tooltip_AddDivider(INFORMATION_TOOLTIP)
-    INFORMATION_TOOLTIP:AddLine(zo_iconTextFormat(icon, 32, 32, title), "", ZO_HIGHLIGHT_TEXT:UnpackRGB())
+    INFORMATION_TOOLTIP:AddLine(zo_iconTextFormat(icon, 32, 32, title), "", bookColor:UnpackRGB())
     if #moreinfo > 0 then
       INFORMATION_TOOLTIP:AddLine(table.concat(moreinfo, " / "), "", ZO_TOOLTIP_DEFAULT_COLOR:UnpackRGB())
+    end
+    if pinTag.ld then
+      INFORMATION_TOOLTIP:AddLine(LoreBooks.locationDetails[pinTag.ld], "", ZO_HIGHLIGHT_TEXT:UnpackRGB())
     end
   end
 
@@ -152,17 +163,9 @@ pinTooltipCreatorBookshelf.creator = function(pin)
 
 end
 
-local function getQuestName(q)
-  if type(q) == "string" then
-    return q
-  else
-    local questName = GetQuestName(q)
-    return questName
-  end
-end
-
-local function getQuestLocation(q)
-  local zoneId = GetQuestZoneId(q)
+local function getQuestLocation(questId)
+  local zoneId = GetQuestZoneId(questId)
+  if zoneId == 0 then return end
   return zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetZoneNameById(zoneId))
 end
 
@@ -192,18 +195,15 @@ pinTooltipCreatorEidetic.creator = function(pin)
     INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, bookColor:Colorize(title), { fontSize = 27, fontColorField = GAMEPAD_TOOLTIP_COLOR_GENERAL_COLOR_3 })
 
     if pinTag.q then
-      local qName = getQuestName(pinTag.q)
-      if qName then
+      local questName = GetQuestName(pinTag.q)
+      if questName then
         INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, GetString(LBOOKS_QUEST_BOOK), { fontSize = 27, fontColorField = GAMEPAD_TOOLTIP_COLOR_GENERAL_COLOR_2 })
-        INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, qName, { fontSize = 27, fontColorField = GAMEPAD_TOOLTIP_COLOR_GENERAL_COLOR_2 })
-
-        --local questDetails
-        --if pinTag.qt then
-        --	questDetails = zo_strformat(GetString("LBOOKS_SPECIAL_QUEST"), pinTag.qt)
-        --else
-        --	questDetails = zo_strformat(GetString(LBOOKS_QUEST_IN_ZONE), zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetMapNameByIndex(pinTag.qm)))
-        --end
-        --INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, questDetails, {fontSize = 27, fontColorField = GAMEPAD_TOOLTIP_COLOR_GENERAL_COLOR_2})
+        INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, questName, { fontSize = 27, fontColorField = GAMEPAD_TOOLTIP_COLOR_GENERAL_COLOR_2 })
+        local questDetails = getQuestLocation(pinTag.q)
+        if questDetails then
+          questDetails = zo_strformat(GetString(LBOOKS_QUEST_IN_ZONE), questDetails)
+          INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, questDetails, { fontSize = 27, fontColorField = GAMEPAD_TOOLTIP_COLOR_GENERAL_COLOR_2 })
+        end
       end
     end
 
@@ -223,6 +223,10 @@ pinTooltipCreatorEidetic.creator = function(pin)
       INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, GetString(LBOOKS_RANDOM_POSITION), { fontSize = 27, fontColorField = GAMEPAD_TOOLTIP_COLOR_GENERAL_COLOR_2 })
     end
 
+    if pinTag.ld then
+      INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, zo_strformat(LoreBooks.locationDetails[pinTag.ld]), INFORMATION_TOOLTIP.tooltip:GetStyle("worldMapTooltip"))
+    end
+
   else
     -- Keyboard Mode
 
@@ -237,20 +241,15 @@ pinTooltipCreatorEidetic.creator = function(pin)
     INFORMATION_TOOLTIP:AddLine(zo_iconTextFormat(icon, 32, 32, title), "", bookColor:UnpackRGB())
 
     if pinTag.q then
-      local qName = getQuestName(pinTag.q)
-      if qName then
+      local questName = GetQuestName(pinTag.q)
+      if questName then
         INFORMATION_TOOLTIP:AddLine(GetString(LBOOKS_QUEST_BOOK), "", ZO_SELECTED_TEXT:UnpackRGB())
-        INFORMATION_TOOLTIP:AddLine(string.format("[%s]", qName), "", ZO_SELECTED_TEXT:UnpackRGB())
-
-        --local questDetails
-        --if pinTag.qt then
-        --	questDetails = zo_strformat(GetString("LBOOKS_SPECIAL_QUEST"), pinTag.qt)
-        --elseif pinTag.qm then
-        --	questDetails = zo_strformat(GetString(LBOOKS_QUEST_IN_ZONE), zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetMapNameByIndex(pinTag.qm)))
-        --end
-        --if questDetails then
-        --	INFORMATION_TOOLTIP:AddLine(questDetails, "", ZO_HIGHLIGHT_TEXT:UnpackRGB())
-        --end
+        INFORMATION_TOOLTIP:AddLine(string.format("[%s]", questName), "", ZO_SELECTED_TEXT:UnpackRGB())
+        local questDetails = getQuestLocation(pinTag.q)
+        if questDetails then
+          questDetails = zo_strformat(GetString(LBOOKS_QUEST_IN_ZONE), questDetails)
+          INFORMATION_TOOLTIP:AddLine(questDetails, "", ZO_HIGHLIGHT_TEXT:UnpackRGB())
+        end
       end
     end
 
@@ -267,6 +266,10 @@ pinTooltipCreatorEidetic.creator = function(pin)
       INFORMATION_TOOLTIP:AddLine(GetString(LBOOKS_MAYBE_NOT_HERE))
     elseif pinTag.r then
       INFORMATION_TOOLTIP:AddLine(GetString(LBOOKS_RANDOM_POSITION))
+    end
+
+    if pinTag.ld then
+      INFORMATION_TOOLTIP:AddLine(LoreBooks.locationDetails[pinTag.ld], "", ZO_HIGHLIGHT_TEXT:UnpackRGB())
     end
 
   end
@@ -368,8 +371,7 @@ local function CreatePins()
       for _, pinData in ipairs(lorebooks) do
         local _, _, known = GetLoreBookInfo(c.LORE_LIBRARY_SHALIDOR, pinData[3], pinData[4])
 
-        if pinData[6] then
-        elseif known and updatePins[c.PINS_COLLECTED] and LMP:IsEnabled(c.PINS_COLLECTED) then
+        if known and updatePins[c.PINS_COLLECTED] and LMP:IsEnabled(c.PINS_COLLECTED) then
           LMP:CreatePin(c.PINS_COLLECTED, pinData, pinData[1], pinData[2])
         elseif not known then
           if updatePins[c.PINS_UNKNOWN] and LMP:IsEnabled(c.PINS_UNKNOWN) then
@@ -595,7 +597,7 @@ local function InitializePins()
   LMP:SetClickHandlers(c.PINS_UNKNOWN, {
     [1] = {
       name = function(pin) return zo_strformat(LBOOKS_SET_WAYPOINT, GetLoreBookInfo(1, pin.m_PinTag[3], pin.m_PinTag[4])) end,
-      show = function(pin) return not select(3, GetLoreBookInfo(1, pin.m_PinTag[3], pin.m_PinTag[4])) end,
+      show = function(pin) return db.showClickMenu and not select(3, GetLoreBookInfo(1, pin.m_PinTag[3], pin.m_PinTag[4])) end,
       duplicates = function(pin1, pin2) return (pin1.m_PinTag[3] == pin2.m_PinTag[3] and pin1.m_PinTag[4] == pin2.m_PinTag[4]) end,
       callback = function(pin) PingMap(MAP_PIN_TYPE_PLAYER_WAYPOINT, MAP_TYPE_LOCATION_CENTERED, pin.normalizedX, pin.normalizedY) end,
     }
@@ -604,7 +606,7 @@ local function InitializePins()
   LMP:SetClickHandlers(c.PINS_EIDETIC, {
     [1] = {
       name = function(pin) return zo_strformat(LBOOKS_SET_WAYPOINT, GetLoreBookInfo(3, pin.m_PinTag.c, pin.m_PinTag.b)) end,
-      show = function(pin) return not select(3, GetLoreBookInfo(3, pin.m_PinTag.c, pin.m_PinTag.b)) end,
+      show = function(pin) return db.showClickMenu and not select(3, GetLoreBookInfo(3, pin.m_PinTag.c, pin.m_PinTag.b)) end,
       duplicates = function(pin1, pin2) return (pin1.m_PinTag.b == pin2.m_PinTag.c and pin1.m_PinTag.b == pin2.m_PinTag.b) end,
       callback = function(pin) PingMap(MAP_PIN_TYPE_PLAYER_WAYPOINT, MAP_TYPE_LOCATION_CENTERED, pin.normalizedX, pin.normalizedY) end,
     }
@@ -612,7 +614,7 @@ local function InitializePins()
   LMP:SetClickHandlers(c.PINS_EIDETIC_COLLECTED, {
     [1] = {
       name = function(pin) return zo_strformat(LBOOKS_SET_WAYPOINT, GetLoreBookInfo(3, pin.m_PinTag.c, pin.m_PinTag.b)) end,
-      show = function(pin) return select(3, GetLoreBookInfo(3, pin.m_PinTag.c, pin.m_PinTag.b)) == true end,
+      show = function(pin) return db.showClickMenu and select(3, GetLoreBookInfo(3, pin.m_PinTag.c, pin.m_PinTag.b)) == true end,
       duplicates = function(pin1, pin2) return (pin1.m_PinTag.b == pin2.m_PinTag.c and pin1.m_PinTag.b == pin2.m_PinTag.b) end,
       callback = function(pin) PingMap(MAP_PIN_TYPE_PLAYER_WAYPOINT, MAP_TYPE_LOCATION_CENTERED, pin.normalizedX, pin.normalizedY) end,
     }
@@ -1340,8 +1342,10 @@ local function OnRowMouseUp(control, button)
     if control.categoryIndex == c.LORE_LIBRARY_SHALIDOR then
       local lorebookInfoOnBook = LoreBooks_GetDataOfBook(control.categoryIndex, control.collectionIndex, control.bookIndex)
       for resultEntry, resultData in ipairs(lorebookInfoOnBook) do
+        local fakePin = false
+        if resultData.data[5] and resultData.data[5] == 9999 then fakePin = true end
 
-        if resultData.mapId then
+        if resultData.mapId and not fakePin then
           AddCustomMenuItem(zo_strformat("<<1>> : <<2>>x<<3>>", zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetMapNameById(resultData.mapId)), (resultData.locX * 100), (resultData.locY * 100)),
             function()
               local changeResult = SetMapToMapId(resultData.mapId)
@@ -1429,9 +1433,9 @@ local function OnMouseEnter(self, categoryIndex, collectionIndex, bookIndex)
       local entryWeight = {}
       if bookData.q then
         --d("second with q")
-        local qName = getQuestName(bookData.q)
+        local questName = GetQuestName(bookData.q)
         InformationTooltip:AddLine(GetString(LBOOKS_QUEST_BOOK), "", ZO_HIGHLIGHT_TEXT:UnpackRGB())
-        InformationTooltip:AddLine(string.format("[%s]", qName), "", ZO_SELECTED_TEXT:UnpackRGB())
+        InformationTooltip:AddLine(string.format("[%s]", questName), "", ZO_SELECTED_TEXT:UnpackRGB())
 
         --[[TODO LBOOKS_SPECIAL_QUEST was added in version 4, not before
         However, there is no strings definition for it.
@@ -1455,8 +1459,11 @@ local function OnMouseEnter(self, categoryIndex, collectionIndex, bookIndex)
           questDetails = zo_strformat(GetString(LBOOKS_QUEST_IN_ZONE), getQuestLocation(bookData.q))
         end
         ]]--
-        local questDetails = zo_strformat(GetString(LBOOKS_QUEST_IN_ZONE), getQuestLocation(bookData.q))
-        InformationTooltip:AddLine(questDetails)
+        local questDetails = getQuestLocation(bookData.q)
+        if questDetails then
+          questDetails = zo_strformat(GetString(LBOOKS_QUEST_IN_ZONE), questDetails)
+          InformationTooltip:AddLine(questDetails)
+        end
 
       elseif bookData.r and bookData.m and NonContiguousCount(bookData.m) > 1 then
         --d("third r and m")
@@ -1555,12 +1562,15 @@ local function OnMouseEnter(self, categoryIndex, collectionIndex, bookIndex)
       ZO_Tooltip_AddDivider(InformationTooltip)
 
       if bookData.q then
-        local qName = getQuestName(bookData.q)
+        local questName = GetQuestName(bookData.q)
         InformationTooltip:AddLine(GetString(LBOOKS_QUEST_BOOK), "", ZO_HIGHLIGHT_TEXT:UnpackRGB())
-        InformationTooltip:AddLine(string.format("[%s]", qName), "", ZO_SELECTED_TEXT:UnpackRGB())
+        InformationTooltip:AddLine(string.format("[%s]", questName), "", ZO_SELECTED_TEXT:UnpackRGB())
 
-        local questDetails = zo_strformat(GetString(LBOOKS_QUEST_IN_ZONE), getQuestLocation(bookData.q))
-        InformationTooltip:AddLine(questDetails)
+        local questDetails = getQuestLocation(bookData.q)
+        if questDetails then
+          questDetails = zo_strformat(GetString(LBOOKS_QUEST_IN_ZONE), questDetails)
+          InformationTooltip:AddLine(questDetails)
+        end
         ZO_Tooltip_AddDivider(InformationTooltip)
 
       end

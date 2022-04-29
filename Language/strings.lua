@@ -20,6 +20,7 @@ local strings = {
   LBOOKS_MOREINFO3 = "Public Dungeon",
   LBOOKS_MOREINFO4 = "Underground",
   LBOOKS_MOREINFO5 = "Group Instance",
+  LBOOKS_MOREINFO6 = "Inside Inn",
 
   LBOOKS_SET_WAYPOINT = GetString(SI_WORLD_MAP_ACTION_SET_PLAYER_WAYPOINT) .. " : |cFFFFFF<<1>>|r",
 
@@ -37,6 +38,8 @@ local strings = {
   LBOOKS_PIN_SIZE_DESC = "Set the size of the map pins.",
   LBOOKS_PIN_LAYER = "Pin layer",
   LBOOKS_PIN_LAYER_DESC = "Set the layer of the map pins",
+  LBOOKS_PIN_CLICK_MENU = "Enable Lorebook player waypoint click option",
+  LBOOKS_PIN_CLICK_MENU_DESC = "Enable and disable the click option when Lorebooks are stacked to set player waypoint.",
 
   LBOOKS_PIN_TEXTURE1 = "Real icons",
   LBOOKS_PIN_TEXTURE2 = "Book icon set 1",

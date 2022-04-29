@@ -26,6 +26,7 @@ SafeAddString(LBOOKS_MOREINFO2, "Loch", 1)
 SafeAddString(LBOOKS_MOREINFO3, "Publiczny Loch", 1)
 SafeAddString(LBOOKS_MOREINFO4, "Podziemia", 1)
 SafeAddString(LBOOKS_MOREINFO5, "Grupowy Loch", 1)
+SafeAddString(LBOOKS_MOREINFO6, "Inside Inn", 1)
 
 SafeAddString(LBOOKS_SET_WAYPOINT, "Ustaw cel na: |cFFFFFF<<1>>|r", 1)
 
@@ -43,6 +44,8 @@ SafeAddString(LBOOKS_PIN_SIZE, "Wielkość znacznika", 1)
 SafeAddString(LBOOKS_PIN_SIZE_DESC, "Pozwala ustaliwić wielkość znacznika.", 1)
 SafeAddString(LBOOKS_PIN_LAYER, "Pin layer", 1)
 SafeAddString(LBOOKS_PIN_LAYER_DESC, "Set the layer of the map pins", 1)
+SafeAddString(LBOOKS_PIN_CLICK_MENU, "Enable Lorebook player waypoint click option", 1)
+SafeAddString(LBOOKS_PIN_CLICK_MENU_DESC, "Enable and disable the click option when Lorebooks are stacked to set player waypoint.", 1)
 
 SafeAddString(LBOOKS_PIN_TEXTURE1, "Real icons", 1)
 SafeAddString(LBOOKS_PIN_TEXTURE2, "Book icon set 1", 1)
