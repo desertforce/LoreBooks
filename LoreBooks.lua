@@ -356,7 +356,6 @@ end
 
 local function CreatePins()
   LMDI:UpdateMapInfo()
-  local zoneId = LMD.zoneId
   local mapId = LMD.mapId
   local zoneMapId = LMD:GetZoneMapIdFromZoneId(LMD.zoneId)
   local isDungeon = LMD.isDungeon
@@ -1778,7 +1777,7 @@ local function ShowMyPosition()
   -- /script d({GetLoreBookIndicesFromBookId(151)})
   -- /script d({GetLoreBookInfo(3, 21, 1)})
   if categoryIndex and categoryIndex == internal.LORE_LIBRARY_SHALIDOR then
-    MyPrint(string.format("[%d] = { %.6f, %.6f, %s, %s, moreInfo }, -- %s, %s", mapId, x, y, collectionIndex, bookIndex, bookName, zone))
+    outText = string.format("[%d] = { %.6f, %.6f, %s, %s, moreInfo }, -- %s, %s", mapId, x, y, collectionIndex, bookIndex, bookName, zone)
   elseif categoryIndex and categoryIndex == internal.LORE_LIBRARY_EIDETIC then
     local ef = '"e"'
     local df = '"d"' -- inDungeon

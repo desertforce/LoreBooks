@@ -1,6 +1,6 @@
 LoreBooks = LoreBooks or {}
 
 LoreBooks.locationDetails = {
-  [1] = "Guest Room",
-  [2] = "Attic Room",
+  [1] = "Chambre d'amis",
+  [2] = "Le grenier",
 }

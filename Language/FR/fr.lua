@@ -11,11 +11,11 @@ SafeAddString(LBOOKS_MAYBE_NOT_HERE, "[Le livre n'est peut être pas là]", 1)
 SafeAddString(LBOOKS_QUEST_IN_ZONE, "Quête en <<1>>", 1)
 SafeAddString(LBOOKS_SPECIAL_QUEST, "Quête spéciale dans <<1>>", 1)
 SafeAddString(LBOOKS_LBPOS_OPEN_BOOK, "Vous devez lire un livre pour utiliser /lbpos", 1)
-SafeAddString(LBOOKS_LBPOS_ERROR, "Crafting Book or no relation to Eidetic Memory or Shalidor's Library.", 1)
-SafeAddString(LBOOKS_PIN_UPDATE, "Please Help Update", 1)
+SafeAddString(LBOOKS_LBPOS_ERROR, "Livre d'artisanat ou aucun rapport avec la mémoire eidétique ou la bibliothèque de Shalidor.", 1)
+SafeAddString(LBOOKS_PIN_UPDATE, "Veuillez aider à mettre à jour", 1)
 
 --Camera Actions
-SafeAddString(LBOOKS_CLIMB, "Climb", 1)
+SafeAddString(LBOOKS_CLIMB, "Monter", 1)
 
 
 --tooltips
@@ -27,7 +27,7 @@ SafeAddString(LBOOKS_MOREINFO2, "Antres", 1)
 SafeAddString(LBOOKS_MOREINFO3, "Donjon public", 1)
 SafeAddString(LBOOKS_MOREINFO4, "sous la terre", 1)
 SafeAddString(LBOOKS_MOREINFO5, "Instance de groupe", 1)
-SafeAddString(LBOOKS_MOREINFO6, "Inside Inn", 1)
+SafeAddString(LBOOKS_MOREINFO6, "À l'intérieur de l'auberge", 1)
 
 SafeAddString(LBOOKS_SET_WAYPOINT, GetString(SI_WORLD_MAP_ACTION_SET_PLAYER_WAYPOINT) .. " : |cFFFFFF<<1>>|r", 1)
 
@@ -45,8 +45,8 @@ SafeAddString(LBOOKS_PIN_SIZE, "Taille des icônes", 1)
 SafeAddString(LBOOKS_PIN_SIZE_DESC, "Choisir la taille des icônes sur la carte.", 1)
 SafeAddString(LBOOKS_PIN_LAYER, "Épaisseur des icônes", 1)
 SafeAddString(LBOOKS_PIN_LAYER_DESC, "Choisir l'épaisseur des icônes sur la carte.", 1)
-SafeAddString(LBOOKS_PIN_CLICK_MENU, "Enable Lorebook player waypoint click option", 1)
-SafeAddString(LBOOKS_PIN_CLICK_MENU_DESC, "Enable and disable the click option when Lorebooks are stacked to set player waypoint.", 1)
+SafeAddString(LBOOKS_PIN_CLICK_MENU, "Activer l'option de clic sur le passage du joueur", 1)
+SafeAddString(LBOOKS_PIN_CLICK_MENU_DESC, "Activer et désactiver l'option de clic lorsque les Lorebooks sont empilés pour définir le point de passage du joueur.", 1)
 
 SafeAddString(LBOOKS_PIN_TEXTURE1, "Icônes réelles", 1)
 SafeAddString(LBOOKS_PIN_TEXTURE2, "Jeu d'icônes de livre 1", 1)
