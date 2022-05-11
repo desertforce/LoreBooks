@@ -36,7 +36,6 @@ local internal = _G["LoreBooks_Internal"]
 --Local variables -------------------------------------------------------------
 local updatePins = {}
 local updating = false
-local mapIsShowing
 local db --user settings
 
 local INFORMATION_TOOLTIP
@@ -1348,12 +1347,11 @@ local function OnRowMouseUp(control, button)
         if resultData.mapId and not fakePin then
           AddCustomMenuItem(zo_strformat("<<1>> : <<2>>x<<3>>", zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetMapNameById(resultData.mapId)), (resultData.locX * 100), (resultData.locY * 100)),
             function()
-              local changeResult = SetMapToMapId(resultData.mapId)
+              SetMapToMapId(resultData.mapId)
               GPS:SetPlayerChoseCurrentMap()
               CALLBACK_MANAGER:FireCallbacks("OnWorldMapChanged")
               PingMap(MAP_PIN_TYPE_RALLY_POINT, MAP_TYPE_LOCATION_CENTERED, resultData.locX, resultData.locY)
               PingMap(MAP_PIN_TYPE_PLAYER_WAYPOINT, MAP_TYPE_LOCATION_CENTERED, resultData.locX, resultData.locY)
-
               if (not ZO_WorldMap_IsWorldMapShowing()) then
                 if IsInGamepadPreferredMode() then
                   SCENE_MANAGER:Push("gamepad_worldMap")
@@ -1383,22 +1381,19 @@ local function OnRowMouseUp(control, button)
             local yTooltip = ("%0.02f"):format(zo_round(data.py * 10000) / 100)
             AddCustomMenuItem(zo_strformat("<<1>> (<<2>>x<<3>>)", zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, mapName), xTooltip, yTooltip),
               function()
-                local changeResult = SetMapToMapId(mapId)
+                SetMapToMapId(mapId)
                 GPS:SetPlayerChoseCurrentMap()
                 CALLBACK_MANAGER:FireCallbacks("OnWorldMapChanged")
                 PingMap(MAP_PIN_TYPE_RALLY_POINT, MAP_TYPE_LOCATION_CENTERED, xLoc, yLoc)
                 PingMap(MAP_PIN_TYPE_PLAYER_WAYPOINT, MAP_TYPE_LOCATION_CENTERED, xLoc, yLoc)
-
                 if (not ZO_WorldMap_IsWorldMapShowing()) then
                   if IsInGamepadPreferredMode() then
                     SCENE_MANAGER:Push("gamepad_worldMap")
                   else
                     MAIN_MENU_KEYBOARD:ShowCategory(MENU_CATEGORY_MAP)
                   end
-                  mapIsShowing = true
                   zo_callLater(function() ZO_WorldMap_GetPanAndZoom():PanToNormalizedPosition(xLoc, yLoc) end, 1000)
                 end
-
               end)
 
           end -- end if
@@ -1736,6 +1731,13 @@ local bookShelfLocalization = {
   ["fr"] = "Étagère de livres",
   ["ru"] = "Книжная полка",
 }
+local bookStackLocalization = {
+  ["en"] = "Book Stack",
+  ["de"] = "Bücherstapel",
+  ["fr"] = "Pile de livres",
+  ["ru"] = "Стопка книг",
+}
+
 local function ShowMyPosition()
   LMDI:SetPlayerLocation(true)
   LMDI:UpdateMapInfo()
@@ -1757,6 +1759,9 @@ local function ShowMyPosition()
   local isBookshelf
   if LMD.reticleInteractionName then
     isBookshelf = LMD.reticleInteractionName == bookShelfLocalization[GetCVar("Language.2")]
+  end
+  if LMD.reticleInteractionName then
+    isBookshelf = LMD.reticleInteractionName == bookStackLocalization[GetCVar("Language.2")]
   end
   --d(isBookshelf)
   if currentOpenBook then
