@@ -520,7 +520,7 @@ local function MapCallbackCreateShalidorPins(pinType)
       local _, _, known = GetLoreBookInfo(internal.LORE_LIBRARY_SHALIDOR, pinData[3], pinData[4])
       -- Shalidor's Books Collected
       if pinType == internal.PINS_COLLECTED then
-        if known and shouldDisplay and LMP:IsEnabled(internal.PINS_COLLECTED) then
+        if known and LMP:IsEnabled(internal.PINS_COLLECTED) then
           LMP:CreatePin(internal.PINS_COLLECTED, pinData, pinData[1], pinData[2])
         end
       end
@@ -548,7 +548,6 @@ local function MapCallbackCreateBookshelfPins(pinType)
   if LMD.mapTexture ~= lastZone then
     UpdateLorebooksData(mapId, zoneMapId)
   end
-  local shouldDisplay = ShouldDisplayLoreBooks()
 
   -- Bookshelves
   if pinType == internal.PINS_BOOKSHELF and LMP:IsEnabled(internal.PINS_BOOKSHELF) then
@@ -602,7 +601,7 @@ local function MapCallbackCreateEideticPins(pinType)
       -- Eidetic Memory Collected
       if pinType == internal.PINS_EIDETIC_COLLECTED then
         if (isDungeon and pinData.d) or (not isDungeon and not pinData.d) or (not isDungeon and fakePinInfo) then
-          if known and shouldDisplay and LMP:IsEnabled(internal.PINS_EIDETIC_COLLECTED) then
+          if known and LMP:IsEnabled(internal.PINS_EIDETIC_COLLECTED) then
             LMP:CreatePin(internal.PINS_EIDETIC_COLLECTED, pinData, pinData.xLoc, pinData.yLoc)
           end
         end
