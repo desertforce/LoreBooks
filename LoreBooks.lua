@@ -33,9 +33,71 @@ local Postmail = {}
 local LoreBooks = _G["LoreBooks"]
 local internal = _G["LoreBooks_Internal"]
 
+--LibDebugLogger -------------------------------------------------------------
+if LibDebugLogger then
+  local logger = LibDebugLogger.Create(internal.ADDON_NAME)
+  LoreBooks.logger = logger
+end
+
+local function create_log(log_type, log_content)
+  if not DebugLogViewer and log_type == "Info" then
+    CHAT_ROUTER:AddSystemMessage(log_content)
+    return
+  end
+  if not LibDebugLogger then return end
+  if log_type == "Debug" then
+    LoreBooks.logger:Debug(log_content)
+  end
+  if log_type == "Info" then
+    LoreBooks.logger:Info(log_content)
+  end
+  if log_type == "Verbose" then
+    LoreBooks.logger:Verbose(log_content)
+  end
+  if log_type == "Warn" then
+    LoreBooks.logger:Warn(log_content)
+  end
+end
+
+local function emit_message(log_type, text)
+  if (text == "") then
+    text = "[Empty String]"
+  end
+  create_log(log_type, text)
+end
+
+local function emit_table(log_type, t, indent, table_history)
+  indent = indent or "."
+  table_history = table_history or {}
+
+  for k, v in pairs(t) do
+    local vType = type(v)
+
+    emit_message(log_type, indent .. "(" .. vType .. "): " .. tostring(k) .. " = " .. tostring(v))
+
+    if (vType == "table") then
+      if (table_history[v]) then
+        emit_message(log_type, indent .. "Avoiding cycle on table...")
+      else
+        table_history[v] = true
+        emit_table(log_type, v, indent .. "  ", table_history)
+      end
+    end
+  end
+end
+
+function internal:dm(log_type, ...)
+  for i = 1, select("#", ...) do
+    local value = select(i, ...)
+    if (type(value) == "table") then
+      emit_table(log_type, value)
+    else
+      emit_message(log_type, tostring(value))
+    end
+  end
+end
+
 --Local variables -------------------------------------------------------------
-local updatePins = {}
-local updating = false
 local db --user settings
 
 local INFORMATION_TOOLTIP
@@ -353,160 +415,206 @@ local function ShouldDisplayLoreBooks()
 
 end
 
-local function CreatePins()
-  LMDI:UpdateMapInfo()
+local lastZone = ""
+local lorebooks
+local bookshelves
+local eideticBooks
+local function UpdateLorebooksData(mapId, zoneMapId)
+  --internal:dm("Debug", "UpdateLorebooksData")
+  lorebooks = LoreBooks_GetLocalData(mapId)
+  bookshelves = LoreBooks_GetBookshelfDataFromMapId(mapId)
+  eideticBooks = LoreBooks_GetNewEideticDataForMapUniqueId(mapId, zoneMapId)
+  lastZone = LMD.mapTexture
+end
+
+local function ShalidorCompassCallback()
+  --internal:dm("Debug", "ShalidorCompassCallback")
+
+  if LMD.isWorld then
+    --internal:dm("Debug", "Tamriel or Aurbis reached, stopped")
+    return
+  end
+
+  if lorebooks then
+    for _, pinData in ipairs(lorebooks) do
+      local _, _, known = GetLoreBookInfo(internal.LORE_LIBRARY_SHALIDOR, pinData[3], pinData[4])
+      if not known then
+        if db.filters[internal.PINS_COMPASS] then
+          COMPASS_PINS.pinManager:CreatePin(internal.PINS_COMPASS, pinData, pinData[1], pinData[2])
+        end
+      end
+    end
+  end
+end
+
+local function BookshelfCompassCallback()
+  --internal:dm("Debug", "BookshelfCompassCallback")
+
+  if LMD.isWorld then
+    --internal:dm("Debug", "Tamriel or Aurbis reached, stopped")
+    return
+  end
+
+  if bookshelves then
+    for _, pinData in ipairs(bookshelves) do
+      if db.filters[internal.PINS_COMPASS_BOOKSHELF] then
+        COMPASS_PINS.pinManager:CreatePin(internal.PINS_COMPASS_BOOKSHELF, pinData, pinData.x, pinData.y)
+      end
+    end
+  end
+end
+
+local function EideticMemoryCompassCallback()
+  --internal:dm("Debug", "EideticMemoryCompassCallback")
+
+  if LMD.isWorld then
+    --internal:dm("Debug", "Tamriel or Aurbis reached, stopped")
+    return
+  end
+
   local mapId = LMD.mapId
   local zoneMapId = LMD:GetZoneMapIdFromZoneId(LMD.zoneId)
+  local isDungeon = LMD.isDungeon
+  local fakePinInfo
+  if eideticBooks then
+    for _, pinData in ipairs(eideticBooks) do
+      local _, _, known = GetLoreBookInfo(internal.LORE_LIBRARY_EIDETIC, pinData.c, pinData.b)
+      fakePinInfo = false
+      if mapId == pinData.pm then
+        pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.px, pinData.py)
+      elseif zoneMapId == pinData.zm then
+        if pinData.zx and pinData.zy then
+          pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.zx, pinData.zy)
+        else
+          pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.px, pinData.py)
+        end
+      end
+      if pinData.zx and pinData.zy and pinData.zm then fakePinInfo = true end
+      if not known and db.filters[internal.PINS_COMPASS_EIDETIC] then
+        if (isDungeon and pinData.d) or (not isDungeon and not pinData.d) or (not isDungeon and fakePinInfo) then
+          COMPASS_PINS.pinManager:CreatePin(internal.PINS_COMPASS_EIDETIC, pinData, pinData.xLoc, pinData.yLoc)
+        end
+      end -- end show Compass Pin
+    end
+  end
+end
+
+local function MapCallbackCreateShalidorPins(pinType)
+  --internal:dm("Debug", "MapCallbackCreateShalidorPins")
+
+  if LMD.isWorld then
+    --internal:dm("Debug", "Tamriel or Aurbis reached, stopped")
+    return
+  end
+
+  local mapId = LMD.mapId
+  local zoneMapId = LMD:GetZoneMapIdFromZoneId(LMD.zoneId)
+  if LMD.mapTexture ~= lastZone then
+    UpdateLorebooksData(mapId, zoneMapId)
+  end
+  local shouldDisplay = ShouldDisplayLoreBooks()
+
+  -- Shalidor's Books
+  if pinType == internal.PINS_COLLECTED or pinType == internal.PINS_UNKNOWN then
+    if lorebooks then
+      for _, pinData in ipairs(lorebooks) do
+        local _, _, known = GetLoreBookInfo(internal.LORE_LIBRARY_SHALIDOR, pinData[3], pinData[4])
+        -- Shalidor's Books Collected
+        if known and shouldDisplay and LMP:IsEnabled(internal.PINS_COLLECTED) then
+          LMP:CreatePin(internal.PINS_COLLECTED, pinData, pinData[1], pinData[2])
+        end
+        -- Shalidor's Books Unknown
+        if not known and shouldDisplay and LMP:IsEnabled(internal.PINS_UNKNOWN) then
+          LMP:CreatePin(internal.PINS_UNKNOWN, pinData, pinData[1], pinData[2])
+        end
+      end
+    end
+  end
+
+end
+
+local function MapCallbackCreateBookshelfPins(pinType)
+  --internal:dm("Debug", "MapCallbackCreateBookshelfPins")
+
+  if LMD.isWorld then
+    --internal:dm("Debug", "Tamriel or Aurbis reached, stopped")
+    return
+  end
+
+  local mapId = LMD.mapId
+  local zoneMapId = LMD:GetZoneMapIdFromZoneId(LMD.zoneId)
+  if LMD.mapTexture ~= lastZone then
+    UpdateLorebooksData(mapId, zoneMapId)
+  end
+  local shouldDisplay = ShouldDisplayLoreBooks()
+
+  -- Bookshelves
+  if pinType == internal.PINS_BOOKSHELF and LMP:IsEnabled(internal.PINS_BOOKSHELF) then
+    if bookshelves then
+      --internal:dm("Debug", "bookshelves PINS_BOOKSHELF")
+      for _, pinData in ipairs(bookshelves) do
+        pinData.texture = GetPinTextureBookshelf()
+        pinData.pinName = GetString(LBOOKS_BOOKSHELF)
+        LMP:CreatePin(internal.PINS_BOOKSHELF, pinData, pinData.x, pinData.y)
+      end
+    end
+  end
+
+end
+
+local function MapCallbackCreateEideticPins(pinType)
+  --internal:dm("Debug", "MapCallbackCreateEideticPins")
+
+  if LMD.isWorld then
+    --internal:dm("Debug", "Tamriel or Aurbis reached, stopped")
+    return
+  end
+
+  local mapId = LMD.mapId
+  local zoneMapId = LMD:GetZoneMapIdFromZoneId(LMD.zoneId)
+  if LMD.mapTexture ~= lastZone then
+    UpdateLorebooksData(mapId, zoneMapId)
+  end
   local isDungeon = LMD.isDungeon
   local shouldDisplay = ShouldDisplayLoreBooks()
   local fakePinInfo
 
-  -- Shalidor's Books
-  if (updatePins[internal.PINS_COLLECTED] and LMP:IsEnabled(internal.PINS_COLLECTED))
-    or (shouldDisplay and updatePins[internal.PINS_UNKNOWN] and LMP:IsEnabled(internal.PINS_UNKNOWN))
-    or (shouldDisplay and updatePins[internal.PINS_COMPASS] and db.filters[internal.PINS_COMPASS]) then
-    local lorebooks = LoreBooks_GetLocalData(mapId)
-    if lorebooks then
-      for _, pinData in ipairs(lorebooks) do
-        local _, _, known = GetLoreBookInfo(internal.LORE_LIBRARY_SHALIDOR, pinData[3], pinData[4])
-
-        if known and updatePins[internal.PINS_COLLECTED] and LMP:IsEnabled(internal.PINS_COLLECTED) then
-          LMP:CreatePin(internal.PINS_COLLECTED, pinData, pinData[1], pinData[2])
-        elseif not known then
-          if updatePins[internal.PINS_UNKNOWN] and LMP:IsEnabled(internal.PINS_UNKNOWN) then
-            LMP:CreatePin(internal.PINS_UNKNOWN, pinData, pinData[1], pinData[2])
-          end
-          if updatePins[internal.PINS_COMPASS] and db.filters[internal.PINS_COMPASS] then
-            COMPASS_PINS.pinManager:CreatePin(internal.PINS_COMPASS, pinData, pinData[1], pinData[2])
-          end
-        end
-      end
-    end
-  end
-
-  -- Bookshelves
-  if (updatePins[internal.PINS_BOOKSHELF] and LMP:IsEnabled(internal.PINS_BOOKSHELF))
-    or (updatePins[internal.PINS_COMPASS_BOOKSHELF] and db.filters[internal.PINS_COMPASS_BOOKSHELF]) then
-    local bookshelves = LoreBooks_GetBookshelfDataFromMapId(mapId)
-    if bookshelves then
-      for _, pinData in ipairs(bookshelves) do
-        pinData.texture = GetPinTextureBookshelf()
-        pinData.pinName = GetString(LBOOKS_BOOKSHELF)
-        if updatePins[internal.PINS_BOOKSHELF] and db.filters[internal.PINS_BOOKSHELF] then
-          LMP:CreatePin(internal.PINS_BOOKSHELF, pinData, pinData.x, pinData.y)
-        end
-        if updatePins[internal.PINS_COMPASS_BOOKSHELF] and db.filters[internal.PINS_COMPASS_BOOKSHELF] then
-          COMPASS_PINS.pinManager:CreatePin(internal.PINS_COMPASS_BOOKSHELF, pinData, pinData.x, pinData.y)
-        end
-      end
-    end
-  end
-
-  -- Eidetic Memory
-  if (updatePins[internal.PINS_EIDETIC_COLLECTED] and LMP:IsEnabled(internal.PINS_EIDETIC_COLLECTED))
-    or (shouldDisplay and updatePins[internal.PINS_EIDETIC] and LMP:IsEnabled(internal.PINS_EIDETIC))
-    or (shouldDisplay and updatePins[internal.PINS_COMPASS_EIDETIC] and db.filters[internal.PINS_COMPASS_EIDETIC]) then
-
-    local eideticBooks
-    eideticBooks = LoreBooks_GetNewEideticDataForMapUniqueId(mapId, zoneMapId)
-
+  -- Eidetic Memory Books
+  if pinType == internal.PINS_EIDETIC_COLLECTED or pinType == internal.PINS_EIDETIC then
     if eideticBooks then
       for _, pinData in ipairs(eideticBooks) do
         fakePinInfo = false
         local _, _, known = GetLoreBookInfo(internal.LORE_LIBRARY_EIDETIC, pinData.c, pinData.b)
-        if (not known and LMP:IsEnabled(internal.PINS_EIDETIC)) or (known and LMP:IsEnabled(internal.PINS_EIDETIC_COLLECTED)) then
 
-          if mapId == pinData.pm then
+        if mapId == pinData.pm then
+          pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.px, pinData.py)
+        elseif zoneMapId == pinData.zm then
+          if pinData.zx and pinData.zy then
+            pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.zx, pinData.zy)
+          else
             pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.px, pinData.py)
-          elseif zoneMapId == pinData.zm then
-            if pinData.zx and pinData.zy then
-              pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.zx, pinData.zy)
-            else
-              pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.px, pinData.py)
-            end
           end
+        end
 
-          if pinData.zx and pinData.zy and pinData.zm then fakePinInfo = true end
+        if pinData.zx and pinData.zy and pinData.zm then fakePinInfo = true end
 
-          if (isDungeon and pinData.d) or (not isDungeon and not pinData.d) or (not isDungeon and fakePinInfo) then
-            if not known and updatePins[internal.PINS_EIDETIC] and LMP:IsEnabled(internal.PINS_EIDETIC) then
-              LMP:CreatePin(internal.PINS_EIDETIC, pinData, pinData.xLoc, pinData.yLoc)
-            elseif known and updatePins[internal.PINS_EIDETIC_COLLECTED] and LMP:IsEnabled(internal.PINS_EIDETIC_COLLECTED) then
-              LMP:CreatePin(internal.PINS_EIDETIC_COLLECTED, pinData, pinData.xLoc, pinData.yLoc)
-            end
+        -- Eidetic Memory Collected
+        if (isDungeon and pinData.d) or (not isDungeon and not pinData.d) or (not isDungeon and fakePinInfo) then
+          if known and shouldDisplay and LMP:IsEnabled(internal.PINS_EIDETIC_COLLECTED) then
+            LMP:CreatePin(internal.PINS_EIDETIC_COLLECTED, pinData, pinData.xLoc, pinData.yLoc)
           end
-          if not known and updatePins[internal.PINS_COMPASS_EIDETIC] and db.filters[internal.PINS_COMPASS_EIDETIC] then
-            if (isDungeon and pinData.d) or (not isDungeon and not pinData.d) or (not isDungeon and fakePinInfo) then
-              COMPASS_PINS.pinManager:CreatePin(internal.PINS_COMPASS_EIDETIC, pinData, pinData.xLoc, pinData.yLoc)
-            end
-          end -- end show Compass Pin
-        end -- end of if not known or known Eidetic Memory
-      end -- end of for loop
+        end
+        -- Eidetic Memory Unknown
+        if (isDungeon and pinData.d) or (not isDungeon and not pinData.d) or (not isDungeon and fakePinInfo) then
+          if not known and shouldDisplay and LMP:IsEnabled(internal.PINS_EIDETIC) then
+            LMP:CreatePin(internal.PINS_EIDETIC, pinData, pinData.xLoc, pinData.yLoc)
+          end
+        end
 
-    end -- end of if eideticBooks table
-
-  end -- Eidetic Memory
-
-  updatePins = {}
-  updating = false
-
-end
-
-local function QueueCreatePins(pinType)
-  updatePins[pinType] = true
-
-  if not updating then
-    updating = true
-    if IsPlayerActivated() then
-      CreatePins()
-    else
-      EVENT_MANAGER:RegisterForEvent("LoreBooks_PinUpdate", EVENT_PLAYER_ACTIVATED,
-        function(event)
-          EVENT_MANAGER:UnregisterForEvent("LoreBooks_PinUpdate", event)
-          CreatePins()
-        end)
+      end
     end
   end
-end
 
-local function MapCallback_bookshelf()
-  if not LMP:IsEnabled(internal.PINS_BOOKSHELF) or GetMapType() > MAPTYPE_ZONE then return end
-  QueueCreatePins(internal.PINS_BOOKSHELF)
-end
-
-local function MapCallback_unknown()
-  if not LMP:IsEnabled(internal.PINS_UNKNOWN) or GetMapType() > MAPTYPE_ZONE then return end
-  QueueCreatePins(internal.PINS_UNKNOWN)
-end
-
-local function MapCallback_collected()
-  if not LMP:IsEnabled(internal.PINS_COLLECTED) or GetMapType() > MAPTYPE_ZONE then return end
-  QueueCreatePins(internal.PINS_COLLECTED)
-end
-
-local function MapCallback_eidetic()
-  if not LMP:IsEnabled(internal.PINS_EIDETIC) or GetMapType() > MAPTYPE_ZONE then return end
-  QueueCreatePins(internal.PINS_EIDETIC)
-end
-
-local function MapCallback_eideticCollected()
-  if not LMP:IsEnabled(internal.PINS_EIDETIC_COLLECTED) or GetMapType() > MAPTYPE_ZONE then return end
-  QueueCreatePins(internal.PINS_EIDETIC_COLLECTED)
-end
-
-local function CompassCallback()
-  if not db.filters[internal.PINS_COMPASS] or GetMapType() > MAPTYPE_ZONE then return end
-  QueueCreatePins(internal.PINS_COMPASS)
-end
-
-local function CompassCallbackEidetic()
-  if not db.filters[internal.PINS_COMPASS_EIDETIC] or GetMapType() > MAPTYPE_ZONE then return end
-  QueueCreatePins(internal.PINS_COMPASS_EIDETIC)
-end
-
-local function CompassCallbackBookshelf()
-  if not db.filters[internal.PINS_COMPASS_BOOKSHELF] or GetMapType() > MAPTYPE_ZONE then return end
-  QueueCreatePins(internal.PINS_COMPASS_BOOKSHELF)
 end
 
 local function InitializePins()
@@ -579,11 +687,11 @@ local function InitializePins()
   }
 
   --initialize map pins
-  LMP:AddPinType(internal.PINS_UNKNOWN, MapCallback_unknown, nil, mapPinLayout_unknown, pinTooltipCreator)
-  LMP:AddPinType(internal.PINS_COLLECTED, MapCallback_collected, nil, mapPinLayout_collected, pinTooltipCreator)
-  LMP:AddPinType(internal.PINS_EIDETIC, MapCallback_eidetic, nil, mapPinLayout_eidetic, pinTooltipCreatorEidetic)
-  LMP:AddPinType(internal.PINS_EIDETIC_COLLECTED, MapCallback_eideticCollected, nil, mapPinLayout_eideticCollected, pinTooltipCreatorEidetic)
-  LMP:AddPinType(internal.PINS_BOOKSHELF, MapCallback_bookshelf, nil, mapPinLayout_bookshelf, pinTooltipCreatorBookshelf)
+  LMP:AddPinType(internal.PINS_UNKNOWN, function() MapCallbackCreateShalidorPins(internal.PINS_UNKNOWN) end, nil, mapPinLayout_unknown, pinTooltipCreator)
+  LMP:AddPinType(internal.PINS_COLLECTED, function() MapCallbackCreateShalidorPins(internal.PINS_COLLECTED) end, nil, mapPinLayout_collected, pinTooltipCreator)
+  LMP:AddPinType(internal.PINS_EIDETIC, function() MapCallbackCreateEideticPins(internal.PINS_EIDETIC) end, nil, mapPinLayout_eidetic, pinTooltipCreatorEidetic)
+  LMP:AddPinType(internal.PINS_EIDETIC_COLLECTED, function() MapCallbackCreateEideticPins(internal.PINS_EIDETIC_COLLECTED) end, nil, mapPinLayout_eideticCollected, pinTooltipCreatorEidetic)
+  LMP:AddPinType(internal.PINS_BOOKSHELF, function() MapCallbackCreateBookshelfPins(internal.PINS_BOOKSHELF) end, nil, mapPinLayout_bookshelf, pinTooltipCreatorBookshelf)
 
   --add map filters
   LMP:AddPinFilter(internal.PINS_UNKNOWN, GetString(LBOOKS_FILTER_UNKNOWN), nil, db.filters)
@@ -620,9 +728,9 @@ local function InitializePins()
   })
 
   --initialize compass pins
-  COMPASS_PINS:AddCustomPin(internal.PINS_COMPASS, CompassCallback, compassPinLayout)
-  COMPASS_PINS:AddCustomPin(internal.PINS_COMPASS_EIDETIC, CompassCallbackEidetic, compassPinLayoutEidetic)
-  COMPASS_PINS:AddCustomPin(internal.PINS_COMPASS_BOOKSHELF, CompassCallbackBookshelf, compassPinLayoutBookshelf)
+  COMPASS_PINS:AddCustomPin(internal.PINS_COMPASS, function() ShalidorCompassCallback() end, compassPinLayout)
+  COMPASS_PINS:AddCustomPin(internal.PINS_COMPASS_EIDETIC, function() EideticMemoryCompassCallback() end, compassPinLayoutEidetic)
+  COMPASS_PINS:AddCustomPin(internal.PINS_COMPASS_BOOKSHELF, function() BookshelfCompassCallback() end, compassPinLayoutBookshelf)
   COMPASS_PINS:RefreshPins(internal.PINS_COMPASS)
   COMPASS_PINS:RefreshPins(internal.PINS_COMPASS_EIDETIC)
   COMPASS_PINS:RefreshPins(internal.PINS_COMPASS_BOOKSHELF)
@@ -1223,23 +1331,27 @@ local function BuildCategoryList(self)
 
   table.sort(lbcategories, NameSorter)
 
+  local collectionNodeToSelect = nil
   for i, categoryData in ipairs(lbcategories) do
     local parent = self.navigationTree:AddNode("ZO_LabelHeader", categoryData)
 
+    local categoryIndex = categoryData.categoryIndex
+    local numCollections = categoryData.numCollections
+
     lbcategories[i].lbcollections = {}
 
-    for collectionIndex = 1, categoryData.numCollections do
-      local collectionName, description, numKnownBooks, totalBooks, hidden = GetLoreCollectionInfo(categoryData.categoryIndex, collectionIndex)
+    for collectionIndex = 1, numCollections do
+      local collectionName, description, numKnownBooks, totalBooks, hidden, _, collectionId = GetLoreCollectionInfo(categoryIndex, collectionIndex)
       if collectionName and ((db.unlockEidetic and collectionName ~= "") or not hidden) then
-        lbcategories[i].lbcollections[#lbcategories[i].lbcollections + 1] = { categoryIndex = categoryData.categoryIndex, collectionIndex = collectionIndex, name = collectionName, description = description, numKnownBooks = numKnownBooks, totalBooks = totalBooks }
+        lbcategories[i].lbcollections[#lbcategories[i].lbcollections + 1] = { categoryIndex = categoryIndex, collectionIndex = collectionIndex, name = collectionName, description = description, numKnownBooks = numKnownBooks, totalBooks = totalBooks, collectionId = collectionId }
         self.totalCurrentlyCollected = self.totalCurrentlyCollected + numKnownBooks
         self.totalPossibleCollected = self.totalPossibleCollected + totalBooks
 
-        if categoryData.categoryIndex == internal.LORE_LIBRARY_CRAFTING then
+        if categoryIndex == internal.LORE_LIBRARY_CRAFTING then
           -- CRAFTING
           self.motifsCurrentlyCollected = self.motifsCurrentlyCollected + numKnownBooks
           self.motifsPossibleCollected = self.motifsPossibleCollected + totalBooks
-        elseif categoryData.categoryIndex == internal.LORE_LIBRARY_EIDETIC then
+        elseif categoryIndex == internal.LORE_LIBRARY_EIDETIC then
           --
           self.eideticCurrentlyCollected = self.eideticCurrentlyCollected + numKnownBooks
           self.eideticPossibleCollected = self.eideticPossibleCollected + totalBooks
@@ -1250,33 +1362,28 @@ local function BuildCategoryList(self)
     table.sort(lbcategories[i].lbcollections, NameSorter)
 
     local search = string.lower(LORE_LIBRARY.search)
+    local firstNode = nil
     for _, collectionData in ipairs(lbcategories[i].lbcollections) do
+      local node = self.navigationTree:AddNode("ZO_LoreLibraryNavigationEntry", collectionData, parent)
+      if not firstNode then firstNode = node end
       if search ~= "" and string.len(search) >= 2 then
         if IsFoundInLoreLibrary(search, collectionData) then
-          self.navigationTree:AddNode("ZO_LoreLibraryNavigationEntry", collectionData, parent)
+          collectionNodeToSelect = node
         end
-      else
-        self.navigationTree:AddNode("ZO_LoreLibraryNavigationEntry", collectionData, parent)
+      elseif self.collectionIdToSelect and self.collectionIdToSelect == collectionData.collectionId then
+        collectionNodeToSelect = node
       end
     end
 
   end
+  if not collectionNodeToSelect then collectionNodeToSelect = firstNode end
 
-  self.navigationTree:Commit()
+  self.navigationTree:Commit(collectionNodeToSelect, true)
   self:RefreshCollectedInfo()
-
-  --Dirty hack to unselect all nodes and select the 1st one.
-
-  if self.navigationTree.rootNode.children then
-    if self.navigationTree.rootNode.children[1] and self.navigationTree.rootNode.children[1].children then
-      self.navigationTree:SelectNode(self.navigationTree.rootNode.children[1].children[1])
-    elseif self.navigationTree.rootNode.children[2] and self.navigationTree.rootNode.children[2].children then
-      self.navigationTree:SelectNode(self.navigationTree.rootNode.children[2].children[1])
-    end
-  end
 
   KEYBIND_STRIP:UpdateKeybindButtonGroup(self.keybindStripDescriptor)
 
+  self.collectionIdToSelect = nil
   self.dirty = false
 
   return true
