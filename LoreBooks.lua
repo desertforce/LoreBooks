@@ -515,15 +515,17 @@ local function MapCallbackCreateShalidorPins(pinType)
   local shouldDisplay = ShouldDisplayLoreBooks()
 
   -- Shalidor's Books
-  if pinType == internal.PINS_COLLECTED or pinType == internal.PINS_UNKNOWN then
-    if lorebooks then
-      for _, pinData in ipairs(lorebooks) do
-        local _, _, known = GetLoreBookInfo(internal.LORE_LIBRARY_SHALIDOR, pinData[3], pinData[4])
-        -- Shalidor's Books Collected
+  if lorebooks then
+    for _, pinData in ipairs(lorebooks) do
+      local _, _, known = GetLoreBookInfo(internal.LORE_LIBRARY_SHALIDOR, pinData[3], pinData[4])
+      -- Shalidor's Books Collected
+      if pinType == internal.PINS_COLLECTED then
         if known and shouldDisplay and LMP:IsEnabled(internal.PINS_COLLECTED) then
           LMP:CreatePin(internal.PINS_COLLECTED, pinData, pinData[1], pinData[2])
         end
-        -- Shalidor's Books Unknown
+      end
+      -- Shalidor's Books Unknown
+      if pinType == internal.PINS_UNKNOWN then
         if not known and shouldDisplay and LMP:IsEnabled(internal.PINS_UNKNOWN) then
           LMP:CreatePin(internal.PINS_UNKNOWN, pinData, pinData[1], pinData[2])
         end
@@ -580,38 +582,40 @@ local function MapCallbackCreateEideticPins(pinType)
   local fakePinInfo
 
   -- Eidetic Memory Books
-  if pinType == internal.PINS_EIDETIC_COLLECTED or pinType == internal.PINS_EIDETIC then
-    if eideticBooks then
-      for _, pinData in ipairs(eideticBooks) do
-        fakePinInfo = false
-        local _, _, known = GetLoreBookInfo(internal.LORE_LIBRARY_EIDETIC, pinData.c, pinData.b)
+  if eideticBooks then
+    for _, pinData in ipairs(eideticBooks) do
+      fakePinInfo = false
+      local _, _, known = GetLoreBookInfo(internal.LORE_LIBRARY_EIDETIC, pinData.c, pinData.b)
 
-        if mapId == pinData.pm then
+      if mapId == pinData.pm then
+        pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.px, pinData.py)
+      elseif zoneMapId == pinData.zm then
+        if pinData.zx and pinData.zy then
+          pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.zx, pinData.zy)
+        else
           pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.px, pinData.py)
-        elseif zoneMapId == pinData.zm then
-          if pinData.zx and pinData.zy then
-            pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.zx, pinData.zy)
-          else
-            pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.px, pinData.py)
-          end
         end
+      end
 
-        if pinData.zx and pinData.zy and pinData.zm then fakePinInfo = true end
+      if pinData.zx and pinData.zy and pinData.zm then fakePinInfo = true end
 
-        -- Eidetic Memory Collected
+      -- Eidetic Memory Collected
+      if pinType == internal.PINS_EIDETIC_COLLECTED then
         if (isDungeon and pinData.d) or (not isDungeon and not pinData.d) or (not isDungeon and fakePinInfo) then
           if known and shouldDisplay and LMP:IsEnabled(internal.PINS_EIDETIC_COLLECTED) then
             LMP:CreatePin(internal.PINS_EIDETIC_COLLECTED, pinData, pinData.xLoc, pinData.yLoc)
           end
         end
-        -- Eidetic Memory Unknown
+      end
+      -- Eidetic Memory Unknown
+      if pinType == internal.PINS_EIDETIC then
         if (isDungeon and pinData.d) or (not isDungeon and not pinData.d) or (not isDungeon and fakePinInfo) then
           if not known and shouldDisplay and LMP:IsEnabled(internal.PINS_EIDETIC) then
             LMP:CreatePin(internal.PINS_EIDETIC, pinData, pinData.xLoc, pinData.yLoc)
           end
         end
-
       end
+
     end
   end
 
