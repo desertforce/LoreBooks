@@ -22,10 +22,10 @@ SafeAddString(LBOOKS_KNOWN, "Eingesammelt", 1)
 SafeAddString(LBOOKS_BOOKSHELF, "Bookshelf", 1)
 
 SafeAddString(LBOOKS_MOREINFO1, "Stadt", 1)
-SafeAddString(LBOOKS_MOREINFO2, "Verlies", 1)
-SafeAddString(LBOOKS_MOREINFO3, "Offenes Verlies", 1)
+SafeAddString(LBOOKS_MOREINFO2, GetString(SI_INSTANCEDISPLAYTYPE7), 1)
+SafeAddString(LBOOKS_MOREINFO3, GetString(SI_INSTANCEDISPLAYTYPE6), 1)
 SafeAddString(LBOOKS_MOREINFO4, "unter der Erde", 1)
-SafeAddString(LBOOKS_MOREINFO5, "Gruppeninstanz", 1)
+SafeAddString(LBOOKS_MOREINFO5, GetString(SI_INSTANCETYPE2), 1)
 SafeAddString(LBOOKS_MOREINFO6, "Inside Inn", 1)
 
 SafeAddString(LBOOKS_SET_WAYPOINT, GetString(SI_WORLD_MAP_ACTION_SET_PLAYER_WAYPOINT) .. " : |cFFFFFF<<1>>|r", 1)

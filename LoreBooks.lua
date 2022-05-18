@@ -185,7 +185,8 @@ pinTooltipCreator.creator = function(pin)
       INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, table.concat(moreinfo, " / "), INFORMATION_TOOLTIP.tooltip:GetStyle("worldMapTooltip"))
     end
     if pinTag.ld then
-      INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, zo_strformat(LoreBooks.locationDetails[pinTag.ld]), INFORMATION_TOOLTIP.tooltip:GetStyle("worldMapTooltip"))
+      local pinNote = "[" .. zo_strformat(LoreBooks.locationDetails[pinTag.ld]) .. "]"
+      INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, pinNote, INFORMATION_TOOLTIP.tooltip:GetStyle("worldMapTooltip"))
     end
   else
     INFORMATION_TOOLTIP:AddLine(zo_strformat(collection), "ZoFontGameOutline", ZO_SELECTED_TEXT:UnpackRGB())
@@ -195,7 +196,8 @@ pinTooltipCreator.creator = function(pin)
       INFORMATION_TOOLTIP:AddLine(table.concat(moreinfo, " / "), "", ZO_TOOLTIP_DEFAULT_COLOR:UnpackRGB())
     end
     if pinTag.ld then
-      INFORMATION_TOOLTIP:AddLine(LoreBooks.locationDetails[pinTag.ld], "", ZO_HIGHLIGHT_TEXT:UnpackRGB())
+      local pinNote = "[" .. zo_strformat(LoreBooks.locationDetails[pinTag.ld]) .. "]"
+      INFORMATION_TOOLTIP:AddLine(pinNote, "", ZO_HIGHLIGHT_TEXT:UnpackRGB())
     end
   end
 
@@ -286,7 +288,8 @@ pinTooltipCreatorEidetic.creator = function(pin)
     end
 
     if pinTag.ld then
-      INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, zo_strformat(LoreBooks.locationDetails[pinTag.ld]), INFORMATION_TOOLTIP.tooltip:GetStyle("worldMapTooltip"))
+      local pinNote = "[" .. zo_strformat(LoreBooks.locationDetails[pinTag.ld]) .. "]"
+      INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, pinNote, INFORMATION_TOOLTIP.tooltip:GetStyle("worldMapTooltip"))
     end
 
   else
@@ -331,7 +334,8 @@ pinTooltipCreatorEidetic.creator = function(pin)
     end
 
     if pinTag.ld then
-      INFORMATION_TOOLTIP:AddLine(LoreBooks.locationDetails[pinTag.ld], "", ZO_HIGHLIGHT_TEXT:UnpackRGB())
+      local pinNote = "[" .. zo_strformat(LoreBooks.locationDetails[pinTag.ld]) .. "]"
+      INFORMATION_TOOLTIP:AddLine(pinNote, "", ZO_HIGHLIGHT_TEXT:UnpackRGB())
     end
 
   end
@@ -1847,7 +1851,12 @@ local bookStackLocalization = {
   ["fr"] = "Pile de livres",
   ["ru"] = "Стопка книг",
 }
-
+local bookLocalization = {
+  ["en"] = "Book",
+  ["de"] = "Buch",
+  ["fr"] = "Livre",
+  ["ru"] = "Книга",
+}
 local function ShowMyPosition()
   LMDI:SetPlayerLocation(true)
   LMDI:UpdateMapInfo()
@@ -1873,6 +1882,9 @@ local function ShowMyPosition()
   if LMD.reticleInteractionName then
     isBookshelf = LMD.reticleInteractionName == bookStackLocalization[GetCVar("Language.2")]
   end
+  if LMD.reticleInteractionName then
+    isBookshelf = LMD.reticleInteractionName == bookLocalization[GetCVar("Language.2")]
+  end
   --d(isBookshelf)
   if currentOpenBook then
     bookName = currentOpenBook
@@ -1892,7 +1904,7 @@ local function ShowMyPosition()
   -- /script d({GetLoreBookIndicesFromBookId(151)})
   -- /script d({GetLoreBookInfo(3, 21, 1)})
   if categoryIndex and categoryIndex == internal.LORE_LIBRARY_SHALIDOR then
-    outText = string.format("[%d] = { %.6f, %.6f, %s, %s, moreInfo }, -- %s, %s", mapId, x, y, collectionIndex, bookIndex, bookName, zone)
+    outText = string.format("[%d] = { %.10f, %.10f, %s, %s, moreInfo }, -- %s, %s", mapId, x, y, collectionIndex, bookIndex, bookName, zone)
   elseif categoryIndex and categoryIndex == internal.LORE_LIBRARY_EIDETIC then
     local ef = '"e"'
     local df = '"d"' -- inDungeon
@@ -1918,7 +1930,7 @@ local function ShowMyPosition()
   MyPrint(outText)
 end
 
-local function CreateFakePin()
+local function CreateFakeEideticPin()
   LMDI:UpdateMapInfo()
   local zone = LMP:GetZoneAndSubzone(true, false, true)
   local x, y = GetMapPlayerPosition("player")
@@ -1931,9 +1943,23 @@ local function CreateFakePin()
   local pyf = '"py"' -- LibGPS y
   local fpf = '"fp"' -- used for zone booklist
   local shownBookId = "fake"
-  local bookName = "fake book position provide the true location"
+  local bookName = "fake Eidetic Memory location"
   outText = string.format("[%s] = { [%s] = { [1] = { [%s] = %.10f, [%s] = %.10f, [%s] = %d, [%s] = true, }, }, }, -- %s, %s",
     shownBookId, ef, pxf, xpos, pyf, ypos, mdf, mapId, fpf, bookName, zone)
+  MyPrint(outText)
+end
+
+local function CreateFakeLorebookPin()
+  LMDI:UpdateMapInfo()
+  local zone = LMP:GetZoneAndSubzone(true, false, true)
+  local x, y = GetMapPlayerPosition("player")
+  local xpos, ypos = GPS:LocalToGlobal(x, y)
+  local mapId = LMD.mapId
+
+  local shownBookId = "fake"
+  local bookName = "fake Shalidor's Library location"
+  outText = string.format("[%s] = { %.10f, %.10f, 0, 0, moreinfo }, -- %s, %s",
+    mapId, x, y, bookName, zone)
   MyPrint(outText)
 end
 
@@ -1961,9 +1987,11 @@ local function OnLoad(eventCode, name)
     --LoreBooks_InitializeCollab()
 
     -- slash commands
-    SLASH_COMMANDS["/lbpos"] = ShowMyPosition
+    SLASH_COMMANDS["/lbpos"] = function() ShowMyPosition() end
 
-    SLASH_COMMANDS["/lbfake"] = CreateFakePin
+    SLASH_COMMANDS["/lbfake"] = function() CreateFakeEideticPin() end
+
+    SLASH_COMMANDS["/lbfakebook"] = function() CreateFakeLorebookPin() end
 
     --events
     EVENT_MANAGER:RegisterForEvent(internal.ADDON_NAME, EVENT_SHOW_BOOK, OnShowBook)

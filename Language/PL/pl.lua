@@ -22,10 +22,10 @@ SafeAddString(LBOOKS_KNOWN, "Zebrane", 1)
 SafeAddString(LBOOKS_BOOKSHELF, "Bookshelf", 1)
 
 SafeAddString(LBOOKS_MOREINFO1, "Miasto", 1)
-SafeAddString(LBOOKS_MOREINFO2, "Loch", 1)
-SafeAddString(LBOOKS_MOREINFO3, "Publiczny Loch", 1)
+SafeAddString(LBOOKS_MOREINFO2, GetString(SI_INSTANCEDISPLAYTYPE7), 1)
+SafeAddString(LBOOKS_MOREINFO3, GetString(SI_INSTANCEDISPLAYTYPE6), 1)
 SafeAddString(LBOOKS_MOREINFO4, "Podziemia", 1)
-SafeAddString(LBOOKS_MOREINFO5, "Grupowy Loch", 1)
+SafeAddString(LBOOKS_MOREINFO5, GetString(SI_INSTANCETYPE2), 1)
 SafeAddString(LBOOKS_MOREINFO6, "Inside Inn", 1)
 
 SafeAddString(LBOOKS_SET_WAYPOINT, "Ustaw cel na: |cFFFFFF<<1>>|r", 1)

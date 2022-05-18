@@ -34,10 +34,10 @@ http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
 -- 	moreInfo:
 -- 		nil or false = default
 -- 		1 = on town map
--- 		2 = in delve
--- 		3 = in public dungeon
+-- 		2 = Delve (SI CONST)
+-- 		3 = Public Dungeon (SI CONST)
 -- 		4 = under ground
--- 		5 = Group Instance
+-- 		5 = Group Instance (SI CONST)
 -- 		6 = Inside Inn
 --       9999 = Breadcrumb so don't add to right click menu
 -- 	zoneId:
@@ -193,7 +193,7 @@ local lorebooksData = {
     { 0.387, 0.398, 5, 6 },
     { 0.264, 0.187, 5, 6 },
     { 0.178178, 0.572218, 5, 6 },
-    { 0.436, 0.483, 5, 9 }, -- Sentinel, the Jewel of Alik'r
+    { 0.435072, 0.482186, 5, 9 }, -- Sentinel, the Jewel of Alik'r
     { 0.391, 0.577, 5, 9 },
     { 0.630, 0.715, 5, 9 },
     { 0.640, 0.437, 5, 9 },
@@ -209,6 +209,7 @@ local lorebooksData = {
   [539] = { -- bergama_base
     -- Alik'r Desert Lore
     { 0.259, 0.607, 5, 5 }, -- Varieties of Faith, Crown Redguards
+    { 0.260474, 0.433393, 5, 5 },
     { 0.679, 0.558, 5, 5 },
     { 0.262, 0.434, 5, 5 },
     { 0.569, 0.351, 5, 5 },
@@ -403,7 +404,7 @@ local lorebooksData = {
   },
   [243] = { -- vulkhelguard_base
     -- Tamriel History
-    { 0.508, 0.387, 19, 1 }, -- Ayleid Inscriptions Translated
+    { 0.509120, 0.387047, 19, 1 }, -- Ayleid Inscriptions Translated
     { 0.830, 0.490, 19, 2 }, -- Frontier, Conquest
     { 0.529, 0.626, 19, 2 },
     { 0.271, 0.675, 19, 2 },
@@ -540,7 +541,7 @@ local lorebooksData = {
     { 0.512, 0.839, 4, 1 },
     { 0.374, 0.697, 4, 1 },
     { 0.686, 0.858, 14, 1 }, -- The Homilies of Blessed Almalexia
-    { 0.3836, 0.4300, 14, 9 }, -- Crow and Raven: Three Short Fables",
+    { 0.382820, 0.431219, 14, 9 }, -- Crow and Raven: Three Short Fables
   },
   [431] = { -- onsisbreathmine_base
     -- Literature
@@ -1390,6 +1391,7 @@ local lorebooksData = {
   [174] = { -- spindleclutch_base
     -- Dungeon Lore
     { 0.677, 0.475, 11, 8, 5, 174 }, -- Where Magical Paths Meet
+    { 0.671889, 0.471008, 11, 8, 5, 174 },
   },
   [201] = { -- strosmkai_base
     -- Dwemer
@@ -1727,7 +1729,7 @@ local lorebooksData = {
   },
   [326] = { -- cityofashmain_base
     -- Dungeon Lore
-    { 0.275, 0.444, 11, 12, 5, 326 }, -- Burning Vestige, Vol. I
+    { 0.275009, 0.442950, 11, 12, 5, 326  }, -- Burning Vestige, Vol. I
   },
 
   -- malabaltor
@@ -2214,6 +2216,7 @@ local lorebooksData = {
     { 0.087, 0.604, 3, 7 }, -- House Tamrith: A Recent History
     { 0.072, 0.213, 3, 8 }, -- Shornhelm, Crown City of the North
     { 0.708, 0.226, 3, 9 }, -- Northpoint: An Assessment
+    { 0.706412, 0.224542, 3, 9 },
     { 0.277, 0.560, 3, 9 },
     { 0.519, 0.390, 3, 9 },
     { 0.598, 0.602, 3, 9 },
@@ -3230,9 +3233,19 @@ local lorebooksData = {
     -- The Trial of Eyevea
     { 0.790, 0.253, 7, 1 }, -- How the Kwama Lost His Shoes
   },
-
+  [1991] = { -- blackwood/u30_shattered_vault_1_base_0
+    { 0.450474, 0.607235, 29, 4 }, -- I was Summoned by a Mortal
+    { 0.447890, 0.596899, 29, 3 }, -- Chaotic Creatia: The Azure Plasm
+  },
+  [1887] = { -- blackwood/blackwood_base_0
+    { 0.3741942644, 0.1428848952, 29, 4, nil, 1991 }, -- I was Summoned by a Mortal
+    { 0.3741942644, 0.1428848952, 29, 3, nil, 1991 }, -- Chaotic Creatia: The Azure Plasm
+  },
 }
 
+--[[5-18-22: noticed that none of the three following
+ arrays are used
+]]--
 local lorebooksExplorationIDs = {
   [2] = 964,
   [3] = 966,

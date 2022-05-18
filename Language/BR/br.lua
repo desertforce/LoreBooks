@@ -21,10 +21,10 @@ SafeAddString(LBOOKS_KNOWN, "Coletado", 1)
 SafeAddString(LBOOKS_BOOKSHELF, "Bookshelf", 1)
 
 SafeAddString(LBOOKS_MOREINFO1, "Cidade", 1)
-SafeAddString(LBOOKS_MOREINFO2, "Covil", 1)
-SafeAddString(LBOOKS_MOREINFO3, "Calabouço Público", 1)
+SafeAddString(LBOOKS_MOREINFO2, GetString(SI_INSTANCEDISPLAYTYPE7), 1)
+SafeAddString(LBOOKS_MOREINFO3, GetString(SI_INSTANCEDISPLAYTYPE6), 1)
 SafeAddString(LBOOKS_MOREINFO4, "Subterrâneo", 1)
-SafeAddString(LBOOKS_MOREINFO5, "Instância de Grupo", 1)
+SafeAddString(LBOOKS_MOREINFO5, GetString(SI_INSTANCETYPE2), 1)
 SafeAddString(LBOOKS_MOREINFO6, "Inside Inn", 1)
 
 SafeAddString(LBOOKS_SET_WAYPOINT, GetString(SI_WORLD_MAP_ACTION_SET_PLAYER_WAYPOINT) .. " : |cFFFFFF<<1>>|r", 1)

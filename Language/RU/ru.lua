@@ -22,10 +22,10 @@ SafeAddString(LBOOKS_KNOWN, "Собрано", 1)
 SafeAddString(LBOOKS_BOOKSHELF, "Bookshelf", 1)
 
 SafeAddString(LBOOKS_MOREINFO1, "Город", 1)
-SafeAddString(LBOOKS_MOREINFO2, "Соло-подземелье", 1)
-SafeAddString(LBOOKS_MOREINFO3, "Публичное подземелье", 1)
+SafeAddString(LBOOKS_MOREINFO2, GetString(SI_INSTANCEDISPLAYTYPE7), 1)
+SafeAddString(LBOOKS_MOREINFO3, GetString(SI_INSTANCEDISPLAYTYPE6), 1)
 SafeAddString(LBOOKS_MOREINFO4, "Пещера", 1)
-SafeAddString(LBOOKS_MOREINFO5, "Групповое подземелье", 1)
+SafeAddString(LBOOKS_MOREINFO5, GetString(SI_INSTANCETYPE2), 1)
 SafeAddString(LBOOKS_MOREINFO6, "Inside Inn", 1)
 
 SafeAddString(LBOOKS_SET_WAYPOINT, GetString(SI_WORLD_MAP_ACTION_SET_PLAYER_WAYPOINT) .. " : |cFFFFFF<<1>>|r", 1)

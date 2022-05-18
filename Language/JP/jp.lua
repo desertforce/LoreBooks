@@ -22,10 +22,10 @@ SafeAddString(LBOOKS_KNOWN, "収集済", 1)
 SafeAddString(LBOOKS_BOOKSHELF, "Bookshelf", 1)
 
 SafeAddString(LBOOKS_MOREINFO1, "町", 1)
-SafeAddString(LBOOKS_MOREINFO2, "ダンジョン", 1)
-SafeAddString(LBOOKS_MOREINFO3, "パブリックダンジョン", 1)
+SafeAddString(LBOOKS_MOREINFO2, GetString(SI_INSTANCEDISPLAYTYPE7), 1)
+SafeAddString(LBOOKS_MOREINFO3, GetString(SI_INSTANCEDISPLAYTYPE6), 1)
 SafeAddString(LBOOKS_MOREINFO4, "地下", 1)
-SafeAddString(LBOOKS_MOREINFO5, "グループインスタンス", 1)
+SafeAddString(LBOOKS_MOREINFO5, GetString(SI_INSTANCETYPE2), 1)
 SafeAddString(LBOOKS_MOREINFO6, "Inside Inn", 1)
 
 SafeAddString(LBOOKS_SET_WAYPOINT, "目的地を設定する: |cFFFFFF<<1>>|r", 1)

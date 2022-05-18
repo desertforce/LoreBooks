@@ -1,5 +1,5 @@
 ---------------------------------------
--- ??? localization for LoreBooks --
+-- Japanese (JF) localization for LoreBooks --
 ---------------------------------------
 --
 -- Translated by:
@@ -22,10 +22,10 @@ SafeAddString(LBOOKS_KNOWN, "已收集", 1)
 SafeAddString(LBOOKS_BOOKSHELF, "Bookshelf", 1)
 
 SafeAddString(LBOOKS_MOREINFO1, "城镇", 1)
-SafeAddString(LBOOKS_MOREINFO2, "洞穴", 1)
-SafeAddString(LBOOKS_MOREINFO3, "公共副本", 1)
+SafeAddString(LBOOKS_MOREINFO2, GetString(SI_INSTANCEDISPLAYTYPE7), 1)
+SafeAddString(LBOOKS_MOREINFO3, GetString(SI_INSTANCEDISPLAYTYPE6), 1)
 SafeAddString(LBOOKS_MOREINFO4, "地下", 1)
-SafeAddString(LBOOKS_MOREINFO5, "组队情况", 1)
+SafeAddString(LBOOKS_MOREINFO5, GetString(SI_INSTANCETYPE2), 1)
 SafeAddString(LBOOKS_MOREINFO6, "Inside Inn", 1)
 
 SafeAddString(LBOOKS_SET_WAYPOINT, GetString(SI_WORLD_MAP_ACTION_SET_PLAYER_WAYPOINT) .. " : |cFFFFFF<<1>>|r", 1)
