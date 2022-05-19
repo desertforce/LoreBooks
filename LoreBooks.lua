@@ -442,10 +442,8 @@ local function ShalidorCompassCallback()
   if lorebooks then
     for _, pinData in ipairs(lorebooks) do
       local _, _, known = GetLoreBookInfo(internal.LORE_LIBRARY_SHALIDOR, pinData[3], pinData[4])
-      if not known then
-        if db.filters[internal.PINS_COMPASS] then
-          COMPASS_PINS.pinManager:CreatePin(internal.PINS_COMPASS, pinData, pinData[1], pinData[2])
-        end
+      if not known and db.filters[internal.PINS_COMPASS] then
+        COMPASS_PINS.pinManager:CreatePin(internal.PINS_COMPASS, pinData, pinData[1], pinData[2])
       end
     end
   end
@@ -477,29 +475,14 @@ local function EideticMemoryCompassCallback()
   end
 
   local mapId = LMD.mapId
-  local zoneMapId = LMD:GetZoneMapIdFromZoneId(LMD.zoneId)
-  local isDungeon = LMD.isDungeon
-  local fakePinInfo
   if eideticBooks then
     for _, pinData in ipairs(eideticBooks) do
       local _, _, known = GetLoreBookInfo(internal.LORE_LIBRARY_EIDETIC, pinData.c, pinData.b)
-      fakePinInfo = false
-      if mapId == pinData.pm then
-        pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.px, pinData.py)
-      elseif zoneMapId == pinData.zm then
-        if pinData.zx and pinData.zy then
-          pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.zx, pinData.zy)
-        else
-          pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.px, pinData.py)
-        end
-      end
-      if pinData.zx and pinData.zy and pinData.zm then fakePinInfo = true end
-      if not known and db.filters[internal.PINS_COMPASS_EIDETIC] then
-        if (isDungeon and pinData.d) or (not isDungeon and not pinData.d) or (not isDungeon and fakePinInfo) then
-          COMPASS_PINS.pinManager:CreatePin(internal.PINS_COMPASS_EIDETIC, pinData, pinData.xLoc, pinData.yLoc)
-        end
-      end -- end show Compass Pin
-    end
+      if mapId == pinData.pm and not known and db.filters[internal.PINS_COMPASS_EIDETIC] then
+        local xLoc, yLoc = GPS:GlobalToLocal(pinData.px, pinData.py)
+        COMPASS_PINS.pinManager:CreatePin(internal.PINS_COMPASS_EIDETIC, pinData, xLoc, yLoc)
+      end -- end of mapId,  not known, filters PINS_COMPASS_EIDETIC
+    end -- end of for loop
   end
 end
 
@@ -582,7 +565,7 @@ local function MapCallbackCreateEideticPins(pinType)
   end
   local isDungeon = LMD.isDungeon
   local shouldDisplay = ShouldDisplayLoreBooks()
-  local fakePinInfo
+  local duallPinInfo
 
   -- Eidetic Memory Books
   if eideticBooks then
@@ -600,11 +583,12 @@ local function MapCallbackCreateEideticPins(pinType)
         end
       end
 
-      if pinData.zx and pinData.zy and pinData.zm then fakePinInfo = true end
+      if not duallPinInfo then duallPinInfo = pinData.zx and pinData.zy and pinData.zm end
+      if not duallPinInfo then duallPinInfo = pinData.pm and pinData.zm end
 
       -- Eidetic Memory Collected
       if pinType == internal.PINS_EIDETIC_COLLECTED then
-        if (isDungeon and pinData.d) or (not isDungeon and not pinData.d) or (not isDungeon and fakePinInfo) then
+        if (isDungeon and pinData.d) or (not isDungeon and not pinData.d) or (not isDungeon and duallPinInfo) then
           if known and LMP:IsEnabled(internal.PINS_EIDETIC_COLLECTED) then
             LMP:CreatePin(internal.PINS_EIDETIC_COLLECTED, pinData, pinData.xLoc, pinData.yLoc)
           end
@@ -612,7 +596,7 @@ local function MapCallbackCreateEideticPins(pinType)
       end
       -- Eidetic Memory Unknown
       if pinType == internal.PINS_EIDETIC then
-        if (isDungeon and pinData.d) or (not isDungeon and not pinData.d) or (not isDungeon and fakePinInfo) then
+        if (isDungeon and pinData.d) or (not isDungeon and not pinData.d) or (not isDungeon and duallPinInfo) then
           if not known and shouldDisplay and LMP:IsEnabled(internal.PINS_EIDETIC) then
             LMP:CreatePin(internal.PINS_EIDETIC, pinData, pinData.xLoc, pinData.yLoc)
           end
@@ -692,6 +676,12 @@ local function InitializePins()
                                         end
                                       end
   }
+
+
+  --initialize book data
+  local mapId = LMD.mapId
+  local zoneMapId = LMD:GetZoneMapIdFromZoneId(LMD.zoneId)
+  UpdateLorebooksData(mapId, zoneMapId)
 
   --initialize map pins
   LMP:AddPinType(internal.PINS_UNKNOWN, function() MapCallbackCreateShalidorPins(internal.PINS_UNKNOWN) end, nil, mapPinLayout_unknown, pinTooltipCreator)
