@@ -1866,13 +1866,13 @@ local function ShowMyPosition()
   local bookIndex = ""
   local bookId
   local isBookshelf
-  if LMD.reticleInteractionName then
+  if LMD.reticleInteractionName and not isBookshelf then
     isBookshelf = LMD.reticleInteractionName == bookShelfLocalization[GetCVar("Language.2")]
   end
-  if LMD.reticleInteractionName then
+  if LMD.reticleInteractionName and not isBookshelf then
     isBookshelf = LMD.reticleInteractionName == bookStackLocalization[GetCVar("Language.2")]
   end
-  if LMD.reticleInteractionName then
+  if LMD.reticleInteractionName and not isBookshelf then
     isBookshelf = LMD.reticleInteractionName == bookLocalization[GetCVar("Language.2")]
   end
   --d(isBookshelf)
