@@ -57171,10 +57171,11 @@ local bookData = {
     },
   },
   [5928] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Western Skyrim Register",
     ["n"] = "Unnamed Mining Journal, Page 37",
     ["e"] = {
+      [1] = { ["px"] = 0.4244151866, ["py"] = 0.2015600003, ["pm"] = 1752, ["zx"] = 0.4192188112, ["zy"] = 0.2002276016, ["zm"] = 1719, ["d"] = true, },
     },
   },
   [5929] = {
@@ -57184,19 +57185,19 @@ local bookData = {
         ["py"] = 0.1989000000,
         ["px"] = 0.4242400000,
         ["pm"] = 1752,
+        ["zx"] = 0.4192188112, ["zy"] = 0.2002276016, ["zm"] = 1719,
         ["d"] = true,
-        ["r"] = false,
-        ["i"] = 12,
       },
     },
     ["n"] = "Unnamed Mining Journal, Page 42",
     ["cn"] = "Western Skyrim Register",
   },
   [5930] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Western Skyrim Register",
     ["n"] = "Unnamed Mining Journal, Page 45",
     ["e"] = {
+      [1] = { ["px"] = 0.4253515867, ["py"] = 0.2001688003, ["pm"] = 1752, ["zx"] = 0.4192188112, ["zy"] = 0.2002276016, ["zm"] = 1719, ["d"] = true, },
     },
   },
   [4529] = {
@@ -60075,6 +60076,1070 @@ local bookData = {
     ["n"] = "Ascendant Order Note",
     ["e"] = {
     },
+  },
+  [7172] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Mad Baron Densil, Part the Second",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7173] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Mad Baron Densil, Part the Third",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7174] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Sea Lore for Arcane Crafting",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7175] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Amiviridil Arcanium",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7176] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Magister Irin's Notes",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7177] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Notes on Vulk'esh",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7178] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Coral's Revenge",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7179] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "The Purities of Mania",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7180] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "The Sea Stone",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7181] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Monument Lighthouse",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7182] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Monument Inn",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7184] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Tobin Moorcroft",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [6932] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Knight Ondrisse's Orders",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [6933] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "The Broken Oath",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [6938] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "The Ascendant Proclamation",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [6939] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Prisoner Manifest",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [6941] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Waterlogged Journal of Vanisande Maul",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7199] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Visitor's Guide to High Isle",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [6944] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Dour Lady's Captain Log",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [6945] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Debonaire's Captain Log",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [6946] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Commodore's Diary",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [6947] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "The Battle of Meadow Fort",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [6948] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Letter to Dockmaster Arnauld",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [6949] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Note to Cynric",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [6950] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Ode to the Nose of a Woman",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7207] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Gwenengith's Journal",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7208] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Systres Knightly Orders Vol 1",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7209] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Systres Knightly Orders Vol 2",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7210] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Note to Nilsmon Booklover",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7211] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "The Sea Elf Threat",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7212] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "The Glittering Sapphire Tourney",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7213] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Page from Mender's Journal",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7214] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Systres History: Volume 5",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7215] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Systres History: Volume 6",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7216] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Systres History: Volume 7",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7219] = {
+    ["cn"] = "Tomes of Tributes",
+    ["n"] = "Blackfeather Knave Clue",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [6966] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Courier Grenier's Note",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [6969] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Knight Richel's Orders",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [6970] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Rules of the Game",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7251] = {
+    ["cn"] = "Tomes of Tributes",
+    ["n"] = "Murder of Crows Clue",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [5460] = {
+    ["cn"] = "Pellitine Postings",
+    ["n"] = "Crumpled Nursery Rhyme",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7253] = {
+    ["cn"] = "Tomes of Tributes",
+    ["n"] = "Hlaalu Councilor Clue",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7254] = {
+    ["cn"] = "Tomes of Tributes",
+    ["n"] = "Summerset Raid Clue",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7255] = {
+    ["cn"] = "Tomes of Tributes",
+    ["n"] = "Psijic Relicmaster Clue",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7256] = {
+    ["cn"] = "Tomes of Tributes",
+    ["n"] = "Ceporah's Insight Clue",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7257] = {
+    ["cn"] = "Tomes of Tributes",
+    ["n"] = "Blood Sacrifice Clue",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7258] = {
+    ["cn"] = "Tomes of Tributes",
+    ["n"] = "Hagraven Matron Clue",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7259] = {
+    ["cn"] = "Tomes of Tributes",
+    ["n"] = "Serpentguard Rider Clue",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7260] = {
+    ["cn"] = "Tomes of Tributes",
+    ["n"] = "Knights of Saint Pelin Clue",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7005] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Lashum's Report",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7007] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "The Trial of Perseverance",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7264] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Captain Tsuzo's Log",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7009] = {
+    ["cn"] = "Diaries and Logs",
+    ["n"] = "Voyage of the Seajoy, Day Five",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7010] = {
+    ["cn"] = "Diaries and Logs",
+    ["n"] = "Voyage of the Seajoy, Day Seven",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7011] = {
+    ["cn"] = "Diaries and Logs",
+    ["n"] = "Voyage of the Seajoy, Day Eight",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7012] = {
+    ["cn"] = "Diaries and Logs",
+    ["n"] = "Voyage of the Seajoy, Day Fourteen",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7013] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Duchess Elea's Investigation Notes",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7270] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Secrets of Amenos",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7017] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Transport Plans",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7018] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Orders for the Recruits",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7019] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "The Trial of Wits",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7021] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Banneret Jenine's Orders",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7022] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "The Trial of Constitution",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7024] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Sailing Orders",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7025] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Mender Roslenn's Journal",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7026] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Adwig's Journal",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7027] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Dreadsails Communique",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7029] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Master Healer Viralaine's Notes",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7030] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "The Mirrored Way",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7031] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "The Ascendant Magus's Commission",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7032] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Work in Gonfalon Bay",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7033] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Report for the Head Jailer",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7034] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Head Jailer's Journal",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7035] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Head Jailer's Ledger",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7036] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Healer Jenille's Note",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7038] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Finimi's Domicile",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7039] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Fleet Queen's Orders",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7296] = {
+    ["cn"] = "Tomes of Tributes",
+    ["n"] = "Ring's Guile Clue",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7297] = {
+    ["cn"] = "Tomes of Tributes",
+    ["n"] = "Grand Oratory Clue",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7298] = {
+    ["cn"] = "Tomes of Tributes",
+    ["n"] = "Ansei's Victory Clue",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [2701] = {
+    ["cn"] = "Wrothgar Writings",
+    ["n"] = "Royal Messenger's Fate",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7095] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Silverslip's Journal",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7098] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Emerald Eye Mage's Journal",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7099] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Letter from Aurelia Jourvel",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7100] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Kiv's Journal",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7101] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Balki's Instructions",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7102] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Ferone's Instructions",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7103] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Rhadh's Instructions",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7143] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Mad Baron Densil, Part the First",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7105] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Letter from Julles Laurdon",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7206] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Ecology of the Ornaug",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7107] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Kiv's Notes",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7108] = {
+    ["cn"] = "Hearts and Flowers",
+    ["n"] = "The Rose of Navire, Part the First",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7109] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Captured by the Dreadsails",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7110] = {
+    ["cn"] = "Hearts and Flowers",
+    ["n"] = "The Rose of Navire, Part the Second",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7111] = {
+    ["cn"] = "Hearts and Flowers",
+    ["n"] = "The Rose of Navire, Part the Third",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7205] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Letter from Vetitia Marcott",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7113] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "The Society of the Steadfast",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7114] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Green Serpent Bounty",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7115] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Aurelia's Letter",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7116] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "A History of Shipbuilding, Vol. 1 of 27",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7117] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Dirge of the Stormy Seas",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7118] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Mysteries of the Eltheric Ammonite",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7119] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Wyrd and Druid",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7120] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Sorrows of the Wind",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7121] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Noble Ranks and Titles",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7122] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Fair and Fresh Upon the Lea",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7123] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Green Serpent Testimonials",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7124] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Theories: Soulrazer Knights",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7204] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Systres History: Volume 4",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7126] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "A Hunter's Journey VI: Fauns",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7203] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Systres History: Volume 3",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7202] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Systres History: Volume 2",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7201] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Systres History: Volume 1",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7130] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "History of House Dufort",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7200] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Lighthouse Orders",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7132] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Burned Research Notes",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7133] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Duties and Routine",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7134] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "The Delicacies of High Isle",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7266] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Captain Kaleen's Log",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7136] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Ballad of the All Flags Navy",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7137] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Letter from Deesh-Jee",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7263] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Tales of Tribute: Series One",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7042] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Prepare Some Entertainment",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7252] = {
+    ["cn"] = "Tomes of Tributes",
+    ["n"] = "House Embassy Clue",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7261] = {
+    ["cn"] = "Tomes of Tributes",
+    ["n"] = "Knight Commander Clue",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7142] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Evergrowth Restoration Ritual",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [3047] = {
+    ["cn"] = "Library of Incunabula",
+    ["n"] = "Terran's Notes",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7144] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Fera's Journal",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7145] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Finimi's Spellbook",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7146] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "History of House Mornard",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7147] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "1. The Thrassian Plague",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7148] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "2. Baron-Admiral Bendu Olo",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7149] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "3. The All Flags Navy",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7150] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "4. Instrument of Vengeance",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7151] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "5. Construction of Monument Island",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7152] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Journal of a Scorned Lover",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7153] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "The All Flags Navy Started Here",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7154] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "In Memory of the Brave Souls",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7040] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Sorti's Shanties in Progress",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7041] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Quit Overfeeding the Maw",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7157] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "About Jhaka",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7158] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Investigator Vale and the Haunted Lighthouse",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7159] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Izbadd's Letter",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7267] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Captain Za'ji's Log",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7268] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "A Harrowing Sea Voyage",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7269] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "The Colossus of Gonfalon Bay",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7274] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Tribute Beginner's Guide",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7280] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Hadolid Researcher's Journal",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7281] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Visitor's Guide to Y'ffre's Cauldron",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7294] = {
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "The Secret Origins of Tribute",
+    ["e"] = {
+    },
+    ["c"] = false,
+  },
+  [7295] = {
+    ["cn"] = "Tomes of Tributes",
+    ["n"] = "Grand Larceny Clue",
+    ["e"] = {
+    },
+    ["c"] = false,
   },
 }
 
