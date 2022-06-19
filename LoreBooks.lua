@@ -479,7 +479,13 @@ local function EideticMemoryCompassCallback()
     for _, pinData in ipairs(eideticBooks) do
       local _, _, known = GetLoreBookInfo(internal.LORE_LIBRARY_EIDETIC, pinData.c, pinData.b)
       if mapId == pinData.pm and not known and db.filters[internal.PINS_COMPASS_EIDETIC] then
-        local xLoc, yLoc = GPS:GlobalToLocal(pinData.px, pinData.py)
+        local xLoc, yLoc
+        if pinData.px and pinData.py then
+          xLoc, yLoc = GPS:GlobalToLocal(pinData.px, pinData.py)
+        elseif pinData.pnx and pinData.pny then
+          xLoc = pinData.pnx
+          yLoc = pinData.pny
+        end
         COMPASS_PINS.pinManager:CreatePin(internal.PINS_COMPASS_EIDETIC, pinData, xLoc, yLoc)
       end -- end of mapId,  not known, filters PINS_COMPASS_EIDETIC
     end -- end of for loop
@@ -566,29 +572,49 @@ local function MapCallbackCreateEideticPins(pinType)
   local isDungeon = LMD.isDungeon
   local shouldDisplay = ShouldDisplayLoreBooks()
   local duallPinInfo
+  local fakePinInfo
 
   -- Eidetic Memory Books
   if eideticBooks then
     for _, pinData in ipairs(eideticBooks) do
+      duallPinInfo = false
       fakePinInfo = false
+      if pinData.fp then fakePinInfo = true end
       local _, _, known = GetLoreBookInfo(internal.LORE_LIBRARY_EIDETIC, pinData.c, pinData.b)
+      local libgpsCoordinates = pinData.px and pinData.py
+      local libgpsZoneCoordinates = pinData.zx and pinData.zy
+      local normalizedCoordinates = pinData.pnx and pinData.pny
+      local normalizedZoneCoordinates = pinData.znx and pinData.zny
 
-      if mapId == pinData.pm then
+      if mapId == pinData.pm and libgpsCoordinates then
         pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.px, pinData.py)
-      elseif zoneMapId == pinData.zm then
-        if pinData.zx and pinData.zy then
-          pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.zx, pinData.zy)
-        else
+      elseif zoneMapId == pinData.zm and libgpsZoneCoordinates then
+        pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.zx, pinData.zy)
+      elseif zoneMapId == pinData.zm and libgpsCoordinates then
           pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.px, pinData.py)
-        end
+      end
+      if mapId == pinData.pm and normalizedCoordinates then
+        pinData.xLoc = pinData.pnx
+        pinData.yLoc = pinData.pny
+      end
+      if zoneMapId == pinData.zm and normalizedZoneCoordinates then
+        pinData.xLoc = pinData.znx
+        pinData.yLoc = pinData.zny
       end
 
-      if not duallPinInfo then duallPinInfo = pinData.zx and pinData.zy and pinData.zm end
+      if not duallPinInfo then duallPinInfo = pinData.zm and (libgpsZoneCoordinates or normalizedZoneCoordinates) end
       if not duallPinInfo then duallPinInfo = pinData.pm and pinData.zm end
 
+      --[[
+      (isDungeon and pinData.d): When the mapContentType is MAP_CONTENT_DUNGEON and the pin is marks as such
+      (not isDungeon and not pinData.d): When the mapContentType is not MAP_CONTENT_DUNGEON and pinData has no boolean "d"
+      (not isDungeon and duallPinInfo): when on the main zone map and a zone coordinate exists
+      fakePinInfo: pins with "fp" have a unique mapId different from the pm or zm dual pin layout and should be displayed regardless as
+        marker to breadcrumb the player to the book
+      ]]--
       -- Eidetic Memory Collected
       if pinType == internal.PINS_EIDETIC_COLLECTED then
-        if (isDungeon and pinData.d) or (not isDungeon and not pinData.d) or (not isDungeon and duallPinInfo) then
+        if (isDungeon and pinData.d) or (not isDungeon and not pinData.d) or (not isDungeon and duallPinInfo) or fakePinInfo then
           if known and LMP:IsEnabled(internal.PINS_EIDETIC_COLLECTED) then
             LMP:CreatePin(internal.PINS_EIDETIC_COLLECTED, pinData, pinData.xLoc, pinData.yLoc)
           end
@@ -596,7 +622,7 @@ local function MapCallbackCreateEideticPins(pinType)
       end
       -- Eidetic Memory Unknown
       if pinType == internal.PINS_EIDETIC then
-        if (isDungeon and pinData.d) or (not isDungeon and not pinData.d) or (not isDungeon and duallPinInfo) then
+        if (isDungeon and pinData.d) or (not isDungeon and not pinData.d) or (not isDungeon and duallPinInfo) or fakePinInfo then
           if not known and shouldDisplay and LMP:IsEnabled(internal.PINS_EIDETIC) then
             LMP:CreatePin(internal.PINS_EIDETIC, pinData, pinData.xLoc, pinData.yLoc)
           end
@@ -1477,12 +1503,21 @@ local function OnRowMouseUp(control, button)
         for index, data in ipairs(bookData.e) do
           local mapId = data.pm
           local mapName = GetMapNameById(mapId)
+          local libgpsCoordinates = data.px and data.py
+          local normalizedCoordinates = data.pnx and data.pny
 
-          if not data.r and not data.fp and data.px and data.py and not data.zt then
+          if not data.r and not data.fp and (libgpsCoordinates or normalizedCoordinates) and not data.zt then
 
-            local xLoc, yLoc = GPS:GlobalToLocal(data.px, data.py)
-            local xTooltip = ("%0.02f"):format(zo_round(data.px * 10000) / 100)
-            local yTooltip = ("%0.02f"):format(zo_round(data.py * 10000) / 100)
+            local xLoc, yLoc
+            if libgpsCoordinates then
+              xLoc, yLoc = GPS:GlobalToLocal(data.px, data.py)
+            end
+            if normalizedCoordinates then
+              xLoc = data.pnx
+              yLoc = data.pny
+            end
+            local xTooltip = ("%0.02f"):format(zo_round(xLoc * 10000) / 100)
+            local yTooltip = ("%0.02f"):format(zo_round(yLoc * 10000) / 100)
             AddCustomMenuItem(zo_strformat("<<1>> (<<2>>x<<3>>)", zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, mapName), xTooltip, yTooltip),
               function()
                 SetMapToMapId(mapId)
@@ -1903,14 +1938,16 @@ local function ShowMyPosition()
     local pyf = '"py"' -- LibGPS y
     local xf = '"x"' -- used for zone bookshelf
     local yf = '"y"' -- used for zone bookshelf
+    local pnxf = '"pnx"' -- normal x cord
+    local pnyf = '"pny"' -- normal y cord
     local mf = '"m"' -- used for zone booklist
     local zf = '"z"' -- used for zone bookshelf
     if isDungeon then
-      outText = string.format("[%d] = { [%s] = { [1] = { [%s] = %.10f, [%s] = %.10f, [%s] = %d, [%s] = %s, }, }, }, -- %s, %s",
-        shownBookId, ef, pxf, xpos, pyf, ypos, mdf, mapId, df, tostring(isDungeon), bookName, zone)
+      outText = string.format("[%d] = { [%s] = { [1] = { [%s] = %.10f, [%s] = %.10f, [%s] = %d, [%s] = %s, }, }, }, { [%s] = %.10f, [%s] = %.10f }, -- %s, %s",
+        shownBookId, ef, pxf, xpos, pyf, ypos, mdf, mapId, df, tostring(isDungeon), pnxf, x, pnyf, y, bookName, zone)
     else
-      outText = string.format("[%d] = { [%s] = { [1] = { [%s] = %.10f, [%s] = %.10f, [%s] = %d, }, }, }, -- %s, %s",
-        shownBookId, ef, pxf, xpos, pyf, ypos, mdf, mapId, bookName, zone)
+      outText = string.format("[%d] = { [%s] = { [1] = { [%s] = %.10f, [%s] = %.10f, [%s] = %d, }, }, }, { [%s] = %.10f, [%s] = %.10f }, -- %s, %s",
+        shownBookId, ef, pxf, xpos, pyf, ypos, mdf, mapId, pnxf, x, pnyf, y, bookName, zone)
     end
     if isBookshelf then
       outText = string.format("[%d] = { [%s] = { [%d] = 1, }, }, [%d] = { { [%s] = %.10f, [%s] = %.10f, [%s] = %d, }, },  -- %s, %s",
@@ -1932,10 +1969,12 @@ local function CreateFakeEideticPin()
   local pxf = '"px"' -- LibGPS x
   local pyf = '"py"' -- LibGPS y
   local fpf = '"fp"' -- used for zone booklist
+  local pnxf = '"pnx"' -- normal x cord
+  local pnyf = '"pny"' -- normal y cord
   local shownBookId = "fake"
   local bookName = "fake Eidetic Memory location"
-  outText = string.format("[%s] = { [%s] = { [1] = { [%s] = %.10f, [%s] = %.10f, [%s] = %d, [%s] = true, }, }, }, -- %s, %s",
-    shownBookId, ef, pxf, xpos, pyf, ypos, mdf, mapId, fpf, bookName, zone)
+  outText = string.format("[%s] = { [%s] = { [1] = { [%s] = %.10f, [%s] = %.10f, [%s] = %d, [%s] = true, }, }, }, { [%s] = %.10f, [%s] = %.10f }, -- %s, %s",
+    shownBookId, ef, pxf, xpos, pyf, ypos, mdf, mapId, fpf, pnxf, x, pnyf, y, bookName, zone)
   MyPrint(outText)
 end
 
