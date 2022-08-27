@@ -1,14 +1,11 @@
 <GuiXml>
 	<Controls>
 	
-		<Backdrop name="Lorebook_Research_Template" tier="HIGH" inherits="ZO_EditBackdrop" virtual="true">
+		<Backdrop name="Lorebook_Research_Template" inherits="ZO_EditBackdrop" tier="HIGH" virtual="true">
 			<Anchor point="TOPRIGHT" relativePoint="TOPRIGHT" offsetX="-38" offsetY="28"/>
 			<Dimensions x="270"/>
 			<Controls>
-				<EditBox name="$(parent)Box" inherits="ZO_DefaultEditForBackdrop ZO_EditDefaultText">
-					<OnInitialized>
-						ZO_EditDefaultText_Initialize(self, GetString(LBOOKS_SEARCH_PLACEHOLDER))
-					</OnInitialized>
+				<EditBox name="$(parent)Box" inherits="ZO_DefaultEditForBackdrop" defaultText="LBOOKS_SEARCH_PLACEHOLDER">
 				</EditBox>
 				<Label name="$(parent)SearchLabel" text="LBOOKS_SEARCH_LABEL" font="ZoFontGameLargeBold" color="INTERFACE_COLOR_TYPE_TEXT_COLORS:INTERFACE_TEXT_COLOR_NORMAL">
 					<Anchor point="BOTTOMLEFT" relativePoint="TOPLEFT" relativeTo="$(parent)" offsetY="-2"/>
@@ -90,7 +87,7 @@
 					<Anchor point="TOPLEFT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="20" offsetY="20" />
 					<Dimensions x="875" y="650" />
 					<Controls>
-						<EditBox name="$(parent)Edit" editEnabled="false" inherits="ZO_DefaultEditMultiLineForBackdrop ZO_EditDefaultText" color="INTERFACE_COLOR_TYPE_TEXT_COLORS:INTERFACE_TEXT_COLOR_SELECTED" maxInputCharacters="20000" mouseEnabled="true" />
+						<EditBox name="$(parent)Edit" editEnabled="false" inherits="ZO_DefaultEditMultiLineForBackdrop" color="INTERFACE_COLOR_TYPE_TEXT_COLORS:INTERFACE_TEXT_COLOR_SELECTED" maxInputCharacters="20000" mouseEnabled="true" />
 					</Controls>
 				</Backdrop>
 				

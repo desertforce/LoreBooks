@@ -9,7 +9,7 @@ local lang = GetCVar("Language.2")
 
 local GetOriginalLoreCollectionInfo = GetLoreCollectionInfo
 
-lib.locales = { "en", "de", "fr", "ru" }
+lib.locales = { "en", "es", "de", "fr", "ru", "br", "it", "pl", "zh" }
 function lib:IsLanguageSupported(language)
   for _, l in ipairs(self.locales) do
     if language == l then

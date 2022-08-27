@@ -6,7 +6,7 @@ _G["LoreBooks_Internal"] = internal
 --Local constants -------------------------------------------------------------
 internal.ADDON_NAME = "LoreBooks"
 internal.ADDON_AUTHOR = "Garkin, Ayantir, Kyoma, Sharlikran"
-internal.ADDON_VERSION = "50"
+internal.ADDON_VERSION = "51"
 internal.ADDON_WEBSITE = "http://www.esoui.com/downloads/info288-LoreBooks.html"
 internal.ADDON_PANEL = "LoreBooksPanel"
 internal.SAVEDVARIABLES_VERSION = 3
@@ -20,6 +20,26 @@ internal.PINS_COMPASS = "LBooksCompassPin_unknown"
 internal.PINS_COMPASS_EIDETIC = "LBooksCompassPin_eidetic"
 internal.PINS_BOOKSHELF = "LBooksMapPin_bookshelf"
 internal.PINS_COMPASS_BOOKSHELF = "LBooksCompassPin_bookshelf"
+
+-- callbackType
+LoreBooks.callbackType = {}
+LoreBooks.callbackType.MOTIF_CHECKBOX_CHANGED = "LoreBooksMotifCheckboxChanged"
+
+local callbackObject = ZO_CallbackObject:New()
+LoreBooks.callbackObject = {}
+LoreBooks.callbackObject = callbackObject
+
+function LoreBooks:RegisterCallback(...)
+  return LoreBooks.callbackObject:RegisterCallback(...)
+end
+
+function LoreBooks:UnregisterCallback(...)
+  return LoreBooks.callbackObject:UnregisterCallback(...)
+end
+
+function LoreBooks:FireCallbacks(...)
+  return callbackObject:FireCallbacks(...)
+end
 
 -- Pin Textures
 internal.PIN_ICON_REAL = 1

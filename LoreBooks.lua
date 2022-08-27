@@ -1749,6 +1749,10 @@ function LoreBooks.CanShareData()
   return canShare
 end
 
+function LoreBooks:IsMotifButtonChecked(control)
+  return ZO_CheckButton_IsChecked(control)
+end
+
 local function RebuildLoreLibrary()
 
   loreLibraryReportKeybind = {
@@ -1809,6 +1813,7 @@ local function RebuildLoreLibrary()
   ZO_CheckButton_SetLabelText(includeMotifsCheckbox, GetString(LBOOKS_INCLUDE_MOTIFS_CHECKBOX))
   ZO_CheckButton_SetToggleFunction(includeMotifsCheckbox, function()
     LORE_LIBRARY:RefreshCollectedInfo()
+    LoreBooks.callbackObject:FireCallbacks(LoreBooks.callbackType.MOTIF_CHECKBOX_CHANGED)
   end)
 
   LORE_LIBRARY.RefreshCollectedInfo = function(library)
@@ -1816,7 +1821,7 @@ local function RebuildLoreLibrary()
     local currentlyCollected = library.totalCurrentlyCollected
     local possibleCollected = library.totalPossibleCollected
 
-    if not ZO_CheckButton_IsChecked(includeMotifsCheckbox) then
+    if not LoreBooks:IsMotifButtonChecked(includeMotifsCheckbox) then
       currentlyCollected = currentlyCollected - library.motifsCurrentlyCollected
       possibleCollected = possibleCollected - library.motifsPossibleCollected
     end

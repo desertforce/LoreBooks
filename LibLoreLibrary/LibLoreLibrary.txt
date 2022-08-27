@@ -3,7 +3,7 @@
 ## Version: 1
 ## AddOnVersion: 1
 ## IsLibrary: true
-## APIVersion: 101032 101033
+## APIVersion: 101034 101035
 ## SavedVariables: LibLoreLibrary_Settings LibLoreLibrary_Data
 ##
 ## This Add-on is not created by, affiliated with or sponsored by ZeniMax Media Inc. or its affiliates.
