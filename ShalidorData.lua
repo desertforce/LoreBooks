@@ -1729,7 +1729,7 @@ local lorebooksData = {
   },
   [326] = { -- cityofashmain_base
     -- Dungeon Lore
-    { 0.275009, 0.442950, 11, 12, 5, 326  }, -- Burning Vestige, Vol. I
+    { 0.275009, 0.442950, 11, 12, 5, 326 }, -- Burning Vestige, Vol. I
   },
 
   -- malabaltor
@@ -3106,10 +3106,10 @@ local lorebooksData = {
   [1654] = { -- southernelsweyr_base
     { 0.1826, 0.6512, 6, 8 }, -- A Mother's Nursery Rhyme
     { 0.3996, 0.6158, 6, 10 }, -- On the Knahaten Flu
-    { .664, .696, 21, 6 }, --Pirates of Abecean
+    { 0.664, 0.696, 21, 6 }, --Pirates of Abecean
     { 0.5043, 0.5094, 21, 8 }, -- A Nereid Stole My Husband
-    { .298, .459, 26, 1 }, --Varieties of Faith: The Khajiit
-    { .184, .313, 28, 1 }, --The Moon Cats and Their Dance
+    { 0.298, 0.459, 26, 1 }, --Varieties of Faith: The Khajiit
+    { 0.184, 0.313, 28, 1 }, --The Moon Cats and Their Dance
     { 0.3855, 0.3836, 28, 5 }, -- The Eagle and the Cat
     { 0.3718, 0.2511, 28, 6 }, -- Elven Eyes, Elven Spies
     { 0.4481, 0.3572, 28, 8 }, -- Master Zoaraym's Tale, Part 1
@@ -3168,28 +3168,28 @@ local lorebooksData = {
 
   -- Deadlands
   [2021] = { -- u32deadlandszone_base_0
-    { .719, .369, 17, 1 }, --The Book of Daedra
-    { .179, .588, 17, 5 }, --On Oblivion
-    { .351, .7, 17, 7 }, --Varieties of Daedra, Part 1
-    { .268, .598, 17, 8 }, --Varieties of Daedra, Part 2
-    { .696, .507, 8, 4 }, --The House of Troubles
-    { .707, .453, 29, 9 }, --Oath of a Dishonored Clan
-    { .432, .484, 29, 4 }, --I was Summoned by a Mortal
-    { .438, .653, 23, 10 },
+    { 0.7190, 0.3690, 17, 1 }, --The Book of Daedra
+    { 0.1790, 0.5880, 17, 5 }, --On Oblivion
+    { 0.3510, 0.7000, 17, 7 }, --Varieties of Daedra, Part 1
+    { 0.2680, 0.5980, 17, 8 }, --Varieties of Daedra, Part 2
+    { 0.6960, 0.5070, 8, 4 }, --The House of Troubles
+    { 0.7070, 0.4530, 29, 9 }, --Oath of a Dishonored Clan
+    { 0.4320, 0.4840, 29, 4 }, --I was Summoned by a Mortal
+    { 0.4380, 0.6530, 23, 10 },
   },
   [2119] = {-- u32_fargravezone_base_0
-    { .527, .239, 14, 5 }, -- Myths of Sheogorath, Volume 1
-    { .345, .616, 2, 8 }, --To Dream Beyond Dreams
+    { 0.5270, 0.2390, 14, 5 }, -- Myths of Sheogorath, Volume 1
+    { 0.3450, 0.6160, 2, 8 }, --To Dream Beyond Dreams
   },
   [2035] = { -- u32_fargrave_base_0
-    { .406, .176, 2, 8 },
+    { 0.4060, 0.1760, 2, 8 },
   },
   [2082] = { -- u32_theshambles_base_0
-    { .366, .32, 14, 5 },
+    { 0.3660, 0.3200, 14, 5 },
   },
 
   -- blackwood
-  [1887] = { -- blackwood_base
+  [1887] = { -- blackwood/blackwood_base_0
     { 0.736023, 0.525641, 6, 7 }, -- Freedom's Price, blackwood_base
     { 0.230263, 0.630419, 19, 6 }, -- Eulogy for Emperor Varen
     { 0.160210, 0.376422, 19, 7 }, -- House Tharn of Nibenay
@@ -3199,6 +3199,8 @@ local lorebooksData = {
     { 0.627011, 0.737126, 20, 7 }, -- Varieties of Faith: The Argonians, blackwood_base
     { 0.533433, 0.187075, 19, 1 }, -- Ayleid Inscriptions Translated, blackwood_base
     { 0.701570, 0.245042, 26, 1 }, -- Varieties of Faith: The Khajiit, blackwood_base
+    { 0.3741942644, 0.1428848952, 29, 4, nil, 1991 }, -- I was Summoned by a Mortal
+    { 0.3741942644, 0.1428848952, 29, 3, nil, 1991 }, -- Chaotic Creatia: The Azure Plasm
     -- in Chapel
     { 0.213265, 0.545964, 10, 8, 4 }, -- Nine Commands of the Eight Divines
     -- non zone guide
@@ -3206,6 +3208,32 @@ local lorebooksData = {
   },
   [1940] = { -- u30_leyawiincity_base
     { 0.253902, 0.455195, 10, 8, 4 }, -- Nine Commands of the Eight Divines
+  },
+  [1991] = { -- blackwood/u30_shattered_vault_1_base_0
+    { 0.450474, 0.607235, 29, 4 }, -- I was Summoned by a Mortal
+    { 0.447890, 0.596899, 29, 3 }, -- Chaotic Creatia: The Azure Plasm
+  },
+
+
+  [2114] = { -- systres/u34_systreszone_base_0
+    { 0.5080, 0.8420, 1, 5 }, --Guide to the Daggerfall Covenant
+    { 0.5280, 0.6990, 9, 7 }, --Triumphs of a Monarch, Ch. 10
+    { 0.5390, 0.5300, 2, 4 }, --The Bretons: Mongrels or Paragons?
+    { 0.3140, 0.4720, 2, 10 }, --Wayrest, Jewel of the Bay
+    { 0.6010, 0.8660, 1, 7 }, --Varieties of Faith: The Bretons
+    { 0.1960, 0.6160, 1, 9 }, --Wyresses: The Name-Daughters
+    { 0.1620, 0.7550, 2, 3 }, --The Knightly Orders of High Rock
+    { 0.6640, 0.2300, 9, 5 }, --Triumphs of a Monarch, Ch. 3
+    { 0.8530, 0.2670, 9, 6 }, --Triumphs of a Monarch, Ch. 6
+    { 0.8550, 0.3370, 18, 5 }, --Flesh to Cut from Bone
+  },
+
+  [2212] = { -- galen/u36_galenisland_base_0
+    { 0.5230, 0.4810, 2, 4 }, --The Bretons: Mongrels or Paragons?
+    { 0.2810, 0.7380, 1, 5 }, --Guide to the Daggerfall Covenant
+    { 0.1170, 0.2750, 9, 6 }, --Triumphs of a Monarch, Ch. 6
+    { 0.5740, 0.1740, 9, 7 }, --Triumphs of a Monarch, Ch. 10
+    { 0.5360, 0.5710, 18, 5 }, --Flesh to Cut from Bone
   },
 
   -- guild maps
@@ -3219,7 +3247,7 @@ local lorebooksData = {
   },
   [600] = { -- chateaumasterbedroom_base
     -- The Trial of Eyevea
-    { 0.422, 0.482, 7, 2 }, -- A Gift of Sanctuary
+    { 0.4159089029, 0.4866060317, 7, 2, }, -- A Gift of Sanctuary
   },
   [106] = { -- circusofcheerfulslaughter_base
     -- The Trial of Eyevea
@@ -3232,14 +3260,6 @@ local lorebooksData = {
   [105] = { -- cheesemongershollow_base
     -- The Trial of Eyevea
     { 0.790, 0.253, 7, 1 }, -- How the Kwama Lost His Shoes
-  },
-  [1991] = { -- blackwood/u30_shattered_vault_1_base_0
-    { 0.450474, 0.607235, 29, 4 }, -- I was Summoned by a Mortal
-    { 0.447890, 0.596899, 29, 3 }, -- Chaotic Creatia: The Azure Plasm
-  },
-  [1887] = { -- blackwood/blackwood_base_0
-    { 0.3741942644, 0.1428848952, 29, 4, nil, 1991 }, -- I was Summoned by a Mortal
-    { 0.3741942644, 0.1428848952, 29, 3, nil, 1991 }, -- Chaotic Creatia: The Azure Plasm
   },
 }
 

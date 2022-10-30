@@ -6,7 +6,7 @@ _G["LoreBooks_Internal"] = internal
 --Local constants -------------------------------------------------------------
 internal.ADDON_NAME = "LoreBooks"
 internal.ADDON_AUTHOR = "Garkin, Ayantir, Kyoma, Sharlikran"
-internal.ADDON_VERSION = "51"
+internal.ADDON_VERSION = "52"
 internal.ADDON_WEBSITE = "http://www.esoui.com/downloads/info288-LoreBooks.html"
 internal.ADDON_PANEL = "LoreBooksPanel"
 internal.SAVEDVARIABLES_VERSION = 3
@@ -102,6 +102,7 @@ internal.icon_list_zoneid = {
   [823] = "/esoui/art/icons/housing_kha_fur_bookcase001.dds", -- goldcoast_base_0
   [816] = "/esoui/art/icons/housing_kha_fur_bookcase001.dds", -- hewsbane_base_0
   [1318] = "/esoui/art/icons/housing_bre_fur_bookcasetall001.dds", -- u34_systreszone_base_0
+  [1383] = "/esoui/art/icons/housing_bre_fur_bookcasetall001.dds", -- u36_galenisland_base_0
   [726] = "/esoui/art/icons/housing_arg_duc_bookcasecombined001.dds", -- murkmire_base_0
   [1086] = "/esoui/art/icons/housing_els_fur_housingmedbookcase001.dds", -- elsweyr_base_0
   [1133] = "/esoui/art/icons/housing_els_run_housingbookshelves001.dds", -- southernelsweyr_base_0
