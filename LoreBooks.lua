@@ -115,17 +115,11 @@ end
 
 -- Pins -----------------------------------------------------------------------
 local function GetPinTextureBookshelf(self)
-  if not self then return internal.icon_list_zoneid[1261] end
-  if not self.m_PinTag and not self.m_PinTag.z then return internal.icon_list_zoneid[1261] end
-  local zoneId = GetParentZoneId(self.m_PinTag.z)
-  if not zoneId then zoneId = 1261 end
-  local texture
-  if internal.icon_list_zoneid[zoneId] then
-    texture = internal.icon_list_zoneid[zoneId]
-  else
-    texture = internal.icon_list_zoneid[1261]
+  local zoneId = 1261
+  if self and self.m_PinTag then
+    if self.m_PinTag.z then zoneId = GetParentZoneId(self.m_PinTag.z) end
   end
-  return texture
+  return internal.icon_list_zoneid[zoneId]
 end
 
 local function GetPinTexture(self)
