@@ -44071,6 +44071,7 @@ local bookData = {
     ["c"] = false,
     ["cn"] = "The Reach Reader",
     ["n"] = "Falkfyr's Notes, Page 2",
+    ["q"] = 6591,
     ["e"] = {
     },
   },
@@ -44078,6 +44079,7 @@ local bookData = {
     ["c"] = false,
     ["cn"] = "The Reach Reader",
     ["n"] = "Falkfyr's Notes, Page 3",
+    ["q"] = 6591,
     ["e"] = {
     },
   },
@@ -44085,6 +44087,7 @@ local bookData = {
     ["c"] = false,
     ["cn"] = "The Reach Reader",
     ["n"] = "Falkfyr's Notes, Page 4",
+    ["q"] = 6591,
     ["e"] = {
     },
   },
@@ -44092,6 +44095,7 @@ local bookData = {
     ["c"] = false,
     ["cn"] = "The Reach Reader",
     ["n"] = "Falkfyr's Notes, Page 5",
+    ["q"] = 6591,
     ["e"] = {
     },
   },
@@ -44099,28 +44103,34 @@ local bookData = {
     ["c"] = false,
     ["cn"] = "The Reach Reader",
     ["n"] = "Falkfyr's Notes, Page 6",
+    ["q"] = 6591,
     ["e"] = {
     },
   },
   [6322] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Reach Reader",
     ["n"] = "Falkfyr's Notes, Page 7",
+    ["q"] = 6591,
     ["e"] = {
+      [1] = { ["px"] = 0.6227399706, ["py"] = 1.5737376054, ["pm"] = 1850, },
     },
   },
   [6323] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Reach Reader",
     ["n"] = "Falkfyr's Complete Report",
+    ["q"] = 6591,
     ["e"] = {
+      [1] = { ["px"] = 0.6228071722, ["py"] = 1.5737744057, ["pm"] = 1850, },
     },
   },
   [6354] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Reach Reader",
     ["n"] = "Scary Tales of the Deep Folk, Book 3",
     ["e"] = {
+      [1] = { ["px"] = 0.6186987698, ["py"] = 1.5631800050, ["pm"] = 1850, },
     },
   },
   [6355] = {
