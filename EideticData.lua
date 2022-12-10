@@ -44751,10 +44751,14 @@ local bookData = {
     },
   },
   [6477] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Phantasmal Discovery Awaits!",
     ["e"] = {
+            [1] = { ["px"] = 0.6200776055, ["py"] = 0.6635000122, ["pm"] = 1887, },
+            [2] = { ["px"] = 0.6206064089, ["py"] = 0.6766008143, ["pm"] = 1887, },
+            [3] = { ["px"] = 0.6245884063, ["py"] = 0.6537496087, ["pm"] = 1887, },
+            [4] = { ["px"] = 0.6290316054, ["py"] = 0.6602548079, ["pm"] = 1887, },
     },
   },
   [4431] = {
@@ -44993,10 +44997,11 @@ local bookData = {
     },
   },
   [6501] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Demands of the Painted Eye",
     ["e"] = {
+      [1] = { ["px"] = 0.5973120085, ["py"] = 0.6462472129, ["pm"] = 1887, },
     },
   },
   [6502] = {
@@ -45014,10 +45019,12 @@ local bookData = {
     },
   },
   [6504] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "The Saga of Captain Wereshark Vol. 3",
+    ["q"] = 6636,
     ["e"] = {
+      [1] = { ["px"] = 0.6646844047, ["py"] = 0.6295372130, ["pm"] = 1887, }, -- post-quest location
     },
   },
   [6505] = {
@@ -45049,10 +45056,11 @@ local bookData = {
     },
   },
   [6509] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "The Order of the Waking Flame",
     ["e"] = {
+      [1] = { ["px"] = 0.6270152045, ["py"] = 0.6889392097, ["pm"] = 1887, },
     },
   },
   [6510] = {
@@ -45145,10 +45153,12 @@ local bookData = {
     },
   },
   [6523] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Sophus's Sealed Scroll",
+    ["q"] = 6615,
     ["e"] = {
+      [1] = { ["px"] = 0.5959000063, ["py"] = 0.6688416107, ["pm"] = 1887, },
     },
   },
   [6524] = {
@@ -45159,17 +45169,23 @@ local bookData = {
     },
   },
   [6525] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Hymn of Zenithar",
+    ["r"] = true,
     ["e"] = {
+      [1] = { ["px"] = 0.6404036077, ["py"] = 0.6327780117, ["pm"] = 1887, },
     },
   },
   [6526] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Adventurers Wanted for Exciting Opportunity!",
     ["e"] = {
+      [1] = { ["px"] = 0.6212168048, ["py"] = 0.6078484137, ["pm"] = 1887, },
+      [2] = { ["px"] = 0.6216972078, ["py"] = 0.6142784123, ["pm"] = 1887, },
+      [3] = { ["px"] = 0.6293320056, ["py"] = 0.6120396131, ["pm"] = 1887, },
+      [4] = { ["px"] = 0.6297736038, ["py"] = 0.6031928129, ["pm"] = 1887, },
     },
   },
   [6527] = {
@@ -45180,10 +45196,11 @@ local bookData = {
     },
   },
   [6528] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Legate Minutes: Concerning Goblins",
     ["e"] = {
+      [1] = { ["px"] = 0.5942616077, ["py"] = 0.6632468104, ["pm"] = 1887, },
     },
   },
   [6529] = {
@@ -45523,24 +45540,27 @@ local bookData = {
     },
   },
   [6581] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "The Feast of Saint Coellicia I",
     ["e"] = {
+      [1] = { ["px"] = 0.6719608013, ["py"] = 0.7215712046, ["pm"] = 1887, },
     },
   },
   [6582] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "The Feast of Saint Coellicia II",
     ["e"] = {
+      [1] = { ["px"] = 0.6456324078, ["py"] = 0.6668820088, ["pm"] = 1887, },
     },
   },
   [6583] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "The Feast of Saint Coellicia III",
     ["e"] = {
+      [1] = { ["px"] = 0.6836188003, ["py"] = 0.7186192039, ["pm"] = 1887, },
     },
   },
   [6584] = {
@@ -45551,10 +45571,11 @@ local bookData = {
     },
   },
   [6585] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "The Feast of Saint Coellicia V",
     ["e"] = {
+      [1] = { ["px"] = 0.5933440071, ["py"] = 0.6554644125, ["pm"] = 1887, },
     },
   },
   [6586] = {
@@ -45649,10 +45670,11 @@ local bookData = {
     },
   },
   [6599] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Imperial Deception Song",
     ["e"] = {
+      [1] = { ["px"] = 0.5970392082, ["py"] = 0.6459620107, ["pm"] = 1887, }, 
     },
   },
   [6600] = {
@@ -46860,10 +46882,12 @@ local bookData = {
     ["cn"] = "Library of Incunabula",
   },
   [6670] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Letter from Farrul Lupus",
+    ["q"] = 6615,
     ["e"] = {
+      [1] = { ["px"] = 0.6087932057, ["py"] = 0.6700972144, ["pm"] = 1887, },
     },
   },
   [6671] = {
@@ -46881,24 +46905,28 @@ local bookData = {
     },
   },
   [6673] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Councilor Abor's Journal",
     ["e"] = {
+      [1] = { ["px"] = 0.6286396046, ["py"] = 0.6879652125, ["pm"] = 1887, },
     },
   },
   [6674] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Leyawiin Shipping Schedule",
+    ["q"] = 6636,
     ["e"] = {
+      [1] = { ["px"] = 0.6785968033, ["py"] = 0.6275088126, ["pm"] = 1887, },
     },
   },
   [6675] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Pirates of Topal Bay",
     ["e"] = {
+      [1] = { ["px"] = 0.6031468065, ["py"] = 0.6938120075, ["pm"] = 1887, },
     },
   },
   [6676] = {
@@ -46909,31 +46937,37 @@ local bookData = {
     },
   },
   [6677] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Salvitto's Invitation",
+    ["q"] = 6619,
     ["e"] = {
+      [1] = { ["px"] = 0.6584808026, ["py"] = 0.6454980128, ["pm"] = 1887, }, -- post-quest location
     },
   },
   [6678] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Unfinished Letter to Pronobius",
     ["e"] = {
+      [1] = { ["px"] = 0.6554688043, ["py"] = 0.6622376091, ["pm"] = 1887, },
     },
   },
   [6679] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Sighs of Blackwood",
+    ["r"] = true,
     ["e"] = {
+      [1] = { ["px"] = 0.6722828017, ["py"] = 0.6944624052, ["pm"] = 1887, },
     },
   },
   [6680] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Tribes of Blackwood: Red-Dream People",
     ["e"] = {
+      [1] = { ["px"] = 0.5892732077, ["py"] = 0.6498752096, ["pm"] = 1887, }
     },
   },
   [6681] = {
@@ -46951,10 +46985,11 @@ local bookData = {
     },
   },
   [6684] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "May Disaster Turn Away",
     ["e"] = {
+      [1] = { ["px"] = 0.6246304046, ["py"] = 0.6609240095, ["pm"] = 1887, },
     },
   },
   [6685] = {
@@ -46973,10 +47008,11 @@ local bookData = {
     },
   },
   [6687] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "The Liberation of Leyawiin",
     ["e"] = {
+      [1] = { ["px"] = 0.6733896084, ["py"] = 0.6572320121, ["pm"] = 1887, },
     },
   },
   [6688] = {
@@ -46994,17 +47030,20 @@ local bookData = {
     },
   },
   [6691] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "The Saga of Captain Wereshark Vol. 2",
+    ["q"] = 6636,
     ["e"] = {
+      [1] = { ["px"] = 0.6646844047, ["py"] = 0.6295372130, ["pm"] = 1887, }, -- post-quest location
     },
   },
   [6692] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "To My Love",
     ["e"] = {
+      [1] = { ["px"] = 0.6489904054, ["py"] = 0.6120660135, ["pm"] = 1887, },
     },
   },
   [6693] = {
@@ -47036,24 +47075,29 @@ local bookData = {
     },
   },
   [6697] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Come One, Come All!",
     ["e"] = {
+      [1] = { ["px"] = 0.6595660041, ["py"] = 0.6210148108, ["pm"] = 1887, },
+      [2] = { ["px"] = 0.6714788042, ["py"] = 0.6251484114, ["pm"] = 1887, },
+      [3] = { ["px"] = 0.6716928090, ["py"] = 0.6377140106, ["pm"] = 1887, },
     },
   },
   [6698] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Letter to Otumi-Ra",
     ["e"] = {
+      [1] = { ["px"] = 0.6712376019, ["py"] = 0.7294520076, ["pm"] = 1887, },
     },
   },
   [6700] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "The Making of Wading-Nests",
     ["e"] = {
+      [1] = { ["px"] = 0.6710696088, ["py"] = 0.7231576045, ["pm"] = 1887, },
     },
   },
   [6701] = {
@@ -47064,29 +47108,29 @@ local bookData = {
     },
   },
   [6702] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Birds of Gloommire",
     ["e"] = {
+       [1] = { ["px"] = 0.6782388044, ["py"] = 0.6557232117, ["pm"] = 1887, },
     },
   },
   [6703] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Gift of the Lilmothiit",
     ["e"] = {
+      [1] = { ["px"] = 0.6475692075, ["py"] = 0.6282240107, ["pm"] = 1887, },
     },
   },
   [6704] = {
-    ["e"] = {
-      [1] = {
-        ["py"] = 0.6798680000,
-        ["px"] = 0.5980160000,
-        ["pm"] = 1940,
-      },
-    },
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "On Welkynd Stones",
+    ["r"] = true,
+    ["e"] = {
+      [1] = { ["px"] = 0.6777084018, ["py"] = 0.6325880110, ["pm"] = 1887, },
+    },
   },
   [6705] = {
     ["c"] = false,
@@ -47212,10 +47256,12 @@ local bookData = {
     },
   },
   [6725] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Legend of Veyond",
+    ["r"] = true,
     ["e"] = {
+      [1] = { ["px"] = 0.5984920066, ["py"] = 0.6706520133, ["pm"] = 1887, },
     },
   },
   [4680] = {
@@ -47336,10 +47382,11 @@ local bookData = {
     },
   },
   [6739] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Brigadine's Journal",
     ["e"] = {
+      [1] = { ["px"] = 0.6881176067, ["py"] = 0.6511984098, ["pm"] = 1887, },
     },
   },
   [6740] = {
@@ -47399,17 +47446,19 @@ local bookData = {
     },
   },
   [6746] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "On the Ivory Brigade",
     ["e"] = {
+      [1] = { ["px"] = 0.5972040078, ["py"] = 0.6597084127, ["pm"] = 1887, },
     },
   },
   [6747] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Sul-Xan Ritual Site",
     ["e"] = {
+      [1] = { ["px"] = 0.6366928063, ["py"] = 0.6541868114, ["pm"] = 1887, },
     },
   },
   [4700] = {
@@ -47459,10 +47508,11 @@ local bookData = {
     ["cn"] = "Clockwork Mnemonix",
   },
   [6752] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "I Need Your Help!",
     ["e"] = {
+      [1] = { ["px"] = 0.6275492080, ["py"] = 0.6762620065, ["pm"] = 1887, },
     },
   },
   [4705] = {
@@ -58037,17 +58087,20 @@ local bookData = {
     },
   },
   [6731] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Glenbridge's Argonian Shrine to Sithis",
+    ["r"] = true,
     ["e"] = {
+      [1] = { ["px"] = 0.6645936037, ["py"] = 0.6994560129, ["pm"] = 1887, },
     },
   },
   [6733] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "An Interview with Countess Caro",
     ["e"] = {
+      [1] = { ["px"] = 0.5959180081, ["py"] = 0.6693504081, ["pm"] = 1887, },
     },
   },
   [4626] = {
@@ -58824,10 +58877,11 @@ local bookData = {
     ["cn"] = "Vvardenfell Volumes",
   },
   [6619] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "A Perfect Drink",
     ["e"] = {
+      [1] = { ["px"] = 0.6713092017, ["py"] = 0.7298352075, ["pm"] = 1887, },
     },
   },
   [6620] = {
@@ -58872,10 +58926,11 @@ local bookData = {
     ["cn"] = "Hearts and Flowers",
   },
   [6734] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Join the Order of the Waking Flame",
     ["e"] = {
+      [1] = { ["px"] = 0.6584360031, ["py"] = 0.6455616112, ["pm"] = 1887, },
     },
   },
   [4702] = {
@@ -58892,10 +58947,11 @@ local bookData = {
     ["cn"] = "Clockwork Mnemonix",
   },
   [6744] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "A Legionary's History of Fort Redmane",
     ["e"] = {
+      [1] = { ["px"] = 0.6122132076, ["py"] = 0.6338856130, ["pm"] = 1887, },
     },
   },
   [6745] = {
@@ -59186,10 +59242,11 @@ local bookData = {
     ["cn"] = "Solitude Soliloquies",
   },
   [6754] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Your Assistance Is Appreciated",
     ["e"] = {
+      [1] = { ["px"] = 0.6274504056, ["py"] = 0.6762736087, ["pm"] = 1887, }, -- need achievement Lost in the Wilds
     },
   },
   [6755] = {
