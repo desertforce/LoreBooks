@@ -44601,59 +44601,68 @@ local bookData = {
     },
   },
   [6450] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Tattered Trader's Log",
     ["e"] = {
+      [1] = { ["px"] = 0.6420439739, ["py"] = 0.6378879946, ["pm"] = 1985, ["zm"] = 1887, ["d"] = true, },
     },
   },
   [6451] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Rebel's Faded Letter",
     ["e"] = {
+      [1] = { ["px"] = 0.6420044250, ["py"] = 0.6377716072, ["pm"] = 1986, ["zm"] = 1887, ["d"] = true, },
     },
   },
   [6452] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Lovingly Written Note",
     ["e"] = {
+      [1] = { ["px"] = 0.6421315999, ["py"] = 0.6379475899, ["pm"] = 1987, ["zm"] = 1887, ["d"] = true, },
     },
   },
   [6453] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Bazaar Directory",
     ["e"] = {
+      [1] = { ["px"] = 0.6421088200, ["py"] = 0.6378960133, ["pm"] = 1988, ["zm"] = 1887, ["d"] = true, },
     },
   },
   [6454] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Ralos's Charred Journal",
     ["e"] = {
+      [1] = { ["px"] = 0.6421924027, ["py"] = 0.6378788043, ["pm"] = 1989, ["zm"] = 1887, ["d"] = true, },
     },
   },
   [6455] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Quentin's Secret Correspondence",
     ["e"] = {
+      [1] = { ["px"] = 0.6422512028, ["py"] = 0.6379572043, ["pm"] = 1989, ["zm"] = 1887, ["d"] = true, },
     },
   },
   [6456] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Esdir's Old Journal",
     ["e"] = {
+      [1] = { ["px"] = 0.6422708028, ["py"] = 0.6379212044, ["pm"] = 1989, ["zm"] = 1887, ["d"] = true, },
     },
   },
   [6457] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Merchant Lords' Compiled Documents",
     ["e"] = {
+      [1] = { ["px"] = 0.6422488219, ["py"] = 0.6378579859, ["pm"] = 2022, ["zm"] = 1887, ["d"] = true, },
+      [2] = { ["px"] = 0.6422488028, ["py"] = 0.6378584043, ["pm"] = 1989, ["fp"] = true, } -- fake pin on main public dungeon map
     },
   },
   [4419] = {
@@ -45005,17 +45014,19 @@ local bookData = {
     },
   },
   [6502] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Tumma-Maxath's Diary",
     ["e"] = {
+       [1] = { ["px"] = 0.6717748006, ["py"] = 0.6156087993, ["pm"] = 1930, ["zm"] = 1887, ["d"] = true, },
     },
   },
   [6503] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Prayer for a Shadowscale",
     ["e"] = {
+      [1] = { ["px"] = 0.6724240005, ["py"] = 0.6147667993, ["pm"] = 1930, ["zm"] = 1887, ["d"] = true, },
     },
   },
   [6504] = {
@@ -45162,10 +45173,11 @@ local bookData = {
     },
   },
   [6524] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "The Last Battle of Phalevon Vero",
     ["e"] = {
+      [1] = { ["px"] = 0.5984440069, ["py"] = 0.6701704095, ["pm"] = 1935, ["zm"] = 1887, ["d"] = true, },
     },
   },
   [6525] = {
@@ -45236,10 +45248,11 @@ local bookData = {
     ["n"] = "Tribes of Blackwood: Riverbacks",
   },
   [6533] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "On Mirrors and Crows",
     ["e"] = {
+      [1] = { ["px"] = 0.6273832200, ["py"] = 0.6273936054, ["pm"] = 1939, ["zm"] = 1887, ["d"] = true, },
     },
   },
   [4492] = {
@@ -45462,10 +45475,11 @@ local bookData = {
     ["cn"] = "Vvardenfell Volumes",
   },
   [6572] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Deet-Loh's Notes: Nereid Curses",
     ["e"] = {
+       [1] = { ["px"] = 0.7082679791, ["py"] = 0.7037296272, ["pm"] = 2062, ["zm"] = 1887, ["d"] = true, },
     },
   },
   [4525] = {
@@ -45483,10 +45497,11 @@ local bookData = {
     ["cn"] = "Houses, Shops, and Trade",
   },
   [6574] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Deet-Loh's Notes: The Frog Witch",
     ["e"] = {
+       [1] = { ["px"] = 0.7080615791, ["py"] = 0.7029036272, ["pm"] = 2062, ["zm"] = 1887, ["d"] = true, },
     },
   },
   [6575] = {
@@ -45699,10 +45714,11 @@ local bookData = {
     },
   },
   [6603] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Foolish Wings",
     ["e"] = {
+       [1] = { ["px"] = 0.6277952201, ["py"] = 0.6279248055, ["pm"] = 1939, ["zm"] = 1887, ["d"] = true, },
     },
   },
   [4556] = {
@@ -47061,10 +47077,11 @@ local bookData = {
     },
   },
   [6695] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Necromancer's Diary",
     ["e"] = {
+      [1] = { ["px"] = 0.6717088005, ["py"] = 0.6155035993, ["pm"] = 1930, ["zm"] = 1887, ["d"] = true, },
     },
   },
   [6696] = {
@@ -47390,10 +47407,11 @@ local bookData = {
     },
   },
   [6740] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Sul-Xan Note",
     ["e"] = {
+      [1] = { ["px"] = 0.6530507999, ["py"] = 0.7120452053, ["pm"] = 1946, ["zm"] = 1887, ["d"] = true, },
     },
   },
   [6741] = {
@@ -52857,10 +52875,11 @@ local bookData = {
     ["cn"] = "Anequina Archives",
   },
   [5427] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Morgane's Guild Orders",
     ["e"] = {
+       [1] = { ["px"] = 0.6906916137, ["py"] = 0.6728516024, ["pm"] = 2057, ["zm"] = 1887, ["d"] = true, },
     },
   },
   [5428] = {
@@ -58730,10 +58749,11 @@ local bookData = {
     },
   },
   [6573] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Deet-Loh's Notes: Frog Songs",
     ["e"] = {
+      [1] = { ["px"] = 0.7089879791, ["py"] = 0.7029160272, ["pm"] = 2062, ["zm"] = 1887, ["d"] = true, },
     },
   },
   [6052] = {
