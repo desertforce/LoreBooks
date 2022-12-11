@@ -61133,6 +61133,14 @@ local bookData = {
     },
     ["c"] = false,
   },
+  [7318] = {
+    ["c"] = true,
+    ["cn"] = "Criminal Correspondence",
+    ["n"] = "Wrongly Incarcerated!",
+    ["e"] = {
+      [1] = { ["px"] = 0.0729452014, ["py"] = 0.5902120030, ["pm"] = 2114, },
+    },
+  },
 }
 
 function LoreBooks_GetBookData()
