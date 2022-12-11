@@ -44012,10 +44012,11 @@ local bookData = {
     ["cn"] = "The Reach Reader",
   },
   [6309] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Western Skyrim Register",
     ["n"] = "An Introduction to Circle Correspondence",
     ["e"] = {
+      [1] = { ["px"] = 0.4356596007, ["py"] = 0.2155080015, ["pm"] = 1773, ["zm"] = 1719, },
     },
   },
   [6310] = {
@@ -57150,15 +57151,7 @@ local bookData = {
   [5932] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["py"] = 0.2148000000,
-        ["px"] = 0.4316900000,
-        ["pm"] = 1719,
-        ["mn"] = 38,
-        ["d"] = false,
-        ["i"] = 12,
-        ["r"] = false,
-      },
+      [1] = { ["px"] = 0.4317140010, ["py"] = 0.2147900017, ["pm"] = 1773, ["zm"] = 1719, },
     },
     ["n"] = "Seeking Brave Souls and Able Bodies",
     ["cn"] = "Solitude Soliloquies",
@@ -59082,10 +59075,12 @@ local bookData = {
     ["cn"] = "Solitude Soliloquies",
   },
   [6076] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Western Skyrim Register",
     ["n"] = "Claudina's Notes",
+    ["q"] = 6471,
     ["e"] = {
+      [1] = { ["px"] = 0.6579848181, ["py"] = 1.5646712362, ["pm"] = 1747, }, -- post-quest location
     },
   },
   [6077] = {
