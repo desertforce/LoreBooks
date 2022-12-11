@@ -44554,10 +44554,12 @@ local bookData = {
     },
   },
   [6445] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Councilor Jirich's Records",
+    ["q"] = 6615,
     ["e"] = {
+      [1] = { ["px"] = 0.6045240050, ["py"] = 0.6792100073, ["pm"] = 1940, ["zm"] = 1887 },
     },
   },
   [6446] = {
@@ -45104,17 +45106,21 @@ local bookData = {
     },
   },
   [6516] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Preserve the Secret",
+    ["q"] = 6616,
     ["e"] = {
+      [1] = { ["px"] = 0.6505944204, ["py"] = 0.6142875977, ["pm"] = 1937, ["zm"] = 1887, ["d"] = true, },
     },
   },
   [6517] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Disastrix Zansora's Journal",
+    ["q"] = 6616,
     ["e"] = {
+      [1] = { ["px"] = 0.6506100203, ["py"] = 0.6143103977, ["pm"] = 1937, ["zm"] = 1887, ["d"] = true, },
     },
   },
   [6518] = {
@@ -45143,10 +45149,11 @@ local bookData = {
     ["cn"] = "Daedric Cults",
   },
   [6519] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Work for Hire in Leyawiin",
     ["e"] = {
+      [1] = { ["px"] = 0.5987764048, ["py"] = 0.6787104076, ["pm"] = 1940, ["zm"] = 1887 },
     },
   },
   [6520] = {
@@ -45157,10 +45164,12 @@ local bookData = {
     },
   },
   [6522] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Xynaa's Book of Contracts",
+    ["q"] = 6617,
     ["e"] = {
+      [1] = { ["px"] = 0.6577620288, ["py"] = 0.6754496199, ["pm"] = 2018, ["zm"] = 1887 }, -- post-quest lcoation
     },
   },
   [6523] = {
@@ -45201,10 +45210,11 @@ local bookData = {
     },
   },
   [6527] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "On Marsh Giants: A Study",
     ["e"] = {
+      [1] = { ["px"] = 0.6691424046, ["py"] = 0.6300916095, ["pm"] = 1887, },
     },
   },
   [6528] = {
@@ -45216,36 +45226,37 @@ local bookData = {
     },
   },
   [6529] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Wines of Blackwood",
+    ["r"] = true,
     ["e"] = {
+      [1] = { ["px"] = 0.6018304049, ["py"] = 0.6778572077, ["pm"] = 1940, ["zm"] = 1887, },
     },
   },
   [6530] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Homesteads in the Black Marsh",
     ["e"] = {
+      [1] = { ["px"] = 0.6100724053, ["py"] = 0.6815080076, ["pm"] = 1940, ["zm"] = 1887, },
     },
   },
   [6531] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Tribes of Blackwood: Gideon and the Border",
     ["e"] = {
+      [1] = { ["px"] = 0.6599172291, ["py"] = 0.6750300197, ["pm"] = 2018, ["zm"] = 1887, },
     },
   },
   [6532] = {
-    ["e"] = {
-      [1] = {
-        ["py"] = 0.6821360000,
-        ["px"] = 0.5994550000,
-        ["pm"] = 1940,
-      },
-    },
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Tribes of Blackwood: Riverbacks",
+    ["e"] = {
+      [1] = { ["px"] = 0.5920660088, ["py"] = 0.6654884108, ["pm"] = 1887, },
+    },
   },
   [6533] = {
     ["c"] = true,
@@ -45548,10 +45559,11 @@ local bookData = {
     },
   },
   [6580] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Chimes of Silver",
     ["e"] = {
+      [1] = { ["px"] = 0.6556032287, ["py"] = 0.6766056195, ["pm"] = 2018, ["zm"] = 1887, },
     },
   },
   [6581] = {
@@ -45579,10 +45591,11 @@ local bookData = {
     },
   },
   [6584] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "The Feast of Saint Coellicia IV",
     ["e"] = {
+      [1] = { ["px"] = 0.6553232008, ["py"] = 0.6635532103, ["pm"] = 1887, },
     },
   },
   [6585] = {
@@ -45636,17 +45649,20 @@ local bookData = {
     },
   },
   [6592] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Happy Averno Shipping Company Sign",
     ["e"] = {
+      [1] = { ["px"] = 0.6017844050, ["py"] = 0.6776528075, ["pm"] = 1940, ["zm"] = 1887 },
     },
   },
   [6593] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Adder's Ransom Note",
+    ["q"] = 6658,
     ["e"] = {
+      [1] = { ["px"] = 0.6016504047, ["py"] = 0.6776640074, ["pm"] = 1940, ["zm"] = 1887 },
     },
   },
   [6594] = {
@@ -45657,10 +45673,12 @@ local bookData = {
     },
   },
   [6595] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Ledger of Souls",
+    ["q"] = 6661,
     ["e"] = {
+      [1] = { ["px"] = 0.6571256289, ["py"] = 0.6759664201, ["pm"] = 2018, ["zm"] = 1887 },
     },
   },
   [6596] = {
@@ -45678,10 +45696,11 @@ local bookData = {
     },
   },
   [6598] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Tales of Black Marsh",
     ["e"] = {
+      [1] = { ["px"] = 0.5994964049, ["py"] = 0.6819904076, ["pm"] = 1940, ["zm"] = 1887 },
     },
   },
   [6599] = {
@@ -45693,17 +45712,19 @@ local bookData = {
     },
   },
   [6600] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Countess Caro's Birthday",
     ["e"] = {
+      [1] = { ["px"] = 0.6094240049, ["py"] = 0.6819652080, ["pm"] = 1940, ["zm"] = 1887 },
     },
   },
   [6601] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Terror of the Death Hopper",
     ["e"] = {
+      [1] = { ["px"] = 0.6160336142, ["py"] = 0.7011795722, ["pm"] = 1984, ["zm"] = 1887, ["d"] = true, },
     },
   },
   [6602] = {
@@ -46946,10 +46967,12 @@ local bookData = {
     },
   },
   [6676] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Destron's Journal",
+    ["q"] = 6630,
     ["e"] = {
+      [1] = { ["px"] = 0.6577120290, ["py"] = 0.6759728195, ["pm"] = 2018, ["zm"] = 1887 }, -- post-quest location
     },
   },
   [6677] = {
@@ -46987,10 +47010,11 @@ local bookData = {
     },
   },
   [6681] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Leovic's Great Spirits Proclamation",
     ["e"] = {
+      [1] = { ["px"] = 0.6606676057, ["py"] = 0.6483588102, ["pm"] = 1887, },
     },
   },
   [6682] = {
@@ -47017,10 +47041,11 @@ local bookData = {
     },
   },
   [6686] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Across the Niben Bar",
     ["e"] = {
+      [1] = { ["px"] = 0.6059628051, ["py"] = 0.6849324080, ["pm"] = 1940, ["zm"] = 1887},
     },
   },
   [6687] = {
@@ -47085,10 +47110,11 @@ local bookData = {
     },
   },
   [6696] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Letter to Darene",
     ["e"] = {
+      [1] = { ["px"] = 0.5988888048, ["py"] = 0.6780400074, ["pm"] = 1940, ["zm"] = 1887 },
     },
   },
   [6697] = {
@@ -47157,29 +47183,28 @@ local bookData = {
     },
   },
   [6706] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Trans-Niben Delicacies",
     ["e"] = {
+      [1] = { ["px"] = 0.6260512052, ["py"] = 0.6878880102, ["pm"] = 1887, },
     },
   },
   [6707] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Before the Gates of Gideon",
     ["e"] = {
+      [1] = { ["px"] = 0.6160332142, ["py"] = 0.7012351721, ["pm"] = 1984, ["zm"] = 1887, ["d"] = true, },
     },
   },
   [6708] = {
-    ["e"] = {
-      [1] = {
-        ["py"] = 0.6796980000,
-        ["px"] = 0.5980240000,
-        ["pm"] = 1940,
-      },
-    },
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "How Hackwing Got Her Tail",
+    ["e"] = {
+      [1] = { ["px"] = 0.6638207960, ["py"] = 0.7263648230, ["pm"] = 2016, ["zm"] = 1887, ["d"] = true, }, 
+    },
   },
   [6709] = {
     ["c"] = false,
@@ -47378,10 +47403,11 @@ local bookData = {
     ["cn"] = "Clockwork Mnemonix",
   },
   [6735] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "On the Chamber of Legates",
     ["e"] = {
+      [1] = { ["px"] = 0.6072492048, ["py"] = 0.6771008074, ["pm"] = 1940, ["zm"] = 1887 },
     },
   },
   [6737] = {
@@ -47506,10 +47532,11 @@ local bookData = {
     ["cn"] = "Clockwork Mnemonix",
   },
   [6750] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Traveler's Guide to Leyawiin",
     ["e"] = {
+      [1] = { ["px"] = 0.5999104048, ["py"] = 0.6764092075, ["pm"] = 1940, ["zm"] = 1887, },
     },
   },
   [4703] = {
@@ -58548,6 +58575,7 @@ local bookData = {
         ["i"] = 12,
         ["r"] = false,
       },
+      [4] = { ["px"] = 0.6037016051, ["py"] = 0.6816448079, ["pm"] = 1940, },
     },
     ["n"] = "Calling All Antiquarians!",
     ["cn"] = "Western Skyrim Register",
@@ -59205,10 +59233,11 @@ local bookData = {
     },
   },
   [6753] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Traveler's Guide to Gideon",
     ["e"] = {
+      [1] = { ["px"] = 0.6558144287, ["py"] = 0.6763692199, ["pm"] = 2018, ["zm"] = 1887, },
     },
   },
   [6084] = {
@@ -60004,10 +60033,12 @@ local bookData = {
     },
   },
   [6928] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Eveli's Speech Ideas",
+    ["q"] = 6693,
     ["e"] = {
+      [1] = { ["px"] = 0.6088208047, ["py"] = 0.6812880072, ["pm"] = 1940, ["zm"] = 1887, },
     },
   },
   [6929] = {
