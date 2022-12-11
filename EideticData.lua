@@ -43845,17 +43845,20 @@ local bookData = {
     ["cn"] = "The Reach Reader",
   },
   [6257] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Reach Reader",
     ["n"] = "Master Pythis's Journal",
+    ["q"] = 6575,
     ["e"] = {
+      [1] = { ["px"] = 0.3963591947, ["py"] = 0.3190340024, ["pm"] = 1892, ["zx"] = 0.3972876081, ["zy"] = 0.3073783948, ["zm"] = 1814, ["d"] = true, },
     },
   },
   [6258] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Reach Reader",
     ["n"] = "A Promise and a Warning",
     ["e"] = {
+      [1] = { ["px"] = 0.6314679724, ["py"] = 1.5965352058, ["pm"] = 1850, },
     },
   },
   [6259] = {
@@ -43969,10 +43972,11 @@ local bookData = {
     },
   },
   [6275] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Reach Reader",
     ["n"] = "In the Deep Tombs",
     ["e"] = {
+      [1] = { ["px"] = 0.3749147940, ["py"] = 0.3004303955, ["pm"] = 1926, ["zm"] = 1814, ["d"] = true, },
     },
   },
   [6276] = {
@@ -44226,22 +44230,7 @@ local bookData = {
     ["n"] = "Red Eagle's Song",
     ["r"] = true,
     ["e"] = {
-      [1] = {
-        ["py"] = 0.3004700000,
-        ["px"] = 0.3743500000,
-        ["pm"] = 1925,
-        ["d"] = true,
-        ["r"] = true,
-        ["i"] = 12,
-      },
-      [2] = {
-        ["py"] = 0.3006100000,
-        ["px"] = 0.3752200000,
-        ["pm"] = 1926,
-        ["d"] = true,
-        ["r"] = true,
-        ["i"] = 12,
-      },
+      [1] = { ["px"] = 0.3772472081, ["py"] = 0.2842383964, ["pm"] = 1814, },
     },
     ["m"] = {
       [42] = 2,
@@ -44264,17 +44253,19 @@ local bookData = {
     ["cn"] = "The Reach Reader",
   },
   [6363] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Reach Reader",
     ["n"] = "Hail to the Ancient Spirits",
     ["e"] = {
+      [1] = { ["px"] = 0.3804848069, ["py"] = 0.2666599968, ["pm"] = 1814, },
     },
   },
   [6364] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Reach Reader",
     ["n"] = "We Rise to Fight Again",
     ["e"] = {
+      [1] = { ["px"] = 0.3754348021, ["py"] = 0.2863947956, ["pm"] = 1814, },
     },
   },
   [6365] = {
@@ -44372,10 +44363,11 @@ local bookData = {
     ["cn"] = "The Reach Reader",
   },
   [6386] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Reach Reader",
     ["n"] = "Reach Bedtime Stories",
     ["e"] = {
+      [1] = { ["px"] = 0.3437904009, ["py"] = 0.2856807960, ["pm"] = 1858, ["zm"] = 1814, },
     },
   },
   [6387] = {
@@ -44399,22 +44391,7 @@ local bookData = {
     ["n"] = "The Translated Works of Tosmorn, IV",
     ["r"] = true,
     ["e"] = {
-      [1] = {
-        ["d"] = true,
-        ["i"] = 12,
-        ["py"] = 1.5531600000,
-        ["r"] = true,
-        ["px"] = 0.5748200000,
-        ["pm"] = 1857,
-      },
-      [2] = {
-        ["d"] = true,
-        ["i"] = 12,
-        ["py"] = 1.5548300000,
-        ["r"] = true,
-        ["px"] = 0.5767900000,
-        ["pm"] = 1857,
-      },
+      [1] = { ["px"] = 0.3812032034, ["py"] = 0.2802763976, ["pm"] = 1814, },
     },
     ["m"] = {
       [41] = 2,
@@ -44447,10 +44424,11 @@ local bookData = {
     },
   },
   [6392] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Reach Reader",
     ["n"] = "Living on the Karth River",
     ["e"] = {
+      [1] = { ["px"] = 0.3539592046, ["py"] = 0.2895815958, ["pm"] = 1814, },
     },
   },
   [6393] = {
@@ -44459,15 +44437,8 @@ local bookData = {
     ["n"] = "Legend of Arkthzand",
     ["r"] = true,
     ["e"] = {
-      [1] = {
-        ["py"] = 0.2872100000,
-        ["px"] = 0.3427800000,
-        ["pm"] = 1858,
-        ["mn"] = 42,
-        ["d"] = false,
-        ["r"] = true,
-        ["i"] = 12,
-      },
+      [1] = { ["px"] = 0.3392403968, ["py"] = 0.2875647961, ["pm"] = 1888, ["zm"] = 1814, ["d"] = true, },
+      [2] = { ["px"] = 0.3392404011, ["py"] = 0.2875647964, ["pm"] = 1858, ["fp"] = true, }, -- additional pin on city map
     },
     ["m"] = {
       [42] = 1,
@@ -44479,14 +44450,7 @@ local bookData = {
     ["n"] = "Werewolves: Long-Suffering Guardians",
     ["r"] = true,
     ["e"] = {
-      [1] = {
-        ["py"] = 0.3006000000,
-        ["px"] = 0.3752200000,
-        ["pm"] = 1926,
-        ["d"] = true,
-        ["r"] = true,
-        ["i"] = 12,
-      },
+      [1] = { ["px"] = 0.4086552041, ["py"] = 0.3137151955, ["pm"] = 1814, },
     },
     ["m"] = {
       [42] = 1,
@@ -44514,14 +44478,7 @@ local bookData = {
     ["n"] = "Great Spirits of the Reach: Volume 1",
     ["r"] = true,
     ["e"] = {
-      [1] = {
-        ["py"] = 0.3004700000,
-        ["px"] = 0.3743500000,
-        ["pm"] = 1925,
-        ["d"] = true,
-        ["r"] = true,
-        ["i"] = 12,
-      },
+      [1] = { ["px"] = 0.3540864044, ["py"] = 0.2482779976, ["pm"] = 1814, },
     },
     ["m"] = {
       [42] = 1,
@@ -44533,24 +44490,18 @@ local bookData = {
     ["n"] = "Investigator Vale in the Reach",
     ["r"] = true,
     ["e"] = {
-      [1] = {
-        ["d"] = true,
-        ["i"] = 12,
-        ["py"] = 1.5531700000,
-        ["r"] = true,
-        ["px"] = 0.5748100000,
-        ["pm"] = 1857,
-      },
+      [1] = { ["px"] = 0.3793396059, ["py"] = 0.2708223982, ["pm"] = 1814, },
     },
     ["m"] = {
       [41] = 1,
     },
   },
   [6399] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Reach Reader",
     ["n"] = "Vlindrel Hall Bill of Lading",
     ["e"] = {
+      [1] = { ["px"] = 0.3445404014, ["py"] = 0.2830007961, ["pm"] = 1858, ["zm"] = 1814, },
     },
   },
   [6445] = {
@@ -44748,17 +44699,19 @@ local bookData = {
     ["cn"] = "Vvardenfell Volumes",
   },
   [6475] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Reach Reader",
     ["n"] = "Great Spirits of the Reach: Volume 4",
     ["e"] = {
+      [1] = { ["px"] = 0.3756060077, ["py"] = 0.2708727971, ["pm"] = 1814, },
     },
   },
   [6476] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Reach Reader",
     ["n"] = "Great Spirits of the Reach: Volume 5",
     ["e"] = {
+      [1] = { ["px"] = 0.3731948058, ["py"] = 0.2754299972, ["pm"] = 1814, },
     },
   },
   [6477] = {
@@ -44980,10 +44933,11 @@ local bookData = {
     },
   },
   [6496] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Reach Reader",
     ["n"] = "The Gray Host: A History Part 2",
     ["e"] = {
+      [1] = { ["px"] = 0.3869832050, ["py"] = 0.3043371942, ["pm"] = 1814, },
     },
   },
   [6497] = {
@@ -56861,14 +56815,7 @@ local bookData = {
     ["n"] = "Drinks of the Reach",
     ["r"] = true,
     ["e"] = {
-      [1] = {
-        ["d"] = true,
-        ["i"] = 12,
-        ["py"] = 1.5531600000,
-        ["r"] = true,
-        ["px"] = 0.5746700000,
-        ["pm"] = 1857,
-      },
+      [1] = { ["px"] = 0.3445132009, ["py"] = 0.2852079960, ["pm"] = 1858, },
     },
     ["m"] = {
       [41] = 1,
@@ -56891,10 +56838,11 @@ local bookData = {
     ["cn"] = "Solitude Soliloquies",
   },
   [5909] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Reach Reader",
     ["n"] = "On the Clans of the Reach",
     ["e"] = {
+      [1] = { ["px"] = 0.3783480068, ["py"] = 0.2659959968, ["pm"] = 1814, },
     },
   },
   [5910] = {
@@ -57599,17 +57547,19 @@ local bookData = {
     },
   },
   [5962] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Reach Reader",
     ["n"] = "Wilderness Survival Tips",
     ["e"] = {
+      [1] = { ["px"] = 0.3866540068, ["py"] = 0.2666007961, ["pm"] = 1814, },
     },
   },
   [5963] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Reach Reader",
     ["n"] = "Nord Child's Journal",
     ["e"] = {
+      [1] = { ["px"] = 0.3762812082, ["py"] = 0.2606591972, ["pm"] = 1814, },
     },
   },
   [5964] = {
@@ -57629,10 +57579,11 @@ local bookData = {
     ["cn"] = "The Reach Reader",
   },
   [5965] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Reach Reader",
     ["n"] = "A Reach Travel Guide",
     ["e"] = {
+      [1] = { ["px"] = 0.3897796075, ["py"] = 0.2918379964, ["pm"] = 1814, },
     },
   },
   [5966] = {
@@ -57824,10 +57775,11 @@ local bookData = {
     ["cn"] = "Vvardenfell Volumes",
   },
   [6474] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Reach Reader",
     ["n"] = "Great Spirits of the Reach: Volume 3",
     ["e"] = {
+      [1] = { ["px"] = 0.4150960074, ["py"] = 0.3167287981, ["pm"] = 1814, },
     },
   },
   [6842] = {
@@ -58238,10 +58190,11 @@ local bookData = {
     },
   },
   [6013] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Reach Reader",
     ["n"] = "Report on the Despot of Markarth",
     ["e"] = {
+      [1] = { ["px"] = 0.3495216008, ["py"] = 0.2852235962, ["pm"] = 1858, ["zm"] = 1814, },
     },
   },
   [6014] = {
@@ -58733,10 +58686,11 @@ local bookData = {
     ["cn"] = "Western Skyrim Register",
   },
   [6047] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Reach Reader",
     ["n"] = "The Translated Works of Tosmorn, III",
     ["e"] = {
+      [1] = { ["px"] = 0.4006320080, ["py"] = 0.3010723971, ["pm"] = 1814, },
     },
   },
   [6048] = {
@@ -58929,7 +58883,7 @@ local bookData = {
     ["cn"] = "Books of Blackwood",
     ["n"] = "A Perfect Drink",
     ["e"] = {
-      [1] = { ["px"] = 0.6713092017, ["py"] = 0.7298352075, ["pm"] = 1887, },
+      [1] = { ["px"] = 0.6713092017, ["py"] = 0.7298352075, ["pm"] = 1887, ["zm"] = 1814, },
     },
   },
   [6620] = {
