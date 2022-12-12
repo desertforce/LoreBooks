@@ -45008,10 +45008,11 @@ local bookData = {
     },
   },
   [6511] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Path of the Ironclad",
     ["e"] = {
+      [1] = { ["px"] = 1.0098651697, ["py"] = 0.7560079792, ["pm"] = 2122, ["zm"] = 2021, ["d"] = true, },
     },
   },
   [6512] = {
@@ -45439,17 +45440,19 @@ local bookData = {
     },
   },
   [6575] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Dremora Never Die",
     ["e"] = {
+      [1] = { ["px"] = 0.8577840077, ["py"] = 1.0160280249, ["pm"] = 2035, },
     },
   },
   [6576] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "The Stricture and the Grasp",
     ["e"] = {
+      [1] = { ["px"] = 0.8631312083, ["py"] = 1.0260812243, ["pm"] = 2035, },
     },
   },
   [6577] = {
@@ -45530,38 +45533,43 @@ local bookData = {
     },
   },
   [6586] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "A Supplicant's Song",
     ["e"] = {
+      [1] = { ["px"] = 1.1322468259, ["py"] = 0.7081708152, ["pm"] = 2021, },
     },
   },
   [6587] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "On Valkynaz Nokvroz",
     ["e"] = {
+      [1] = { ["px"] = 0.8525064082, ["py"] = 1.0259608242, ["pm"] = 2035, },
     },
   },
   [6588] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "The Fool of Fargrave",
     ["e"] = {
+      [1] = { ["px"] = 0.9127344078, ["py"] = 0.9711128264, ["pm"] = 2035, },
     },
   },
   [6589] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "When the Spires Fell",
     ["e"] = {
+      [1] = { ["px"] = 1.1152064255, ["py"] = 0.7579120214, ["pm"] = 2021, },
     },
   },
   [6590] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Minwileth's Diary",
     ["e"] = {
+      [1] = { ["px"] = 1.1281964267, ["py"] = 0.7187084185, ["pm"] = 2021, },
     },
   },
   [6591] = {
@@ -45589,10 +45597,11 @@ local bookData = {
     },
   },
   [6594] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "A Guide to the Deadlands",
     ["e"] = {
+     [1] = { ["px"] = 0.8772128069, ["py"] = 1.0351196246, ["pm"] = 2035, },
     },
   },
   [6595] = {
@@ -47130,10 +47139,11 @@ local bookData = {
     },
   },
   [6709] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "On Dremora Clans",
     ["e"] = {
+     [1] = { ["px"] = 0.8782048012, ["py"] = 1.0280571776, ["pm"] = 2136, ["zm"] = 2035, ["d"] = true, },
     },
   },
   [6710] = {
@@ -47214,10 +47224,11 @@ local bookData = {
     },
   },
   [6724] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Prayer of Fourfold Wrath",
     ["e"] = {
+      [1] = { ["px"] = 1.0069816035, ["py"] = 0.7616335838, ["pm"] = 2106, ["zm"] = 2021, ["d"] = true, },
     },
   },
   [6725] = {
@@ -47334,17 +47345,19 @@ local bookData = {
     },
   },
   [6737] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Fargrave Happenings",
     ["e"] = {
+      [1] = { ["px"] = 0.8868632083, ["py"] = 1.0292604248, ["pm"] = 2035, },
     },
   },
   [6738] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Surviving the Shambles",
     ["e"] = {
+      [1] = { ["px"] = 0.9034524300, ["py"] = 1.0110575987, ["pm"] = 2082, },
     },
   },
   [6739] = {
@@ -47364,17 +47377,19 @@ local bookData = {
     },
   },
   [6741] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Intoxicants of the Shambles",
     ["e"] = {
+      [1] = { ["px"] = 0.9050168299, ["py"] = 0.9653647987, ["pm"] = 2082, },
     },
   },
   [6742] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Dagonists Through the Ages",
     ["e"] = {
+      [1] = { ["px"] = 1.0073104035, ["py"] = 0.7629095838, ["pm"] = 2106, ["zm"] = 2021, ["d"] = true, },
     },
   },
   [6743] = {
@@ -47622,10 +47637,12 @@ local bookData = {
     ["cn"] = "Clockwork Mnemonix",
   },
   [6764] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "A Constant Hunger",
+    ["q"] = 6705,
     ["e"] = {
+      [1] = { ["px"] = 1.0658895501, ["py"] = 0.7312999739, ["pm"] = 2084, ["zm"] = 2021, ["d"] = true, },
     },
   },
   [4717] = {
@@ -47642,24 +47659,29 @@ local bookData = {
     ["cn"] = "Summerset Scrolls",
   },
   [6766] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Note from Valkynaz Nokvroz",
+    ["q"] = 6705,
     ["e"] = {
+      [1] = { ["px"] = 1.0662003502, ["py"] = 0.7325731739, ["pm"] = 2084, ["zm"] = 2021, ["d"] = true, },
     },
   },
   [6767] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Pact with Khajiiti Mortal Zajukki",
     ["e"] = {
+      [1] = { ["px"] = 1.0657579502, ["py"] = 0.7320967739, ["pm"] = 2084, ["zm"] = 2021, ["d"] = true, },
     },
   },
   [6768] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Vow of Consumption",
+    ["q"] = 6705,
     ["e"] = {
+      [1] = { ["px"] = 1.0658419501, ["py"] = 0.7321175739, ["pm"] = 2084, ["zm"] = 2021, ["d"] = true, },
     },
   },
   [4721] = {
@@ -47727,10 +47749,11 @@ local bookData = {
     ["cn"] = "Clockwork Mnemonix",
   },
   [6773] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Rites of the Hunt",
     ["e"] = {
+      [1] = { ["px"] = 1.0658551501, ["py"] = 0.7319999739, ["pm"] = 2084, ["zm"] = 2021, ["d"] = true, },
     },
   },
   [4726] = {
@@ -47749,17 +47772,20 @@ local bookData = {
     ["cn"] = "Rituals and Revelations",
   },
   [6775] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Work for Hire in Fargrave",
     ["e"] = {
+     [1] = { ["px"] = 0.8655204064, ["py"] = 1.0265052256, ["pm"] = 2035, },
     },
   },
   [6776] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Blood Pit Prisoner Roll",
+    ["q"] = 6707,
     ["e"] = {
+      [1] = { ["px"] = 1.0387300303, ["py"] = 0.7911312179, ["pm"] = 2021, },
     },
   },
   [6777] = {
@@ -47826,17 +47852,19 @@ local bookData = {
     },
   },
   [6838] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Visitor's Guide to Fargrave",
     ["e"] = {
+      [1] = { ["px"] = 0.8535960071, ["py"] = 1.0299668249, ["pm"] = 2035, },
     },
   },
   [6839] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Epics of Mehrunes Dagon, Volume 1",
     ["e"] = {
+      [1] = { ["px"] = 1.0491608313, ["py"] = 0.7680528204, ["pm"] = 2021, },
     },
   },
   [4792] = {
@@ -47966,10 +47994,11 @@ local bookData = {
     ["cn"] = "Clockwork Mnemonix",
   },
   [6850] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Devastator Ursana's Letter",
     ["e"] = {
+      [1] = { ["px"] = 1.1104176263, ["py"] = 0.6872368159, ["pm"] = 2021, },
     },
   },
   [6851] = {
@@ -47980,17 +48009,19 @@ local bookData = {
     },
   },
   [6852] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Epics of Mehrunes Dagon, Volume 2",
     ["e"] = {
+      [1] = { ["px"] = 1.1537328232, ["py"] = 0.7493716172, ["pm"] = 2021, },
     },
   },
   [6853] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "On Proper Whip Procedures",
     ["e"] = {
+      [1] = { ["px"] = 1.0083824034, ["py"] = 0.7610435837, ["pm"] = 2106, ["zm"] = 2021, ["d"] = true, },
     },
   },
   [4806] = {
@@ -48721,10 +48752,11 @@ local bookData = {
     },
   },
   [6900] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Fargrave's Song",
     ["e"] = {
+      [1] = { ["px"] = 0.8623544070, ["py"] = 1.0172360257, ["pm"] = 2035, },
     },
   },
   [4853] = {
@@ -48934,45 +48966,51 @@ local bookData = {
     },
   },
   [6918] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Food of the Deadlands",
     ["e"] = {
+      [1] = { ["px"] = 1.0749536282, ["py"] = 0.7307600163, ["pm"] = 2021, },
     },
   },
   [6919] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "The First Gleaner",
     ["e"] = {
+      [1] = { ["px"] = 0.8593828256, ["py"] = 1.0351228037, ["pm"] = 2099, ["zm"] = 2035, ["d"] = true, },
     },
   },
   [6920] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "On the True Nature of Daedra",
     ["e"] = {
+      [1] = { ["px"] = 1.1037340285, ["py"] = 0.7179416164, ["pm"] = 2021, },
     },
   },
   [6921] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "On Inferniums",
     ["e"] = {
+      [1] = { ["px"] = 1.0349000308, ["py"] = 0.7635840152, ["pm"] = 2021, },
     },
   },
   [6922] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Head Overseer's Orders",
     ["e"] = {
+      [1] = { ["px"] = 1.0250780293, ["py"] = 0.7777800112, ["pm"] = 2021, },
     },
   },
   [6923] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Torn Journal Page",
     ["e"] = {
+      [1] = { ["px"] = 1.1386148315, ["py"] = 0.7149928142, ["pm"] = 2021, },
     },
   },
   [4876] = {
@@ -48997,10 +49035,11 @@ local bookData = {
     },
   },
   [6926] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "The Legend of Deadlight",
     ["e"] = {
+      [1] = { ["px"] = 1.0387424265, ["py"] = 0.7843836190, ["pm"] = 2021, },
     },
   },
   [4879] = {
@@ -49044,17 +49083,19 @@ local bookData = {
     },
   },
   [6930] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Brugurikh's Journal",
     ["e"] = {
+       [1] = { ["px"] = 1.1599292458, ["py"] = 0.7086828259, ["pm"] = 2089, ["zm"] = 2021, ["d"] = true, },
     },
   },
   [6931] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "The Tenets of Destruction",
     ["e"] = {
+      [1] = { ["px"] = 1.0560392273, ["py"] = 0.7675944138, ["pm"] = 2021, },
     },
   },
   [4884] = {
@@ -49645,38 +49686,45 @@ local bookData = {
     },
   },
   [7004] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Journal of Scamp Naal",
     ["e"] = {
+      [1] = { ["px"] = 1.1605104458, ["py"] = 0.7089652258, ["pm"] = 2089, ["zm"] = 2021, ["d"] = true, },
     },
   },
   [7006] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Dremora Stories About Mortals",
     ["e"] = {
+      [1] = { ["px"] = 1.1119528261, ["py"] = 0.7560600185, ["pm"] = 2021, },
     },
   },
   [7014] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Mairead's Diary, Entry 3",
+    ["q"] = 6696,
     ["e"] = {
+      [1] = { ["px"] = 0.8646536079, ["py"] = 1.0271496248, ["pm"] = 2035, }, -- post-quest location
     },
   },
   [7015] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Mairead's Diary, Entry 346",
+    ["q"] = 6696,
     ["e"] = {
+      [1] = { ["px"] = 0.8647260084, ["py"] = 1.0271532244, ["pm"] = 2035, }, -- post-quest location
     },
   },
   [7016] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Mairead's Diary, Entry 712",
     ["e"] = {
+      [1] = { ["px"] = 0.8647260084, ["py"] = 1.0271532244, ["pm"] = 2035, }, -- post-quest location
     },
   },
   [4975] = {
@@ -49980,10 +50028,11 @@ local bookData = {
     },
   },
   [7049] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Flora and Fauna of the Sever",
     ["e"] = {
+      [1] = { ["px"] = 1.1204768284, ["py"] = 0.7508964180, ["pm"] = 2021, },
     },
   },
   [5007] = {
@@ -57709,10 +57758,12 @@ local bookData = {
     ["cn"] = "Solitude Soliloquies",
   },
   [6848] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Report from Markynaz Oyx",
+    ["q"] = 6705,
     ["e"] = {
+      [1] = { ["px"] = 1.0621484562, ["py"] = 0.7392596228, ["pm"] = 2083, },
     },
   },
   [5985] = {
@@ -57969,10 +58020,11 @@ local bookData = {
     ["cn"] = "Library of Incunabula",
   },
   [7048] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "The Bearers of Fargrave",
     ["e"] = {
+      [1] = { ["px"] = 0.8637660080, ["py"] = 1.0398376243, ["pm"] = 2035, },
     },
   },
   [6731] = {
@@ -58147,10 +58199,11 @@ local bookData = {
     },
   },
   [6942] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Gangs of the Shambles",
     ["e"] = {
+      [1] = { ["px"] = 0.8712760068, ["py"] = 1.0211856254, ["pm"] = 2035, },
     },
   },
   [4695] = {
@@ -58167,10 +58220,11 @@ local bookData = {
     ["cn"] = "Clockwork Mnemonix",
   },
   [7047] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Secret History of the Longhouse Emperors",
     ["e"] = {
+      [1] = { ["px"] = 1.0088875696, ["py"] = 0.7558527792, ["pm"] = 2107, ["zm"] = 2021, ["d"] = true, },
     },
   },
   [4550] = {
@@ -58539,10 +58593,11 @@ local bookData = {
     ["cn"] = "Western Skyrim Register",
   },
   [6943] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "A Vision of the Twin Citadels",
     ["e"] = {
+      [1] = { ["px"] = 1.0681664303, ["py"] = 0.7942752143, ["pm"] = 2021, },
     },
   },
   [6045] = {
@@ -58712,10 +58767,11 @@ local bookData = {
     ["cn"] = "Solitude Soliloquies",
   },
   [6937] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Visitor's Guide to the Shambles",
     ["e"] = {
+      [1] = { ["px"] = 0.8831016074, ["py"] = 1.0125416257, ["pm"] = 2035, },
     },
   },
   [4535] = {
@@ -58862,10 +58918,11 @@ local bookData = {
     },
   },
   [6749] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Audiences with the Longhouse Emperors",
     ["e"] = {
+      [1] = { ["px"] = 1.0138368299, ["py"] = 0.7856252128, ["pm"] = 2021, },
     },
   },
   [6071] = {
@@ -59188,10 +59245,11 @@ local bookData = {
     },
   },
   [6772] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "On Mortal Song",
     ["e"] = {
+      [1] = { ["px"] = 1.0658959502, ["py"] = 0.7320019739, ["pm"] = 2084, ["zm"] = 2021, ["d"] = true, },
     },
   },
   [7097] = {
@@ -59795,10 +59853,12 @@ local bookData = {
     ["cn"] = "Solitude Soliloquies",
   },
   [6868] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Warden's Orders for the Day",
+    ["q"] = 6707,
     ["e"] = {
+      [1] = { ["px"] = 1.0385532296, ["py"] = 0.7912216183, ["pm"] = 2021, },
     },
   },
   [4725] = {
@@ -59859,17 +59919,19 @@ local bookData = {
     },
   },
   [6924] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Note for Khazasha",
     ["e"] = {
+      [1] = { ["px"] = 1.0519980276, ["py"] = 0.7615968134, ["pm"] = 2021, },
     },
   },
   [6927] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Letter of Complaint",
     ["e"] = {
+      [1] = { ["px"] = 1.0097051696, ["py"] = 0.7566759792, ["pm"] = 2122, ["zm"] = 2021, ["d"] = true, },
     },
   },
   [6928] = {
@@ -59882,17 +59944,19 @@ local bookData = {
     },
   },
   [6929] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Lessons on Lucents",
     ["e"] = {
+      [1] = { ["px"] = 0.8580000255, ["py"] = 1.0364104038, ["pm"] = 2099, ["zm"] = 2035, ["d"] = true, },
     },
   },
   [7046] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Notes on the Visitor's Guide to the Shambles",
     ["e"] = {
+      [1] = { ["px"] = 0.8942744284, ["py"] = 0.9799671997, ["pm"] = 2082, },
     },
   },
   [6758] = {
