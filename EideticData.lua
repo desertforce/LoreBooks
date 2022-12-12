@@ -5681,6 +5681,7 @@ local bookData = {
         ["py"] = 0.3254200000,
         ["d"] = true,
         ["pm"] = 168,
+        ["zm"] = 61,
       },
     },
     ["n"] = "The Stormcrag Family Crypt",
