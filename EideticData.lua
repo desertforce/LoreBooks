@@ -11467,6 +11467,7 @@ local bookData = {
         ["py"] = 0.3097700000,
         ["d"] = true,
         ["pm"] = 253,
+        ["zx"] = 0.1358675993, ["zy"] = 0.3165424029, ["zm"] = 1,
       },
     },
     ["n"] = "Journal of Magiul Shiana",
