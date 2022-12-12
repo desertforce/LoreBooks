@@ -3633,6 +3633,7 @@ local bookData = {
         ["py"] = 0.5855600000,
         ["d"] = true,
         ["pm"] = 146,
+        ["zx"] = 0.7934847928, ["zy"] = 0.5852967896, ["zm"] = 26,
       },
     },
     ["n"] = "The Holy Wamasu: Care and Feeding",
