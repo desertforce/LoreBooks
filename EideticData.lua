@@ -44023,6 +44023,7 @@ local bookData = {
         ["py"] = 0.7423600000,
         ["px"] = 0.2270000000,
         ["pm"] = 243,
+        ["zm"] = 143,
         ["mn"] = 15,
         ["d"] = false,
         ["r"] = false,
@@ -47859,10 +47860,11 @@ local bookData = {
     },
   },
   [6777] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Devoted and the Deranged",
     ["n"] = "Museum Guild Letter",
     ["e"] = {
+      [1] = { ["px"] = 0.2386784018, ["py"] = 0.7451124214, ["pm"] = 243, ["zm"] = 143, },
     },
   },
   [6778] = {
