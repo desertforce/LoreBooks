@@ -5667,6 +5667,7 @@ local bookData = {
         ["py"] = 0.3106900000,
         ["d"] = true,
         ["pm"] = 166,
+        ["zm"] = 61,
       },
     },
     ["n"] = "Last Will and Testament",
