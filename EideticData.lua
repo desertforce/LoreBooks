@@ -3591,6 +3591,7 @@ local bookData = {
         ["py"] = 0.5590700000,
         ["d"] = true,
         ["pm"] = 155,
+        ["zm"] = 26,
       },
     },
     ["n"] = "Stonefire Ritual Tome",
