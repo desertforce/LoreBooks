@@ -3390,6 +3390,7 @@ local bookData = {
         ["py"] = 0.4604700000,
         ["d"] = true,
         ["pm"] = 110,
+        ["zx"] = 0.7024251951, ["zy"] = 0.4601096005, ["zm"] = 7,
       },
     },
     ["n"] = "General Conele's Orders",
