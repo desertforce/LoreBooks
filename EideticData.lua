@@ -3585,6 +3585,7 @@ local bookData = {
         ["py"] = 0.6095500000,
         ["d"] = true,
         ["pm"] = 148,
+        ["zx"] = 0.7219671922, ["zy"] = 0.6093463906, ["zm"] = 26,
       },
     },
     ["n"] = "Argonian Journal Pages",
