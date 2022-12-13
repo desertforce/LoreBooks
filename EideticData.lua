@@ -3551,6 +3551,7 @@ local bookData = {
         ["py"] = 0.5349000000,
         ["d"] = true,
         ["pm"] = 149,
+        ["zx"] = 0.7262719910, ["zy"] = 0.5341483934, ["zm"] = 26,
       },
     },
     ["n"] = "A Free Argonian's Manifesto",
