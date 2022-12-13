@@ -42749,6 +42749,7 @@ local bookData = {
         ["py"] = 0.3118100000,
         ["d"] = true,
         ["pm"] = 1157,
+        ["zx"] = 0.7252892229, ["zy"] = 0.3110492054, ["zm"] = 1060,
       },
     },
     ["n"] = "Blood-Soaked Letter",
@@ -42889,6 +42890,7 @@ local bookData = {
         ["py"] = 0.3120000000,
         ["d"] = true,
         ["pm"] = 1157,
+        ["zx"] = 0.7252892229, ["zy"] = 0.3110492054, ["zm"] = 1060,
       },
     },
     ["n"] = "A One-Time Offer",
@@ -42967,9 +42969,10 @@ local bookData = {
         ["py"] = 0.3111100000,
         ["d"] = true,
         ["pm"] = 1157,
+        ["zx"] = 0.7252892229, ["zy"] = 0.3110492054, ["zm"] = 1060,
       },
     },
-    ["n"] = "My Dearest Love",
+    ["n"] = "My Dearest Love", -- Letter to Deem-Jei
     ["cn"] = "Hearts and Flowers",
   },
   [4116] = {
