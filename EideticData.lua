@@ -3376,6 +3376,7 @@ local bookData = {
         ["py"] = 0.4651600000,
         ["d"] = true,
         ["pm"] = 114,
+        ["zx"] = 0.7441335890, ["zy"] = 0.4651560003, ["zm"] = 7,
       },
     },
     ["n"] = "Burnt, Mostly Illegible Scrap",
