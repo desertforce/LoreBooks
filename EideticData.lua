@@ -60472,11 +60472,16 @@ local bookData = {
     ["c"] = false,
   },
   [7029] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Master Healer Viralaine's Notes",
+    ["q"] = 6772,
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0600659996, ["py"] = 0.5976196064, ["pm"] = 2221, ["d"] = true,
+        ["zx"] = 0.0587364026, ["zy"] = 0.5984180035, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
   },
   [7030] = {
     ["cn"] = "Systres Tomes and Scrolls",
