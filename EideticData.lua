@@ -43857,10 +43857,14 @@ local bookData = {
     ["cn"] = "Library of Incunabula",
   },
   [6267] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Library of Incunabula",
     ["n"] = "Final Will and Testament of Fovus Rivul",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.7028816207, ["py"] = 0.5128944120, ["pm"] = 2042, ["d"] = true,
+        ["zx"] = 0.7102587997, ["zy"] = 0.5125804198, ["zm"] = 13,
+      },
     },
   },
   [6268] = {
@@ -43873,6 +43877,10 @@ local bookData = {
         ["d"] = true,
         ["r"] = false,
         ["i"] = 12,
+      },
+      [2] = {
+        ["px"] = 0.7045116207, ["py"] = 0.5123916120, ["pm"] = 2042, ["d"] = true,
+        ["zx"] = 0.7102587997, ["zy"] = 0.5125804198, ["zm"] = 13,
       },
     },
     ["n"] = "Hidden Diary",
@@ -43888,6 +43896,10 @@ local bookData = {
         ["d"] = true,
         ["r"] = false,
         ["i"] = 12,
+      },
+      [2] = {
+        ["px"] = 0.7030692208, ["py"] = 0.5125668121, ["pm"] = 2042, ["d"] = true,
+        ["zx"] = 0.7102587997, ["zy"] = 0.5125804198, ["zm"] = 13,
       },
     },
     ["n"] = "Operations Report: West Narsis Mining Concern",
