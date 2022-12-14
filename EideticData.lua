@@ -44969,17 +44969,21 @@ local bookData = {
     },
   },
   [6506] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Letter to Matus Amnis",
+    ["q"] = 6619,
     ["e"] = {
+      [1] = { ["px"] = 0.6567284287, ["py"] = 0.6777360195, ["pm"] = 2018, ["zm"] = 1887, },
     },
   },
   [6507] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Invitation Cover Letter",
+    ["q"] = 6619,
     ["e"] = {
+      [1] = { ["px"] = 0.6565520290, ["py"] = 0.6777560196, ["pm"] = 2018, ["zm"] = 1887, },
     },
   },
   [6508] = {
@@ -45490,10 +45494,12 @@ local bookData = {
     ["cn"] = "Daedric Cults",
   },
   [6579] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Author's Assistant Wanted!",
+    ["q"] = 6634,
     ["e"] = {
+      [1] = { ["px"] = 0.6596696286, ["py"] = 0.6740780197, ["pm"] = 2018, ["zm"] = 1887, },
     },
   },
   [6580] = {
