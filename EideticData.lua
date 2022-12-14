@@ -58344,10 +58344,14 @@ local bookData = {
     },
   },
   [6861] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Library of Incunabula",
     ["n"] = "Find the Lodestones!",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.2198516024, ["py"] = 0.2369047997, ["pm"] = 2120, ["d"] = true,
+        ["zx"] = 0.2099292006, ["zy"] = 0.2348336019, ["zm"] = 10,
+      },
     },
   },
   [4691] = {
@@ -59490,10 +59494,14 @@ local bookData = {
     ["cn"] = "The Reach Reader",
   },
   [6862] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Library of Incunabula",
     ["n"] = "My Dear Vanessa",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.2194828023, ["py"] = 0.2361875997, ["pm"] = 2120, ["d"] = true,
+        ["zx"] = 0.2099292006, ["zy"] = 0.2348336019, ["zm"] = 10,
+      },
     },
   },
   [6110] = {
@@ -59747,10 +59755,14 @@ local bookData = {
     ["cn"] = "Western Skyrim Register",
   },
   [6863] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Library of Incunabula",
     ["n"] = "Letter of Execution",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.2187384024, ["py"] = 0.2365995997, ["pm"] = 2120, ["d"] = true,
+        ["zx"] = 0.2099292006, ["zy"] = 0.2348336019, ["zm"] = 10,
+      },
     },
   },
   [6122] = {
@@ -59832,10 +59844,14 @@ local bookData = {
     ["cn"] = "Solitude Soliloquies",
   },
   [6864] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Library of Incunabula",
     ["n"] = "Report on the Dock Crash",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.2198084024, ["py"] = 0.2369279997, ["pm"] = 2120, ["d"] = true,
+        ["zx"] = 0.2099292006, ["zy"] = 0.2348336019, ["zm"] = 10,
+      },
     },
   },
   [6128] = {
