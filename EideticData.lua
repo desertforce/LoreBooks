@@ -60676,11 +60676,12 @@ local bookData = {
     ["c"] = false,
   },
   [7039] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Fleet Queen's Orders",
     ["e"] = {
+      [1] = { ["px"] = 0.0102952004, ["py"] = 0.5787592111, ["pm"] = 2181, ["zx"] = 0.0533936021, ["zy"] = 0.5811676021, ["zm"] = 2114, ["d"] = true, },
     },
-    ["c"] = false,
   },
   [7296] = {
     ["cn"] = "Tomes of Tributes",
@@ -61020,11 +61021,12 @@ local bookData = {
     ["c"] = false,
   },
   [7042] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Prepare Some Entertainment",
     ["e"] = {
+      [1] = { ["px"] = 0.0113395998, ["py"] = 0.5834999948, ["pm"] = 2166, ["zx"] = 0.0533936021, ["zy"] = 0.5811676021, ["zm"] = 2114, ["d"] = true, },
     },
-    ["c"] = false,
   },
   [7252] = {
     ["cn"] = "Tomes of Tributes",
@@ -61132,18 +61134,20 @@ local bookData = {
     ["c"] = false,
   },
   [7040] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Sorti's Shanties in Progress",
     ["e"] = {
+      [1] = { ["px"] = 0.0113903999, ["py"] = 0.5834071948, ["pm"] = 2166, ["zx"] = 0.0533936021, ["zy"] = 0.5811676021, ["zm"] = 2114, ["d"] = true, },
     },
-    ["c"] = false,
   },
   [7041] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Quit Overfeeding the Maw",
     ["e"] = {
+      [1] = { ["px"] = 0.0115308003, ["py"] = 0.5784736112, ["pm"] = 2181, ["zx"] = 0.0533936021, ["zy"] = 0.5811676021, ["zm"] = 2114, ["d"] = true, }, 
     },
-    ["c"] = false,
   },
   [7157] = {
     ["cn"] = "Systres Tomes and Scrolls",
