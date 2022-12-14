@@ -60360,11 +60360,16 @@ local bookData = {
     ["c"] = false,
   },
   [6969] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Knight Richel's Orders",
+    ["q"] = 6753,
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0598784010, ["py"] = 0.6066248070, ["pm"] = 2130, ["d"] = true,
+        ["zx"] = 0.0597760025, ["zy"] = 0.6067328012, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
   },
   [6970] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -61206,11 +61211,15 @@ local bookData = {
     ["c"] = false,
   },
   [7280] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Hadolid Researcher's Journal",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0599800010, ["py"] = 0.6063484070, ["pm"] = 2130, ["d"] = true,
+        ["zx"] = 0.0597760025, ["zy"] = 0.6067328012, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
   },
   [7281] = {
     ["cn"] = "Systres Tomes and Scrolls",
