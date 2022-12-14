@@ -60353,46 +60353,73 @@ local bookData = {
     ["c"] = false,
   },
   [7007] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "The Trial of Perseverance",
+    ["q"] = 6767,
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0602539985, ["py"] = 0.5861940030, ["pm"] = 2159, ["d"] = true,
+        ["zx"] = 0.0613384014, ["zy"] = 0.5849744015, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
   },
   [7264] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Captain Tsuzo's Log",
+    ["q"] = 6754,
     ["e"] = {
+      [1] = { ["px"] = 0.0663555973, ["py"] = 0.5807015899, ["pm"] = 2131, ["d"] = true, },
     },
-    ["c"] = false,
   },
   [7009] = {
+    ["c"] = true,
     ["cn"] = "Diaries and Logs",
     ["n"] = "Voyage of the Seajoy, Day Five",
+    ["q"] = 6767,
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0606703985, ["py"] = 0.5861960030, ["pm"] = 2159, ["d"] = true,
+        ["zx"] = 0.0613384014, ["zy"] = 0.5849744015, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
   },
   [7010] = {
+    ["c"] = true,
     ["cn"] = "Diaries and Logs",
     ["n"] = "Voyage of the Seajoy, Day Seven",
+    ["q"] = 6767,
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0606067985, ["py"] = 0.5861676030, ["pm"] = 2159, ["d"] = true,
+        ["zx"] = 0.0613384014, ["zy"] = 0.5849744015, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
   },
   [7011] = {
+    ["c"] = true,
     ["cn"] = "Diaries and Logs",
     ["n"] = "Voyage of the Seajoy, Day Eight",
+    ["q"] = 6767,
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0606067985, ["py"] = 0.5860948030, ["pm"] = 2159, ["d"] = true,
+        ["zx"] = 0.0613384014, ["zy"] = 0.5849744015, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
   },
   [7012] = {
+    ["c"] = true,
     ["cn"] = "Diaries and Logs",
     ["n"] = "Voyage of the Seajoy, Day Fourteen",
+    ["q"] = 6767,
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0606707985, ["py"] = 0.5861668030, ["pm"] = 2159, ["d"] = true,
+        ["zx"] = 0.0613384014, ["zy"] = 0.5849744015, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
   },
   [7013] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -60423,11 +60450,16 @@ local bookData = {
     ["c"] = false,
   },
   [7019] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "The Trial of Wits",
+    ["q"] = 6767,
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0606395985, ["py"] = 0.5860488030, ["pm"] = 2159, ["d"] = true,
+        ["zx"] = 0.0613384014, ["zy"] = 0.5849744015, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
   },
   [7021] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -60437,11 +60469,16 @@ local bookData = {
     ["c"] = false,
   },
   [7022] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "The Trial of Constitution",
+    ["q"] = 6767,
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0606392004, ["py"] = 0.5856716088, ["pm"] = 2217, ["d"] = true,
+        ["zx"] = 0.0613384014, ["zy"] = 0.5849744015, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
   },
   [7024] = {
     ["cn"] = "Systres Tomes and Scrolls",
