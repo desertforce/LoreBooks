@@ -53843,11 +53843,11 @@ local bookData = {
         ["py"] = 0.6641700000,
         ["d"] = true,
         ["pm"] = 1626,
+        ["zx"] = 0.5468095930, ["zy"] = 0.6632748134, ["zm"] = 1555,
       },
     },
     ["n"] = "The Ruddy Fangs",
     ["cn"] = "Anequina Archives",
-    ["r"] = true,
   },
   [5590] = {
     ["c"] = true,
