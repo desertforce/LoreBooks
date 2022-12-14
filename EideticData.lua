@@ -59982,18 +59982,28 @@ local bookData = {
     },
   },
   [7172] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Mad Baron Densil, Part the Second",
+    ["q"] = 6760,
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0518031997, ["py"] = 0.5991539875, ["pm"] = 2219, ["d"] = true,
+        ["zx"] = 0.0519460016, ["zy"] = 0.5990540036, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
   },
   [7173] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Mad Baron Densil, Part the Third",
+    ["q"] = 6760,
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0518475997, ["py"] = 0.5991415875, ["pm"] = 2219, ["d"] = true,
+        ["zx"] = 0.0519460016, ["zy"] = 0.5990540036, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
   },
   [7174] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -60129,11 +60139,16 @@ local bookData = {
     ["c"] = false,
   },
   [6947] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "The Battle of Meadow Fort",
+    ["q"] = 6760,
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0518587997, ["py"] = 0.5991515875, ["pm"] = 2219, ["d"] = true,
+        ["zx"] = 0.0519460016, ["zy"] = 0.5990540036, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
   },
   [6948] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -60178,11 +60193,15 @@ local bookData = {
     ["c"] = false,
   },
   [7210] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Note to Nilsmon Booklover",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0518639997, ["py"] = 0.5992931875, ["pm"] = 2219, ["d"] = true,
+        ["zx"] = 0.0519460016, ["zy"] = 0.5990540036, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
   },
   [7211] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -60599,11 +60618,16 @@ local bookData = {
     ["c"] = false,
   },
   [7143] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Mad Baron Densil, Part the First",
+    ["q"] = 6760,
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0518315997, ["py"] = 0.5991275875, ["pm"] = 2219, ["d"] = true,
+        ["zx"] = 0.0519460016, ["zy"] = 0.5990540036, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
   },
   [7105] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -60683,11 +60707,15 @@ local bookData = {
     ["c"] = false,
   },
   [7116] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "A History of Shipbuilding, Vol. 1 of 27",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0518379997, ["py"] = 0.5991531875, ["pm"] = 2219, ["d"] = true,
+        ["zx"] = 0.0519460016, ["zy"] = 0.5990540036, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
   },
   [7117] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -60725,11 +60753,17 @@ local bookData = {
     ["c"] = false,
   },
   [7122] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Fair and Fresh Upon the Lea",
+    ["q"] = 6753,
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0513172003, ["py"] = 0.5986976046, ["pm"] = 2172, ["d"] = true,
+        ["zx"] = 0.0519376017, ["zy"] = 0.5989264028, ["zm"] = 2114,
+      },
+      [2] = { ["px"] = 0.0517472016, ["py"] = 0.6002128014, ["pm"] = 2114, },
     },
-    ["c"] = false,
   },
   [7123] = {
     ["cn"] = "Systres Tomes and Scrolls",
