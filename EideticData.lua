@@ -47125,52 +47125,81 @@ local bookData = {
     },
   },
   [6710] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Library of Incunabula",
     ["n"] = "Artifact Record: Groundsplitters",
     ["e"] = {
+      [1] = { 
+        ["px"] = 0.1431228050, ["py"] = 0.3108656043, ["pm"] = 2045, ["d"] = true,
+        ["zx"] = 0.1392043987, ["zy"] = 0.3088380025, ["zm"] = 1,
+      },
     },
   },
   [6711] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Library of Incunabula",
     ["n"] = "Artifact Record: Opal Charm",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.1429456050, ["py"] = 0.3106748043, ["pm"] = 2045,
+        ["zx"] = 0.1392043987, ["zy"] = 0.3088380025, ["zm"] = 1,
+        ["d"] = true,
+      },
     },
   },
   [6712] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Library of Incunabula",
     ["n"] = "Artifact Record: Duplici Gladio",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.1426040050, ["py"] = 0.3107652044, ["pm"] = 2045,
+        ["zx"] = 0.1392043987, ["zy"] = 0.3088380025, ["zm"] = 1,
+        ["d"] = true, },
     },
   },
   [6713] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Library of Incunabula",
     ["n"] = "Bartholomew's Task",
     ["e"] = {
+      [1] = { 
+        ["px"] = 0.1445672067, ["py"] = 0.3107563940, ["pm"] = 2044, ["d"] = true,
+        ["zx"] = 0.1392043987, ["zy"] = 0.3088380025, ["zm"] = 1,
+      },
     },
   },
   [6714] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Library of Incunabula",
     ["n"] = "Bartholomew's Theory",
     ["e"] = {
+      [1] = { 
+        ["px"] = 0.1434244050, ["py"] = 0.3107808043, ["pm"] = 2045, ["d"] = true,
+        ["zx"] = 0.1392043987, ["zy"] = 0.3088380025, ["zm"] = 1,
+      },
     },
   },
   [6715] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Library of Incunabula",
     ["n"] = "Bartholomew's Discovery",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.1434175965, ["py"] = 0.3108767974, ["pm"] = 2097, ["d"] = true,
+        ["zx"] = 0.1392043987, ["zy"] = 0.3088380025, ["zm"] = 1,
+      },
     },
   },
   [6716] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Library of Incunabula",
     ["n"] = "We Can't Leave",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.1444688067, ["py"] = 0.3108423940, ["pm"] = 2044, ["d"] = true,
+        ["zx"] = 0.1392043987, ["zy"] = 0.3088380025, ["zm"] = 1,
+      },
     },
   },
   [6717] = {
