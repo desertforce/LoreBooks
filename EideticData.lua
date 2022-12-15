@@ -44419,8 +44419,12 @@ local bookData = {
     ["n"] = "Legend of Arkthzand",
     ["r"] = true,
     ["e"] = {
-      [1] = { ["px"] = 0.3392403968, ["py"] = 0.2875647961, ["pm"] = 1888, ["zm"] = 1814, ["d"] = true, },
-      [2] = { ["px"] = 0.3392404011, ["py"] = 0.2875647964, ["pm"] = 1858, ["fp"] = true, }, -- additional pin on city map
+      [1] = {
+        ["px"] = 0.3392403968, ["py"] = 0.2875647961, ["pm"] = 1888,
+        ["zx"] = 0.3403076011, ["zy"] = 0.2865647960, ["zm"] = 1858,
+        ["d"] = true,
+      },
+      [2] = { ["px"] = 0.3403076011, ["py"] = 0.2865647960, ["pm"] = 1858, ["pm"] = 1814, ["fp"] = true, }, -- additional pin on main map
     },
     ["m"] = {
       [42] = 1,
@@ -57641,7 +57645,9 @@ local bookData = {
         ["d"] = true,
         ["r"] = false,
         ["i"] = 12,
+        ["zx"] = 0.3403076011, ["zy"] = 0.2865647960, ["zm"] = 1858,
       },
+      [2] = { ["px"] = 0.3403076011, ["py"] = 0.2865647960, ["pm"] = 1858, ["pm"] = 1814, ["fp"] = true, }, -- additional pin on main map
     },
     ["n"] = "Politics of the Reach",
     ["cn"] = "The Reach Reader",
