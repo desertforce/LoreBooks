@@ -43827,10 +43827,14 @@ local bookData = {
     },
   },
   [6260] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Library of Incunabula",
     ["n"] = "High Chancellor's Papers: The Tagh Droiloch",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.3411507884, ["py"] = 0.5458876126, ["pm"] = 1875, ["d"] = true,
+        ["zx"] = 0.3511060128, ["zy"] = 0.5474352126, ["zm"] = 1006,
+      },
     },
   },
   [6261] = {
@@ -43843,6 +43847,7 @@ local bookData = {
         ["d"] = true,
         ["r"] = false,
         ["i"] = 12,
+        ["zx"] = 0.3511060128, ["zy"] = 0.5474352126, ["zm"] = 1006,
       },
     },
     ["n"] = "Imperial Decree Regarding the Elder Council",
@@ -43858,6 +43863,7 @@ local bookData = {
         ["d"] = true,
         ["i"] = 12,
         ["r"] = false,
+        ["zx"] = 0.3511060128, ["zy"] = 0.5474352126, ["zm"] = 1006,
       },
     },
     ["n"] = "The Crowned Dragon",
