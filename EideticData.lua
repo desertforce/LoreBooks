@@ -60196,11 +60196,13 @@ local bookData = {
     ["c"] = false,
   },
   [6932] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Knight Ondrisse's Orders",
+    ["q"] = 6752,
     ["e"] = {
+      [1] = { ["px"] = 0.0671288021, ["py"] = 0.5974976016, ["pm"] = 2114, },
     },
-    ["c"] = false,
   },
   [6933] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -60271,11 +60273,13 @@ local bookData = {
     },
   },
   [6948] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Letter to Dockmaster Arnauld",
+    ["q"] = 6753,
     ["e"] = {
+      [1] = { ["px"] = 0.0662624024, ["py"] = 0.6054952021, ["pm"] = 2114, },
     },
-    ["c"] = false,
   },
   [6949] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -60338,11 +60342,12 @@ local bookData = {
     ["c"] = false,
   },
   [7213] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Page from Mender's Journal",
     ["e"] = {
+      [1] = { ["px"] = 0.0587308022, ["py"] = 0.5983564029, ["pm"] = 2114, },
     },
-    ["c"] = false,
   },
   [7214] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -60359,11 +60364,12 @@ local bookData = {
     ["c"] = false,
   },
   [7216] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Systres History: Volume 7",
     ["e"] = {
+      [1] = { ["px"] = 0.0740604008, ["py"] = 0.5811956014, ["pm"] = 2114, },
     },
-    ["c"] = false,
   },
   [7219] = {
     ["cn"] = "Tomes of Tributes",
@@ -60373,11 +60379,13 @@ local bookData = {
     ["c"] = false,
   },
   [6966] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Courier Grenier's Note",
+    ["q"] = 6753,
     ["e"] = {
+      [1] = { ["px"] = 0.0595756017, ["py"] = 0.6041560023, ["pm"] = 2114, },
     },
-    ["c"] = false,
   },
   [6969] = {
     ["c"] = true,
@@ -60615,11 +60623,13 @@ local bookData = {
     ["c"] = false,
   },
   [7025] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Mender Roslenn's Journal",
+    ["q"] = 6772,
     ["e"] = {
+      [1] = { ["px"] = 0.0617468014, ["py"] = 0.5981252032, ["pm"] = 2114, },
     },
-    ["c"] = false,
   },
   [7026] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -60629,11 +60639,13 @@ local bookData = {
     ["c"] = false,
   },
   [7027] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Dreadsails Communique",
+    ["q"] = 6773,
     ["e"] = {
+      [1] = { ["px"] = 0.0763292025, ["py"] = 0.5753404020, ["pm"] = 2114, },
     },
-    ["c"] = false,
   },
   [7029] = {
     ["c"] = true,
@@ -60690,11 +60702,13 @@ local bookData = {
     ["c"] = false,
   },
   [7036] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Healer Jenille's Note",
+    ["q"] = 6776,
     ["e"] = {
+      [1] = { ["px"] = 0.0619752016, ["py"] = 0.5986504025, ["pm"] = 2114, },
     },
-    ["c"] = false,
   },
   [7038] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -60768,18 +60782,22 @@ local bookData = {
     ["c"] = false,
   },
   [7101] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Balki's Instructions",
+    ["q"] = 6792,
     ["e"] = {
+      [1] = { ["px"] = 0.0634508015, ["py"] = 0.6029440024, ["pm"] = 2114, },
     },
-    ["c"] = false,
   },
   [7102] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Ferone's Instructions",
+    ["q"] = 6793,
     ["e"] = {
+      [1] = { ["px"] = 0.0536080019, ["py"] = 0.5904032023, ["pm"] = 2114, },
     },
-    ["c"] = false,
   },
   [7103] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -60857,11 +60875,12 @@ local bookData = {
     ["c"] = false,
   },
   [7113] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "The Society of the Steadfast",
     ["e"] = {
+      [1] = { ["px"] = 0.0619276014, ["py"] = 0.5987352035, ["pm"] = 2114, },
     },
-    ["c"] = false,
   },
   [7114] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -60951,25 +60970,28 @@ local bookData = {
     ["c"] = false,
   },
   [7204] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Systres History: Volume 4",
     ["e"] = {
+      [1] = { ["px"] = 0.0653668025, ["py"] = 0.5916424015, ["pm"] = 2114, },
     },
-    ["c"] = false,
   },
   [7126] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "A Hunter's Journey VI: Fauns",
     ["e"] = {
+      [1] = { ["px"] = 0.0691048008, ["py"] = 0.5966884014, ["pm"] = 2114, },
     },
-    ["c"] = false,
   },
   [7203] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Systres History: Volume 3",
     ["e"] = {
+      [1] = { ["px"] = 0.0606980016, ["py"] = 0.6060320030, ["pm"] = 2114, },
     },
-    ["c"] = false,
   },
   [7202] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -60993,11 +61015,13 @@ local bookData = {
     ["c"] = false,
   },
   [7200] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Lighthouse Orders",
+    ["q"] = 6752,
     ["e"] = {
+      [1] = { ["px"] = 0.0626664018, ["py"] = 0.6069092015, ["pm"] = 2114, },
     },
-    ["c"] = false,
   },
   [7132] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -61242,18 +61266,20 @@ local bookData = {
     },
   },
   [7281] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Visitor's Guide to Y'ffre's Cauldron",
     ["e"] = {
+      [1] = { ["px"] = 0.0635180025, ["py"] = 0.6005328009, ["pm"] = 2114, },
     },
-    ["c"] = false,
   },
   [7294] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "The Secret Origins of Tribute",
     ["e"] = {
+      [1] = { ["px"] = 0.0728160034, ["py"] = 0.5904348013, ["pm"] = 2114, },
     },
-    ["c"] = false,
   },
   [7295] = {
     ["cn"] = "Tomes of Tributes",
