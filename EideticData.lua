@@ -43777,10 +43777,14 @@ local bookData = {
     },
   },
   [6253] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Research Notes",
     ["n"] = "The Vitalizer Fluid Must Flow",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.6438836032, ["py"] = 1.5178692431, ["pm"] = 1786, ["d"] = true,
+        ["zx"] = 0.6462408183, ["zy"] = 1.5204704369, ["zm"] = 1747,
+      },
     },
   },
   [6254] = {
@@ -57693,17 +57697,25 @@ local bookData = {
     ["cn"] = "Solitude Soliloquies",
   },
   [5953] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Research Notes",
     ["n"] = "Stone Husk Dissection Log",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.6439284031, ["py"] = 1.5183548431, ["pm"] = 1786, ["d"] = true,
+        ["zx"] = 0.6462408183, ["zy"] = 1.5204704369, ["zm"] = 1747,
+      },
     },
   },
   [5954] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Research Notes",
     ["n"] = "Specimen Enhancement Log Four",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.6458784094, ["py"] = 1.5184547564, ["pm"] = 1787, ["d"] = true,
+        ["zx"] = 0.6462408183, ["zy"] = 1.5204704369, ["zm"] = 1747,
+      },
     },
   },
   [4540] = {
@@ -57721,10 +57733,14 @@ local bookData = {
     ["cn"] = "Vvardenfell Volumes",
   },
   [5956] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Research Notes",
     ["n"] = "Regarding Our Guests",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.6442140031, ["py"] = 1.5176408431, ["pm"] = 1786, ["d"] = true,
+        ["zx"] = 0.6462408183, ["zy"] = 1.5204704369, ["zm"] = 1747,
+      },
     },
   },
   [4541] = {
@@ -59948,24 +59964,37 @@ local bookData = {
     ["cn"] = "Solitude Soliloquies",
   },
   [6116] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Research Notes",
     ["n"] = "Scribbled Notes, Stone Garden",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.6441028032, ["py"] = 1.5179016431, ["pm"] = 1786, ["d"] = true,
+        ["zx"] = 0.6462408183, ["zy"] = 1.5204704369, ["zm"] = 1747,
+      },
     },
   },
   [6117] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Notes and Memos",
     ["n"] = "Confused Correspondence from Fjurig",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.6461420094, ["py"] = 1.5182051564, ["pm"] = 1787,
+        ["zx"] = 0.6462408183, ["zy"] = 1.5204704369, ["zm"] = 1747,
+        ["d"] = true,
+      },
     },
   },
   [6118] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Research Notes",
     ["n"] = "Stone Garden Dissection Notes",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.6463128094, ["py"] = 1.5177127564, ["pm"] = 1787, ["d"] = true,
+        ["zx"] = 0.6462408183, ["zy"] = 1.5204704369, ["zm"] = 1747,
+      },
     },
   },
   [6119] = {
