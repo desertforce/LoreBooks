@@ -11418,7 +11418,6 @@ local bookData = {
         ["pm"] = 588,
         ["zx"] = 0.7752843886, ["zy"] = 0.5849247923, ["zm"] = 26,
         ["d"] = true,
-        ["zm"] = 26,
       },
     },
     ["n"] = "Tsanji's Ship Records",
