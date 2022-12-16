@@ -61375,6 +61375,50 @@ local bookData = {
     },
     ["c"] = false,
   },
+  [7185] = {
+    ["c"] = true,
+    ["n"] = "Spirits of Lost Nature",
+    ["cn"] = "Library of Incunabula",
+    ["e"] = {
+      [1] = {
+        ["px"] = 0.0834724004, ["py"] = 0.6082812037, ["pm"] = 2206, ["d"] = true,
+        ["zx"] = 0.0553544017, ["zy"] = 0.6021128012, ["zm"] = 2114,
+      },
+    },
+  },
+  [7186] = {
+    ["c"] = true,
+    ["n"] = "Message of Welcome",
+    ["cn"] = "Library of Incunabula",
+    ["e"] = {
+      [1] = {
+        ["px"] = 0.0833120004, ["py"] = 0.6081424037, ["pm"] = 2206, ["d"] = true,
+        ["zx"] = 0.0553544017, ["zy"] = 0.6021128012, ["zm"] = 2114,
+      },
+    },
+  },
+  [7187] = {
+    ["c"] = true,
+    ["n"] = "The Only Record of Our Plan",
+    ["cn"] = "Library of Incunabula",
+    ["e"] = {
+      [1] = {
+        ["px"] = 0.0843764011, ["py"] = 0.6077860012, ["pm"] = 2208, ["d"] = true,
+        ["zx"] = 0.0553544017, ["zy"] = 0.6021128012, ["zm"] = 2114,
+      },
+    },
+  },
+  [7188] = {
+    ["c"] = true,
+    ["n"] = "The Meaning of the Hidden Fawn",
+    ["cn"] = "Library of Incunabula",
+    ["e"] = {
+      [1] = {
+        ["px"] = 0.0845008011, ["py"] = 0.6080680012, ["pm"] = 2208, ["d"] = true,
+        ["zx"] = 0.0553544017, ["zy"] = 0.6021128012, ["zm"] = 2114,
+      },
+    },
+  },
   [7267] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Captain Za'ji's Log",
