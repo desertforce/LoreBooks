@@ -5671,7 +5671,6 @@ local bookData = {
         ["py"] = 0.3254200000,
         ["d"] = true,
         ["pm"] = 168,
-        ["zm"] = 61,
         ["zx"] = 0.6560156275, ["zy"] = 0.3251055968, ["zm"] = 61,
       },
     },
@@ -44485,7 +44484,7 @@ local bookData = {
         ["zx"] = 0.3403076011, ["zy"] = 0.2865647960, ["zm"] = 1858,
         ["d"] = true,
       },
-      [2] = { ["px"] = 0.3403076011, ["py"] = 0.2865647960, ["pm"] = 1858, ["pm"] = 1814, ["fp"] = true, }, -- additional pin on main map
+      [2] = { ["px"] = 0.3403076011, ["py"] = 0.2865647960, ["pm"] = 1858, ["zm"] = 1814, ["fp"] = true, }, -- additional pin on main map
     },
     ["m"] = {
       [42] = 1,
@@ -57988,7 +57987,7 @@ local bookData = {
         ["i"] = 12,
         ["zx"] = 0.3403076011, ["zy"] = 0.2865647960, ["zm"] = 1858,
       },
-      [2] = { ["px"] = 0.3403076011, ["py"] = 0.2865647960, ["pm"] = 1858, ["pm"] = 1814, ["fp"] = true, }, -- additional pin on main map
+      [2] = { ["px"] = 0.3403076011, ["py"] = 0.2865647960, ["pm"] = 1858, ["zm"] = 1814, ["fp"] = true, }, -- additional pin on main map
     },
     ["n"] = "Politics of the Reach",
     ["cn"] = "The Reach Reader",
