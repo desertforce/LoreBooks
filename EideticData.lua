@@ -43683,10 +43683,12 @@ local bookData = {
     ["cn"] = "Western Skyrim Register",
   },
   [6244] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Mysteries and Clues",
     ["n"] = "To My Dear Friend",
+    ["q"] = 6549,
     ["e"] = {
+      [1] = { ["px"] = 0.1530475985, ["py"] = 0.2379744006, ["pm"] = 10, },
     },
   },
   [6245] = {
@@ -43755,10 +43757,12 @@ local bookData = {
     ["cn"] = "Western Skyrim Register",
   },
   [6250] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Mysteries and Clues",
     ["n"] = "Verandis's Journal",
+    ["q"] = 6555,
     ["e"] = {
+      [1] = { ["px"] = 0.2594268012, ["py"] = 0.1292268009, ["pm"] = 1868, ["d"] = true, },
     },
   },
   [6251] = {
@@ -43856,10 +43860,11 @@ local bookData = {
     },
   },
   [6259] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Mysteries and Clues",
     ["n"] = "Spectral Assassins",
     ["e"] = {
+      [1] = { ["px"] = 0.2569755976, ["py"] = 0.1300488003, ["pm"] = 1866, ["d"] = true, },
     },
   },
   [6260] = {
@@ -43955,10 +43960,11 @@ local bookData = {
     ["cn"] = "Library of Incunabula",
   },
   [6270] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Devoted and the Deranged",
     ["n"] = "A Tale of the Dauntless Bananas",
     ["e"] = {
+      [1] = { ["px"] = 0.5289760038, ["py"] = 0.5589803885, ["pm"] = 576, ["zm"] = 16, },
     },
   },
   [6271] = {
@@ -43970,10 +43976,11 @@ local bookData = {
     },
   },
   [6272] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Devoted and the Deranged",
     ["n"] = "The Nomads of Nirn",
     ["e"] = {
+      [1] = { ["px"] = 0.7437780069, ["py"] = 0.4519640104, ["pm"] = 511, },
     },
   },
   [6273] = {
@@ -44088,47 +44095,54 @@ local bookData = {
     ["c"] = false,
     ["cn"] = "The Reach Reader",
     ["n"] = "Falkfyr's Notes, Page 1",
+    ["q"] = 6591,
     ["e"] = {
+      [1] = { ["px"] = 0.6179339695, ["py"] = 1.5638668051, ["pm"] = 1850, },
     },
   },
   [6317] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Reach Reader",
     ["n"] = "Falkfyr's Notes, Page 2",
     ["q"] = 6591,
     ["e"] = {
+      [1] = { ["px"] = 0.6093743714, ["py"] = 1.5664876054, ["pm"] = 1850, },
     },
   },
   [6318] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Reach Reader",
     ["n"] = "Falkfyr's Notes, Page 3",
     ["q"] = 6591,
     ["e"] = {
+      [1] = { ["px"] = 0.6070115714, ["py"] = 1.5728932051, ["pm"] = 1850, },
     },
   },
   [6319] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Reach Reader",
     ["n"] = "Falkfyr's Notes, Page 4",
     ["q"] = 6591,
     ["e"] = {
+      [1] = { ["px"] = 0.6049543714, ["py"] = 1.5764692046, ["pm"] = 1850, },
     },
   },
   [6320] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Reach Reader",
     ["n"] = "Falkfyr's Notes, Page 5",
     ["q"] = 6591,
     ["e"] = {
+      [1] = { ["px"] = 0.6088187707, ["py"] = 1.5861820059, ["pm"] = 1850, },
     },
   },
   [6321] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Reach Reader",
     ["n"] = "Falkfyr's Notes, Page 6",
     ["q"] = 6591,
     ["e"] = {
+      [1] = { ["px"] = 0.6127683713, ["py"] = 1.5950628052, ["pm"] = 1850, },
     },
   },
   [6322] = {
@@ -44573,10 +44587,12 @@ local bookData = {
     ["cn"] = "The Reach Reader",
   },
   [6449] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Tenarei's Contract",
+    ["q"] = 6626,
     ["e"] = {
+      [1] = { ["px"] = 0.6299668080, ["py"] = 0.7134668115, ["pm"] = 1887, },
     },
   },
   [6450] = {
@@ -44773,6 +44789,7 @@ local bookData = {
     ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Phantasmal Discovery Awaits!",
+    ["q"] = 6631,
     ["e"] = {
             [1] = { ["px"] = 0.6200776055, ["py"] = 0.6635000122, ["pm"] = 1887, },
             [2] = { ["px"] = 0.6206064089, ["py"] = 0.6766008143, ["pm"] = 1887, },
@@ -44996,24 +45013,30 @@ local bookData = {
     },
   },
   [6497] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Alizinda's Journal",
+    ["q"] = 6634,
     ["e"] = {
+      [1] = { ["px"] = 0.6698280062, ["py"] = 0.6697524119, ["pm"] = 1887, },
     },
   },
   [6498] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Scrawled Incantation",
+    ["q"] = 6634,
     ["e"] = {
+      [1] = { ["px"] = 0.6550552084, ["py"] = 0.6631996120, ["pm"] = 1887, },
     },
   },
   [6499] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Duchess Astella's Notes",
+    ["q"] = 6634,
     ["e"] = {
+      [1] = { ["px"] = 0.6603320066, ["py"] = 0.6620900091, ["pm"] = 1887, },
     },
   },
   [6501] = {
@@ -45055,13 +45078,21 @@ local bookData = {
     ["q"] = 6636,
     ["e"] = {
       [1] = { ["px"] = 0.6646844047, ["py"] = 0.6295372130, ["pm"] = 1887, }, -- post-quest location
+      [2] = { ["px"] = 0.6582480040, ["py"] = 0.6239176115, ["pm"] = 1887, },
+      [3] = { ["px"] = 0.6777200040, ["py"] = 0.6325072130, ["pm"] = 1887, },
     },
   },
   [6505] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Letter from Astara",
+    ["q"] = 6615,
     ["e"] = {
+      [1] = {
+        ["px"] = 0.6564552114, ["py"] = 0.6755631734, ["pm"] = 2014, ["d"] = true,
+        ["zx"] = 0.6548716290, ["zy"] = 0.6727764199, ["zm"] = 1887,
+      },
+      [2] = { ["px"] = 0.6548716290, ["py"] = 0.6727764199, ["pm"] = 2018, ["fp"] = true, ["d"] = true, },
     },
   },
   [6506] = {
@@ -45196,10 +45227,12 @@ local bookData = {
     },
   },
   [6520] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Aloysius's Note",
+    ["q"] = 6647,
     ["e"] = {
+      [1] = { ["px"] = 0.6388832051, ["py"] = 0.6873156093, ["pm"] = 1887, },
     },
   },
   [6522] = {
@@ -45245,6 +45278,7 @@ local bookData = {
     ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Adventurers Wanted for Exciting Opportunity!",
+    ["q"] = 6648,
     ["e"] = {
       [1] = { ["px"] = 0.6212168048, ["py"] = 0.6078484137, ["pm"] = 1887, },
       [2] = { ["px"] = 0.6216972078, ["py"] = 0.6142784123, ["pm"] = 1887, },
@@ -45744,10 +45778,12 @@ local bookData = {
     },
   },
   [6596] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Cerise's Farewell Note",
+    ["q"] = 6661,
     ["e"] = {
+      [1] = { ["px"] = 0.6709488090, ["py"] = 0.6826656071, ["pm"] = 1887, },
     },
   },
   [6597] = {
@@ -45910,6 +45946,7 @@ local bookData = {
     ["n"] = "Neelo's Notes",
     ["q"] = 6023,
     ["e"] = {
+      [1] = { ["px"] = 0.7555527935, ["py"] = 0.5446243953, ["pm"] = 26, },
     },
   },
   [4564] = {
