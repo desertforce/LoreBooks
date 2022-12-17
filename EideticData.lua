@@ -43805,10 +43805,13 @@ local bookData = {
     },
   },
   [6254] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Reach Reader",
     ["n"] = "Journal of Dionus Trutor",
+    ["q"] = 6566,
     ["e"] = {
+      [1] = { ["px"] = 0.3387960057, ["py"] = 0.2884968024, ["pm"] = 1856, ["d"] = true, },
+      [2] = { ["px"] = 0.3403076011, ["py"] = 0.2865647960, ["pm"] = 1858, ["zm"] = 1814, ["fp"] = true, }, -- additional pin on main map
     },
   },
   [6255] = {
@@ -45153,10 +45156,14 @@ local bookData = {
     },
   },
   [6512] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Daedric Cults",
     ["n"] = "Havocrel: Strangers from Oblivion",
     ["e"] = {
+      [1] = {
+          ["px"] = 0.6910743962, ["py"] = 0.7436999985, ["pm"] = 2012, ["d"] = true,
+          ["zx"] = 0.6869360017, ["zy"] = 0.7383796096, ["zm"] = 1887,
+      },
     },
   },
   [6515] = {
@@ -47047,10 +47054,12 @@ local bookData = {
     },
   },
   [6672] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Vinnus's Note",
+    ["q"] = 6663,
     ["e"] = {
+      [1] = { ["px"] = -0.0872720027, ["py"] = 0.1488575994, ["pm"] = 2000, ["d"] = true, },
     },
   },
   [6673] = {
@@ -59665,10 +59674,15 @@ local bookData = {
     },
   },
   [6755] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Waking Flame Journal",
+    ["q"] = 6696,
     ["e"] = {
+      [1] = {
+        ["px"] = 1.0112403649, ["py"] = 0.7617440123, ["pm"] = 2108, ["d"] = true,
+        ["zx"] = 1.0071172286, ["zy"] = 0.7643976187, ["zm"] = 2021,
+      },
     },
   },
   [6756] = {
@@ -59740,10 +59754,12 @@ local bookData = {
     },
   },
   [7097] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Impresario's Catalogue",
     ["n"] = "Ascendant Champion Orders",
+    ["q"] = 6751,
     ["e"] = {
+      [1] = { ["px"] = -0.1207628051, ["py"] = 0.3140947944, ["pm"] = 2141, ["d"] = true, },
     },
   },
   [6840] = {
@@ -60730,8 +60746,9 @@ local bookData = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Systres Knightly Orders Vol 1",
     ["e"] = {
+      [1] = { ["px"] = 0.0503752020, ["py"] = 0.5986948024, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7209] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -60982,11 +60999,13 @@ local bookData = {
     },
   },
   [7013] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Duchess Elea's Investigation Notes",
+    ["q"] = 6753,
     ["e"] = {
+      [1] = { ["px"] = 0.0521708010, ["py"] = 0.5983523993, ["pm"] = 2173, ["d"] = true, },
     },
-    ["c"] = false,
   },
   [7270] = {
     ["cn"] = "Systres Tomes and Scrolls",
