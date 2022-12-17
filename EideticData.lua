@@ -27437,6 +27437,7 @@ local bookData = {
         ["py"] = 0.2315500000,
         ["d"] = true,
         ["pm"] = 647,
+        ["zx"] = 0.2036532005, ["zy"] = 0.2425103982, ["zm"] = 10,
       },
     },
   },
@@ -43334,6 +43335,10 @@ local bookData = {
         ["i"] = 12,
         ["r"] = false,
       },
+      [2] = {
+        ["px"] = 0.4253983866, ["py"] = 0.1998212003, ["pm"] = 1752, ["d"] = true,
+        ["zx"] = 0.4192188112, ["zy"] = 0.2002276016, ["zm"] = 1719,
+      },
     },
     ["n"] = "Divines and the Nords",
     ["cn"] = "Solitude Soliloquies",
@@ -46993,17 +46998,21 @@ local bookData = {
     ["cn"] = "Library of Incunabula",
   },
   [6667] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Fang-Furls' Dead Drop",
+    ["q"] = 6658,
     ["e"] = {
+      [1] = { ["px"] = 0.6082692052, ["py"] = 0.6638452119, ["pm"] = 1887, },
     },
   },
   [6668] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Fang-Furls' Second Dead Drop",
+    ["q"] = 6658,
     ["e"] = {
+      [1] = { ["px"] = 0.6749620021, ["py"] = 0.7169644129, ["pm"] = 1887, },
     },
   },
   [4621] = {
@@ -47029,10 +47038,12 @@ local bookData = {
     },
   },
   [6671] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Letter to Councilor Lovidicus",
+    ["q"] = 6615,
     ["e"] = {
+      [1] = { ["px"] = 0.6196424044, ["py"] = 0.6829568142, ["pm"] = 1887, },
     },
   },
   [6672] = {
@@ -47046,6 +47057,7 @@ local bookData = {
     ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Councilor Abor's Journal",
+    ["q"] = 6615,
     ["e"] = {
       [1] = { ["px"] = 0.6286396046, ["py"] = 0.6879652125, ["pm"] = 1887, },
     },
@@ -47119,10 +47131,12 @@ local bookData = {
     },
   },
   [6682] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Edvilda's Log Book",
+    ["q"] = 6666,
     ["e"] = {
+      [1] = { ["px"] = 0.7690711890, ["py"] = 0.4391784009, ["pm"] = 7, },
     },
   },
   [6684] = {
@@ -47158,17 +47172,21 @@ local bookData = {
     },
   },
   [6688] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Pirate's Treasure Message",
+    ["q"] = 6670,
     ["e"] = {
+      [1] = { ["px"] = 0.6123044059, ["py"] = 0.6851308130, ["pm"] = 1887, },
     },
   },
   [6690] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Onimiril's Writings",
+    ["q"] = 6667,
     ["e"] = {
+      [1] = { ["px"] = 0.2151307980, ["py"] = 0.6654596130, ["pm"] = 143, },
     },
   },
   [6691] = {
@@ -47228,6 +47246,7 @@ local bookData = {
     ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Come One, Come All!",
+    ["q"] = 6636,
     ["e"] = {
       [1] = { ["px"] = 0.6595660041, ["py"] = 0.6210148108, ["pm"] = 1887, },
       [2] = { ["px"] = 0.6714788042, ["py"] = 0.6251484114, ["pm"] = 1887, },
@@ -47829,17 +47848,21 @@ local bookData = {
     ["cn"] = "Clockwork Mnemonix",
   },
   [6759] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Letter to the High Priest",
+    ["q"] = 6699,
     ["e"] = {
+      [1] = { ["px"] = 0.9341524001, ["py"] = 0.7718335790, ["pm"] = 2087, ["d"] = true, },
     },
   },
   [6760] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Doombringer Celdina's Testament",
+    ["q"] = 6699,
     ["e"] = {
+      [1] = { ["px"] = 0.9341456001, ["py"] = 0.7708075791, ["pm"] = 2087, ["d"] = true, },
     },
   },
   [4713] = {
@@ -48040,6 +48063,7 @@ local bookData = {
     ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Work for Hire in Fargrave",
+    ["q"] = 6709,
     ["e"] = {
      [1] = { ["px"] = 0.8655204064, ["py"] = 1.0265052256, ["pm"] = 2035, },
     },
@@ -48069,24 +48093,30 @@ local bookData = {
     },
   },
   [6781] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Letter to Vibius Sosia",
+    ["q"] = 6694,
     ["e"] = {
+      [1] = { ["px"] = 1.1057000483, ["py"] = 0.7751336289, ["pm"] = 2118, ["d"] = true, },
     },
   },
   [6803] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Discarded Diary",
+    ["q"] = 6696,
     ["e"] = {
+      [1] = { ["px"] = 0.6274011794, ["py"] = 0.6085711889, ["pm"] = 2090, ["d"] = true, },
     },
   },
   [6819] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Daedric Cults",
     ["n"] = "Elegian's Notes",
+    ["q"] = 6701,
     ["e"] = {
+      [1] = { ["px"] = 0.3365687936, ["py"] = 0.7113667809, ["pm"] = 2047, ["d"] = true, },
     },
   },
   [6820] = {
@@ -48187,10 +48217,12 @@ local bookData = {
     ["cn"] = "Clockwork Mnemonix",
   },
   [6844] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Robhir's Letter",
+    ["q"] = 6731,
     ["e"] = {
+      [1] = { ["px"] = 0.8738508294, ["py"] = 0.9895199990, ["pm"] = 2082, },
     },
   },
   [4797] = {
@@ -48263,15 +48295,18 @@ local bookData = {
     ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Devastator Ursana's Letter",
+    ["q"] = 6708,
     ["e"] = {
       [1] = { ["px"] = 1.1104176263, ["py"] = 0.6872368159, ["pm"] = 2021, },
     },
   },
   [6851] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Merchandise Retrieval Order",
+    ["q"] = 6738,
     ["e"] = {
+      [1] = { ["px"] = 0.8528612075, ["py"] = 1.0249784243, ["pm"] = 2035, },
     },
   },
   [6852] = {
@@ -48321,10 +48356,14 @@ local bookData = {
     ["cn"] = "Clockwork Mnemonix",
   },
   [6856] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Library of Incunabula",
     ["n"] = "Gryphon Watching Log",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.1164219990, ["py"] = 0.6301964082, ["pm"] = 2188, ["d"] = true,
+        ["zx"] = 0.1178388044, ["zy"] = 0.6371344010, ["zm"] = 1349,
+      },
     },
   },
   [6857] = {
@@ -49276,6 +49315,7 @@ local bookData = {
     ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Head Overseer's Orders",
+    ["q"] = 6698,
     ["e"] = {
       [1] = { ["px"] = 1.0250780293, ["py"] = 0.7777800112, ["pm"] = 2021, },
     },
@@ -49284,6 +49324,7 @@ local bookData = {
     ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Torn Journal Page",
+    ["q"] = 6706,
     ["e"] = {
       [1] = { ["px"] = 1.1386148315, ["py"] = 0.7149928142, ["pm"] = 2021, },
     },
@@ -49991,6 +50032,7 @@ local bookData = {
     ["q"] = 6696,
     ["e"] = {
       [1] = { ["px"] = 0.8646536079, ["py"] = 1.0271496248, ["pm"] = 2035, }, -- post-quest location
+      [2] = { ["px"] = 0.6273983794, ["py"] = 0.6085763889, ["pm"] = 2090, ["d"] = true, },
     },
   },
   [7015] = {
@@ -50000,6 +50042,7 @@ local bookData = {
     ["q"] = 6696,
     ["e"] = {
       [1] = { ["px"] = 0.8647260084, ["py"] = 1.0271532244, ["pm"] = 2035, }, -- post-quest location
+      [2] = { ["px"] = 0.6274091794, ["py"] = 0.6085787889, ["pm"] = 2090, ["d"] = true, },
     },
   },
   [7016] = {
@@ -50008,6 +50051,7 @@ local bookData = {
     ["n"] = "Mairead's Diary, Entry 712",
     ["e"] = {
       [1] = { ["px"] = 0.8647260084, ["py"] = 1.0271532244, ["pm"] = 2035, }, -- post-quest location
+      [2] = { ["px"] = 0.6274019794, ["py"] = 0.6085747889, ["pm"] = 2090, ["d"] = true, },
     },
   },
   [4975] = {
@@ -50758,10 +50802,12 @@ local bookData = {
     ["cn"] = "Mysteries and Clues",
   },
   [7138] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Impresario's Catalogue",
     ["n"] = "Letter from Lady Arabelle",
+    ["q"] = 6751,
     ["e"] = {
+      [1] = { ["px"] = 0.7848220306, ["py"] = 0.3827544091, ["pm"] = 1060, },
     },
   },
   [5091] = {
@@ -52976,6 +53022,12 @@ local bookData = {
         ["px"] = 0.4383400000,
         ["pm"] = 9,
       },
+      [3] = {
+        ["px"] = 0.5043676033,
+        ["py"] = 0.7606232122,
+        ["pm"] = 1601,
+        ["d"] = true,
+      },
     },
     ["n"] = "Jode's Blessing",
     ["cn"] = "Mysteries and Clues",
@@ -52995,6 +53047,12 @@ local bookData = {
         ["py"] = 0.7705300000,
         ["pm"] = 1602,
       },
+      [3] = {
+        ["px"] = 0.5044176033,
+        ["py"] = 0.7606244121,
+        ["pm"] = 1601,
+        ["d"] = true,
+      },
     },
     ["n"] = "Jone's Blessing",
     ["cn"] = "Mysteries and Clues",
@@ -53013,6 +53071,12 @@ local bookData = {
         ["py"] = 0.6832500000,
         ["px"] = 0.4384800000,
         ["pm"] = 9,
+      },
+      [3] = {
+        ["px"] = 0.5036864032,
+        ["py"] = 0.7607080122,
+        ["pm"] = 1589,
+        ["d"] = true,
       },
     },
     ["n"] = "Slivers in a Dark Sky",
@@ -56996,6 +57060,7 @@ local bookData = {
         ["i"] = 12,
         ["r"] = false,
       },
+      [2] = { ["px"] = 0.7014356165, ["py"] = 1.5382647978, ["pm"] = 1809, ["zm"] = 1747, ["d"] = true, },
     },
     ["n"] = "Miner's Journal",
     ["cn"] = "Solitude Soliloquies",
@@ -57368,12 +57433,8 @@ local bookData = {
     ["q"] = 6460,
     ["e"] = {
       [1] = {
-        ["py"] = 0.2159800000,
-        ["px"] = 0.4651700000,
-        ["pm"] = 1836,
-        ["d"] = true,
-        ["i"] = 12,
-        ["r"] = false,
+        ["px"] = 0.4651688082, ["py"] = 0.2159816024, ["pm"] = 1810, ["d"] = true,
+        ["zx"] = 0.4635204089, ["zy"] = 0.2136976030, ["zm"] = 1719,
       },
     },
   },
@@ -57628,10 +57689,14 @@ local bookData = {
     ["cn"] = "Solitude Soliloquies",
   },
   [5944] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Solitude Soliloquies",
     ["n"] = "Balgvir's Siege Journal",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.4058675970, ["py"] = 0.1486072005, ["pm"] = 1805, ["d"] = true,
+        ["zx"] = 0.4098980125, ["zy"] = 0.1912580016, ["zm"] = 1719,
+      },
     },
   },
   [5945] = {
@@ -57644,6 +57709,7 @@ local bookData = {
         ["r"] = false,
         ["px"] = 0.4066300000,
         ["pm"] = 1805,
+        ["zx"] = 0.4098980125, ["zy"] = 0.1912580016, ["zm"] = 1719,
       },
     },
     ["n"] = "Letter to Thane Ogvar",
@@ -57744,6 +57810,7 @@ local bookData = {
         ["i"] = 12,
         ["r"] = false,
       },
+      [3] = { ["px"] = 0.7012348163, ["py"] = 1.5384283978, ["pm"] = 1809, ["zm"] = 1747, ["d"] = true, },
     },
     ["n"] = "Things My Great-Gran Said",
     ["cn"] = "Solitude Soliloquies",
@@ -57837,17 +57904,25 @@ local bookData = {
     ["cn"] = "Vvardenfell Volumes",
   },
   [5960] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Houses, Shops, and Trade",
     ["n"] = "Architectural Survey Summary Report",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.3588044085, ["py"] = 0.2419455983, ["pm"] = 1823, ["d"] = true,
+        ["zx"] = 0.3617232115, ["zy"] = 0.2413048022, ["zm"] = 1719,
+      },
     },
   },
   [5961] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Mysteries and Clues",
     ["n"] = "A Daedric Proposal",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.3595599984, ["py"] = 0.2418508033, ["pm"] = 1825, ["d"] = true,
+        ["zx"] = 0.3617232115, ["zy"] = 0.2413048022, ["zm"] = 1719,
+      },
     },
   },
   [5962] = {
@@ -58020,10 +58095,12 @@ local bookData = {
     ["cn"] = "Vvardenfell Volumes",
   },
   [6968] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Impresario's Catalogue",
     ["n"] = "Ascendant Champion's New Orders",
+    ["q"] = 6761,
     ["e"] = {
+      [1] = { ["px"] = -0.1621868038, ["py"] = 0.3127827974, ["pm"] = 2143, ["d"] = true, },
     },
   },
   [4882] = {
@@ -58090,10 +58167,12 @@ local bookData = {
     },
   },
   [6842] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Thadriax's Instructions",
+    ["q"] = 6699,
     ["e"] = {
+      [1] = { ["px"] = 1.1030696325, ["py"] = 0.7157612175, ["pm"] = 2021, },
     },
   },
   [4796] = {
@@ -58130,7 +58209,10 @@ local bookData = {
     ["n"] = "Report from Markynaz Oyx",
     ["q"] = 6705,
     ["e"] = {
-      [1] = { ["px"] = 1.0621484562, ["py"] = 0.7392596228, ["pm"] = 2083, },
+      [1] = {
+        ["px"] = 1.0621484562, ["py"] = 0.7392596228, ["pm"] = 2083,
+        ["zx"] = 1.0538860312, ["zy"] = 0.7551728182, ["zm"] = 2021,
+      },
     },
   },
   [5985] = {
@@ -58263,10 +58345,12 @@ local bookData = {
     ["cn"] = "Clockwork Mnemonix",
   },
   [6669] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Fang-Furls' Third Dead Drop",
+    ["q"] = 6658,
     ["e"] = {
+      [1] = { ["px"] = 0.6721196063, ["py"] = 0.6461540130, ["pm"] = 1887, },
     },
   },
   [4704] = {
@@ -59041,10 +59125,11 @@ local bookData = {
     ["cn"] = "Western Skyrim Register",
   },
   [6050] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Reach Reader",
     ["n"] = "Scary Tales of the Deep Folk, Book 1",
     ["e"] = {
+      [1] = { ["px"] = 0.3778932046, ["py"] = 0.3113951967, ["pm"] = 1814, },
     },
   },
   [6573] = {
@@ -59291,10 +59376,12 @@ local bookData = {
     },
   },
   [6748] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Improved Cataclyst Model",
+    ["q"] = 6699,
     ["e"] = {
+      [1] = { ["px"] = 0.9342440001, ["py"] = 0.7711247790, ["pm"] = 2087, ["d"] = true, },
     },
   },
   [6749] = {
@@ -59504,10 +59591,11 @@ local bookData = {
     ["cn"] = "Solitude Soliloquies",
   },
   [6751] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Devoted and the Deranged",
     ["n"] = "An Ode to the Disenfranchised",
     ["e"] = {
+      [1] = { ["px"] = 0.5546008160, ["py"] = 0.5158435945, ["pm"] = 16, },
     },
   },
   [6753] = {
@@ -59584,45 +59672,59 @@ local bookData = {
     },
   },
   [6756] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Kastav's Journal",
+    ["q"] = 6705,
     ["e"] = {
+      [1] = {
+        ["px"] = 1.0591464553, ["py"] = 0.7450116224, ["pm"] = 2083,
+        ["zx"] = 1.0538860312, ["zy"] = 0.7551728182, ["zm"] = 2021,
+      },
     },
   },
   [6757] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Save My Precious",
     ["e"] = {
+      [1] = { ["px"] = -0.0334208007, ["py"] = 0.1836556008, ["pm"] = 2054, ["d"] = true, },
     },
   },
   [6762] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Partially Hidden Journal",
+    ["q"] = 6696,
     ["e"] = {
+      [1] = { ["px"] = -0.0888663981, ["py"] = 0.1607664004, ["pm"] = 2101, ["d"] = true, },
     },
   },
   [6769] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Sister Celdina's Orders",
+    ["q"] = 6707,
     ["e"] = {
+      [1] = { ["px"] = 1.1145688250, ["py"] = 0.7264120166, ["pm"] = 2021, },
     },
   },
   [6770] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Daedric Cults",
     ["n"] = "Waking Flame Letter",
+    ["q"] = 6701,
     ["e"] = {
+      [1] = { ["px"] = -0.0977067969, ["py"] = 0.0950964009, ["pm"] = 2050, ["d"] = true, },
     },
   },
   [6771] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Daedric Cults",
     ["n"] = "Waking Flame Correspondence",
+    ["q"] = 6701,
     ["e"] = {
+      [1] = { ["px"] = 0.3366519935, ["py"] = 0.7112063809, ["pm"] = 2047, ["d"] = true, },
     },
   },
   [6772] = {
@@ -59645,38 +59747,53 @@ local bookData = {
     },
   },
   [6840] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Mikget's To-Do List",
+    ["q"] = 6728,
     ["e"] = {
+      [1] = { ["px"] = 1.0173112279, ["py"] = 0.7844724126, ["pm"] = 2021, },
     },
   },
   [6841] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Summons to Deadlight",
+    ["q"] = 6699,
     ["e"] = {
+      [1] = { ["px"] = 1.1275760258, ["py"] = 0.7170616185, ["pm"] = 2021, },
     },
   },
   [6843] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Telofasa's Diary",
+    ["q"] = 6730,
     ["e"] = {
+      [1] = { ["px"] = 1.0863508330, ["py"] = 0.7351508174, ["pm"] = 2021, },
     },
   },
   [6854] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Library of Incunabula",
     ["n"] = "Confiscated from the Prisoner",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.1179979983, ["py"] = 0.6295479913, ["pm"] = 2186,
+        ["zx"] = 0.1178388044, ["zy"] = 0.6371344010, ["zm"] = 1349,
+        ["d"] = true,
+      },
     },
   },
   [6855] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Library of Incunabula",
     ["n"] = "Apply More Pressure",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.1171487978, ["py"] = 0.6294795976, ["pm"] = 2187, ["d"] = true,
+        ["zx"] = 0.1178388044, ["zy"] = 0.6371344010, ["zm"] = 1349,
+      },
     },
   },
   [6101] = {
@@ -60330,8 +60447,10 @@ local bookData = {
     ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Note for Khazasha",
+    ["q"] = 6705,
     ["e"] = {
       [1] = { ["px"] = 1.0519980276, ["py"] = 0.7615968134, ["pm"] = 2021, },
+      [2] = { ["px"] = 1.0633520295, ["py"] = 0.7506052165, ["pm"] = 2021, },
     },
   },
   [6927] = {
@@ -60376,17 +60495,24 @@ local bookData = {
     },
   },
   [6758] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Secrets of Moricar the Inheritor",
+    ["q"] = 6699,
     ["e"] = {
+      [1] = { ["px"] = 0.9335616001, ["py"] = 0.7724359790, ["pm"] = 2087, ["d"] = true, },
     },
   },
   [7096] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Impresario's Catalogue",
     ["n"] = "Ascendant Order Note",
+    ["q"] = 6751,
     ["e"] = {
+      [1] = {
+        ["px"] = 0.7256208187, ["py"] = 0.3117144003, ["pm"] = 1157, ["d"] = true,
+        ["zx"] = 0.7252892229, ["zy"] = 0.3110492054, ["zm"] = 1060,
+      },
     },
   },
   [7172] = {
@@ -60500,18 +60626,28 @@ local bookData = {
     ["c"] = false,
   },
   [6938] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "The Ascendant Proclamation",
+    ["q"] = 6752,
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0746695995, ["py"] = 0.6005256042, ["pm"] = 2146, ["d"] = true,
+        ["zx"] = 0.0745060030, ["zy"] = 0.6003248017, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
   },
   [6939] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Prisoner Manifest",
+    ["q"] = 6752,
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0747835995, ["py"] = 0.6005984042, ["pm"] = 2146, ["d"] = true,
+        ["zx"] = 0.0745060030, ["zy"] = 0.6003248017, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
   },
   [6941] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -60705,6 +60841,7 @@ local bookData = {
     ["c"] = true,
     ["cn"] = "Pellitine Postings",
     ["n"] = "Crumpled Nursery Rhyme",
+    ["q"] = 6303,
     ["e"] = {
       [1] = { ["px"] = 0.5684007940, ["py"] = 0.6407548144, ["pm"] = 1555, },
     },
@@ -60962,11 +61099,12 @@ local bookData = {
     ["c"] = false,
   },
   [7032] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Work in Gonfalon Bay",
     ["e"] = {
+      [1] = { ["px"] = 0.0695052026, ["py"] = 0.6031628053, ["pm"] = 2163, ["zm"] = 2114, },
     },
-    ["c"] = false,
   },
   [7033] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -61383,11 +61521,13 @@ local bookData = {
     ["c"] = false,
   },
   [7142] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Evergrowth Restoration Ritual",
+    ["q"] = 6770,
     ["e"] = {
+      [1] = { ["px"] = 0.0532444010, ["py"] = 0.5924796086, ["pm"] = 2213, ["zm"] = 2114, },
     },
-    ["c"] = false,
   },
   [3047] = {
     ["cn"] = "Library of Incunabula",
@@ -61513,6 +61653,12 @@ local bookData = {
     ["e"] = {
     },
     ["c"] = false,
+  },
+  [7168] = {
+    ["c"] = true,
+    ["n"] = "Seeking Tribute Players!",
+    ["cn"] = "Tomes of Tributes",
+    ["e"] = { [1] = { ["px"] = 0.0682280026, ["py"] = 0.6043096051, ["pm"] = 2163, ["zm"] = 2114, }, },
   },
   [7185] = {
     ["c"] = true,
