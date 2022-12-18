@@ -44847,6 +44847,7 @@ local bookData = {
     ["q"] = 6709,
     ["e"] = {
      [1] = { ["px"] = 0.8655204064, ["py"] = 1.0265052256, ["pm"] = 2035, },
+     [2] = { ["px"] = 0.8523120074, ["py"] = 1.0274568256, ["pm"] = 2035, },
     },
   },
   [6776] = {
@@ -57446,8 +57447,9 @@ local bookData = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Lashum's Report",
     ["e"] = {
+      [1] = { ["px"] = 0.0819184010, ["py"] = 0.5830316019, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7007] = {
     ["c"] = true,
@@ -57541,15 +57543,23 @@ local bookData = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Transport Plans",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0727735987, ["py"] = 0.5949123952, ["pm"] = 2162, ["d"] = true,
+        ["zx"] = 0.0727632021, ["zy"] = 0.5948508008, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7018] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Orders for the Recruits",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0726015987, ["py"] = 0.5949091951, ["pm"] = 2162, ["d"] = true,
+        ["zx"] = 0.0727632021, ["zy"] = 0.5948508008, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7019] = {
     ["c"] = true,
@@ -57746,8 +57756,9 @@ local bookData = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Kiv's Journal",
     ["e"] = {
+      [1] = { ["px"] = 0.1641764007, ["py"] = 0.5435359912, ["pm"] = 530, ["zm"] = 201, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7101] = {
     ["c"] = true,
@@ -57790,8 +57801,9 @@ local bookData = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Letter from Julles Laurdon",
     ["e"] = {
+      [1] = { ["px"] = 0.7549328263, ["py"] = 0.3674868081, ["pm"] = 1060, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7206] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -57804,15 +57816,20 @@ local bookData = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Kiv's Notes",
     ["e"] = {
+       [1] = { ["px"] = 0.7549288248, ["py"] = 0.3674888034, ["pm"] = 1060, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7108] = {
     ["cn"] = "Hearts and Flowers",
     ["n"] = "The Rose of Navire, Part the First",
     ["e"] = {
+      [1] = {
+       ["px"] = 0.0518555997, ["py"] = 0.5992875875, ["pm"] = 2219, ["d"] = true,
+       ["zx"] = 0.0519460016, ["zy"] = 0.5990540036, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7109] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -57825,15 +57842,17 @@ local bookData = {
     ["cn"] = "Hearts and Flowers",
     ["n"] = "The Rose of Navire, Part the Second",
     ["e"] = {
+      [1] = { ["px"] = 0.0692584028, ["py"] = 0.6027004052, ["pm"] = 2163, ["zm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7111] = {
     ["cn"] = "Hearts and Flowers",
     ["n"] = "The Rose of Navire, Part the Third",
     ["e"] = {
+      [1] = { ["px"] = 0.0698044028, ["py"] = 0.6041568052, ["pm"] = 2163, ["zm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7205] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -57854,8 +57873,9 @@ local bookData = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Green Serpent Bounty",
     ["e"] = {
+      [1] = { ["px"] = 0.0815220019, ["py"] = 0.5830836017, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7115] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -57972,8 +57992,9 @@ local bookData = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Systres History: Volume 1",
     ["e"] = {
+      [1] = { ["px"] = 0.0817732017, ["py"] = 0.5830268015, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7130] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -58031,8 +58052,12 @@ local bookData = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Letter from Deesh-Jee",
     ["e"] = {
+      [1] = {
+       ["px"] = 0.0820651981, ["py"] = 0.5728451922, ["pm"] = 2153, ["d"] = true,
+       ["zx"] = 0.0827916034, ["zy"] = 0.5731292019, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7263] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -58252,8 +58277,9 @@ local bookData = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Captain Za'ji's Log",
     ["e"] = {
+      [1] = { ["px"] = 0.0882464027, ["py"] = 0.5786228014, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7268] = {
     ["cn"] = "Systres Tomes and Scrolls",
