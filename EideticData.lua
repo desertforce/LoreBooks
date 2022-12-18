@@ -61298,6 +61298,657 @@ local bookData = {
       [1] = { ["px"] = 0.0729452014, ["py"] = 0.5902120030, ["pm"] = 2114, },
     },
   },
+  [7292] = {
+    ["c"] = false,
+    ["cn"] = "Hearts and Flowers",
+    ["n"] = "Letter From Ember",
+    ["e"] = {
+    }
+  },
+  [7293] = {
+    ["c"] = false,
+    ["cn"] = "Hearts and Flowers",
+    ["n"] = "Letter From Isobel",
+    ["e"] = {
+    }
+  },
+  [7192] = {
+    ["c"] = false,
+    ["cn"] = "Library of Incunabula",
+    ["n"] = "A Warning to Those Who Follow",
+    ["e"] = {
+    }
+  },
+  [7193] = {
+    ["c"] = false,
+    ["cn"] = "Library of Incunabula",
+    ["n"] = "A Second Warning",
+    ["e"] = {
+    }
+  },
+  [7194] = {
+    ["c"] = false,
+    ["cn"] = "Library of Incunabula",
+    ["n"] = "Your Final Warning",
+    ["e"] = {
+    }
+  },
+  [7195] = {
+    ["c"] = false,
+    ["cn"] = "Library of Incunabula",
+    ["n"] = "Logbook of Druid Anwas",
+    ["e"] = {
+    }
+  },
+  [7196] = {
+    ["c"] = false,
+    ["cn"] = "Library of Incunabula",
+    ["n"] = "Logbook of Druid Betrys",
+    ["e"] = {
+    }
+  },
+  [7250] = {
+    ["c"] = false,
+    ["cn"] = "The Impresario's Catalogue",
+    ["n"] = "Help Wanted: Philien's Tours",
+    ["e"] = {
+    }
+  },
+  [7217] = {
+    ["c"] = false,
+    ["cn"] = "The Impresario's Catalogue",
+    ["n"] = "By Command of the Ascendant Order",
+    ["e"] = {
+    }
+  },
+  [7358] = {
+    ["c"] = false,
+    ["cn"] = "The Impresario's Catalogue",
+    ["n"] = "Mel Adrys' Journal",
+    ["e"] = {
+    }
+  },
+  [7282] = {
+    ["c"] = false,
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Letter from Druid Laurel",
+    ["e"] = {
+    }
+  },
+  [7271] = {
+    ["c"] = false,
+    ["cn"] = "Systres Tomes and Scrolls",
+    ["n"] = "Archdruid Michiel's Orders",
+    ["e"] = {
+    }
+  },
+  [7584] = {
+    ["c"] = false,
+    ["cn"] = "Tomes of Tributes",
+    ["n"] = "Torn Note From Brahgas",
+    ["e"] = {
+    }
+  },
+  [7511] = {
+    ["c"] = false,
+    ["cn"] = "Tomes of Tributes",
+    ["n"] = "Legion's Arrival Clue",
+    ["e"] = {
+    }
+  },
+  [7545] = {
+    ["c"] = false,
+    ["cn"] = "Tomes of Tributes",
+    ["n"] = "Wispheart Totem Clue",
+    ["e"] = {
+    }
+  },
+  [7546] = {
+    ["c"] = false,
+    ["cn"] = "Tomes of Tributes",
+    ["n"] = "Druid King Vestments Clue",
+    ["e"] = {
+    }
+  },
+  [7303] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Deal with the Messenger",
+    ["e"] = {
+    }
+  },
+  [7305] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Messenger's Report",
+    ["e"] = {
+    }
+  },
+  [7283] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Congratulations On Another Success!",
+    ["e"] = {
+    }
+  },
+  [7310] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "For Your Next Celebration",
+    ["e"] = {
+    }
+  },
+  [7286] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Welcome, Initiates!",
+    ["e"] = {
+    }
+  },
+  [7285] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Shipping Label",
+    ["e"] = {
+    }
+  },
+  [7287] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Orders from the Lord",
+    ["e"] = {
+    }
+  },
+  [7289] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Ancient Druid Bloodlines",
+    ["e"] = {
+    }
+  },
+  [7288] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Lord Bacaro's Journal",
+    ["e"] = {
+    }
+  },
+  [7365] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "The Final Dream of Kasorayn",
+    ["e"] = {
+    }
+  },
+  [7361] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "The Dream of Kasorayn",
+    ["e"] = {
+    }
+  },
+  [7300] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Druid Senna's Last Account",
+    ["e"] = {
+    }
+  },
+  [7284] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Dreadsail Orders",
+    ["e"] = {
+    }
+  },
+  [7301] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Note to Neri",
+    ["e"] = {
+    }
+  },
+  [7302] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Ritual of Life's Commencement",
+    ["e"] = {
+    }
+  },
+  [7304] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Minahel's Note",
+    ["e"] = {
+    }
+  },
+  [7311] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Note from Umindior",
+    ["e"] = {
+    }
+  },
+  [7290] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Yves Grandvache Ledger",
+    ["e"] = {
+    }
+  },
+  [7291] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Letter from Gad",
+    ["e"] = {
+    }
+  },
+  [7308] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Kiko's Riddles",
+    ["e"] = {
+    }
+  },
+  [7309] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Kiko's Final Riddle",
+    ["e"] = {
+    }
+  },
+  [7306] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Orders from Sealord Nalos",
+    ["e"] = {
+    }
+  },
+  [7357] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Warning! Do Not Touch Cask!",
+    ["e"] = {
+    }
+  },
+  [7362] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Frog Stealing Plans",
+    ["e"] = {
+    }
+  },
+  [7315] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Druid Fables: The Proud Faun",
+    ["e"] = {
+    }
+  },
+  [7356] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "The Annotated Dream of Kasorayn",
+    ["e"] = {
+    }
+  },
+  [7359] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Wines of the Systres",
+    ["e"] = {
+    }
+  },
+  [7360] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "The Flora and Fauna of Galen",
+    ["e"] = {
+    }
+  },
+  [7363] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "The Druid Monoliths",
+    ["e"] = {
+    }
+  },
+  [7364] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Y'ffelon, the Forbidden Island",
+    ["e"] = {
+    }
+  },
+  [7470] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "A Travel Guide to Tamriel Castles",
+    ["e"] = {
+    }
+  },
+  [7512] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Argument Between Priest and Druid Number 12",
+    ["e"] = {
+    }
+  },
+  [7513] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Dreadsails: Threat to the Isles",
+    ["e"] = {
+    }
+  },
+  [7519] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Glimmertarn: A Stonelore Community",
+    ["e"] = {
+    }
+  },
+  [7520] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Embracing the Natural Order",
+    ["e"] = {
+    }
+  },
+  [7521] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Mirah's Journal: The Salvage",
+    ["e"] = {
+    }
+  },
+  [7522] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Molith the Mudcrab",
+    ["e"] = {
+    }
+  },
+  [7523] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Druid Funerals: A Piece of Y'ffre",
+    ["e"] = {
+    }
+  },
+  [7524] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Investigator Vale and the Darkmasts",
+    ["e"] = {
+    }
+  },
+  [7525] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "The Tempest and the Sunflower",
+    ["e"] = {
+    }
+  },
+  [7526] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Arnoit and Lisette: The True Story",
+    ["e"] = {
+    }
+  },
+  [7527] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Druid Scapegoats",
+    ["e"] = {
+    }
+  },
+  [7528] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Druid Fables: Systres Beavers",
+    ["e"] = {
+    }
+  },
+  [7529] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Druid Food of Vastyr",
+    ["e"] = {
+    }
+  },
+  [7530] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Journeys In Galen: A Scholar's Travels",
+    ["e"] = {
+    }
+  },
+  [7531] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "The Beast of Galen",
+    ["e"] = {
+    }
+  },
+  [7532] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Bolga's Guide to Galen Beasts",
+    ["e"] = {
+    }
+  },
+  [7533] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Systres History Addendum: The Druids of Galen",
+    ["e"] = {
+    }
+  },
+  [7534] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Systres History: Vastyr",
+    ["e"] = {
+    }
+  },
+  [7535] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Systres History: Addendum",
+    ["e"] = {
+    }
+  },
+  [7536] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Exodus of the Druids",
+    ["e"] = {
+    }
+  },
+  [7537] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Visitor's Guide to Galen",
+    ["e"] = {
+    }
+  },
+  [7538] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Emeric's Judgment",
+    ["e"] = {
+    }
+  },
+  [7539] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "On Nature Spirits",
+    ["e"] = {
+    }
+  },
+  [7540] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Legacy of the Bretons",
+    ["e"] = {
+    }
+  },
+  [7541] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "A Helpful, Steadfast Hand",
+    ["e"] = {
+    }
+  },
+  [7544] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "A Trespasser in Ivyhame",
+    ["e"] = {
+    }
+  },
+  [7547] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Fearless as the Sun",
+    ["e"] = {
+    }
+  },
+  [7548] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Siege of Vastyr",
+    ["e"] = {
+    }
+  },
+  [7551] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Belaigh and the Molmor",
+    ["e"] = {
+    }
+  },
+  [7553] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "A Lissome Sprite",
+    ["e"] = {
+    }
+  },
+  [7557] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "The Poet-Champion of Vastyr",
+    ["e"] = {
+    }
+  },
+  [7561] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Song of Vastyr",
+    ["e"] = {
+    }
+  },
+  [7571] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Modern Day Bretons: Man or Mer?",
+    ["e"] = {
+    }
+  },
+  [7572] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Druid Fables: Butterfly and Faun Lord",
+    ["e"] = {
+    }
+  },
+  [7573] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Dame Helenie's Quest",
+    ["e"] = {
+    }
+  },
+  [7576] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Who Are the Sea Elves?",
+    ["e"] = {
+    }
+  },
+  [7586] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "To See My Systres",
+    ["e"] = {
+    }
+  },
+  [7587] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "The Dame of Castle Navire",
+    ["e"] = {
+    }
+  },
+  [7598] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "The Storm and the Sunflower",
+    ["e"] = {
+    }
+  },
+  [7599] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Spirit of the Volcano",
+    ["e"] = {
+    }
+  },
+  [7600] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Rescue Me",
+    ["e"] = {
+    }
+  },
+  [7601] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Vastyr Fisherfolk Song",
+    ["e"] = {
+    }
+  },
+  [7314] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Calling All Sea Elves!",
+    ["e"] = {
+    }
+  },
+  [7467] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Fauns' Thicket Research Notes",
+    ["e"] = {
+    }
+  },
+  [7605] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Archdruid's Letter",
+    ["e"] = {
+    }
+  },
+  [7416] = {
+    ["c"] = false,
+    ["cn"] = "Archipelago Books and Almanacs",
+    ["n"] = "Vastyr Fisherfolk Song",
+    ["e"] = {
+    }
+  },
 }
 
 function LoreBooks_GetBookData()
