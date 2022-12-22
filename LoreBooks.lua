@@ -585,7 +585,7 @@ local function MapCallbackCreateEideticPins(pinType)
       elseif zoneMapId == pinData.zm and libgpsZoneCoordinates then
         pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.zx, pinData.zy)
       elseif zoneMapId == pinData.zm and libgpsCoordinates then
-          pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.px, pinData.py)
+        pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.px, pinData.py)
       end
       if mapId == pinData.pm and normalizedCoordinates then
         pinData.xLoc = pinData.pnx
