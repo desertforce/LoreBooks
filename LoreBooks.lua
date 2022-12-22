@@ -1504,7 +1504,10 @@ local function OnRowMouseUp(control, button)
 
             local xLoc, yLoc
             if libgpsCoordinates then
-              xLoc, yLoc = GPS:GlobalToLocal(data.px, data.py)
+              local measurement = GPS:GetMapMeasurementByMapId(mapId)
+              if measurement then
+                xLoc, yLoc = measurement:ToLocal(data.px, data.py)
+              end
             end
             if normalizedCoordinates then
               xLoc = data.pnx

@@ -5,7 +5,7 @@
 ## Author: Kyoma, Ayantir, Garkin, Sharlikran
 ## APIVersion: 101035 101036
 ## SavedVariables: LBooks_SavedVariables
-## DependsOn: LibAddonMenu-2.0>=33 LibMapPins-1.0>=10036 CustomCompassPins>=32 LibGPS>=66 LibCustomMenu>=713
+## DependsOn: LibAddonMenu-2.0>=33 LibMapPins-1.0>=10036 CustomCompassPins>=32 LibGPS>=68 LibCustomMenu>=713
 ## DependsOn: LibLoreLibrary>=1 LibMapData>=103
 ## OptionalDependsOn: LibDebugLogger>=220 DebugLogViewer>=558
 
