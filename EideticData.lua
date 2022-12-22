@@ -40901,7 +40901,7 @@ local bookData = {
     },
   },
   [6316] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "The Reach Reader",
     ["n"] = "Falkfyr's Notes, Page 1",
     ["q"] = 6591,
@@ -57794,6 +57794,7 @@ local bookData = {
   [7108] = {
     ["cn"] = "Hearts and Flowers",
     ["n"] = "The Rose of Navire, Part the First",
+    ["q"] = 6790,
     ["e"] = {
       [1] = {
         ["px"] = 0.0518555997, ["py"] = 0.5992875875, ["pm"] = 2219, ["d"] = true,
@@ -57812,6 +57813,7 @@ local bookData = {
   [7110] = {
     ["cn"] = "Hearts and Flowers",
     ["n"] = "The Rose of Navire, Part the Second",
+    ["q"] = 6790,
     ["e"] = {
       [1] = { ["px"] = 0.0692584028, ["py"] = 0.6027004052, ["pm"] = 2163, ["zm"] = 2114, },
     },
@@ -57820,6 +57822,7 @@ local bookData = {
   [7111] = {
     ["cn"] = "Hearts and Flowers",
     ["n"] = "The Rose of Navire, Part the Third",
+    ["q"] = 6790,
     ["e"] = {
       [1] = { ["px"] = 0.0698044028, ["py"] = 0.6041568052, ["pm"] = 2163, ["zm"] = 2114, },
     },
@@ -58400,10 +58403,11 @@ local bookData = {
     }
   },
   [7584] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Tomes of Tributes",
     ["n"] = "Torn Note From Brahgas",
     ["e"] = {
+      [1] = { ["px"] = 0.0496843997, ["py"] = 0.5706768111, ["pm"] = 2227, ["zm"] = 2212, },
     }
   },
   [7511] = {
@@ -58428,17 +58432,21 @@ local bookData = {
     }
   },
   [7303] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Deal with the Messenger",
+    ["q"] = 6847,
     ["e"] = {
+      [1] = { ["px"] = 0.0698068011, ["py"] = 0.5886680012, ["pm"] = 2114, },
     }
   },
   [7305] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Messenger's Report",
+    ["q"] = 6847,
     ["e"] = {
+      [1] = { ["px"] = 0.0704956026, ["py"] = 0.5882668018, ["pm"] = 2114, },
     }
   },
   [7283] = {
@@ -58451,10 +58459,15 @@ local bookData = {
     }
   },
   [7310] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "For Your Next Celebration",
+    ["q"] = 6847,
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0519439997, ["py"] = 0.5993407875, ["pm"] = 2219, ["d"] = true,
+        ["zx"] = 0.0519460016, ["zy"] = 0.5990540036, ["zm"] = 2114,
+      },
     }
   },
   [7286] = {
@@ -58500,38 +58513,47 @@ local bookData = {
     }
   },
   [7361] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "The Dream of Kasorayn",
     ["e"] = {
+      [1] = { ["px"] = 0.0512948013, ["py"] = 0.5619304014, ["pm"] = 2212, },
     }
   },
   [7300] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Druid Senna's Last Account",
+    ["q"] = 6858,
     ["e"] = {
+      [1] = { ["px"] = 0.0490812011, ["py"] = 0.5605904008, ["pm"] = 2212, },
     }
   },
   [7284] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Dreadsail Orders",
+    ["q"] = 6849,
     ["e"] = {
+      [1] = { ["px"] = 0.0581116005, ["py"] = 0.5672824020, ["pm"] = 2212, },
     }
   },
   [7301] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Note to Neri",
+    ["q"] = 6857,
     ["e"] = {
+      [1] = { ["px"] = 0.0597144018, ["py"] = 0.5574904010, ["pm"] = 2212, },
     }
   },
   [7302] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Ritual of Life's Commencement",
+    ["q"] = 6857,
     ["e"] = {
+      [1] = { ["px"] = 0.0590896012, ["py"] = 0.5565792013, ["pm"] = 2212, },
     }
   },
   [7304] = {
@@ -58542,59 +58564,76 @@ local bookData = {
     }
   },
   [7311] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Note from Umindior",
+    ["q"] = 6857,
     ["e"] = {
+      [1] = { ["px"] = 0.0573284011, ["py"] = 0.5553264009, ["pm"] = 2212, },
     }
   },
   [7290] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Yves Grandvache Ledger",
+    ["q"] = 6845,
     ["e"] = {
+      [1] = { ["px"] = 0.0494999998, ["py"] = 0.5712436109, ["pm"] = 2227, ["zm"] = 2212, },
     }
   },
   [7291] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Letter from Gad",
+    ["q"] = 6845,
     ["e"] = {
+      [1] = { ["px"] = 0.0494931995, ["py"] = 0.5712112111, ["pm"] = 2227, ["zm"] = 2212, },
     }
   },
   [7308] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Kiko's Riddles",
+    ["q"] = 6860,
     ["e"] = {
+      [1] = { ["px"] = 0.0497435996, ["py"] = 0.5706932110, ["pm"] = 2227, ["zm"] = 2212, },
     }
   },
   [7309] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Kiko's Final Riddle",
+    ["q"] = 6860,
     ["e"] = {
+      [1] = { ["px"] = 0.0497411995, ["py"] = 0.5706952111, ["pm"] = 2227, ["zm"] = 2212, },
     }
   },
   [7306] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Orders from Sealord Nalos",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0445988017, ["py"] = 0.5596256082, ["pm"] = 2241, ["d"] = true,
+        ["zx"] = 0.0446328008, ["zy"] = 0.5601956011, ["zm"] = 2212,
+      },
     }
   },
   [7357] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Warning! Do Not Touch Cask!",
     ["e"] = {
+      [1] = { ["px"] = 0.0497471998, ["py"] = 0.5706808110, ["pm"] = 2227, ["zm"] = 2212, },
     }
   },
   [7362] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Frog Stealing Plans",
+    ["q"] = 6904,
     ["e"] = {
+      [1] = { ["px"] = 0.0557676013, ["py"] = 0.5649572008, ["pm"] = 2212, },
     }
   },
   [7315] = {
@@ -58619,10 +58658,11 @@ local bookData = {
     }
   },
   [7360] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "The Flora and Fauna of Galen",
     ["e"] = {
+      [1] = { ["px"] = 0.0495767994, ["py"] = 0.5722292111, ["pm"] = 2227, ["zm"] = 2212, },
     }
   },
   [7363] = {
@@ -58640,24 +58680,28 @@ local bookData = {
     }
   },
   [7470] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "A Travel Guide to Tamriel Castles",
     ["e"] = {
+      [1] = { ["px"] = 0.0482436009, ["py"] = 0.5700763859, ["pm"] = 2279, ["d"] = true, },
+      [2] = { ["px"] = 0.0482979994, ["py"] = 0.5701256112, ["pm"] = 2227, ["zm"] = 2212, ["fp"] = true, },
     }
   },
   [7512] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Argument Between Priest and Druid Number 12",
     ["e"] = {
+      [1] = { ["px"] = 0.0479479996, ["py"] = 0.5710064111, ["pm"] = 2227, ["zm"] = 2212, },
     }
   },
   [7513] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Dreadsails: Threat to the Isles",
     ["e"] = {
+      [1] = { ["px"] = 0.0503007996, ["py"] = 0.5725312113, ["pm"] = 2227, ["zm"] = 2212, },
     }
   },
   [7519] = {
@@ -58668,17 +58712,19 @@ local bookData = {
     }
   },
   [7520] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Embracing the Natural Order",
     ["e"] = {
+      [1] = { ["px"] = 0.0478695996, ["py"] = 0.5700544110, ["pm"] = 2227, ["zm"] = 2212, },
     }
   },
   [7521] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Mirah's Journal: The Salvage",
     ["e"] = {
+      [1] = { ["px"] = 0.0625700007, ["py"] = 0.5601908011, ["pm"] = 2212, },
     }
   },
   [7522] = {
@@ -58717,10 +58763,11 @@ local bookData = {
     }
   },
   [7527] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Druid Scapegoats",
     ["e"] = {
+      [1] = { ["px"] = 0.0587748009, ["py"] = 0.5676064013, ["pm"] = 2212, },
     }
   },
   [7528] = {
@@ -58745,17 +58792,19 @@ local bookData = {
     }
   },
   [7531] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "The Beast of Galen",
     ["e"] = {
+      [1] = { ["px"] = 0.0538528006, ["py"] = 0.5666320015, ["pm"] = 2212, },
     }
   },
   [7532] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Bolga's Guide to Galen Beasts",
     ["e"] = {
+      [1] = { ["px"] = 0.0498307996, ["py"] = 0.5721628110, ["pm"] = 2227, ["zm"] = 2212, },
     }
   },
   [7533] = {
@@ -58822,143 +58871,174 @@ local bookData = {
     }
   },
   [7544] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "A Trespasser in Ivyhame",
     ["e"] = {
+      [1] = { ["px"] = 0.0491040009, ["py"] = 0.5560692011, ["pm"] = 2212, },
     }
   },
   [7547] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Fearless as the Sun",
     ["e"] = {
+      [1] = { ["px"] = 0.0470592007, ["py"] = 0.5582448007, ["pm"] = 2212, },
     }
   },
   [7548] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Siege of Vastyr",
     ["e"] = {
+      [1] = { ["px"] = 0.0482128009, ["py"] = 0.5700812095, ["pm"] = 2280, ["d"] = true, },
+      [2] = { ["px"] = 0.0482979994, ["py"] = 0.5701256112, ["pm"] = 2227, ["zm"] = 2212, ["fp"] = true, },
     }
   },
   [7551] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Belaigh and the Molmor",
     ["e"] = {
+      [1] = { ["px"] = 0.0475171997, ["py"] = 0.5701788111, ["pm"] = 2227, ["zm"] = 2212, },
     }
   },
   [7553] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "A Lissome Sprite",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0480436016, ["py"] = 0.5641543908, ["pm"] = 2265, ["d"] = true,
+        ["zx"] = 0.0482888008, ["zy"] = 0.5642948013, ["zm"] = 2212,
+      },
     }
   },
   [7557] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "The Poet-Champion of Vastyr",
     ["e"] = {
+      [1] = { ["px"] = 0.0493403994, ["py"] = 0.5713852111, ["pm"] = 2227, ["zm"] = 2212, },
     }
   },
   [7561] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Song of Vastyr",
     ["e"] = {
+      [1] = { ["px"] = 0.0497443997, ["py"] = 0.5706488110, ["pm"] = 2227, ["zm"] = 2212, },
     }
   },
   [7571] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Modern Day Bretons: Man or Mer?",
     ["e"] = {
+      [1] = { ["px"] = 0.0558304009, ["py"] = 0.5625072015, ["pm"] = 2212, },
     }
   },
   [7572] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Druid Fables: Butterfly and Faun Lord",
     ["e"] = {
+      [1] = { ["px"] = 0.0492940008, ["py"] = 0.5573040011, ["pm"] = 2212, },
     }
   },
   [7573] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Dame Helenie's Quest",
     ["e"] = {
+      [1] = { ["px"] = 0.0490631997, ["py"] = 0.5707388111, ["pm"] = 2227, },
     }
   },
   [7576] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Who Are the Sea Elves?",
     ["e"] = {
+      [1] = { ["px"] = 0.0581976008, ["py"] = 0.5666032017, ["pm"] = 2212, },
     }
   },
   [7586] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "To See My Systres",
     ["e"] = {
+      [1] = { ["px"] = 0.0599904015, ["py"] = 0.5562128009, ["pm"] = 2212, },
     }
   },
   [7587] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "The Dame of Castle Navire",
     ["e"] = {
+      [1] = { ["px"] = 0.0499716006, ["py"] = 0.5548024009, ["pm"] = 2212, },
     }
   },
   [7598] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "The Storm and the Sunflower",
     ["e"] = {
+      [1] = { ["px"] = 0.0569228006, ["py"] = 0.5704416012, ["pm"] = 2212, },
     }
   },
   [7599] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Spirit of the Volcano",
     ["e"] = {
+      [1] = { ["px"] = 0.0491772008, ["py"] = 0.5625984008, ["pm"] = 2212, },
     }
   },
   [7600] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Rescue Me",
     ["e"] = {
+      [1] = { ["px"] = 0.0467448009, ["py"] = 0.5665836010, ["pm"] = 2212, },
     }
   },
   [7601] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Vastyr Fisherfolk Song",
     ["e"] = {
+      [1] = { ["px"] = 0.0494599997, ["py"] = 0.5720068112, ["pm"] = 2227, ["zm"] = 2212, },
     }
   },
   [7314] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Calling All Sea Elves!",
+    ["q"] = 6887,
     ["e"] = {
+      [1] = { ["px"] = 0.0596308016, ["py"] = 0.5565696009, ["pm"] = 2212, },
+      [2] = { ["px"] = 0.0590552015, ["py"] = 0.5566132010, ["pm"] = 2212, },
+      [3] = { ["px"] = 0.0597644005, ["py"] = 0.5550648011, ["pm"] = 2212, },
+      [4] = { ["px"] = 0.0585296019, ["py"] = 0.5569444012, ["pm"] = 2212, },
     }
   },
   [7467] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Fauns' Thicket Research Notes",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0450864016, ["py"] = 0.5643967910, ["pm"] = 2265, ["d"] = true,
+        ["zx"] = 0.0482888008, ["zy"] = 0.5642948013, ["zm"] = 2212,
+      },
     }
   },
   [7605] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Archdruid's Letter",
     ["e"] = {
+      [1] = { ["px"] = 0.0601052001, ["py"] = 0.5635000088, ["pm"] = 2225, ["d"] = true, ["zx"] = 0.0579724016, ["zy"] = 0.5636720016, ["zm"] = 2212, },
     }
   },
   [7416] = {
