@@ -35,26 +35,29 @@ local internal = _G["LoreBooks_Internal"]
 
 --LibDebugLogger -------------------------------------------------------------
 if LibDebugLogger then
-  local logger = LibDebugLogger.Create(internal.ADDON_NAME)
-  LoreBooks.logger = logger
+  LoreBooks.logger = LibDebugLogger.Create(internal.ADDON_NAME)
 end
 
+local logger
+local viewer
+if DebugLogViewer then viewer = true else viewer = false end
+if LibDebugLogger then logger = true else logger = false end
+
 local function create_log(log_type, log_content)
-  if not DebugLogViewer and log_type == "Info" then
+  if not viewer and log_type == "Info" then
     CHAT_ROUTER:AddSystemMessage(log_content)
     return
   end
-  if not LibDebugLogger then return end
-  if log_type == "Debug" then
+  if logger and log_type == "Debug" then
     LoreBooks.logger:Debug(log_content)
   end
-  if log_type == "Info" then
+  if logger and log_type == "Info" then
     LoreBooks.logger:Info(log_content)
   end
-  if log_type == "Verbose" then
+  if logger and log_type == "Verbose" then
     LoreBooks.logger:Verbose(log_content)
   end
-  if log_type == "Warn" then
+  if logger and log_type == "Warn" then
     LoreBooks.logger:Warn(log_content)
   end
 end
