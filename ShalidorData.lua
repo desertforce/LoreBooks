@@ -3406,7 +3406,7 @@ function LoreBooks_GetDataOfBook(categoryIndex, collectionIndex, bookIndex)
       for mapId, mapData in pairs(lorebooksData) do
         for bookEntry, bookData in pairs(mapData) do
           if bookData[3] == collectionIndex and bookData[4] == bookIndex then
-            table.insert(results, { data = bookData, mapId = mapId, locX = bookData[1], locY = bookData[2] })
+            results[#results + 1] = { data = bookData, mapId = mapId, locX = bookData[1], locY = bookData[2] }
           end
         end
       end

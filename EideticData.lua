@@ -4304,12 +4304,7 @@ local bookData = {
   [373] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["mn"] = 13,
-        ["py"] = 0.2764700000,
-        ["px"] = 0.6422900000,
-        ["pm"] = 61,
-      },
+      [1] = { ["px"] = 0.6423100213, ["py"] = 0.2764811968, ["pm"] = 61, },
     },
     ["n"] = "You Are What You Eat",
     ["cn"] = "The Devoted and the Deranged",
@@ -4317,12 +4312,7 @@ local bookData = {
   [374] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["mn"] = 13,
-        ["py"] = 0.2742400000,
-        ["px"] = 0.6381000000,
-        ["pm"] = 61,
-      },
+      [1] = { ["px"] = 0.6381200247, ["py"] = 0.2741951966, ["pm"] = 61, },
     },
     ["n"] = "Fishing Camp Checklist",
     ["cn"] = "Houses, Shops, and Trade",
@@ -15496,12 +15486,7 @@ local bookData = {
   [1326] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["mn"] = 9,
-        ["py"] = 0.5532100000,
-        ["px"] = 0.7560300000,
-        ["pm"] = 26,
-      },
+      [1] = { ["px"] = 0.7560111937, ["py"] = 0.5532435951, ["pm"] = 26, },
     },
     ["n"] = "Broken Tusk Ritual Notes",
     ["cn"] = "Rituals and Revelations",
@@ -59041,7 +59026,7 @@ function LoreBooks_GetNewEideticDataFor(mapId, z_mapId)
               booksData.q = eideticData.q -- Add quest info
               -- booksData.qm = eideticData.qm -- Add quest map info
               -- booksData.qt = eideticData.qt -- Add quest type info, unused 04/22
-              table.insert(eideticInZone, booksData)
+              eideticInZone[#eideticInZone + 1] = booksData
             end
           end
         end
