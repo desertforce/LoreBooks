@@ -1885,7 +1885,8 @@ local bookLocalization = {
   ["ru"] = "Книга",
 }
 local function ShowMyPosition()
-  LMDI:SetPlayerLocation(true)
+  SetMapToPlayerLocation()
+  CALLBACK_MANAGER:FireCallbacks("OnWorldMapChanged")
   LMDI:UpdateMapInfo()
   local zone = LMP:GetZoneAndSubzone(true, false, true)
   local x, y = GetMapPlayerPosition("player")
