@@ -57051,9 +57051,11 @@ local bookData = {
   [7174] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Sea Lore for Arcane Crafting",
+    ["q"] = 6771,
     ["e"] = {
+      [1] = { ["px"] = 0.0691448011, ["py"] = 0.5965368016, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7175] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -57065,23 +57067,33 @@ local bookData = {
   [7176] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Magister Irin's Notes",
+    ["q"] = 6771,
     ["e"] = {
+      [1] = { ["px"] = 0.0691424023, ["py"] = 0.5966392011, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7177] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Notes on Vulk'esh",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0569307990, ["py"] = 0.5971303929, ["pm"] = 2156, ["d"] = true,
+        ["zx"] = 0.0571856025, ["zy"] = 0.5969848026, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7178] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Coral's Revenge",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0817875981, ["py"] = 0.5730263922, ["pm"] = 2153, ["d"] = true,
+        ["zx"] = 0.0827916034, ["zy"] = 0.5731292019, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7179] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -57094,29 +57106,34 @@ local bookData = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "The Sea Stone",
     ["e"] = {
+      [1] = { ["px"] = 0.0603748018, ["py"] = 0.5944532023, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7181] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Monument Lighthouse",
     ["e"] = {
+      [1] = { ["px"] = 0.0603776013, ["py"] = 0.5947836012, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7182] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Monument Inn",
     ["e"] = {
+      [1] = { ["px"] = 0.0598676018, ["py"] = 0.5940324034, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7184] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Tobin Moorcroft",
+    ["q"] = 6796,
     ["e"] = {
+      [1] = { ["px"] = 0.0606468018, ["py"] = 0.5936976020, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [6932] = {
     ["c"] = true,
@@ -57131,8 +57148,12 @@ local bookData = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "The Broken Oath",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0549451986, ["py"] = 0.5840020149, ["pm"] = 2133, ["d"] = true,
+        ["zx"] = 0.0542832023, ["zy"] = 0.5846908027, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [6938] = {
     ["c"] = true,
@@ -57162,8 +57183,12 @@ local bookData = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Waterlogged Journal of Vanisande Maul",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0847304019, ["py"] = 0.5830395909, ["pm"] = 2211, ["d"] = true,
+        ["zx"] = 0.0851008033, ["zy"] = 0.5826904014, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7199] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -57176,23 +57201,38 @@ local bookData = {
   [6944] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Dour Lady's Captain Log",
+    ["q"] = 6762,
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0858707993, ["py"] = 0.5829815964, ["pm"] = 2199, ["d"] = true,
+        ["zx"] = 0.0851008033, ["zy"] = 0.5826904014, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [6945] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Debonaire's Captain Log",
+    ["q"] = 6762,
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0857791992, ["py"] = 0.5828199964, ["pm"] = 2199, ["d"] = true,
+        ["zx"] = 0.0851008033, ["zy"] = 0.5826904014, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [6946] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Commodore's Diary",
+    ["q"] = 6762,
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0858227992, ["py"] = 0.5829087964, ["pm"] = 2199, ["d"] = true,
+        ["zx"] = 0.0851008033, ["zy"] = 0.5826904014, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [6947] = {
     ["c"] = true,
@@ -57233,8 +57273,9 @@ local bookData = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Gwenengith's Journal",
     ["e"] = {
+      [1] = { ["px"] = 0.0697956029, ["py"] = 0.6027548052, ["pm"] = 2163, ["zm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7208] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -57248,8 +57289,9 @@ local bookData = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Systres Knightly Orders Vol 2",
     ["e"] = {
+      [1] = { ["px"] = 0.0519288017, ["py"] = 0.6005180019, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7210] = {
     ["c"] = true,
@@ -57266,15 +57308,17 @@ local bookData = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "The Sea Elf Threat",
     ["e"] = {
+      [1] = { ["px"] = 0.0578304019, ["py"] = 0.5808016025, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7212] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "The Glittering Sapphire Tourney",
     ["e"] = {
+      [1] = { ["px"] = 0.0599324026, ["py"] = 0.5862504021, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7213] = {
     ["c"] = true,
@@ -57288,15 +57332,17 @@ local bookData = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Systres History: Volume 5",
     ["e"] = {
+      [1] = { ["px"] = 0.0533272009, ["py"] = 0.5924776086, ["pm"] = 2213, ["zm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7215] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Systres History: Volume 6",
     ["e"] = {
+      [1] = { ["px"] = 0.0572524014, ["py"] = 0.6015260014, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7216] = {
     ["c"] = true,
@@ -57337,9 +57383,14 @@ local bookData = {
   [6970] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Rules of the Game",
+    ["q"] = 6756,
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0678452018, ["py"] = 0.5785203862, ["pm"] = 2138, ["d"] = true,
+        ["zx"] = 0.0727092014, ["zy"] = 0.5804376024, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7251] = {
     ["cn"] = "Tomes of Tributes",
@@ -57506,8 +57557,9 @@ local bookData = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Secrets of Amenos",
     ["e"] = {
+      [1] = { ["px"] = 0.0766088033, ["py"] = 0.5855524124, ["pm"] = 2214, ["zm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7017] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -57582,8 +57634,9 @@ local bookData = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Adwig's Journal",
     ["e"] = {
+      [1] = { ["px"] = 0.0758404025, ["py"] = 0.5757092017, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7027] = {
     ["c"] = true,
@@ -57639,16 +57692,20 @@ local bookData = {
   [7034] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Head Jailer's Journal",
+    ["q"] = 6780,
     ["e"] = {
+      [1] = { ["px"] = 0.0764440032, ["py"] = 0.5852044124, ["pm"] = 2214, ["zm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7035] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Head Jailer's Ledger",
+    ["q"] = 6780,
     ["e"] = {
+      [1] = { ["px"] = 0.0764996032, ["py"] = 0.5852024123, ["pm"] = 2214, ["zm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7036] = {
     ["c"] = true,
@@ -57662,9 +57719,11 @@ local bookData = {
   [7038] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Finimi's Domicile",
+    ["q"] = 6780,
     ["e"] = {
+      [1] = { ["px"] = 0.0776288028, ["py"] = 0.5801572024, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7039] = {
     ["c"] = true,
@@ -57780,8 +57839,9 @@ local bookData = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Ecology of the Ornaug",
     ["e"] = {
+      [1] = { ["px"] = 0.0540044017, ["py"] = 0.5872220022, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7107] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -57807,8 +57867,9 @@ local bookData = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Captured by the Dreadsails",
     ["e"] = {
+      [1] = { ["px"] = 0.0760352029, ["py"] = 0.5750420020, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7110] = {
     ["cn"] = "Hearts and Flowers",
@@ -57873,29 +57934,43 @@ local bookData = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Dirge of the Stormy Seas",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0860383992, ["py"] = 0.5828747965, ["pm"] = 2199, ["d"] = true,
+        ["zx"] = 0.0851008033, ["zy"] = 0.5826904014, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7118] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Mysteries of the Eltheric Ammonite",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0567103990, ["py"] = 0.5968303929, ["pm"] = 2156, ["d"] = true,
+        ["zx"] = 0.0571856025, ["zy"] = 0.5969848026, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7119] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Wyrd and Druid",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0820991981, ["py"] = 0.5727091922, ["pm"] = 2153, ["d"] = true,
+        ["zx"] = 0.0827916034, ["zy"] = 0.5731292019, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7120] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Sorrows of the Wind",
+    ["q"] = 6771,
     ["e"] = {
+      [1] = { ["px"] = 0.0691184033, ["py"] = 0.5966264029, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7121] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -57921,15 +57996,23 @@ local bookData = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Green Serpent Testimonials",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0674408018, ["py"] = 0.5783427862, ["pm"] = 2138, ["d"] = true,
+        ["zx"] = 0.0727092014, ["zy"] = 0.5804376024, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7124] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Theories: Soulrazer Knights",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.0804511975, ["py"] = 0.5962460132, ["pm"] = 2171, ["d"] = true,
+        ["zx"] = 0.0735124018, ["zy"] = 0.5961748009, ["zm"] = 2114,
+      },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7204] = {
     ["c"] = true,
@@ -57959,8 +58042,9 @@ local bookData = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Systres History: Volume 2",
     ["e"] = {
+      [1] = { ["px"] = 0.0876128014, ["py"] = 0.5784588014, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7201] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -57974,8 +58058,9 @@ local bookData = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "History of House Dufort",
     ["e"] = {
+      [1] = { ["px"] = 0.0715032013, ["py"] = 0.5897176011, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7200] = {
     ["c"] = true,
@@ -57997,15 +58082,17 @@ local bookData = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Duties and Routine",
     ["e"] = {
+      [1] = { ["px"] = 0.0502804017, ["py"] = 0.6004376034, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7134] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "The Delicacies of High Isle",
     ["e"] = {
+      [1] = { ["px"] = 0.0528000009, ["py"] = 0.5920516085, ["pm"] = 2213, ["zm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7266] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -58019,8 +58106,9 @@ local bookData = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Ballad of the All Flags Navy",
     ["e"] = {
+      [1] = { ["px"] = 0.0614832014, ["py"] = 0.5944344016, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7137] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -58037,8 +58125,9 @@ local bookData = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Tales of Tribute: Series One",
     ["e"] = {
+      [1] = { ["px"] = 0.0702816026, ["py"] = 0.6048292055, ["pm"] = 2163, ["zm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7042] = {
     ["c"] = true,
@@ -58081,58 +58170,72 @@ local bookData = {
   [7144] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Fera's Journal",
+    ["q"] = 6780,
     ["e"] = {
+      [1] = { ["px"] = 0.0821884016, ["py"] = 0.5853772025, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7145] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Finimi's Spellbook",
     ["e"] = {
+      [1] = { ["px"] = 0.0777800019, ["py"] = 0.5801048019, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7146] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "History of House Mornard",
     ["e"] = {
+      [1] = { ["px"] = 0.0758744031, ["py"] = 0.5863940123, ["pm"] = 2214, ["zm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7147] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "1. The Thrassian Plague",
+    ["q"] = 6796,
     ["e"] = {
+      [1] = { ["px"] = 0.0604220027, ["py"] = 0.5949436024, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7148] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "2. Baron-Admiral Bendu Olo",
+    ["q"] = 6796,
     ["e"] = {
+      [1] = { ["px"] = 0.0603652025, ["py"] = 0.5949900032, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7149] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "3. The All Flags Navy",
+    ["q"] = 6796,
     ["e"] = {
+      [1] = { ["px"] = 0.0603168022, ["py"] = 0.5950076018, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7150] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "4. Instrument of Vengeance",
+    ["q"] = 6796,
     ["e"] = {
+      [1] = { ["px"] = 0.0602188024, ["py"] = 0.5949620024, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7151] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "5. Construction of Monument Island",
+    ["q"] = 6796,
     ["e"] = {
+      [1] = { ["px"] = 0.0601784013, ["py"] = 0.5948972016, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7152] = {
     ["c"] = true,
@@ -58148,16 +58251,20 @@ local bookData = {
   [7153] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "The All Flags Navy Started Here",
+    ["q"] = 6796,
     ["e"] = {
+      [1] = { ["px"] = 0.0613176026, ["py"] = 0.5942208033, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7154] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "In Memory of the Brave Souls",
+    ["q"] = 6796,
     ["e"] = {
+      [1] = { ["px"] = 0.0602744018, ["py"] = 0.5936384031, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7040] = {
     ["c"] = true,
@@ -58179,8 +58286,12 @@ local bookData = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "About Jhaka",
     ["e"] = {
+      [1] = {
+        ["px"] = 0.8013100067, ["py"] = 0.2972772004, ["pm"] = 1300, ["d"] = true,
+        ["zx"] = 0.8020876301, ["zy"] = 0.2968624027, ["zm"] = 1060,
+      },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7158] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -58259,22 +58370,25 @@ local bookData = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "A Harrowing Sea Voyage",
     ["e"] = {
+      [1] = { ["px"] = 0.0756716021, ["py"] = 0.5711016021, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7269] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "The Colossus of Gonfalon Bay",
     ["e"] = {
+      [1] = { ["px"] = 0.0696612026, ["py"] = 0.6053352051, ["pm"] = 2163, ["zm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7274] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Tribute Beginner's Guide",
     ["e"] = {
+      [1] = { ["zx"] = 0.0703660026, ["zy"] = 0.6049512052, ["zm"] = 2163, ["zm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7280] = {
     ["c"] = true,
@@ -58396,10 +58510,11 @@ local bookData = {
     }
   },
   [7271] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Archdruid Michiel's Orders",
     ["e"] = {
+      [1] = { ["px"] = 0.0670119999, ["py"] = 0.3616176081, ["pm"] = 1, },
     }
   },
   [7584] = {
@@ -58408,6 +58523,7 @@ local bookData = {
     ["n"] = "Torn Note From Brahgas",
     ["e"] = {
       [1] = { ["px"] = 0.0496843997, ["py"] = 0.5706768111, ["pm"] = 2227, ["zm"] = 2212, },
+      [2] = { ["px"] = 0.0703840026, ["py"] = 0.6049100054, ["pm"] = 2163, ["zm"] = 2114, },
     }
   },
   [7511] = {
