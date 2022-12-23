@@ -195,14 +195,14 @@ local function GetLorebookNames()
                 data.pm = LMD.mapNamesLookup[zoneName]
                 count = count + 1
               else
-                d(string.format("[LookUp] zoneName %s : zoneId: %s : mapIndex: %s : BookId : %s", zoneName, data.z, theMapIndex, bookId))
+                --d(string.format("[LookUp] zoneName %s : zoneId: %s : mapIndex: %s : BookId : %s", zoneName, data.z, theMapIndex, bookId))
                 --d(data)
                 count2 = count2 + 1
                 data.zt = data.z
               end
             elseif not data.md then
-              d("-----")
-              d(data)
+              --d("-----")
+              --d(data)
               bad = bad + 1
               saveData = false
             end
