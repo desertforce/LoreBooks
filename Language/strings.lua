@@ -1,6 +1,7 @@
 local strings = {
 
-  LBOOKS_QUEST_BOOK = "Book available through a quest",
+  LBOOKS_QUEST_BOOK = "Quest [%s]",
+  LBOOKS_QUEST_BOOK_ZONENAME = "Quest in %s [%s]",
   LBOOKS_MAYBE_NOT_HERE = "[Book is maybe not here]",
   LBOOKS_QUEST_IN_ZONE = "Quest in <<1>>",
   LBOOKS_SPECIAL_QUEST = "Special quest in <<1>>",
@@ -12,7 +13,6 @@ local strings = {
   LBOOKS_CLIMB = "Climb",
 
   --tooltips
-  LBOOKS_KNOWN = "Collected",
   LBOOKS_BOOKSHELF = "Bookshelf",
 
   LBOOKS_MOREINFO1 = "Town",
@@ -40,6 +40,10 @@ local strings = {
   LBOOKS_PIN_LAYER_DESC = "Set the layer of the map pins",
   LBOOKS_PIN_CLICK_MENU = "Enable Lorebook player waypoint click option",
   LBOOKS_PIN_CLICK_MENU_DESC = "Enable and disable the click option when Lorebooks are stacked to set player waypoint.",
+  LBOOKS_DUNGEON_TAG_MENU = "Add Dungeon or Location name to tooltip",
+  LBOOKS_DUNGEON_TAG_MENU_DESC = "Enable and disable adding the Dungeon or Location name to the tooltip. Example [Dungeon], or [Zenithar's Abbey]",
+  LBOOKS_QUESTINFO_MENU = "Add Quest name and Location to tooltip",
+  LBOOKS_QUESTINFO_MENU_DESC = "Enable and disable adding the Quest name and Location name if available to the tooltip. Example Quent in Blackwood [The Golden Anvil]",
 
   LBOOKS_PIN_TEXTURE1 = "Real icons",
   LBOOKS_PIN_TEXTURE2 = "Book icon set 1",

@@ -5,7 +5,8 @@
 -- Translated by:
 --
 
-SafeAddString(LBOOKS_QUEST_BOOK, "Disponible durante una misión", 1)
+SafeAddString(LBOOKS_QUEST_BOOK = "Quest [%s]", 1)
+SafeAddString(LBOOKS_QUEST_BOOK_ZONENAME = "Quest in %s [%s]", 1)
 SafeAddString(LBOOKS_MAYBE_NOT_HERE, "[Podría no estar ahí]", 1)
 SafeAddString(LBOOKS_QUEST_IN_ZONE, "Misión en <<1>>", 1)
 SafeAddString(LBOOKS_SPECIAL_QUEST, "Special quest in <<1>>", 1)
@@ -18,7 +19,6 @@ SafeAddString(LBOOKS_CLIMB, "Climb", 1)
 
 
 --tooltips
-SafeAddString(LBOOKS_KNOWN, "Coleccionado", 1)
 SafeAddString(LBOOKS_BOOKSHELF, "Bookshelf", 1)
 
 SafeAddString(LBOOKS_MOREINFO1, "Ciudad", 1)
@@ -46,6 +46,10 @@ SafeAddString(LBOOKS_PIN_LAYER, "Nivel del marcador", 1)
 SafeAddString(LBOOKS_PIN_LAYER_DESC, "Define el nivel de los marcadores en el mapa.", 1)
 SafeAddString(LBOOKS_PIN_CLICK_MENU, "Enable Lorebook player waypoint click option", 1)
 SafeAddString(LBOOKS_PIN_CLICK_MENU_DESC, "Enable and disable the click option when Lorebooks are stacked to set player waypoint.", 1)
+SafeAddString(LBOOKS_DUNGEON_TAG_MENU = "Add Dungeon or Location name to tooltip", 1)
+SafeAddString(LBOOKS_DUNGEON_TAG_MENU_DESC = "Enable and disable adding the Dungeon or Location name to the tooltip. Example [Dungeon], or [Zenithar's Abbey]", 1)
+SafeAddString(LBOOKS_QUESTINFO_MENU = "Add Quest name and Location to tooltip", 1)
+SafeAddString(LBOOKS_QUESTINFO_MENU_DESC = "Enable and disable adding the Quest name and Location name if available to the tooltip. Example Quent in Blackwood [The Golden Anvil]", 1)
 
 SafeAddString(LBOOKS_PIN_TEXTURE1, "Iconos reales", 1)
 SafeAddString(LBOOKS_PIN_TEXTURE2, "Set de iconos 1", 1)

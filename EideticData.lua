@@ -3864,12 +3864,7 @@ local bookData = {
     ["n"] = "Truths of the North",
     ["q"] = 4071,
     ["e"] = {
-      [1] = {
-        ["mn"] = 13,
-        ["py"] = 0.2851400000,
-        ["px"] = 0.6086100000,
-        ["pm"] = 61,
-      },
+      [1] = { ["px"] = 0.6086072242, ["py"] = 0.2851691983, ["pm"] = 61, },
     },
   },
   [327] = {
@@ -4252,12 +4247,7 @@ local bookData = {
   [368] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["mn"] = 13,
-        ["py"] = 0.2693900000,
-        ["px"] = 0.6416100000,
-        ["pm"] = 61,
-      },
+      [1] = { ["px"] = 0.6416276197, ["py"] = 0.2693399979, ["pm"] = 61, },
     },
     ["n"] = "Journal of Skorvild Frostwind",
     ["cn"] = "Personal Journals",
@@ -4278,12 +4268,7 @@ local bookData = {
   [370] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["mn"] = 13,
-        ["py"] = 0.2636200000,
-        ["px"] = 0.6454500000,
-        ["pm"] = 61,
-      },
+      [1] = { ["px"] = 0.6455036286, ["py"] = 0.2635859945, ["pm"] = 61, },
     },
     ["n"] = "Howls in the Night",
     ["cn"] = "The World and Its Creatures",
@@ -4337,12 +4322,7 @@ local bookData = {
   [378] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["mn"] = 13,
-        ["py"] = 0.2655200000,
-        ["px"] = 0.6178700000,
-        ["pm"] = 61,
-      },
+      [1] = { ["px"] = 0.6178152261, ["py"] = 0.2655431964, ["pm"] = 61, },
     },
     ["n"] = "Pending Orders",
     ["cn"] = "Houses, Shops, and Trade",
@@ -4472,9 +4452,7 @@ local bookData = {
   [391] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["px"] = 0.6102620255, ["py"] = 0.2780191969, ["pm"] = 61,
-      },
+      [1] = { ["px"] = 0.6102712237, ["py"] = 0.2779879974, ["pm"] = 61, },
     },
     ["n"] = "Nord Soldier's Journal",
     ["cn"] = "Personal Journals",
@@ -4673,9 +4651,7 @@ local bookData = {
   [407] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["px"] = 0.6133760248, ["py"] = 0.2834811948, ["pm"] = 61,
-      },
+      [1] = { ["px"] = 0.6133892237, ["py"] = 0.2835011981, ["pm"] = 61, },
     },
     ["n"] = "Dear Johun Letter",
     ["cn"] = "Hearts and Flowers",
@@ -4683,16 +4659,9 @@ local bookData = {
   [408] = {
     ["c"] = true,
     ["e"] = {
-      [1] = { ["py"] = 0.3197500000, ["px"] = 0.5944500000, ["pm"] = 578, ["zm"] = 61, },
-      [2] = {
-        ["mn"] = 13,
-        ["py"] = 0.2798800000,
-        ["px"] = 0.6060600000,
-        ["pm"] = 61,
-      },
-      [3] = {
-        ["px"] = 0.6119788252, ["py"] = 0.2835731957, ["pm"] = 61,
-      },
+      [1] = { ["px"] = 0.5944120274, ["py"] = 0.3197515974, ["pm"] = 578, ["zm"] = 61, },
+      [2] = { ["px"] = 0.6119560229, ["py"] = 0.2835235951, ["pm"] = 61, },
+      [3] = { ["px"] = 0.6060820234, ["py"] = 0.2798911975, ["pm"] = 61, },
     },
     ["n"] = "Orcs: Monsters or Misunderstood?",
     ["cn"] = "Lore and Culture",
@@ -5076,7 +5045,7 @@ local bookData = {
   [442] = {
     ["c"] = true,
     ["e"] = {
-      [1] = { ["py"] = 0.3279000000, ["px"] = 0.5975300000, ["pm"] = 578, ["zm"] = 61, },
+      [1] = { ["px"] = 0.5975488272, ["py"] = 0.3279583972, ["pm"] = 578, ["zm"] = 61, },
     },
     ["n"] = "The Quiet Room",
     ["cn"] = "Words of the Poets",
@@ -5624,12 +5593,7 @@ local bookData = {
   [500] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["mn"] = 13,
-        ["py"] = 0.3272300000,
-        ["px"] = 0.5967600000,
-        ["pm"] = 61,
-      },
+      [1] = { ["px"] = 0.5967636274, ["py"] = 0.3272211971, ["pm"] = 578, ["zm"] = 61, },
     },
     ["n"] = "Letter to Dhalen",
     ["cn"] = "Criminal Correspondence",
@@ -15524,7 +15488,7 @@ local bookData = {
     ["n"] = "Uggissar's Diary",
     ["q"] = 4583,
     ["e"] = {
-      [1] = { ["py"] = 0.3141000000, ["px"] = 0.5969000000, ["pm"] = 578, ["zm"] = 61, },
+      [1] = { ["px"] = 0.5969340274, ["py"] = 0.3140943975, ["pm"] = 578, ["zm"] = 61, },
     },
   },
   [1333] = {
@@ -19233,12 +19197,7 @@ local bookData = {
   [1654] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["mn"] = 13,
-        ["py"] = 0.2663700000,
-        ["px"] = 0.6330400000,
-        ["pm"] = 61,
-      },
+      [1] = { ["px"] = 0.6329208273, ["py"] = 0.2663999997, ["pm"] = 160, ["zm"] = 61, },
     },
     ["n"] = "Clans of Eastmarch: The Direfrost",
     ["cn"] = "Lore and Culture",
@@ -40301,20 +40260,15 @@ local bookData = {
     ["e"] = {
       [1] = {
         ["d"] = true,
-        ["i"] = 12,
+        ["i"] = INTERACTION_BOOK,
         ["py"] = 1.5297500000,
         ["r"] = true,
         ["px"] = 0.6317900000,
         ["pm"] = 1755,
       },
-      [2] = {
-        ["px"] = 0.3446720000,
-        ["py"] = 0.3060860000,
-        ["d"] = true,
-        ["pm"] = 1871,
-        ["zx"] = 0.3529464073, ["zy"] = 0.3030287967, ["zm"] = 1814,
-      },
-      [3] = { ["px"] = 0.0713760028, ["py"] = 0.6033084052, ["pm"] = 2163, ["zm"] = 2114, },
+      [2] = { ["px"] = 0.3446755986, ["py"] = 0.3060951967, ["pm"] = 1871, ["d"] = true, ["zx"] = 0.3529464073, ["zy"] = 0.3030287967, ["zm"] = 1814, ["ld"] = 4, }, -- 1/2 Briar Rock Crypts
+      [3] = { ["px"] = 0.3467967998, ["py"] = 0.3064615956, ["pm"] = 1870, ["fp"] = true, }, -- 2/2 Briar Rock Crypts
+      [4] = { ["px"] = 0.0713760028, ["py"] = 0.6033084052, ["pm"] = 2163, ["zm"] = 2114, },
     },
     ["m"] = {
       [24] = 1,
@@ -41295,13 +41249,9 @@ local bookData = {
     ["c"] = true,
     ["e"] = {
       [1] = {
-        ["py"] = 0.2874700000,
         ["px"] = 0.3426200000,
+        ["py"] = 0.2874700000,
         ["pm"] = 1858,
-        ["mn"] = 42,
-        ["d"] = false,
-        ["r"] = false,
-        ["i"] = 12,
         ["zm"] = 1814,
       },
     },
@@ -41370,15 +41320,7 @@ local bookData = {
   [6447] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["py"] = 0.2792400000,
-        ["px"] = 0.3814500000,
-        ["pm"] = 1814,
-        ["mn"] = 42,
-        ["d"] = false,
-        ["r"] = false,
-        ["i"] = 12,
-      },
+      [1] = { ["px"] = 0.3814180048, ["py"] = 0.2793443956, ["pm"] = 1814, },
     },
     ["n"] = "Namira's Dance",
     ["cn"] = "The Reach Reader",
@@ -41399,6 +41341,10 @@ local bookData = {
     ["q"] = 6623,
     ["e"] = {
       [1] = { ["px"] = 0.6420439739, ["py"] = 0.6378879946, ["pm"] = 1985, ["d"] = true, ["zx"] = 0.6411860050, ["zy"] = 0.6379076121, ["zm"] = 1887, },
+      [2] = { ["px"] = 0.6420439739, ["py"] = 0.6378879946, ["pm"] = 1986, ["fp"] = true, },
+      [3] = { ["px"] = 0.6420439739, ["py"] = 0.6378879946, ["pm"] = 1987, ["fp"] = true, },
+      [4] = { ["px"] = 0.6420439739, ["py"] = 0.6378879946, ["pm"] = 1988, ["fp"] = true, },
+      [5] = { ["px"] = 0.6420439739, ["py"] = 0.6378879946, ["pm"] = 1989, ["fp"] = true, },
     },
   },
   [6451] = {
@@ -41407,7 +41353,11 @@ local bookData = {
     ["n"] = "Rebel's Faded Letter",
     ["q"] = 6623,
     ["e"] = {
-      [1] = { ["px"] = 0.6420044250, ["py"] = 0.6377716072, ["pm"] = 1986, ["d"] = true, ["zx"] = 0.6411860050, ["zy"] = 0.6379076121, ["zm"] = 1887, },
+      [1] = { ["px"] = 0.6420040250, ["py"] = 0.6377712072, ["pm"] = 1985, ["fp"] = true, },
+      [2] = { ["px"] = 0.6420040250, ["py"] = 0.6377712072, ["pm"] = 1986, ["d"] = true, ["zx"] = 0.6411860050, ["zy"] = 0.6379076121, ["zm"] = 1887, },
+      [3] = { ["px"] = 0.6420439739, ["py"] = 0.6378879946, ["pm"] = 1987, ["fp"] = true, },
+      [4] = { ["px"] = 0.6420439739, ["py"] = 0.6378879946, ["pm"] = 1988, ["fp"] = true, },
+      [5] = { ["px"] = 0.6420439739, ["py"] = 0.6378879946, ["pm"] = 1989, ["fp"] = true, },
     },
   },
   [6452] = {
@@ -41416,10 +41366,7 @@ local bookData = {
     ["n"] = "Lovingly Written Note",
     ["q"] = 6623,
     ["e"] = {
-      [1] = {
-        ["px"] = 0.6421315999, ["py"] = 0.6379475899, ["pm"] = 1987, ["d"] = true,
-        ["zx"] = 0.6411860050, ["zy"] = 0.6379076121, ["zm"] = 1887,
-      },
+      [1] = { ["px"] = 0.6421315999, ["py"] = 0.6379475899, ["pm"] = 1987, ["d"] = true, ["zx"] = 0.6411860050, ["zy"] = 0.6379076121, ["zm"] = 1887, },
     },
   },
   [6453] = {
@@ -41427,10 +41374,7 @@ local bookData = {
     ["cn"] = "Books of Blackwood",
     ["n"] = "Bazaar Directory",
     ["e"] = {
-      [1] = {
-        ["px"] = 0.6421088200, ["py"] = 0.6378960133, ["pm"] = 1988, ["d"] = true,
-        ["zx"] = 0.6411860050, ["zy"] = 0.6379076121, ["zm"] = 1887,
-      },
+      [1] = { ["px"] = 0.6421088200, ["py"] = 0.6378960133, ["pm"] = 1988, ["d"] = true, ["zx"] = 0.6411860050, ["zy"] = 0.6379076121, ["zm"] = 1887, },
     },
   },
   [6454] = {
@@ -41438,10 +41382,7 @@ local bookData = {
     ["cn"] = "Books of Blackwood",
     ["n"] = "Ralos's Charred Journal",
     ["e"] = {
-      [1] = {
-        ["px"] = 0.6421924027, ["py"] = 0.6378788043, ["pm"] = 1989, ["d"] = true,
-        ["zx"] = 0.6411860050, ["zy"] = 0.6379076121, ["zm"] = 1887,
-      },
+      [1] = { ["px"] = 0.6421924027, ["py"] = 0.6378788043, ["pm"] = 1989, ["d"] = true, ["zx"] = 0.6411860050, ["zy"] = 0.6379076121, ["zm"] = 1887, },
     },
   },
   [6455] = {
@@ -41449,10 +41390,7 @@ local bookData = {
     ["cn"] = "Books of Blackwood",
     ["n"] = "Quentin's Secret Correspondence",
     ["e"] = {
-      [1] = {
-        ["px"] = 0.6422512028, ["py"] = 0.6379572043, ["pm"] = 1989, ["d"] = true,
-        ["zx"] = 0.6411860050, ["zy"] = 0.6379076121, ["zm"] = 1887,
-      },
+      [1] = { ["px"] = 0.6422512028, ["py"] = 0.6379572043, ["pm"] = 1989, ["d"] = true, ["zx"] = 0.6411860050, ["zy"] = 0.6379076121, ["zm"] = 1887, },
     },
   },
   [6456] = {
@@ -41460,10 +41398,7 @@ local bookData = {
     ["cn"] = "Books of Blackwood",
     ["n"] = "Esdir's Old Journal",
     ["e"] = {
-      [1] = {
-        ["px"] = 0.6422708028, ["py"] = 0.6379212044, ["pm"] = 1989, ["d"] = true,
-        ["zx"] = 0.6411860050, ["zy"] = 0.6379076121, ["zm"] = 1887,
-      },
+      [1] = { ["px"] = 0.6422708028, ["py"] = 0.6379212044, ["pm"] = 1989, ["d"] = true, ["zx"] = 0.6411860050, ["zy"] = 0.6379076121, ["zm"] = 1887, },
     },
   },
   [6457] = {
@@ -41471,10 +41406,7 @@ local bookData = {
     ["cn"] = "Books of Blackwood",
     ["n"] = "Merchant Lords' Compiled Documents",
     ["e"] = {
-      [1] = {
-        ["px"] = 0.6422488219, ["py"] = 0.6378579859, ["pm"] = 2022, ["d"] = true,
-        ["zx"] = 0.6411860050, ["zy"] = 0.6379076121, ["zm"] = 1887,
-      },
+      [1] = { ["px"] = 0.6422488219, ["py"] = 0.6378579859, ["pm"] = 2022, ["d"] = true, ["zx"] = 0.6411860050, ["zy"] = 0.6379076121, ["zm"] = 1887, },
       [2] = { ["px"] = 0.6422488028, ["py"] = 0.6378584043, ["pm"] = 1989, ["fp"] = true, } -- fake pin on main public dungeon map
     },
   },
@@ -59189,33 +59121,27 @@ function LoreBooks_GetNewEideticData(categoryIndex, collectionIndex, bookIndex)
 end
 
 function LoreBooks_GetNewEideticDataFor(mapId, z_mapId)
-  --[[ bookData changed to booksData because of local assignment
-  on ~ 2736 depending on changes]]--
-  local categoryName, numCollections = GetLoreCategoryInfo(internal.LORE_LIBRARY_EIDETIC) -- Only Eidetic
+  local _, numCollections = GetLoreCategoryInfo(internal.LORE_LIBRARY_EIDETIC) -- Only Eidetic
   local eideticInZone = {}
-  local searchTable = {}
   for collectionIndex = 1, numCollections do
     local _, _, _, totalBooks = GetLoreCollectionInfo(internal.LORE_LIBRARY_EIDETIC, collectionIndex)
     for bookIndex = 1, totalBooks do
-      local eideticData = LoreBooks_GetNewEideticData(internal.LORE_LIBRARY_EIDETIC, collectionIndex, bookIndex)
-      local randomAndFixed
-      if eideticData and eideticData.e and eideticData.m and not eideticData.q then
-        randomAndFixed = NonContiguousCount(eideticData.e) > 0 and NonContiguousCount(eideticData.m) > 0
+      local eideticBookZoneData = LoreBooks_GetNewEideticData(internal.LORE_LIBRARY_EIDETIC, collectionIndex, bookIndex)
+      local _, _, _, bookId = GetLoreBookInfo(internal.LORE_LIBRARY_EIDETIC, collectionIndex, bookIndex)
+      local eideticBooks
+      if eideticBookZoneData and eideticBookZoneData.c and eideticBookZoneData.e then
+        eideticBooks = eideticBookZoneData.c and NonContiguousCount(eideticBookZoneData.e) > 0
       end
-      if eideticData and (eideticData.e or randomAndFixed) and not eideticData.r then
-        for _, booksData in ipairs(eideticData.e) do
-          searchTable = {}
-          if booksData["pm"] then table.insert(searchTable, booksData["pm"]) end
-          if booksData["zm"] then table.insert(searchTable, booksData["zm"]) end
-          for index, booksMapId in ipairs(searchTable) do
-            if booksMapId == (mapId or z_mapId) then
-              booksData.c = collectionIndex -- Add collectionIndex
-              booksData.b = bookIndex -- Add bookIndex
-              booksData.q = eideticData.q -- Add quest info
-              -- booksData.qm = eideticData.qm -- Add quest map info
-              -- booksData.qt = eideticData.qt -- Add quest type info, unused 04/22
-              eideticInZone[#eideticInZone + 1] = booksData
-            end
+      if eideticBooks then
+        local eideticData = eideticBookZoneData.e
+        for _, booksData in ipairs(eideticData) do
+          local hasZoneData = booksData["pm"] == mapId or booksData["zm"] == z_mapId
+          if hasZoneData then
+            booksData.c = collectionIndex -- Add collectionIndex
+            booksData.b = bookIndex -- Add bookIndex
+            booksData.k = bookId -- Add bookIndex
+            if eideticBookZoneData.q then booksData.q = eideticBookZoneData.q end -- Add quest info
+            eideticInZone[#eideticInZone + 1] = booksData
           end
         end
       end
@@ -59228,6 +59154,9 @@ end
 
 --[[TODO not sure how this works since the data is not stored as
 a map index from 1 to 46, or even 1 to 146 because it uses the mapId
+
+12/23/2022 Just realized this is useless because the MapIndex is no
+longer used
 ]]--
 function LoreBooks_GetNewEideticDataForMapIndex(mapIndex)
   return LoreBooks_GetNewEideticDataFor(mapIndex, nil, "mn")

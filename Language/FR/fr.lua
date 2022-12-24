@@ -6,7 +6,8 @@
 -- Ykses (http://www.esoui.com/forums/member.php?u=1521)
 --
 
-SafeAddString(LBOOKS_QUEST_BOOK, "Livre accessible via une quête", 1)
+SafeAddString(LBOOKS_QUEST_BOOK = "Quest [%s]", 1)
+SafeAddString(LBOOKS_QUEST_BOOK_ZONENAME = "Quest in %s [%s]", 1)
 SafeAddString(LBOOKS_MAYBE_NOT_HERE, "[Le livre n'est peut être pas là]", 1)
 SafeAddString(LBOOKS_QUEST_IN_ZONE, "Quête en <<1>>", 1)
 SafeAddString(LBOOKS_SPECIAL_QUEST, "Quête spéciale dans <<1>>", 1)
@@ -19,7 +20,6 @@ SafeAddString(LBOOKS_CLIMB, "Monter", 1)
 
 
 --tooltips
-SafeAddString(LBOOKS_KNOWN, "collecté", 1)
 SafeAddString(LBOOKS_BOOKSHELF, "Bibliothèque", 1)
 
 SafeAddString(LBOOKS_MOREINFO1, "Ville", 1)
@@ -47,6 +47,10 @@ SafeAddString(LBOOKS_PIN_LAYER, "Épaisseur des icônes", 1)
 SafeAddString(LBOOKS_PIN_LAYER_DESC, "Choisir l'épaisseur des icônes sur la carte.", 1)
 SafeAddString(LBOOKS_PIN_CLICK_MENU, "Activer l'option de clic sur le passage du joueur", 1)
 SafeAddString(LBOOKS_PIN_CLICK_MENU_DESC, "Activer et désactiver l'option de clic lorsque les Lorebooks sont empilés pour définir le point de passage du joueur.", 1)
+SafeAddString(LBOOKS_DUNGEON_TAG_MENU = "Add Dungeon or Location name to tooltip", 1)
+SafeAddString(LBOOKS_DUNGEON_TAG_MENU_DESC = "Enable and disable adding the Dungeon or Location name to the tooltip. Example [Dungeon], or [Zenithar's Abbey]", 1)
+SafeAddString(LBOOKS_QUESTINFO_MENU = "Add Quest name and Location to tooltip", 1)
+SafeAddString(LBOOKS_QUESTINFO_MENU_DESC = "Enable and disable adding the Quest name and Location name if available to the tooltip. Example Quent in Blackwood [The Golden Anvil]", 1)
 
 SafeAddString(LBOOKS_PIN_TEXTURE1, "Icônes réelles", 1)
 SafeAddString(LBOOKS_PIN_TEXTURE2, "Jeu d'icônes de livre 1", 1)
