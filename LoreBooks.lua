@@ -640,6 +640,26 @@ local function MapCallbackCreateEideticPins(pinType)
       fakePinInfo: pins with "fp" have a unique mapId different from the pm or zm dual pin layout and should be displayed regardless as
         marker to breadcrumb the player to the book
       ]]--
+      local hasQuestInfo = pinData.q
+      local hasRequiredQuestInProgress = pinData.qp
+      local hasRequiredQuestCompleted = pinData.qc
+
+      local activeRequiredQuestNotInProgress = false
+      local requiredQuestIncomplete = false
+
+      if hasQuestInfo then
+        if not HasCompletedQuest(pinData.q) then activeRequiredQuestInProgress = hasRequiredQuestInProgress and not HasQuest(pinData.q) end
+      end
+      if hasQuestInfo then
+        if not HasCompletedQuest(pinData.q) then requiredQuestCompleted = hasRequiredQuestCompleted and not HasCompletedQuest(pinData.q) end
+      end
+
+      --[[Lazy hack, set the location information to nil]]--
+      if hasQuestInfo and (activeRequiredQuestInProgress or requiredQuestIncomplete) then
+        pinData.xLoc = nil
+        pinData.yLoc = nil
+      end
+
       local hasLocation = pinData.xLoc ~= nil and pinData.yLoc ~= nil
       -- Eidetic Memory Collected
       if pinType == internal.PINS_EIDETIC_COLLECTED and hasLocation then
@@ -1532,7 +1552,7 @@ local function OnRowMouseUp(control, button)
     elseif control.categoryIndex == internal.LORE_LIBRARY_EIDETIC then
 
       local bookData = LoreBooks_GetNewEideticData(control.categoryIndex, control.collectionIndex, control.bookIndex) -- [coordinates] specific book by book ID
-      local hasEideticBooks = bookData and bookData.c and NonContiguousCount(bookData.e) > 0
+      local hasEideticBooks = bookData and bookData.c and NonContiguousCount(bookData.e) >= 1
 
       if hasEideticBooks then
 
