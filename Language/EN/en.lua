@@ -1,14 +1,7 @@
-----------------------------------------
--- Polish localization for LoreBooks --
-----------------------------------------
---
--- Translated by:
---
-
 ZO_CreateStringId("LBOOKS_QUEST_BOOK", "Quest [%s]")
 ZO_CreateStringId("LBOOKS_QUEST_BOOK_ZONENAME", "Quest in %s [%s]")
-ZO_CreateStringId("LBOOKS_MAYBE_NOT_HERE", "[Księgi fabularnej może tutaj nie być]")
-ZO_CreateStringId("LBOOKS_QUEST_IN_ZONE", "Zadanie w <<1>>")
+ZO_CreateStringId("LBOOKS_MAYBE_NOT_HERE", "[Book is maybe not here]")
+ZO_CreateStringId("LBOOKS_QUEST_IN_ZONE", "Quest in <<1>>")
 ZO_CreateStringId("LBOOKS_SPECIAL_QUEST", "Special quest in <<1>>")
 ZO_CreateStringId("LBOOKS_LBPOS_OPEN_BOOK", "You must be reading a book to use /lbpos")
 ZO_CreateStringId("LBOOKS_LBPOS_ERROR", "Crafting Book or no relation to Eidetic Memory or Shalidor's Library.")
@@ -17,31 +10,30 @@ ZO_CreateStringId("LBOOKS_PIN_UPDATE", "Please Help Update")
 --Camera Actions
 ZO_CreateStringId("LBOOKS_CLIMB", "Climb")
 
-
 --tooltips
 ZO_CreateStringId("LBOOKS_BOOKSHELF", "Bookshelf")
 
-ZO_CreateStringId("LBOOKS_MOREINFO1", "Miasto")
+ZO_CreateStringId("LBOOKS_MOREINFO1", "Town")
 ZO_CreateStringId("LBOOKS_MOREINFO2", GetString(SI_INSTANCEDISPLAYTYPE7))
 ZO_CreateStringId("LBOOKS_MOREINFO3", GetString(SI_INSTANCEDISPLAYTYPE6))
-ZO_CreateStringId("LBOOKS_MOREINFO4", "Podziemia")
+ZO_CreateStringId("LBOOKS_MOREINFO4", "Underground")
 ZO_CreateStringId("LBOOKS_MOREINFO5", GetString(SI_INSTANCETYPE2))
 ZO_CreateStringId("LBOOKS_MOREINFO6", "Inside Inn")
 
-ZO_CreateStringId("LBOOKS_SET_WAYPOINT", "Ustaw cel na: |cFFFFFF<<1>>|r")
+ZO_CreateStringId("LBOOKS_SET_WAYPOINT", GetString(SI_WORLD_MAP_ACTION_SET_PLAYER_WAYPOINT) .. " : |cFFFFFF<<1>>|r")
 
 --settings menu header
-ZO_CreateStringId("LBOOKS_TITLE", "LoreBooks (Księgi Fabularne)")
+ZO_CreateStringId("LBOOKS_TITLE", "LoreBooks")
 
 --appearance
-ZO_CreateStringId("LBOOKS_PIN_TEXTURE", "Wybierz ikonę znacznika na mapie")
-ZO_CreateStringId("LBOOKS_PIN_TEXTURE_EIDETIC", "Wybierz ikone na mapie (<<1>>)")
-ZO_CreateStringId("LBOOKS_PIN_TEXTURE_DESC", "Wybiera ikonę znacznika na mapie.")
+ZO_CreateStringId("LBOOKS_PIN_TEXTURE", "Select map pin icons")
+ZO_CreateStringId("LBOOKS_PIN_TEXTURE_EIDETIC", "Select map pin icons (<<1>>)")
+ZO_CreateStringId("LBOOKS_PIN_TEXTURE_DESC", "Select map pin icons.")
 ZO_CreateStringId("LBOOKS_PIN_GRAYSCALE", " - Use grayscale")
 ZO_CreateStringId("LBOOKS_PIN_GRAYSCALE_DESC", "Use grayscale for collected lore books. (Only applies to 'real icons')")
 ZO_CreateStringId("LBOOKS_PIN_GRAYSCALE_EIDETIC_DESC", "Use grayscale for uncollected eidetic books. (Only applies to 'real icons')")
-ZO_CreateStringId("LBOOKS_PIN_SIZE", "Wielkość znacznika")
-ZO_CreateStringId("LBOOKS_PIN_SIZE_DESC", "Pozwala ustaliwić wielkość znacznika.")
+ZO_CreateStringId("LBOOKS_PIN_SIZE", "Pin size")
+ZO_CreateStringId("LBOOKS_PIN_SIZE_DESC", "Set the size of the map pins.")
 ZO_CreateStringId("LBOOKS_PIN_LAYER", "Pin layer")
 ZO_CreateStringId("LBOOKS_PIN_LAYER_DESC", "Set the layer of the map pins")
 ZO_CreateStringId("LBOOKS_PIN_CLICK_MENU", "Enable Lorebook player waypoint click option")
@@ -57,45 +49,45 @@ ZO_CreateStringId("LBOOKS_PIN_TEXTURE3", "Book icon set 2")
 ZO_CreateStringId("LBOOKS_PIN_TEXTURE4", "Esohead's icons (Rushmik)")
 
 --compass
-ZO_CreateStringId("LBOOKS_COMPASS_UNKNOWN", "Pokaż księgi fabularne na kompasie.")
-ZO_CreateStringId("LBOOKS_COMPASS_UNKNOWN_DESC", "Pokazuje/ukrywa ikonę niepoznanych ksiąg fabularnych.")
-ZO_CreateStringId("LBOOKS_COMPASS_DIST", "Maksymalna odległość znacznika")
-ZO_CreateStringId("LBOOKS_COMPASS_DIST_DESC", "Ustala maksymalną odległość znacznika pokazywanego przez kompas")
+ZO_CreateStringId("LBOOKS_COMPASS_UNKNOWN", "Show lorebooks on the compass.")
+ZO_CreateStringId("LBOOKS_COMPASS_UNKNOWN_DESC", "Show/Hide icons for unknown lorebooks on the compass.")
+ZO_CreateStringId("LBOOKS_COMPASS_DIST", "Max pin distance")
+ZO_CreateStringId("LBOOKS_COMPASS_DIST_DESC", "The maximum distance for pins to appear on the compass.")
 
 --filters
-ZO_CreateStringId("LBOOKS_UNKNOWN", "Pokaż niepoznane księgi fabularne")
-ZO_CreateStringId("LBOOKS_UNKNOWN_DESC", "Pokazuje/ukrywa ikonę niepoznanych ksiąg fabularnych na mapie.")
-ZO_CreateStringId("LBOOKS_COLLECTED", "Pokaż poznane księgi fabularne")
-ZO_CreateStringId("LBOOKS_COLLECTED_DESC", "Pokazuje/ukrywa ikonę poznanych ksiąg fabularnych na mapie")
+ZO_CreateStringId("LBOOKS_UNKNOWN", "Show unknown lorebooks")
+ZO_CreateStringId("LBOOKS_UNKNOWN_DESC", "Show/Hide icons for unknown lorebooks on the map.")
+ZO_CreateStringId("LBOOKS_COLLECTED", "Show already collected lorebooks")
+ZO_CreateStringId("LBOOKS_COLLECTED_DESC", "Show/Hide icons for already collected lorebooks on the map.")
 
 ZO_CreateStringId("LBOOKS_SHARE_DATA", "Share your discoveries with LoreBooks author")
 ZO_CreateStringId("LBOOKS_SHARE_DATA_DESC", "Enabling this option will share your discoveries with LoreBooks author by sending automatically an ingame mail with data collected.\nThis option is only available for EU Users, even if data collected is shared with NA ones\nPlease note that you may encounter a small lag with your skills when the mail is sent. Mail is silently sent every 30 books read.")
 
-ZO_CreateStringId("LBOOKS_EIDETIC", "Pokaż niepoznane Eidetic Memory")
-ZO_CreateStringId("LBOOKS_EIDETIC_DESC", "Pokaż/ukryj niepoznane zwoje Eidetic Memory na mapie. Te zwoje są zwyczajne, nie są zaliczane do progresu Gildi Magów, informują tylko o Tamriel")
-ZO_CreateStringId("LBOOKS_EIDETIC_COLLECTED", "Pokaż poznane Eidetic Memory")
-ZO_CreateStringId("LBOOKS_EIDETIC_COLLECTED_DESC", "Pokaż ukryj poznane zwoje Eidetic Memory na mapie. Te zwoje są zwyczajne, nie są zaliczane do progresu Gildi Magów, informują tylko o Tamriel")
-
+ZO_CreateStringId("LBOOKS_EIDETIC", "Show unknown Eidetic Memory")
+ZO_CreateStringId("LBOOKS_EIDETIC_DESC", "Show/Hide unknown Eidetic Memory scrolls on map. Those scrolls are lore-related scrolls not involved into Mages Guild Progression, but only informative about Tamriel")
+ZO_CreateStringId("LBOOKS_EIDETIC_COLLECTED", "Show known Eidetic Memory")
+ZO_CreateStringId("LBOOKS_EIDETIC_COLLECTED_DESC", "Show/Hide known Eidetic Memory scrolls on map. Those scrolls are lore-related scrolls not involved into Mages Guild Progression, but only informative about Tamriel")
 ZO_CreateStringId("LBOOKS_BOOKSHELF_NAME", "Show bookshelves")
 ZO_CreateStringId("LBOOKS_BOOKSHELF_DESC", "Show/Hide bookshelves on map. Bookshelves contain a random book from the zone.")
-ZO_CreateStringId("LBOOKS_COMPASS_EIDETIC", "Pokaż niepoznane  Eidetic Memory na kompasie")
-ZO_CreateStringId("LBOOKS_COMPASS_EIDETIC_DESC", "Pokaż ukryj niepoznane zwoje Eidetic Memory na kompasie. Te zwoje są zwyczajne, nie są zaliczane do progresu Gildi Magów, informują tylko o Tamriel")
 
+ZO_CreateStringId("LBOOKS_COMPASS_EIDETIC", "Show unknown Eidetic Memory on compass")
+ZO_CreateStringId("LBOOKS_COMPASS_EIDETIC_DESC", "Show/Hide unknown Eidetic Memory scrolls on compass. Those scrolls are lore-related scrolls not involved into Mages Guild Progression, but only informative about Tamriel")
 ZO_CreateStringId("LBOOKS_COMPASS_BOOKSHELF_NAME", "Show bookshelves on compass")
 ZO_CreateStringId("LBOOKS_COMPASS_BOOKSHELF_DESC", "Show/Hide bookshelves on compass. Bookshelves contain a random book from the zone.")
-ZO_CreateStringId("LBOOKS_UNLOCK_EIDETIC", "Odblokuj bibliotekę Eidetic")
-ZO_CreateStringId("LBOOKS_UNLOCK_EIDETIC_DESC", "Odblokuje bibliotekę Eidetic, nawet jeśli nie zrobiłeś linii fabularnej Gildi Magów. Ta opcja jest dostępna tylko dla użytkowników EN / FR / DE.")
+
+ZO_CreateStringId("LBOOKS_UNLOCK_EIDETIC", "Unlock Eidetic Library")
+ZO_CreateStringId("LBOOKS_UNLOCK_EIDETIC_DESC", "This will unlock Eidetic Library even if you haven't done the Mage Guild questline. This option is only valid for EN/FR/DE users.")
 ZO_CreateStringId("LBOOKS_UNLOCK_EIDETIC_WARNING", "This option is disabled because either LoreBooks has not yet been updated for the latest game update or your language is not supported")
 
 --worldmap filters
-ZO_CreateStringId("LBOOKS_FILTER_UNKNOWN", "niepoznane księgi fabularne")
-ZO_CreateStringId("LBOOKS_FILTER_COLLECTED", "Zebrane księgi fabularne")
-ZO_CreateStringId("LBOOKS_FILTER_EICOLLECTED", "<<1>> (Poznano)")
+ZO_CreateStringId("LBOOKS_FILTER_UNKNOWN", "Unknown lorebooks")
+ZO_CreateStringId("LBOOKS_FILTER_COLLECTED", "Collected lorebooks")
+ZO_CreateStringId("LBOOKS_FILTER_EICOLLECTED", "<<1>> (Collected)")
 ZO_CreateStringId("LBOOKS_FILTER_BOOKSHELF", "Lorebooks Bookshelf")
 
 --research
-ZO_CreateStringId("LBOOKS_SEARCH_LABEL", "Wyszukaj księgi fabularne :")
-ZO_CreateStringId("LBOOKS_SEARCH_PLACEHOLDER", "Nazwa księgi fabularnej")
+ZO_CreateStringId("LBOOKS_SEARCH_LABEL", "Search in the lore library :")
+ZO_CreateStringId("LBOOKS_SEARCH_PLACEHOLDER", "Lorebook Name")
 ZO_CreateStringId("LBOOKS_INCLUDE_MOTIFS_CHECKBOX", "Include Motifs")
 
 ZO_CreateStringId("LBOOKS_RANDOM_POSITION", "[Bookshelves]")
