@@ -6,7 +6,7 @@ _G["LoreBooks_Internal"] = internal
 --Local constants -------------------------------------------------------------
 internal.ADDON_NAME = "LoreBooks"
 internal.ADDON_AUTHOR = "Garkin, Ayantir, Kyoma, Sharlikran"
-internal.ADDON_VERSION = "57"
+internal.ADDON_VERSION = "58"
 internal.ADDON_WEBSITE = "http://www.esoui.com/downloads/info288-LoreBooks.html"
 internal.ADDON_PANEL = "LoreBooksPanel"
 internal.SAVEDVARIABLES_VERSION = 3
@@ -65,6 +65,20 @@ internal.IMMERSIVE_MAINQUEST = 2
 internal.IMMERSIVE_WAYSHRINES = 3
 internal.IMMERSIVE_EXPLORATION = 4
 internal.IMMERSIVE_ZONEQUESTS = 5
+
+internal.SHALIDOR_LOCATION_X = 1
+internal.SHALIDOR_LOCATION_Y = 2
+internal.SHALIDOR_COLLECTIONINDEX = 3
+internal.SHALIDOR_BOOKINDEX = 4
+internal.SHALIDOR_MOREINFO = 5
+internal.SHALIDOR_ZONEID = 6
+internal.SHALIDOR_MOREINFO_BREADCRUMB = 9999
+
+internal.LBOOKS_IMMERSIVE_DISABLED = 1
+internal.LBOOKS_IMMERSIVE_ZONEMAINQUEST = 2
+internal.LBOOKS_IMMERSIVE_WAYSHRINES = 3
+internal.LBOOKS_IMMERSIVE_EXPLORATION = 4
+internal.LBOOKS_IMMERSIVE_ZONEQUESTS = 5
 
 internal.icon_list_zoneid = {
   [281] = "/esoui/art/icons/housing_arg_fur_mrkshelftall001.dds", -- balfoyen_base_0

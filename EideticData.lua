@@ -4096,12 +4096,7 @@ local bookData = {
   [342] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["mn"] = 22,
-        ["py"] = 0.2661800000,
-        ["px"] = 0.6827300000,
-        ["pm"] = 74,
-      },
+      [1] = { ["px"] = 0.6827596057, ["py"] = 0.2662060008, ["pm"] = 8, ["zm"] = 74, },
     },
     ["n"] = "Letter to Rana",
     ["cn"] = "Military Orders and Reports",
@@ -4117,12 +4112,7 @@ local bookData = {
   [344] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["mn"] = 22,
-        ["py"] = 0.2661400000,
-        ["px"] = 0.6827000000,
-        ["pm"] = 74,
-      },
+      [1] = { ["px"] = 0.6826920054, ["py"] = 0.2661448009, ["pm"] = 8, ["zm"] = 74, },
     },
     ["n"] = "Rana's Log",
     ["cn"] = "Diaries and Logs",
@@ -4255,12 +4245,7 @@ local bookData = {
   [369] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["mn"] = 13,
-        ["py"] = 0.2680700000,
-        ["px"] = 0.6429900000,
-        ["pm"] = 61,
-      },
+      [1] = { ["px"] = 0.6429580239, ["py"] = 0.2680511977, ["pm"] = 61, },
     },
     ["n"] = "From Shad Astula with Love",
     ["cn"] = "Notes and Memos",
@@ -5053,12 +5038,7 @@ local bookData = {
   [443] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["mn"] = 13,
-        ["py"] = 0.3026900000,
-        ["px"] = 0.6318100000,
-        ["pm"] = 61,
-      },
+      [1] = { ["px"] = 0.6318220264, ["py"] = 0.3027415913, ["pm"] = 61, },
     },
     ["n"] = "Valeric's Journal",
     ["cn"] = "Mysteries and Clues",
@@ -5482,10 +5462,7 @@ local bookData = {
   [489] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["px"] = 0.6564732055, ["py"] = 0.3254236014, ["pm"] = 168, ["d"] = true,
-        ["zx"] = 0.6560156275, ["zy"] = 0.3251055968, ["zm"] = 61,
-      },
+      [1] = { ["px"] = 0.6564704055, ["py"] = 0.3254252014, ["pm"] = 168, ["zx"] = 0.6560156275, ["zy"] = 0.3251055968, ["zm"] = 61, ["d"] = true, },
     },
     ["n"] = "The Stormcrag Family Crypt",
     ["cn"] = "Tales of Tamriel",
@@ -5494,9 +5471,7 @@ local bookData = {
     ["c"] = true,
     ["e"] = {
       [1] = {
-        ["px"] = 0.6717487930, ["py"] = 0.3205147955, ["pm"] = 167, ["d"] = true,
-        ["zx"] = 0.6700232241, ["zy"] = 0.3204872002, ["zm"] = 61,
-      },
+        ["px"] = 0.6717487930, ["py"] = 0.3205147955, ["pm"] = 167, ["zx"] = 0.6700232241, ["zy"] = 0.3204872002, ["zm"] = 61, ["d"] = true,},
     },
     ["n"] = "Letter from Agnenor",
     ["cn"] = "Letters and Missives",
@@ -5997,9 +5972,7 @@ local bookData = {
     ["n"] = "Stormfist Scout Orders",
     ["q"] = 4086,
     ["e"] = {
-      [1] = {
-        ["px"] = 0.5931816259, ["py"] = 0.2907795974, ["pm"] = 61,
-      },
+      [1] = { ["px"] = 0.5931596247, ["py"] = 0.2907863971, ["pm"] = 61, },
     },
   },
   [533] = {
@@ -6008,9 +5981,7 @@ local bookData = {
     ["n"] = "Dark Elf Dispatch",
     ["q"] = 4086,
     ["e"] = {
-      [1] = {
-        ["px"] = 0.5931076256, ["py"] = 0.2908735963, ["pm"] = 61,
-      },
+      [1] = { ["px"] = 0.5931076256, ["py"] = 0.2908735963, ["pm"] = 61, },
     },
   },
   [534] = {
@@ -6019,9 +5990,7 @@ local bookData = {
     ["n"] = "Mammoth Duty",
     ["q"] = 4086,
     ["e"] = {
-      [1] = {
-        ["px"] = 0.5931636253, ["py"] = 0.2907855960, ["pm"] = 61,
-      },
+      [1] = { ["px"] = 0.5931636253, ["py"] = 0.2907855960, ["pm"] = 61, },
     },
   },
   [535] = {
@@ -6030,9 +5999,7 @@ local bookData = {
     ["n"] = "Gate Procedures",
     ["q"] = 4086,
     ["e"] = {
-      [1] = {
-        ["px"] = 0.5931636253, ["py"] = 0.2907855960, ["pm"] = 61,
-      },
+      [1] = { ["px"] = 0.5931636253, ["py"] = 0.2907855960, ["pm"] = 61, },
     },
   },
   [536] = {
@@ -7597,12 +7564,7 @@ local bookData = {
   [686] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["mn"] = 13,
-        ["py"] = 0.3125400000,
-        ["px"] = 0.6595800000,
-        ["pm"] = 61,
-      },
+      [1] = { ["px"] = 0.6596836210, ["py"] = 0.3125839964, ["pm"] = 61, },
     },
     ["n"] = "Guard Duty",
     ["cn"] = "Military Orders and Reports",
@@ -15012,12 +14974,7 @@ local bookData = {
     ["n"] = "Spymaster Ramorgol's Orders",
     ["q"] = 4070,
     ["e"] = {
-      [1] = {
-        ["mn"] = 13,
-        ["py"] = 0.3164900000,
-        ["px"] = 0.6591700000,
-        ["pm"] = 61,
-      },
+      [1] = { ["px"] = 0.6592224241, ["py"] = 0.3165155950, ["pm"] = 61, },
     },
   },
   [1288] = {
@@ -15026,12 +14983,7 @@ local bookData = {
     ["n"] = "Shaman Moramat's Orders",
     ["q"] = 4070,
     ["e"] = {
-      [1] = {
-        ["mn"] = 13,
-        ["py"] = 0.3164600000,
-        ["px"] = 0.6591600000,
-        ["pm"] = 61,
-      },
+      [1] = { ["px"] = 0.6591756273, ["py"] = 0.3165223947, ["pm"] = 61, },
     },
   },
   [1289] = {
@@ -15577,9 +15529,7 @@ local bookData = {
   [1341] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["px"] = 0.6863940257, ["py"] = 0.3001415938, ["pm"] = 61,
-      },
+      [1] = { ["px"] = 0.6864308185, ["py"] = 0.3001771945, ["pm"] = 61, },
     },
     ["n"] = "Skuldafn Orders",
     ["cn"] = "Plots and Schemes",
@@ -29082,9 +29032,7 @@ local bookData = {
   [2508] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["px"] = 0.6310396225, ["py"] = 0.2980863971, ["pm"] = 61,
-      },
+      [1] = { ["px"] = 0.6310428221, ["py"] = 0.2980511970, ["pm"] = 61, },
     },
     ["n"] = "Tinkerer Tobin's Big Book of Crafting Recipes",
     ["cn"] = "Personal Journals",
@@ -59120,7 +59068,7 @@ function LoreBooks_GetNewEideticData(categoryIndex, collectionIndex, bookIndex)
   return LoreBooks_GetNewEideticDataFromBookId(bookId)
 end
 
-function LoreBooks_GetNewEideticDataFor(mapId, z_mapId)
+function LoreBooks_GetEideticData(mapId, z_mapId)
   local _, numCollections = GetLoreCategoryInfo(internal.LORE_LIBRARY_EIDETIC) -- Only Eidetic
   local eideticInZone = {}
   for collectionIndex = 1, numCollections do
@@ -59150,20 +59098,6 @@ function LoreBooks_GetNewEideticDataFor(mapId, z_mapId)
 
   return eideticInZone
 
-end
-
---[[TODO not sure how this works since the data is not stored as
-a map index from 1 to 46, or even 1 to 146 because it uses the mapId
-
-12/23/2022 Just realized this is useless because the MapIndex is no
-longer used
-]]--
-function LoreBooks_GetNewEideticDataForMapIndex(mapIndex)
-  return LoreBooks_GetNewEideticDataFor(mapIndex, nil, "mn")
-end
-
-function LoreBooks_GetNewEideticDataForMapUniqueId(mapId, z_mapId)
-  return LoreBooks_GetNewEideticDataFor(mapId, z_mapId, "pm")
 end
 
 local function GetNumKnownBooksInCollection(categoryIndex, collectionIndex, booksInCollection)

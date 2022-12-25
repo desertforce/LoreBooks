@@ -3263,8 +3263,8 @@ local lorebooksData = {
   },
 }
 
---[[5-18-22: noticed that none of the three following
- arrays are used
+--[[TODO Update this to use any new libraries for tracking character
+information as achievements are now account wide
 ]]--
 local lorebooksExplorationIDs = {
   [2] = 964,
@@ -3295,7 +3295,24 @@ local lorebooksExplorationIDs = {
   [28] = 1359,
   [29] = 1428,
   [30] = 1866,
-  [31] = 2018,
+  [31] = 2018, -- CLOCKWORK
+  [32] = 2010, -- SUMMERSET
+  -- [33] ARTAEUM
+  [34] = 2288,
+  -- [35] NORG_TZEL
+  [36] = 2404, -- NORTHERN_ELSWEYR
+  [37] = 2559, -- SOUTHERN_ELSWEYR
+  [38] = 2647, -- WESTERN_SKYRIM
+  -- [39] = , -- BLACKREACH_GREYMOOR
+  -- [40] = , -- BLACKREACH
+  -- [41] = , -- BLACKREACH_ARKTHZAND
+  [42] = 2854, -- THE_REACH
+  [43] = 2973, -- BLACKWOOD
+  -- [44] = , -- FARGRAVE
+  [45] = 3137, -- THE_DEADLANDS
+  [46] = 3272, -- HIGH_ISLE
+  -- [47] = , -- FARGRAVE_CITY
+  [48] = 3491, -- GALEN
 }
 
 local lorebooksMainQuestIDs = {
@@ -3327,7 +3344,24 @@ local lorebooksMainQuestIDs = {
   [28] = 1363,
   [29] = 1444,
   [30] = 1852,
-  [31] = 2064,
+  [31] = 2064, -- CLOCKWORK
+  -- [32] = , -- SUMMERSET
+  -- [33] ARTAEUM
+  -- [34] = ,
+  -- [35] NORG_TZEL
+  -- [36] = , -- NORTHERN_ELSWEYR
+  -- [37] = , -- SOUTHERN_ELSWEYR
+  -- [38] = , -- WESTERN_SKYRIM
+  -- [39] = , -- BLACKREACH_GREYMOOR
+  -- [40] = , -- BLACKREACH
+  -- [41] = , -- BLACKREACH_ARKTHZAND
+  -- [42] = , -- THE_REACH
+  -- [43] = , -- BLACKWOOD
+  -- [44] = , -- FARGRAVE
+  -- [45] = , -- THE_DEADLANDS
+  -- [46] = , -- HIGH_ISLE
+  -- [47] = , -- FARGRAVE_CITY
+  -- [48] = , -- GALEN
 }
 
 local lorebooksZoneQuestIDs = {
@@ -3359,7 +3393,24 @@ local lorebooksZoneQuestIDs = {
   [28] = 1366,
   [29] = 1433,
   [30] = 1867,
-  [31] = 2068,
+  [31] = 2068, -- CLOCKWORK Clockwork City Adventurer
+  -- [32] = 2209, -- SUMMERSET
+  -- [33] ARTAEUM
+  -- [34] = ,
+  -- [35] NORG_TZEL
+  -- [36] = 2508, -- NORTHERN_ELSWEYR
+  -- [37] = , -- SOUTHERN_ELSWEYR
+  -- [38] = , -- WESTERN_SKYRIM
+  -- [39] = , -- BLACKREACH_GREYMOOR
+  -- [40] = , -- BLACKREACH
+  -- [41] = , -- BLACKREACH_ARKTHZAND
+  -- [42] = , -- THE_REACH
+  -- [43] = , -- BLACKWOOD
+  -- [44] = , -- FARGRAVE
+  -- [45] = , -- THE_DEADLANDS
+  -- [46] = 3301, -- HIGH_ISLE
+  -- [47] = , -- FARGRAVE_CITY
+  -- [48] = , -- GALEN
 }
 
 local function AreAllWayshrinesUnlocked()
@@ -3376,21 +3427,15 @@ local function AreAllWayshrinesUnlocked()
 end
 
 function LoreBooks_GetImmersiveModeCondition(mode, mapIndex)
-
-  if mode == 2 then
+  if mode == internal.LBOOKS_IMMERSIVE_ZONEMAINQUEST then
     return lorebooksMainQuestIDs[mapIndex]
-  elseif mode == 3 then
+  elseif mode == internal.LBOOKS_IMMERSIVE_WAYSHRINES then
     return AreAllWayshrinesUnlocked()
-  elseif mode == 4 then
+  elseif mode == internal.LBOOKS_IMMERSIVE_EXPLORATION then
     return lorebooksExplorationIDs[mapIndex]
-  elseif mode == 5 then
+  elseif mode == internal.LBOOKS_IMMERSIVE_ZONEQUESTS then
     return lorebooksZoneQuestIDs[mapIndex]
   end
-
-end
-
-function LoreBooks_GetZoneAndSubzone()
-  return select(3, GetMapTileTexture():lower():gsub("_+%d+\.dds", ""):find("maps/([%w%-]+)/([%w_%-]+)"))
 end
 
 function LoreBooks_GetLocalData(mapId)
@@ -3400,13 +3445,12 @@ end
 function LoreBooks_GetDataOfBook(categoryIndex, collectionIndex, bookIndex)
 
   local results = {}
-  if categoryIndex == 1 then
-    -- 1 = Shalidor
+  if categoryIndex == internal.LORE_LIBRARY_SHALIDOR then
     if collectionIndex and bookIndex then
       for mapId, mapData in pairs(lorebooksData) do
-        for bookEntry, bookData in pairs(mapData) do
-          if bookData[3] == collectionIndex and bookData[4] == bookIndex then
-            results[#results + 1] = { data = bookData, mapId = mapId, locX = bookData[1], locY = bookData[2] }
+        for _, bookData in pairs(mapData) do
+          if bookData[internal.SHALIDOR_COLLECTIONINDEX] == collectionIndex and bookData[internal.SHALIDOR_BOOKINDEX] == bookIndex then
+            results[#results + 1] = { data = bookData, mapId = mapId, locX = bookData[internal.SHALIDOR_LOCATION_X], locY = bookData[internal.SHALIDOR_LOCATION_Y] }
           end
         end
       end

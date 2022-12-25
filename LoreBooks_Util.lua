@@ -263,8 +263,8 @@ local function CheckLorebooks()
 end
 
 local function LookForPinFive()
-  allShalidorData = LoreBooks_GetAllData()
-  built_table = {}
+  local allShalidorData = LoreBooks_GetAllData()
+  local built_table = {}
   for mapId, pinData in pairs(allShalidorData) do
     for index, pinInfo in pairs(pinData) do
       if pinInfo[5] and pinInfo[5] > 5 then
