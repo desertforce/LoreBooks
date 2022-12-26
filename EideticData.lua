@@ -4055,8 +4055,9 @@ local bookData = {
   },
   [338] = {
     ["c"] = true,
+    ["q"] = 4060,
     ["e"] = {
-      [1] = { ["px"] = 0.6301800234, ["py"] = 0.2815695976, ["pm"] = 61, },
+      [1] = { ["px"] = 0.6301764233, ["py"] = 0.2815471957, ["pm"] = 61, ["qp"] = true, },
     },
     ["n"] = "Orders from Fildgor",
     ["cn"] = "Plots and Schemes",
@@ -6127,12 +6128,7 @@ local bookData = {
   [548] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["mn"] = 13,
-        ["py"] = 0.2620300000,
-        ["px"] = 0.6405100000,
-        ["pm"] = 61,
-      },
+      [1] = { ["px"] = 0.6405204272, ["py"] = 0.2620299999, ["pm"] = 160, ["zm"] = 61, },
     },
     ["n"] = "Note from Thulvald's Logging Camp",
     ["cn"] = "Mysteries and Clues",
@@ -23561,7 +23557,7 @@ local bookData = {
     },
   },
   [2061] = {
-    ["c"] = true,
+    ["c"] = false,
     ["cn"] = "Rituals and Revelations",
     ["n"] = "Rite of the Scion",
     ["q"] = 4964,
@@ -50981,11 +50977,10 @@ local bookData = {
     ["cn"] = "Anequina Archives",
   },
   [5606] = {
-    ["c"] = true,
+    ["c"] = false,
     ["cn"] = "Anequina Archives",
     ["n"] = "Riddles of the Rithana-di-Renada",
     ["q"] = 6319,
-    ["r"] = true,
     ["e"] = {
     },
   },
@@ -52008,8 +52003,7 @@ local bookData = {
     },
   },
   [5704] = {
-    ["c"] = true,
-    ["qs"] = true,
+    ["c"] = false,
     ["n"] = "Sealed Letter",
     ["q"] = 6395,
     ["cn"] = "Mysteries and Clues",

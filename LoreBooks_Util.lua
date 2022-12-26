@@ -272,9 +272,9 @@ local function LookForPinFive()
       local pinFive = nil
       local pinSix = nil
       local count = #pinInfo
-       -- if pinInfo and count >= 5 then pinFive = pinInfo[internal.SHALIDOR_MOREINFO] end no longer used, use ld
-       if pinInfo and count >= 6 then pinSix = pinInfo[internal.SHALIDOR_ZONEID] end
-       if pinFive == -1 then pinFive = nil end
+      -- if pinInfo and count >= 5 then pinFive = pinInfo[internal.SHALIDOR_MOREINFO] end no longer used, use ld
+      if pinInfo and count >= 6 then pinSix = pinInfo[internal.SHALIDOR_ZONEID] end
+      if pinFive == -1 then pinFive = nil end
       local locationDetails = pinInfo.ld
       if pinFive and not locationDetails then locationDetails = pinFive end
       if pinFive or pinSix or locationDetails then
@@ -289,6 +289,57 @@ local function LookForPinFive()
   LBooks_SavedVariables.newLorebooksData = built_table
 end
 
+function internal:is_empty_or_nil(t)
+  if t == nil or t == "" then return true end
+  return type(t) == "table" and ZO_IsTableEmpty(t) or false
+end
+
+local function VerifyAllBooks()
+  local bookData = LoreBooks_GetBookData()
+  local builtTable = {}
+  for categoryIndex = 1, GetNumLoreCategories() do
+    local categoryName, numCollections = GetLoreCategoryInfo(categoryIndex)
+    for collectionIndex = 1, numCollections do
+      local collectionName, _, _, totalBooksInCollection = GetLoreCollectionInfo(categoryIndex, collectionIndex)
+      for bookIndex = 1, totalBooksInCollection do
+        local bookName, icon, known, bookId = GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex)
+        if categoryIndex == internal.LORE_LIBRARY_EIDETIC then
+          builtTable[bookId] = string.format("&&&[%s] = { [%s] = false, [%s] = %s, [%s] = %s, [%s] = { }, }&&&", bookId, '"c"', '"cn"', "\"" .. collectionName .. "\"", '"n"', "\"" .. bookName .. "\"", '"e"')
+          --[[
+          local hasEntry = bookData[bookId] and (bookData[bookId].c ~= nil and bookData[bookId].c == true) and bookData[bookId].e
+          local hasPopulatedEntry = false
+          local hasEmptyEntry = bookData[bookId] and (bookData[bookId].c ~= nil and bookData[bookId].c == false) and internal:is_empty_or_nil(bookData[bookId].e)
+          local hasRandom = bookData[bookId] and bookData[bookId].r and bookData[bookId].m
+          local hasDataBookshelf = false
+          if hasEntry then
+            if not internal:is_empty_or_nil(bookData[bookId].e) and NonContiguousCount(bookData[bookId].e) > 0 then
+              hasPopulatedEntry = true
+            end
+          end
+          if hasRandom then
+            if not internal:is_empty_or_nil(bookData[bookId].m) and NonContiguousCount(bookData[bookId].m) > 0 then
+              hasDataBookshelf = true
+            end
+          end
+          if hasDataBookshelf and not hasPopulatedEntry then
+            --internal:dm("Debug", string.format("Has Bookshelf Data: %s", bookId))
+          elseif hasEmptyEntry and not hasDataBookshelf then
+            --internal:dm("Debug", string.format("Has Empty Entry: %s", bookId))
+          elseif hasPopulatedEntry and not hasDataBookshelf then
+            --internal:dm("Debug", string.format("Has Populated Entry: %s", bookId))
+          elseif hasPopulatedEntry and hasDataBookshelf then
+            --internal:dm("Debug", string.format("Has Both Populated Entry and Bookshelf Data: %s", bookId))
+          else
+            internal:dm("Debug", string.format("Else: %s", bookId))
+          end
+          ]]--
+        end -- end if categoryIndex
+      end -- end bookIndex loop
+    end -- end collectionIndex loop
+  end -- end categoryIndex loop
+  LBooks_SavedVariables["newLorebooksData"] = builtTable
+end
+
 -----
 --- add to OnLoad
 -----
@@ -300,6 +351,8 @@ end
 -- SLASH_COMMANDS["/lbshow"] = ShowLorebookMissingMapId
 
 --  SLASH_COMMANDS["/lbfive"] = function() LookForPinFive() end
+
+--  SLASH_COMMANDS["/lbcheck"] = function() VerifyAllBooks() end
 -----
 --- end of verification routines
 -----

@@ -51,7 +51,7 @@ The location text will be on a single line on the tooltip so you can't say
 
 You just put "Guest Room"
 ]]--
-
+local internal = _G["LoreBooks_Internal"]
 
 local lorebooksData = {
   -- alikr
