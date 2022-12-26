@@ -1,4 +1,4 @@
-﻿--[[
+--[[
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
 -- LoreBooks, by Ayantir
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
@@ -73,14 +73,14 @@ local lorebooksData = {
     { 0.404, 0.534, 5, 4 },
     { 0.469, 0.541, 5, 4 },
     { 0.504, 0.485, 5, 4 },
-    { 0.556, 0.656, 5, 5, 1 }, -- Varieties of Faith, Crown Redguards
-    { 0.500, 0.640, 5, 5, 1 },
-    { 0.500, 0.663, 5, 5, 1 },
-    { 0.541, 0.629, 5, 5, 1 },
-    { 0.189, 0.452, 5, 6, 1 }, -- Varieties of Faith, The Forebears
-    { 0.247, 0.439, 5, 6, 1 },
-    { 0.222, 0.395, 5, 6, 1 },
-    { 0.205, 0.475, 5, 6, 1 },
+    { 0.556, 0.656, 5, 5, ld = { 1, } }, -- Varieties of Faith, Crown Redguards
+    { 0.500, 0.640, 5, 5, ld = { 1, } },
+    { 0.500, 0.663, 5, 5, ld = { 1, } },
+    { 0.541, 0.629, 5, 5, ld = { 1, } },
+    { 0.189, 0.452, 5, 6, ld = { 1, } }, -- Varieties of Faith, The Forebears
+    { 0.247, 0.439, 5, 6, ld = { 1, } },
+    { 0.222, 0.395, 5, 6, ld = { 1, } },
+    { 0.205, 0.475, 5, 6, ld = { 1, } },
     { 0.755, 0.273, 5, 7 }, -- Motalion Necropolis Report
     { 0.753, 0.325, 5, 7 },
     { 0.785, 0.256, 5, 7 },
@@ -89,17 +89,17 @@ local lorebooksData = {
     { 0.264, 0.661, 5, 8 },
     { 0.234, 0.703, 5, 8 },
     { 0.239, 0.682, 5, 8 },
-    { 0.257, 0.457, 5, 9, 1 }, -- Sentinel, the Jewel of Alik'r
-    { 0.248, 0.432, 5, 9, 1 },
-    { 0.300, 0.447, 5, 9, 1 },
-    { 0.297, 0.504, 5, 9, 1 },
-    { 0.2477, 0.476, 5, 9, 1 },
+    { 0.257, 0.457, 5, 9, ld = { 1, } }, -- Sentinel, the Jewel of Alik'r
+    { 0.248, 0.432, 5, 9, ld = { 1, } },
+    { 0.300, 0.447, 5, 9, ld = { 1, } },
+    { 0.297, 0.504, 5, 9, ld = { 1, } },
+    { 0.2477, 0.476, 5, 9, ld = { 1, } },
     { 0.302, 0.648, 5, 10 }, -- Sacrilege and Mayhem in the Alik'r
     { 0.293, 0.694, 5, 10 },
     { 0.326, 0.685, 5, 10 },
     { 0.355, 0.700, 5, 10 },
     -- Daedric Princes
-    { 0.302, 0.456, 8, 7, 1 }, -- Opusculus Lamae Bal ta Mezzamortie
+    { 0.302, 0.456, 8, 7, ld = { 1, } }, -- Opusculus Lamae Bal ta Mezzamortie
     { 0.268, 0.412, 8, 7 },
     { 0.290, 0.409, 8, 7 },
     { 0.2582, 0.3883, 8, 7 },
@@ -108,14 +108,14 @@ local lorebooksData = {
     { 0.591, 0.4141, 8, 8 },
     { 0.6223, 0.4072, 8, 8 },
     -- Dwemer
-    { 0.222, 0.567, 12, 10, 2 }, -- Ancient Scrolls of the Dwemer I-B
+    { 0.222, 0.567, 12, 10, ld = { 2, } }, -- Ancient Scrolls of the Dwemer I-B
     { 0.186, 0.513, 12, 10 },
     { 0.217, 0.538, 12, 10 },
     { 0.213, 0.524, 12, 10 },
     { 0.608, 0.625, 12, 11 }, -- Guylaine's Dwemer Architecture
     { 0.591, 0.580, 12, 11 },
     { 0.620, 0.594, 12, 11 },
-    { 0.901, 0.520, 12, 12, 2 }, -- Ancient Scrolls of the Dwemer VIII
+    { 0.901, 0.520, 12, 12, ld = { 2, } }, -- Ancient Scrolls of the Dwemer VIII
     { 0.873, 0.495, 12, 12 },
     { 0.875, 0.567, 12, 12 },
     { 0.884, 0.530, 12, 12 },
@@ -128,10 +128,10 @@ local lorebooksData = {
     { 0.471, 0.445, 13, 2 },
     { 0.478, 0.381, 13, 2 },
     { 0.4835, 0.4088, 13, 2 },
-    { 0.746, 0.456, 13, 3, 1 }, -- The Amulet of Kings
-    { 0.766, 0.459, 13, 3, 1 },
-    { 0.772, 0.440, 13, 3, 1 },
-    { 0.7667, 0.4814, 13, 3, 1, 1 },
+    { 0.746, 0.456, 13, 3, ld = { 1, } }, -- The Amulet of Kings
+    { 0.766, 0.459, 13, 3, ld = { 1, } },
+    { 0.772, 0.440, 13, 3, ld = { 1, } },
+    { 0.7667, 0.4814, 13, 3, 1, ld = { 1, } },
     { 0.4369, 0.6918, 13, 4 }, -- The Cleansing of the Fane
     { 0.401, 0.689, 13, 4 },
     { 0.405, 0.689, 13, 4 },
@@ -150,7 +150,7 @@ local lorebooksData = {
     { 0.449, 0.614, 13, 8 }, -- Tamrielic Artifacts, Part One
     { 0.417, 0.628, 13, 8 },
     { 0.440, 0.567, 13, 8 },
-    { 0.831, 0.580, 13, 9, 2 }, -- Tamrielic Artifacts, Part Two
+    { 0.831, 0.580, 13, 9, ld = { 2, } }, -- Tamrielic Artifacts, Part Two
     { 0.843, 0.567, 13, 9 },
     { 0.803, 0.503, 13, 9 },
     { 0.496, 0.548, 13, 10 }, -- Tamrielic Artifacts, Part Three
@@ -158,15 +158,15 @@ local lorebooksData = {
     { 0.502, 0.538, 13, 10 },
     { 0.5012, 0.5086, 13, 10 },
     -- Literature
-    { 0.290, 0.441, 14, 4, 1 }, -- The Lusty Argonian Maid, Volume 2
+    { 0.290, 0.441, 14, 4, ld = { 1, } }, -- The Lusty Argonian Maid, Volume 2
     -- Poetry and Songs
-    { 0.546, 0.405, 18, 1, 4 }, -- The Battle of Glenumbria Moors
+    { 0.546, 0.405, 18, 1, ld = { 4, } }, -- The Battle of Glenumbria Moors
     { 0.558, 0.428, 18, 1 },
     { 0.575, 0.434, 18, 1 },
     { 0.5829, 0.459, 18, 1 },
     { 0.672, 0.380, 18, 2 }, -- The Book of Dawn and Dusk
-    { 0.648, 0.348, 18, 2, 2 },
-    { 0.610, 0.376, 18, 2, 2 },
+    { 0.648, 0.348, 18, 2, ld = { 2, } },
+    { 0.610, 0.376, 18, 2, ld = { 2, } },
     { 0.5934, 0.3605, 18, 2 },
     { 0.355, 0.436, 18, 3 }, -- The Cantatas of Vivec
     { 0.322, 0.418, 18, 3 },
@@ -183,9 +183,10 @@ local lorebooksData = {
     { 0.389, 0.517, 18, 6 }, -- Ode to the Tundrastriders
     { 0.376, 0.540, 18, 6 },
     { 0.3142, 0.571, 18, 6 },
-    { 0.335, 0.510, 18, 6, 4 },
+    { 0.335, 0.510, 18, 6, ld = { 4, } },
     -- Dungeon Lore
-    { 0.873, 0.463, 11, 2, 9999, 3 }, -- What is Volendrung?
+    --[[TODO Check This ]]--
+    { 0.873, 0.463, 11, 2, 3, ld = { 9999, } }, -- What is Volendrung?
   },
   [83] = { -- sentinel_base
     -- Alik'r Desert Lore
@@ -198,7 +199,7 @@ local lorebooksData = {
     { 0.630, 0.715, 5, 9 },
     { 0.640, 0.437, 5, 9 },
     -- Daedric Princes
-    { 0.646, 0.472, 8, 7, 4 }, -- Opusculus Lamae Bal ta Mezzamortie
+    { 0.646, 0.472, 8, 7, ld = { 4, } }, -- Opusculus Lamae Bal ta Mezzamortie
     { 0.439, 0.148, 8, 7 },
     -- Literature
     { 0.598, 0.413, 14, 4 }, -- The Lusty Argonian Maid, Volume 2
@@ -250,7 +251,8 @@ local lorebooksData = {
   },
   [3] = { -- volenfell_base
     -- Dungeon Lore
-    { 0.141, 0.441, 11, 2, 5, 3 }, -- What is Volendrung?
+    --[[TODO Check This ]]--
+    { 0.141, 0.441, 11, 2, 3, ld = { 5, } }, -- What is Volendrung?
   }, --}
 
   -- auridon
@@ -284,10 +286,10 @@ local lorebooksData = {
     { 0.5168, 0.2068, 25, 7 },
     { 0.5403, 0.2428, 25, 7 },
     { 0.5500, 0.1770, 25, 7 },
-    { 0.2835, 0.1557, 25, 8, 1 }, -- Kinlord Rilis and the Mages Guild
-    { 0.3103, 0.2414, 25, 8, 1 },
-    { 0.3248, 0.1961, 25, 8, 1 },
-    { 0.2475, 0.1948, 25, 8, 1 },
+    { 0.2835, 0.1557, 25, 8, ld = { 1, } }, -- Kinlord Rilis and the Mages Guild
+    { 0.3103, 0.2414, 25, 8, ld = { 1, } },
+    { 0.3248, 0.1961, 25, 8, ld = { 1, } },
+    { 0.2475, 0.1948, 25, 8, ld = { 1, } },
     { 0.4692, 0.1609, 25, 9 }, -- Life in the Eagle's Shadow
     { 0.4191, 0.1992, 25, 9 },
     { 0.3823, 0.1409, 25, 9 },
@@ -317,7 +319,7 @@ local lorebooksData = {
     { 0.8030, 0.5121, 9, 3 }, -- The Illusion of Death
     { 0.8008, 0.4835, 9, 3 },
     { 0.8323, 0.4959, 9, 3 },
-    { 0.7080, 0.5466, 9, 4, 1 }, -- Jorunn the Skald-King
+    { 0.7080, 0.5466, 9, 4, ld = { 1, } }, -- Jorunn the Skald-King
     { 0.682, 0.522, 9, 4 },
     { 0.6415, 0.4992, 9, 4 },
     { 0.6896, 0.46, 9, 4 },
@@ -367,15 +369,15 @@ local lorebooksData = {
     { 0.6808, 0.8618, 19, 1 }, -- Ayleid Inscriptions Translated
     { 0.7131, 0.8265, 19, 1 },
     { 0.6340, 0.8521, 19, 1 },
-    { 0.6235, 0.8942, 19, 1, 1 },
-    { 0.6888, 0.9156, 19, 2, 1 }, -- Frontier, Conquest
-    { 0.6272, 0.9427, 19, 2, 1 },
-    { 0.6084, 0.9082, 19, 2, 1 },
-    { 0.5759, 0.9529, 19, 2, 1 },
+    { 0.6235, 0.8942, 19, 1, ld = { 1, } },
+    { 0.6888, 0.9156, 19, 2, ld = { 1, } }, -- Frontier, Conquest
+    { 0.6272, 0.9427, 19, 2, ld = { 1, } },
+    { 0.6084, 0.9082, 19, 2, ld = { 1, } },
+    { 0.5759, 0.9529, 19, 2, ld = { 1, } },
     { 0.5082, 0.9092, 19, 3 }, -- History of the Fighter's Guilds Pt.1
     { 0.5426, 0.8573, 19, 3 },
     { 0.5617, 0.8766, 19, 3 },
-    { 0.5621, 0.9049, 19, 3, 1 },
+    { 0.5621, 0.9049, 19, 3, ld = { 1, } },
     { 0.5928, 0.8493, 19, 4 }, -- History of the Fighter's Guilds Pt.2
     { 0.6196, 0.8249, 19, 4 },
     { 0.5993, 0.7961, 19, 4 },
@@ -385,7 +387,7 @@ local lorebooksData = {
     { 0.5607, 0.7909, 19, 5 },
     { 0.5430, 0.7749, 19, 5 },
     -- Dungeon Lore
-    { 0.322, 0.113, 11, 7, 9999, 279 }, -- The Binding Stone
+    { 0.322, 0.113, 11, 7, 279, ld = { 9999, } }, -- The Binding Stone
   },
   [540] = { -- firsthold_base
     -- Auridon Lore
@@ -413,16 +415,16 @@ local lorebooksData = {
   },
   [279] = { -- thebanishedcells_base
     -- Dungeon Lore
-    { 0.481, 0.838, 11, 7, 5, 279 }, -- The Binding Stone
+    { 0.481, 0.838, 11, 7, 279, ld = { 5, } }, -- The Binding Stone
   },
 
   -- bangkorai
   [20] = { -- bangkorai_base
     -- Bangkorai Lore
-    { 0.398, 0.301, 4, 1, 1 }, -- The Legend of Fallen Grotto
-    { 0.414, 0.417, 4, 1, 1 },
-    { 0.386, 0.368, 4, 1, 1 },
-    { 0.390, 0.393, 4, 1, 1 },
+    { 0.398, 0.301, 4, 1, ld = { 1, } }, -- The Legend of Fallen Grotto
+    { 0.414, 0.417, 4, 1, ld = { 1, } },
+    { 0.386, 0.368, 4, 1, ld = { 1, } },
+    { 0.390, 0.393, 4, 1, ld = { 1, } },
     { 0.501, 0.355, 4, 2 }, -- Living with Lycanthropy
     { 0.504, 0.391, 4, 2 },
     { 0.555, 0.407, 4, 2 },
@@ -484,23 +486,23 @@ local lorebooksData = {
     { 0.343, 0.593, 14, 2 },
     { 0.450, 0.562, 14, 2 },
     { 0.329, 0.570, 14, 2 },
-    { 0.25, 0.64, 14, 3, 3 }, -- The Lusty Argonian Maid, Volume 1
+    { 0.25, 0.64, 14, 3, ld = { 3, } }, -- The Lusty Argonian Maid, Volume 1
     { 0.296, 0.609, 14, 3 },
     { 0.341, 0.606, 14, 3 },
     { 0.304, 0.659, 14, 3 },
-    { 0.271, 0.726, 14, 4, 1 }, -- The Lusty Argonian Maid, Volume 2
-    { 0.258, 0.701, 14, 4, 1 },
-    { 0.22, 0.77, 14, 4, 1 },
-    { 0.2588, 0.8028, 14, 4, 1 },
+    { 0.271, 0.726, 14, 4, ld = { 1, } }, -- The Lusty Argonian Maid, Volume 2
+    { 0.258, 0.701, 14, 4, ld = { 1, } },
+    { 0.22, 0.77, 14, 4, ld = { 1, } },
+    { 0.2588, 0.8028, 14, 4, ld = { 1, } },
     { 0.273, 0.845, 14, 5 }, -- Myths of Sheogorath, Volume 1
     { 0.313, 0.814, 14, 5 },
     { 0.248, 0.879, 14, 5 },
     { 0.3069, 0.8715, 14, 5 },
     { 0.326, 0.935, 14, 6 }, -- Myths of Sheogorath, Volume 2
     { 0.351, 0.866, 14, 6 },
-    { 0.376, 0.900, 14, 6, 2 },
+    { 0.376, 0.900, 14, 6, ld = { 2, } },
     { 0.394, 0.834, 14, 6 },
-    { 0.44, 0.88, 14, 7, 3 }, -- The Red Book of Riddles
+    { 0.44, 0.88, 14, 7, ld = { 3, } }, -- The Red Book of Riddles
     { 0.481, 0.923, 14, 7 },
     { 0.476, 0.872, 14, 7 },
     { 0.357, 0.747, 14, 8 }, -- 16 Accords of Madness, Vol. VI
@@ -510,7 +512,7 @@ local lorebooksData = {
     { 0.337, 0.691, 14, 9 },
     { 0.3827, 0.6531, 14, 9 },
     { 0.4107, 0.6483, 14, 9 },
-    { 0.3915, 0.3464, 14, 9, 1 },
+    { 0.3915, 0.3464, 14, 9, ld = { 1, } },
     { 0.487, 0.659, 14, 10 }, -- Wabbajack
     { 0.521, 0.709, 14, 10 },
     { 0.523, 0.673, 14, 10 },
@@ -532,7 +534,7 @@ local lorebooksData = {
     { 0.490, 0.560, 18, 10 },
     { 0.5163, 0.5811, 18, 10 },
     -- Dungeon Lore
-    { 0.372, 0.277, 11, 13, 9999, 347 }, -- Civility and Etiquette V. 5: Undead
+    { 0.372, 0.277, 11, 13, 347, ld = { 9999, } }, -- Civility and Etiquette V. 5: Undead
   },
   [84] = { -- evermore_base
     -- Bangkorai Lore
@@ -555,7 +557,7 @@ local lorebooksData = {
   },
   [347] = { -- blackhearthavenarea1_base
     -- Dungeon Lore
-    { 0.708, 0.486, 11, 13, 5, 347 }, -- Civility and Etiquette V. 5: Undead
+    { 0.708, 0.486, 11, 13, 347, ld = { 5, } }, -- Civility and Etiquette V. 5: Undead
   },
 
   -- coldharbor
@@ -572,10 +574,10 @@ local lorebooksData = {
     { 0.422, 0.739, 29, 3 },
     { 0.365, 0.753, 29, 3 },
     { 0.387, 0.670, 29, 3 },
-    { 0.513, 0.690, 29, 4, 1 }, -- I was Summoned by a Mortal
-    { 0.470, 0.693, 29, 4, 1 },
-    { 0.534, 0.657, 29, 4, 1 },
-    { 0.4899, 0.6550, 29, 4, 1 },
+    { 0.513, 0.690, 29, 4, ld = { 1, } }, -- I was Summoned by a Mortal
+    { 0.470, 0.693, 29, 4, ld = { 1, } },
+    { 0.534, 0.657, 29, 4, ld = { 1, } },
+    { 0.4899, 0.6550, 29, 4, ld = { 1, } },
     { 0.607, 0.717, 29, 5 }, -- A Life of Strife and Struggle
     { 0.573, 0.758, 29, 5 },
     { 0.582, 0.692, 29, 5 },
@@ -601,7 +603,8 @@ local lorebooksData = {
     { 0.4482, 0.4566, 29, 10 },
     { 0.5474, 0.4550, 29, 10 },
     -- Dungeon Lore
-    { 0.579, 0.484, 11, 16, 9999, 454 }, -- To All Who Pass Through
+    --[[TODO CHeck This ]]--
+    { 0.579, 0.484, 11, 16, 454, ld = { 9999, } }, -- To All Who Pass Through
   },
   [422] = { -- hollowcity_base
     { 0.646, 0.569, 29, 4 }, -- I was Summoned by a Mortal
@@ -610,7 +613,7 @@ local lorebooksData = {
   },
   [454] = { -- vaultsofmadness1_base
     -- Dungeon Lore
-    { 0.160, 0.850, 11, 16, 5, 454 }, -- To All Who Pass Through
+    { 0.160, 0.850, 11, 16, 454, ld = { 5, } }, -- To All Who Pass Through
   },
 
   -- cyrodiil
@@ -619,7 +622,7 @@ local lorebooksData = {
     { 0.526, 0.577, 8, 1 }, -- Aedra and Daedra
     { 0.734, 0.483, 8, 3 }, -- The Dreamstride
     { 0.271, 0.228, 8, 4 }, -- The House of Troubles
-    { 0.721, 0.695, 8, 5, 2 }, -- Invocation of Azura
+    { 0.721, 0.695, 8, 5, ld = { 2, } }, -- Invocation of Azura
     { 0.128, 0.385, 8, 6 }, -- Modern Heretics
     { 0.267, 0.228, 8, 9 }, -- Fragmentae Abyssum Hermaeus Morus
     { 0.339, 0.637, 8, 10 }, -- The Spawn of Molag Bal
@@ -628,18 +631,18 @@ local lorebooksData = {
     -- Biographies
     { 0.4850, 0.5748, 9, 1 }, -- Galerion the Mystic
     { 0.338, 0.285, 9, 2 }, -- Great Harbingers of the Companions
-    { 0.422, 0.147, 9, 4, 2 }, -- Jorunn the Skald-King
+    { 0.422, 0.147, 9, 4, ld = { 2, } }, -- Jorunn the Skald-King
     { 0.220, 0.244, 9, 5 }, -- Triumphs of a Monarch, Ch. 3
     { 0.624, 0.582, 9, 7 }, -- Triumphs of a Monarch, Ch. 10
     { 0.275, 0.704, 9, 8 }, -- Trials of St. Alessia
     { 0.293, 0.170, 9, 9 }, -- The All-Beneficent King Fahara'jad
-    { 0.583, 0.195, 9, 10, 2 }, -- Ayrenn: The Unforeseen Queen
+    { 0.583, 0.195, 9, 10, ld = { 2, } }, -- Ayrenn: The Unforeseen Queen
     -- Divines and Deities
     { 0.4691, 0.5521, 10, 1 }, -- The Anuad Paraphrased
     { 0.754, 0.285, 10, 2 }, -- The Lunar Lorkhan
     { 0.4308, 0.1133, 10, 3 }, -- Monomyth: Dragon God & Missing God
     { 0.323, 0.152, 10, 4 }, -- Monomyth: Lorkhan and Satakal5
-    { 0.759, 0.347, 10, 5, 2 }, -- Monomyth: "Shezarr's Song"
+    { 0.759, 0.347, 10, 5, ld = { 2, } }, -- Monomyth: "Shezarr's Song"
     { 0.274, 0.669, 10, 7 }, -- Monomyth: The Heart of the World
     { 0.213, 0.398, 10, 8 }, -- Nine Commands of the Eight Divines
     { 0.321, 0.373, 10, 9 }, -- Gods and Worship In Tamriel
@@ -647,11 +650,11 @@ local lorebooksData = {
     -- Dungeon Lore
     { 0.203, 0.257, 11, 1 }, -- With Regards to the Ebony Blade
     { 0.754, 0.149, 11, 2 }, -- What is Volendrung?
-    { 0.538, 0.810, 11, 3, 2 }, -- The Thief God's Treasures
+    { 0.538, 0.810, 11, 3, ld = { 2, } }, -- The Thief God's Treasures
     { 0.381, 0.723, 11, 4 }, -- War Weather
-    { 0.710, 0.490, 11, 5, 2 }, -- Civility and Etiquette: Wood Orcs I -- Kodiak
+    { 0.710, 0.490, 11, 5, ld = { 2, } }, -- Civility and Etiquette: Wood Orcs I -- Kodiak
     { 0.608, 0.451, 11, 6 }, -- The Art of Kwama Egg Cooking
-    { 0.355, 0.135, 11, 7, 2 }, -- The Binding Stone
+    { 0.355, 0.135, 11, 7, ld = { 2, } }, -- The Binding Stone
     { 0.592, 0.388, 11, 8 }, -- Where Magical Paths Meet
     { 0.779, 0.216, 11, 9 }, -- Wayrest Sewers: A Short History
     { 0.714, 0.536, 11, 10 }, -- To Posterity
@@ -661,7 +664,7 @@ local lorebooksData = {
     { 0.241, 0.397, 12, 5 }, -- Ancient Scrolls of the Dwemer VI
     { 0.6042, 0.3084, 12, 6 }, -- Ancient Scrolls of the Dwemer X
     { 0.6627, 0.5644, 12, 7 }, -- Ancient Scrolls of the Dwemer XI
-    { 0.316, 0.563, 12, 8, 2 }, -- Antecedents of Dwemer Law
+    { 0.316, 0.563, 12, 8, ld = { 2, } }, -- Antecedents of Dwemer Law
     { 0.750, 0.474, 12, 9, }, -- Dwarven Automatons
     { 0.395, 0.688, 12, 10 }, -- Ancient Scrolls of the Dwemer I-B
     { 0.1707, 0.2661, 12, 11 }, -- Guylaine's Dwemer Architecture
@@ -684,15 +687,15 @@ local lorebooksData = {
     { 0.569, 0.835, 13, 7 },
     { 0.117, 0.271, 13, 7 },
     { 0.810, 0.180, 13, 7 },
-    { 0.361, 0.221, 13, 8, 2 }, -- Tamrielic Artifacts, Part One
-    { 0.363, 0.698, 13, 9, 2 }, -- Tamrielic Artifacts, Part Two
+    { 0.361, 0.221, 13, 8, ld = { 2, } }, -- Tamrielic Artifacts, Part One
+    { 0.363, 0.698, 13, 9, ld = { 2, } }, -- Tamrielic Artifacts, Part Two
     { 0.363, 0.415, 13, 10 }, -- Tamrielic Artifacts, Part Three
     -- Literature
     { 0.408, 0.166, 14, 1 }, -- The Homilies of Blessed Almalexia
     { 0.462, 0.615, 14, 2 }, -- The Legendary Scourge
     { 0.309, 0.734, 14, 3 }, -- The Lusty Argonian Maid, Volume 1
     { 0.6397, 0.5342, 14, 4 }, -- The Lusty Argonian Maid, Volume 2
-    { 0.807, 0.461, 14, 5, 2 }, -- Myths of Sheogorath, Volume 1
+    { 0.807, 0.461, 14, 5, ld = { 2, } }, -- Myths of Sheogorath, Volume 1
     { 0.391, 0.556, 14, 6 }, -- Myths of Sheogorath, Volume 29
     { 0.5327, 0.5788, 14, 7 }, -- The Red Book of Riddles
     { 0.305, 0.663, 14, 8 }, -- 16 Accords of Madness, Vol. VI
@@ -703,8 +706,8 @@ local lorebooksData = {
     { 0.901, 0.346, 15, 2 }, -- Liminal Bridges
     { 0.5366, 0.1454, 15, 3 }, -- Magic from the Sky
     { 0.1953, 0.3091, 15, 4 }, -- Manual of Spellcraft
-    { 0.673, 0.596, 15, 5, 2 }, -- The Old Ways
-    { 0.455, 0.725, 15, 6, 2 }, -- On the Detachment of the Sheath
+    { 0.673, 0.596, 15, 5, ld = { 2, } }, -- The Old Ways
+    { 0.455, 0.725, 15, 6, ld = { 2, } }, -- On the Detachment of the Sheath
     { 0.670, 0.664, 15, 7 }, -- Reality and Other Falsehoods
     { 0.278, 0.711, 15, 8 }, -- Guild Memo on Soul Trapping
     { 0.720, 0.425, 15, 9 }, -- Wayshrines of Tamriel
@@ -717,25 +720,25 @@ local lorebooksData = {
     { 0.716, 0.669, 16, 6 }, -- The Firmament
     { 0.809, 0.297, 16, 7 }, -- The Pig Children
     { 0.587, 0.693, 16, 8 }, -- Ruminations on the Elder Scrolls
-    { 0.289, 0.485, 16, 9, 2 }, -- Sithis
+    { 0.289, 0.485, 16, 9, ld = { 2, } }, -- Sithis
     { 0.715, 0.533, 16, 10 }, -- The Consecrations of Arkay
     -- Oblivion Lore
     { 0.1202, 0.3911, 17, 1 }, -- The Book of Daedra
     { 0.316, 0.247, 17, 2 }, -- Darkest Darkness
     { 0.661, 0.611, 17, 3 }, -- The Doors of Oblivion, Part 1
-    { 0.807, 0.251, 17, 4, 2 }, -- The Doors of Oblivion, Part 2
-    { 0.154, 0.241, 17, 5, 2 }, -- On Oblivion
+    { 0.807, 0.251, 17, 4, ld = { 2, } }, -- The Doors of Oblivion, Part 2
+    { 0.154, 0.241, 17, 5, ld = { 2, } }, -- On Oblivion
     { 0.375, 0.330, 17, 6 }, -- Spirit of the Daedra
     { 0.188, 0.263, 17, 7 }, -- Varieties of Daedra, Part 1
     { 0.613, 0.565, 17, 8 }, -- Varieties of Daedra, Part 2
-    { 0.206, 0.507, 17, 9, 2 }, -- The Slave Pits of Coldharbour
-    { 0.707, 0.414, 17, 10, 4 }, -- On the Nature of Coldharbour
+    { 0.206, 0.507, 17, 9, ld = { 2, } }, -- The Slave Pits of Coldharbour
+    { 0.707, 0.414, 17, 10, ld = { 4, } }, -- On the Nature of Coldharbour
     -- Poetry and Song
     { 0.647, 0.776, 18, 1 }, -- The Battle of Glenumbria Moors
     { 0.167, 0.373, 18, 2 }, -- The Book of Dawn and Dusk
     { 0.709, 0.229, 18, 3 }, -- The Cantatas of Vivec
     { 0.305, 0.715, 18, 4 }, -- The Five Far Stars
-    { 0.503, 0.215, 18, 5, 2 }, -- Flesh to Cut from Bone
+    { 0.503, 0.215, 18, 5, ld = { 2, } }, -- Flesh to Cut from Bone
     { 0.508, 0.822, 18, 6 }, -- Ode to the Tundrastriders
     { 0.719, 0.390, 18, 7 }, -- Proper-Life: Three Chants
     { 0.177, 0.273, 18, 8 }, -- Song of the Askelde Men
@@ -793,7 +796,7 @@ local lorebooksData = {
     { 0.615, 0.460, 15, 6 }, -- On the Detachment of the Sheath, bug #798
   },
   [471] = { -- quickwatercave_base
-    { 0.473, 0.817, 10, 5, 2 }, -- Monomyth: "Shezarr's Song"
+    { 0.473, 0.817, 10, 5, ld = { 2, } }, -- Monomyth: "Shezarr's Song"
   },
   [289] = { -- redrubycave_base
     -- Biographies
@@ -919,8 +922,8 @@ local lorebooksData = {
     { 0.367, 0.641, 23, 3 },
     { 0.429, 0.6771, 23, 3 },
     { 0.152, 0.494, 23, 4 }, -- Shad Astula Academy Handbook
-    { 0.1930, 0.5548, 23, 4, 1 },
-    { 0.1646, 0.5519, 23, 4, 1 },
+    { 0.1930, 0.5548, 23, 4, ld = { 1, } },
+    { 0.1646, 0.5519, 23, 4, ld = { 1, } },
     { 0.1718, 0.5108, 23, 4 },
     { 0.118, 0.565, 23, 5 }, -- Dwemer Dungeons: What I Know
     { 0.138, 0.619, 23, 5 },
@@ -940,7 +943,7 @@ local lorebooksData = {
     { 0.314, 0.453, 23, 9 }, -- Sanctioned Murder
     { 0.395455, 0.428587, 23, 9 }, -- Sanctioned Murder
     { 0.350, 0.445, 23, 9 },
-    { 0.3201, 0.4194, 23, 9, 2 },
+    { 0.3201, 0.4194, 23, 9, ld = { 2, } },
     { 0.244, 0.466, 23, 10 }, -- Dark Ruins
     { 0.237, 0.491, 23, 10 },
     { 0.223, 0.503, 23, 10 },
@@ -982,8 +985,8 @@ local lorebooksData = {
     { 0.714, 0.434, 12, 6 },
     -- Magic and Magicka
     { 0.405, 0.450, 15, 1 }, -- Arcana Restored
-    { 0.404, 0.485, 15, 1, 1 },
-    { 0.4373, 0.4447, 15, 1, 1 },
+    { 0.404, 0.485, 15, 1, ld = { 1, } },
+    { 0.4373, 0.4447, 15, 1, ld = { 1, } },
     { 0.751, 0.572, 15, 2 }, -- Liminal Bridges
     { 0.731, 0.512, 15, 2 },
     { 0.687, 0.508, 15, 2 },
@@ -1000,10 +1003,10 @@ local lorebooksData = {
     { 0.673, 0.590, 15, 5 },
     { 0.656, 0.525, 15, 5 },
     { 0.7057, 0.5456, 15, 5 },
-    { 0.454, 0.532, 15, 6, 1 }, -- On the Detachment of the Sheath
+    { 0.454, 0.532, 15, 6, ld = { 1, } }, -- On the Detachment of the Sheath
     { 0.4245, 0.4916, 15, 6 },
-    { 0.494, 0.532, 15, 6, 1 },
-    { 0.407, 0.536, 15, 6, 1 },
+    { 0.494, 0.532, 15, 6, ld = { 1, } },
+    { 0.407, 0.536, 15, 6, ld = { 1, } },
     { 0.815, 0.560, 15, 7 }, -- Reality and Other Falsehoods
     { 0.799, 0.508, 15, 7 },
     { 0.788, 0.561, 15, 7 },
@@ -1033,7 +1036,7 @@ local lorebooksData = {
     { 0.435, 0.588, 16, 5 },
     { 0.4687, 0.5872, 16, 5 },
     -- Dungeon Lore
-    { 0.790, 0.585, 11, 6, 9999, 118 }, -- The Art of Kwama Egg Cooking
+    { 0.790, 0.585, 11, 6, 118, ld = { 9999, } }, -- The Art of Kwama Egg Cooking
   },
   [205] = { -- mournhold_base
     -- Daedric Princes
@@ -1067,15 +1070,15 @@ local lorebooksData = {
   },
   [118] = { -- darkshadecaverns_base
     -- Dungeon Lore
-    { 0.309, 0.222, 11, 6, 5, 118 }, -- The Art of Kwama Egg Cooking
+    { 0.309, 0.222, 11, 6, 118, ld = { 5, } }, -- The Art of Kwama Egg Cooking
   },
 
   -- eastmarch
   [61] = { -- eastmarch_base
     -- Eastmarch Lore
-    { 0.4976, 0.2865, 22, 1, 1 }, -- The Brothers' War
+    { 0.4976, 0.2865, 22, 1, ld = { 1, } }, -- The Brothers' War
     { 0.428, 0.622, 22, 1 },
-    { 0.253, 0.621, 22, 1, 1 },
+    { 0.253, 0.621, 22, 1, ld = { 1, } },
     { 0.459, 0.6028, 22, 1 },
     { 0.4994, 0.5864, 22, 1 },
     { 0.547, 0.507, 22, 2 }, -- Second Invasion: Reports
@@ -1131,7 +1134,7 @@ local lorebooksData = {
     { 0.551, 0.263, 12, 11 }, -- Guylaine's Dwemer Architecture
     { 0.4925, 0.2865, 12, 11 },
     { 0.4555, 0.3127, 12, 11 },
-    { 0.463, 0.259, 12, 11, 1 },
+    { 0.463, 0.259, 12, 11, ld = { 1, } },
     { 0.583, 0.268, 12, 12 }, -- Ancient Scrolls of the Dwemer VIII
     { 0.584, 0.241, 12, 12 },
     { 0.600, 0.311, 12, 12 },
@@ -1167,14 +1170,14 @@ local lorebooksData = {
     { 0.334, 0.464, 13, 8 },
     { 0.376, 0.444, 13, 8 },
     { 0.288, 0.495, 13, 8 },
-    { 0.226, 0.628, 13, 9, 1 }, -- Tamrielic Artifacts, Part Two
+    { 0.226, 0.628, 13, 9, ld = { 1, } }, -- Tamrielic Artifacts, Part Two
     { 0.177, 0.611, 13, 9 },
     { 0.219, 0.680, 13, 9 },
     { 0.1957, 0.6503, 13, 9 },
-    { 0.250, 0.625, 13, 10, 1 }, -- Tamrielic Artifacts, Part Three
-    { 0.306, 0.63, 13, 10, 1 },
-    { 0.248, 0.5955, 13, 10, 1 },
-    { 0.2743, 0.6563, 13, 10, 1 },
+    { 0.250, 0.625, 13, 10, ld = { 1, } }, -- Tamrielic Artifacts, Part Three
+    { 0.306, 0.63, 13, 10, ld = { 1, } },
+    { 0.248, 0.5955, 13, 10, ld = { 1, } },
+    { 0.2743, 0.6563, 13, 10, ld = { 1, } },
     -- Poetry and Song
     { 0.433, 0.503, 18, 1 }, -- The Battle of Glenumbria Moors
     { 0.262, 0.555, 18, 1 },
@@ -1201,7 +1204,7 @@ local lorebooksData = {
     { 0.3047, 0.545, 18, 6 },
     { 0.4702, 0.5361, 18, 6 },
     -- Dungeon Lore
-    { 0.737, 0.703, 11, 10, 9999, 348 }, -- To Posterity
+    { 0.737, 0.703, 11, 10, 348, ld = { 9999, } }, -- To Posterity
   },
   [578] = { -- fortamol_base
     -- Eastmarch Lore
@@ -1221,17 +1224,17 @@ local lorebooksData = {
   },
   [348] = { -- direfrostkeep_base
     -- Dungeon Lore
-    { 0.541, 0.653, 11, 10, 5, 348 }, -- To Posterity
+    { 0.541, 0.653, 11, 10, 348, ld = { 5, } }, -- To Posterity
   },
 
   -- glenumbra
   [1] = { -- glenumbra_base
     -- Glenumbra Lore
-    { 0.2823, 0.7946, 1, 1, 1 }, -- The Code of Mauloch
-    { 0.3304, 0.8083, 1, 1, 1 },
-    { 0.2399, 0.7798, 1, 1, 1 },
-    { 0.3052, 0.7376, 1, 1, 1 },
-    { 0.22, 0.68, 1, 2, 1 }, -- A Warning to the Aldmeri Dominion
+    { 0.2823, 0.7946, 1, 1, ld = { 1, } }, -- The Code of Mauloch
+    { 0.3304, 0.8083, 1, 1, ld = { 1, } },
+    { 0.2399, 0.7798, 1, 1, ld = { 1, } },
+    { 0.3052, 0.7376, 1, 1, ld = { 1, } },
+    { 0.22, 0.68, 1, 2, ld = { 1, } }, -- A Warning to the Aldmeri Dominion
     { 0.2658, 0.6911, 1, 2 },
     { 0.2811, 0.7221, 1, 2 },
     { 0.3003, 0.73, 1, 2 },
@@ -1285,8 +1288,8 @@ local lorebooksData = {
     { 0.2143, 0.4352, 9, 1 },
     { 0.554, 0.609, 9, 2 }, -- Great Harbingers of the Companions
     { 0.588, 0.607, 9, 2 },
-    { 0.5546, 0.5779, 9, 2, 1 },
-    { 0.6094, 0.5634, 9, 2, 1 },
+    { 0.5546, 0.5779, 9, 2, ld = { 1, } },
+    { 0.6094, 0.5634, 9, 2, ld = { 1, } },
     { 0.642, 0.513, 9, 3 }, -- The Illusion of Death
     { 0.689, 0.538, 9, 3 },
     { 0.641, 0.458, 9, 3 },
@@ -1357,7 +1360,7 @@ local lorebooksData = {
     { 0.557, 0.228, 19, 5 },
     { 0.522, 0.234, 19, 5 },
     -- Dungeon Lore
-    { 0.714, 0.336, 11, 8, 9999, 174 }, -- Where Magical Paths Meet
+    { 0.714, 0.336, 11, 8, 174, ld = { 9999, } }, -- Where Magical Paths Meet
   },
   [531] = { -- aldcroft_base
     -- Biographies
@@ -1390,8 +1393,8 @@ local lorebooksData = {
   },
   [174] = { -- spindleclutch_base
     -- Dungeon Lore
-    { 0.677, 0.475, 11, 8, 5, 174 }, -- Where Magical Paths Meet
-    { 0.671889, 0.471008, 11, 8, 5, 174 },
+    { 0.677, 0.475, 11, 8, 174, ld = { 5, } }, -- Where Magical Paths Meet
+    { 0.671889, 0.471008, 11, 8, 174, ld = { 5, } },
   },
   [201] = { -- strosmkai_base
     -- Dwemer
@@ -1425,7 +1428,7 @@ local lorebooksData = {
     { 0.648, 0.589, 26, 6 },
     { 0.615, 0.639, 26, 6 },
     { 0.660, 0.645, 26, 6 },
-    { 0.852, 0.568, 26, 7, 4 }, -- Ayleid Survivals in Valenwood
+    { 0.852, 0.568, 26, 7, ld = { 4, } }, -- Ayleid Survivals in Valenwood
     { 0.772, 0.521, 26, 7 },
     { 0.7146, 0.5597, 26, 7 },
     { 0.7432, 0.5659, 26, 7 },
@@ -1433,14 +1436,14 @@ local lorebooksData = {
     { 0.767, 0.602, 26, 8 },
     { 0.840, 0.632, 26, 8 },
     { 0.728, 0.602, 26, 8 },
-    { 0.7412, 0.679, 26, 9, 1 }, -- The Legend of Vastarie
-    { 0.720, 0.728, 26, 9, 1 },
-    { 0.694, 0.748, 26, 9, 1 },
-    { 0.7084, 0.6689, 26, 9, 1 },
-    { 0.835, 0.765, 26, 10, 1 }, -- In the Company of Wood Orcs
-    { 0.829, 0.715, 26, 10, 1 },
-    { 0.7641, 0.7, 26, 10, 1 },
-    { 0.7529, 0.7466, 26, 10, 1 },
+    { 0.7412, 0.679, 26, 9, ld = { 1, } }, -- The Legend of Vastarie
+    { 0.720, 0.728, 26, 9, ld = { 1, } },
+    { 0.694, 0.748, 26, 9, ld = { 1, } },
+    { 0.7084, 0.6689, 26, 9, ld = { 1, } },
+    { 0.835, 0.765, 26, 10, ld = { 1, } }, -- In the Company of Wood Orcs
+    { 0.829, 0.715, 26, 10, ld = { 1, } },
+    { 0.7641, 0.7, 26, 10, ld = { 1, } },
+    { 0.7529, 0.7466, 26, 10, ld = { 1, } },
     -- Daedric Princes
     { 0.562, 0.171, 8, 3 }, -- The Dreamstride
     { 0.596, 0.207, 8, 3 },
@@ -1477,14 +1480,14 @@ local lorebooksData = {
     { 0.3896, 0.2984, 12, 6 },
     { 0.431, 0.327, 12, 6 },
     -- Magic and Magica
-    { 0.619, 0.550, 15, 1, 1 }, -- Arcana Restored
+    { 0.619, 0.550, 15, 1, ld = { 1, } }, -- Arcana Restored
     { 0.6149, 0.494, 15, 1 },
     { 0.5247, 0.4824, 15, 1 },
     { 0.5537, 0.4417, 15, 1 },
-    { 0.510, 0.548, 15, 2, 1 }, -- Liminal Bridges
-    { 0.579, 0.532, 15, 2, 1 },
-    { 0.550, 0.566, 15, 2, 1 },
-    { 0.5925, 0.5856, 15, 2, 1 },
+    { 0.510, 0.548, 15, 2, ld = { 1, } }, -- Liminal Bridges
+    { 0.579, 0.532, 15, 2, ld = { 1, } },
+    { 0.550, 0.566, 15, 2, ld = { 1, } },
+    { 0.5925, 0.5856, 15, 2, ld = { 1, } },
     { 0.777, 0.485, 15, 3 }, -- Magic from the Sky
     { 0.701, 0.438, 15, 3 },
     { 0.757, 0.424, 15, 3 },
@@ -1519,9 +1522,9 @@ local lorebooksData = {
     { 0.288, 0.257, 16, 2 },
     { 0.2078, 0.2211, 16, 2 },
     { 0.238, 0.130, 16, 3 }, -- Ebony Blade History
-    { 0.335, 0.156, 16, 3, 1 },
-    { 0.278, 0.161, 16, 3, 1 },
-    { 0.284, 0.159, 16, 3, 1 },
+    { 0.335, 0.156, 16, 3, ld = { 1, } },
+    { 0.278, 0.161, 16, 3, ld = { 1, } },
+    { 0.284, 0.159, 16, 3, ld = { 1, } },
     { 0.340, 0.267, 16, 4 }, -- Noxiphilic Sanguivoria
     { 0.395, 0.269, 16, 4 },
     { 0.349, 0.230, 16, 4 },
@@ -1531,7 +1534,7 @@ local lorebooksData = {
     { 0.224, 0.225, 16, 5 },
     { 0.256, 0.203, 16, 5 },
     -- Dungeon Lore
-    { 0.526, 0.484, 11, 5, 9999, 28 }, -- Civility and Etiquette: Wood Orcs I
+    { 0.526, 0.484, 11, 5, 28, ld = { 9999, } }, -- Civility and Etiquette: Wood Orcs I
   },
   [445] = { -- eldenrootgroundfloor_base
     -- Magic and Magica
@@ -1564,7 +1567,7 @@ local lorebooksData = {
   },
   [28] = { -- eldenhollow_base
     -- Dungeon Lore
-    { 0.786, 0.624, 11, 5, 5, 28 }, -- Civility and Etiquette: Wood Orcs I
+    { 0.786, 0.624, 11, 5, 28, ld = { 5, } }, -- Civility and Etiquette: Wood Orcs I
   },
 
   -- greenshade
@@ -1604,7 +1607,7 @@ local lorebooksData = {
     { 0.302, 0.356, 27, 8 },
     { 0.549, 0.446, 27, 9 }, -- Gifts of the Nereids
     { 0.481, 0.482, 27, 9 },
-    { 0.481, 0.497, 27, 9, 2 },
+    { 0.481, 0.497, 27, 9, ld = { 2, } },
     { 0.5223, 0.4980, 27, 9 },
     { 0.569, 0.327, 27, 10 }, -- The Wood Elf Gourmet, Ch. 1
     { 0.605, 0.313, 27, 10 },
@@ -1620,10 +1623,10 @@ local lorebooksData = {
     { 0.526, 0.374, 8, 6 },
     { 0.556, 0.364, 8, 6 },
     -- Divines and Deities
-    { 0.665, 0.510, 10, 7, 1 }, -- Monomyth: The Heart of the World
-    { 0.665, 0.546, 10, 7, 1 },
-    { 0.714, 0.555, 10, 7, 1 },
-    { 0.740, 0.508, 10, 7, 1 },
+    { 0.665, 0.510, 10, 7, ld = { 1, } }, -- Monomyth: The Heart of the World
+    { 0.665, 0.546, 10, 7, ld = { 1, } },
+    { 0.714, 0.555, 10, 7, ld = { 1, } },
+    { 0.740, 0.508, 10, 7, ld = { 1, } },
     { 0.367, 0.297, 10, 8 }, -- Nine Commands of the Eight Divines
     { 0.332, 0.326, 10, 8 },
     { 0.293, 0.273, 10, 8 },
@@ -1653,22 +1656,22 @@ local lorebooksData = {
     { 0.360, 0.568, 16, 6 }, -- The Firmament
     { 0.299, 0.571, 16, 6 },
     { 0.336, 0.675, 16, 6 },
-    { 0.257, 0.669, 16, 7, 1 }, -- The Pig Children
-    { 0.240, 0.593, 16, 7, 1 },
-    { 0.253, 0.635, 16, 7, 1 },
-    { 0.217, 0.6631, 16, 7, 1 },
+    { 0.257, 0.669, 16, 7, ld = { 1, } }, -- The Pig Children
+    { 0.240, 0.593, 16, 7, ld = { 1, } },
+    { 0.253, 0.635, 16, 7, ld = { 1, } },
+    { 0.217, 0.6631, 16, 7, ld = { 1, } },
     { 0.119, 0.524, 16, 8 }, -- Ruminations on the Elder Scrolls
     { 0.232, 0.549, 16, 8 },
-    { 0.197, 0.585, 16, 8, 1 },
+    { 0.197, 0.585, 16, 8, ld = { 1, } },
     { 0.150, 0.548, 16, 8 },
-    { 0.092, 0.618, 16, 9, 1 }, -- Sithis
-    { 0.158, 0.598, 16, 9, 1 },
-    { 0.167, 0.698, 16, 9, 1 },
+    { 0.092, 0.618, 16, 9, ld = { 1, } }, -- Sithis
+    { 0.158, 0.598, 16, 9, ld = { 1, } },
+    { 0.167, 0.698, 16, 9, ld = { 1, } },
     -- Oblivion Lore
     { 0.261, 0.774, 17, 1 }, -- The Book of Daedra
     { 0.198, 0.755, 17, 1 },
     { 0.230, 0.776, 17, 1 },
-    { 0.2144, 0.7184, 17, 1, 1 },
+    { 0.2144, 0.7184, 17, 1, ld = { 1, } },
     { 0.283, 0.747, 17, 2 }, -- Darkest Darkness
     { 0.2825, 0.6995, 17, 2 },
     { 0.294, 0.721, 17, 2 },
@@ -1684,7 +1687,7 @@ local lorebooksData = {
     { 0.750, 0.846, 17, 5 }, -- On Oblivion
     { 0.728, 0.843, 17, 5 },
     { 0.686, 0.880, 17, 5 },
-    { 0.6842, 0.8044, 17, 5, 4 },
+    { 0.6842, 0.8044, 17, 5, ld = { 4, } },
     { 0.348, 0.262, 17, 6 }, -- Spirit of the Daedra
     { 0.378, 0.273, 17, 6 },
     { 0.274, 0.272, 17, 6 },
@@ -1698,7 +1701,7 @@ local lorebooksData = {
     { 0.301, 0.195, 17, 8 },
     { 0.3407, 0.2105, 17, 8 },
     -- Dungeon Lore
-    { 0.658, 0.300, 11, 12, 9999, 326 }, -- Burning Vestige, Vol. I
+    { 0.658, 0.300, 11, 12, 326, ld = { 9999, } }, -- Burning Vestige, Vol. I
   },
   [568] = { -- falinesticave_base
     -- Greenshade Lore
@@ -1729,7 +1732,7 @@ local lorebooksData = {
   },
   [326] = { -- cityofashmain_base
     -- Dungeon Lore
-    { 0.275009, 0.442950, 11, 12, 5, 326 }, -- Burning Vestige, Vol. I
+    { 0.275009, 0.442950, 11, 12, 326, ld = { 5, } }, -- Burning Vestige, Vol. I
   },
 
   -- malabaltor
@@ -1737,7 +1740,7 @@ local lorebooksData = {
     -- Malabal Tor Lore
     { 0.728897, 0.493266, 21, 1 }, -- The Voice of the People
     { 0.748, 0.411, 21, 1 },
-    { 0.708, 0.492, 21, 1, 2 },
+    { 0.708, 0.492, 21, 1, ld = { 2, } },
     { 0.758, 0.450, 21, 1 },
     { 0.200, 0.466, 21, 2 }, -- The Woodsmer
     { 0.208, 0.535, 21, 2 },
@@ -1745,13 +1748,13 @@ local lorebooksData = {
     { 0.1482, 0.5434, 21, 2 },
     { 0.783, 0.524, 21, 3 }, -- Green Lady, My Lady
     { 0.828, 0.493, 21, 3 },
-    { 0.804, 0.3499, 21, 3, 1 },
-    { 0.843, 0.477, 21, 3, 2 },
+    { 0.804, 0.3499, 21, 3, ld = { 1, } },
+    { 0.843, 0.477, 21, 3, ld = { 2, } },
     { 0.231571, 0.489120, 21, 4 }, -- Valenwood: A Study
     { 0.216, 0.461, 21, 4 },
     { 0.236, 0.472, 21, 4 },
     { 0.2432, 0.4694, 21, 4 },
-    { 0.57, 0.50, 21, 5, 1 }, -- The Humor of Wood Elves
+    { 0.57, 0.50, 21, 5, ld = { 1, } }, -- The Humor of Wood Elves
     { 0.602, 0.528, 21, 5 },
     { 0.5354, 0.5123, 21, 5 },
     { 0.5908, 0.5271, 21, 5 },
@@ -1762,8 +1765,8 @@ local lorebooksData = {
     { 0.804, 0.170, 21, 7 },
     { 0.7296, 0.2189, 21, 7 },
     { 0.471, 0.706, 21, 8 }, -- A Nereid Stole My Husband
-    { 0.422, 0.657, 21, 8, 4 },
-    { 0.473, 0.563, 21, 8, 2 },
+    { 0.422, 0.657, 21, 8, ld = { 4, } },
+    { 0.473, 0.563, 21, 8, ld = { 2, } },
     { 0.5359, 0.6413, 21, 8 },
     { 0.596028, 0.650186, 21, 9 }, -- The Red Paint
     { 0.602, 0.727, 21, 9 },
@@ -1785,7 +1788,7 @@ local lorebooksData = {
     -- Dwemer
     { 0.381, 0.623, 12, 10 }, -- Ancient Scrolls of the Dwemer I-B
     { 0.424, 0.644, 12, 10 },
-    { 0.413, 0.656, 12, 10, 4 },
+    { 0.413, 0.656, 12, 10, ld = { 4, } },
     { 0.644, 0.312, 12, 11 }, -- Guylaine's Dwemer Architecture
     { 0.669, 0.328, 12, 11 },
     { 0.7147, 0.383, 12, 11 },
@@ -1802,8 +1805,8 @@ local lorebooksData = {
     { 0.722, 0.303, 13, 2 }, -- The Adabal-a
     { 0.773, 0.326, 13, 2 },
     { 0.751, 0.274, 13, 2 },
-    { 0.788, 0.298, 13, 2, 2 },
-    { 0.5402, 0.4381, 13, 3, 1 }, -- The Amulet of Kings
+    { 0.788, 0.298, 13, 2, ld = { 2, } },
+    { 0.5402, 0.4381, 13, 3, ld = { 1, } }, -- The Amulet of Kings
     { 0.581, 0.465, 13, 3 },
     { 0.611, 0.367, 13, 3 },
     { 0.600, 0.395, 13, 3 },
@@ -1830,16 +1833,16 @@ local lorebooksData = {
     { 0.643, 0.444, 13, 9 },
     { 0.646, 0.455, 13, 9 },
     { 0.667, 0.414, 13, 9 },
-    { 0.8371, 0.2952, 13, 10, 1 }, -- Tamrielic Artifacts, Part Three
+    { 0.8371, 0.2952, 13, 10, ld = { 1, } }, -- Tamrielic Artifacts, Part Three
     { 0.847, 0.257, 13, 10 },
-    { 0.708, 0.492, 13, 10, 2 },
+    { 0.708, 0.492, 13, 10, ld = { 2, } },
     -- Poetry and Song
     { 0.639, 0.719, 18, 1 }, -- The Battle of Glenumbria Moors
     { 0.651, 0.714, 18, 1 },
     { 0.647, 0.766, 18, 1 },
     { 0.664, 0.789, 18, 1 },
     { 0.638, 0.505, 18, 2 }, -- The Book of Dawn and Dusk
-    { 0.563, 0.605, 18, 2, 4 },
+    { 0.563, 0.605, 18, 2, ld = { 4, } },
     { 0.582, 0.624, 18, 2 },
     { 0.5798, 0.5650, 18, 2 },
     { 0.375, 0.508, 18, 3 }, -- The Cantatas of Vivec
@@ -1850,17 +1853,17 @@ local lorebooksData = {
     { 0.648, 0.280, 18, 4 },
     { 0.6054, 0.2945, 18, 4 },
     { 0.6007, 0.2925, 18, 4 },
-    { 0.1803, 0.4861, 18, 5, 1 }, -- Flesh to Cut from Bone
-    { 0.15, 0.42, 18, 5, 1 },
-    { 0.8418, 0.3289, 18, 5, 1 },
-    { 0.0915, 0.4302, 18, 5, 1 },
-    { 0.1701, 0.4491, 18, 5, 1 },
+    { 0.1803, 0.4861, 18, 5, ld = { 1, } }, -- Flesh to Cut from Bone
+    { 0.15, 0.42, 18, 5, ld = { 1, } },
+    { 0.8418, 0.3289, 18, 5, ld = { 1, } },
+    { 0.0915, 0.4302, 18, 5, ld = { 1, } },
+    { 0.1701, 0.4491, 18, 5, ld = { 1, } },
     { 0.775, 0.576, 18, 6 }, -- Ode to the Tundrastriders
     { 0.728, 0.752, 18, 6 },
     { 0.794, 0.571, 18, 6 },
     { 0.755, 0.748, 18, 6 },
     -- Dungeon Lore
-    { 0.460, 0.330, 11, 14, 9999, 292 }, -- Tempest Island Briefing
+    { 0.460, 0.330, 11, 14, 292, ld = { 9999, } }, -- Tempest Island Briefing
   },
   [282] = { -- baandaritradingpost_base
     -- Malabal Toe Lore
@@ -1911,8 +1914,8 @@ local lorebooksData = {
   },
   [292] = { -- tempestisland_base
     -- Dungeon Lore
-    { 0.445, 0.367, 11, 4, 5, 292 }, -- War Weather
-    { 0.365, 0.812, 11, 14, 5, 292 }, -- Tempest Island Briefing
+    { 0.445, 0.367, 11, 4, 292, ld = { 5, } }, -- War Weather
+    { 0.365, 0.812, 11, 14, 292, ld = { 5, } }, -- Tempest Island Briefing
   },
 
   -- reapersmarch
@@ -1931,15 +1934,15 @@ local lorebooksData = {
     { 0.723, 0.251, 28, 3 },
     { 0.769, 0.216, 28, 3 },
     { 0.760, 0.303, 28, 3 },
-    { 0.79, 0.33, 28, 4, 1 }, -- A Looter's Paradise
-    { 0.778, 0.405, 28, 4, 1 },
-    { 0.7258, 0.3918, 28, 4, 1 },
-    { 0.7646, 0.3429, 28, 4, 1 },
+    { 0.79, 0.33, 28, 4, ld = { 1, } }, -- A Looter's Paradise
+    { 0.778, 0.405, 28, 4, ld = { 1, } },
+    { 0.7258, 0.3918, 28, 4, ld = { 1, } },
+    { 0.7646, 0.3429, 28, 4, ld = { 1, } },
     { 0.639, 0.286, 28, 5 }, -- The Eagle and the Cat
     { 0.601, 0.234, 28, 5 },
     { 0.590, 0.357, 28, 5 },
     { 0.5759, 0.3119, 28, 5 },
-    { 0.73, 0.33, 28, 6, 1 }, -- Elven Eyes, Elven Spies
+    { 0.73, 0.33, 28, 6, ld = { 1, } }, -- Elven Eyes, Elven Spies
     { 0.69, 0.35, 28, 6 },
     { 0.725, 0.283, 28, 6 },
     { 0.691, 0.313, 28, 6 },
@@ -2000,7 +2003,7 @@ local lorebooksData = {
     { 0.373, 0.800, 14, 6 },
     { 0.295, 0.736, 14, 6 },
     { 0.356, 0.762, 14, 6 },
-    { 0.468, 0.564, 14, 7, 1 }, -- The Red Book of Riddles
+    { 0.468, 0.564, 14, 7, ld = { 1, } }, -- The Red Book of Riddles
     { 0.462, 0.494, 14, 7 },
     { 0.469, 0.5268, 14, 7 },
     { 0.3915, 0.5767, 14, 7 },
@@ -2023,16 +2026,16 @@ local lorebooksData = {
     { 0.2441, 0.1619, 18, 7 },
     { 0.466, 0.129, 18, 8 }, -- Song of the Askelde Men
     { 0.481, 0.210, 18, 8 },
-    { 0.5064, 0.1741, 18, 8, 1 },
+    { 0.5064, 0.1741, 18, 8, ld = { 1, } },
     { 0.4054, 0.1284, 18, 8 },
-    { 0.5577, 0.1901, 18, 9, 1 }, -- The Warrior's Charge
-    { 0.56, 0.16, 18, 9, 1 },
+    { 0.5577, 0.1901, 18, 9, ld = { 1, } }, -- The Warrior's Charge
+    { 0.56, 0.16, 18, 9, ld = { 1, } },
     { 0.278, 0.343, 18, 10 }, -- Words of the Wind
     { 0.331, 0.330, 18, 10 },
     { 0.235, 0.341, 18, 10 },
     { 0.3285, 0.3591, 18, 10 },
     -- Dungeon Lore
-    { 0.206, 0.795, 11, 15, 9999, 334 }, -- Soul-Trapping I: An Introduction
+    { 0.206, 0.795, 11, 15, 334, ld = { 9999, } }, -- Soul-Trapping I: An Introduction
   },
   [535] = { -- arenthia_base
     -- Poetry and Song
@@ -2056,7 +2059,7 @@ local lorebooksData = {
   },
   [334] = { -- selenesweb_base
     -- Dungeon Lore
-    { 0.706, 0.916, 11, 15, 5, 334 }, -- Soul-Trapping I: An Introduction
+    { 0.706, 0.916, 11, 15, 334, ld = { 5, } }, -- Soul-Trapping I: An Introduction
   },
 
   -- rivenspire
@@ -2090,13 +2093,13 @@ local lorebooksData = {
     { 0.656, 0.229, 3, 7 },
     { 0.730, 0.229, 3, 7 },
     { 0.700, 0.215, 3, 7 },
-    { 0.727, 0.168, 3, 8, 1 }, -- Shornhelm, Crown City of the North
+    { 0.727, 0.168, 3, 8, ld = { 1, } }, -- Shornhelm, Crown City of the North
     { 0.687, 0.136, 3, 8 },
     { 0.708, 0.116, 3, 8 },
     { 0.680, 0.175, 3, 8 },
-    { 0.826, 0.169, 3, 9, 1 }, -- Northpoint: An Assessment
-    { 0.760, 0.221, 3, 9, 1 },
-    { 0.797, 0.194, 3, 9, 1 },
+    { 0.826, 0.169, 3, 9, ld = { 1, } }, -- Northpoint: An Assessment
+    { 0.760, 0.221, 3, 9, ld = { 1, } },
+    { 0.797, 0.194, 3, 9, ld = { 1, } },
     { 0.735, 0.258, 3, 10 }, -- House Ravenwatch Proclamation
     { 0.724, 0.201, 3, 10 },
     { 0.750, 0.152, 3, 10 },
@@ -2126,10 +2129,10 @@ local lorebooksData = {
     { 0.4574, 0.5764, 10, 10 }, -- Vivec and Mephala
     { 0.4038, 0.5917, 10, 10 },
     -- Dwemer
-    { 0.40, 0.53, 12, 7, 1 }, -- Ancient Scrolls of the Dwemer XI
-    { 0.448, 0.5247, 12, 7, 1 },
-    { 0.3992, 0.5478, 12, 7, 1 },
-    { 0.4168, 0.5191, 12, 7, 1 },
+    { 0.40, 0.53, 12, 7, ld = { 1, } }, -- Ancient Scrolls of the Dwemer XI
+    { 0.448, 0.5247, 12, 7, ld = { 1, } },
+    { 0.3992, 0.5478, 12, 7, ld = { 1, } },
+    { 0.4168, 0.5191, 12, 7, ld = { 1, } },
     { 0.572, 0.688, 12, 8 }, -- Antecedents of Dwemer Law
     { 0.526, 0.670, 12, 8 },
     { 0.511, 0.638, 12, 8 },
@@ -2145,8 +2148,8 @@ local lorebooksData = {
     { 0.3583, 0.5384, 16, 6 },
     { 0.800, 0.303, 16, 7 }, -- The Pig Children
     { 0.748, 0.310, 16, 7 },
-    { 0.754, 0.261, 16, 7, 1 },
-    { 0.827, 0.262, 16, 7, 1 },
+    { 0.754, 0.261, 16, 7, ld = { 1, } },
+    { 0.827, 0.262, 16, 7, ld = { 1, } },
     { 0.300, 0.575, 16, 8 }, -- Ruminations on the Elder Scrolls
     { 0.360, 0.625, 16, 8 },
     { 0.339, 0.592, 16, 8 },
@@ -2168,8 +2171,8 @@ local lorebooksData = {
     { 0.216, 0.611, 17, 3 },
     { 0.579, 0.542, 17, 4 }, -- The Doors of Oblivion, Part 2
     { 0.630, 0.555, 17, 4 },
-    { 0.578, 0.570, 17, 4, 1 },
-    { 0.6156, 0.6, 17, 4, 1 },
+    { 0.578, 0.570, 17, 4, ld = { 1, } },
+    { 0.6156, 0.6, 17, 4, ld = { 1, } },
     { 0.626, 0.514, 17, 5 }, -- On Oblivion
     { 0.600, 0.510, 17, 5 },
     { 0.581, 0.479, 17, 5 },
@@ -2192,7 +2195,7 @@ local lorebooksData = {
     { 0.725, 0.450, 19, 2 },
     { 0.6955, 0.4972, 19, 2 },
     -- Dungeon Lore
-    { 0.721, 0.736, 11, 3, 9999, 151 }, -- The Thief God's Treasures
+    { 0.721, 0.736, 11, 3, 151, ld = { 9999, } }, -- The Thief God's Treasures
   },
   [528] = { -- hoarfrost_base
     -- Oblivion Lore
@@ -2230,8 +2233,8 @@ local lorebooksData = {
     { 0.183, 0.263, 17, 2 }, -- Darkest Darkness
   },
   [151] = { -- cryptofhearts_base
-    { 0.457, 0.240, 11, 3, 5, 151 }, -- The Thief God's Treasures
-    { 0.678, 0.181, 11, 3, 5, 151 },
+    { 0.457, 0.240, 11, 3, 151, ld = { 5, } }, -- The Thief God's Treasures
+    { 0.678, 0.181, 11, 3, 151, ld = { 5, } },
   },
 
   -- shadowfen
@@ -2299,9 +2302,9 @@ local lorebooksData = {
     { 0.284, 0.294, 10, 9 },
     { 0.288, 0.341, 10, 9 },
     { 0.272, 0.384, 10, 9 },
-    { 0.4962, 0.2716, 10, 10, 1 }, -- Vivec and Mephala
-    { 0.444, 0.258, 10, 10, 1 },
-    { 0.455, 0.303, 10, 10, 1 },
+    { 0.4962, 0.2716, 10, 10, ld = { 1, } }, -- Vivec and Mephala
+    { 0.444, 0.258, 10, 10, ld = { 1, } },
+    { 0.455, 0.303, 10, 10, ld = { 1, } },
     -- Dwemer
     { 0.352, 0.362, 12, 7 }, -- Ancient Scrolls of the Dwemer XI
     { 0.353, 0.305, 12, 7 },
@@ -2340,10 +2343,10 @@ local lorebooksData = {
     { 0.625, 0.529, 17, 2 },
     { 0.6996, 0.5453, 17, 2 },
     { 0.6105, 0.5058, 17, 2 },
-    { 0.6662, 0.6514, 17, 3, 1 }, -- The Doors of Oblivion, Part 1
+    { 0.6662, 0.6514, 17, 3, ld = { 1, } }, -- The Doors of Oblivion, Part 1
     { 0.543, 0.607, 17, 3 },
     { 0.615, 0.623, 17, 3 },
-    { 0.699, 0.6047, 17, 3, 1 },
+    { 0.699, 0.6047, 17, 3, ld = { 1, } },
     { 0.581, 0.815, 17, 4 }, -- The Doors of Oblivion, Part 2
     { 0.672, 0.861, 17, 4 },
     { 0.656, 0.812, 17, 4 },
@@ -2364,7 +2367,7 @@ local lorebooksData = {
     { 0.807, 0.828, 17, 8 },
     { 0.727, 0.847, 17, 8 },
     -- Dungeon Lore
-    { 0.165, 0.584, 11, 11, 9999, 141 }, -- Arx Corinium - First Seed Report
+    { 0.165, 0.584, 11, 11, 141, ld = { 9999, } }, -- Arx Corinium - First Seed Report
   },
   [217] = { -- stormhold_base
     -- Divines and Deities
@@ -2385,7 +2388,7 @@ local lorebooksData = {
   },
   [141] = { -- arxcorinium_base
     -- Dungeon Lore
-    { 0.143, 0.315, 11, 11, 5, 141 }, -- Arx Corinium - First Seed Report
+    { 0.143, 0.315, 11, 11, 141, ld = { 5, } }, -- Arx Corinium - First Seed Report
   },
 
   -- stonefalls
@@ -2406,11 +2409,11 @@ local lorebooksData = {
     { 0.226, 0.378, 20, 4 },
     { 0.169714, 0.406697, 20, 4 },
     { 0.2063, 0.4004, 20, 4 },
-    { 0.57, 0.51, 20, 5, 1 }, -- Nords of Skyrim
-    { 0.5421, 0.5315, 20, 5, 1 },
-    { 0.5031, 0.4552, 20, 5, 1 },
-    { 0.5835, 0.5008, 20, 5, 1 },
-    { 0.5586, 0.4844, 20, 5, 1 },
+    { 0.57, 0.51, 20, 5, ld = { 1, } }, -- Nords of Skyrim
+    { 0.5421, 0.5315, 20, 5, ld = { 1, } },
+    { 0.5031, 0.4552, 20, 5, ld = { 1, } },
+    { 0.5835, 0.5008, 20, 5, ld = { 1, } },
+    { 0.5586, 0.4844, 20, 5, ld = { 1, } },
     { 0.354, 0.512, 20, 6 }, -- Mottos of the Dunmeri Great Houses
     { 0.393, 0.468, 20, 6 },
     { 0.282, 0.492, 20, 6 },
@@ -2439,7 +2442,7 @@ local lorebooksData = {
     { 0.575, 0.572, 8, 2 }, -- Boethiah's Proving
     { 0.585, 0.605, 8, 2 },
     { 0.580, 0.588, 8, 2 },
-    { 0.583, 0.594, 8, 2, 2 },
+    { 0.583, 0.594, 8, 2, ld = { 2, } },
     -- Biographies
     { 0.470, 0.601, 9, 1 }, -- Galerion the Mystic
     { 0.446, 0.593, 9, 1 },
@@ -2452,11 +2455,11 @@ local lorebooksData = {
     { 0.251, 0.503, 9, 3 }, -- The Illusion of Death
     { 0.275, 0.578, 9, 3 },
     { 0.219, 0.554, 9, 3 },
-    { 0.358, 0.449, 9, 3, 2 },
+    { 0.358, 0.449, 9, 3, ld = { 2, } },
     { 0.930, 0.410, 9, 4 }, -- Jorunn the Skald-King
     { 0.896, 0.436, 9, 4 },
     { 0.947, 0.467, 9, 4 },
-    { 0.90, 0.38, 9, 4, 1 },
+    { 0.90, 0.38, 9, 4, ld = { 1, } },
     { 0.412, 0.543, 9, 5 }, -- Triumphs of a Monarch, Ch. 3
     { 0.414, 0.440, 9, 5 },
     { 0.429, 0.475, 9, 5 },
@@ -2464,7 +2467,7 @@ local lorebooksData = {
     { 0.779, 0.349, 9, 6 }, -- Triumphs of a Monarch, Ch. 6
     { 0.698, 0.357, 9, 6 },
     { 0.769, 0.389, 9, 6 },
-    { 0.7836, 0.3106, 9, 6, 1 },
+    { 0.7836, 0.3106, 9, 6, ld = { 1, } },
     { 0.180, 0.210, 9, 7 }, -- Triumphs of a Monarch, Ch. 10
     { 0.205, 0.204, 9, 7 },
     { 0.173, 0.226, 9, 7 },
@@ -2484,14 +2487,14 @@ local lorebooksData = {
     { 0.390, 0.370, 10, 3 }, -- Monomyth: Dragon God & Missing God
     { 0.376, 0.376, 10, 3 },
     { 0.361, 0.408, 10, 3 },
-    { 0.290, 0.558, 10, 3, 2 },
+    { 0.290, 0.558, 10, 3, ld = { 2, } },
     -- Dungeon Lore
-    { 0.094, 0.447, 11, 1, 9999, 77 }, -- With Regards to the Ebony Blade
+    { 0.094, 0.447, 11, 1, 77, ld = { 9999, } }, -- With Regards to the Ebony Blade
     -- Dwemer
     { 0.656, 0.373, 12, 1 }, -- Ancient Scrolls of the Dwemer I-A
     { 0.688, 0.367, 12, 1 },
     { 0.606, 0.407, 12, 1 },
-    { 0.717, 0.393, 12, 1, 2 },
+    { 0.717, 0.393, 12, 1, ld = { 2, } },
     { 0.720, 0.530, 12, 2 }, -- Ancient Scrolls of the Dwemer II
     { 0.680, 0.530, 12, 2 },
     { 0.7575, 0.5052, 12, 2 },
@@ -2510,10 +2513,10 @@ local lorebooksData = {
     { 0.552, 0.339, 19, 3 },
     { 0.544, 0.371, 19, 3 },
     { 0.5574, 0.3642, 19, 3 },
-    { 0.24, 0.65, 19, 4, 1 }, -- History of the Fighters Guild Pt. 2
-    { 0.2564, 0.6318, 19, 4, 1 },
-    { 0.225, 0.61, 19, 4, 1 },
-    { 0.1821, 0.6372, 19, 4, 1 },
+    { 0.24, 0.65, 19, 4, ld = { 1, } }, -- History of the Fighters Guild Pt. 2
+    { 0.2564, 0.6318, 19, 4, ld = { 1, } },
+    { 0.225, 0.61, 19, 4, ld = { 1, } },
+    { 0.1821, 0.6372, 19, 4, ld = { 1, } },
     { 0.8531, 0.3256, 19, 5 }, -- Origin of the Mages Guild
     { 0.8868, 0.3622, 19, 5 },
     { 0.9199, 0.3228, 19, 5 },
@@ -2567,15 +2570,15 @@ local lorebooksData = {
   },
   [77] = { -- fungalgrotto_base
     -- Dungeon Lore
-    { 0.331, 0.785, 11, 1, 5, 77 }, -- With Regards to the Ebony Blade
+    { 0.331, 0.785, 11, 1, 77, ld = { 5, } }, -- With Regards to the Ebony Blade
   },
 
   -- stormhaven
   [12] = { -- stormhaven_base
     -- Stormhaven Lore
     { 0.245, 0.198, 2, 1 }, -- Once
-    { 0.179, 0.232, 2, 1, 1 },
-    { 0.212, 0.225, 2, 1, 1 },
+    { 0.179, 0.232, 2, 1, ld = { 1, } },
+    { 0.212, 0.225, 2, 1, ld = { 1, } },
     { 0.180, 0.472, 2, 2 }, -- Founding of the Spirit Wardens
     { 0.202, 0.441, 2, 2 },
     { 0.1696, 0.3808, 2, 2 },
@@ -2612,7 +2615,7 @@ local lorebooksData = {
     { 0.236, 0.275, 2, 10 }, -- Wayrest, Jewel of the Bay
     { 0.208, 0.298, 2, 10 },
     { 0.201, 0.261, 2, 10 },
-    { 0.1657, 0.2813, 2, 10, 1 },
+    { 0.1657, 0.2813, 2, 10, ld = { 1, } },
     -- Daedric Princes
     { 0.261, 0.413, 8, 3 }, -- The Dreamstride
     { 0.256, 0.362, 8, 3 },
@@ -2623,14 +2626,14 @@ local lorebooksData = {
     { 0.149, 0.348, 8, 4 },
     { 0.2004, 0.3351, 8, 4 },
     -- Divines and Deities
-    { 0.5067, 0.5829, 10, 4, 1 }, -- Monomyth: Lorkhan and Satakal
-    { 0.5822, 0.5608, 10, 4, 1 },
-    { 0.5227, 0.5438, 10, 4, 1 },
-    { 0.5908, 0.5141, 10, 4, 1 },
+    { 0.5067, 0.5829, 10, 4, ld = { 1, } }, -- Monomyth: Lorkhan and Satakal
+    { 0.5822, 0.5608, 10, 4, ld = { 1, } },
+    { 0.5227, 0.5438, 10, 4, ld = { 1, } },
+    { 0.5908, 0.5141, 10, 4, ld = { 1, } },
     { 0.625, 0.5758, 10, 5 }, -- Monomyth: "Shezarr's Song"
-    { 0.554, 0.6134, 10, 5, 1 },
-    { 0.6189, 0.6111, 10, 5, 1 },
-    { 0.5986, 0.6701, 10, 5, 1 },
+    { 0.554, 0.6134, 10, 5, ld = { 1, } },
+    { 0.6189, 0.6111, 10, 5, ld = { 1, } },
+    { 0.5986, 0.6701, 10, 5, ld = { 1, } },
     { 0.476, 0.633, 10, 6 }, -- Monomyth: The Myth of Aurbis
     { 0.4802, 0.6027, 10, 6 },
     { 0.446, 0.607, 10, 6 },
@@ -2703,8 +2706,8 @@ local lorebooksData = {
     { 0.700, 0.493, 16, 5 },
     { 0.655, 0.510, 16, 5 },
     -- Dungeon Lore
-    { 0.562, 0.577, 11, 9, 9999, 46 }, -- Wayrest Sewers: A Short History
-    { 0.549, 0.536, 9, 9, 9999, 33 }, -- The All-Beneficent King Fahara'jad
+    { 0.562, 0.577, 11, 9, 46, ld = { 9999, } }, -- Wayrest Sewers: A Short History
+    { 0.549, 0.536, 9, 9, 33, ld = { 9999, } }, -- The All-Beneficent King Fahara'jad
   },
   [34] = { -- alcairecastle_base
     -- Stormhaven Lore
@@ -2736,7 +2739,8 @@ local lorebooksData = {
     -- Myths of the Mundus
     { 0.361, 0.080, 16, 2 }, -- Before the Ages of Man: Merethic Era
     -- Dungeon Lore
-    { 0.486861, 0.115856, 9, 9, 6, 33, ld = 1 }, -- The All-Beneficent King Fahara'jad
+    --[[TODO Check this ]]--
+    { 0.486861, 0.115856, 9, 9, ld = { 6, 7, } }, -- The All-Beneficent King Fahara'jad
   },
   [46] = { -- wayrestsewers_base
     -- Dungeon Lore
@@ -2751,7 +2755,7 @@ local lorebooksData = {
     { 0.510, 0.333, 24, 1 },
     { 0.589, 0.344, 24, 2 }, -- Songs of the Return, Volume 27
     { 0.582, 0.268, 24, 2 },
-    { 0.617, 0.285, 24, 2, 2 },
+    { 0.617, 0.285, 24, 2, ld = { 2, } },
     { 0.646, 0.275, 24, 2 },
     { 0.619, 0.522, 24, 3 }, -- The Wandering Skald
     { 0.543, 0.532, 24, 3 },
@@ -2777,22 +2781,22 @@ local lorebooksData = {
     { 0.4917, 0.4029, 24, 8 },
     { 0.444, 0.353, 24, 8 },
     { 0.470, 0.432, 24, 8 },
-    { 0.685, 0.515, 24, 9, 1 }, -- Rivers of Profit in Riften
-    { 0.721, 0.509, 24, 9, 1 },
-    { 0.6489, 0.4969, 24, 9, 1 },
-    { 0.655, 0.311, 24, 10, 1 }, -- Clans of the Reach: A Guide
-    { 0.670, 0.289, 24, 10, 1 },
+    { 0.685, 0.515, 24, 9, ld = { 1, } }, -- Rivers of Profit in Riften
+    { 0.721, 0.509, 24, 9, ld = { 1, } },
+    { 0.6489, 0.4969, 24, 9, ld = { 1, } },
+    { 0.655, 0.311, 24, 10, ld = { 1, } }, -- Clans of the Reach: A Guide
+    { 0.670, 0.289, 24, 10, ld = { 1, } },
     { 0.6855, 0.3037, 24, 10 },
     { 0.6684, 0.335, 24, 10 },
     -- Dwemer
     { 0.734, 0.401, 12, 13 }, -- Dwemer Inquiries Volume I
-    { 0.718, 0.404, 12, 13, 2 },
+    { 0.718, 0.404, 12, 13, ld = { 2, } },
     { 0.773, 0.397, 12, 13 },
     { 0.7484, 0.3757, 12, 13 },
     { 0.393, 0.562, 12, 14 }, -- Dwemer Inquiries Volume II
     { 0.398, 0.577, 12, 14 },
     { 0.419, 0.567, 12, 14 },
-    { 0.385, 0.574, 12, 14, 2 },
+    { 0.385, 0.574, 12, 14, ld = { 2, } },
     { 0.716, 0.665, 12, 15 }, -- Dwemer Inquiries Volume III
     { 0.736, 0.635, 12, 15 },
     { 0.654, 0.618, 12, 15 },
@@ -2815,8 +2819,8 @@ local lorebooksData = {
     { 0.645, 0.369, 14, 4 },
     { 0.647, 0.404, 14, 4 },
     { 0.80, 0.62, 14, 5 }, -- Myths of Sheogorath, Volume 1
-    { 0.783, 0.602, 14, 5, 2 },
-    { 0.79, 0.5832, 14, 5, 2 },
+    { 0.783, 0.602, 14, 5, ld = { 2, } },
+    { 0.79, 0.5832, 14, 5, ld = { 2, } },
     { 0.157, 0.448, 14, 6 }, -- Myths of Sheogorath, Volume 2
     { 0.164, 0.475, 14, 6 },
     { 0.180, 0.479, 14, 6 },
@@ -2838,10 +2842,10 @@ local lorebooksData = {
     { 0.3324, 0.4349, 14, 10 },
     { 0.3053, 0.4043, 14, 10 },
     -- Potery and Song
-    { 0.259, 0.413, 18, 7, 1 }, -- Proper-Life: Three Chants
-    { 0.233, 0.392, 18, 7, 1 },
-    { 0.2413, 0.3982, 18, 7, 1 },
-    { 0.2566, 0.3728, 18, 7, 1 },
+    { 0.259, 0.413, 18, 7, ld = { 1, } }, -- Proper-Life: Three Chants
+    { 0.233, 0.392, 18, 7, ld = { 1, } },
+    { 0.2413, 0.3982, 18, 7, ld = { 1, } },
+    { 0.2566, 0.3728, 18, 7, ld = { 1, } },
     { 0.504, 0.443, 18, 8 }, -- Song of the Askelde Men
     { 0.498, 0.471, 18, 8 },
     { 0.519, 0.470, 18, 8 },
@@ -2851,10 +2855,10 @@ local lorebooksData = {
     { 0.5214, 0.3368, 18, 9 },
     { 0.862, 0.630, 18, 10 }, -- Words of the Wind
     { 0.806, 0.680, 18, 10 },
-    { 0.806, 0.684, 18, 10, 2 },
-    { 0.8058, 0.7746, 18, 10, 2 },
+    { 0.806, 0.684, 18, 10, ld = { 2, } },
+    { 0.8058, 0.7746, 18, 10, ld = { 2, } },
     -- Dungeon Lore
-    { 0.891, 0.646, 11, 17, 9999, 403 }, -- Josef the Intolerant
+    { 0.891, 0.646, 11, 17, 403, ld = { 9999, } }, -- Josef the Intolerant
   },
   [198] = { -- riften_base
     -- The Rift Lore
@@ -2922,7 +2926,7 @@ local lorebooksData = {
     { 0.240, 0.443, 11, 17 }, -- Josef the Intolerant
   },
   [403] = { -- blessedcrucible7_base
-    { 0.240, 0.443, 11, 17, 5, 403 }, -- Josef the Intolerant
+    { 0.240, 0.443, 11, 17, 403, ld = { 5, } }, -- Josef the Intolerant
   },
 
   -- wrothgar
@@ -2963,10 +2967,10 @@ local lorebooksData = {
   -- darkbrotherhood
   [1006] = { -- goldcoast_base
     { 0.8587, 0.5059, 19, 6 }, -- Eulogy for Emperor Varen
-    { 0.7735, 0.4055, 9, 8, 1 }, -- Trials of St. Alessia
+    { 0.7735, 0.4055, 9, 8, ld = { 1, } }, -- Trials of St. Alessia
     { 0.8283, 0.6145, 18, 7 }, -- Proper-Life: Three Chants
     { 0.8692, 0.5962, 13, 4 }, -- The Cleansing of the Fane
-    { 0.8222, 0.3747, 13, 2, 1 }, -- The Adabal-a
+    { 0.8222, 0.3747, 13, 2, ld = { 1, } }, -- The Adabal-a
     { 0.6805, 0.625, 18, 5 }, -- Flesh to Cut from Bone
     { 0.5397, 0.3190, 16, 9 }, -- Sithis
   },
@@ -3019,7 +3023,7 @@ local lorebooksData = {
   -- clockwork
   [1313] = { -- clockwork_base
     { 0.7863, 0.5314, 8, 4 }, -- The House of Troubles
-    { 0.4110, 0.4609, 14, 9, 4 }, -- Crow and Raven: Three Short Fables
+    { 0.4110, 0.4609, 14, 9, ld = { 4, } }, -- Crow and Raven: Three Short Fables
     { 0.4423, 0.5048, 15, 5 }, -- The Old Ways
     { 0.8767, 0.6055, 17, 4 }, -- The Doors of Oblivion, Part 2
     { 0.6890, 0.6311, 20, 8 }, -- Varieties of Faith: The Dark Elves
@@ -3028,7 +3032,7 @@ local lorebooksData = {
   },
   [1335] = { -- ccunderground_base
     -- Literature
-    { 0.4920, 0.9400, 14, 9, 4 }, -- Crow and Raven: Three Short Fables
+    { 0.4920, 0.9400, 14, 9, ld = { 4, } }, -- Crow and Raven: Three Short Fables
   },
   [1362] = { -- ccunderground02_base
     -- Literature
@@ -3036,7 +3040,7 @@ local lorebooksData = {
   },
   [1348] = { -- brassfortress_base
     -- Literature
-    { 0.4576, 0.5555, 14, 9, 4 }, -- Crow and Raven: Three Short Fables
+    { 0.4576, 0.5555, 14, 9, ld = { 4, } }, -- Crow and Raven: Three Short Fables
   },
 
   -- summerset
@@ -3070,7 +3074,7 @@ local lorebooksData = {
     { 0.5282, 0.2976, 25, 10 },
   },
   [1431] = { -- shimmerene_base
-    { 0.3013, 0.4342, 25, 6, 1 }, -- Fang of the Sea Vipers
+    { 0.3013, 0.4342, 25, 6, ld = { 1, } }, -- Fang of the Sea Vipers
   },
 
   -- murkmire
@@ -3093,13 +3097,13 @@ local lorebooksData = {
     { 0.1382, 0.7498, 1, 2 }, -- A Warning to the Aldmeri Dominion
   },
   [1576] = { -- rimmen_base
-    { 0.4391, 0.5035, 28, 8, 1 }, -- Master Zoaraym's Tale, Part 1
+    { 0.4391, 0.5035, 28, 8, ld = { 1, } }, -- Master Zoaraym's Tale, Part 1
   },
   [1663] = { -- stitches_base
-    { 0.5774, 0.5063, 28, 9, 1 }, -- Master Zoaraym's Tale, Part 2",
+    { 0.5774, 0.5063, 28, 9, ld = { 1, } }, -- Master Zoaraym's Tale, Part 2",
   },
   [1591] = { -- riverholdcity_base
-    { 0.5424, 0.6056, 26, 1, 1 }, -- Varieties of Faith: The Khajiit
+    { 0.5424, 0.6056, 26, 1, ld = { 1, } }, -- Varieties of Faith: The Khajiit
   },
 
   -- southernelsweyr
@@ -3116,42 +3120,42 @@ local lorebooksData = {
     { 0.9184, 0.7123, 28, 9 }, -- Master Zoaraym's Tale, Part 2
   },
   [1675] = { -- senchal_base
-    { 0.5307, 0.4735, 21, 8, 1 }, -- A Nereid Stole My Husband
+    { 0.5307, 0.4735, 21, 8, ld = { 1, } }, -- A Nereid Stole My Husband
   },
   [1690] = { -- senchalpalace01_base
-    { 0.1460, 0.4266, 21, 8, 1 }, -- A Nereid Stole My Husband
+    { 0.1460, 0.4266, 21, 8, ld = { 1, } }, -- A Nereid Stole My Husband
   },
   [1684] = { -- els_dragonguard_island01_base
-    { 0.6481, 0.2633, 28, 9, 1 }, -- Master Zoaraym's Tale, Part 2
+    { 0.6481, 0.2633, 28, 9, ld = { 1, } }, -- Master Zoaraym's Tale, Part 2
   },
   [1682] = { -- els_dg_sanctuary_base
-    { 0.2834, 0.4420, 28, 9, 1 }, -- Master Zoaraym's Tale, Part 2
+    { 0.2834, 0.4420, 28, 9, ld = { 1, } }, -- Master Zoaraym's Tale, Part 2
   },
 
   -- skyrim
   [1719] = { -- westernskryim_base
     { 0.148019, 0.507949, 22, 4 }, -- Orcs of Skyrim
-    { 0.705610, 0.615015, 22, 5, 4 }, -- The Crown of Freydis
+    { 0.705610, 0.615015, 22, 5, ld = { 4, } }, -- The Crown of Freydis
     { 0.603897, 0.425017, 22, 1, }, -- The Brothers' War
     { 0.264192, 0.667194, 20, 5 }, -- Nords of Skyrim
-    { 0.745340, 0.323121, 22, 7, 2 }, -- All About Giants
+    { 0.745340, 0.323121, 22, 7, ld = { 2, } }, -- All About Giants
   },
   [1773] = { -- solitudecity_base
     { 0.774210, 0.771555, 22, 1 }, -- The Brothers' War
   },
   [1747] = { -- blackreach_base
     { 0.342268, 0.805844, 24, 6, }, -- The Road to Sovngarde
-    { 0.946860, 0.468109, 20, 9, 4 }, -- Varieties of Faith: The Nords
+    { 0.946860, 0.468109, 20, 9, ld = { 4, } }, -- Varieties of Faith: The Nords
     { 0.101889, 0.515470, 24, 3, }, -- The Wandering Skald
   },
   [1754] = { -- morthalburialcave_base
-    { 0.373737, 0.712121, 22, 5, 4 }, -- The Crown of Freydis
+    { 0.373737, 0.712121, 22, 5, ld = { 4, } }, -- The Crown of Freydis
   },
   [1750] = { -- frozencoast_base
-    { 0.230608, 0.741918, 22, 7, 2 }, -- All About Giants
+    { 0.230608, 0.741918, 22, 7, ld = { 2, } }, -- All About Giants
   },
   [1809] = { -- lightlesshollow_mines01_base
-    { 0.699904, 0.810099, 20, 9, 4 }, -- Varieties of Faith: The Nords
+    { 0.699904, 0.810099, 20, 9, ld = { 4, } }, -- Varieties of Faith: The Nords
   },
 
   -- The Reach
@@ -3199,15 +3203,15 @@ local lorebooksData = {
     { 0.627011, 0.737126, 20, 7 }, -- Varieties of Faith: The Argonians, blackwood_base
     { 0.533433, 0.187075, 19, 1 }, -- Ayleid Inscriptions Translated, blackwood_base
     { 0.701570, 0.245042, 26, 1 }, -- Varieties of Faith: The Khajiit, blackwood_base
-    { 0.3741942644, 0.1428848952, 29, 4, nil, 1991 }, -- I was Summoned by a Mortal
-    { 0.3741942644, 0.1428848952, 29, 3, nil, 1991 }, -- Chaotic Creatia: The Azure Plasm
+    { 0.3741942644, 0.1428848952, 29, 4, 1991 }, -- I was Summoned by a Mortal
+    { 0.3741942644, 0.1428848952, 29, 3, 1991 }, -- Chaotic Creatia: The Azure Plasm
     -- in Chapel
-    { 0.213265, 0.545964, 10, 8, 4 }, -- Nine Commands of the Eight Divines
+    { 0.213265, 0.545964, 10, 8, ld = { 4, } }, -- Nine Commands of the Eight Divines
     -- non zone guide
     { 0.679473, 0.252154, 21, 6 }, -- Pirates of the Abecean, blackwood_base
   },
   [1940] = { -- u30_leyawiincity_base
-    { 0.253902, 0.455195, 10, 8, 4 }, -- Nine Commands of the Eight Divines
+    { 0.253902, 0.455195, 10, 8, ld = { 4, } }, -- Nine Commands of the Eight Divines
   },
   [1991] = { -- blackwood/u30_shattered_vault_1_base_0
     { 0.450474, 0.607235, 29, 4 }, -- I was Summoned by a Mortal

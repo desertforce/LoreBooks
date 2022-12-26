@@ -1,3 +1,5 @@
+local internal = _G["LoreBooks_Internal"]
+
 -----
 --- old unused
 -----
@@ -267,21 +269,21 @@ local function LookForPinFive()
   local built_table = {}
   for mapId, pinData in pairs(allShalidorData) do
     for index, pinInfo in pairs(pinData) do
-      if pinInfo[5] and pinInfo[5] > 5 then
-        if pinInfo[6] then pinInfo[6] = nil end
-        local zoneId = pinInfo[5]
-        local map_id = GetMapIdByZoneId(pinInfo[5])
-        local zoneName = GetZoneNameById(pinInfo[5])
-        if map_id == 0 then
-          if zoneName then
-            map_id =  LMD:ReturnSingleIndex(LMD.mapNamesLookup[zoneName]) or zoneName
-          end
-        end
-        pinInfo[6] = map_id
-        pinInfo[5] = 5
-        local stringInfo = string.format("{ %.3f, %.3f, %d, %d, %d, %s },", pinInfo[1], pinInfo[2], pinInfo[3], pinInfo[4], pinInfo[5], pinInfo[6])
+      local pinFive = nil
+      local pinSix = nil
+      local count = #pinInfo
+       -- if pinInfo and count >= 5 then pinFive = pinInfo[internal.SHALIDOR_MOREINFO] end no longer used, use ld
+       if pinInfo and count >= 6 then pinSix = pinInfo[internal.SHALIDOR_ZONEID] end
+       if pinFive == -1 then pinFive = nil end
+      local locationDetails = pinInfo.ld
+      if pinFive and not locationDetails then locationDetails = pinFive end
+      if pinFive or pinSix or locationDetails then
+        local stringInfo = string.format("{ %.3f, %.3f, %d, %d", pinInfo[1], pinInfo[2], pinInfo[3], pinInfo[4])
+        if pinSix then stringInfo = stringInfo .. string.format(", %d", pinSix) end
+        if locationDetails then stringInfo = stringInfo .. string.format(", ld = %s", locationDetails) end
+        stringInfo = stringInfo .. " },"
         table.insert(built_table, stringInfo)
-      end
+      end -- end
     end
   end
   LBooks_SavedVariables.newLorebooksData = built_table

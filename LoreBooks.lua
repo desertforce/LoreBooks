@@ -159,9 +159,13 @@ pinTooltipCreator.creator = function(pin)
   if icon == internal.MISSING_TEXTURE then icon = internal.PLACEHOLDER_TEXTURE end
   -- /script d(zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetZoneNameByIndex(GetUnitZoneIndex("player"))))
   local fakePin = false
-  if pinTag[internal.SHALIDOR_MOREINFO] and pinTag[internal.SHALIDOR_MOREINFO] == internal.SHALIDOR_MOREINFO_BREADCRUMB then fakePin = true end
-  if pinTag[internal.SHALIDOR_MOREINFO] and not fakePin then
-    table.insert(moreinfo, "[" .. GetString("LBOOKS_MOREINFO", pinTag[internal.SHALIDOR_MOREINFO]) .. "]")
+  if pinTag.ld then
+    for _, details in pairs(pinTag.ld) do
+      if details == internal.SHALIDOR_MOREINFO_BREADCRUMB then fakePin = true end
+      if details and not fakePin then
+        table.insert(moreinfo, "[" .. zo_strformat(LoreBooks.locationDetails[details]) .. "]")
+      end
+    end
   end
   if pinTag[internal.SHALIDOR_ZONEID] then
     table.insert(moreinfo, "[" .. zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetMapNameById(pinTag[internal.SHALIDOR_ZONEID])) .. "]")
@@ -178,20 +182,12 @@ pinTooltipCreator.creator = function(pin)
     if #moreinfo > 0 then
       INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, table.concat(moreinfo, " / "), INFORMATION_TOOLTIP.tooltip:GetStyle("worldMapTooltip"))
     end
-    if pinTag.ld then
-      local pinNote = "[" .. zo_strformat(LoreBooks.locationDetails[pinTag.ld]) .. "]"
-      INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, pinNote, INFORMATION_TOOLTIP.tooltip:GetStyle("worldMapTooltip"))
-    end
   else
     INFORMATION_TOOLTIP:AddLine(zo_strformat(collection), "ZoFontGameOutline", ZO_SELECTED_TEXT:UnpackRGB())
     ZO_Tooltip_AddDivider(INFORMATION_TOOLTIP)
     INFORMATION_TOOLTIP:AddLine(zo_iconTextFormat(icon, 32, 32, title), "", bookColor:UnpackRGB())
     if #moreinfo > 0 then
       INFORMATION_TOOLTIP:AddLine(table.concat(moreinfo, " / "), "", ZO_TOOLTIP_DEFAULT_COLOR:UnpackRGB())
-    end
-    if pinTag.ld then
-      local pinNote = "[" .. zo_strformat(LoreBooks.locationDetails[pinTag.ld]) .. "]"
-      INFORMATION_TOOLTIP:AddLine(pinNote, "", ZO_HIGHLIGHT_TEXT:UnpackRGB())
     end
   end
 
