@@ -409,6 +409,7 @@ local function UpdateShalidorLorebooksData(mapId, zoneMapId)
     lastZoneShalidor = LMD.mapTexture
     lastMapIpShalidor = LMD.mapId
     lorebooks = LoreBooks_GetLocalData(mapId) -- Shalidor
+    COMPASS_PINS:RefreshPins(internal.PINS_COMPASS)
     return
   end
 end
@@ -419,6 +420,7 @@ local function UpdateBookshelfLorebooksData(mapId, zoneMapId)
     lastZoneBookshelf = LMD.mapTexture
     lastMapIpBookshelf = LMD.mapId
     bookshelves = LoreBooks_GetBookshelfDataFromMapId(mapId) -- Bookshelf
+    COMPASS_PINS:RefreshPins(internal.PINS_COMPASS_BOOKSHELF)
     return
   end
 end
@@ -429,6 +431,7 @@ local function UpdateEideticLorebooksData(mapId, zoneMapId)
     lastZoneEidetic = LMD.mapTexture
     lastMapIpEidetic = LMD.mapId
     eideticBooks = LoreBooks_GetEideticData(mapId, zoneMapId) -- All Eidetic Books in Zone
+    COMPASS_PINS:RefreshPins(internal.PINS_COMPASS_EIDETIC)
     return
   end
 end
@@ -480,14 +483,55 @@ local function EideticMemoryCompassCallback()
   if eideticBooks then
     for _, pinData in ipairs(eideticBooks) do
       local _, _, known = GetLoreBookInfo(internal.LORE_LIBRARY_EIDETIC, pinData.c, pinData.b)
-      if mapId == pinData.pm and not known and db.filters[internal.PINS_COMPASS_EIDETIC] then
-        local xLoc, yLoc
-        if pinData.px and pinData.py then
-          xLoc, yLoc = GPS:GlobalToLocal(pinData.px, pinData.py)
-        elseif pinData.pnx and pinData.pny then
-          xLoc = pinData.pnx
-          yLoc = pinData.pny
-        end
+      local libgpsCoordinates = pinData.px and pinData.py
+      local normalizedCoordinates = pinData.pnx and pinData.pny
+      local usePrimaryLibgpsCoordinates = LMD.mapId == pinData.pm and libgpsCoordinates
+      local usePrimaryNormalizedCoordinates = LMD.mapId == pinData.pm and normalizedCoordinates
+
+      local xLoc, yLoc
+      if not usePrimaryLibgpsCoordinates and not usePrimaryNormalizedCoordinates then
+        --internal:dm("Warn", string.format("Use Neither: for %s", pinData.k))
+        xLoc = nil
+        yLoc = nil
+      elseif usePrimaryLibgpsCoordinates and not usePrimaryNormalizedCoordinates then
+        xLoc, yLoc = GPS:GlobalToLocal(pinData.px, pinData.py)
+      elseif not usePrimaryLibgpsCoordinates and usePrimaryNormalizedCoordinates then
+        xLoc = pinData.pnx
+        yLoc = pinData.pny
+      else
+        --internal:dm("Warn", string.format("Else: for %s", pinData.k))
+        xLoc = nil
+        yLoc = nil
+      end
+
+      local hasQuestInfo = pinData.q
+      local hasRequiredQuestInProgress = pinData.qp
+      local hasRequiredQuestCompleted = pinData.qc
+
+      local activeRequiredQuestNotInProgress = false
+      local requiredQuestIncomplete = false
+
+      if hasQuestInfo then
+        if not HasCompletedQuest(pinData.q) then activeRequiredQuestNotInProgress = hasRequiredQuestInProgress and not HasQuest(pinData.q) end
+      end
+      if hasQuestInfo then
+        if not HasCompletedQuest(pinData.q) then requiredQuestIncomplete = hasRequiredQuestCompleted and not HasCompletedQuest(pinData.q) end
+      end
+
+      --[[Lazy hack, set the location information to nil]]--
+      if hasQuestInfo and (activeRequiredQuestNotInProgress or requiredQuestIncomplete) then
+        --internal:dm("Debug", "Does not meet quest requirements")
+        xLoc = nil
+        yLoc = nil
+      end
+
+      local hasLocation = xLoc ~= nil and yLoc ~= nil
+
+      if hasLocation and not known and db.filters[internal.PINS_COMPASS_EIDETIC] then
+        --internal:dm("Debug", string.format("EideticMemoryCompassCallback: for %s", pinData.k))
+        --internal:dm("Debug", string.format("Location: %s, %s", xLoc, yLoc))
+        --internal:dm("Debug", usePrimaryLibgpsCoordinates)
+        --internal:dm("Debug", usePrimaryNormalizedCoordinates)
         COMPASS_PINS.pinManager:CreatePin(internal.PINS_COMPASS_EIDETIC, pinData, xLoc, yLoc)
       end -- end of mapId,  not known, filters PINS_COMPASS_EIDETIC
     end -- end of for loop
@@ -644,14 +688,14 @@ local function MapCallbackCreateEideticPins(pinType)
       local requiredQuestIncomplete = false
 
       if hasQuestInfo then
-        if not HasCompletedQuest(pinData.q) then activeRequiredQuestInProgress = hasRequiredQuestInProgress and not HasQuest(pinData.q) end
+        if not HasCompletedQuest(pinData.q) then activeRequiredQuestNotInProgress = hasRequiredQuestInProgress and not HasQuest(pinData.q) end
       end
       if hasQuestInfo then
-        if not HasCompletedQuest(pinData.q) then requiredQuestCompleted = hasRequiredQuestCompleted and not HasCompletedQuest(pinData.q) end
+        if not HasCompletedQuest(pinData.q) then requiredQuestIncomplete = hasRequiredQuestCompleted and not HasCompletedQuest(pinData.q) end
       end
 
       --[[Lazy hack, set the location information to nil]]--
-      if hasQuestInfo and (activeRequiredQuestInProgress or requiredQuestIncomplete) then
+      if hasQuestInfo and (activeRequiredQuestNotInProgress or requiredQuestIncomplete) then
         pinData.xLoc = nil
         pinData.yLoc = nil
       end
