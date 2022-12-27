@@ -5483,9 +5483,7 @@ local bookData = {
     ["n"] = "Hadmal's Journal, Page 3",
     ["q"] = 4212,
     ["e"] = {
-      [1] = {
-        ["px"] = 0.6581980253, ["py"] = 0.3212456001, ["pm"] = 61,
-      },
+      [1] = { ["px"] = 0.6582820249, ["py"] = 0.3211611999, ["pm"] = 61, },
     },
   },
   [494] = {
@@ -5494,8 +5492,8 @@ local bookData = {
     ["n"] = "Hadmal's Journal, Page 7",
     ["q"] = 4212,
     ["e"] = {
-      [1] = { ["px"] = 0.6306732274, ["py"] = 0.2662227998, ["pm"] = 160, ["zm"] = 61, },
-      [2] = { ["px"] = 0.6603624272, ["py"] = 0.3115571943, ["pm"] = 61, }, -- post-quest
+      [1] = { ["px"] = 0.6306912276, ["py"] = 0.2661868000, ["pm"] = 160, ["zm"] = 61, ["qp"] = true, },
+      [2] = { ["px"] = 0.6603664231, ["py"] = 0.3116267935, ["pm"] = 61, ["qc"] = true, },
     },
   },
   [495] = {
@@ -5504,8 +5502,8 @@ local bookData = {
     ["n"] = "Hadmal's Journal, Page 12",
     ["q"] = 4212,
     ["e"] = {
-      [1] = { ["px"] = 0.6208116230, ["py"] = 0.3042092007, ["pm"] = 61, },
-      [2] = { ["px"] = 0.6603624272, ["py"] = 0.3115571943, ["pm"] = 61, }, -- post-quest
+      [1] = { ["px"] = 0.6207792267, ["py"] = 0.3042187946, ["pm"] = 61, ["qp"] = true, },
+      [2] = { ["px"] = 0.6604000211, ["py"] = 0.3115871969, ["pm"] = 61, ["qc"] = true, },
     },
   },
   [496] = {
@@ -5527,9 +5525,7 @@ local bookData = {
     ["n"] = "Letter to Sonya",
     ["q"] = 4212,
     ["e"] = {
-      [1] = {
-        ["px"] = 0.6581824232, ["py"] = 0.3211151947, ["pm"] = 61,
-      },
+      [1] = { ["px"] = 0.6582468248, ["py"] = 0.3210395969, ["pm"] = 61, ["qc"] = true, },
     },
   },
   [498] = {
@@ -5538,20 +5534,17 @@ local bookData = {
     ["n"] = "Farewell Missive",
     ["q"] = 4212,
     ["e"] = {
-      [1] = {
-        ["px"] = 0.6601528192, ["py"] = 0.3116167990, ["pm"] = 61,
-      },
+      [1] = { ["px"] = 0.6601452279, ["py"] = 0.3115835921, ["pm"] = 61, ["qc"] = true, },
     },
   },
   [499] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = {
-        ["px"] = 0.6603600240, ["py"] = 0.3115395991, ["pm"] = 61,
-      },
-    },
-    ["n"] = "Hadmal Lastblood's Journal",
     ["cn"] = "Mysteries and Clues",
+    ["n"] = "Hadmal Lastblood's Journal",
+    ["q"] = 4212,
+    ["e"] = {
+      [1] = { ["px"] = 0.6603544259, ["py"] = 0.3114455954, ["pm"] = 61, ["qc"] = true, },
+    },
   },
   [500] = {
     ["c"] = true,
@@ -47012,12 +47005,7 @@ local bookData = {
   [5039] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["px"] = 0.4526700000,
-        ["py"] = 0.5498100000,
-        ["d"] = true,
-        ["pm"] = 1525,
-      },
+      [1] = { ["px"] = 0.4526695996, ["py"] = 0.5498031924, ["pm"] = 1524, ["zx"] = 0.4517843832, ["zy"] = 0.5507372078, ["zm"] = 256, ["d"] = true, },
     },
     ["n"] = "The Hedge Maze",
     ["cn"] = "Library of Incunabula",
@@ -47025,12 +47013,7 @@ local bookData = {
   [5040] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["px"] = 0.4527700000,
-        ["py"] = 0.5489200000,
-        ["d"] = true,
-        ["pm"] = 1525,
-      },
+      [1] = { ["px"] = 0.4527659983, ["py"] = 0.5489196042, ["pm"] = 1525, ["zx"] = 0.4517843832, ["zy"] = 0.5507372078, ["zm"] = 256, ["d"] = true, },
     },
     ["n"] = "Letter to Mylenne",
     ["cn"] = "Library of Incunabula",
@@ -47038,12 +47021,7 @@ local bookData = {
   [5041] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["px"] = 0.4530800000,
-        ["py"] = 0.5487100000,
-        ["d"] = true,
-        ["pm"] = 1525,
-      },
+      [1] = { ["px"] = 0.4530807983, ["py"] = 0.5487044042, ["pm"] = 1525, ["zx"] = 0.4517843832, ["zy"] = 0.5507372078, ["zm"] = 256, ["d"] = true, },
     },
     ["n"] = "Log #321: Unexpected Results",
     ["cn"] = "Library of Incunabula",
@@ -47051,12 +47029,7 @@ local bookData = {
   [5042] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["px"] = 0.4529600000,
-        ["py"] = 0.5486800000,
-        ["d"] = true,
-        ["pm"] = 1525,
-      },
+      [1] = { ["px"] = 0.4529647983, ["py"] = 0.5486816042, ["pm"] = 1525, ["zx"] = 0.4517843832, ["zy"] = 0.5507372078, ["zm"] = 256, ["d"] = true, },
     },
     ["n"] = "A Cure for Lycanthropy",
     ["cn"] = "Library of Incunabula",
@@ -47064,12 +47037,7 @@ local bookData = {
   [5043] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["px"] = 0.4532500000,
-        ["py"] = 0.5487300000,
-        ["d"] = true,
-        ["pm"] = 1525,
-      },
+      [1] = { ["px"] = 0.4532395983, ["py"] = 0.5487360042, ["pm"] = 1525, ["zx"] = 0.4517843832, ["zy"] = 0.5507372078, ["zm"] = 256, ["d"] = true, },
     },
     ["n"] = "The Hungry Cat's Curse",
     ["cn"] = "Library of Incunabula",
@@ -59017,7 +58985,7 @@ function LoreBooks_GetEideticData(mapId, z_mapId)
     local _, _, _, totalBooks = GetLoreCollectionInfo(internal.LORE_LIBRARY_EIDETIC, collectionIndex)
     for bookIndex = 1, totalBooks do
       local eideticBookZoneData = LoreBooks_GetNewEideticData(internal.LORE_LIBRARY_EIDETIC, collectionIndex, bookIndex)
-      local _, _, _, bookId = GetLoreBookInfo(internal.LORE_LIBRARY_EIDETIC, collectionIndex, bookIndex)
+      local bookName, _, _, bookId = GetLoreBookInfo(internal.LORE_LIBRARY_EIDETIC, collectionIndex, bookIndex)
       local eideticBooks
       if eideticBookZoneData and eideticBookZoneData.c and eideticBookZoneData.e then
         eideticBooks = eideticBookZoneData.c and NonContiguousCount(eideticBookZoneData.e) > 0
@@ -59029,7 +58997,7 @@ function LoreBooks_GetEideticData(mapId, z_mapId)
           if hasZoneData then
             booksData.c = collectionIndex -- Add collectionIndex
             booksData.b = bookIndex -- Add bookIndex
-            booksData.k = bookId -- Add bookIndex
+            booksData.k = bookId -- Add bookId
             if eideticBookZoneData.q then booksData.q = eideticBookZoneData.q end -- Add quest info
             eideticInZone[#eideticInZone + 1] = booksData
           end

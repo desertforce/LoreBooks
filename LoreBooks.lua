@@ -193,7 +193,7 @@ pinTooltipCreator.creator = function(pin)
 
 end
 
---tooltip creator
+--[[Tooltip creator for the Bookshelf Pins]]--
 local pinTooltipCreatorBookshelf = {}
 pinTooltipCreatorBookshelf.tooltip = 1 --TOOLTIP_MODE.INFORMATION
 pinTooltipCreatorBookshelf.creator = function(pin)
@@ -232,18 +232,16 @@ pinTooltipCreatorEidetic.creator = function(pin)
   local title, icon, known = GetLoreBookInfo(internal.LORE_LIBRARY_EIDETIC, pinTag.c, pinTag.b)
   local collection = GetLoreCollectionInfo(internal.LORE_LIBRARY_EIDETIC, pinTag.c)
   if icon == MISSING_TEXTURE then icon = PLACEHOLDER_TEXTURE end
-  local mapId = pinTag.pm
-  local _, _, _, zoneIndex, _ = GetMapInfoById(mapId)
-  local zoneName = zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetZoneNameByIndex(zoneIndex))
-  local mapName = zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetMapNameById(mapId))
+  local dungeonMapId = pinTag.pm
+  local mapName = zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, GetMapNameById(dungeonMapId))
+
+  local bookColor = ZO_HIGHLIGHT_TEXT
+  if known then
+    bookColor = ZO_SUCCEEDED_TEXT
+  end
 
   if IsInGamepadPreferredMode() then
     -- Gamepad Mode
-
-    local bookColor = ZO_HIGHLIGHT_TEXT
-    if known then
-      bookColor = ZO_SUCCEEDED_TEXT
-    end
 
     INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, zo_strformat(collection), INFORMATION_TOOLTIP.tooltip:GetStyle("mapTitle"))
     INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, bookColor:Colorize(title), { fontSize = 27, fontColorField = GAMEPAD_TOOLTIP_COLOR_GENERAL_COLOR_3 })
@@ -259,14 +257,8 @@ pinTooltipCreatorEidetic.creator = function(pin)
       end
     end
 
-    if pinTag.d and db.showDungeonTag then
-
-      if zoneName == mapName then
-        INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, zo_strformat("[<<1>>]", GetString(SI_QUESTTYPE5)), { fontSize = 27, fontColorField = GAMEPAD_TOOLTIP_COLOR_GENERAL_COLOR_2 })
-      else
-        INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, string.format("[%s]", zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, zoneName)), { fontSize = 27, fontColorField = GAMEPAD_TOOLTIP_COLOR_GENERAL_COLOR_2 })
-      end
-
+    if pinTag.d and db.showDungeonTag and mapName then
+        INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, string.format("[%s]", mapName), { fontSize = 27, fontColorField = GAMEPAD_TOOLTIP_COLOR_GENERAL_COLOR_2 })
     end
 
     if pinTag.ld then
@@ -278,11 +270,6 @@ pinTooltipCreatorEidetic.creator = function(pin)
     -- Keyboard Mode
     INFORMATION_TOOLTIP:AddLine(zo_strformat(collection), "ZoFontGameOutline", ZO_SELECTED_TEXT:UnpackRGB())
     ZO_Tooltip_AddDivider(INFORMATION_TOOLTIP)
-
-    local bookColor = ZO_HIGHLIGHT_TEXT
-    if known then
-      bookColor = ZO_SUCCEEDED_TEXT
-    end
 
     INFORMATION_TOOLTIP:AddLine(zo_iconTextFormat(icon, 32, 32, title), "", bookColor:UnpackRGB())
 
@@ -297,13 +284,8 @@ pinTooltipCreatorEidetic.creator = function(pin)
       end
     end
 
-    if pinTag.d and db.showDungeonTag then
-
-      if zoneName == mapName then
-        INFORMATION_TOOLTIP:AddLine(zo_strformat("[<<1>>]", GetString(SI_QUESTTYPE5)), "", ZO_SELECTED_TEXT:UnpackRGB())
-      else
-        INFORMATION_TOOLTIP:AddLine(string.format("[%s]", zo_strformat(SI_WINDOW_TITLE_WORLD_MAP, zoneName)), "", ZO_SELECTED_TEXT:UnpackRGB())
-      end
+    if pinTag.d and db.showDungeonTag and mapName then
+        INFORMATION_TOOLTIP:AddLine(string.format("[%s]", mapName), "", ZO_SELECTED_TEXT:UnpackRGB())
     end
 
     if pinTag.ld then
@@ -488,50 +470,26 @@ local function EideticMemoryCompassCallback()
       local usePrimaryLibgpsCoordinates = LMD.mapId == pinData.pm and libgpsCoordinates
       local usePrimaryNormalizedCoordinates = LMD.mapId == pinData.pm and normalizedCoordinates
 
-      local xLoc, yLoc
-      if not usePrimaryLibgpsCoordinates and not usePrimaryNormalizedCoordinates then
-        --internal:dm("Warn", string.format("Use Neither: for %s", pinData.k))
-        xLoc = nil
-        yLoc = nil
-      elseif usePrimaryLibgpsCoordinates and not usePrimaryNormalizedCoordinates then
+      local xLoc, yLoc = nil, nil
+      if usePrimaryLibgpsCoordinates and not usePrimaryNormalizedCoordinates then
         xLoc, yLoc = GPS:GlobalToLocal(pinData.px, pinData.py)
       elseif not usePrimaryLibgpsCoordinates and usePrimaryNormalizedCoordinates then
-        xLoc = pinData.pnx
-        yLoc = pinData.pny
-      else
-        --internal:dm("Warn", string.format("Else: for %s", pinData.k))
-        xLoc = nil
-        yLoc = nil
+        xLoc,yLoc = pinData.pnx, pinData.pny
       end
 
       local hasQuestInfo = pinData.q
       local hasRequiredQuestInProgress = pinData.qp
       local hasRequiredQuestCompleted = pinData.qc
-
-      local activeRequiredQuestNotInProgress = false
-      local requiredQuestIncomplete = false
-
-      if hasQuestInfo then
-        if not HasCompletedQuest(pinData.q) then activeRequiredQuestNotInProgress = hasRequiredQuestInProgress and not HasQuest(pinData.q) end
-      end
-      if hasQuestInfo then
-        if not HasCompletedQuest(pinData.q) then requiredQuestIncomplete = hasRequiredQuestCompleted and not HasCompletedQuest(pinData.q) end
-      end
-
-      --[[Lazy hack, set the location information to nil]]--
-      if hasQuestInfo and (activeRequiredQuestNotInProgress or requiredQuestIncomplete) then
-        --internal:dm("Debug", "Does not meet quest requirements")
-        xLoc = nil
-        yLoc = nil
+      local questNotInProgress = hasQuestInfo and hasRequiredQuestInProgress and not HasQuest(pinData.q)
+      local questNotCompleted = hasQuestInfo and hasRequiredQuestCompleted and not HasCompletedQuest(pinData.q)
+      --[[Does not meet requirements for quest pin, set the location information to nil]]--
+      if (questNotInProgress ~= nil and questNotInProgress) or (questNotCompleted ~= nil and questNotCompleted) then
+        xLoc, yLoc = nil, nil
       end
 
       local hasLocation = xLoc ~= nil and yLoc ~= nil
-
-      if hasLocation and not known and db.filters[internal.PINS_COMPASS_EIDETIC] then
-        --internal:dm("Debug", string.format("EideticMemoryCompassCallback: for %s", pinData.k))
-        --internal:dm("Debug", string.format("Location: %s, %s", xLoc, yLoc))
-        --internal:dm("Debug", usePrimaryLibgpsCoordinates)
-        --internal:dm("Debug", usePrimaryNormalizedCoordinates)
+      local displayPin = hasLocation and not known and db.filters[internal.PINS_COMPASS_EIDETIC]
+      if displayPin then
         COMPASS_PINS.pinManager:CreatePin(internal.PINS_COMPASS_EIDETIC, pinData, xLoc, yLoc)
       end -- end of mapId,  not known, filters PINS_COMPASS_EIDETIC
     end -- end of for loop
@@ -643,79 +601,39 @@ local function MapCallbackCreateEideticPins(pinType)
 
       local dualMapIdsDungeonPin = hasPrimaryMapId and hasZoneMapId and (not isDungeon and pinData.d) and (hasZoneMapId and LMD.mapId == pinData.zm)
 
-      if not usePrimaryMapId and not useZoneMapId then
-        --internal:dm("Warn", string.format("Neither True / BookID: %s", pinData.k))
-        pinData.xLoc = nil
-        pinData.yLoc = nil
-      elseif (usePrimaryMapId or dualMapIds or usePrimaryLibgpsCoordinates) and libgpsCoordinates then
-        -- Step 1
-        --internal:dm("Warn", string.format("Step 1 / BookID: %s", pinData.k))
-        --internal:dm("Warn", string.format("%s, %s, %s", tostring(usePrimaryMapId), tostring(dualMapIds), tostring(usePrimaryLibgpsCoordinates)))
+      pinData.xLoc, pinData.yLoc = nil, nil
+      if (usePrimaryMapId or dualMapIds or usePrimaryLibgpsCoordinates) and libgpsCoordinates then
         pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.px, pinData.py)
       elseif (usePrimaryMapId or dualMapIds or usePrimaryNormalizedCoordinates or usePrimaryNormalizedSingleMapId) and normalizedCoordinates then
-        -- Step 2
-        --internal:dm("Warn", string.format("Step 2 / BookID: %s", pinData.k))
-        --internal:dm("Warn", string.format("%s, %s, %s", tostring(usePrimaryMapId), tostring(dualMapIds), tostring(usePrimaryNormalizedCoordinates)))
-        pinData.xLoc = pinData.pnx
-        pinData.yLoc = pinData.pny
+        pinData.xLoc, pinData.yLoc = pinData.pnx, pinData.pny
       elseif (useZoneMapId or useZoneLibgpsCoordinates) and libgpsZoneCoordinates then
-        -- Step 3
-        --internal:dm("Warn", string.format("Step 3 / BookID: %s", pinData.k))
-        --internal:dm("Warn", string.format("%s, %s", tostring(useZoneMapId), tostring(useZoneLibgpsCoordinates)))
         pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.zx, pinData.zy)
       elseif (useZoneMapId or useZoneNormalizedCoordinates) and normalizedZoneCoordinates then
-        -- Step 4
-        --internal:dm("Warn", string.format("Step 4 / BookID: %s", pinData.k))
-        --internal:dm("Warn", string.format("%s, %s", tostring(useZoneMapId), tostring(useZoneNormalizedCoordinates)))
-        pinData.xLoc = pinData.znx
-        pinData.yLoc = pinData.zny
-      else
-        --internal:dm("Warn", string.format("No coordinates set! / BookID: %s", pinData.k))
-        pinData.xLoc = nil
-        pinData.yLoc = nil
+        pinData.xLoc, pinData.yLoc = pinData.znx, pinData.zny
       end
-      --[[
-      (isDungeon and pinData.d): When the mapContentType is MAP_CONTENT_DUNGEON and the pin is marks as such
-      (not isDungeon and not pinData.d): When the mapContentType is not MAP_CONTENT_DUNGEON and pinData has no boolean "d"
-      fakePinInfo: pins with "fp" have a unique mapId different from the pm or zm dual pin layout and should be displayed regardless as
-        marker to breadcrumb the player to the book
-      ]]--
+
       local hasQuestInfo = pinData.q
       local hasRequiredQuestInProgress = pinData.qp
       local hasRequiredQuestCompleted = pinData.qc
-
-      local activeRequiredQuestNotInProgress = false
-      local requiredQuestIncomplete = false
-
-      if hasQuestInfo then
-        if not HasCompletedQuest(pinData.q) then activeRequiredQuestNotInProgress = hasRequiredQuestInProgress and not HasQuest(pinData.q) end
-      end
-      if hasQuestInfo then
-        if not HasCompletedQuest(pinData.q) then requiredQuestIncomplete = hasRequiredQuestCompleted and not HasCompletedQuest(pinData.q) end
-      end
-
-      --[[Lazy hack, set the location information to nil]]--
-      if hasQuestInfo and (activeRequiredQuestNotInProgress or requiredQuestIncomplete) then
-        pinData.xLoc = nil
-        pinData.yLoc = nil
+      local questNotInProgress = hasQuestInfo and hasRequiredQuestInProgress and not HasQuest(pinData.q)
+      local questNotCompleted = hasQuestInfo and hasRequiredQuestCompleted and not HasCompletedQuest(pinData.q)
+      --[[Does not meet requirements for quest pin, set the location information to nil]]--
+      if ((questNotInProgress ~= nil and questNotInProgress) and not known) or (questNotCompleted ~= nil and questNotCompleted) then
+        pinData.xLoc, pinData.yLoc = nil, nil
       end
 
       local hasLocation = pinData.xLoc ~= nil and pinData.yLoc ~= nil
+      local meetsPinCriteria = (isDungeon and pinData.d) or (not isDungeon and not pinData.d) or fakePinInfo or dualMapIdsDungeonPin
+      local displayKnownPin = hasLocation and meetsPinCriteria and pinType == internal.PINS_EIDETIC_COLLECTED and known and LMP:IsEnabled(internal.PINS_EIDETIC)
+      local displayUnnownPin = hasLocation and meetsPinCriteria and pinType == internal.PINS_EIDETIC and not known and shouldDisplay and LMP:IsEnabled(internal.PINS_EIDETIC)
+
       -- Eidetic Memory Collected
-      if pinType == internal.PINS_EIDETIC_COLLECTED and hasLocation then
-        if (isDungeon and pinData.d) or (not isDungeon and not pinData.d) or fakePinInfo or dualMapIdsDungeonPin then
-          if known and LMP:IsEnabled(internal.PINS_EIDETIC_COLLECTED) then
-            LMP:CreatePin(internal.PINS_EIDETIC_COLLECTED, pinData, pinData.xLoc, pinData.yLoc)
-          end
-        end
+      if displayKnownPin then
+        LMP:CreatePin(internal.PINS_EIDETIC_COLLECTED, pinData, pinData.xLoc, pinData.yLoc)
       end
       -- Eidetic Memory Unknown
-      if pinType == internal.PINS_EIDETIC and hasLocation then
-        if (isDungeon and pinData.d) or (not isDungeon and not pinData.d) or fakePinInfo or dualMapIdsDungeonPin then
-          if not known and shouldDisplay and LMP:IsEnabled(internal.PINS_EIDETIC) then
-            LMP:CreatePin(internal.PINS_EIDETIC, pinData, pinData.xLoc, pinData.yLoc)
-          end
-        end
+      if displayUnnownPin then
+        LMP:CreatePin(internal.PINS_EIDETIC, pinData, pinData.xLoc, pinData.yLoc)
       end
 
     end
@@ -1747,10 +1665,6 @@ local function OnMouseEnter(self, categoryIndex, collectionIndex, bookIndex)
 
               if hasZoneTag then
                 InformationTooltip:AddLine(GetString(LBOOKS_PIN_UPDATE), "", ZO_HIGHLIGHT_TEXT:UnpackRGB())
-              end
-
-              if inDungeon and db.showDungeonTag then
-                InformationTooltip:AddLine(zo_strformat("[<<1>>]", GetString(SI_QUESTTYPE5)), "", ZO_SELECTED_TEXT:UnpackRGB())
               end
 
               if isFromBag then
