@@ -57723,11 +57723,13 @@ local bookData = {
     ["c"] = true,
   },
   [7115] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Aurelia's Letter",
+    ["q"] = 6791,
     ["e"] = {
+      [1] = { ["px"] = 0.0694004026, ["py"] = 0.6027752052, ["pm"] = 2163, ["zm"] = 2114, ["qp"] = true, },
     },
-    ["c"] = false,
   },
   [7116] = {
     ["c"] = true,
