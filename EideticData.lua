@@ -57867,12 +57867,16 @@ local bookData = {
     ["c"] = true,
   },
   [7130] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "History of House Dufort",
     ["e"] = {
       [1] = { ["px"] = 0.0715032013, ["py"] = 0.5897176011, ["pm"] = 2114, },
     },
-    ["c"] = true,
+    ["r"] = true,
+    ["m"] = {
+      [2114] = true,
+    },
   },
   [7200] = {
     ["c"] = true,
