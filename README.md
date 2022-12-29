@@ -46,7 +46,7 @@ NOTE: (SI CONST): Means it is an ingame localization and doesn't have to be tran
   - `["pnx"], ["pny"]`: Normalized Coordinates for the Primary Location
   - `["znx"], ["zny"]`: Normalized Coordinates for the Zone's Map ID
   - `["d"]= true`: Dungeon Pin. Usually anything in a zone that you enter Delve, Mine, Cave, etc.
-  - `["fp"] = true`: Indicates this is a fake pin. It will be used as a Map Pin but but not for Loocations from he Lore Library menu.
+  - `["fp"] = true`: Indicates this is a fake pin. It will be used as a Map Pin but but not for Loocations from the Lore Library menu.
   - `["ld"]`: Location Details for the Lorebook
   - `["qp"] = true`: Player myst have the Quest in their Quest Journal to view the location of the book
   - `["qc"] = true`: Player myst have Completed the Quest to view the location of the book
