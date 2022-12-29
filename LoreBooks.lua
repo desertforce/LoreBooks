@@ -258,7 +258,7 @@ pinTooltipCreatorEidetic.creator = function(pin)
     end
 
     if pinTag.d and db.showDungeonTag and mapName then
-        INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, string.format("[%s]", mapName), { fontSize = 27, fontColorField = GAMEPAD_TOOLTIP_COLOR_GENERAL_COLOR_2 })
+      INFORMATION_TOOLTIP:LayoutIconStringLine(INFORMATION_TOOLTIP.tooltip, nil, string.format("[%s]", mapName), { fontSize = 27, fontColorField = GAMEPAD_TOOLTIP_COLOR_GENERAL_COLOR_2 })
     end
 
     if pinTag.ld then
@@ -285,7 +285,7 @@ pinTooltipCreatorEidetic.creator = function(pin)
     end
 
     if pinTag.d and db.showDungeonTag and mapName then
-        INFORMATION_TOOLTIP:AddLine(string.format("[%s]", mapName), "", ZO_SELECTED_TEXT:UnpackRGB())
+      INFORMATION_TOOLTIP:AddLine(string.format("[%s]", mapName), "", ZO_SELECTED_TEXT:UnpackRGB())
     end
 
     if pinTag.ld then
@@ -469,12 +469,13 @@ local function EideticMemoryCompassCallback()
       local normalizedCoordinates = pinData.pnx and pinData.pny
       local usePrimaryLibgpsCoordinates = LMD.mapId == pinData.pm and libgpsCoordinates
       local usePrimaryNormalizedCoordinates = LMD.mapId == pinData.pm and normalizedCoordinates
+      local fakePinInfo = pinData.fp and LMD.mapId ~= pinData.pm
 
       local xLoc, yLoc = nil, nil
       if usePrimaryLibgpsCoordinates and not usePrimaryNormalizedCoordinates then
         xLoc, yLoc = GPS:GlobalToLocal(pinData.px, pinData.py)
       elseif not usePrimaryLibgpsCoordinates and usePrimaryNormalizedCoordinates then
-        xLoc,yLoc = pinData.pnx, pinData.pny
+        xLoc, yLoc = pinData.pnx, pinData.pny
       end
 
       local hasQuestInfo = pinData.q
@@ -488,7 +489,7 @@ local function EideticMemoryCompassCallback()
       end
 
       local hasLocation = xLoc ~= nil and yLoc ~= nil
-      local displayPin = hasLocation and not known and db.filters[internal.PINS_COMPASS_EIDETIC]
+      local displayPin = hasLocation and not fakePinInfo and not known and db.filters[internal.PINS_COMPASS_EIDETIC]
       if displayPin then
         COMPASS_PINS.pinManager:CreatePin(internal.PINS_COMPASS_EIDETIC, pinData, xLoc, yLoc)
       end -- end of mapId,  not known, filters PINS_COMPASS_EIDETIC
@@ -568,17 +569,26 @@ local function MapCallbackCreateEideticPins(pinType)
   UpdateEideticLorebooksData(LMD.mapId, zoneMapId)
   local isDungeon = LMD.isDungeon
   local shouldDisplay = ShouldDisplayLoreBooks()
-  local fakePinInfo
 
   -- Eidetic Memory Books
   if eideticBooks then
     for _, pinData in ipairs(eideticBooks) do
-      fakePinInfo = pinData.fp
+      local fakePinInfo = pinData.fp
       local _, _, known = GetLoreBookInfo(internal.LORE_LIBRARY_EIDETIC, pinData.c, pinData.b)
       local libgpsCoordinates = pinData.px and pinData.py
       local libgpsZoneCoordinates = pinData.zx and pinData.zy
       local normalizedCoordinates = pinData.pnx and pinData.pny
       local normalizedZoneCoordinates = pinData.znx and pinData.zny
+      local hasSourceMapId = pinData.sm
+      local modifiedLibGpsCoordinateX, modifiedLibGpsCoordinateY = nil, nil
+      if hasSourceMapId then
+        local measurement = GPS:GetMapMeasurementByMapId(hasSourceMapId)
+        if measurement and libgpsCoordinates then
+          modifiedLibGpsCoordinateX, modifiedLibGpsCoordinateY = measurement:ToLocal(pinData.px, pinData.py)
+        elseif measurement and libgpsZoneCoordinates then
+          modifiedLibGpsCoordinateX, modifiedLibGpsCoordinateY = measurement:ToLocal(pinData.zx, pinData.zy)
+        end
+      end
       local hasPrimaryMapId = pinData.pm
       local hasZoneMapId = pinData.zm
       local usePrimaryMapId = LMD.mapId == pinData.pm
@@ -603,11 +613,13 @@ local function MapCallbackCreateEideticPins(pinType)
 
       pinData.xLoc, pinData.yLoc = nil, nil
       if (usePrimaryMapId or dualMapIds or usePrimaryLibgpsCoordinates) and libgpsCoordinates then
-        pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.px, pinData.py)
+        if hasSourceMapId then pinData.xLoc, pinData.yLoc = modifiedLibGpsCoordinateX, modifiedLibGpsCoordinateY
+        else pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.px, pinData.py) end
       elseif (usePrimaryMapId or dualMapIds or usePrimaryNormalizedCoordinates or usePrimaryNormalizedSingleMapId) and normalizedCoordinates then
         pinData.xLoc, pinData.yLoc = pinData.pnx, pinData.pny
       elseif (useZoneMapId or useZoneLibgpsCoordinates) and libgpsZoneCoordinates then
-        pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.zx, pinData.zy)
+        if hasSourceMapId then pinData.xLoc, pinData.yLoc = modifiedLibGpsCoordinateX, modifiedLibGpsCoordinateY
+        else pinData.xLoc, pinData.yLoc = GPS:GlobalToLocal(pinData.zx, pinData.zy) end
       elseif (useZoneMapId or useZoneNormalizedCoordinates) and normalizedZoneCoordinates then
         pinData.xLoc, pinData.yLoc = pinData.znx, pinData.zny
       end
@@ -621,7 +633,6 @@ local function MapCallbackCreateEideticPins(pinType)
       if ((questNotInProgress ~= nil and questNotInProgress) and not known) or (questNotCompleted ~= nil and questNotCompleted) then
         pinData.xLoc, pinData.yLoc = nil, nil
       end
-
       local hasLocation = pinData.xLoc ~= nil and pinData.yLoc ~= nil
       local meetsPinCriteria = (isDungeon and pinData.d) or (not isDungeon and not pinData.d) or fakePinInfo or dualMapIdsDungeonPin
       local displayKnownPin = hasLocation and meetsPinCriteria and pinType == internal.PINS_EIDETIC_COLLECTED and known and LMP:IsEnabled(internal.PINS_EIDETIC)
@@ -1613,7 +1624,6 @@ local function OnMouseEnter(self, categoryIndex, collectionIndex, bookIndex)
             local isRandom = data.r -- mouse hover over for tooltip
             local inDungeon = data.d
             local hasZoneTag = data.zt
-            local isFromBag = data.i == INTERACTION_NONE
 
             local mapId = data.pm
             local name, _, _, zoneIndex, _ = GetMapInfoById(mapId)
@@ -1665,12 +1675,6 @@ local function OnMouseEnter(self, categoryIndex, collectionIndex, bookIndex)
 
               if hasZoneTag then
                 InformationTooltip:AddLine(GetString(LBOOKS_PIN_UPDATE), "", ZO_HIGHLIGHT_TEXT:UnpackRGB())
-              end
-
-              if isFromBag then
-                InformationTooltip:AddLine(GetString(LBOOKS_MAYBE_NOT_HERE), "", ZO_SELECTED_TEXT:UnpackRGB())
-              elseif isRandom then
-                InformationTooltip:AddLine(GetString(LBOOKS_RANDOM_POSITION))
               end
 
             end
@@ -1909,6 +1913,7 @@ local function ShowMyPosition()
     local ef = '"e"'
     local df = '"d"' -- inDungeon
     local mdf = '"pm"' -- mapId
+    local smf = '"sm"' -- mapId of the map the measurement was taken from
     local pxf = '"px"' -- LibGPS x
     local pyf = '"py"' -- LibGPS y
     local xf = '"x"' -- used for zone bookshelf
@@ -1918,11 +1923,11 @@ local function ShowMyPosition()
     local mf = '"m"' -- used for zone booklist
     local zf = '"z"' -- used for zone bookshelf
     if isDungeon then
-      outText = string.format("[%d] = { [%s] = { [1] = { [%s] = %.10f, [%s] = %.10f, [%s] = %d, [%s] = %s, }, }, }, { [%s] = %.10f, [%s] = %.10f }, -- %s, %s",
-        shownBookId, ef, pxf, xpos, pyf, ypos, mdf, mapId, df, tostring(isDungeon), pnxf, x, pnyf, y, bookName, zone)
+      outText = string.format("[%d] = { [%s] = { [1] = { [%s] = %.10f, [%s] = %.10f, [%s] = %d, [%s] = %s, }, }, }, { [%s] = %d, [%s] = %.10f, [%s] = %.10f }, -- %s, %s",
+        shownBookId, ef, pxf, xpos, pyf, ypos, mdf, mapId, df, tostring(isDungeon), smf, mapId, pnxf, x, pnyf, y, bookName, zone)
     else
-      outText = string.format("[%d] = { [%s] = { [1] = { [%s] = %.10f, [%s] = %.10f, [%s] = %d, }, }, }, { [%s] = %.10f, [%s] = %.10f }, -- %s, %s",
-        shownBookId, ef, pxf, xpos, pyf, ypos, mdf, mapId, pnxf, x, pnyf, y, bookName, zone)
+      outText = string.format("[%d] = { [%s] = { [1] = { [%s] = %.10f, [%s] = %.10f, [%s] = %d, }, }, }, { [%s] = %d, [%s] = %.10f, [%s] = %.10f }, -- %s, %s",
+        shownBookId, ef, pxf, xpos, pyf, ypos, mdf, mapId, smf, mapId, pnxf, x, pnyf, y, bookName, zone)
     end
     if isBookshelf then
       outText = string.format("[%d] = { [%s] = { [%d] = 1, }, }, [%d] = { { [%s] = %.10f, [%s] = %.10f, [%s] = %d, }, },  -- %s, %s",
@@ -1941,6 +1946,7 @@ local function CreateFakeEideticPin()
 
   local ef = '"e"'
   local mdf = '"pm"' -- mapId
+  local smf = '"sm"' -- mapId of the map the measurement was taken from
   local pxf = '"px"' -- LibGPS x
   local pyf = '"py"' -- LibGPS y
   local fpf = '"fp"' -- used for zone booklist
@@ -1948,8 +1954,8 @@ local function CreateFakeEideticPin()
   local pnyf = '"pny"' -- normal y cord
   local shownBookId = "fake"
   local bookName = "fake Eidetic Memory location"
-  local outText = string.format("[%s] = { [%s] = { [1] = { [%s] = %.10f, [%s] = %.10f, [%s] = %d, [%s] = true, }, }, }, { [%s] = %.10f, [%s] = %.10f }, -- %s, %s",
-    shownBookId, ef, pxf, xpos, pyf, ypos, mdf, mapId, fpf, pnxf, x, pnyf, y, bookName, zone)
+  local outText = string.format("[%s] = { [%s] = { [1] = { [%s] = %.10f, [%s] = %.10f, [%s] = %d, [%s] = true, }, }, }, { [%s] = %d, [%s] = %.10f, [%s] = %.10f }, -- %s, %s",
+    shownBookId, ef, pxf, xpos, pyf, ypos, mdf, mapId, fpf, smf, mapId, pnxf, x, pnyf, y, bookName, zone)
   MyPrint(outText)
 end
 

@@ -330,7 +330,7 @@ local function VerifyAllBooks()
           elseif hasPopulatedEntry and hasDataBookshelf then
             --internal:dm("Debug", string.format("Has Both Populated Entry and Bookshelf Data: %s", bookId))
           else
-            internal:dm("Debug", string.format("Else: %s", bookId))
+            --internal:dm("Debug", string.format("Else: %s", bookId))
           end
           ]]--
         end -- end if categoryIndex
