@@ -33,11 +33,13 @@ local Postmail = {}
 local LoreBooks = _G["LoreBooks"]
 local internal = _G["LoreBooks_Internal"]
 
---LibDebugLogger -------------------------------------------------------------
+-------------------------------------------------
+----- Logger Function                       -----
+-------------------------------------------------
+internal.show_log = false
 if LibDebugLogger then
-  LoreBooks.logger = LibDebugLogger.Create(internal.ADDON_NAME)
+  internal.logger = LibDebugLogger.Create(internal.ADDON_NAME)
 end
-
 local logger
 local viewer
 if DebugLogViewer then viewer = true else viewer = false end
@@ -48,17 +50,18 @@ local function create_log(log_type, log_content)
     CHAT_ROUTER:AddSystemMessage(log_content)
     return
   end
+  if not internal.show_log then return end
   if logger and log_type == "Debug" then
-    LoreBooks.logger:Debug(log_content)
+    internal.logger:Debug(log_content)
   end
   if logger and log_type == "Info" then
-    LoreBooks.logger:Info(log_content)
+    internal.logger:Info(log_content)
   end
   if logger and log_type == "Verbose" then
-    LoreBooks.logger:Verbose(log_content)
+    internal.logger:Verbose(log_content)
   end
   if logger and log_type == "Warn" then
-    LoreBooks.logger:Warn(log_content)
+    internal.logger:Warn(log_content)
   end
 end
 
@@ -410,6 +413,7 @@ end
 local function UpdateEideticLorebooksData(mapId, zoneMapId)
   --internal:dm("Debug", "UpdateEideticLorebooksData")
   if LMD.mapTexture ~= lastZoneEidetic or LMD.mapId ~= lastMapIpEidetic then
+  --internal:dm("Warn", "UpdateEideticLorebooksData")
     lastZoneEidetic = LMD.mapTexture
     lastMapIpEidetic = LMD.mapId
     eideticBooks = LoreBooks_GetEideticData(mapId, zoneMapId) -- All Eidetic Books in Zone
@@ -558,7 +562,7 @@ local function MapCallbackCreateBookshelfPins(pinType)
 end
 
 local function MapCallbackCreateEideticPins(pinType)
-  --internal:dm("Debug", "MapCallbackCreateEideticPins")
+  --internal:dm("Debug", "MapCallbackCreateEideticPins: " .. pinType)
 
   if LMD.isWorld then
     --internal:dm("Debug", "Tamriel or Aurbis reached, stopped")
