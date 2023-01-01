@@ -1070,7 +1070,7 @@ local lorebooksData = {
   },
   [118] = { -- darkshadecaverns_base
     -- Dungeon Lore
-    { 0.309, 0.222, 11, 6, 118, ld = { 5, } }, -- The Art of Kwama Egg Cooking
+    { 0.3099418581, 0.2209302336, 11, 6, 118, ld = { 5, } }, -- The Art of Kwama Egg Cooking
   },
 
   -- eastmarch
@@ -1114,7 +1114,7 @@ local lorebooksData = {
     { 0.837, 0.552, 22, 9 },
     { 0.854, 0.490, 22, 9 },
     { 0.714, 0.678, 22, 10 }, -- Dreamwalkers
-    { 0.738, 0.692, 22, 10 },
+    { 0.7384750247, 0.6922125220, 22, 10, },
     { 0.684, 0.689, 22, 10 },
     { 0.754, 0.659, 22, 10 },
     -- Daedric Princes
@@ -1224,7 +1224,7 @@ local lorebooksData = {
   },
   [348] = { -- direfrostkeep_base
     -- Dungeon Lore
-    { 0.541, 0.653, 11, 10, 348, ld = { 5, } }, -- To Posterity
+    { 0.5414461493, 0.6521725059, 11, 10, 348, ld = { 5, } }, -- To Posterity
   },
 
   -- glenumbra
