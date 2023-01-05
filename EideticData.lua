@@ -3896,18 +3896,7 @@ local bookData = {
     ["n"] = "Damp Page",
     ["q"] = 4071,
     ["e"] = {
-      [1] = {
-        ["px"] = 0.6034700000,
-        ["py"] = 0.2815500000,
-        ["d"] = true,
-        ["pm"] = 153,
-      },
-      [2] = {
-        ["mn"] = 13,
-        ["py"] = 0.2859100000,
-        ["px"] = 0.6068900000,
-        ["pm"] = 61,
-      },
+      [1] = { ["px"] = 0.6034899827, ["py"] = 0.2815620043, ["pm"] = 153, ["zx"] = 0.6034900225, ["zy"] = 0.2815619968, ["zm"] = 61, ["d"] = true, },
     },
   },
   [330] = {
@@ -3916,18 +3905,7 @@ local bookData = {
     ["n"] = "Singed Page",
     ["q"] = 4071,
     ["e"] = {
-      [1] = {
-        ["px"] = 0.6031900000,
-        ["py"] = 0.2813400000,
-        ["d"] = true,
-        ["pm"] = 153,
-      },
-      [2] = {
-        ["mn"] = 13,
-        ["py"] = 0.2859300000,
-        ["px"] = 0.6069000000,
-        ["pm"] = 61,
-      },
+      [1] = { ["px"] = 0.6032115828, ["py"] = 0.2813656042, ["pm"] = 153, ["zx"] = 0.6032116259, ["zy"] = 0.2813655971, ["zm"] = 61, ["d"] = true, },
     },
   },
   [331] = {
@@ -3936,18 +3914,7 @@ local bookData = {
     ["n"] = "Dusty Page",
     ["q"] = 4071,
     ["e"] = {
-      [1] = {
-        ["px"] = 0.6035300000,
-        ["py"] = 0.2819000000,
-        ["d"] = true,
-        ["pm"] = 153,
-      },
-      [2] = {
-        ["mn"] = 13,
-        ["py"] = 0.2860200000,
-        ["px"] = 0.6069700000,
-        ["pm"] = 61,
-      },
+      [1] = { ["px"] = 0.6035163827, ["py"] = 0.2819408043, ["pm"] = 153, ["zx"] = 0.6035164250, ["zy"] = 0.2819407962, ["zm"] = 61, ["d"] = true, },
     },
   },
   [332] = {
@@ -5307,9 +5274,7 @@ local bookData = {
   [467] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["px"] = 0.6092196261, ["py"] = 0.3181779923, ["pm"] = 61,
-      },
+      [1] = { ["px"] = 0.6092000234, ["py"] = 0.3181587948, ["pm"] = 61, },
     },
     ["n"] = "Grida's Note",
     ["cn"] = "Houses, Shops, and Trade",
@@ -6571,10 +6536,7 @@ local bookData = {
   [603] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["px"] = 0.6711459930, ["py"] = 0.3200763955, ["pm"] = 167, ["d"] = true,
-        ["zx"] = 0.6700232241, ["zy"] = 0.3204872002, ["zm"] = 61,
-      },
+      [1] = { ["px"] = 0.6711459930, ["py"] = 0.3200763955, ["pm"] = 167, ["zx"] = 0.6700232241, ["zy"] = 0.3204872002, ["zm"] = 61, ["d"] = true, },
     },
     ["n"] = "The Bastard's Tomb",
     ["cn"] = "Tales of Tamriel",
@@ -6843,16 +6805,11 @@ local bookData = {
   [623] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
+      [1] = { ["px"] = 0.3681355995, ["py"] = 0.6073068138, ["pm"] = 22, },
+      [2] = {
         ["mn"] = 8,
         ["py"] = 0.6280300000,
         ["px"] = 0.3499300000,
-        ["pm"] = 22,
-      },
-      [2] = {
-        ["mn"] = 8,
-        ["py"] = 0.6072300000,
-        ["px"] = 0.3681200000,
         ["pm"] = 22,
       },
     },
@@ -14873,13 +14830,7 @@ local bookData = {
   [1276] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["px"] = 0.2808900000,
-        ["d"] = true,
-        ["py"] = 0.6041700000,
-        ["pm"] = 292,
-        ["zx"] = 0.3567263988, ["zy"] = 0.6009552146, ["zm"] = 22,
-      },
+      [1] = { ["px"] = 0.2808876053, ["py"] = 0.6041712079, ["pm"] = 596, ["zx"] = 0.3567263988, ["zy"] = 0.6009552146, ["zm"] = 22, ["d"] = true, },
     },
     ["n"] = "Maormer Correspondence, Vol. 1",
     ["cn"] = "The World and Its Creatures",
@@ -14887,10 +14838,7 @@ local bookData = {
   [1277] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["px"] = 0.2807652116, ["py"] = 0.6036028036, ["pm"] = 292, ["d"] = true,
-        ["zx"] = 0.3567263988, ["zy"] = 0.6009552146, ["zm"] = 22,
-      },
+      [1] = { ["px"] = 0.2808684115, ["py"] = 0.6036296037, ["pm"] = 292, ["zx"] = 0.3567263988, ["zy"] = 0.6009552146, ["zm"] = 22, ["d"] = true, },
     },
     ["n"] = "Maormer Correspondence, Vol. 2",
     ["cn"] = "The World and Its Creatures",
@@ -40600,7 +40548,7 @@ local bookData = {
         ["i"] = 12,
       },
       [2] = {
-        ["px"] = 0.7045116207, ["py"] = 0.5123916120, ["pm"] = 2042, ["d"] = true,
+        ["px"] = 0.7045100207, ["py"] = 0.5123936120, ["pm"] = 2042, ["d"] = true,
         ["zx"] = 0.7102587997, ["zy"] = 0.5125804198, ["zm"] = 13,
       },
     },
@@ -42467,10 +42415,11 @@ local bookData = {
     },
   },
   [6602] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Books of Blackwood",
     ["n"] = "Ardia's Journal",
     ["e"] = {
+      [1] = { ["px"] = 0.6276836215, ["py"] = 0.6084547994, ["pm"] = 1992, ["px"] = 0.6276836066, ["py"] = 0.6084548115, ["pm"] = 1887, ["d"] = true, },
     },
   },
   [6603] = {
@@ -43891,10 +43840,11 @@ local bookData = {
     },
   },
   [6701] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "The Restoration of Fort Grief",
     ["e"] = {
+      [1] = { ["px"] = 1.1062944337, ["py"] = 0.7310612152, ["pm"] = 2021, },
     },
   },
   [6702] = {
@@ -45670,10 +45620,11 @@ local bookData = {
     ["cn"] = "Summerset Scrolls",
   },
   [6899] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Library of Incunabula",
     ["n"] = "Time to Face Reality",
     ["e"] = {
+      [1] = { ["px"] = 0.1445112067, ["py"] = 0.3108227940, ["pm"] = 2044, ["d"] = true, ["zx"] = 0.1392043987, ["zy"] = 0.3088380025, ["zm"] = 1, },
     },
   },
   [6900] = {
@@ -56517,9 +56468,7 @@ local bookData = {
         ["i"] = 12,
         ["r"] = false,
       },
-      [3] = {
-        ["px"] = 0.6887460187, ["py"] = 1.5361484383, ["pm"] = 1747,
-      },
+      [3] = { ["px"] = 0.6887504218, ["py"] = 1.5362088380, ["pm"] = 1747, },
     },
   },
   [6120] = {
@@ -56870,16 +56819,18 @@ local bookData = {
   [7175] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Amiviridil Arcanium",
+    ["q"] = 6771,
     ["e"] = {
+      [1] = { ["px"] = 0.0689028013, ["py"] = 0.5972980009, ["pm"] = 2114, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7176] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Magister Irin's Notes",
     ["q"] = 6771,
     ["e"] = {
-      [1] = { ["px"] = 0.0691424023, ["py"] = 0.5966392011, ["pm"] = 2114, },
+      [1] = { ["px"] = 0.0691424023, ["py"] = 0.5966392011, ["pm"] = 2114, ["qp"] = true, },
     },
     ["c"] = true,
   },
@@ -56908,9 +56859,11 @@ local bookData = {
   [7179] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "The Purities of Mania",
+    ["q"] = 6771,
     ["e"] = {
+      [1] = { ["px"] = 0.0692752014, ["py"] = 0.5971692036, ["pm"] = 2114, ["qp"] = true, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7180] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -57406,11 +57359,13 @@ local bookData = {
     },
   },
   [7021] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Banneret Jenine's Orders",
+    ["q"] = 6765,
     ["e"] = {
+      [1] = { ["px"] = 0.0563008013, ["py"] = 0.5815503940, ["pm"] = 2167, ["d"] = true, ["zx"] = 0.0593876026, ["zy"] = 0.5800732015, ["zm"] = 2114, },
     },
-    ["c"] = false,
   },
   [7022] = {
     ["c"] = true,
@@ -57425,11 +57380,13 @@ local bookData = {
     },
   },
   [7024] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Sailing Orders",
+    ["q"] = 6765,
     ["e"] = {
+      [1] = { ["px"] = 0.0543943988, ["py"] = 0.6012120002, ["pm"] = 2168, ["d"] = true, ["zx"] = 0.0541156019, ["zy"] = 0.6012716013, ["zm"] = 2114, },
     },
-    ["c"] = false,
   },
   [7025] = {
     ["c"] = true,
@@ -57472,16 +57429,20 @@ local bookData = {
   [7030] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "The Mirrored Way",
+    ["q"] = 6771,
     ["e"] = {
+      [1] = { ["px"] = 0.0687912018, ["py"] = 0.5970884015, ["pm"] = 2114, ["qp"] = true, },
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7031] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "The Ascendant Magus's Commission",
+    ["q"] = 6765,
     ["e"] = {
+      [1] = { ["px"] = 0.0461840018, ["py"] = 0.5993824017, ["pm"] = 2114, ["d"] = true, },
     },
-    ["c"] = false,
   },
   [7032] = {
     ["c"] = true,
@@ -57572,11 +57533,13 @@ local bookData = {
     ["c"] = false,
   },
   [7095] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Silverslip's Journal",
+    ["q"] = 6786,
     ["e"] = {
+      [1] = { ["px"] = 0.7262711900, ["py"] = 0.5349919961, ["pm"] = 149, ["d"] = true, ["zx"] = 0.7262719910, ["zy"] = 0.5341439946, ["zm"] = 26, ["qp"] = true, },
     },
-    ["c"] = false,
   },
   [7098] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -57888,11 +57851,13 @@ local bookData = {
     },
   },
   [7132] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Burned Research Notes",
+    ["q"] = 6765,
     ["e"] = {
+      [1] = { ["px"] = 0.0560376013, ["py"] = 0.5815155940, ["pm"] = 2167, ["d"] = true, ["zx"] = 0.0593876026, ["zy"] = 0.5800732015, ["zm"] = 2114, },
     },
-    ["c"] = false,
   },
   [7133] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -57977,11 +57942,13 @@ local bookData = {
     },
   },
   [3047] = {
+    ["c"] = true,
     ["cn"] = "Library of Incunabula",
     ["n"] = "Terran's Notes",
     ["e"] = {
+      -- Only accessible after defeating Molag Kena and going through the portal at the end, I don't know how to word this.
+      [1] = { ["px"] = 0.5477587896, ["py"] = 0.4759068019, ["pm"] = 908, ["d"] = true, },
     },
-    ["c"] = false,
   },
   [7144] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -58263,38 +58230,43 @@ local bookData = {
     }
   },
   [7192] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Library of Incunabula",
     ["n"] = "A Warning to Those Who Follow",
     ["e"] = {
+      [1] = { ["px"] = 0.0506455998, ["py"] = 0.6090427932, ["pm"] = 2240, ["d"] = true, ["zx"] = 0.0759564031, ["zy"] = 0.5872872124, ["zm"] = 2114, },
     }
   },
   [7193] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Library of Incunabula",
     ["n"] = "A Second Warning",
     ["e"] = {
+      [1] = { ["px"] = 0.0519360015, ["py"] = 0.6090544034, ["pm"] = 2230, ["d"] = true, ["zx"] = 0.0759564031, ["zy"] = 0.5872872124, ["zm"] = 2114, },
     }
   },
   [7194] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Library of Incunabula",
     ["n"] = "Your Final Warning",
     ["e"] = {
+      [1] = { ["px"] = 0.0509284004, ["py"] = 0.6079315914, ["pm"] = 2233, ["d"] = true, ["zx"] = 0.0759564031, ["zy"] = 0.5872872124, ["zm"] = 2114, },
     }
   },
   [7195] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Library of Incunabula",
     ["n"] = "Logbook of Druid Anwas",
     ["e"] = {
+      [1] = { ["px"] = 0.0505004003, ["py"] = 0.6091539992, ["pm"] = 2229, ["d"] = true, ["zx"] = 0.0759564031, ["zy"] = 0.5872872124, ["zm"] = 2114, }, --This is for the post-dungeon completion location. You can find this on the ground pre-completion but it must be read BEFORE fighting final boss.
     }
   },
   [7196] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Library of Incunabula",
     ["n"] = "Logbook of Druid Betrys",
     ["e"] = {
+      [1] = { ["px"] = 0.0505128004, ["py"] = 0.6091255992, ["pm"] = 2229, ["d"] = true, ["zx"] = 0.0759564031, ["zy"] = 0.5872872124, ["zm"] = 2114, },
     }
   },
   [7250] = {
@@ -58329,8 +58301,9 @@ local bookData = {
     ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Archdruid Michiel's Orders",
+    ["q"] = 6843,
     ["e"] = {
-      [1] = { ["px"] = 0.0670119999, ["py"] = 0.3616176081, ["pm"] = 1, },
+      [1] = { ["px"] = 0.0670119999, ["py"] = 0.3616176081, ["pm"] = 1, ["qp"] = true, },
     }
   },
   [7584] = {
@@ -58403,38 +58376,48 @@ local bookData = {
     }
   },
   [7286] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Welcome, Initiates!",
+    ["q"] = 6847,
     ["e"] = {
+      [1] = { ["px"] = 0.0616848013, ["py"] = 0.5849788144, ["pm"] = 2236, ["d"] = true, ["zx"] = 0.0632516015, ["zy"] = 0.5845536026, ["zm"] = 2114, },
     }
   },
   [7285] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Shipping Label",
+    ["q"] = 6847,
     ["e"] = {
+      [1] = { ["px"] = 0.0619628014, ["py"] = 0.5847404144, ["pm"] = 2236, ["d"] = true, ["zx"] = 0.0632516015, ["zy"] = 0.5845536026, ["zm"] = 2114, },
     }
   },
   [7287] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Orders from the Lord",
+    ["q"] = 6847,
     ["e"] = {
+      [1] = { ["px"] = 0.0619548013, ["py"] = 0.5852788145, ["pm"] = 2236, ["d"] = true, ["zx"] = 0.0632516015, ["zy"] = 0.5845536026, ["zm"] = 2114, },
     }
   },
   [7289] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Ancient Druid Bloodlines",
+    ["q"] = 6847,
     ["e"] = {
+      [1] = { ["px"] = 0.0619119994, ["py"] = 0.5986619935, ["pm"] = 2268, ["d"] = true, ["zx"] = 0.0621792019, ["zy"] = 0.5980144024, ["zm"] = 2114, },
     }
   },
   [7288] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Lord Bacaro's Journal",
+    ["q"] = 6847,
     ["e"] = {
+      [1] = { ["px"] = 0.0619043994, ["py"] = 0.5986511935, ["pm"] = 2268, ["d"] = true, ["zx"] = 0.0621792019, ["zy"] = 0.5980144024, ["zm"] = 2114, },
     }
   },
   [7365] = {
@@ -58489,10 +58472,12 @@ local bookData = {
     }
   },
   [7304] = {
-    ["c"] = false,
+    ["c"] = trrue,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Minahel's Note",
+    ["q"] = 6857,
     ["e"] = {
+      [1] = { ["px"] = 0.0591472007, ["py"] = 0.5570900010, ["pm"] = 2212, },
     }
   },
   [7311] = {
@@ -58528,6 +58513,7 @@ local bookData = {
     ["n"] = "Kiko's Riddles",
     ["q"] = 6860,
     ["e"] = {
+      --Post-quest location if not read during quest
       [1] = { ["px"] = 0.0497435996, ["py"] = 0.5706932110, ["pm"] = 2227, ["zm"] = 2212, },
     }
   },
@@ -58566,28 +58552,35 @@ local bookData = {
     ["q"] = 6904,
     ["e"] = {
       [1] = { ["px"] = 0.0557676013, ["py"] = 0.5649572008, ["pm"] = 2212, },
+      [2] = { ["px"] = 0.0476288009, ["py"] = 0.5681704006, ["pm"] = 2212, },
     }
   },
   [7315] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Druid Fables: The Proud Faun",
     ["e"] = {
-    }
+    },
+    ["r"] = true,
+    ["m"] = { [2212] = 1, },
   },
   [7356] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "The Annotated Dream of Kasorayn",
     ["e"] = {
-    }
+    },
+    ["r"] = true,
+    ["m"] = { [2212] = 1, },
   },
   [7359] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Wines of the Systres",
     ["e"] = {
-    }
+    },
+    ["r"] = true,
+    ["m"] = { [2212] = 1, },
   },
   [7360] = {
     ["c"] = true,
@@ -58634,14 +58627,16 @@ local bookData = {
     ["n"] = "Dreadsails: Threat to the Isles",
     ["e"] = {
       [1] = { ["px"] = 0.0503007996, ["py"] = 0.5725312113, ["pm"] = 2227, ["zm"] = 2212, },
-    }
+    },
   },
   [7519] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Glimmertarn: A Stonelore Community",
     ["e"] = {
-    }
+    },
+    ["r"] = true,
+    ["m"] = { [2212] = 1, },
   },
   [7520] = {
     ["c"] = true,
@@ -58660,11 +58655,13 @@ local bookData = {
     }
   },
   [7522] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Molith the Mudcrab",
     ["e"] = {
-    }
+    },
+    ["r"] = true,
+    ["m"] = { [2212] = 1, },
   },
   [7523] = {
     ["c"] = false,
@@ -58681,17 +58678,21 @@ local bookData = {
     }
   },
   [7525] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "The Tempest and the Sunflower",
     ["e"] = {
-    }
+    },
+    ["r"] = true,
+    ["m"] = { [2212] = 1, },
   },
   [7526] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Arnoit and Lisette: The True Story",
     ["e"] = {
+      [1] = { ["px"] = 0.0483504009, ["py"] = 0.5698271983, ["pm"] = 2281, ["d"] = true, },
+      [2] = { ["px"] = 0.0483500008, ["py"] = 0.5698280005, ["pm"] = 2227, ["zm"] = 2212, ["fp"] = true, },
     }
   },
   [7527] = {
@@ -58710,11 +58711,13 @@ local bookData = {
     }
   },
   [7529] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Druid Food of Vastyr",
     ["e"] = {
-    }
+    },
+    ["r"] = true,
+    ["m"] = { [2212] = 1, },
   },
   [7530] = {
     ["c"] = false,
@@ -58761,11 +58764,13 @@ local bookData = {
     }
   },
   [7536] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Exodus of the Druids",
     ["e"] = {
-    }
+    },
+    ["r"] = true,
+    ["m"] = { [2212] = 1, },
   },
   [7537] = {
     ["c"] = false,
@@ -58782,18 +58787,22 @@ local bookData = {
     }
   },
   [7539] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "On Nature Spirits",
     ["e"] = {
-    }
+    },
+    ["r"] = true,
+    ["m"] = { [2212] = 1, },
   },
   [7540] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Legacy of the Bretons",
     ["e"] = {
-    }
+    },
+    ["r"] = true,
+    ["m"] = { [2212] = 1, },
   },
   [7541] = {
     ["c"] = false,
