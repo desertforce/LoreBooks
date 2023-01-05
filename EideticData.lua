@@ -29631,12 +29631,7 @@ local bookData = {
   [2565] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["px"] = 0.3687900000,
-        ["py"] = 0.3566700000,
-        ["d"] = true,
-        ["pm"] = 1085,
-      },
+      [1] = { ["px"] = 0.3687968025, ["py"] = 0.3566639975, ["pm"] = 1084, ["d"] = true, },
     },
     ["n"] = "Defaced Nedic Prayer Book",
     ["cn"] = "Craglorn Secrets",
@@ -29811,12 +29806,7 @@ local bookData = {
   [2607] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["px"] = 0.4420800000,
-        ["py"] = 0.3805000000,
-        ["d"] = true,
-        ["pm"] = 1092,
-      },
+      [1] = { ["px"] = 0.4420191989, ["py"] = 0.3805287961, ["pm"] = 1091, ["d"] = true, },
     },
     ["n"] = "Mystic Visions of the Guardians",
     ["cn"] = "Craglorn Secrets",
@@ -30531,12 +30521,7 @@ local bookData = {
   [2676] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["px"] = 0.3838200000,
-        ["py"] = 0.3487000000,
-        ["d"] = true,
-        ["pm"] = 1119,
-      },
+      [1] = { ["px"] = 0.3838216058, ["py"] = 0.3487219995, ["pm"] = 1120, ["d"] = true, },
     },
     ["n"] = "Saradin's Diary",
     ["cn"] = "Craglorn Secrets",
@@ -30596,12 +30581,7 @@ local bookData = {
   [2681] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["px"] = 0.4003900000,
-        ["py"] = 0.3503100000,
-        ["d"] = true,
-        ["pm"] = 676,
-      },
+      [1] = { ["px"] = 0.4003960062, ["py"] = 0.3502859960, ["pm"] = 675, ["d"] = true, },
     },
     ["n"] = "From Regent of Serpentine Stratagems",
     ["cn"] = "Craglorn Secrets",
