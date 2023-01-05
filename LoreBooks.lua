@@ -1864,7 +1864,7 @@ local bookLocalization = {
   ["fr"] = "Livre",
   ["ru"] = "Книга",
 }
-local function ShowMyPosition()
+local function CreateEideticLorebookLocation()
   SetMapToPlayerLocation()
   CALLBACK_MANAGER:FireCallbacks("OnWorldMapChanged")
   LMDI:UpdateMapInfo()
@@ -1941,7 +1941,7 @@ local function ShowMyPosition()
   MyPrint(outText)
 end
 
-local function CreateFakeEideticPin()
+local function CreateFakeEideticLorebookLocation()
   LMDI:UpdateMapInfo()
   local zone = LMP:GetZoneAndSubzone(true, false, true)
   local x, y = GetMapPlayerPosition("player")
@@ -2001,9 +2001,9 @@ local function OnLoad(eventCode, name)
     --LoreBooks_InitializeCollab()
 
     -- slash commands
-    SLASH_COMMANDS["/lbpos"] = function() ShowMyPosition() end
+    SLASH_COMMANDS["/lbpos"] = function() CreateEideticLorebookLocation() end
 
-    SLASH_COMMANDS["/lbfake"] = function() CreateFakeEideticPin() end
+    SLASH_COMMANDS["/lbfake"] = function() CreateFakeEideticLorebookLocation() end
 
     SLASH_COMMANDS["/lbfakebook"] = function() CreateFakeLorebookPin() end
 
