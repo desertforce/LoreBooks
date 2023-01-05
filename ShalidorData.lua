@@ -415,7 +415,7 @@ local lorebooksData = {
   },
   [279] = { -- thebanishedcells_base
     -- Dungeon Lore
-    { 0.481, 0.838, 11, 7, 279, ld = { 5, } }, -- The Binding Stone
+    { 0.4846401513, 0.8386483192, 11, 7, 279, ld = { 5, } }, -- The Binding Stone
   },
 
   -- bangkorai
@@ -542,7 +542,7 @@ local lorebooksData = {
     { 0.354, 0.551, 4, 1 },
     { 0.512, 0.839, 4, 1 },
     { 0.374, 0.697, 4, 1 },
-    { 0.686, 0.858, 14, 1 }, -- The Homilies of Blessed Almalexia
+    { 0.6893230081, 0.8562661409, 14, 1, }, -- The Homilies of Blessed Almalexia
     { 0.382820, 0.431219, 14, 9 }, -- Crow and Raven: Three Short Fables
   },
   [431] = { -- onsisbreathmine_base
@@ -1109,7 +1109,7 @@ local lorebooksData = {
     { 0.687, 0.646, 22, 8 },
     { 0.710, 0.603, 22, 8 },
     { 0.707, 0.566, 22, 8 },
-    { 0.784, 0.487, 22, 9 }, -- On Stepping Lightly
+    { 0.7838774920, 0.4864549935, 22, 9, }, -- On Stepping Lightly
     { 0.819, 0.515, 22, 9 },
     { 0.837, 0.552, 22, 9 },
     { 0.854, 0.490, 22, 9 },
@@ -1183,12 +1183,12 @@ local lorebooksData = {
     { 0.262, 0.555, 18, 1 },
     { 0.6184, 0.612, 18, 1 },
     { 0.325, 0.531, 18, 1 },
-    { 0.343, 0.657, 18, 2 }, -- The Book of Dawn and Dusk
+    { 0.3430500031, 0.6567025185, 18, 2, }, -- The Book of Dawn and Dusk
     { 0.389, 0.680, 18, 2 },
     { 0.325, 0.679, 18, 2 },
     { 0.397, 0.648, 18, 2 },
     { 0.363, 0.589, 18, 3 }, -- The Cantatas of Vivec
-    { 0.368, 0.613, 18, 3 },
+    { 0.3674924970, 0.6133900285, 18, 3, },
     { 0.381, 0.599, 18, 3 },
     { 0.411, 0.604, 18, 3 },
     { 0.394, 0.542, 18, 4 }, -- The Five Far Stars
@@ -1199,7 +1199,7 @@ local lorebooksData = {
     { 0.419, 0.471, 18, 5 },
     { 0.370, 0.505, 18, 5 },
     { 0.3835, 0.4637, 18, 5 },
-    { 0.482, 0.513, 18, 6 }, -- Ode to the Tundrastriders
+    { 0.4820699990, 0.5130450130, 18, 6, }, -- Ode to the Tundrastriders
     { 0.274, 0.565, 18, 6 },
     { 0.3047, 0.545, 18, 6 },
     { 0.4702, 0.5361, 18, 6 },
@@ -1212,7 +1212,8 @@ local lorebooksData = {
     -- Legends of Nirn
     { 0.069, 0.481, 13, 9 }, -- Tamrielic Artifacts, Part Two
     { 0.274, 0.473, 13, 10 }, -- Tamrielic Artifacts, Part Three
-    { 0.252, 0.220, 13, 10 },
+    { 0.2511834800, 0.2144903392, 13, 10, },
+    { 0.2481925040, 0.5947524905, 13, 10, ld = { 9999, } },
   },
   [160] = { -- windhelm_base
     { 0.5133, 0.4830, 22, 1 }, -- The Brothers' War
@@ -1393,7 +1394,7 @@ local lorebooksData = {
   },
   [174] = { -- spindleclutch_base
     -- Dungeon Lore
-    { 0.677, 0.475, 11, 8, 174, ld = { 5, } }, -- Where Magical Paths Meet
+    { 0.6787497401, 0.4772802889, 11, 8, 174, ld = { 5, } }, -- Where Magical Paths Meet
     { 0.671889, 0.471008, 11, 8, 174, ld = { 5, } },
   },
   [201] = { -- strosmkai_base
@@ -1567,7 +1568,7 @@ local lorebooksData = {
   },
   [28] = { -- eldenhollow_base
     -- Dungeon Lore
-    { 0.786, 0.624, 11, 5, 28, ld = { 5, } }, -- Civility and Etiquette: Wood Orcs I
+    { 0.7873833776, 0.6233451962, 11, 5, 28, ld = { 5, } }, -- Civility and Etiquette: Wood Orcs I
   },
 
   -- greenshade
@@ -1914,8 +1915,8 @@ local lorebooksData = {
   },
   [292] = { -- tempestisland_base
     -- Dungeon Lore
-    { 0.445, 0.367, 11, 4, 292, ld = { 5, } }, -- War Weather
-    { 0.365, 0.812, 11, 14, 292, ld = { 5, } }, -- Tempest Island Briefing
+    { 0.4463876784, 0.3658108711, 11, 4, 292, ld = { 5, } }, -- War Weather
+    { 0.3651288450, 0.8106396198, 11, 14, 292, ld = { 5, } }, -- Tempest Island Briefing
   },
 
   -- reapersmarch
@@ -2388,7 +2389,7 @@ local lorebooksData = {
   },
   [141] = { -- arxcorinium_base
     -- Dungeon Lore
-    { 0.143, 0.315, 11, 11, 141, ld = { 5, } }, -- Arx Corinium - First Seed Report
+    { 0.1416442841, 0.3164515197, 11, 11, 141, ld = { 5, } }, -- Arx Corinium - First Seed Report
   },
 
   -- stonefalls
@@ -2744,7 +2745,7 @@ local lorebooksData = {
   },
   [46] = { -- wayrestsewers_base
     -- Dungeon Lore
-    { 0.830, 0.100, 11, 9, 5, 46 }, -- Wayrest Sewers: A Short History
+    { 0.8309859037, 0.0996567607, 11, 9, 5, 46 }, -- Wayrest Sewers: A Short History
   },
 
   -- therift
