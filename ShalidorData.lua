@@ -2921,7 +2921,7 @@ local lorebooksData = {
     { 0.240, 0.443, 11, 17 }, -- Josef the Intolerant
   },
   [401] = { -- blessedcrucible5_base
-    { 0.240, 0.443, 11, 17 }, -- Josef the Intolerant
+    { 0.2401482016, 0.4415628016, 11, 17, }, -- Josef the Intolerant
   },
   [402] = { -- blessedcrucible6_base
     { 0.240, 0.443, 11, 17 }, -- Josef the Intolerant

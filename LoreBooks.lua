@@ -413,7 +413,7 @@ end
 local function UpdateEideticLorebooksData(mapId, zoneMapId)
   --internal:dm("Debug", "UpdateEideticLorebooksData")
   if LMD.mapTexture ~= lastZoneEidetic or LMD.mapId ~= lastMapIpEidetic then
-  --internal:dm("Warn", "UpdateEideticLorebooksData")
+    --internal:dm("Warn", "UpdateEideticLorebooksData")
     lastZoneEidetic = LMD.mapTexture
     lastMapIpEidetic = LMD.mapId
     eideticBooks = LoreBooks_GetEideticData(mapId, zoneMapId) -- All Eidetic Books in Zone
@@ -724,11 +724,6 @@ local function InitializePins()
                                         end
                                       end
   }
-
-
-  --initialize book data
-  local mapId = LMD.mapId
-  local zoneMapId = LMD:GetZoneMapIdFromZoneId(LMD.zoneId)
 
   --initialize map pins
   LMP:AddPinType(internal.PINS_UNKNOWN, function() MapCallbackCreateShalidorPins(internal.PINS_UNKNOWN) end, nil, mapPinLayout_unknown, pinTooltipCreator)
