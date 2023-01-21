@@ -24207,18 +24207,7 @@ local bookData = {
   [2111] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["mn"] = 7,
-        ["py"] = 0.6884100000,
-        ["px"] = 0.4003300000,
-        ["pm"] = 9,
-      },
-      [2] = {
-        ["mn"] = 36,
-        ["py"] = 0.6544400000,
-        ["px"] = 0.5125500000,
-        ["pm"] = 1555,
-      },
+      [1] = { ["px"] = 0.5125100224, ["py"] = 0.6544176024, ["pm"] = 1663, ["zm"] = 1555, },
     },
     ["n"] = "Nobility in Theft",
     ["cn"] = "Criminal Correspondence",
@@ -42301,10 +42290,14 @@ local bookData = {
     },
   },
   [6591] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "Flora and Fauna of the Burn",
     ["e"] = {
+    },
+    ["r"] = true,
+    ["m"] = {
+      [2021] = 1,
     },
   },
   [6592] = {
@@ -44915,10 +44908,11 @@ local bookData = {
     },
   },
   [6857] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Library of Incunabula",
     ["n"] = "Ancient Inscription",
     ["e"] = {
+      [1] = { ["px"] = 0.1186399994, ["py"] = 0.6287551934, ["pm"] = 2111, ["d"] = true, ["zx"] = 0.1178388044, ["zy"] = 0.6371344010, ["zm"] = 1349, },
     },
   },
   [4810] = {
@@ -50034,12 +50028,7 @@ local bookData = {
     ["n"] = "The Thief's Riddle",
     ["q"] = 6319,
     ["e"] = {
-      [1] = {
-        ["mn"] = 36,
-        ["py"] = 0.6014000000,
-        ["px"] = 0.5269000000,
-        ["pm"] = 1555,
-      },
+      [1] = { ["px"] = 0.5268635982, ["py"] = 0.6014028031, ["pm"] = 1591, ["zm"] = 1555, },
     },
   },
   [5459] = {
@@ -50669,12 +50658,7 @@ local bookData = {
   [5506] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["mn"] = 36,
-        ["py"] = 0.6011500000,
-        ["px"] = 0.5265700000,
-        ["pm"] = 1555,
-      },
+      [1] = { ["px"] = 0.5265607982, ["py"] = 0.6011480034, ["pm"] = 1591, ["zm"] = 1555, },
     },
     ["n"] = "The Sixteen Kingdoms",
     ["cn"] = "Anequina Archives",
@@ -50696,12 +50680,7 @@ local bookData = {
   [5590] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["mn"] = 36,
-        ["py"] = 0.6542900000,
-        ["px"] = 0.5128900000,
-        ["pm"] = 1555,
-      },
+      [1] = { ["px"] = 0.5129152219, ["py"] = 0.6542368022, ["pm"] = 1663, ["zm"] = 1555, },
     },
     ["n"] = "On Those Who Know Baan Dar",
     ["cn"] = "Anequina Archives",
@@ -50765,12 +50744,7 @@ local bookData = {
   [5596] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["mn"] = 36,
-        ["py"] = 0.6770700000,
-        ["px"] = 0.5166800000,
-        ["pm"] = 1555,
-      },
+      [1] = { ["px"] = 0.5167547946, ["py"] = 0.6770832135, ["pm"] = 1555, },
     },
     ["n"] = "Moon-Sugar: A Report",
     ["cn"] = "Anequina Archives",
@@ -50927,12 +50901,7 @@ local bookData = {
   [5609] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["mn"] = 36,
-        ["py"] = 0.6753800000,
-        ["px"] = 0.5141500000,
-        ["pm"] = 1555,
-      },
+      [1] = { ["px"] = 0.5141343912, ["py"] = 0.6753764160, ["pm"] = 1555, },
     },
     ["n"] = "Clever Kail-Perwa and the Great Boast, Volume 2",
     ["cn"] = "Anequina Archives",
@@ -50954,12 +50923,7 @@ local bookData = {
   [5611] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["mn"] = 36,
-        ["py"] = 0.6861100000,
-        ["px"] = 0.4767800000,
-        ["pm"] = 1555,
-      },
+      [1] = { ["px"] = 0.4767743922, ["py"] = 0.6861284136, ["pm"] = 1555, },
     },
     ["n"] = "Clever Kail-Perwa and the Great Boast, Volume 4",
     ["cn"] = "Anequina Archives",
@@ -51530,13 +51494,7 @@ local bookData = {
   [5670] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["mn"] = 36,
-        ["py"] = 0.6223000000,
-        ["px"] = 0.5679900000,
-        ["pm"] = 1576,
-        ["zm"] = 1555,
-      },
+      [1] = { ["px"] = 0.5679911726, ["py"] = 0.6222967961, ["pm"] = 1576, ["zm"] = 1555, },
     },
     ["n"] = "Cat Food",
     ["cn"] = "Anequina Archives",
@@ -52087,18 +52045,10 @@ local bookData = {
     ["n"] = "Benevolent Necromancy, it Exists",
     ["r"] = true,
     ["e"] = {
-      [1] = {
-        ["py"] = 0.6009900000,
-        ["mn"] = 36,
-        ["px"] = 0.5269700000,
-        ["pm"] = 1555,
-        ["d"] = false,
-        ["i"] = 12,
-        ["r"] = true,
-      },
     },
     ["m"] = {
       [36] = 1,
+      [1555] = 1,
     },
   },
   [5719] = {
@@ -57524,11 +57474,13 @@ local bookData = {
     },
   },
   [7098] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Emerald Eye Mage's Journal",
+    ["q"] = 6787,
     ["e"] = {
+      [1] = { ["px"] = 0.1742916002, ["py"] = 0.3957151922, ["pm"] = 30, ["qp"] = true, }, --Must be read as part of quest
     },
-    ["c"] = false,
   },
   [7099] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -57645,11 +57597,13 @@ local bookData = {
     ["c"] = true,
   },
   [7205] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Letter from Vetitia Marcott",
     ["e"] = {
+      [1] = { ["px"] = 0.1700347960, ["py"] = 0.2494235974, ["pm"] = 812, ["d"] = true, ["zx"] = 0.1760099976, ["zy"] = 0.2461672003, ["zm"] = 10, },
+      [2] = { ["px"] = 0.1733212026, ["py"] = 0.2514208053, ["pm"] = 85, ["fp"] = true, },
     },
-    ["c"] = false,
   },
   [7113] = {
     ["c"] = true,
@@ -58067,11 +58021,13 @@ local bookData = {
     ["c"] = true,
   },
   [7159] = {
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Izbadd's Letter",
+    ["q"] = 6787,
+    --It is given to you during the qust
     ["e"] = {
     },
-    ["c"] = false,
   },
   [7168] = {
     ["c"] = true,
@@ -58240,7 +58196,8 @@ local bookData = {
     ["cn"] = "Library of Incunabula",
     ["n"] = "Logbook of Druid Anwas",
     ["e"] = {
-      [1] = { ["px"] = 0.0505004003, ["py"] = 0.6091539992, ["pm"] = 2229, ["d"] = true, ["zx"] = 0.0759564031, ["zy"] = 0.5872872124, ["zm"] = 2114, }, --This is for the post-dungeon completion location. You can find this on the ground pre-completion but it must be read BEFORE fighting final boss.
+      [1] = { ["px"] = 0.0507428004, ["py"] = 0.6076639914, ["pm"] = 2233, ["d"] = true, ["zx"] = 0.0759564031, ["zy"] = 0.5872872124, ["zm"] = 2114, }, --This is for the pre-dungeon completion location.
+      [2] = { ["px"] = 0.0505004003, ["py"] = 0.6091539992, ["pm"] = 2229, ["d"] = true, ["zx"] = 0.0759564031, ["zy"] = 0.5872872124, ["zm"] = 2114, }, --This is for the post-dungeon completion location. You can find this on the ground pre-completion but it must be read BEFORE fighting final boss.
     }
   },
   [7196] = {
@@ -58273,10 +58230,11 @@ local bookData = {
     }
   },
   [7282] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Letter from Druid Laurel",
     ["e"] = {
+      [1] = { ["px"] = 0.0588544026, ["py"] = 0.3539028008, ["pm"] = 1, },
     }
   },
   [7271] = {
@@ -58573,18 +58531,26 @@ local bookData = {
     }
   },
   [7363] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "The Druid Monoliths",
     ["e"] = {
-    }
+    },
+    ["r"] = true,
+    ["m"] = {
+      [2212] = 1,
+    },
   },
   [7364] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Y'ffelon, the Forbidden Island",
     ["e"] = {
-    }
+    },
+    ["r"] = true,
+    ["m"] = {
+      [2212] = 1,
+    },
   },
   [7470] = {
     ["c"] = true,
@@ -58686,11 +58652,15 @@ local bookData = {
     }
   },
   [7528] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Druid Fables: Systres Beavers",
     ["e"] = {
-    }
+    },
+    ["r"] = true,
+    ["m"] = {
+      [2212] = 1,
+    },
   },
   [7529] = {
     ["c"] = true,
@@ -58702,11 +58672,15 @@ local bookData = {
     ["m"] = { [2212] = 1, },
   },
   [7530] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Journeys In Galen: A Scholar's Travels",
     ["e"] = {
-    }
+    },
+    ["r"] = true,
+    ["m"] = {
+      [2212] = 1,
+    },
   },
   [7531] = {
     ["c"] = true,
@@ -58787,11 +58761,15 @@ local bookData = {
     ["m"] = { [2212] = 1, },
   },
   [7541] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "A Helpful, Steadfast Hand",
     ["e"] = {
-    }
+    },
+    ["r"] = true,
+    ["m"] = {
+      [2212] = 1,
+    },
   },
   [7544] = {
     ["c"] = true,

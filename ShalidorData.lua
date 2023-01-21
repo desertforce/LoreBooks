@@ -3101,7 +3101,7 @@ local lorebooksData = {
     { 0.4391, 0.5035, 28, 8, ld = { 1, } }, -- Master Zoaraym's Tale, Part 1
   },
   [1663] = { -- stitches_base
-    { 0.5774, 0.5063, 28, 9, ld = { 1, } }, -- Master Zoaraym's Tale, Part 2",
+    { 0.5773617029, 0.5049619079, 28, 9, ld = { 1, } }, -- Master Zoaraym's Tale, Part 2",
   },
   [1591] = { -- riverholdcity_base
     { 0.5424, 0.6056, 26, 1, ld = { 1, } }, -- Varieties of Faith: The Khajiit
