@@ -6,7 +6,7 @@
 ## APIVersion: 101036 101037
 ## SavedVariables: LBooks_SavedVariables
 ## DependsOn: LibAddonMenu-2.0>=34 LibMapPins-1.0>=10038 CustomCompassPins>=32 LibGPS>=68 LibCustomMenu>=713
-## DependsOn: LibLoreLibrary>=1 LibMapData>=107
+## DependsOn: LibLoreLibrary>=1 LibMapData>=110
 ## OptionalDependsOn: LibDebugLogger>=220 DebugLogViewer>=558
 
 Constants.lua
