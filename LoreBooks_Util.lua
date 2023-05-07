@@ -16,7 +16,7 @@ local function Lorebooks_ShowLorebookMissingMapId()
   local zoneId
   local LoreBooks_bookData = ZO_DeepTableCopy(LoreBooks.bookData)
   for id, book in pairs(LoreBooks_bookData) do
-    local categoryIndex, collectionIndex, bookIndex = GetLoreBookIndicesFromBookId(id)
+    categoryIndex, collectionIndex, bookIndex = GetLoreBookIndicesFromBookId(id)
     if categoryIndex == 3 and collectionIndex and bookIndex then
       bookTitle, _, _, bookId = GetLoreBookInfo(categoryIndex, collectionIndex, bookIndex)
       name, _, _, _, _, _, _ = GetLoreCollectionInfo(categoryIndex, collectionIndex)

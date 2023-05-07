@@ -6808,8 +6808,8 @@ local bookData = {
       [1] = { ["px"] = 0.3681355995, ["py"] = 0.6073068138, ["pm"] = 22, },
       [2] = {
         ["mn"] = 8,
-        ["py"] = 0.6280300000,
-        ["px"] = 0.3499300000,
+        ["py"] = 0.6072300000,
+        ["px"] = 0.3681200000,
         ["pm"] = 22,
       },
     },
@@ -10825,12 +10825,7 @@ local bookData = {
     ["c"] = true,
     ["e"] = {
       [1] = { ["px"] = 0.2247816021, ["py"] = 0.3370860072, ["pm"] = 33, ["zm"] = 12, },
-      [2] = {
-        ["px"] = -0.6222300000,
-        ["d"] = true,
-        ["py"] = -0.4907000000,
-        ["pm"] = 106,
-      },
+      [2] = { ["px"] = -0.6222167855, ["py"] = -0.4907303829, ["pm"] = 106, ["d"] = true, },
     },
     ["n"] = "The Folly of Isolation, Part 3",
     ["cn"] = "The Devoted and the Deranged",
@@ -10838,7 +10833,7 @@ local bookData = {
   [980] = {
     ["c"] = true,
     ["e"] = {
-      [1] = { ["px"] = -0.6224955854, ["py"] = -0.4941495826, ["pm"] = 106, ["d"] = true, },
+      [1] = { ["px"] = -0.6224603844, ["py"] = -0.4941875825, ["pm"] = 106, ["d"] = true, },
       [2] = { ["px"] = 0.2247780033, ["py"] = 0.3370880074, ["pm"] = 33, ["zm"] = 12, },
     },
     ["n"] = "The Folly of Isolation, Part 6",
@@ -10848,12 +10843,7 @@ local bookData = {
     ["c"] = true,
     ["e"] = {
       [1] = { ["px"] = 0.2247816021, ["py"] = 0.3370860072, ["pm"] = 33, ["zm"] = 12, },
-      [2] = {
-        ["px"] = -0.6303700000,
-        ["d"] = true,
-        ["py"] = -0.4966800000,
-        ["pm"] = 106,
-      },
+      [2] = { ["px"] = -0.6303651856, ["py"] = -0.4967183824, ["pm"] = 106, ["d"] = true, },
     },
     ["n"] = "The Folly of Isolation, Part 7",
     ["cn"] = "The Devoted and the Deranged",
@@ -10861,12 +10851,7 @@ local bookData = {
   [982] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["px"] = -0.6346200000,
-        ["d"] = true,
-        ["py"] = -0.4933300000,
-        ["pm"] = 106,
-      },
+      [1] = { ["px"] = -0.6346155856, ["py"] = -0.4933455821, ["pm"] = 106, ["d"] = true, },
       [2] = { ["px"] = 0.2247932019, ["py"] = 0.3370988071, ["pm"] = 33, ["zm"] = 12, },
     },
     ["n"] = "The Folly of Isolation, Part 8",
@@ -34158,10 +34143,7 @@ local bookData = {
   [3145] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["px"] = 0.3181080042, ["py"] = 0.2355915980, ["pm"] = 939, ["d"] = true,
-        ["zx"] = 0.3166119968, ["zy"] = 0.2353520015, ["zm"] = 667,
-      },
+      [1] = { ["px"] = 0.3181080042, ["py"] = 0.2355915980, ["pm"] = 939, ["zx"] = 0.3166119968, ["zy"] = 0.2353520015, ["zm"] = 667, ["d"] = true, },
       [2] = { ["px"] = 0.3177468064, ["py"] = 0.2359424034, ["pm"] = 937, ["fp"] = true, },
     },
     ["n"] = "Mercenary's Scorched Journal",
@@ -40512,10 +40494,7 @@ local bookData = {
         ["r"] = false,
         ["i"] = 12,
       },
-      [2] = {
-        ["px"] = 0.7045100207, ["py"] = 0.5123936120, ["pm"] = 2042, ["d"] = true,
-        ["zx"] = 0.7102587997, ["zy"] = 0.5125804198, ["zm"] = 13,
-      },
+      [2] = { ["px"] = 0.7045100207, ["py"] = 0.5123936120, ["pm"] = 2042, ["zx"] = 0.7102587997, ["zy"] = 0.5125804198, ["zm"] = 13, ["d"] = true, },
     },
     ["n"] = "Hidden Diary",
     ["cn"] = "Library of Incunabula",
@@ -42453,13 +42432,7 @@ local bookData = {
   [4560] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["pm"] = 1060,
-        ["px"] = 0.7767500000,
-        ["d"] = true,
-        ["py"] = 0.3802000000,
-        ["mn"] = 30,
-      },
+      [1] = { ["px"] = 0.7767599956, ["py"] = 0.3801999965, ["pm"] = 1231, ["d"] = true, },
     },
     ["n"] = "Archcanon Tarvus Interview",
     ["cn"] = "Letters and Missives",
@@ -43843,10 +43816,14 @@ local bookData = {
     },
   },
   [6705] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Dispatches from the Deadlands",
     ["n"] = "The Penitent's Tale",
     ["e"] = {
+    },
+    ["r"] = true,
+    ["m"] = {
+      [2212] = 1,
     },
   },
   [6706] = {
@@ -48611,13 +48588,7 @@ local bookData = {
     ["n"] = "On Voriplasms",
     ["r"] = true,
     ["e"] = {
-      [1] = {
-        ["mn"] = 34,
-        ["pm"] = 1484,
-        ["py"] = 0.7765900000,
-        ["px"] = 0.7601600000,
-        ["r"] = true,
-      },
+      [1] = { ["px"] = 0.7588983796, ["py"] = 0.7606263837, ["pm"] = 1484, },
     },
     ["m"] = {
       [34] = 1,
@@ -48723,12 +48694,7 @@ local bookData = {
   [5312] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["d"] = true,
-        ["py"] = 0.7572000000,
-        ["zt"] = 1073,
-        ["px"] = 0.7370100000,
-      },
+      [1] = { ["px"] = 0.7370055791, ["py"] = 0.7572056140, ["pm"] = 1522, ["d"] = true, },
     },
     ["n"] = "Vine-Tongues: Common Mistakes",
     ["cn"] = "Lore of Murkmire",
@@ -51875,7 +51841,7 @@ local bookData = {
     ["q"] = 6395,
     ["cn"] = "Mysteries and Clues",
     ["e"] = {
-      [1] = { ["px"] = -0.1199727975, ["py"] = 0.1179823985, ["pm"] = 1706, ["d"] = true, }, 
+      [1] = { ["px"] = -0.1199727975, ["py"] = 0.1179823985, ["pm"] = 1706, ["d"] = true, },
     },
   },
   [5705] = {
@@ -54233,12 +54199,7 @@ local bookData = {
   [4546] = {
     ["c"] = true,
     ["e"] = {
-      [1] = {
-        ["d"] = true,
-        ["py"] = 0.3423500000,
-        ["zt"] = 918,
-        ["px"] = 0.8046300000,
-      },
+      [1] = { ["px"] = 0.8046311886, ["py"] = 0.3423491976, ["pm"] = 1318, ["d"] = true, },
     },
     ["n"] = "The Heart of Lorkhan, My Final Prize",
     ["cn"] = "Vvardenfell Volumes",
@@ -56957,9 +56918,10 @@ local bookData = {
   [6950] = {
     ["cn"] = "Systres Tomes and Scrolls",
     ["n"] = "Ode to the Nose of a Woman",
-    ["e"] = {
+    ["q"] = 6760,
+    ["e"] = { --Does not have a location; it is given directly to your inventory in the quest and must be read.
     },
-    ["c"] = false,
+    ["c"] = true,
   },
   [7207] = {
     ["cn"] = "Systres Tomes and Scrolls",
@@ -57878,8 +57840,8 @@ local bookData = {
     ["c"] = true,
     ["cn"] = "Library of Incunabula",
     ["n"] = "Terran's Notes",
+    -- Only accessible after defeating Molag Kena and going through the portal at the end, I don't know how to word this.
     ["e"] = {
-      -- Only accessible after defeating Molag Kena and going through the portal at the end, I don't know how to word this.
       [1] = { ["px"] = 0.5477587896, ["py"] = 0.4759068019, ["pm"] = 908, ["d"] = true, },
     },
   },
@@ -58358,10 +58320,11 @@ local bookData = {
     }
   },
   [7365] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "The Final Dream of Kasorayn",
     ["e"] = {
+      [1] = { ["px"] = 0.0612380001, ["py"] = 0.5623435976, ["pm"] = 2251, ["zx"] = 0.0604484007, ["zy"] = 0.5615872013, ["zm"] = 2212, ["d"] = true, },
     }
   },
   [7361] = {
@@ -58449,8 +58412,8 @@ local bookData = {
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Kiko's Riddles",
     ["q"] = 6860,
+    --Post-quest location if not read during quest
     ["e"] = {
-      --Post-quest location if not read during quest
       [1] = { ["px"] = 0.0497435996, ["py"] = 0.5706932110, ["pm"] = 2227, ["zm"] = 2212, },
     }
   },
@@ -58609,18 +58572,26 @@ local bookData = {
     ["m"] = { [2212] = 1, },
   },
   [7523] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Druid Funerals: A Piece of Y'ffre",
     ["e"] = {
-    }
+    },
+    ["r"] = true,
+    ["m"] = {
+      [2212] = 1,
+    },
   },
   [7524] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Investigator Vale and the Darkmasts",
     ["e"] = {
-    }
+    },
+    ["r"] = true,
+    ["m"] = {
+      [2212] = 1,
+    },
   },
   [7525] = {
     ["c"] = true,
@@ -58629,7 +58600,9 @@ local bookData = {
     ["e"] = {
     },
     ["r"] = true,
-    ["m"] = { [2212] = 1, },
+    ["m"] = {
+      [2212] = 1,
+    },
   },
   [7526] = {
     ["c"] = true,
@@ -58700,21 +58673,33 @@ local bookData = {
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Systres History Addendum: The Druids of Galen",
     ["e"] = {
-    }
+    },
+    ["r"] = true,
+    ["m"] = {
+      [2212] = 1,
+    },
   },
   [7534] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Systres History: Vastyr",
     ["e"] = {
-    }
+    },
+    ["r"] = true,
+    ["m"] = {
+      [2212] = 1,
+    },
   },
   [7535] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Systres History: Addendum",
     ["e"] = {
-    }
+    },
+    ["r"] = true,
+    ["m"] = {
+      [2212] = 1,
+    },
   },
   [7536] = {
     ["c"] = true,
@@ -58726,18 +58711,26 @@ local bookData = {
     ["m"] = { [2212] = 1, },
   },
   [7537] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Visitor's Guide to Galen",
     ["e"] = {
-    }
+    },
+    ["r"] = true,
+    ["m"] = {
+      [2212] = 1,
+    },
   },
   [7538] = {
-    ["c"] = false,
+    ["c"] = true,
     ["cn"] = "Archipelago Books and Almanacs",
     ["n"] = "Emeric's Judgment",
     ["e"] = {
-    }
+    },
+    ["r"] = true,
+    ["m"] = {
+      [2212] = 1,
+    },
   },
   [7539] = {
     ["c"] = true,
@@ -58946,6 +58939,86 @@ local bookData = {
     ["e"] = {
     }
   },
+  [7476] = {
+    ["c"] = true,
+    ["cn"] = "Library of Incunabula",
+    ["n"] = "Excerpts from Keshargo's Journal",
+    ["e"] = {
+      [1] = { ["px"] = 0.6140556012, ["py"] = 0.4041763994, ["pm"] = 2363, ["d"] = true, ["zx"] = 0.6163903933, ["zy"] = 0.3979327919, ["zm"] = 125, },
+    }
+  },
+  [7472] = {
+    ["c"] = true,
+    ["cn"] = "Library of Incunabula",
+    ["n"] = "Octants of the Scrivener",
+    ["e"] = {
+      [1] = { ["px"] = 0.6140451918, ["py"] = 0.4043703997, ["pm"] = 2286, ["d"] = true, ["zx"] = 0.6163903933, ["zy"] = 0.3979327919, ["zm"] = 125, },
+    }
+  },
+  [7477] = {
+    ["c"] = true,
+    ["cn"] = "Library of Incunabula",
+    ["n"] = "Letter of Resignation",
+    ["e"] = {
+      [1] = { ["px"] = 0.6143671918, ["py"] = 0.4043879997, ["pm"] = 2286, ["d"] = true, ["zx"] = 0.6163903933, ["zy"] = 0.3979327919, ["zm"] = 125, },
+    }
+  },
+  [7474] = {
+    ["c"] = true,
+    ["cn"] = "Library of Incunabula",
+    ["n"] = "Mazandi's Rift Tracking",
+    ["e"] = {
+      [1] = { ["px"] = 0.6162123843, ["py"] = 0.4054256026, ["pm"] = 2287, ["d"] = true, ["zx"] = 0.6163903933, ["zy"] = 0.3979327919, ["zm"] = 125, },
+    }
+  },
+  [7478] = {
+    ["c"] = true,
+    ["cn"] = "Library of Incunabula",
+    ["n"] = "Scribes of Mephala",
+    ["e"] = {
+      [1] = { ["px"] = 0.6163655843, ["py"] = 0.4053000026, ["pm"] = 2287, ["d"] = true, ["zx"] = 0.6163903933, ["zy"] = 0.3979327919, ["zm"] = 125, },
+    }
+  },
+  [7475] = {
+    ["c"] = true,
+    ["cn"] = "Library of Incunabula",
+    ["n"] = "Letter to the Magnastylus",
+    ["e"] = {
+      [1] = { ["px"] = 0.6162287995, ["py"] = 0.4037220004, ["pm"] = 2289, ["d"] = true, ["zx"] = 0.6163903933, ["zy"] = 0.3979327919, ["zm"] = 125, },
+    }
+  },
+  [7473] = {
+    ["c"] = true,
+    ["cn"] = "Library of Incunabula",
+    ["n"] = "Mission Report: Successful",
+    ["e"] = {
+      [1] = { ["px"] = 0.6161935995, ["py"] = 0.4037172003, ["pm"] = 2289, ["d"] = true, ["zx"] = 0.6163903933, ["zy"] = 0.3979327919, ["zm"] = 125, },
+    }
+  },
+  [7349] = {
+    ["c"] = true,
+    ["cn"] = "Library of Incunabula",
+    ["n"] = "Journal of Kovan Giryon",
+    ["e"] = {
+      [1] = { ["px"] = 0.7834560094, ["py"] = 0.4616164114, ["pm"] = 2255, ["d"] = true, ["zx"] = 0.7770799938, ["zy"] = 0.4578639996, ["zm"] = 7, },
+    }
+  },
+  [7350] = {
+    ["c"] = true,
+    ["cn"] = "Library of Incunabula",
+    ["n"] = "Journal of Nerile Belvayn",
+    ["e"] = {
+      [1] = { ["px"] = 0.7829868265, ["py"] = 0.4607308128, ["pm"] = 2258, ["d"] = true, ["zx"] = 0.7770799938, ["zy"] = 0.4578639996, ["zm"] = 7, },
+    }
+  },
+  [7351] = {
+    ["c"] = true,
+    ["cn"] = "Library of Incunabula",
+    ["n"] = "Journal of Adosi Fevur",
+    ["e"] = {
+      [1] = { ["px"] = 0.7912075943, ["py"] = 0.4628452146, ["pm"] = 2262, ["d"] = true, ["zx"] = 0.7770799938, ["zy"] = 0.4578639996, ["zm"] = 7, },
+    }
+  },
 }
 
 function LoreBooks_GetBookData()
@@ -58977,7 +59050,7 @@ function LoreBooks_GetEideticData(mapId, z_mapId)
     local _, _, _, totalBooks = GetLoreCollectionInfo(internal.LORE_LIBRARY_EIDETIC, collectionIndex)
     for bookIndex = 1, totalBooks do
       local eideticBookZoneData = LoreBooks_GetNewEideticData(internal.LORE_LIBRARY_EIDETIC, collectionIndex, bookIndex)
-      local bookName, _, _, bookId = GetLoreBookInfo(internal.LORE_LIBRARY_EIDETIC, collectionIndex, bookIndex)
+      local _, _, _, bookId = GetLoreBookInfo(internal.LORE_LIBRARY_EIDETIC, collectionIndex, bookIndex)
       local eideticBooks
       if eideticBookZoneData and eideticBookZoneData.c and eideticBookZoneData.e then
         eideticBooks = eideticBookZoneData.c and NonContiguousCount(eideticBookZoneData.e) > 0
