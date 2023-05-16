@@ -3266,6 +3266,23 @@ local lorebooksData = {
     -- The Trial of Eyevea
     { 0.790, 0.253, 7, 1 }, -- How the Kwama Lost His Shoes
   },
+  [2343] = { -- telvanni/u38_necrom_base_0
+    { 0.3584167659, 0.5731035471, 8, 1 }, -- Aedra and Daedra, 
+    { 0.582, 0.524, 8, 4 }, -- The House of Troubles
+  },
+  [2275] = { -- apocrypha/u38_apocrypha_base_0
+    { 0.7145946622, 0.8545875549, 17, 1 }, -- The Book of Daedra
+    { 0.577, 0.548, 8, 9 }, --Fragmentae Abyssum Hermaeus Morus
+  },
+  [2274] = { -- telvanni/u38_telvannipeninsula_base_0
+    { 0.4495556355, 0.5568020940, 11, 8 }, -- Where Magical Paths Meet
+    { 0.787, 0.355, 8, 1 }, -- Aedra and Daedra
+    { 0.840, 0.343, 8, 4 }, --The House of Troubles
+    { 0.588, 0.681, 20, 1 }, -- Ancestors and the Dunmer (Abridged)
+  },
+  [2317] = { -- apocrypha/u38_disquiet_study_base_0
+    { 0.4920897484, 0.3628119528, 8, 6 }, -- Modern Heretics 
+  },
 }
 
 --[[TODO Update this to use any new libraries for tracking character
