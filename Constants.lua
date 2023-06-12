@@ -5,8 +5,8 @@ _G["LoreBooks_Internal"] = internal
 
 --Local constants -------------------------------------------------------------
 internal.ADDON_NAME = "LoreBooks"
-internal.ADDON_AUTHOR = "Garkin, Ayantir, Kyoma, Sharlikran"
-internal.ADDON_VERSION = "70"
+internal.ADDON_AUTHOR = "Garkin, Ayantir, Kyoma, |cFF9B15Sharlikran|r"
+internal.ADDON_VERSION = "71"
 internal.ADDON_WEBSITE = "http://www.esoui.com/downloads/info288-LoreBooks.html"
 internal.ADDON_PANEL = "LoreBooksPanel"
 internal.SAVEDVARIABLES_VERSION = 3
