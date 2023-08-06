@@ -2050,7 +2050,7 @@ local lorebooksData = {
     { 0.645, 0.229, 28, 4 }, -- A Looter's Paradise
     { 0.312, 0.554, 28, 4 },
     { 0.5748, 0.6286, 28, 4 },
-    { 0.327, 0.228, 28, 6 }, -- Elven Eyes, Elven Spies
+    { 0.3281827867, 0.2238575518, 28, 6, }, -- Elven Eyes, Elven Spies
     { 0.126, 0.350, 28, 6 },
   },
   [312] = { -- rawlkha_base
@@ -2548,8 +2548,7 @@ local lorebooksData = {
   },
   [510] = { -- kragenmoor_base
     -- Tamriel History
-    { 0.515, 0.367, 19, 4 }, -- History of the Fighters Guild Pt. 2
-    { 0.597, 0.623, 19, 4 },
+    { 0.5997892022, 0.6231971383, 19, 4, },
     { 0.702, 0.497, 19, 4 },
     { 0.257, 0.524, 19, 4 },
   },
@@ -3020,12 +3019,11 @@ local lorebooksData = {
     { 0.6858, 0.6227, 23, 9 },
     { 0.7125, 0.4565, 23, 9 },
   },
-
   -- clockwork
   [1313] = { -- clockwork_base
-    { 0.7863, 0.5314, 8, 4 }, -- The House of Troubles
+    { 0.7863360047, 0.5328823328, 8, 4, }, -- The House of Troubles
     { 0.4110, 0.4609, 14, 9, ld = { 4, } }, -- Crow and Raven: Three Short Fables
-    { 0.4423, 0.5048, 15, 5 }, -- The Old Ways
+    { 0.4423002303, 0.5061022043, 15, 5, }, -- The Old Ways
     { 0.8767, 0.6055, 17, 4 }, -- The Doors of Oblivion, Part 2
     { 0.6890, 0.6311, 20, 8 }, -- Varieties of Faith: The Dark Elves
     { 0.6872, 0.4288, 23, 1 }, -- The Living Gods
@@ -3231,6 +3229,7 @@ local lorebooksData = {
     { 0.6640, 0.2300, 9, 5 }, --Triumphs of a Monarch, Ch. 3
     { 0.8530, 0.2670, 9, 6 }, --Triumphs of a Monarch, Ch. 6
     { 0.8550, 0.3370, 18, 5 }, --Flesh to Cut from Bone
+    { 0.5086468458, 0.8415690064, 1, 5, ["ld"] = { 9999, } }, -- Guide to the Daggerfall Covenant, systres/u34_systreszone_base_0
   },
 
   [2212] = { -- galen/u36_galenisland_base_0
@@ -3266,13 +3265,16 @@ local lorebooksData = {
     -- The Trial of Eyevea
     { 0.790, 0.253, 7, 1 }, -- How the Kwama Lost His Shoes
   },
+  [2163] = { -- u34_gonfalonbaycity_base_0
+    { 0.2663875520, 0.4422248900, 1, 5, }, -- Guide to the Daggerfall Covenant
+  },
   [2343] = { -- telvanni/u38_necrom_base_0
-    { 0.3584167659, 0.5731035471, 8, 1 }, -- Aedra and Daedra, 
+    { 0.3584167659, 0.5731035471, 8, 1 }, -- Aedra and Daedra,
     { 0.582, 0.524, 8, 4 }, -- The House of Troubles
   },
   [2275] = { -- apocrypha/u38_apocrypha_base_0
     { 0.7145946622, 0.8545875549, 17, 1 }, -- The Book of Daedra
-    { 0.577, 0.548, 8, 9 }, --Fragmentae Abyssum Hermaeus Morus
+    { 0.5771217942, 0.5482755899, 8, 9, ld = { 11, } }, --Fragmentae Abyssum Hermaeus Morus
   },
   [2274] = { -- telvanni/u38_telvannipeninsula_base_0
     { 0.4495556355, 0.5568020940, 11, 8 }, -- Where Magical Paths Meet
@@ -3281,7 +3283,10 @@ local lorebooksData = {
     { 0.588, 0.681, 20, 1 }, -- Ancestors and the Dunmer (Abridged)
   },
   [2317] = { -- apocrypha/u38_disquiet_study_base_0
-    { 0.4920897484, 0.3628119528, 8, 6 }, -- Modern Heretics 
+    { 0.4920897484, 0.3628119528, 8, 6 }, -- Modern Heretics
+  },
+  [2384] = { -- apocrypha/u38_disquiet_study_base_0
+    { 0.4438024461, 0.4614483714, 8, 9, ld = { 11, } }, --Fragmentae Abyssum Hermaeus Morus
   },
 }
 

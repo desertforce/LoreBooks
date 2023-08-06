@@ -11,4 +11,8 @@ LoreBooks.locationDetails = {
   [8] = "Le grenier", -- 2
   [9] = "Hidden Basement", -- 3
   [10] = "Bookshelf", -- 4
+  [11] = "Leramil's Study",
+  [12] = "Associate Zannon's Workshop",
+  [13] = "Derelict Laboratory",
+  [14] = "Hall Of Refined Techniques",
 }

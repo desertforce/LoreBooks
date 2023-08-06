@@ -639,7 +639,7 @@ local function MapCallbackCreateEideticPins(pinType)
       end
       local hasLocation = pinData.xLoc ~= nil and pinData.yLoc ~= nil
       local meetsPinCriteria = (isDungeon and pinData.d) or (not isDungeon and not pinData.d) or fakePinInfo or dualMapIdsDungeonPin
-      local displayKnownPin = hasLocation and meetsPinCriteria and pinType == internal.PINS_EIDETIC_COLLECTED and known and LMP:IsEnabled(internal.PINS_EIDETIC)
+      local displayKnownPin = hasLocation and meetsPinCriteria and pinType == internal.PINS_EIDETIC_COLLECTED and known and LMP:IsEnabled(internal.PINS_EIDETIC_COLLECTED)
       local displayUnnownPin = hasLocation and meetsPinCriteria and pinType == internal.PINS_EIDETIC and not known and shouldDisplay and LMP:IsEnabled(internal.PINS_EIDETIC)
 
       -- Eidetic Memory Collected
