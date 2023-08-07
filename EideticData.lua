@@ -60481,7 +60481,6 @@ local bookData = {
       [1] = { ["px"] = 0.8939672051, ["py"] = 0.4530512014, ["pm"] = 2274, },
     },
   },
-  -- Note for any new additions: PLEASE be sure to put them in numerical order by ID. These have painstakingly ensured to been kept in order.
 }
 
 function LoreBooks_GetBookData()
