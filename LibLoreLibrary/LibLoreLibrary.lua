@@ -7,8 +7,6 @@ _G[LIB_IDENTIFIER] = lib
 
 local lang = GetCVar("Language.2")
 
-local GetOriginalLoreCollectionInfo = GetLoreCollectionInfo
-
 lib.locales = { "en", "es", "de", "fr", "ru", "br", "it", "pl", "zh" }
 function lib:IsLanguageSupported(language)
   for _, l in ipairs(self.locales) do
@@ -77,7 +75,7 @@ end
 
 function lib:IsEideticMemoryUnlocked()
   -- just try to grab any eidetic memory collection and check totalBooks > 0
-  return select(4, GetOriginalLoreCollectionInfo(3, 1)) > 0
+  return select(4, GetLoreCollectionInfo(3, 1)) > 0
 end
 
 local isEmulating = false
@@ -112,24 +110,24 @@ function lib:CollectLibraryData(currentOnly, langIdx)
   if LibLoreLibrary_Data.isCollecting then
     local libraryData = LibLoreLibrary_Data.data[self.APIVersion]
     for categoryIndex = 1, GetNumLoreCategories() do
-      local categoryName, numCollections = GetLoreCategoryInfo(categoryIndex)
+      local categoryName, numCollections, categoryId = GetLoreCategoryInfo(categoryIndex)
       for collectionIndex = 1, numCollections do
-        local collectionName, description, numKnownBooks, totalBooks, hidden, gamepadIcon, collectionId = GetOriginalLoreCollectionInfo(categoryIndex, collectionIndex)
-        if not libraryData[categoryIndex] then
-          libraryData[categoryIndex] = {}
+        local collectionName, description, numKnownBooks, totalBooks, hidden, gamepadIcon, collectionId = GetLoreCollectionInfo(categoryIndex, collectionIndex)
+        if totalBooks > 0 and collectionId > 0 then
+          libraryData[categoryIndex] = libraryData[categoryIndex] or {}
+          if not libraryData[categoryIndex][collectionIndex] then
+            libraryData[categoryIndex][collectionIndex] = {
+              t = totalBooks,
+              h = hidden,
+              g = gamepadIcon,
+              n = {},
+              d = {},
+              k = collectionId,
+            }
+          end
+          libraryData[categoryIndex][collectionIndex].n[lang] = collectionName
+          libraryData[categoryIndex][collectionIndex].d[lang] = description
         end
-        if not libraryData[categoryIndex][collectionIndex] then
-          libraryData[categoryIndex][collectionIndex] = {
-            t = totalBooks,
-            h = hidden,
-            g = gamepadIcon,
-            n = {},
-            d = {},
-            k = collectionId,
-          }
-        end
-        libraryData[categoryIndex][collectionIndex].n[lang] = collectionName
-        libraryData[categoryIndex][collectionIndex].d[lang] = description
       end
     end
 
