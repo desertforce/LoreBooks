@@ -1,7 +1,9 @@
 local LoreBooks = {}
 local internal = {}
+LoreBooks.db = {}
 _G["LoreBooks"] = LoreBooks
 _G["LoreBooks_Internal"] = internal
+
 
 --Local constants -------------------------------------------------------------
 internal.ADDON_NAME = "LoreBooks"
