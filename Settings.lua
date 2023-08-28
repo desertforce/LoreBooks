@@ -5,48 +5,9 @@ local LAM = LibAddonMenu2
 local LMP = LibMapPins
 
 local db
-local defaults = {      --default settings for saved variables
-  compassMaxDistance = 0.04,
-  pinTexture = {
-    type = 1,
-    size = 26,
-    level = 40,
-  },
-  pinGrayscale = true,
-  pinTextureEidetic = 1,
-  pinGrayscaleEidetic = true,
-  filters = {
-    [internal.PINS_COMPASS_EIDETIC] = false,
-    [internal.PINS_COMPASS] = true,
-    [internal.PINS_UNKNOWN] = true,
-    [internal.PINS_COLLECTED] = false,
-    [internal.PINS_EIDETIC] = false,
-    [internal.PINS_EIDETIC_COLLECTED] = false,
-    [internal.PINS_BOOKSHELF] = true,
-    [internal.PINS_COMPASS_BOOKSHELF] = false,
 
-  },
-  shareData = true,
-  postmailData = "",
-  postmailFirstInsert = GetTimeStamp(),
-  booksCollected = {},
-  unlockEidetic = false,
-  steps = {},
-  immersiveMode = 1,
-  questTools = {},
-  showClickMenu = true,
-  showDungeonTag = true,
-  showQuestName = true,
-}
-
-function LoreBooks:GetSettings()
-  return db
-end
-
-function LoreBooks:CreateSettings()
-
-  db = ZO_SavedVars:NewAccountWide("LBooks_SavedVariables", internal.SAVEDVARIABLES_VERSION, nil, defaults)
-
+function LoreBooks:CreateLamPanel()
+  db = LoreBooks:GetSavedVariables()
   local panelData = {
     type = "panel",
     name = GetString(LBOOKS_TITLE),

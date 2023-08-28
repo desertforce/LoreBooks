@@ -661,7 +661,10 @@ local function InitializePins()
   local pinTextures = internal.PIN_TEXTURES
   local pinTextureLevel = db.pinTexture.level
   local pinTextureSize = db.pinTexture.size
+  local pinTextureType = db.pinTexture.type
   local compassMaxDistance = db.compassMaxDistance
+  local invertedTextureFromTable = 2
+  local selectedTexture = pinTextures[pinTexturetype][invertedTextureFromTable] or internal.MISSING_TEXTURE
 
   local mapPinLayout_eidetic = { level = pinTextureLevel, texture = GetPinTextureEidetic, size = pinTextureSize, grayscale = IsEideticPinGrayscale }
   local mapPinLayout_eideticCollected = { level = pinTextureLevel, texture = GetPinTextureEidetic, size = pinTextureSize }
@@ -669,7 +672,7 @@ local function InitializePins()
   local mapPinLayout_collected = { level = pinTextureLevel, texture = GetPinTexture, size = pinTextureSize, grayscale = IsShaliPinGrayscale }
   local mapPinLayout_bookshelf = { level = pinTextureLevel, texture = GetPinTextureBookshelf, size = pinTextureSize }
 
-  local compassPinLayout = { maxDistance = compassMaxDistance, texture = pinTextures[db.pinTexture.type][2],
+  local compassPinLayout = { maxDistance = compassMaxDistance, texture = selectedTexture,
                              sizeCallback = function(pin, angle, normalizedAngle, normalizedDistance)
                                if zo_abs(normalizedAngle) > 0.25 then
                                  pin:SetDimensions(54 - 24 * zo_abs(normalizedAngle), 54 - 24 * zo_abs(normalizedAngle))
@@ -1972,14 +1975,23 @@ local function CreateFakeLorebookPin()
   MyPrint(outText)
 end
 
+local function SetupSavedVariables()
+  db = ZO_SavedVars:NewAccountWide("LBooks_SavedVariables", internal.SAVEDVARIABLES_VERSION, nil, LoreBooks.defaults)
+end
+
+function LoreBooks:GetSavedVariables()
+  return db
+end
+
 local function OnLoad(eventCode, name)
 
   if name == internal.ADDON_NAME then
 
     EVENT_MANAGER:UnregisterForEvent(internal.ADDON_NAME, EVENT_ADD_ON_LOADED)
 
-    LoreBooks:CreateSettings()
-    db = LoreBooks:GetSettings()
+    SetupSavedVariables()
+
+    LoreBooks:CreateLamPanel()
 
     -- Lorelibrary
     RebuildLoreLibrary()

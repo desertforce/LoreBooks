@@ -130,6 +130,40 @@ internal.icon_list_zoneid = {
   [267] = "/esoui/art/icons/housing_alt_fur_cabinet004.dds", -- eyevea_base_0
 }
 
+LoreBooks.defaults = {      --default settings for saved variables
+  compassMaxDistance = 0.04,
+  pinTexture = {
+    type = 1,
+    size = 26,
+    level = 40,
+  },
+  pinGrayscale = true,
+  pinTextureEidetic = 1,
+  pinGrayscaleEidetic = true,
+  filters = {
+    [internal.PINS_COMPASS_EIDETIC] = false,
+    [internal.PINS_COMPASS] = true,
+    [internal.PINS_UNKNOWN] = true,
+    [internal.PINS_COLLECTED] = false,
+    [internal.PINS_EIDETIC] = false,
+    [internal.PINS_EIDETIC_COLLECTED] = false,
+    [internal.PINS_BOOKSHELF] = true,
+    [internal.PINS_COMPASS_BOOKSHELF] = false,
+
+  },
+  shareData = true,
+  postmailData = "",
+  postmailFirstInsert = GetTimeStamp(),
+  booksCollected = {},
+  unlockEidetic = false,
+  steps = {},
+  immersiveMode = 1,
+  questTools = {},
+  showClickMenu = true,
+  showDungeonTag = true,
+  showQuestName = true,
+}
+
 -- /esoui/art/icons/housing_arg_fur_mrkshelftall001.dds Argonian
 -- /esoui/art/icons/housing_arg_duc_bookcasecombined001.dds Murkmire Bookshelf, Full
 -- /esoui/art/icons/housing_bre_fur_bookcasetall001.dds Brenton
