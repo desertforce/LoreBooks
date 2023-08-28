@@ -659,10 +659,12 @@ local function InitializePins()
   local pinTextures = internal.PIN_TEXTURES
   local pinTextureLevel = LoreBooks.db.pinTexture.level
   local pinTextureSize = LoreBooks.db.pinTexture.size
-  local pinTextureType = LoreBooks.db.pinTexture.type
+  local compassTextureType = LoreBooks.db.pinTexture.type
+  local compassEideticTextureType = LoreBooks.db.pinTextureEidetic
   local compassMaxDistance = LoreBooks.db.compassMaxDistance
   local invertedTextureFromTable = 2
-  local selectedTexture = pinTextures[pinTexturetype][invertedTextureFromTable] or internal.MISSING_TEXTURE
+  local compassLayoutTexture = pinTextures[compassTextureType][invertedTextureFromTable] or internal.MISSING_TEXTURE
+  local compassEideticLayoutTexture = pinTextures[compassEideticTextureType][invertedTextureFromTable] or internal.MISSING_TEXTURE
 
   local mapPinLayout_eidetic = { level = pinTextureLevel, texture = GetPinTextureEidetic, size = pinTextureSize, grayscale = IsEideticPinGrayscale }
   local mapPinLayout_eideticCollected = { level = pinTextureLevel, texture = GetPinTextureEidetic, size = pinTextureSize }
@@ -670,7 +672,7 @@ local function InitializePins()
   local mapPinLayout_collected = { level = pinTextureLevel, texture = GetPinTexture, size = pinTextureSize, grayscale = IsShaliPinGrayscale }
   local mapPinLayout_bookshelf = { level = pinTextureLevel, texture = GetPinTextureBookshelf, size = pinTextureSize }
 
-  local compassPinLayout = { maxDistance = compassMaxDistance, texture = selectedTexture,
+  local compassPinLayout = { maxDistance = compassMaxDistance, texture = compassLayoutTexture,
                              sizeCallback = function(pin, angle, normalizedAngle, normalizedDistance)
                                if zo_abs(normalizedAngle) > 0.25 then
                                  pin:SetDimensions(54 - 24 * zo_abs(normalizedAngle), 54 - 24 * zo_abs(normalizedAngle))
@@ -693,7 +695,7 @@ local function InitializePins()
                                end
                              }
   }
-  local compassPinLayoutEidetic = { maxDistance = compassMaxDistance, texture = pinTextures[LoreBooks.db.pinTextureEidetic][2],
+  local compassPinLayoutEidetic = { maxDistance = compassMaxDistance, texture = compassEideticLayoutTexture,
                                     sizeCallback = function(pin, angle, normalizedAngle, normalizedDistance)
                                       if zo_abs(normalizedAngle) > 0.25 then
                                         pin:SetDimensions(54 - 24 * zo_abs(normalizedAngle), 54 - 24 * zo_abs(normalizedAngle))
