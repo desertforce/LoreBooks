@@ -8,7 +8,7 @@ _G["LoreBooks_Internal"] = internal
 --Local constants -------------------------------------------------------------
 internal.ADDON_NAME = "LoreBooks"
 internal.ADDON_AUTHOR = "Garkin, Ayantir, Kyoma, |cFF9B15Sharlikran|r"
-internal.ADDON_VERSION = "73"
+internal.ADDON_VERSION = "74"
 internal.ADDON_WEBSITE = "http://www.esoui.com/downloads/info288-LoreBooks.html"
 internal.ADDON_PANEL = "LoreBooksPanel"
 internal.SAVEDVARIABLES_VERSION = 3
@@ -135,12 +135,12 @@ internal.icon_list_zoneid = {
 LoreBooks.defaults = {      --default settings for saved variables
   compassMaxDistance = 0.04,
   pinTexture = {
-    type = 1,
+    type = internal.PIN_ICON_REAL,
     size = 26,
     level = 40,
   },
   pinGrayscale = true,
-  pinTextureEidetic = 1,
+  pinTextureEidetic = internal.PIN_ICON_REAL,
   pinGrayscaleEidetic = true,
   filters = {
     [internal.PINS_COMPASS_EIDETIC] = false,

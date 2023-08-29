@@ -1,7 +1,7 @@
 ## Title: |cEFEBBELoreBooks|r
 ## Description: Displays map pins for Shalidor's and Eidetic Libraries books
-## Version: 73
-## AddOnVersion: 73
+## Version: 74
+## AddOnVersion: 74
 ## Author: Kyoma, Ayantir, Garkin, Sharlikran
 ## APIVersion: 101038 101039
 ## SavedVariables: LBooks_SavedVariables
