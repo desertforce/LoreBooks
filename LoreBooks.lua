@@ -387,8 +387,9 @@ local bookshelves
 local eideticBooks
 
 local function UpdateShalidorLorebooksData(mapId, zoneMapId)
-  --internal:dm("Debug", "UpdateShalidorLorebooksData")
+  internal:dm("Debug", "UpdateShalidorLorebooksData")
   if LMD.mapTexture ~= lastZoneShalidor or LMD.mapId ~= lastMapIpShalidor then
+    internal:dm("Warn", "Shalidor Books Updated")
     lastZoneShalidor = LMD.mapTexture
     lastMapIpShalidor = LMD.mapId
     lorebooks = LoreBooks_GetLocalData(mapId) -- Shalidor
@@ -398,8 +399,9 @@ local function UpdateShalidorLorebooksData(mapId, zoneMapId)
 end
 
 local function UpdateBookshelfLorebooksData(mapId, zoneMapId)
-  --internal:dm("Debug", "UpdateBookshelfLorebooksData")
+  internal:dm("Debug", "UpdateBookshelfLorebooksData")
   if LMD.mapTexture ~= lastZoneBookshelf or LMD.mapId ~= lastMapIpBookshelf then
+    internal:dm("Warn", "Bookshelf Data Updated")
     lastZoneBookshelf = LMD.mapTexture
     lastMapIpBookshelf = LMD.mapId
     bookshelves = LoreBooks_GetBookshelfDataFromMapId(mapId) -- Bookshelf
@@ -409,9 +411,9 @@ local function UpdateBookshelfLorebooksData(mapId, zoneMapId)
 end
 
 local function UpdateEideticLorebooksData(mapId, zoneMapId)
-  --internal:dm("Debug", "UpdateEideticLorebooksData")
+  internal:dm("Debug", "UpdateEideticLorebooksData")
   if LMD.mapTexture ~= lastZoneEidetic or LMD.mapId ~= lastMapIpEidetic then
-    --internal:dm("Warn", "UpdateEideticLorebooksData")
+    internal:dm("Warn", "EideticBooks Updated")
     lastZoneEidetic = LMD.mapTexture
     lastMapIpEidetic = LMD.mapId
     eideticBooks = LoreBooks_GetEideticData(mapId, zoneMapId) -- All Eidetic Books in Zone
@@ -421,12 +423,11 @@ local function UpdateEideticLorebooksData(mapId, zoneMapId)
 end
 
 local function ShalidorCompassCallback()
-  --internal:dm("Debug", "ShalidorCompassCallback")
-
   if LMD.isWorld then
     --internal:dm("Debug", "Tamriel or Aurbis reached, stopped")
     return
   end
+  internal:dm("Debug", "ShalidorCompassCallback")
 
   if lorebooks then
     for _, pinData in ipairs(lorebooks) do
@@ -439,12 +440,11 @@ local function ShalidorCompassCallback()
 end
 
 local function BookshelfCompassCallback()
-  --internal:dm("Debug", "BookshelfCompassCallback")
-
   if LMD.isWorld then
     --internal:dm("Debug", "Tamriel or Aurbis reached, stopped")
     return
   end
+  internal:dm("Debug", "BookshelfCompassCallback")
 
   if bookshelves then
     for _, pinData in ipairs(bookshelves) do
@@ -456,12 +456,11 @@ local function BookshelfCompassCallback()
 end
 
 local function EideticMemoryCompassCallback()
-  --internal:dm("Debug", "EideticMemoryCompassCallback")
-
   if LMD.isWorld then
     --internal:dm("Debug", "Tamriel or Aurbis reached, stopped")
     return
   end
+  internal:dm("Debug", "EideticMemoryCompassCallback")
 
   local mapId = LMD.mapId
   if eideticBooks then
@@ -500,12 +499,11 @@ local function EideticMemoryCompassCallback()
 end
 
 local function MapCallbackCreateShalidorPins(pinType)
-  --internal:dm("Debug", "MapCallbackCreateShalidorPins")
-
   if LMD.isWorld then
     --internal:dm("Debug", "Tamriel or Aurbis reached, stopped")
     return
   end
+  internal:dm("Debug", "MapCallbackCreateShalidorPins: " .. pinType)
 
   local mapId = LMD.mapId
   local zoneMapId = LMD:GetZoneMapIdFromZoneId(LMD.zoneId)
@@ -534,12 +532,11 @@ local function MapCallbackCreateShalidorPins(pinType)
 end
 
 local function MapCallbackCreateBookshelfPins(pinType)
-  --internal:dm("Debug", "MapCallbackCreateBookshelfPins")
-
   if LMD.isWorld then
     --internal:dm("Debug", "Tamriel or Aurbis reached, stopped")
     return
   end
+  internal:dm("Debug", "MapCallbackCreateBookshelfPins")
 
   local mapId = LMD.mapId
   local zoneMapId = LMD:GetZoneMapIdFromZoneId(LMD.zoneId)
@@ -560,12 +557,11 @@ local function MapCallbackCreateBookshelfPins(pinType)
 end
 
 local function MapCallbackCreateEideticPins(pinType)
-  --internal:dm("Debug", "MapCallbackCreateEideticPins: " .. pinType)
-
   if LMD.isWorld then
     --internal:dm("Debug", "Tamriel or Aurbis reached, stopped")
     return
   end
+  internal:dm("Debug", "MapCallbackCreateEideticPins: " .. pinType)
 
   local zoneMapId = LMD:GetZoneMapIdFromZoneId(LMD.zoneId)
   UpdateEideticLorebooksData(LMD.mapId, zoneMapId)
