@@ -734,8 +734,8 @@ local function InitializePins()
   --add map filters
   LMP:AddPinFilter(internal.PINS_UNKNOWN, GetString(LBOOKS_FILTER_UNKNOWN), nil, LoreBooks.db.filters)
   LMP:AddPinFilter(internal.PINS_COLLECTED, GetString(LBOOKS_FILTER_COLLECTED), nil, LoreBooks.db.filters)
-  LMP:AddPinFilter(internal.PINS_EIDETIC, GetLoreCategoryInfo(3), nil, LoreBooks.db.filters)
-  LMP:AddPinFilter(internal.PINS_EIDETIC_COLLECTED, zo_strformat(LBOOKS_FILTER_EICOLLECTED, GetLoreCategoryInfo(3)), nil, LoreBooks.db.filters)
+  LMP:AddPinFilter(internal.PINS_EIDETIC, GetLoreCategoryInfo(internal.LORE_LIBRARY_EIDETIC), nil, LoreBooks.db.filters)
+  LMP:AddPinFilter(internal.PINS_EIDETIC_COLLECTED, zo_strformat(LBOOKS_FILTER_EICOLLECTED, GetLoreCategoryInfo(internal.LORE_LIBRARY_EIDETIC)), nil, LoreBooks.db.filters)
   LMP:AddPinFilter(internal.PINS_BOOKSHELF, GetString(LBOOKS_FILTER_BOOKSHELF), nil, LoreBooks.db.filters)
 
   --add handler for the left click
@@ -1060,7 +1060,7 @@ local function BuildShalidorReport()
   local booksInShalidor = 0
 
   local collectionsData = {}
-  local _, numCollections = GetLoreCategoryInfo(1)
+  local _, numCollections = GetLoreCategoryInfo(internal.LORE_LIBRARY_SHALIDOR)
   for collectionIndex = 1, numCollections do
     local name, _, numKnownBooks, totalBooks, hidden = GetLoreCollectionInfo(1, collectionIndex)
     if not hidden then
@@ -1903,11 +1903,14 @@ local function CreateEideticLorebookLocation()
   if collectionIndex and bookIndex then
     _, _, _, bookId = GetLoreBookInfo(internal.LORE_LIBRARY_EIDETIC, collectionIndex, bookIndex)
   end
+  local collectionName = GetLoreCollectionInfo(categoryIndex, collectionIndex)
   -- /script d({GetLoreBookIndicesFromBookId(151)})
   -- /script d({GetLoreBookInfo(3, 21, 1)})
   if categoryIndex and categoryIndex == internal.LORE_LIBRARY_SHALIDOR then
     outText = string.format("[%d] = { %.10f, %.10f, %s, %s, moreInfo }, -- %s, %s", mapId, x, y, collectionIndex, bookIndex, bookName, zone)
   elseif categoryIndex and categoryIndex == internal.LORE_LIBRARY_EIDETIC then
+    local cnf = '"cn"' -- used for Collection Name
+    local nf = '"n"' -- used for Book Name
     local ef = '"e"'
     local df = '"d"' -- inDungeon
     local mdf = '"pm"' -- mapId
@@ -1921,14 +1924,15 @@ local function CreateEideticLorebookLocation()
     local mf = '"m"' -- used for zone booklist
     local zf = '"z"' -- used for zone bookshelf
     if isDungeon then
-      outText = string.format("[%d] = { [%s] = { [1] = { [%s] = %.10f, [%s] = %.10f, [%s] = %d, [%s] = %s, }, }, }, { [%s] = %d, [%s] = %.10f, [%s] = %.10f }, -- %s, %s",
-        shownBookId, ef, pxf, xpos, pyf, ypos, mdf, mapId, df, tostring(isDungeon), smf, mapId, pnxf, x, pnyf, y, bookName, zone)
+      outText = string.format("[%d] = { [%s] = %s, [%s] = %s, [%s] = { [1] = { [%s] = %.10f, [%s] = %.10f, [%s] = %d, [%s] = %s, }, }, }, { [%s] = %d, [%s] = %.10f, [%s] = %.10f }, -- %s",
+        shownBookId, cnf, '"'.. collectionName .. '"', nf, '"'.. bookName .. '"', ef, pxf, xpos, pyf, ypos, mdf, mapId, df, tostring(isDungeon), smf, mapId, pnxf, x, pnyf, y, zone)
     else
-      outText = string.format("[%d] = { [%s] = { [1] = { [%s] = %.10f, [%s] = %.10f, [%s] = %d, }, }, }, { [%s] = %d, [%s] = %.10f, [%s] = %.10f }, -- %s, %s",
-        shownBookId, ef, pxf, xpos, pyf, ypos, mdf, mapId, smf, mapId, pnxf, x, pnyf, y, bookName, zone)
+      outText = string.format("[%d] = { [%s] = %s, [%s] = %s, [%s] = { [1] = { [%s] = %.10f, [%s] = %.10f, [%s] = %d, }, }, }, { [%s] = %d, [%s] = %.10f, [%s] = %.10f }, -- %s",
+        shownBookId, cnf, '"'.. collectionName .. '"', nf, '"'.. bookName .. '"', ef, pxf, xpos, pyf, ypos, mdf, mapId, smf, mapId, pnxf, x, pnyf, y, zone)
     end
+    -- the bookshelf data uses the zoneId to determine the icon
     if isBookshelf then
-      outText = string.format("[%d] = { [%s] = { [%d] = 1, }, }, [%d] = { { [%s] = %.10f, [%s] = %.10f, [%s] = %d, }, },  -- %s, %s",
+      outText = string.format("[%d] = { [%s] = { [%d] = 1, }, }, [%d] = { { [%s] = %.10f, [%s] = %.10f, [%s] = %d, }, },  -- Bookshelf: %s, %s",
         shownBookId, mf, zoneMapId, mapId, xf, x, yf, y, zf, zoneId, bookName, zone)
     end
   end
