@@ -9392,16 +9392,12 @@ local bookData = {
   },
   [868] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = {
-        ["mn"] = 23,
-        ["py"] = 0.2186800000,
-        ["px"] = -0.0791700000,
-        ["pm"] = 255,
-      },
-    },
-    ["n"] = "Journal of Tsona-Ei, Part Four",
     ["cn"] = "Personal Journals",
+    ["n"] = "Journal of Tsona-Ei, Part Four",
+    ["q"] = 4358,
+    ["e"] = {
+      [1] = { ["px"] = -0.0791988034, ["py"] = 0.2186847989, ["pm"] = 255, },
+    },
   },
   [869] = {
     ["c"] = true,
@@ -9652,11 +9648,12 @@ local bookData = {
   },
   [889] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = { ["px"] = -0.1127103975, ["py"] = 0.2662416037, ["pm"] = 350, ["zx"] = -0.1188328042, ["zy"] = 0.2655320053, ["zm"] = 255, ["d"] = true, },
-    },
-    ["n"] = "If You Can Read This, Open It",
     ["cn"] = "Research Notes",
+    ["n"] = "If You Can Read This, Open It",
+    ["q"] = 4352,
+    ["e"] = {
+      [1] = { ["px"] = -0.1181804020, ["py"] = 0.2659416027, ["pm"] = 350, ["d"] = true, ["zx"] = -0.1188416016, ["zy"] = 0.2655072004, ["zm"] = 255, },
+    },
   },
   [890] = {
     ["c"] = true,
@@ -9758,76 +9755,51 @@ local bookData = {
   },
   [916] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = { ["px"] = -0.0823180019, ["py"] = 0.2712475985, ["pm"] = 255, },
-    },
-    ["n"] = "Everfull Flagon Handbill",
     ["cn"] = "Handbills, Posters, and Decrees",
+    ["n"] = "Everfull Flagon Handbill",
+    ["e"] = {
+      [1] = { ["px"] = -0.0823344049, ["py"] = 0.2711436025, ["pm"] = 255, },
+    },
   },
   [918] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = {
-        ["mn"] = 23,
-        ["py"] = 0.2157000000,
-        ["px"] = -0.0852500000,
-        ["pm"] = 255,
-      },
-    },
-    ["n"] = "Journal of Tsona-Ei, Part One",
     ["cn"] = "Personal Journals",
+    ["n"] = "Journal of Tsona-Ei, Part One",
+    ["e"] = {
+      [1] = { ["px"] = -0.0852148083, ["py"] = 0.2157236022, ["pm"] = 255, },
+    },
   },
   [919] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = {
-        ["mn"] = 23,
-        ["py"] = 0.2144300000,
-        ["px"] = -0.0804000000,
-        ["pm"] = 255,
-      },
-    },
-    ["n"] = "Journal of Tsona-Ei, Part Two",
     ["cn"] = "Personal Journals",
+    ["n"] = "Journal of Tsona-Ei, Part Two",
+    ["e"] = {
+      [1] = { ["px"] = -0.0804664028, ["py"] = 0.2143940008, ["pm"] = 255, },
+    },
   },
   [920] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = {
-        ["mn"] = 23,
-        ["py"] = 0.2092300000,
-        ["px"] = -0.0766100000,
-        ["pm"] = 255,
-      },
-    },
-    ["n"] = "Journal of Tsona-Ei, Part Three",
     ["cn"] = "Personal Journals",
+    ["n"] = "Journal of Tsona-Ei, Part Three",
+    ["e"] = {
+      [1] = { ["px"] = -0.0766204040, ["py"] = 0.2092563989, ["pm"] = 255, },
+    },
   },
   [921] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = {
-        ["mn"] = 23,
-        ["py"] = 0.2854600000,
-        ["px"] = -0.0569200000,
-        ["pm"] = 255,
-      },
-    },
-    ["n"] = "Kyne's Tears",
     ["cn"] = "Words of the Poets",
+    ["n"] = "Kyne's Tears",
+    ["e"] = {
+      [1] = { ["px"] = -0.0568911993, ["py"] = 0.2856604003, ["pm"] = 255, },
+    },
   },
   [922] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = {
-        ["mn"] = 23,
-        ["py"] = 0.2855600000,
-        ["px"] = -0.0550200000,
-        ["pm"] = 255,
-      },
-    },
-    ["n"] = "Hidden Tears",
     ["cn"] = "Words of the Poets",
+    ["n"] = "Hidden Tears",
+    ["e"] = {
+      [1] = { ["px"] = -0.0549648051, ["py"] = 0.2855000052, ["pm"] = 255, },
+    },
   },
   [923] = {
     ["c"] = true,
@@ -9909,16 +9881,12 @@ local bookData = {
   },
   [935] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = {
-        ["mn"] = 23,
-        ["py"] = 0.2567800000,
-        ["px"] = -0.1279000000,
-        ["pm"] = 255,
-      },
-    },
-    ["n"] = "Captain Alphaury's Journal",
     ["cn"] = "Personal Journals",
+    ["n"] = "Captain Alphaury's Journal",
+    ["q"] = 4399,
+    ["e"] = {
+      [1] = { ["px"] = -0.1279548042, ["py"] = 0.2567812014, ["pm"] = 255, },
+    },
   },
   [936] = {
     ["c"] = true,
@@ -15240,16 +15208,13 @@ local bookData = {
   },
   [1381] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = {
-        ["mn"] = 23,
-        ["py"] = 0.2721900000,
-        ["px"] = -0.0822800000,
-        ["pm"] = 255,
-      },
-    },
-    ["n"] = "Transmutation of Living Creatures",
     ["cn"] = "Research Notes",
+    ["n"] = "Transmutation of Living Creatures",
+    ["q"] = 4623,
+    ["e"] = {
+      [1] = { ["px"] = -0.0822344046, ["py"] = 0.2722044016, ["pm"] = 255, ["qp"] = true, }, -- on location DURING quest
+      [2] = { ["px"] = -0.0809824071, ["py"] = 0.2753468027, ["pm"] = 255, ["qc"] = true, }, -- on location AFTER completing quest
+    },
   },
   [1382] = {
     ["c"] = true,
@@ -15470,19 +15435,23 @@ local bookData = {
   },
   [1405] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = { ["px"] = -0.0795488005, ["py"] = 0.2793179980, ["pm"] = 353, ["zx"] = -0.0805908074, ["zy"] = 0.2753363981, ["zm"] = 255, ["d"] = true, },
-    },
-    ["n"] = "The Notebook of Mage Gadris",
     ["cn"] = "Research Notes",
+    ["n"] = "The Notebook of Mage Gadris",
+    ["q"] = 4623,
+    ["e"] = {
+      [1] = { ["px"] = -0.0811291979, ["py"] = 0.2793455955, ["pm"] = 353, ["d"] = true, ["qp"] = true, ["zx"] = -0.0805108051, ["zy"] = 0.2753884011, ["zm"] = 255, }, -- on location DURING quest
+      [2] = { ["px"] = -0.0808559997, ["py"] = 0.2753079982, ["pm"] = 255, ["qc"] = true, }, -- on location AFTER completing quest
+    },
   },
   [1406] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = { ["px"] = -0.0795491999, ["py"] = 0.2794715973, ["pm"] = 353, ["zx"] = -0.0805908074, ["zy"] = 0.2753363981, ["zm"] = 255, ["d"] = true, },
-    },
-    ["n"] = "Catalyst Notes",
     ["cn"] = "Rituals and Revelations",
+    ["n"] = "Catalyst Notes",
+    ["q"] = 4623,
+    ["e"] = {
+      [1] = { ["px"] = -0.0811179977, ["py"] = 0.2793755955, ["pm"] = 353, ["d"] = true, ["qp"] = true, ["zx"] = -0.0805108051, ["zy"] = 0.2753884011, ["zm"] = 255, }, -- on location DURING quest
+      [2] = { ["px"] = -0.0809188078, ["py"] = 0.2753396026, ["pm"] = 255, ["qc"] = true, }, -- on location AFTER completing quest
+    },
   },
   [1407] = {
     ["c"] = true,
@@ -15832,22 +15801,13 @@ local bookData = {
   },
   [1463] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = {
-        ["mn"] = 23,
-        ["py"] = 0.2742500000,
-        ["px"] = -0.0833100000,
-        ["pm"] = 255,
-      },
-      [2] = {
-        ["mn"] = 23,
-        ["py"] = 0.2753000000,
-        ["px"] = -0.0810000000,
-        ["pm"] = 255,
-      },
-    },
-    ["n"] = "Transmutation Potion Recipe",
     ["cn"] = "Research Notes",
+    ["n"] = "Transmutation Potion Recipe",
+    ["q"] = 4623,
+    ["e"] = {
+      [1] = { ["px"] = -0.0833768082, ["py"] = 0.2741951961, ["pm"] = 255, ["qp"] = true, }, -- on location DURING quest
+      [2] = { ["px"] = -0.0810092047, ["py"] = 0.2753556051, ["pm"] = 255, ["qc"] = true, }, -- on location AFTER completing quest
+    },
   },
   [1464] = {
     ["c"] = true,
@@ -16266,29 +16226,19 @@ local bookData = {
   },
   [1499] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = {
-        ["mn"] = 23,
-        ["py"] = 0.2856500000,
-        ["px"] = -0.1293600000,
-        ["pm"] = 255,
-      },
-    },
-    ["n"] = "How We Came to Coldharbour",
     ["cn"] = "Rituals and Revelations",
+    ["n"] = "How We Came to Coldharbour",
+    ["e"] = {
+      [1] = { ["px"] = -0.1293668012, ["py"] = 0.2856943980, ["pm"] = 255, },
+    },
   },
   [1500] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = {
-        ["mn"] = 23,
-        ["py"] = 0.2838700000,
-        ["px"] = -0.1291900000,
-        ["pm"] = 255,
-      },
-    },
-    ["n"] = "The Values of Haj Uxith",
     ["cn"] = "Handbills, Posters, and Decrees",
+    ["n"] = "The Values of Haj Uxith",
+    ["e"] = {
+      [1] = { ["px"] = -0.1291708011, ["py"] = 0.2838127968, ["pm"] = 255, },
+    },
   },
   [1501] = {
     ["c"] = true,
@@ -16709,35 +16659,36 @@ local bookData = {
   },
   [1535] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = { ["px"] = -0.1137716017, ["py"] = 0.2350656015, ["pm"] = 266, ["zx"] = -0.1141772040, ["zy"] = 0.2351756027, ["zm"] = 255, ["d"] = true, },
-    },
-    ["n"] = "On Summoning Skeletons",
     ["cn"] = "Rituals and Revelations",
+    ["n"] = "On Summoning Skeletons",
+    ["e"] = {
+      [1] = { ["px"] = -0.1137840016, ["py"] = 0.2350640015, ["pm"] = 266, ["d"] = true, ["zx"] = -0.1141548025, ["zy"] = 0.2351692038, ["zm"] = 255, },
+    },
   },
   [1536] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = { ["px"] = -0.1142440016, ["py"] = 0.2354336015, ["pm"] = 266, ["zx"] = -0.1141772040, ["zy"] = 0.2351756027, ["zm"] = 255, ["d"] = true, },
-    },
-    ["n"] = "Necromancy: The Great Debate",
     ["cn"] = "The Devoted and the Deranged",
+    ["n"] = "Necromancy: The Great Debate",
+    ["e"] = {
+      [1] = { ["px"] = -0.1142388016, ["py"] = 0.2354336015, ["pm"] = 266, ["d"] = true, ["zx"] = -0.1141548025, ["zy"] = 0.2351692038, ["zm"] = 255, },
+    },
   },
   [1537] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = { ["px"] = -0.1139208035, ["py"] = 0.2773671937, ["pm"] = 261, ["zx"] = -0.1123024022, ["zy"] = 0.2776375984, ["zm"] = 255, ["d"] = true, },
-    },
-    ["n"] = "Party Theme",
     ["cn"] = "The Devoted and the Deranged",
+    ["n"] = "Party Theme",
+    ["e"] = {
+      [1] = { ["px"] = -0.1112900022, ["py"] = 0.2765292073, ["pm"] = 261, ["d"] = true, ["zx"] = -0.1123148047, ["zy"] = 0.2775968011, ["zm"] = 255, },
+      [2] = { ["px"] = -0.1111016021, ["py"] = 0.2766520072, ["pm"] = 261, ["d"] = true, },
+    },
   },
   [1538] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = { ["px"] = -0.1132040035, ["py"] = 0.2774315936, ["pm"] = 261, ["zx"] = -0.1123024022, ["zy"] = 0.2776375984, ["zm"] = 255, ["d"] = true, },
-    },
-    ["n"] = "The Perfect Host",
     ["cn"] = "Lore and Culture",
+    ["n"] = "The Perfect Host",
+    ["e"] = {
+      [1] = { ["px"] = -0.1104592022, ["py"] = 0.2767192074, ["pm"] = 261, ["d"] = true, ["zx"] = -0.1123148047, ["zy"] = 0.2775968011, ["zm"] = 255, },
+    },
   },
   [1540] = {
     ["c"] = true,
@@ -16949,42 +16900,27 @@ local bookData = {
   },
   [1552] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = {
-        ["mn"] = 23,
-        ["py"] = 0.2787800000,
-        ["px"] = -0.0651800000,
-        ["pm"] = 255,
-      },
-    },
-    ["n"] = "Everfull Flagon Journal, Page 1",
     ["cn"] = "Plots and Schemes",
+    ["n"] = "Everfull Flagon Journal, Page 1",
+    ["e"] = {
+      [1] = { ["px"] = -0.0651831991, ["py"] = 0.2788292011, ["pm"] = 255, },
+    },
   },
   [1553] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = {
-        ["mn"] = 23,
-        ["py"] = 0.2783200000,
-        ["px"] = -0.0644800000,
-        ["pm"] = 255,
-      },
-    },
-    ["n"] = "Everfull Flagon Journal, Page 2",
     ["cn"] = "Plots and Schemes",
+    ["n"] = "Everfull Flagon Journal, Page 2",
+    ["e"] = {
+      [1] = { ["px"] = -0.0644351991, ["py"] = 0.2783423977, ["pm"] = 255, },
+    },
   },
   [1554] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = {
-        ["mn"] = 23,
-        ["py"] = 0.2789100000,
-        ["px"] = -0.0653100000,
-        ["pm"] = 255,
-      },
-    },
-    ["n"] = "Everfull Flagon Journal, Page 3",
     ["cn"] = "Plots and Schemes",
+    ["n"] = "Everfull Flagon Journal, Page 3",
+    ["e"] = {
+      [1] = { ["px"] = -0.0652948058, ["py"] = 0.2789596041, ["pm"] = 255, },
+    },
   },
   [1555] = {
     ["c"] = true,
@@ -17078,11 +17014,11 @@ local bookData = {
   },
   [1562] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = { ["px"] = -0.0704944012, ["py"] = 0.2413940018, ["pm"] = 593, ["zx"] = -0.0703800041, ["zy"] = 0.2418811957, ["zm"] = 255, ["d"] = true, },
-    },
-    ["n"] = "Guild Mage's Journal",
     ["cn"] = "Final Words",
+    ["n"] = "Guild Mage's Journal",
+    ["e"] = {
+      [1] = { ["px"] = -0.0702379969, ["py"] = 0.2422944026, ["pm"] = 593, ["d"] = true, ["zx"] = -0.0704004027, ["zy"] = 0.2419179973, ["zm"] = 255, },
+    },
   },
   [1563] = {
     ["c"] = true,
@@ -17450,11 +17386,11 @@ local bookData = {
   },
   [1591] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = { ["px"] = -0.0693092028, ["py"] = 0.2669808021, ["pm"] = 352, ["zx"] = -0.0684247995, ["zy"] = 0.2669624032, ["zm"] = 255, ["d"] = true, },
-    },
-    ["n"] = "Legend of Haman Forgefire",
     ["cn"] = "Tales of Tamriel",
+    ["n"] = "Legend of Haman Forgefire",
+    ["e"] = {
+      [1] = { ["px"] = -0.0683048002, ["py"] = 0.2667428074, ["pm"] = 352, ["d"] = true, ["zx"] = -0.0684584066, ["zy"] = 0.2669223970, ["zm"] = 255, },
+    },
   },
   [1592] = {
     ["c"] = true,
@@ -17462,12 +17398,11 @@ local bookData = {
     ["n"] = "A Moment of Your Time?",
     ["q"] = 4748,
     ["e"] = {
-      [1] = {
-        ["mn"] = 23,
-        ["py"] = 0.2387900000,
-        ["px"] = -0.1187700000,
-        ["pm"] = 255,
-      },
+      [1] = { ["px"] = -0.1188796049, ["py"] = 0.2387415985, ["pm"] = 255, ["qc"] = true, }, -- on location AFTER completing quest
+      [2] = { ["px"] = -0.1264632053, ["py"] = 0.2388635997, ["pm"] = 255, }, -- on location ONLY at quest-start
+      [3] = { ["px"] = -0.1209504018, ["py"] = 0.2366403989, ["pm"] = 255, }, -- on location ONLY at quest-start
+      [4] = { ["px"] = -0.1235028047, ["py"] = 0.2357559975, ["pm"] = 255, }, -- on location ONLY at quest-start
+      [5] = { ["px"] = -0.1269984016, ["py"] = 0.2359748046, ["pm"] = 255, }, -- on location ONLY at quest-start
     },
   },
   [1593] = {
@@ -17476,36 +17411,11 @@ local bookData = {
     ["n"] = "If I May Beseech You",
     ["q"] = 4748,
     ["e"] = {
-      [1] = {
-        ["mn"] = 23,
-        ["py"] = 0.2378000000,
-        ["px"] = -0.1248900000,
-        ["pm"] = 255,
-      },
-      [2] = {
-        ["mn"] = 23,
-        ["py"] = 0.2371000000,
-        ["px"] = -0.1222700000,
-        ["pm"] = 255,
-      },
-      [3] = {
-        ["mn"] = 23,
-        ["py"] = 0.2340300000,
-        ["px"] = -0.1276900000,
-        ["pm"] = 255,
-      },
-      [4] = {
-        ["mn"] = 23,
-        ["py"] = 0.2387500000,
-        ["px"] = -0.1188600000,
-        ["pm"] = 255,
-      },
-      [5] = {
-        ["mn"] = 23,
-        ["py"] = 0.2359300000,
-        ["px"] = -0.1271400000,
-        ["pm"] = 255,
-      },
+      [1] = { ["px"] = -0.1188524017, ["py"] = 0.2387856002, ["pm"] = 255, ["qc"] = true, }, -- on location AFTER completing quest
+      [2] = { ["px"] = -0.1248508019, ["py"] = 0.2377668001, ["pm"] = 255, }, -- on location ONLY during quest
+      [3] = { ["px"] = -0.1222916045, ["py"] = 0.2370908012, ["pm"] = 255, }, -- on location ONLY during quest
+      [4] = { ["px"] = -0.1272012013, ["py"] = 0.2359680051, ["pm"] = 255, }, -- on location ONLY during quest
+      [5] = { ["px"] = -0.1276208053, ["py"] = 0.2340016048, ["pm"] = 255, }, -- on location ONLY during quest
     },
   },
   [1594] = {
@@ -17514,24 +17424,9 @@ local bookData = {
     ["n"] = "Situation Becoming Urgent",
     ["q"] = 4748,
     ["e"] = {
-      [1] = {
-        ["mn"] = 23,
-        ["py"] = 0.2349200000,
-        ["px"] = -0.1248100000,
-        ["pm"] = 255,
-      },
-      [2] = {
-        ["mn"] = 23,
-        ["py"] = 0.2387500000,
-        ["px"] = -0.1187300000,
-        ["pm"] = 255,
-      },
-      [3] = {
-        ["mn"] = 23,
-        ["py"] = 0.2342200000,
-        ["px"] = -0.1275000000,
-        ["pm"] = 255,
-      },
+      [1] = { ["px"] = -0.1188352026, ["py"] = 0.2387788007, ["pm"] = 255, ["qc"] = true, }, -- on location AFTER completing quest
+      [2] = { ["px"] = -0.1248936020, ["py"] = 0.2349427959, ["pm"] = 255, }, -- on location ONLY during quest
+      [3] = { ["px"] = -0.1274224018, ["py"] = 0.2342012049, ["pm"] = 255, }, -- on location ONLY during quest
     },
   },
   [1595] = {
@@ -17540,24 +17435,9 @@ local bookData = {
     ["n"] = "Prompt Rescue is Imperative",
     ["q"] = 4748,
     ["e"] = {
-      [1] = {
-        ["mn"] = 23,
-        ["py"] = 0.2312600000,
-        ["px"] = -0.1286100000,
-        ["pm"] = 255,
-      },
-      [2] = {
-        ["mn"] = 23,
-        ["py"] = 0.2388700000,
-        ["px"] = -0.1187100000,
-        ["pm"] = 255,
-      },
-      [3] = {
-        ["mn"] = 23,
-        ["py"] = 0.2320000000,
-        ["px"] = -0.1289900000,
-        ["pm"] = 255,
-      },
+      [1] = { ["px"] = -0.1188412010, ["py"] = 0.2388020033, ["pm"] = 255, ["qc"] = true, }, -- on location AFTER completing quest
+      [2] = { ["px"] = -0.1289724026, ["py"] = 0.2319243989, ["pm"] = 255, }, -- on location ONLY during quest
+      [3] = { ["px"] = -0.1285708039, ["py"] = 0.2312020048, ["pm"] = 255, }, -- on location ONLY during quest
     },
   },
   [1596] = {
@@ -17679,19 +17559,19 @@ local bookData = {
   },
   [1605] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = { ["px"] = -0.0794220067, ["py"] = 0.2466403963, ["pm"] = 255, },
-    },
-    ["n"] = "On the Matter of the Prisoners",
     ["cn"] = "Notes and Memos",
+    ["n"] = "On the Matter of the Prisoners",
+    ["e"] = {
+      [1] = { ["px"] = -0.0793828017, ["py"] = 0.2466168032, ["pm"] = 255, },
+    },
   },
   [1606] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = { ["px"] = -0.0784740059, ["py"] = 0.2500492014, ["pm"] = 255, },
-    },
-    ["n"] = "A Reminder from the Judge",
     ["cn"] = "Letters and Missives",
+    ["n"] = "A Reminder from the Judge",
+    ["e"] = {
+      [1] = { ["px"] = -0.0784488006, ["py"] = 0.2500640022, ["pm"] = 255, },
+    },
   },
   [1607] = {
     ["c"] = true,
@@ -17976,11 +17856,11 @@ local bookData = {
   },
   [1625] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = { ["px"] = -0.1063487993, ["py"] = 0.2311824026, ["pm"] = 322, ["zx"] = -0.1071956036, ["zy"] = 0.2305619964, ["zm"] = 255, ["d"] = true, },
-    },
-    ["n"] = "Mal Sorra's Curse",
     ["cn"] = "Tales of Tamriel",
+    ["n"] = "Mal Sorra's Curse",
+    ["e"] = {
+      [1] = { ["px"] = -0.1067244013, ["py"] = 0.2311179988, ["pm"] = 322, ["d"] = true, ["zx"] = -0.1072056027, ["zy"] = 0.2305796012, ["zm"] = 255, },
+    },
   },
   [1626] = {
     ["c"] = true,
@@ -18282,16 +18162,11 @@ local bookData = {
   },
   [1646] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = {
-        ["mn"] = 23,
-        ["py"] = 0.2098500000,
-        ["px"] = -0.0929900000,
-        ["pm"] = 255,
-      },
-    },
-    ["n"] = "Note to Menthery",
     ["cn"] = "Notes and Memos",
+    ["n"] = "Note to Menthery",
+    ["e"] = {
+      [1] = { ["px"] = -0.0929536015, ["py"] = 0.2098180023, ["pm"] = 255, },
+    },
   },
   [1647] = {
     ["c"] = true,
@@ -18360,19 +18235,19 @@ local bookData = {
   },
   [1652] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = { ["px"] = -0.0730156021, ["py"] = 0.2084272021, ["pm"] = 263, ["zx"] = -0.0723628074, ["zy"] = 0.2083884005, ["zm"] = 255, ["d"] = true, },
-    },
-    ["n"] = "Deathbringer Orders",
     ["cn"] = "Notes and Memos",
+    ["n"] = "Deathbringer Orders",
+    ["e"] = {
+      [1] = { ["px"] = -0.0719499972, ["py"] = 0.2089776008, ["pm"] = 263, ["d"] = true, ["zx"] = -0.0723779987, ["zy"] = 0.2083536016, ["zm"] = 255, },
+    },
   },
   [1653] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = { ["px"] = -0.0986824033, ["py"] = 0.2083555994, ["pm"] = 255, },
-    },
-    ["n"] = "Note to Arida",
     ["cn"] = "Notes and Memos",
+    ["n"] = "Note to Arida",
+    ["e"] = {
+      [1] = { ["px"] = -0.0986624052, ["py"] = 0.2083632001, ["pm"] = 255, },
+    },
   },
   [1654] = {
     ["c"] = true,
@@ -18488,47 +18363,35 @@ local bookData = {
   },
   [1664] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = { ["px"] = -0.1175564025, ["py"] = 0.2672380000, ["pm"] = 255, },
-      [2] = { ["pnx"] = 0.7716826797, ["pny"] = 0.5270192027, ["pm"] = 372, ["zx"] = -0.0578152064, ["zy"] = 0.2595367996, ["zm"] = 255, ["d"] = true, }, -- 1/4 primary map
-      [3] = { ["px"] = -0.0471552008, ["py"] = 0.2645443983, ["pm"] = 585, ["fp"] = true, }, -- 1/4 shackle map
-      [4] = { ["pnx"] = 0.7716826797, ["pny"] = 0.5270192027, ["pm"] = 371, ["fp"] = true, }, -- 1/4 The Black Forge
-      [5] = { ["pnx"] = 0.7716826797, ["pny"] = 0.5270192027, ["pm"] = 373, ["fp"] = true, }, -- 1/4 The Black Forge
-    },
-    ["n"] = "Powering the Dark Anchors",
     ["cn"] = "Rituals and Revelations",
+    ["n"] = "Powering the Dark Anchors",
+    ["e"] = {
+      [1] = { ["px"] = -0.1175260048, ["py"] = 0.2672375995, ["pm"] = 255, }, -- on location AFTER completing quests inside the "The Black Forge" ... zone-map
+      [2] = { ["px"] = -0.0526507987, ["py"] = 0.2622507972, ["pm"] = 372, ["d"] = true, ["zx"] = -0.0578040006, ["zy"] = 0.2595256038, ["zm"] = 255, }, -- primary location, area-map
+      [3] = { ["pnx"] = 0.7716826797, ["pny"] = 0.5270192027, ["pm"] = 371, ["fp"] = true, }, -- location shown on part of "The Black Forge" map
+      [4] = { ["pnx"] = 0.7716826797, ["pny"] = 0.5270192027, ["pm"] = 373, ["fp"] = true, }, -- location shown on another part of "The Black Forge" map
+      -- as far as I can tell, this is not needed ... [5] = { ["px"] = -0.0471552008, ["py"] = 0.2645443983, ["pm"] = 585, ["fp"] = true, }, -- 1/4 shackle map
+    },
   },
   [1665] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = {
-        ["pm"] = 255,
-        ["px"] = -0.0314900000,
-        ["d"] = true,
-        ["py"] = 0.2567500000,
-        ["mn"] = 23,
-      },
-      [2] = { ["px"] = -0.1175564025, ["py"] = 0.2672380000, ["pm"] = 255, },
-      [3] = {
-        ["pm"] = 255,
-        ["px"] = -0.0287200000,
-        ["d"] = true,
-        ["py"] = 0.2562800000,
-        ["mn"] = 23,
-      },
-    },
-    ["n"] = "The Source of Power",
     ["cn"] = "Diaries and Logs",
+    ["n"] = "The Source of Power",
+    ["e"] = {
+      [1] = { ["px"] = -0.1175832051, ["py"] = 0.2672056046, ["pm"] = 255, }, -- on location AFTER completing quests inside the "The Great Shackle"
+      [2] = { ["px"] = -0.0287176015, ["py"] = 0.2562771991, ["pm"] = 586, ["d"] = true, ["zx"] = -0.0410123996, ["zy"] = 0.2629627988, ["zm"] = 255, }, -- primary location, area-map
+      [3] = { ["px"] = -0.0315176015, ["py"] = 0.2569071991, ["pm"] = 585, ["fp"] = true, }, -- location shown on entry part of "The Great Shackle" map
+    },
   },
   [1666] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = { ["px"] = -0.0314788015, ["py"] = 0.2575407985, ["pm"] = 586, ["zx"] = -0.0410088045, ["zy"] = 0.2629660033, ["zm"] = 255, ["d"] = true, },
-      [2] = { ["px"] = -0.0410088005, ["py"] = 0.2629659988, ["pm"] = 585, ["fp"] = true, },
-      [3] = { ["px"] = -0.1175564025, ["py"] = 0.2672380000, ["pm"] = 255, },
-    },
-    ["n"] = "The Great Mooring",
     ["cn"] = "Plots and Schemes",
+    ["n"] = "The Great Mooring",
+    ["e"] = {
+      [1] = { ["px"] = -0.1175880019, ["py"] = 0.2672143969, ["pm"] = 255, }, -- on location AFTER completing quests inside the "The Great Shackle"
+      [2] = { ["px"] = -0.0314992006, ["py"] = 0.2574447986, ["pm"] = 586, ["d"] = true, ["zx"] = -0.0410123996, ["zy"] = 0.2629627988, ["zm"] = 255, }, -- primary location, area-map
+      [3] = { ["px"] = -0.0343176015, ["py"] = 0.2580171991, ["pm"] = 585, ["fp"] = true, }, -- location shown on entry part of "The Great Shackle" map
+    },
   },
   [1667] = {
     ["c"] = true,
@@ -18797,29 +18660,20 @@ local bookData = {
   },
   [1746] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = {
-        ["mn"] = 23,
-        ["py"] = 0.1848800000,
-        ["px"] = -0.0959300000,
-        ["pm"] = 255,
-      },
-    },
-    ["n"] = "How the Locks Work",
     ["cn"] = "Mysteries and Clues",
+    ["n"] = "How the Locks Work",
+    ["e"] = {
+      [1] = { ["px"] = -0.0959316019, ["py"] = 0.1848796002, ["pm"] = 255, },
+    },
   },
   [1747] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = {
-        ["mn"] = 23,
-        ["py"] = 0.1848800000,
-        ["px"] = -0.0959300000,
-        ["pm"] = 255,
-      },
-    },
-    ["n"] = "The Daedric Flame",
     ["cn"] = "Rituals and Revelations",
+    ["n"] = "The Daedric Flame",
+    ["q"] = 4758,
+    ["e"] = {
+      [1] = { ["px"] = -0.0959316019, ["py"] = 0.1848796002, ["pm"] = 255, },
+    },
   },
   [1748] = {
     ["c"] = true,
@@ -18856,14 +18710,9 @@ local bookData = {
     ["c"] = true,
     ["cn"] = "Final Words",
     ["n"] = "Gamirth's Final Message",
-    ["q"] = 4347,
+    ["q"] = 4347, -- need to be read at quest-start, can't be missed
     ["e"] = {
-      [1] = {
-        ["mn"] = 23,
-        ["py"] = 0.2773500000,
-        ["px"] = -0.0654800000,
-        ["pm"] = 255,
-      },
+      [1] = { ["px"] = -0.0653860038, ["py"] = 0.2773591976, ["pm"] = 255, },
     },
   },
   [1752] = {
@@ -18890,16 +18739,11 @@ local bookData = {
   },
   [1754] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = {
-        ["mn"] = 23,
-        ["py"] = 0.2117600000,
-        ["px"] = -0.0892300000,
-        ["pm"] = 255,
-      },
-    },
-    ["n"] = "Spotted a Cave",
     ["cn"] = "Diaries and Logs",
+    ["n"] = "Spotted a Cave",
+    ["e"] = {
+      [1] = { ["px"] = -0.0891835994, ["py"] = 0.2117124015, ["pm"] = 255, },
+    },
   },
   [1755] = {
     ["c"] = true,
@@ -18947,9 +18791,10 @@ local bookData = {
     ["c"] = true,
     ["cn"] = "Personal Journals",
     ["n"] = "Nettira's Journal",
-    ["q"] = 4814,
+    ["q"] = 4814, -- given to player at quest-start, can be read from inventory
     ["e"] = {
-      [1] = { ["px"] = -0.0976196019, ["py"] = 0.2634652025, ["pm"] = 422, ["zm"] = 255, },
+      [1] = { ["px"] = -0.0976196019, ["py"] = 0.2634652025, ["pm"] = 422, ["zm"] = 255, ["qc"] = true, }, -- on location AFTER completing quest
+      [2] = { ["px"] = -0.1062436013, ["py"] = 0.2309503988, ["pm"] = 322, ["d"] = true, ["zx"] = -0.1072056027, ["zy"] = 0.2305796012, ["zm"] = 255, }, -- on location at quest-start
     },
   },
   [1759] = {
@@ -19034,16 +18879,11 @@ local bookData = {
   },
   [1764] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = {
-        ["mn"] = 23,
-        ["py"] = 0.2497100000,
-        ["px"] = -0.1196400000,
-        ["pm"] = 255,
-      },
-    },
-    ["n"] = "A Prisoner's Journal",
     ["cn"] = "The Devoted and the Deranged",
+    ["n"] = "A Prisoner's Journal",
+    ["e"] = {
+      [1] = { ["px"] = -0.1196244054, ["py"] = 0.2497043974, ["pm"] = 255, },
+    },
   },
   [1765] = {
     ["c"] = true,
@@ -20704,16 +20544,12 @@ local bookData = {
   },
   [1886] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = {
-        ["mn"] = 23,
-        ["py"] = 0.2420500000,
-        ["px"] = -0.1298700000,
-        ["pm"] = 255,
-      },
-    },
-    ["n"] = "Note from Kamu",
     ["cn"] = "Notes and Memos",
+    ["n"] = "Note from Kamu",
+    ["q"] = 4399,
+    ["e"] = {
+      [1] = { ["px"] = -0.1298228013, ["py"] = 0.2420259989, ["pm"] = 255, },
+    },
   },
   [1887] = {
     ["c"] = true,
@@ -23067,20 +22903,20 @@ local bookData = {
   },
   [2086] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = { ["px"] = -0.1159591972, ["py"] = 0.2663248035, ["pm"] = 350, ["zx"] = -0.1188328042, ["zy"] = 0.2655320053, ["zm"] = 255, ["d"] = true, },
-      [2] = { ["px"] = -0.0942312019, ["py"] = 0.2553108031, ["pm"] = 422, ["zm"] = 255, },
-    },
-    ["n"] = "Ripped and Discarded Page",
     ["cn"] = "Mysteries and Clues",
+    ["n"] = "Ripped and Discarded Page",
+    ["e"] = {
+      [1] = { ["px"] = -0.1189432020, ["py"] = 0.2659700026, ["pm"] = 350, ["d"] = true, ["zx"] = -0.1188416016, ["zy"] = 0.2655072004, ["zm"] = 255, },
+      [2] = { ["px"] = -0.0941608019, ["py"] = 0.2553448028, ["pm"] = 422, ["zm"] = 255, },
+    },
   },
   [2087] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = { ["px"] = -0.1125899976, ["py"] = 0.2670452035, ["pm"] = 350, ["zx"] = -0.1188328042, ["zy"] = 0.2655320053, ["zm"] = 255, ["d"] = true, },
-    },
-    ["n"] = "Knights of the Gleaming Blade",
     ["cn"] = "Military Orders and Reports",
+    ["n"] = "Knights of the Gleaming Blade",
+    ["e"] = {
+      [1] = { ["px"] = -0.1181704019, ["py"] = 0.2661088027, ["pm"] = 350, ["d"] = true, ["zx"] = -0.1188416016, ["zy"] = 0.2655072004, ["zm"] = 255, },
+    },
   },
   [2089] = {
     ["c"] = true,
@@ -28172,68 +28008,43 @@ local bookData = {
   },
   [2519] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = {
-        ["mn"] = 23,
-        ["py"] = 0.2440800000,
-        ["px"] = -0.1437800000,
-        ["pm"] = 255,
-      },
-    },
-    ["n"] = "Famous Coldharbourites, Part 21",
     ["cn"] = "Personal Journals",
+    ["n"] = "Famous Coldharbourites, Part 21",
+    ["e"] = {
+      [1] = { ["px"] = -0.1436952021, ["py"] = 0.2439855997, ["pm"] = 255, },
+    },
   },
   [2520] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = {
-        ["mn"] = 23,
-        ["py"] = 0.2711000000,
-        ["px"] = -0.0810200000,
-        ["pm"] = 255,
-      },
-    },
-    ["n"] = "Letter to Zemarek-Thul",
     ["cn"] = "Letters and Missives",
+    ["n"] = "Letter to Zemarek-Thul",
+    ["e"] = {
+      [1] = { ["px"] = -0.0810088041, ["py"] = 0.2710152023, ["pm"] = 255, },
+    },
   },
   [2521] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = {
-        ["mn"] = 23,
-        ["py"] = 0.2412000000,
-        ["px"] = -0.0884500000,
-        ["pm"] = 255,
-      },
-    },
-    ["n"] = "Famous Coldharbourites, Part 37",
     ["cn"] = "Personal Journals",
+    ["n"] = "Famous Coldharbourites, Part 37",
+    ["e"] = {
+      [1] = { ["px"] = -0.0883768069, ["py"] = 0.2412740033, ["pm"] = 255, },
+    },
   },
   [2522] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = {
-        ["mn"] = 23,
-        ["py"] = 0.2342200000,
-        ["px"] = -0.1027100000,
-        ["pm"] = 255,
-      },
-    },
-    ["n"] = "Letter to Cynhamoth",
     ["cn"] = "Letters and Missives",
+    ["n"] = "Letter to Cynhamoth",
+    ["e"] = {
+      [1] = { ["px"] = -0.1026736009, ["py"] = 0.2342735966, ["pm"] = 255, },
+    },
   },
   [2524] = {
     ["c"] = true,
-    ["e"] = {
-      [1] = {
-        ["mn"] = 23,
-        ["py"] = 0.2401000000,
-        ["px"] = -0.1145000000,
-        ["pm"] = 255,
-      },
-    },
-    ["n"] = "Cadwell's Journal: Deep Thoughts, Part 412",
     ["cn"] = "Personal Journals",
+    ["n"] = "Cadwell's Journal: Deep Thoughts, Part 412",
+    ["e"] = {
+      [1] = { ["px"] = -0.1144644021, ["py"] = 0.2401159978, ["pm"] = 255, },
+    },
   },
   [2525] = {
     ["c"] = true,
@@ -52760,7 +52571,7 @@ local bookData = {
     ["cn"] = "The Devoted and the Deranged",
     ["n"] = "The Sonnet of Aetherius Art",
     ["e"] = {
-      [1] = { ["px"] = -0.0956812024, ["py"] = 0.2605108031, ["pm"] = 422, ["zm"] = 255, },
+      [1] = { ["px"] = -0.0956420017, ["py"] = 0.2605116033, ["pm"] = 422, ["zm"] = 255, },
     },
   },
   [6272] = {
